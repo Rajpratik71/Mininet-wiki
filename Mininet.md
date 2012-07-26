@@ -24,7 +24,7 @@ As a "network laboratory on a laptop", Mininet can run full Unix network applica
 
 -->
 
-**To download Mininet and get started, go to the [MininetGettingStarted](MininetGettingStarted.html) page.**
+**To download Mininet and get started, go to the [MininetGettingStarted](MininetGettingStarted) page.**
 
 Mininet's source code is hosted on !GitHub at <http://github.com/mininet/mininet.>
 
