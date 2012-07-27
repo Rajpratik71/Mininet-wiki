@@ -18,6 +18,6 @@ Mininet's source code is hosted on !GitHub at <http://github.com/mininet/mininet
 
 Alternately, you may wish to **[learn more about Mininet](MininetLearnMore)** or peruse the **[Mininet Documentation](MininetDocumentation).**
 
-Please direct any Mininet-specific questions to our helpful [mininet-discuss mailing list](https://mailman.stanford.edu/mailman/listinfo/mininet-discuss) ash; NOT to nox-dev, ovs-discuss, or openflow-discuss.
+Please direct any Mininet-specific questions to our helpful [mininet-discuss mailing list](https://mailman.stanford.edu/mailman/listinfo/mininet-discuss) -- NOT to nox-dev, ovs-discuss, or openflow-discuss.
 
 Have fun with Mininet!!
