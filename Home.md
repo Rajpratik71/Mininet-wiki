@@ -1,7 +1,7 @@
 **Welcome to Mininet**
 =======================
 
-Mininet creates scalable (up to hundreds of nodes, depending on your configuration) software-defined (e.g. [OpenFlow](Http://Openflow.Org/)) networks on a single PC by using Linux processes in network namespaces.
+Mininet creates scalable (up to hundreds of nodes, depending on your configuration) Software-Defined (e.g. [OpenFlow](Http://Openflow.Org/)) Networks on a single PC by using Linux processes in network namespaces.
 
 It allows you to quickly [create](MininetSampleWorkflow#Creating_a_Network), [interact with](MininetSampleWorkflow#Interacting_with_a_Network), [customize](MininetSampleWorkflow#Customizing_a_Network) and [share](MininetSampleWorkflow#Sharing_a_Network) a software defined network prototype, and provides a smooth path to [running on hardware](MininetSampleWorkflow#Running_on_Hardware).
 
