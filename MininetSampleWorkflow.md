@@ -1,11 +1,4 @@
-<!-- %META:TOPICINFO{author="BobLantz" date="1305074654" format="1.1" reprev="1.1" version="1.1"}% -->
-<!-- %META:TOPICPARENT{name="MininetViewTemplate"}% -->
-<!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView)
--->
-
-
-Sample Workflow
+Mininet Sample Workflow
 ================
 
 Mininet is designed you to quickly [create](#Creating_a_Network), [interact with](#Interacting_with_a_Network), [customize](#Customizing_a_Network) and [share](#Sharing_a_Network) a software defined network prototype, and provides a smooth path to [running on hardware](#Running_on_Hardware). This page illustrates the basic Mininet workflow, and many additional details are available in the Mininet [walkthrough](MininetWalkthrough), the !OpenFlow [tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), and Mininet [documentation](MininetDocumentation).
