@@ -9,7 +9,7 @@ Mininet Walkthrough
 
 This walkthrough demonstrates most Mininet commands, plus its typical usage in concert with the Wireshark dissector.
 
-It assumes that your base system is the Mininet VM, or a native install with all !OpenFlow tools and Mininet installed.
+It assumes that your base system is the Mininet VM, or a native install with all OpenFlow tools and Mininet installed.
 
 The entire walkthrough should take under an hour.
 
@@ -31,7 +31,7 @@ This walkthrough will cover typical usage of the majority of options listed.
 
 ### Start Wireshark
 
-To view control traffic using the !OpenFlow Wireshark dissector, first open wireshark in the background:
+To view control traffic using the OpenFlow Wireshark dissector, first open wireshark in the background:
 <verbatim>
 sudo wireshark &</verbatim>
 
@@ -41,7 +41,7 @@ of</verbatim>
 
 In Wireshark, click Capture, then Interfaces, then select Start on the loopback interface (lo).
 
-For now, there should be no !OpenFlow packets displayed in the main window.
+For now, there should be no OpenFlow packets displayed in the main window.
 
 
 ### Interact with Hosts and Switches
@@ -50,7 +50,7 @@ Start a minimal topology and enter the CLI:
 <verbatim>
 sudo mn</verbatim>
 
-The default topology is minimal, which includes one !OpenFlow kernel switch connected to two hosts, plus the !OpenFlow reference controller. Other ones are available; see the --topo section in the output of 'mn -h'.
+The default topology is minimal, which includes one OpenFlow kernel switch connected to two hosts, plus the !OpenFlow reference controller. Other ones are available; see the --topo section in the output of 'mn -h'.
 
 All four entities (2 host processes, 1 switch process, 1 reference controller) are now running in the VM. The controller can be outside the VM, and instructions for that are at the bottom.
 
@@ -111,7 +111,7 @@ h2 ping -c 1 h3</verbatim>
 
 If a string appears later in the command with a node name, that node name is replaced by its IP address; this happened for h3.
 
-You should see !OpenFlow control traffic. The first host ARPs for the MAC address of the second, which causes a packet_in message to go to the controller. The controller then broadcasts a packet_out message to other ports on the switch (in this example, the only other data port). The second host sees the ARP request and sends a broadcast reply. This reply goes to the controller, which sends it to the first host and pushes down a flow entry.
+You should see OpenFlow control traffic. The first host ARPs for the MAC address of the second, which causes a packet_in message to go to the controller. The controller then broadcasts a packet_out message to other ports on the switch (in this example, the only other data port). The second host sees the ARP request and sends a broadcast reply. This reply goes to the controller, which sends it to the first host and pushes down a flow entry.
 
 Now the first host knows the IP address of the second, and can send its ping via an ICMP Echo Request. This request, along with its corresponding reply from the second host, both go the controller and result in a flow entry pushed down (along with the actual packets getting sent out).
 
@@ -149,7 +149,7 @@ Run a regression test:
 <verbatim>
 sudo mn --test pingpair</verbatim>
 
-This command created a minimal topology, started up the !OpenFlow reference controller, ran an all-pairs-ping test, and tore down both the topology and the controller.
+This command created a minimal topology, started up the OpenFlow reference controller, ran an all-pairs-ping test, and tore down both the topology and the controller.
 
 Another useful test is iperf (give it about 10 seconds to complete):
 <verbatim>
@@ -329,7 +329,7 @@ If you do the ping test shown earlier, you should notice a much higher delay pin
 
 On the other hand, the user-space switch can be a great starting point for implementing new functionality, especially where software performance is not critical (such as when the user-space switch is controlling a hardware switch).
 
-Another example switch type is Open vSwitch (OVS), which comes preinstalled on the Mininet VM. The iperf-reported TCP bandwidth should be similar to the !OpenFlow kernel module, and possibly faster:
+Another example switch type is Open vSwitch (OVS), which comes preinstalled on the Mininet VM. The iperf-reported TCP bandwidth should be similar to the OpenFlow kernel module, and possibly faster:
 <verbatim>
 sudo mn --switch ovsk --test iperf</verbatim>
 

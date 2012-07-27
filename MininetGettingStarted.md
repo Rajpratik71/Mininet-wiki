@@ -1,7 +1,7 @@
 Download and Get Started with Mininet!
 =======================================
 
-The easiest way to get started is to download a pre-packaged Ubuntu VM. This VM includes a modified kernel, all !OpenFlow binaries and tools pre-installed, plus tweaks to the kernel configuration to support larger Mininet networks.
+The easiest way to get started is to download a pre-packaged Ubuntu VM. This VM includes a modified kernel, all OpenFlow binaries and tools pre-installed, plus tweaks to the kernel configuration to support larger Mininet networks.
 
 
 Option 1: Mininet VM Installation (recommended)
@@ -20,7 +20,7 @@ Follow these steps for a VM install:
 
 1. Follow the [MininetWalkthrough](MininetWalkthrough) to get familiar with Mininet commands and typical usage.
 
-Once you've completed the [MininetWalkthrough](MininetWalkthrough), you should have a clear idea for what Mininet is and what you might use it for. If you are interested in !OpenFlow and Software-Defined Networking, you will want to complete the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) as well. Good luck, and have fun!
+Once you've completed the [MininetWalkthrough](MininetWalkthrough), you should have a clear idea for what Mininet is and what you might use it for. If you are interested in OpenFlow and Software-Defined Networking, you will want to complete the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) as well. Good luck, and have fun!
 
 
 Option 2: Native Mininet Installation on Ubuntu 11.10
@@ -31,10 +31,10 @@ If you want to install natively on Ubuntu 11.10 (or 10.04 LTS) the basic techniq
     git clone git://github.com/mininet/mininet
     mininet/util/install.sh -a
 
-This takes about 15-20 minutes and will install everything that is included in the Mininet VM, including NOX classic/destiny + tutorial code, the !OpenFlow wireshark dissector, etc..
+This takes about 15-20 minutes and will install everything that is included in the Mininet VM, including NOX classic/destiny + tutorial code, the OpenFlow wireshark dissector, etc..
 
 Alternately, it may be possible to install a "minimal" configuration using
 
     mininet/util/install.sh -fnv
 
-This will install the reference !OpenFlow switch and controller, Mininet and its dependencies, and Open vSwitch.
+This will install the reference OpenFlow switch and controller, Mininet and its dependencies, and Open vSwitch.

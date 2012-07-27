@@ -7,7 +7,7 @@ The following Mininet documentation is available on this wiki:
 * [MininetGettingStarted](MininetGettingStarted) How to download and run Mininet - in a Virtual Machine (VM) or natively
 * [MininetVMSetupNotes](MininetVMSetupNotes) How to configure a Mininet VM after you download it
 * [MininetWalkthrough](MininetWalkthrough) A tutorial introduction to using Mininet
-* [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) A tutorial introduction to !OpenFlow using Mininet
+* [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) A tutorial introduction to OpenFlow using Mininet
 * [MininetVMCreationNotes](MininetVMCreationNotes) How we created the Mininet VM image
 
 #### Documentation and FAQ

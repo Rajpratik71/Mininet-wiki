@@ -1,7 +1,7 @@
 Mininet Sample Workflow
 ================
 
-Mininet is designed you to quickly [create](#Creating_a_Network), [interact with](#Interacting_with_a_Network), [customize](#Customizing_a_Network) and [share](#Sharing_a_Network) a software defined network prototype, and provides a smooth path to [running on hardware](#Running_on_Hardware). This page illustrates the basic Mininet workflow, and many additional details are available in the Mininet [walkthrough](MininetWalkthrough), the !OpenFlow [tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), and Mininet [documentation](MininetDocumentation).
+Mininet is designed you to quickly [create](#Creating_a_Network), [interact with](#Interacting_with_a_Network), [customize](#Customizing_a_Network) and [share](#Sharing_a_Network) a software defined network prototype, and provides a smooth path to [running on hardware](#Running_on_Hardware). This page illustrates the basic Mininet workflow, and many additional details are available in the Mininet [walkthrough](MininetWalkthrough), the OpenFlow [tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), and Mininet [documentation](MininetDocumentation).
 
 
 ### Creating a Network
@@ -50,4 +50,4 @@ Mininet is distributed as a virtual machine (VM) image with all dependencies pre
 
 Once a design works on Mininet, it can be deployed on hardware for real-world use, testing and measurement.
 
-To successfully port to hardware on the first try, every Mininet-emulated component must act in the same way as its corresponding physical one. The virtual topology should match the physical one; virtual Ethernet pairs must be replaced by link-level Ethernet connectivity. Hosts emulated as processes should be replaced by hosts with their own OS image. In addition, each emulated !OpenFlow switch should be replaced by a physical one configured to point to the controller. However, the controller does not need to change. When Mininet is running, the controller ``sees" a physical network of switches, made possible by an interface with well-defined state semantics.
+To successfully port to hardware on the first try, every Mininet-emulated component must act in the same way as its corresponding physical one. The virtual topology should match the physical one; virtual Ethernet pairs must be replaced by link-level Ethernet connectivity. Hosts emulated as processes should be replaced by hosts with their own OS image. In addition, each emulated OpenFlow switch should be replaced by a physical one configured to point to the controller. However, the controller does not need to change. When Mininet is running, the controller ``sees" a physical network of switches, made possible by an interface with well-defined state semantics.

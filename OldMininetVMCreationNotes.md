@@ -146,7 +146,7 @@ Install System
 
 The main script is ~/mininet/util/install.sh, which does the following:
 * Install Kernel w/network namespace support
-* Install !OpenFlow
+* Install OpenFlow
 * Install Mininet dependencies
 * Install NOX
 * Install Open vSwitch
@@ -180,10 +180,10 @@ Run:
 sudo ~/mininet/util/install.sh -k</verbatim>
 
 
-Optional: !OpenFlow legacy regression test install
+Optional: OpenFlow legacy regression test install
 ---------------------------------------------------
 
-Setup env vars for !OpenFlow tests:
+Setup env vars for OpenFlow tests:
 <verbatim>
 cd ~/
 sudo openflow/regress/scripts/install_deps.pl

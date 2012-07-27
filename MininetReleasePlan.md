@@ -32,7 +32,7 @@ CS244 assignment version
 <div class="twikiTable">
 What                                                  Who
 ----------------------------------------------------- -------------- 
-Revise !OpenFlow tutorial
+Revise OpenFlow tutorial
 Get VM running with Virtualbox                        Yiannis
 Update NOX tutorial to nox-zaku and update install.sh Yiannis
 Update install.sh to install Beacon                   Yiannis
