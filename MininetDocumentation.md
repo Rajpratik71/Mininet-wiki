@@ -1,11 +1,5 @@
-<!-- %META:TOPICINFO{author="BobLantz" date="1340909405" format="1.1" reprev="1.7" version="1.7"}% -->
-<!-- %META:TOPICPARENT{name="Mininet"}% -->
-<!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView)
--->
-
-
-### Documentation
+Documentation
+------------------
 
 The following Mininet documentation is available on this wiki:
 
