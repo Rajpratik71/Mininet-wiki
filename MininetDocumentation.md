@@ -1,5 +1,5 @@
 Documentation
-------------------
+============
 
 The following Mininet documentation is available on this wiki:
 
