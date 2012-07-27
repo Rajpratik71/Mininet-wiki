@@ -1,4 +1,4 @@
-* [Welcome to Mininet](Home)
+* [Welcome to Mininet](Mininet)
 * [Overview](MininetLearnMore)
 * [Sample Workflow](MininetSampleWorkflow)
 * [Download](MininetGettingStarted)
