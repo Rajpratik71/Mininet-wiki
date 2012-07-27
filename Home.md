@@ -1,1 +1,1 @@
-[Mininet Wiki](Mininet/Mininet)
+[Mininet Wiki](wiki/Mininet/Mininet.md)
