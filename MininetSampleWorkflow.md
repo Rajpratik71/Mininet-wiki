@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074654" format="1.1" reprev="1.1" version="1.1"}% -->
 <!-- %META:TOPICPARENT{name="MininetViewTemplate"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -35,12 +35,12 @@ Mininet's API allows you to create custom networks with a few lines of Python. F
 
 <verbatim>
 from mininet.net import Mininet
-from mininet.topolib import [TreeTopo](TreeTopo.html)
-tree4 = [TreeTopo](TreeTopo.html)(depth=2,fanout=2)
+from mininet.topolib import [TreeTopo](TreeTopo)
+tree4 = [TreeTopo](TreeTopo)(depth=2,fanout=2)
 net = Mininet(topo=tree4)
 net.start()
 h1, h4  = net.hosts[0], net.hosts[3]
-print h1.cmd('ping -c1 %s' % h4.IP())
+print h1.('ping -c1 %s' % h4.IP())
 net.stop()</verbatim>
 
 creates a small network (4 hosts, 3 switches), and pings one host from another (in about 4 seconds with the current version.)

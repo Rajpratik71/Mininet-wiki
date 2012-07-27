@@ -11,4 +11,4 @@ MIninet 2.0 Release
 --------------------
 
 
--- [Main/BobLantz](../Main/BobLantz.html) - 28 Oct 2010
+-- [Main/BobLantz](../Main/BobLantz) - 28 Oct 2010

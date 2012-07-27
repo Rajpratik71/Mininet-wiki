@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074389" format="1.1" version="1.13"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 <!-- %TOC% -->
@@ -20,7 +20,7 @@
 * print average ping time from regression test
 
 
-### [Doc/Install](Doc/Install.html) Requests
+### [Doc/Install](Doc/Install) Requests
 
 * API documentation (comment re-uglification filter + doxypy + upload to wiki)
 
@@ -29,9 +29,9 @@
 
 * clean up params in Mininet.__init__
 * add ports() call to just call port() twice and return the tuple
-* reconsider the functions in Node; split some into a Port object, others to a [NamespaceHost](NamespaceHost.html), others to [ProcessNode](ProcessNode.html)?
-* check all uses of sendcmd; make as many of these into named functions as possible; should simplify porting to remote usage [Why does this help? -BL]
-* [NetCLI](NetCLI.html)? separate out the control from creation aspects? [I say just fix the CLI, and do proxies if desired. However, we will do a CLI for cluster edition. -BL]
+* reconsider the functions in Node; split some into a Port object, others to a [NamespaceHost](NamespaceHost), others to [ProcessNode](ProcessNode.md)?
+* check all uses of send; make as many of these into named functions as possible; should simplify porting to remote usage [Why does this help? -BL]
+* [NetCLI](NetCLI)? separate out the control from creation aspects? [I say just fix the CLI, and do proxies if desired. However, we will do a CLI for cluster edition. -BL]
 * dpid naming could really be redone - rename as an id, or nodeid, or something else. [I have my doubts about dpids -BL]
 
 

@@ -1,18 +1,18 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1340919014" format="1.1" reprev="1.4" version="1.4"}% -->
 <!-- %META:TOPICPARENT{name="MininetLearnMore"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
 Mininet Support
 ================
 
-Mininet is self-supported by the friendly Mininet community via the <code>mininet-discuss</code> mailing list and the [MininetFAQ](MininetFAQ.html). To sign up for the mailing list, go to https://mailman.stanford.edu/mailman/listinfo/mininet-discuss.
+Mininet is self-supported by the friendly Mininet community via the <code>mininet-discuss</code> mailing list and the [MininetFAQ](MininetFAQ). To sign up for the mailing list, go to https://mailman.stanford.edu/mailman/listinfo/mininet-discuss.
 
 We hope to preserve a high signal-to-noise ratio for the mailing list, so please try to submit only intelligent, well-researched questions or comments regarding Mininet itself (rather than !OpenFlow, NOX, networking in general, etc.) and high-quality answers. Your questions are much more likely to be answered (and you're likely to have much more success) if you're using our pre-built virtual machine (VM) image.
 
-We also encourage you to contribute helpful questions and answers to the [MininetFAQ](MininetFAQ.html).
+We also encourage you to contribute helpful questions and answers to the [MininetFAQ](MininetFAQ).
 
 Bug Reports and Feature Requests
 ---------------------------------
@@ -23,4 +23,4 @@ Mininet is an Open Source project, so we encourage everyone to work to improve i
 
 If you are working on a new feature, please **create an issue** for the feature you're working on so that we can all avoid duplicating effort. When your new feature (or fix) is ready, submit a pull request and/or attach a patch to your issue.
 
-Older bugs are listed at [MininetBugs](MininetBugs.html) and feature requests at [MininetFeatureRequests](MininetFeatureRequests.html).
+Older bugs are listed at [MininetBugs](MininetBugs) and feature requests at [MininetFeatureRequests](MininetFeatureRequests.md).

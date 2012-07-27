@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1338354134" format="1.1" reprev="1.30" version="1.30"}% -->
 <!-- %META:TOPICPARENT{name="MininetGettingStarted"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -23,7 +23,7 @@ VM Setup
 
 Download the VM at https://github.com/downloads/mininet/mininet/mininet-vm-ubuntu11.10-052312.vmware.zip
 
-The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's <code>.vmdk</code> (virtual machine disk) format, which can be used by most virtualization systems.
+The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's <code>.k</code> (virtual machine disk) format, which can be used by most virtualization systems.
 
 Download and install a virtualization program such as: [VMware Workstation](http://www.vmware.com/products/workstation/) for Windows or Linux, [VMware Fusion](http://www.vmware.com/products/fusion) for Mac, [VirtualBox](http://www.virtualbox.org/wiki/Downloads) ( **free!**, GPL) for any platform, or <code>qemu</code> ( **free!**, GPL) for Linux. If you already have VMware, we find that it runs Mininet somewhat faster than !VirtualBox. However, !VirtualBox is free to download and distribute, which is a definite advantage!
 
@@ -35,13 +35,13 @@ Add the VM and start it up, in the virtualization program of your choice:
 
 VMware may ask you to install VMware tools on the VM - if it asks, decline. Everything graphical in the tutorial is done via X forwarding through SSH (in fact, the VM doesn't have a desktop manager installed), so the VMware tools are unnecessary unless you wish to install an X11/Gnome/etc. environment in your VM.
 
-**VirtualBox**: Create a new VM using the <code>.vmdk</code> as the hard disk image, then start it up.
+**VirtualBox**: Create a new VM using the <code>.k</code> as the hard disk image, then start it up.
 
 **Qemu/KVM**:
 <verbatim>
-qemu-system-i386 -m 512 [MininetVM](MininetVM.html).vmdk -net nic,model=virtio -net user,net=192.168.101.0/24,hostfwd=tcp::8022-:22</verbatim> This will set up <code>ssh</code> forwarding from the VM to host port 8022.
+qemu-system-i386 -m 512 [MininetVM](MininetVM).vmdk -net nic,model=virtio -net user,net=192.168.101.0/24,hostfwd=tcp::8022-:22</verbatim> This will set up <code>ssh</code> forwarding from the VM to host port 8022.
 
-**Parallels**: Use Parallels Transporter to convert the <code>.vmdk</code> file to an <code>.hdd</code> image that Parallels can use, and then create a new VM using that <code>.hdd</code> image as its virtual drive.
+**Parallels**: Use Parallels Transporter to convert the <code>.k</code> file to an <code>.hdd</code> image that Parallels can use, and then create a new VM using that <code>.hdd</code> image as its virtual drive.
 
 
 ### Login to VM
@@ -110,4 +110,4 @@ Now you should be able to log in without entering a password.
 Mininet Walkthrough
 --------------------
 
-(Highly recommended) Head over to the [MininetWalkthrough](MininetWalkthrough.html), which shows common commands. It'll be really useful, trust us.
+(Highly recommended) Head over to the [MininetWalkthrough](MininetWalkthrough), which shows common commands. It'll be really useful, trust us.

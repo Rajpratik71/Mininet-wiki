@@ -1,10 +1,11 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074030" format="1.1" version="1.30"}% -->
 <!-- %META:TOPICPARENT{name="MininetVMCreationNotes"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
-- - -++Mininet Walkthrough
+Mininet Walkthrough
+-------------------
 
 This walkthrough demonstrates most Mininet commands, plus its typical usage in concert with the Wireshark dissector.
 
@@ -201,14 +202,14 @@ Adding the 'topos' dict with a key/value pair to generate our newly defined topo
 
 from mininet.topo import Topo, Node
 
-class [MyTopo](MyTopo.html)( Topo ):
+class [MyTopo](MyTopo)( Topo ):
     "Simple topology example."
 
     def *__init__*( self, enable_all = True ):
         "Create custom topo."
 
         # Add default members to class.
-        super( [MyTopo](MyTopo.html), self ).__init__()
+        super( [MyTopo](MyTopo), self ).__init__()
 
         # Set Node IDs for hosts and switches
         leftHost = 1
@@ -230,7 +231,7 @@ class [MyTopo](MyTopo.html)( Topo ):
         # Consider all switches and hosts 'on'
         self.enable_all()
 
-topos = { 'mytopo': ( lambda: [MyTopo](MyTopo.html)() ) } 
+topos = { 'mytopo': ( lambda: [MyTopo](MyTopo)() ) } 
 %ENDCODE%
 
 When a custom mininet file is provided, it can add new topologies, switch types, and tests to the command-line. For example:
@@ -415,7 +416,7 @@ You can also evaluate methods of variables:
 	py h2.IP()
 
 
-### Link [Up/Down](Up/Down.html)
+### Link [Up/Down](Up/Down)
 
 For fault tolerance testing, it can be helpful to bring links up and down.
 
@@ -423,7 +424,7 @@ To disable both halves of a virtual ethernet pair:
 
 	link s1 h2 down
 
-You should see an [OpenFlow](OpenFlow.html) Port Status Change notification get generated. To bring the link back up:
+You should see an [OpenFlow](OpenFlow) Port Status Change notification get generated. To bring the link back up:
 
 	link s1 h2 up
 

@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1339623897" format="1.1" reprev="1.11" version="1.11"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -12,7 +12,7 @@ Since Mininet is an Open Source project, you are encouraged (and empowered) to f
 
 If you find a bug in Mininet, please submit an issue via the
 
-### [Mininet Issues page on [GitHub](GitHub.html)](https://github.com/mininet/mininet/issues).
+### [Mininet Issues page on [GitHub](GitHub)](https://github.com/mininet/mininet/issues).
 
 Please feel free to attach a patch to the issue if you have a fix for it.
 

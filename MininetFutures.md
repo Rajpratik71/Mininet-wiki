@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074404" format="1.1" version="1.7"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -42,4 +42,4 @@ It should be easy to add a patch cable program that just forwards packets betwee
 
 The API already supports running arbitrary programs (e.g. wire simulators) in a node, but a high level API supporting link simulators (e.g. automatically instantiating and connecting them) would be more convenient. A simple wire simulator (e.g. supporting delay, drop, and some model of packet loss) could be provided. 
 
--- [Main/BobLantz](../Main/BobLantz.html) - 09 Mar 2010
+-- [Main/BobLantz](../Main/BobLantz) - 09 Mar 2010

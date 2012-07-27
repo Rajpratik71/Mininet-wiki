@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305150381" format="1.1" version="1.4"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 %TMPL:INCLUDE{"view.pattern"}%

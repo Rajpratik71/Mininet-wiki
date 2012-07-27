@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1337839991" format="1.1" reprev="1.1" version="1.1"}% -->
 <!-- %META:TOPICPARENT{name="MininetVMCreationNotes"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -165,13 +165,13 @@ Clean out unneeded kernel stuff:
 	~/mininet/util/install.sh -c
 
 Additional setup:
-* (Optional) follow instructions to set up [OpenFlow](OpenFlow.html) regression tests
-Jump to the [MininetVMSetupNotes](MininetVMSetupNotes.html).
+* (Optional) follow instructions to set up [OpenFlow](OpenFlow) regression tests
+Jump to the [MininetVMSetupNotes](MininetVMSetupNotes).
 
 
 ### Piece-by-Piece
 
-Each step in the combined install can be done piece-by-piece. See the all() function at the bottom of mininet/util/install.sh, and run each command with the corresponding cmd-line flag.
+Each step in the combined install can be done piece-by-piece. See the all() function at the bottom of mininet/util/install.sh, and run each command with the corresponding -line flag.
 
 For example, to install the kernel w/network namespace support:
 
@@ -204,7 +204,7 @@ of_user_veth_test.pl</verbatim>
 Customize and Verify Mininet
 =============================
 
-Go to [MininetVMSetupNotes](MininetVMSetupNotes.html) to customize the VM, install and verify Mininet, and then do the [MininetWalkthrough](MininetWalkthrough.html). These instructions should have ensured all required and optional dependencies are installed.
+Go to [MininetVMSetupNotes](MininetVMSetupNotes) to customize the VM, install and verify Mininet, and then do the [MininetWalkthrough](MininetWalkthrough.md). These instructions should have ensured all required and optional dependencies are installed.
 
 
 Post-VM-Creation cleanup
@@ -259,4 +259,4 @@ Disk Usage Notes
 Commands to check disk space:
 <verbatim>
 df -a
-sudo du -B1000 --max-depth=1 /</verbatim> -- [Main/BobLantz](../Main/BobLantz.html) - 24 May 2012
+sudo du -B1000 --max-depth=1 /</verbatim> -- [Main/BobLantz](../Main/BobLantz) - 24 May 2012

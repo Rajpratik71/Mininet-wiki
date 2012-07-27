@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1340918872" format="1.1" reprev="1.22" version="1.22"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -19,9 +19,9 @@ Follow these steps for a VM install:
 1. Download the Mininet VM image from https://github.com/downloads/mininet/mininet/mininet-vm-ubuntu11.10-052312.vmware.zip . This will take some time. It's ~800MB-1GB, compressed.
 1. Download and install a virtualization system. We recommend [VirtualBox](http://www.virtualbox.org/wiki/Downloads) (free, GPL) because it is **free** and works on OS X, Windows, and Linux (though it's slightly slower than VMware in our tests.) You can also use [Qemu](http://qemu.org) for any platform, [VMware Workstation](http://www.vmware.com/products/workstation/) for Windows or Linux, or [VMware Fusion](http://www.vmware.com/products/fusion) for Mac, [KVM](http://www.linux-kvm.org) (free, GPL) for Linux.
 1. Sign up for the <code>mininet-discuss</code> mailing list at https://mailman.stanford.edu/mailman/listinfo/mininet-discuss. This is the source for Mininet **support** and discussion with the friendly Mininet community. ;-)
-1. Run through the [MininetVMSetupNotes](MininetVMSetupNotes.html) to log in to the VM and install Mininet code on it.
-1. Follow the [MininetWalkthrough](MininetWalkthrough.html) to get familiar with Mininet commands and typical usage.
-Once you've completed the [MininetWalkthrough](MininetWalkthrough.html), you should have a clear idea for what Mininet is and what you might use it for. If you are interested in !OpenFlow and Software-Defined Networking, you will want to complete the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) as well. Good luck, and have fun!
+1. Run through the [MininetVMSetupNotes](MininetVMSetupNotes) to log in to the VM and install Mininet code on it.
+1. Follow the [MininetWalkthrough](MininetWalkthrough) to get familiar with Mininet commands and typical usage.
+Once you've completed the [MininetWalkthrough](MininetWalkthrough), you should have a clear idea for what Mininet is and what you might use it for. If you are interested in !OpenFlow and Software-Defined Networking, you will want to complete the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) as well. Good luck, and have fun!
 
 
 Option 2: Native Mininet Installation on Ubuntu 11.10

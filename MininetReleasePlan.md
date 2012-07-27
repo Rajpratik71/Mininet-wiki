@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074488" format="1.1" version="1.2"}% -->
 <!-- %META:TOPICPARENT{name="MininetDocumentation"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -41,4 +41,4 @@ Assignment 1 test/grading script                      Yiannis
 Upgrade to Ubuntu Maverick                            Bob or Brandon
 
 </div>
--- [Main/BobLantz](../Main/BobLantz.html) - 02 Dec 2010
+-- [Main/BobLantz](../Main/BobLantz) - 02 Dec 2010

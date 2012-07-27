@@ -1,7 +1,7 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074705" format="1.1" reprev="1.3" version="1.3"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -39,7 +39,7 @@ Compared to full system virtualization based approaches, such as !OpenFlowVMS or
 * **boots faster**: seconds instead of minutes
 * **scales larger**: hundreds of hosts and switches vs. single digits
 * **provides more bandwidth**: typically 2Gbps total bandwidth on modest hardware
-* **installs easily**: a prepackaged VM is available that runs on VMware or !VirtualBox for [Mac/Win/Linux](Mac/Win/Linux.html) with !OpenFlow v1.0 tools already installed.
+* **installs easily**: a prepackaged VM is available that runs on VMware or !VirtualBox for [Mac/Win/Linux](Mac/Win/Linux) with !OpenFlow v1.0 tools already installed.
 The downside is that Mininet cannot run non-Linux-compatible !OpenFlow switches or applications; this has not been a major issue in practice.
 
 

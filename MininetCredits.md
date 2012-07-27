@@ -1,11 +1,11 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305151271" format="1.1" reprev="1.2" version="1.2"}% -->
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
-### [Credits/History](Credits/History.html)
+### [Credits/History](Credits/History)
 
 Mininet is under active development, and we hope it will become a highly usable and flexible virtual network platform for research, experimentation, debugging, learning, and many other applications. Most importantly, it's an easy and fun way to experiment with !OpenFlow!
 

@@ -2,7 +2,7 @@
 <!-- %META:TOPICPARENT{name="MininetDocumentation"}% -->
 <!-- Use
  our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 
@@ -23,7 +23,7 @@ You may also wish to generate HTML documentation using <code>doxypy</code>:
 sudo apt-get install doxypy
 cd ~/mininet
 make doc
-python -m [SimpleHTTPServer](SimpleHTTPServer.html) &</verbatim>
+python -m [SimpleHTTPServer](SimpleHTTPServer) &</verbatim>
 
 At this point, you can point a web browser to port 8000 of the host that Mininet is running on and browse the documentation for each of Mininet's classes.
 

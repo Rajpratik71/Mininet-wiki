@@ -2,7 +2,7 @@
 <!-- %META:TOPICPARENT{name="Mininet"}% -->
 <!-- Use
  our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView.html)
+* Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
 
 Mininet FAQ
@@ -15,7 +15,7 @@ Please add helpful, Frequently Asked Questions and high-quality answers below.
 
 ### How can I **get started** with Mininet?
 
-The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [MininetGettingStarted](MininetGettingStarted.html) page, and then go through the [MininetWalkthrough](MininetWalkthrough.html) and the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
+The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [MininetGettingStarted](MininetGettingStarted) page, and then go through the [MininetWalkthrough](MininetWalkthrough.md) and the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
 
 
 ### How do I figure out the **command-line options** for the <code>mn</code> command?
@@ -52,7 +52,7 @@ mininet> py help(h2)</verbatim>
 
 In each case, pressing =q= should quit the pager.
 
-Also see [MininetAPIDocumentation](MininetAPIDocumentation.html) for information on how to generate Mininet documentation in html format.
+Also see [MininetAPIDocumentation](MininetAPIDocumentation) for information on how to generate Mininet documentation in.md format.
 
 
 ### Which **versions of !OpenFlow** does Mininet support?
