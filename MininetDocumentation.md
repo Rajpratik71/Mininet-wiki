@@ -1,8 +1,7 @@
-Documentation
+Mininet Documentation
 ============
 
 The following Mininet documentation is available on this wiki:
-
 
 #### Getting Started with Mininet
 * [MininetGettingStarted](MininetGettingStarted) How to download and run Mininet - in a Virtual Machine (VM) or natively
