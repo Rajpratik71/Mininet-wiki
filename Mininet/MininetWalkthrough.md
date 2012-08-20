@@ -23,8 +23,8 @@ Everyday Usage
 ### Display Options
 
 Display startup options:
-<verbatim>
-sudo mn -h</verbatim>
+
+    sudo mn -h
 
 This walkthrough will cover typical usage of the majority of options listed.
 
@@ -32,8 +32,8 @@ This walkthrough will cover typical usage of the majority of options listed.
 ### Start Wireshark
 
 To view control traffic using the OpenFlow Wireshark dissector, first open wireshark in the background:
-<verbatim>
-sudo wireshark &</verbatim>
+
+    sudo wireshark &
 
 In the Wireshark filter box, enter this filter, then click 'Apply':
 <verbatim>
@@ -47,10 +47,10 @@ For now, there should be no OpenFlow packets displayed in the main window.
 ### Interact with Hosts and Switches
 
 Start a minimal topology and enter the CLI:
-<verbatim>
-sudo mn</verbatim>
 
-The default topology is minimal, which includes one OpenFlow kernel switch connected to two hosts, plus the !OpenFlow reference controller. Other ones are available; see the --topo section in the output of 'mn -h'.
+    sudo mn
+
+The default topology is minimal, which includes one OpenFlow kernel switch connected to two hosts, plus the OpenFlow reference controller. Other ones are available; see the `--topo` section in the output of `mn -h`.
 
 All four entities (2 host processes, 1 switch process, 1 reference controller) are now running in the VM. The controller can be outside the VM, and instructions for that are at the bottom.
 
@@ -59,20 +59,16 @@ If no specific test is passed as a parameter, the Mininet CLI comes up.
 In the Wireshark window, you should see the kernel switch connect to the reference controller.
 
 Display CLI commands:
-<verbatim>
-help</verbatim>
+    help
 
 Display nodes:
-<verbatim>
-nodes</verbatim>
+    nodes
 
 Display links:
-<verbatim>
-net</verbatim>
+    net
 
 Dump information about all nodes:
-<verbatim>
-dump</verbatim>
+    dump
 
 You should see the switch and two hosts listed.
 
@@ -83,22 +79,22 @@ h2 ifconfig -a</verbatim>
 You should see the host's h2-eth0 and loopback (lo) interfaces. Note that this interface (h2-eth0) is not seen by the primary Linux system when ifconfig is run, because it is specific to the network namespace of the host process. Also note that because this interface is half of a virtual ethernet pair, the host cannot ping itself from the interface.
 
 In contrast, the switch by default runs in the root network namespace, so running a command on the "switch" is the same as running it from a regular terminal:
-<verbatim>
-s1 ifconfig -a</verbatim>
+
+    s1 ifconfig -a
 
 This will show the switch interfaces, plus the VM's connection out (eth0).
 
-For other examples highlighting that the hosts have isolated network state, run 'arp' and 'route' on both s1 and h2.
+For other examples highlighting that the hosts have isolated network state, run `arp` and `route` on both `s1` and `h2`.
 
-It would be possible to place every host, switch and controller in its own isolated network namespace, but there's no real advantage to doing so, unless you want to replicate a complex multiple-controller network. Mininet does support this; see the --innamespace option.
+It would be possible to place every host, switch and controller in its own isolated network namespace, but there's no real advantage to doing so, unless you want to replicate a complex multiple-controller network. Mininet does support this; see the `--innamespace` option.
 
 Note that _only_ the network is virtualized; each host process sees the same set of processes and directories. For example, print the process list from a host process:
-<verbatim>
-h2 ps -a</verbatim>
+
+    h2 ps -a
 
 This should be the exact same as that seen by the root network namespace:
-<verbatim>
-s1 ps -a</verbatim>
+
+    s1 ps -a
 
 It would be possible to use separate process spaces with Linux containers, but currently Mininet doesn't do that. Having everything run in the "root" process namespace is convenient for debugging, because it allows you to see all of the processes from the console using ps, kill, etc.
 
@@ -106,8 +102,8 @@ It would be possible to use separate process spaces with Linux containers, but c
 ### Verify Ping
 
 Now, verify that you can ping from host 0 to host 1:
-<verbatim>
-h2 ping -c 1 h3</verbatim>
+
+    h2 ping -c 1 h3
 
 If a string appears later in the command with a node name, that node name is replaced by its IP address; this happened for h3.
 
@@ -116,25 +112,23 @@ You should see OpenFlow control traffic. The first host ARPs for the MAC address
 Now the first host knows the IP address of the second, and can send its ping via an ICMP Echo Request. This request, along with its corresponding reply from the second host, both go the controller and result in a flow entry pushed down (along with the actual packets getting sent out).
 
 Repeat the last ping:
-<verbatim>
-h2 ping -c 1 h3</verbatim>
+
+    h2 ping -c 1 h3
 
 You should see a much lower ping time for the second try (&lt;100us). A flow entry covering ICMP ping traffic was previously installed in the switch, so no control traffic was generated, and the packets immediately pass through the switch.
 
 An easier way to run this test is to use the Mininet CLI built-in pingall command, which does an all-pairs ping:
-<verbatim>
-pingall</verbatim>
+    pingall
 
 Exit the CLI:
-<verbatim>
-exit</verbatim>
+    exit
 
 
 ### Cleanup
 
 If Mininet crashes for some reason, clean it up:
-<verbatim>
-sudo mn -c</verbatim>
+
+    sudo mn -c
 
 
 Program Startup Options
@@ -146,29 +140,25 @@ Program Startup Options
 You don't need to drop into the CLI; Mininet can also be used to run self-contained regression tests.
 
 Run a regression test:
-<verbatim>
-sudo mn --test pingpair</verbatim>
+    sudo mn --test pingpair
 
 This command created a minimal topology, started up the OpenFlow reference controller, ran an all-pairs-ping test, and tore down both the topology and the controller.
 
 Another useful test is iperf (give it about 10 seconds to complete):
-<verbatim>
-sudo mn --test iperf</verbatim>
+    sudo mn --test iperf
 
 This command created the same Mininet, ran an iperf server on one host, ran an iperf client on the second host, and parsed the bandwidth achieved.
 
 
 ### Topology Variations
 
-The default topology is a single switch connected to two hosts. You could change this to a different topo with --topo, and pass parameters for that topology's creation. For example, to verify all-pairs ping connectivity with one switch and three hosts:
+The default topology is a single switch connected to two hosts. You could change this to a different topo with `--topo`, and pass parameters for that topology's creation. For example, to verify all-pairs ping connectivity with one switch and three hosts:
 
 Run a regression test:
-<verbatim>
-sudo mn --test pingall --topo single,3</verbatim>
+    sudo mn --test pingall --topo single,3
 
 Another example, with a linear topology (where each switch has one host, and all switches connect in a line):
-<verbatim>
-sudo mn --test pingall --topo linear,4</verbatim>
+    sudo mn --test pingall --topo linear,4
 
 
 ### Adjustable Verbosity
@@ -232,11 +222,9 @@ class [MyTopo](MyTopo)( Topo ):
         self.enable_all()
 
 topos = { 'mytopo': ( lambda: [MyTopo](MyTopo)() ) } 
-%ENDCODE%
 
 When a custom mininet file is provided, it can add new topologies, switch types, and tests to the command-line. For example:
-<verbatim>
-sudo mn --custom ~/mininet/custom/topo-2sw-2host.py --topo mytopo --test pingall</verbatim>
+    sudo mn --custom ~/mininet/custom/topo-2sw-2host.py --topo mytopo --test pingall</verbatim>
 
 
 ### ID = MAC
@@ -246,32 +234,31 @@ By default, hosts and switches start with randomly assigned MAC addresses. This 
 The --mac option is super-useful, and sets the switch MAC and host MAC and IP addrs to small, unique, easy-to-read IDs.
 
 Before:
-<verbatim>
-mininet@mininet:~/mininet$ sudo mn
-...
-mininet> h2 ifconfig
-h2-eth0  Link encap:Ethernet  HWaddr f6:9d:5a:7f:41:42  
-          inet addr:10.0.0.2  Bcast:10.255.255.255  Mask:255.0.0.0
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:6 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:6 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
-          RX bytes:392 (392.0 B)  TX bytes:392 (392.0 B)
-mininet> exit</verbatim>
+    mininet@mininet:~/mininet$ sudo mn
+    ...
+    mininet> h2 ifconfig
+    h2-eth0  Link encap:Ethernet  HWaddr f6:9d:5a:7f:41:42  
+              inet addr:10.0.0.2  Bcast:10.255.255.255  Mask:255.0.0.0
+              UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+              RX packets:6 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:6 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:1000 
+              RX bytes:392 (392.0 B)  TX bytes:392 (392.0 B)
+    mininet> exit</verbatim>
 
 After:
-<verbatim>
-mininet@mininet:~/mininet$ sudo mn --mac
-...
-mininet> h2 ifconfig
-h2-eth0  Link encap:Ethernet  HWaddr 00:00:00:00:00:02  
-          inet addr:10.0.0.2  Bcast:10.255.255.255  Mask:255.0.0.0
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
-          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
-mininet> exit</verbatim>
+
+    mininet@mininet:~/mininet$ sudo mn --mac
+    ...
+    mininet> h2 ifconfig
+    h2-eth0  Link encap:Ethernet  HWaddr 00:00:00:00:00:02  
+              inet addr:10.0.0.2  Bcast:10.255.255.255  Mask:255.0.0.0
+              UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+              RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:1000 
+              RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+    mininet> exit</verbatim>
 
 
 ### XTerm Display
@@ -279,8 +266,7 @@ mininet> exit</verbatim>
 For more complex debugging, you can start Mininet so that it spawns one or more xterms.
 
 To start an xterm for every host and switch, pass the -x option:
-<verbatim>
-sudo mn -x</verbatim>
+    sudo mn -x
 
 After a second, the xterms will pop up, with automatically set window names.
 
@@ -293,26 +279,22 @@ Xterms are also useful for running interactive commands that you may need to can
 For example:
 
 In the xterm labeled "switch: s1 (root)", run:
-<verbatim>
-dpctl dump-flows tcp:127.0.0.1:6634</verbatim>
+    dpctl dump-flows tcp:127.0.0.1:6634
 
 Nothing will print out; the switch has no flows added.  To use dpctl with other switches, start up mininet in verbose mode and look at the passive listening ports for the switches when they're created.
 
 Now, in the xterm labeled "host: h2", run:
-<verbatim>
-ping 10.0.0.3</verbatim>
+    ping 10.0.0.3</verbatim>
 
-Go back to s1 and dump the flows:
-<verbatim>
-dpctl dump-flows tcp:127.0.0.1:6634</verbatim>
+Go back to `s1` and dump the flows:
+    dpctl dump-flows tcp:127.0.0.1:6634
 
 You should see multiple flow entries now.
 
 You can tell whether an xterm is in the root namespace by checking ifconfig; if all interfaces are shown (including eth0), it's in the root namespace. Additionally, its title should contain "(root)".
 
 Close the setup, from the Mininet CLI:
-<verbatim>
-exit</verbatim>
+    exit
 
 The xterms should automatically close.
 
@@ -320,8 +302,7 @@ The xterms should automatically close.
 ### Other Switch Types
 
 Other switch types can be used. For example, to run the user-space switch:
-<verbatim>
-sudo mn --switch user --test iperf</verbatim>
+    sudo mn --switch user --test iperf</verbatim>
 
 Note the much lower TCP iperf-reported bandwidth compared to that seen earlier with the kernel switch.
 
@@ -330,8 +311,7 @@ If you do the ping test shown earlier, you should notice a much higher delay pin
 On the other hand, the user-space switch can be a great starting point for implementing new functionality, especially where software performance is not critical (such as when the user-space switch is controlling a hardware switch).
 
 Another example switch type is Open vSwitch (OVS), which comes preinstalled on the Mininet VM. The iperf-reported TCP bandwidth should be similar to the OpenFlow kernel module, and possibly faster:
-<verbatim>
-sudo mn --switch ovsk --test iperf</verbatim>
+    sudo mn --switch ovsk --test iperf</verbatim>
 
 
 ### NOX
@@ -339,18 +319,16 @@ sudo mn --switch ovsk --test iperf</verbatim>
 To run a regression test with NOX running pyswitch, the NOX_CORE_DIR env var must be set to the directory containing the NOX executable. This is set on the mininet VM by default.
 
 First verify that NOX runs:
-<verbatim>
-cd $NOX_CORE_DIR
-./nox_core -v -i ptcp:</verbatim>
+    cd $NOX_CORE_DIR
+    ./nox_core -v -i ptcp:
 
 Ctrl-C to kill NOX, then run a test with NOX pyswitch:
-<verbatim>
-cd
-sudo -E mn --controller nox_pysw --test pingpair</verbatim>
+    cd
+    sudo -E mn --controller nox_pysw --test pingpair
 
 There's a hesitation of a few seconds while NOX loads and the switch connects, but then it should complete the ping.
 
-Note that this time, mn was called via sudo -E, to keep the NOX_CORE_DIR environment variable.  If you're running nox remotely, using --controller remote, then the -E isn't necessary.  Alternately, you can change the first line of /etc/sudoers, via 'sudo visudo', to change the env_reset line to:
+Note that this time, `mn` was called via `sudo -E`, to keep the `NOX_CORE_DIR` environment variable.  If you're running nox remotely, using `--controller remote`, then the `-E` isn't necessary.  Alternately, you can change the first line of `/etc/sudoers`, via `sudo visudo`, to change the `env_reset` line to:
 
 	Defaults !env_reset
 
