@@ -59,12 +59,15 @@ If no specific test is passed as a parameter, the Mininet CLI comes up.
 In the Wireshark window, you should see the kernel switch connect to the reference controller.
 
 Display CLI commands:
+
     help
 
 Display nodes:
+
     nodes
 
 Display links:
+
     net
 
 Dump information about all nodes:
@@ -73,10 +76,10 @@ Dump information about all nodes:
 You should see the switch and two hosts listed.
 
 If the first string typed into the Mininet CLI is a host, switch or controller name, the command is executed on that node. Run a command on a host process:
-<verbatim>
-h2 ifconfig -a</verbatim>
 
-You should see the host's h2-eth0 and loopback (lo) interfaces. Note that this interface (h2-eth0) is not seen by the primary Linux system when ifconfig is run, because it is specific to the network namespace of the host process. Also note that because this interface is half of a virtual ethernet pair, the host cannot ping itself from the interface.
+    h2 ifconfig -a
+
+You should see the host's `h2-eth0` and loopback (`lo`) interfaces. Note that this interface (`h2-eth0`) is not seen by the primary Linux system when `ifconfig` is run, because it is specific to the network namespace of the host process. Also note that because this interface is half of a virtual ethernet pair, the host cannot ping itself from the interface.
 
 In contrast, the switch by default runs in the root network namespace, so running a command on the "switch" is the same as running it from a regular terminal:
 
@@ -118,6 +121,7 @@ Repeat the last ping:
 You should see a much lower ping time for the second try (&lt;100us). A flow entry covering ICMP ping traffic was previously installed in the switch, so no control traffic was generated, and the packets immediately pass through the switch.
 
 An easier way to run this test is to use the Mininet CLI built-in pingall command, which does an all-pairs ping:
+
     pingall
 
 Exit the CLI:
@@ -140,6 +144,7 @@ Program Startup Options
 You don't need to drop into the CLI; Mininet can also be used to run self-contained regression tests.
 
 Run a regression test:
+
     sudo mn --test pingpair
 
 This command created a minimal topology, started up the OpenFlow reference controller, ran an all-pairs-ping test, and tore down both the topology and the controller.
@@ -155,9 +160,11 @@ This command created the same Mininet, ran an iperf server on one host, ran an i
 The default topology is a single switch connected to two hosts. You could change this to a different topo with `--topo`, and pass parameters for that topology's creation. For example, to verify all-pairs ping connectivity with one switch and three hosts:
 
 Run a regression test:
+
     sudo mn --test pingall --topo single,3
 
 Another example, with a linear topology (where each switch has one host, and all switches connect in a line):
+
     sudo mn --test pingall --topo linear,4
 
 
@@ -224,6 +231,7 @@ class [MyTopo](MyTopo)( Topo ):
 topos = { 'mytopo': ( lambda: [MyTopo](MyTopo)() ) } 
 
 When a custom mininet file is provided, it can add new topologies, switch types, and tests to the command-line. For example:
+
     sudo mn --custom ~/mininet/custom/topo-2sw-2host.py --topo mytopo --test pingall</verbatim>
 
 
@@ -234,6 +242,7 @@ By default, hosts and switches start with randomly assigned MAC addresses. This 
 The --mac option is super-useful, and sets the switch MAC and host MAC and IP addrs to small, unique, easy-to-read IDs.
 
 Before:
+
     mininet@mininet:~/mininet$ sudo mn
     ...
     mininet> h2 ifconfig
@@ -266,6 +275,7 @@ After:
 For more complex debugging, you can start Mininet so that it spawns one or more xterms.
 
 To start an xterm for every host and switch, pass the -x option:
+
     sudo mn -x
 
 After a second, the xterms will pop up, with automatically set window names.
@@ -279,11 +289,13 @@ Xterms are also useful for running interactive commands that you may need to can
 For example:
 
 In the xterm labeled "switch: s1 (root)", run:
+
     dpctl dump-flows tcp:127.0.0.1:6634
 
 Nothing will print out; the switch has no flows added.  To use dpctl with other switches, start up mininet in verbose mode and look at the passive listening ports for the switches when they're created.
 
 Now, in the xterm labeled "host: h2", run:
+
     ping 10.0.0.3</verbatim>
 
 Go back to `s1` and dump the flows:
@@ -294,6 +306,7 @@ You should see multiple flow entries now.
 You can tell whether an xterm is in the root namespace by checking ifconfig; if all interfaces are shown (including eth0), it's in the root namespace. Additionally, its title should contain "(root)".
 
 Close the setup, from the Mininet CLI:
+
     exit
 
 The xterms should automatically close.
@@ -302,6 +315,7 @@ The xterms should automatically close.
 ### Other Switch Types
 
 Other switch types can be used. For example, to run the user-space switch:
+
     sudo mn --switch user --test iperf</verbatim>
 
 Note the much lower TCP iperf-reported bandwidth compared to that seen earlier with the kernel switch.
@@ -323,6 +337,7 @@ First verify that NOX runs:
     ./nox_core -v -i ptcp:
 
 Ctrl-C to kill NOX, then run a test with NOX pyswitch:
+
     cd
     sudo -E mn --controller nox_pysw --test pingpair
 
