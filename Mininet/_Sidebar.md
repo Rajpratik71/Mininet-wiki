@@ -3,6 +3,6 @@
 * [Sample Workflow](MininetSampleWorkflow)
 * [Download](MininetGettingStarted)
 * [Documentation](MininetDocumentation)
-* [FAQ][MininetFAQ]
+* [FAQ](MininetFAQ)
 * [Support](MininetSupport)
 * [Credits](MininetCredits)
