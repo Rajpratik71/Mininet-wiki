@@ -451,7 +451,6 @@ Optional
 
 These are not required, but you might find them useful to skim.
 
-
 ### Remote Controller
 
 Note: this step is not part of the default walkthrough; only attempt if you have a controller running outside of the VM, such as on the VM host, or a different physical PC.
@@ -460,6 +459,5 @@ When you start a Mininet, each switch can be connected to a remote controller - 
 
 This setup may be convenient if you already have a custom version of NOX w/dev tools (such as Eclipse) installed on the local machine, or you want to test a controller running on a different physical machine (maybe even in the cloud).
 
-If you want to try this, fill in the host IP and/or listening port.
-<verbatim>
-sudo mn --controller=remote --ip=[controller IP] --port=[controller listening port]</verbatim>
+If you want to try this, fill in the host IP and/or listening port:
+    sudo mn --controller=remote --ip=[controller IP] --port=[controller listening port]
