@@ -18,14 +18,14 @@ Please add helpful, Frequently Asked Questions and high-quality answers below.
 The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [MininetGettingStarted](MininetGettingStarted) page, and then go through the [MininetWalkthrough](MininetWalkthrough.md) and the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
 
 
-### How do I figure out the **command-line options** for the <code>mn</code> command?
+### How do I figure out the **command-line options** for the `mn` command?
 
-<verbatim>mn --help</verbatim>
+    mn --help
 
 
 ### I get an error every time I try to **edit a wiki page** - help!
 
-Unfortunately you can't currently edit the wiki in <code>https</code> mode. Change the URL of the page from <code>https</code> to <code>http</code> and try again.
+Unfortunately you can't currently edit the wiki in `https` mode. Change the URL of the page from `https` to `http` and try again.
 
 
 ### How can I do a native install of Mininet?
@@ -41,14 +41,12 @@ We provide a few examples of using the Python API in the <code>mininet/examples<
 
 We also provide Python !DocStrings for every Mininet class and method, and you can view them using from within Python
 
-<verbatim>
->>> import mininet.node
->>> help(mininet.node.Node)</verbatim>
+    >>> import mininet.node
+    >>> help(mininet.node.Node)</verbatim>
 
 or by calling Python from within the Mininet CLI:
 
-<verbatim>
-mininet> py help(h2)</verbatim>
+    mininet> py help(h2)
 
 In each case, pressing =q= should quit the pager.
 
