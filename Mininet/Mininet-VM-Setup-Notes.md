@@ -1,5 +1,5 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1338354134" format="1.1" reprev="1.30" version="1.30"}% -->
-<!-- %META:TOPICPARENT{name="MininetGettingStarted"}% -->
+<!-- %META:TOPICPARENT{name="Mininet-Getting-Started"}% -->
 <!-- Use our custom page layout:
 * Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
@@ -110,4 +110,4 @@ Now you should be able to log in without entering a password.
 Mininet Walkthrough
 --------------------
 
-(Highly recommended) Head over to the [MininetWalkthrough](MininetWalkthrough), which shows common commands. It'll be really useful, trust us.
+(Highly recommended) Head over to the [Mininet-Walkthrough](Mininet-Walkthrough), which shows common commands. It'll be really useful, trust us.
