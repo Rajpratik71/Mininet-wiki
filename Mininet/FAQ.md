@@ -26,7 +26,7 @@ Instructions for native installation can be found [here](Download) as well.
 
 ### How do I **use Mininet's Python API**?
 
-We provide a few examples of using the Python API in the <code>mininet/examples</code> directory.
+We provide a few examples of using the Python API in the `mininet/examples` directory.
 
 We also provide Python !DocStrings for every Mininet class and method, and you can view them using from within Python
 

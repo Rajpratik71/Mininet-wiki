@@ -8,7 +8,7 @@ Mininet is designed you to quickly [create](#Creating_a_Network), [interact with
 
 You can create a network with a single command. For example,
 
-   mn --switch ovsk --controller nox --topo tree,depth</code>2,fanout=8 --test pingAll
+   mn --switch ovsk --controller nox --topo tree,depth`2,fanout=8 --test pingAll
 
 starts a network with a tree topology of depth 2 and fanout 8 (i.e. 9 switches connecting 64 hosts), using Open vSwitch switches under the control of NOX, and runs the pingAll test to check connectivity between every pair of nodes.
 

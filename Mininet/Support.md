@@ -8,7 +8,7 @@
 Mininet Support
 ================
 
-Mininet is self-supported by the friendly Mininet community via the <code>mininet-discuss</code> mailing list and the [FAQ](FAQ). To sign up for the mailing list, go to https://mailman.stanford.edu/mailman/listinfo/mininet-discuss.
+Mininet is self-supported by the friendly Mininet community via the `mininet-discuss` mailing list and the [FAQ](FAQ). To sign up for the mailing list, go to https://mailman.stanford.edu/mailman/listinfo/mininet-discuss.
 
 We hope to preserve a high signal-to-noise ratio for the mailing list, so please try to submit only intelligent, well-researched questions or comments regarding Mininet itself (rather than OpenFlow, NOX, networking in general, etc.) and high-quality answers. Your questions are much more likely to be answered (and you're likely to have much more success) if you're using our pre-built virtual machine (VM) image.
 

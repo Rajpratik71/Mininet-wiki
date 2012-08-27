@@ -18,7 +18,7 @@ It is based on several guiding ideas and principles:
 * Current clusters should be able to simulate enterprise-class (e.g. 25,000 nodes or more) networks
 * Network topologies should be easy to create by specifying simple _parameters_
 * Python is (or should be!) simpler than XML for specifying network configurations
-* A single network console that can control an entire network is better than hundreds of <code>xterm</code> or <code>ssh</code> sessions
+* A single network console that can control an entire network is better than hundreds of `xterm` or `ssh` sessions
 * Full virtualization is overkill for most applications
 * Network systems and experiments should be easy to share, download, and reproduce
 * Network designs should move seamlessly from emulation to running at full speed/line rate on hardware

@@ -23,25 +23,25 @@ VM Setup
 
 Download the VM at https://github.com/downloads/mininet/mininet/mininet-vm-ubuntu11.10-052312.vmware.zip
 
-The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's <code>.k</code> (virtual machine disk) format, which can be used by most virtualization systems.
+The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's `.k` (virtual machine disk) format, which can be used by most virtualization systems.
 
-Download and install a virtualization program such as: [VMware Workstation](http://www.vmware.com/products/workstation/) for Windows or Linux, [VMware Fusion](http://www.vmware.com/products/fusion) for Mac, [VirtualBox](http://www.virtualbox.org/wiki/Downloads) ( **free!**, GPL) for any platform, or <code>qemu</code> ( **free!**, GPL) for Linux. If you already have VMware, we find that it runs Mininet somewhat faster than !VirtualBox. However, !VirtualBox is free to download and distribute, which is a definite advantage!
+Download and install a virtualization program such as: [VMware Workstation](http://www.vmware.com/products/workstation/) for Windows or Linux, [VMware Fusion](http://www.vmware.com/products/fusion) for Mac, [VirtualBox](http://www.virtualbox.org/wiki/Downloads) ( **free!**, GPL) for any platform, or `qemu` ( **free!**, GPL) for Linux. If you already have VMware, we find that it runs Mininet somewhat faster than !VirtualBox. However, !VirtualBox is free to download and distribute, which is a definite advantage!
 
 ### Boot VM
 
 Add the VM and start it up, in the virtualization program of your choice:
 
-**VMware**: Just double-click the <code>.vmx</code> file.
+**VMware**: Just double-click the `.vmx` file.
 
 VMware may ask you to install VMware tools on the VM - if it asks, decline. Everything graphical in the tutorial is done via X forwarding through SSH (in fact, the VM doesn't have a desktop manager installed), so the VMware tools are unnecessary unless you wish to install an X11/Gnome/etc. environment in your VM.
 
-**VirtualBox**: Create a new VM using the <code>.k</code> as the hard disk image, then start it up.
+**VirtualBox**: Create a new VM using the `.k` as the hard disk image, then start it up.
 
 **Qemu/KVM**:
 <verbatim>
-qemu-system-i386 -m 512 [MininetVM](MininetVM).vmdk -net nic,model=virtio -net user,net=192.168.101.0/24,hostfwd=tcp::8022-:22</verbatim> This will set up <code>ssh</code> forwarding from the VM to host port 8022.
+qemu-system-i386 -m 512 [MininetVM](MininetVM).vmdk -net nic,model=virtio -net user,net=192.168.101.0/24,hostfwd=tcp::8022-:22</verbatim> This will set up `ssh` forwarding from the VM to host port 8022.
 
-**Parallels**: Use Parallels Transporter to convert the <code>.k</code> file to an <code>.hdd</code> image that Parallels can use, and then create a new VM using that <code>.hdd</code> image as its virtual drive.
+**Parallels**: Use Parallels Transporter to convert the `.k` file to an `.hdd` image that Parallels can use, and then create a new VM using that `.hdd` image as its virtual drive.
 
 
 ### Login to VM
@@ -68,7 +68,7 @@ SSH in to the host. Use -Y to enable trusted X forwarding, for use with Wireshar
 <verbatim>
 ssh -Y openflow@openflow</verbatim>
 
-If you're running the VM under QEMU/KVM with -net user and the <code>hostfwd</code> option as recommended above, the VM IP address is irrelevant. Instead you tell SSH to connect to port 8022 on the host:
+If you're running the VM under QEMU/KVM with -net user and the `hostfwd` option as recommended above, the VM IP address is irrelevant. Instead you tell SSH to connect to port 8022 on the host:
 
 	ssh -Y -p 8022 openflow@localhost
 

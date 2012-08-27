@@ -5,9 +5,9 @@
 -->
 
 
-<code>Consoles.py</code>
+`Consoles.py`
 -------------------------
 
 <img alt="" src="http://openflow.org/foswiki/pub/OpenFlow/Mininet/console_py.png" />
 
-<code>[mininet/examples/consoles.py](https://github.com/mininet/mininet/blob/master/examples/consoles.py)</code> is a sample GUI-based application written with Mininet's Python API (and [Tkinter](http://docs.python.org/library/tkinter)). It demonstrates how to create and monitor multiple hosts and run <code>ping</code> and <code>iperf</code> between them.
+`[mininet/examples/consoles.py](https://github.com/mininet/mininet/blob/master/examples/consoles.py)` is a sample GUI-based application written with Mininet's Python API (and [Tkinter](http://docs.python.org/library/tkinter)). It demonstrates how to create and monitor multiple hosts and run `ping` and `iperf` between them.
