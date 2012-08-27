@@ -43,7 +43,7 @@ VMware may ask you to install VMware tools on the VM - if it asks, decline. Ever
 
 This will set up `ssh` forwarding from the VM to host port 8022.
 
-**Parallels**: Use Parallels Transporter to convert the `.k` file to an `.hdd` image that Parallels can use, and then create a new VM using that `.hdd` image as its virtual drive.
+**Parallels**: Use Parallels Transporter to convert the `.vmdk` file to an `.hdd` image that Parallels can use, and then create a new VM using that `.hdd` image as its virtual drive.
 
 
 ### Login to VM
