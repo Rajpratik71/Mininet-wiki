@@ -19,9 +19,9 @@ VM Setup
 ---------
 
 
-### Download VM
+### Download the Mininet VM
 
-Download the VM at https://github.com/downloads/mininet/mininet/mininet-vm-ubuntu11.10-052312.vmware.zip
+Download the Mininet VM at https://github.com/downloads/mininet/mininet/mininet-vm-ubuntu11.10-052312.vmware.zip
 
 The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's `.vmdk` (virtual machine disk) format, which can be used by most virtualization systems.
 
