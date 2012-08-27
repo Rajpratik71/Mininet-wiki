@@ -57,12 +57,12 @@ The root account is not enabled for login; you can use sudo to run a command as 
 ### SSH into VM
 
 First, find the VM's IP address, which for VMware is probably in the range 192.168.x.y. In the VM console:
-<verbatim>
-/sbin/ifconfig eth0</verbatim>
+
+    /sbin/ifconfig eth0
 
 You may want to add the address to your host PC's /etc/hosts file to be able to SSH in by name, if it's Unix-like. For example, add a line like this for OS X:
-<verbatim>
-192.168.x.y openflow</verbatim>
+
+    192.168.x.y openflow
 
 where 192.168.x.y is replaced by the VM's IP address.
 
@@ -90,19 +90,19 @@ These commands are optional, and may be useful for your setup:
 
 These steps let you log in via SSH without needing to enter a password. If you use the console from your virtualization software natively, then this step isn't needed.
 
-Check for ~/.ssh/id_rsa ~/.ssh/id_dsa. If you can't find either of these files, then you'll want to generate an SSH key.
+Check for `~/.ssh/id_rsa` or `~/.ssh/id_dsa`. If you can't find either of these files, then you'll want to generate an SSH key.
 
 On a unix-like system (OS X or Linux - you'll need other instructions for Windows) - on the host, not the VM:
 
 	ssh-keygen -t rsa
 
 To speed up future SSH connections, add your host's public key to the new VM. Also on the host, not the VM:
-<verbatim>
-scp ~/.ssh/id_rsa.pub openflow@openflow:~/</verbatim>
+
+    scp ~/.ssh/id_rsa.pub openflow@openflow:~/</verbatim>
 
 Now, on the VM (SSH in first):
-<verbatim>
-cd ~/ && mkdir -p .ssh && chmod 700 .ssh && cd .ssh && touch authorized_keys2 && chmod 600 authorized_keys2 && cat ../id_rsa.pub >> authorized_keys2 && rm ../id_rsa.pub && cd ..</verbatim>
+
+    cd ~/ && mkdir -p .ssh && chmod 700 .ssh && cd .ssh && touch authorized_keys2 && chmod 600 authorized_keys2 && cat ../id_rsa.pub >> authorized_keys2 && rm ../id_rsa.pub && cd ..</verbatim>
 
 Now you should be able to log in without entering a password.
 
