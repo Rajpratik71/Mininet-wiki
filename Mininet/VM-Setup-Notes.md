@@ -31,15 +31,17 @@ Download and install a virtualization program such as: [VMware Workstation](http
 
 Add the VM and start it up, in the virtualization program of your choice:
 
+**VirtualBox**: Create a new VM using the `.vmdk` as the hard disk image, then start it up.
+
 **VMware**: Just double-click the `.vmx` file.
 
 VMware may ask you to install VMware tools on the VM - if it asks, decline. Everything graphical in the tutorial is done via X forwarding through SSH (in fact, the VM doesn't have a desktop manager installed), so the VMware tools are unnecessary unless you wish to install an X11/Gnome/etc. environment in your VM.
 
-**VirtualBox**: Create a new VM using the `.k` as the hard disk image, then start it up.
-
 **Qemu/KVM**:
-<verbatim>
-qemu-system-i386 -m 512 [MininetVM](MininetVM).vmdk -net nic,model=virtio -net user,net=192.168.101.0/24,hostfwd=tcp::8022-:22</verbatim> This will set up `ssh` forwarding from the VM to host port 8022.
+
+    qemu-system-i386 -m 512 [MininetVM](MininetVM).vmdk -net nic,model=virtio -net user,net=192.168.101.0/24,hostfwd=tcp::8022-:22</verbatim>
+
+This will set up `ssh` forwarding from the VM to host port 8022.
 
 **Parallels**: Use Parallels Transporter to convert the `.k` file to an `.hdd` image that Parallels can use, and then create a new VM using that `.hdd` image as its virtual drive.
 
@@ -70,21 +72,19 @@ ssh -Y openflow@openflow</verbatim>
 
 If you're running the VM under QEMU/KVM with -net user and the `hostfwd` option as recommended above, the VM IP address is irrelevant. Instead you tell SSH to connect to port 8022 on the host:
 
-	ssh -Y -p 8022 openflow@localhost
-
+    ssh -Y -p 8022 openflow@localhost
 
 ### Install preferred editor
 
 Install your preferred editor. For example, to install vim:
-<verbatim>
-sudo apt-get -y install vim</verbatim>
+
+    sudo apt-get -y install vim</verbatim>
 
 
 Optional VM Customization
 --------------------------
 
 These commands are optional, and may be useful for your setup:
-
 
 ### Setup SSH auto-login
 
