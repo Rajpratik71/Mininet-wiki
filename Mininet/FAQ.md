@@ -7,7 +7,7 @@ Please add helpful, Frequently Asked Questions and high-quality answers below.
 
 ### How can I **get started** with Mininet?
 
-The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Getting-Started](Getting-Started) page, and then go through the [Walkthrough](Walkthrough.md) and the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
+The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Download](Download) page, and then go through the [Walkthrough](Walkthrough.md) and the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
 
 
 ### How do I figure out the **command-line options** for the `mn` command?
@@ -22,9 +22,9 @@ Unfortunately you can't currently edit the wiki in `https` mode. Change the URL 
 
 ### How can I do a native install of Mininet?
 
-It's probably easiest to start out with a [VM install](Getting-Started) of Mininet - it's pretty much guaranteed to work!
+It's probably easiest to start out with a [VM install](Download) of Mininet - it's pretty much guaranteed to work!
 
-Instructions for native installation can be found [here](Getting-Started) as well.
+Instructions for native installation can be found [here](Download) as well.
 
 
 ### How do I **use Mininet's Python API**?

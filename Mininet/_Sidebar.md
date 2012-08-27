@@ -1,7 +1,7 @@
 * [Welcome to Mininet](Mininet)
 * [Overview](Overview)
 * [Sample Workflow](Sample-Workflow)
-* [Download](Getting-Started)
+* [Download](Download)
 * [Documentation](Documentation)
 * [FAQ](FAQ)
 * [Support](Support)
