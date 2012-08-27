@@ -1,12 +1,3 @@
-<!-- %META:TOPICINFO{author="BobLantz" date="1305074030" format="1.1" version="1.30"}% -->
-<!-- %META:TOPICPARENT{name="VM-Creation-Notes"}% -->
-<!-- Use our custom page layout:
-* Set VIEW_TEMPLATE = [MininetView](MininetView)
--->
-
-Mininet Walkthrough
--------------------
-
 This walkthrough demonstrates most Mininet commands, plus its typical usage in concert with the Wireshark dissector.
 
 It assumes that your base system is the Mininet VM, or a native install with all OpenFlow tools and Mininet installed.
