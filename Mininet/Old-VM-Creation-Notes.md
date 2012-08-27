@@ -1,5 +1,5 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1337839991" format="1.1" reprev="1.1" version="1.1"}% -->
-<!-- %META:TOPICPARENT{name="Mininet-VM-Creation-Notes"}% -->
+<!-- %META:TOPICPARENT{name="VM-Creation-Notes"}% -->
 <!-- Use our custom page layout:
 * Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
@@ -166,7 +166,7 @@ Clean out unneeded kernel stuff:
 
 Additional setup:
 * (Optional) follow instructions to set up [OpenFlow](OpenFlow) regression tests
-Jump to the [Mininet-VM-Setup-Notes](Mininet-VM-Setup-Notes).
+Jump to the [VM-Setup-Notes](VM-Setup-Notes).
 
 
 ### Piece-by-Piece
@@ -204,7 +204,7 @@ of_user_veth_test.pl</verbatim>
 Customize and Verify Mininet
 =============================
 
-Go to [Mininet-VM-Setup-Notes](Mininet-VM-Setup-Notes) to customize the VM, install and verify Mininet, and then do the [Mininet-Walkthrough](Mininet-Walkthrough.md). These instructions should have ensured all required and optional dependencies are installed.
+Go to [VM-Setup-Notes](VM-Setup-Notes) to customize the VM, install and verify Mininet, and then do the [Walkthrough](Walkthrough.md). These instructions should have ensured all required and optional dependencies are installed.
 
 
 Post-VM-Creation cleanup

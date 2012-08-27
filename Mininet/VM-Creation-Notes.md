@@ -8,7 +8,7 @@
 Creating a Mininet VM from Scratch
 ===================================
 
-These instructions cover the process of building a Mininet-capable VM from scratch, using Ubuntu 11.10. For setup instructions, see [Mininet-VM-Setup-Notes](Mininet-VM-Setup-Notes).
+These instructions cover the process of building a Mininet-capable VM from scratch, using Ubuntu 11.10. For setup instructions, see [VM-Setup-Notes](VM-Setup-Notes).
 
 _Note: If you need to build on a non-Ubuntu distro, you are currently on your own. The included shell scripts may work on your platform, but significant changes are likely (e.g. yum vs. apt-get and different package names for Fedora.)_
 
@@ -24,6 +24,6 @@ $ sudo mn --pingall
 
 **That's it!**
 
-For historical reference, we have also preserved the [OldMininet-VM-Creation-Notes](OldMininet-VM-Creation-Notes).
+For historical reference, we have also preserved the [OldVM-Creation-Notes](OldVM-Creation-Notes).
 
 -- [Main/BrandonHeller](../Main/BrandonHeller) - 09 Feb 2010

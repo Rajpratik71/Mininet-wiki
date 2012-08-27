@@ -9,14 +9,14 @@ It allows you to quickly [create](Mininet-Sample-Workflow#Creating_a_Network), [
 
 <!-- BL: not sure about this stuff: 
 As a "network laboratory on a laptop", Mininet can run full Unix network applications, and includes a CLI and API for creating and interacting with the virtual network.
-><cite>>> <span style="color: #6495ed;">Ready to get going? Jump to the [GettingStarted](Mininet-Getting-Started) page.</span></cite>
+><cite>>> <span style="color: #6495ed;">Ready to get going? Jump to the [GettingStarted](Getting-Started) page.</span></cite>
 -->
 
-**To download Mininet and get started, go to the [Mininet-Getting-Started](Mininet-Getting-Started) page.**
+**To download Mininet and get started, go to the [Getting-Started](Getting-Started) page.**
 
 Mininet's source code is hosted on !GitHub at <http://github.com/mininet/mininet.>
 
-Alternately, you may wish to **[learn more about Mininet](Mininet-Learn-More)** or peruse the **[Mininet Documentation](Mininet-Documentation).**
+Alternately, you may wish to **[learn more about Mininet](Learn-More)** or peruse the **[Mininet Documentation](Documentation).**
 
 Please direct any Mininet-specific questions to our helpful [mininet-discuss mailing list](https://mailman.stanford.edu/mailman/listinfo/mininet-discuss) -- NOT to nox-dev, ovs-discuss, or openflow-discuss.
 

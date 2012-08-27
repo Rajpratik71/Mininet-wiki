@@ -1,5 +1,5 @@
 <!-- %META:TOPICINFO{author="BobLantz" date="1305074488" format="1.1" version="1.2"}% -->
-<!-- %META:TOPICPARENT{name="Mininet-Documentation"}% -->
+<!-- %META:TOPICPARENT{name="Documentation"}% -->
 <!-- Use our custom page layout:
 * Set VIEW_TEMPLATE = [MininetView](MininetView)
 -->
