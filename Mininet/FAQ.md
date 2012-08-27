@@ -1,6 +1,3 @@
-Mininet FAQ
-------------
-
 Please add helpful, Frequently Asked Questions and high-quality answers below.
 
 <!-- %TOC% -->
