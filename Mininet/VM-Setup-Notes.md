@@ -23,7 +23,7 @@ VM Setup
 
 Download the VM at https://github.com/downloads/mininet/mininet/mininet-vm-ubuntu11.10-052312.vmware.zip
 
-The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's `.k` (virtual machine disk) format, which can be used by most virtualization systems.
+The VM comes out to ~800MB compressed and ~2GB uncompressed. It includes a disk image in VMware's `.vmdk` (virtual machine disk) format, which can be used by most virtualization systems.
 
 Download and install a virtualization program such as: [VMware Workstation](http://www.vmware.com/products/workstation/) for Windows or Linux, [VMware Fusion](http://www.vmware.com/products/fusion) for Mac, [VirtualBox](http://www.virtualbox.org/wiki/Downloads) ( **free!**, GPL) for any platform, or `qemu` ( **free!**, GPL) for Linux. If you already have VMware, we find that it runs Mininet somewhat faster than !VirtualBox. However, !VirtualBox is free to download and distribute, which is a definite advantage!
 
