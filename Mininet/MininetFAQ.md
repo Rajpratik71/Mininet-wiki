@@ -42,7 +42,7 @@ or by calling Python from within the Mininet CLI:
 
 In each case, pressing =q= should quit the pager.
 
-Also see [MininetAPIDocumentation](MininetAPIDocumentation) for information on how to generate Mininet documentation in.md format.
+Also see [Mininet-API-Documentation](MininetAPIDocumentation) for information on how to generate Mininet documentation in.md format.
 
 ### Which **versions of OpenFlow** does Mininet support?
 
