@@ -1,6 +1,6 @@
 * [Welcome to Mininet](Mininet)
 * [Overview](MininetLearnMore)
-* [Sample Workflow](MininetSampleWorkflow)
+* [Sample Workflow](Mininet-Sample-Workflow)
 * [Download](MininetGettingStarted)
 * [Documentation](MininetDocumentation)
 * [FAQ](MininetFAQ)
