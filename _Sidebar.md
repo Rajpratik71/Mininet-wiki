@@ -3,7 +3,6 @@
 * [[Sample Workflow | Sample-Workflow ]]
 * [[Walkthrough]]
 * [[Overview]]
-
 * [[Download]]
 * [[Docs | Documentation]]
 * [[FAQ]]
@@ -11,10 +10,7 @@
 * Tutorials
 * [[Wiki | Mininet]]
 * [[Papers]]
-
 * [[Support]]
 * Contribute
 * [[News Archives | http://mininet.github.com/blog/archives]]
 * [[About | Credits]]
-
-
