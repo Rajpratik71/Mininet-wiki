@@ -5,7 +5,7 @@ Mininet creates scalable (up to hundreds of nodes, depending on your configurati
 
 It allows you to quickly [create](Sample-Workflow#Creating_a_Network), [interact with](MininetSampleWorkflow#Interacting_with_a_Network), [customize](MininetSampleWorkflow#Customizing_a_Network) and [share](MininetSampleWorkflow#Sharing_a_Network) a software defined network prototype, and provides a smooth path to [running on hardware](MininetSampleWorkflow#Running_on_Hardware).
 
-[[console_py.png|width=250px|float]][[MiniEdit.png|width=250px|align=bottom]]  
+[[images/console_py.png|width=250px|float]][[images/MiniEdit.png|width=250px|align=bottom]]  
 
 <!-- BL: not sure about this stuff: 
 As a "network laboratory on a laptop", Mininet can run full Unix network applications, and includes a CLI and API for creating and interacting with the virtual network.
