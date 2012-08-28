@@ -11,7 +11,7 @@ The following Mininet documentation is available on this wiki:
 * [VM-Creation-Notes](VM-Creation-Notes) How we created the Mininet VM image
 
 #### Documentation and FAQ
-* [Mininet-API-Documentation](MininetAPIDocumentation) How to view documentation for Mininet's Python API
+* [Mininet-API-Documentation](Mininet-API-Documentation) How to view documentation for Mininet's Python API
 * [Presentations](Presentations) Presentations on Mininet
 * [Publications](Publications) Mininet papers and other publications
 * [FAQ](FAQ) Please read and add to the Frequently Asked Questions (and their Answers)
