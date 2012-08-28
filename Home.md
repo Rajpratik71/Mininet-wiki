@@ -1,4 +1,3 @@
-
-[Mininet Home Page](http://openflow.org/mininet)
+[Mininet Home Page on GitHub](http://mininet.github.com)
 
 [Mininet Wiki](wiki/Mininet)
