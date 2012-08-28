@@ -1,8 +1,8 @@
-* [Welcome to Mininet](Mininet)
-* [Overview](Overview)
-* [Sample Workflow](Sample-Workflow)
-* [Download](Download)
-* [Documentation](Documentation)
-* [FAQ](FAQ)
-* [Support](Support)
-* [Credits](Credits)
+* [[Welcome to Mininet | Mininet]]
+* [[Overview]]
+* [[Sample Workflow | Sample-Workflow]]
+* [[Download]]
+* [[Documentation]]
+* [[FAQ]]
+* [[Support]]
+* [[Credits]]
