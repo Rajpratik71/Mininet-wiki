@@ -1,6 +1,3 @@
-Viewing Documentation for Mininet's Python API
-----------------------------------------------
-
 Mininet's modules and Python API are documented using Python documentation strings which may be accessed from Python's regular `help()` mechanism. For example,
 
     python
