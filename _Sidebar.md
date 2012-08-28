@@ -1,33 +1,20 @@
-[[Intro Video | http://mininet.github.com/introvideo]]
+* [[Intro Video | http://mininet.github.com/introvideo]]
+* [[Get Started | Download ]]
+* [[Sample Workflow | Sample-Workflow ]]
+* [[Walkthrough]]
+* [[Overview]]
 
-[[Get Started | Download ]]
+* [[Download]]
+* [[Docs | Documentation]]
+* [[FAQ]]
+* Apps
+* Tutorials
+* [[Wiki | Mininet]]
+* [[Papers]]
 
-[[Sample Workflow | Sample-Workflow ]]
-
-[[Walkthrough]]
-
-[[Overview]]
-
-[[Download]]
-
-[[Docs | Documentation]]
-
-[[FAQ]]
-
-Apps
-
-Tutorials
-
-[[Wiki]]
-
-[[Papers]]
-
-[[Support]]
-
-Contribute
-
-[[News Archives]]
-
-[[About | Credits]]
+* [[Support]]
+* Contribute
+* [[News Archives | http://mininet.github.com/blog/archives]]
+* [[About | Credits]]
 
 
