@@ -9,7 +9,7 @@
 * Apps
 * Tutorials
 * [[Wiki | Mininet]]
-* [[Papers]]
+* [[Papers | Publications]]
 * [[Support]]
 * Contribute
 * [[News Archives | http://mininet.github.com/blog/archives]]
