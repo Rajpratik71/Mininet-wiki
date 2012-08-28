@@ -1,1 +1,1 @@
-[Mininet Wiki](wiki/Mininet)
+[Mininet Wiki](Mininet)
