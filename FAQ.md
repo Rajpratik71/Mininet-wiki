@@ -28,7 +28,7 @@ Instructions for native installation can be found [here](Download) as well.
 
 We provide a few examples of using the Python API in the `mininet/examples` directory.
 
-We also provide Python !DocStrings for every Mininet class and method, and you can view them using from within Python
+We also provide Python DocStrings for every Mininet class and method, and you can view them using from within Python
 
     >>> import mininet.node
     >>> help(mininet.node.Node)</verbatim>
@@ -43,7 +43,7 @@ Also see [Mininet-API-Documentation](MininetAPIDocumentation) for information on
 
 ### Which **versions of OpenFlow** does Mininet support?
 
-Mininet officially supports OpenFlow 1.0, and the Mininet VM image includes !OpenFlow 1.0-compatible versions of the !OpenFlow reference implementation as well as Open vSwitch. It is also possible to get Mininet to run with !OpenFlow 0.8.9 with a few minor changes.
+Mininet officially supports OpenFlow 1.0, and the Mininet VM image includes OpenFlow 1.0-compatible versions of the OpenFlow reference implementation as well as Open vSwitch. It is also possible to get Mininet to run with OpenFlow 0.8.9 with a few minor changes.
 
 ### What **OpenFlow switch implementations** does Mininet support?
 
