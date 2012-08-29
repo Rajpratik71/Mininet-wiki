@@ -14,11 +14,11 @@ Follow these steps for a VM install:
 
 1. Download and install a virtualization system. We recommend [VirtualBox](http://www.virtualbox.org/wiki/Downloads) (free, GPL) because it is **free** and works on OS X, Windows, and Linux (though it's slightly slower than VMware in our tests.) You can also use [Qemu](http://qemu.org) for any platform, [VMware Workstation](http://www.vmware.com/products/workstation/) for Windows or Linux, or [VMware Fusion](http://www.vmware.com/products/fusion) for Mac, [KVM](http://www.linux-kvm.org) (free, GPL) for Linux.
 
-1. Sign up for the `mininet-discuss` mailing list at https://mailman.stanford.edu/mailman/listinfo/mininet-discuss. This is the source for Mininet **support** and discussion with the friendly Mininet community. ;-)
+2. Sign up for the `mininet-discuss` mailing list at https://mailman.stanford.edu/mailman/listinfo/mininet-discuss. This is the source for Mininet **support** and discussion with the friendly Mininet community. ;-)
 
-1. Run through the [VM-Setup-Notes](VM-Setup-Notes) to log in to the VM and install Mininet code on it.
+3. Run through the [VM-Setup-Notes](VM-Setup-Notes) to log in to the VM and install Mininet code on it.
 
-1. Follow the [Walkthrough](Walkthrough) to get familiar with Mininet commands and typical usage.
+4. Follow the [Walkthrough](Walkthrough) to get familiar with Mininet commands and typical usage.
 
 Once you've completed the [Walkthrough](Walkthrough), you should have a clear idea for what Mininet is and what you might use it for. If you are interested in OpenFlow and Software-Defined Networking, you will want to complete the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) as well. Good luck, and have fun!
 
@@ -39,10 +39,10 @@ Alternately, it may be possible to install a "minimal" configuration using
 
 This will install the reference OpenFlow switch and controller, Mininet and its dependencies, and Open vSwitch.
 
-Option 2 on *Ubuntu 12.04 only*: Native installation via `install-precise` branch
+Option 2 on *Ubuntu 12.04 LTS only*: (exprimental) Native installation via `install-precise` branch
 ------------------------------------------------------
 
-We are currently working on revising Mininet 1.0 for installation on 12.04.
+We are currently working on revising Mininet 1.0 for installation on 12.04. You are welcome to try installing it, although some features may not work yet.
 
 First, if you have upgraded from 11.10 and an earlier installation of Mininet, make sure you *remove all traces of earlier versions of Open vSwitch from `/usr/local`*:
 
