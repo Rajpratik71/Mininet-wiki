@@ -52,8 +52,8 @@ We are currently working on revising Mininet 1.0 for installation on 12.04. You 
 
 First, if you have upgraded from 11.10 and an earlier installation of Mininet, make sure you *remove all traces of earlier versions of Open vSwitch from `/usr/local`*:
 
-    sudo rm /usr/local/bin/*ovs*
-    sudo rm /usr/local/sbin/*ovs*
+    sudo rm /usr/local/bin/ovs*
+    sudo rm /usr/local/sbin/ovs*
 
 If you are doing a full install, you will also wish to rename your `openflow` and `noxcore` directories
 
