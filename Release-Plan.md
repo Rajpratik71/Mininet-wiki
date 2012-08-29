@@ -8,13 +8,14 @@
 Mininet Releases and Tasks
 ---------------------------
 
+Currently tasks are managed on the Mininet [issues](https://github.com/mininet/mininet/issues) page.
 
 Mininet 2.0.0
 ------------
 
 What                 | Who
 -------------------- | --- 
-Update Wiki pages    |
+Update web pages     |
 Upload documentation |
 Video                |
 Blog post            |
