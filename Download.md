@@ -60,7 +60,7 @@ If you are doing a full install, you will also wish to rename your `openflow` an
    mv openflow openflow-old
    mv noxcore noxcore-old
 
-To install the `install-precise` branch of Mininet 1.0 natively on Ubuntu 12.04 the basic technique is:
+The basic technique to install the `install-precise` branch of Mininet 1.0 natively on Ubuntu 12.04 is:
 
     git clone git://github.com/mininet/mininet
     git fetch
