@@ -8,7 +8,7 @@
 * [[FAQ]]
 * Apps
 * Tutorials
-* [[Wiki | Mininet]]
+* [[Wiki | Home]]
 * [[Papers | Publications]]
 * [[Support]]
 * Contribute
