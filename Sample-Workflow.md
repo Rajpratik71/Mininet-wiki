@@ -27,8 +27,8 @@ tells host `h2` to ping host `h3`'s IP address.
 Mininet's API allows you to create custom networks with a few lines of Python. For example, the following script
 
     from mininet.net import Mininet
-    from mininet.topolib import [TreeTopo](TreeTopo)
-    tree4 = [TreeTopo](TreeTopo)(depth=2,fanout=2)
+    from mininet.topolib import TreeTopo
+    tree4 = TreeTopo(depth=2,fanout=2)
     net = Mininet(topo=tree4)
     net.start()
     h1, h4  = net.hosts[0], net.hosts[3]
