@@ -23,7 +23,7 @@ Follow these steps for a VM install:
 Once you've completed the [Walkthrough](Walkthrough), you should have a clear idea for what Mininet is and what you might use it for. If you are interested in OpenFlow and Software-Defined Networking, you will want to complete the [OpenFlow tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) as well. Good luck, and have fun!
 
 
-Option 2: Native Mininet Installation on Ubuntu 11.10
+Option 2 on *Ubuntu 11.10 only*: Native Mininet installation
 ------------------------------------------------------
 
 If you want to install natively on Ubuntu 11.10 (or 10.04 LTS) the basic technique is:
@@ -32,6 +32,38 @@ If you want to install natively on Ubuntu 11.10 (or 10.04 LTS) the basic techniq
     mininet/util/install.sh -a
 
 This takes about 15-20 minutes and will install everything that is included in the Mininet VM, including NOX classic/destiny + tutorial code, the OpenFlow wireshark dissector, etc..
+
+Alternately, it may be possible to install a "minimal" configuration using
+
+    mininet/util/install.sh -fnv
+
+This will install the reference OpenFlow switch and controller, Mininet and its dependencies, and Open vSwitch.
+
+Option 2 on *Ubuntu 12.04 only*: Experimental Native Mininet installation
+------------------------------------------------------
+
+We are currently working on revising Mininet 1.0 for installation on 12.04.
+
+First, if you have upgraded from 11.10 and an earlier installation of Mininet, make sure you *remove all traces of earlier versions of Open vSwitch from `/usr/local`*:
+
+    sudo rm /usr/local/bin/*ovs*
+    sudo rm /usr/local/sbin/*ovs*
+
+If you are doing a full install, you will also wish to rename your openflow and noxcore directories
+
+   mv openflow openflow-old
+   mv noxcore noxcore-old
+
+To install the `install-precise` branch of Mininet 1.0 natively on Ubuntu 12.04 the basic technique is:
+
+    git clone git://github.com/mininet/mininet
+    git fetch
+    git checkout -b install-precise origin/devel/install-precise
+    mininet/util/install.sh -a
+
+Make sure you are installing from the *install-precise* branch.
+
+The full installation takes about 15-20 minutes and will install everything that is included in the Mininet VM, including NOX classic/destiny + tutorial code, the OpenFlow wireshark dissector, etc..
 
 Alternately, it may be possible to install a "minimal" configuration using
 
