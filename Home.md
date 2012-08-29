@@ -1,3 +1,8 @@
-[Mininet Home Page on GitHub](http://mininet.github.com)
+Welcome to the Mininet Wiki
+---------------------------
 
-[Mininet Wiki](wiki/Mininet)
+Please select from one of the options to the right.
+
+You can edit any page if you have a [GitHub](https://github.com) account.
+
+[Mininet Home Page](http://mininet.github.com)
