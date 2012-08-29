@@ -9,7 +9,7 @@ Mininet Releases and Tasks
 ---------------------------
 
 
-Mininet 2.0
+Mininet 2.0.0
 ------------
 
 What                 | Who
@@ -19,11 +19,8 @@ Upload documentation |
 Video                |
 Blog post            |
 
-Mininet 2.0
-------------
 
-
-CS244 assignment version
+2010 CS244 assignment version
 -------------------------
 
 What                                                  | Who
