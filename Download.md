@@ -45,7 +45,7 @@ Alternately, it may be possible to install a "minimal" configuration using
 
 This will install the reference OpenFlow switch and controller, Mininet and its dependencies, and Open vSwitch.
 
-Option 2 on *Ubuntu 12.04 LTS only*: (exprimental) Native installation via `install-precise` branch
+Option 2 on *Ubuntu 12.04 LTS only*: (experimental) Native installation via `install-precise` branch
 ------------------------------------------------------
 
 We are currently working on revising Mininet 1.0 for installation on 12.04. You are welcome to try installing it, although some features may not work yet.
