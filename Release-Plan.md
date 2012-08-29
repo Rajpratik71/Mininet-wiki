@@ -10,6 +10,9 @@ Mininet Releases and Tasks
 
 Currently tasks are managed on the Mininet [issues](https://github.com/mininet/mininet/issues) page.
 
+
+<!--
+
 Mininet 2.0.0
 ------------
 
@@ -35,3 +38,5 @@ Assignment 1 test/grading script                      | Yiannis
 Upgrade to Ubuntu Maverick                            | Bob or Brandon
 
 -- [Main/BobLantz](../Main/BobLantz) - 02 Dec 2010
+ 
+-->
