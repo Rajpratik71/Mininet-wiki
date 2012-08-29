@@ -49,7 +49,7 @@ First, if you have upgraded from 11.10 and an earlier installation of Mininet, m
     sudo rm /usr/local/bin/*ovs*
     sudo rm /usr/local/sbin/*ovs*
 
-If you are doing a full install, you will also wish to rename your openflow and noxcore directories
+If you are doing a full install, you will also wish to rename your `openflow` and `noxcore` directories
 
    mv openflow openflow-old
    mv noxcore noxcore-old
