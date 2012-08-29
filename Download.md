@@ -1,7 +1,7 @@
 Download and Get Started with Mininet!
 =======================================
 
-The easiest way to get started is to **download a pre-packaged Ubuntu VM**. This VM includes a modified kernel, all OpenFlow binaries and tools pre-installed, plus tweaks to the kernel configuration to support larger Mininet networks.
+The easiest way to get started is to **download a pre-packaged Mininet/Ubuntu VM**. This VM includes Mininet itself, all OpenFlow binaries and tools pre-installed, and tweaks to the kernel configuration to support larger Mininet networks.
 
 
 Option 1: Mininet VM Installation (recommended)
