@@ -57,8 +57,8 @@ First, if you have upgraded from 11.10 and an earlier installation of Mininet, m
 
 If you are doing a full install, you will also wish to rename your `openflow` and `noxcore` directories
 
-   mv openflow openflow-old
-   mv noxcore noxcore-old
+    mv openflow openflow-old
+    mv noxcore noxcore-old
 
 The basic technique to install the `install-precise` branch of Mininet 1.0 natively on Ubuntu 12.04 is:
 
