@@ -63,9 +63,10 @@ If you are doing a full install, you will also wish to rename your `openflow` an
 The basic technique to install the `install-precise` branch of Mininet 1.0 natively on Ubuntu 12.04 is:
 
     git clone git://github.com/mininet/mininet
+    cd mininet
     git fetch
     git checkout -b install-precise origin/devel/install-precise
-    mininet/util/install.sh -a
+    util/install.sh -a
 
 Make sure you are installing from the *install-precise* branch.
 
