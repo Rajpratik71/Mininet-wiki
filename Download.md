@@ -26,6 +26,12 @@ Once you've completed the [Walkthrough](Walkthrough), you should have a clear id
 Option 2 on *Ubuntu 11.10 only*: Native Mininet installation
 ------------------------------------------------------
 
+To find out which version of Ubuntu you are running, run the command
+
+    lsb_release -a
+
+These instructions are for 11.10 only (for 12.04, see below!)
+
 If you want to install natively on Ubuntu 11.10 (or 10.04 LTS) the basic technique is:
 
     git clone git://github.com/mininet/mininet
