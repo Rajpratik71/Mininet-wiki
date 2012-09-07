@@ -27,10 +27,10 @@ To view control traffic using the OpenFlow Wireshark dissector, first open wires
     sudo wireshark &
 
 In the Wireshark filter box, enter this filter, then click 'Apply':
-<verbatim>
-of</verbatim>
 
-In Wireshark, click Capture, then Interfaces, then select Start on the loopback interface (lo).
+    of
+
+In Wireshark, click Capture, then Interfaces, then select Start on the loopback interface (`lo`).
 
 For now, there should be no OpenFlow packets displayed in the main window.
 
