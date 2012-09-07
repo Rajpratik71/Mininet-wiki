@@ -1,7 +1,8 @@
 Please add helpful, Frequently Asked Questions and high-quality answers below.
 
-* auto-gen TOC:
-{:toc}
+<!-- this doesn't work yet
+[[_TOC_]]
+-->
 
 ### How can I **get started** with Mininet?
 
