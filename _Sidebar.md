@@ -1,9 +1,9 @@
-* [[Intro Video | http://mininet.github.com/introvideo]]
-* [[Get Started | Download ]]
-* [[Sample Workflow | Sample-Workflow ]]
-* [[Walkthrough]]
-* [[Overview]]
-* [[Download]]
+* Intro Video
+* [[Get Started | http://mininet.github.com/download]]
+* [[Sample Workflow | http://mininet.github.com/sample-workflow]]
+* [[Walkthrough | http://mininet.github.com/walkthrough]]
+* [[Overview | http://mininet.github.com/overview]]
+* [[Download | http://mininet.github.com/download]]
 * [[Docs | Documentation]]
 * [[FAQ]]
 * Apps
