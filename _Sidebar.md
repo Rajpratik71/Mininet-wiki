@@ -6,6 +6,7 @@
 * [[Overview | http://mininet.github.com/overview]]
 
 ---
+
 * [[Download | http://mininet.github.com/download]]
 * [[Docs | Documentation]]
 * [[FAQ]]
@@ -13,6 +14,9 @@
 * Tutorials
 * [[Wiki | Home]]
 * [[Papers | Publications]]
+
+---
+
 * [[Support | http://mininet.github.com/support]]
 * Contribute
 * [[News Archives | http://mininet.github.com/blog/archives]]
