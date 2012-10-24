@@ -17,6 +17,11 @@ It is based on several guiding ideas and principles:
 * Network designs should move seamlessly from emulation to running at full speed/line rate on hardware
 Although Mininet was designed for OpenFlow networks, it also supports legacy IP networking, e.g. using Open vSwitch or an !OpenFlow controller that supports standard Ethernet switching and IP routing.
 
+### Mininet-HiFi: Rapid, High Fidelity SDN Prototyping
+
+Presentation from SDN CTO Summit describing plans for Mininet 2.0/Mininet-HiFi.
+
+* [[Mininet-HiFi: Rapid, High Fidelity SDN Prototyping | pdf/mininet-hifi-bdh2.pdf]]
 
 ### A Network in a Laptop: Rapid Prototyping for Software Defined Networks
 
