@@ -31,6 +31,6 @@ Brandon's presentation from Hotnets-IX (10/20/2010) explains the Mininet archite
 
 ### Mininet: Squeezing a 1000-node Openflow Network onto a Laptop
 
-Here is my original presentation to the OpenFlow Software Architecture and Implementation (SWAI) working group from 11/19/2009 (with an additional slide to illustrate the kernel datapath):
+Here is Bob's original presentation to the OpenFlow Software Architecture and Implementation (SWAI) working group from 11/19/2009 (with an additional slide to illustrate the kernel datapath):
 
 * [["Mininet: Squeezing a 1000-node [OpenFlow](OpenFlow) Network onto a Laptop" | pdf/mininet-presentation-2009.pdf]]
