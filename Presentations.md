@@ -19,7 +19,7 @@ Although Mininet was designed for OpenFlow networks, it also supports legacy IP 
 
 ### Mininet-HiFi: Rapid, High Fidelity SDN Prototyping
 
-Presentation from SDN CTO Summit describing plans for Mininet 2.0/Mininet-HiFi.
+Presentation from SDN CTO Summit describing Mininet-HiFi features, which have since been integrated into Mininet 2.0.
 
 * [[Mininet-HiFi: Rapid, High Fidelity SDN Prototyping | pdf/mininet-hifi-bdh2.pdf]]
 
