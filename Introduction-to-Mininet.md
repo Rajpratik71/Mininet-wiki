@@ -6,6 +6,8 @@ documentation you may find useful.
 
 [Why is Mininet cool?](#why)
 
+[What are Mininet's limitations?](#limits)
+
 [Working with Mininet](#working)
 
  - [Creating Topologies](#creating)
@@ -90,7 +92,9 @@ Why is Mininet cool?
 	fix it, or help you fix it. :-) If you find bugs, you are encouraged to
 	submite patches to fix them, or at least to submit an issue on github
 	including a reproducible test case.
-	
+
+<a id=limits></a>
+
 What are Mininet's limitations?
 -------------------------------
 
