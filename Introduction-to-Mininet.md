@@ -1,4 +1,3 @@
-
 This document is meant to give you a brief sense of what Mininet is and
 how it works, and to provide some pointers to functions and
 documentation you may find useful.
@@ -566,7 +565,6 @@ You may find some of them to be useful and others (e.g. `consoles.py`,
 <a id=api></a>
 
 ### Mininet API Documentation
--------------------------
 
 Mininet includes Python documentation strings for each module and API
 call. These may be accessed from Python's regular `help()` mechanism. For
