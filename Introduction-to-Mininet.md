@@ -588,7 +588,7 @@ You may also wish to generate HTML documentation using doxypy:
 	Mininet is running on and browse the documentation for each of Mininet's
 	classes.
 
-<a id=performance></a>
+<a id=measuring></a>
 
 ### Measuring Performance
 
