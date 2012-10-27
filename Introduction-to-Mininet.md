@@ -2,14 +2,10 @@ This document is meant to give you a brief sense of what Mininet is and
 how it works, and to provide some pointers to functions and
 documentation you may find useful.
 
-[What is Mininet?](#what)
-
-[Why is Mininet cool?](#why)
-
-[What are Mininet's limitations?](#limits)
-
-[Working with Mininet](#working)
-
+- [What is Mininet?](#what)
+- [Why is Mininet cool?](#why)
+- [What are Mininet's limitations?](#limits)
+- [Working with Mininet](#working)
  - [Creating Topologies](#creating)
  - [Setting Performance Parameters](#setting)
  - [Running Programs in Hosts](#running)
@@ -18,22 +14,14 @@ documentation you may find useful.
  - [Naming in Mininet](#naming)
  - [CLI](#cli)
  - [Additional Examples](#examples)
-
-[Mininet API Documentation](#api)
-
-[Measuring Performance](#measuring)
-
-[OpenFlow](#openflow)
-
-[Updating Mininet](#updating)
-
-[Learning Python](#python)
-
-[Useful Background Information](#background)
-
-[Useful Python Resources](#resources)
-
-[How Does It Really Work? (optional: for the curious)](#how)
+- [Mininet API Documentation](#api)
+- [Measuring Performance](#measuring)
+- [OpenFlow](#openflow)
+- [Updating Mininet](#updating)
+- [Learning Python](#python)
+- [Useful Background Information](#background)
+- [Useful Python Resources](#resources)
+- [How Does It Really Work? (optional: for the curious)](#how)
 
 <a id=what></a>
 
