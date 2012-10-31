@@ -15,6 +15,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why can't I get **X11 forwarding** to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
+* [How can I use **multiple controllers** in my network?](#multiple-controllers)
 
 ***
 <a id=get-started></a>
@@ -128,3 +129,10 @@ Then, you can start X11 in the VM console window using
     startx
 
 As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
+
+***
+<a id=multiple-controllers></a>
+### How can I use **multiple controllers** in my network?
+
+One way is to use the mid-level API, as shown in `examples/controllers.py`
+
