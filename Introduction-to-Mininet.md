@@ -604,9 +604,10 @@ One of Mininet's most powerful and useful features is that it uses
 **Software Defined Networking**. Using the OpenFlow
 (<http://openflow.org>) protocol and related tools, you can
 program switches to do almost anything you want with the packets that
-enter them. Although you will not need to use OpenFlow for the first two
-projects, you may find it very useful for the third. A tutorial for
-creating a simple learning switch using Mininet and OpenFlow may be
+enter them. OpenFlow makes emulators like Mininet much more useful, since
+network system designs, including custom packet forwarding with OpenFlow,
+can easily be transferred to hardware OpenFlow switches for line-rate operation.
+A tutorial for creating a simple learning switch using Mininet and OpenFlow may be
 found at:
 
 <http://www.openflow.org/wk/index.php/OpenFlow_Tutorial>
