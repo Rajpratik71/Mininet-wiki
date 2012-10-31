@@ -2,9 +2,11 @@ Please add helpful, Frequently Asked Questions and high-quality answers below.
 
 (Since github wikis don't automatically generate a Table of Contents, please follow the existing format and add 1) an anchor for your question and 2) a link to it at the top of the page. Thanks!)
 
-<!-- this doesn't work yet
+<!-- this doesn't work yet, alas :(
 [[_TOC_]]
 -->
+
+***
 
 [How can I **get started** with Mininet?](#get-started)
 
@@ -23,6 +25,8 @@ Please add helpful, Frequently Asked Questions and high-quality answers below.
 [Why do the switch data ports have random MAC addresses? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 
 [Why can't I get X11 forwarding to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
+
+***
 
 <a id=get-started></a>
 ### How can I **get started** with Mininet?
