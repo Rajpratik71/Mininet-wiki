@@ -1,6 +1,6 @@
 This document is meant to give you a brief sense of what Mininet is and
-how it works, and to provide some pointers to functions and
-documentation you may find useful.
+how it works, and specifically including an introduction to Mininet's
+Python API.
 
 - [What is Mininet?](#what)
 - [Why is Mininet cool?](#why)
