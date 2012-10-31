@@ -280,7 +280,7 @@ pass the same parameters into multiple method calls, for example:
 	linkopts = dict(bw=10, delay='5ms', loss=10, use_htb=True)
 	# alternately: linkopts = {'bw':10, 'delay':'5ms', 'loss':10,
 	# 'use_htb':True}
-	self.addLink(node1, node2, \*\*linkopts)
+	self.addLink(node1, node2, **linkopts)
 
 This same technique `(**dict)` is useful for passing options to
 Matplotlib and other libraries.
@@ -618,7 +618,7 @@ If we need to make changes or additions to Mininet during the course,
 you may need to update your copy of Mininet. This is easily done using:
 
 	cd ~/mininet
-	sudo make develop \# this only needs to be done once
+	sudo make develop # this only needs to be done once
 	git fetch
 	git pull --rebase
 
