@@ -139,8 +139,8 @@ code, you can create a flexible topology which can be configured based
 on the parameters you pass into it, and reused for multiple experiments.
 
 For example, here is a simple network topology (based on
-mininet/topo.py:SingleSwitchTopo) which consists of a specified number
-of hosts (h1 through hN) connected to a single switch (s1):
+`mininet/topo.py:SingleSwitchTopo`) which consists of a specified number
+of hosts (`h1` through `hN`) connected to a single switch (`s1`):
 
 	#!/usr/bin/python
 	
@@ -211,12 +211,12 @@ Additional example code may be found in mininet/examples.
 ### Setting Performance Parameters
 
 In addition to basic behavioral networking, Mininet provides performance
-limiting and isolation features, through the CPULimitedHost and TCLink
+limiting and isolation features, through the `CPULimitedHost` and `TCLink`
 classes.
 
 There are multiple ways that these classes may be used, but one simple
 way is to specify them as the default host and link classes/constructors
-to Mininet(), and then to specify the appropriate parameters in the
+to `Mininet()`, and then to specify the appropriate parameters in the
 topology. (You could also specify custom classes in the topology itself,
 or create custom node and link constructors and/or subclasses.)
 
@@ -364,8 +364,8 @@ them for compatibility and because humans still type slowly. `bash`
 sometimes provides more verbose equivalents, if you wish to use them.]
 
 In addition to using the shell's wait mechanism, Mininet itself allows
-you to start a foreground command using sendCmd() and then wait for it
-to complete at some later time using waitOutput():
+you to start a foreground command using `sendCmd()` and then wait for it
+to complete at some later time using `waitOutput()`:
 
 	for h in hosts:
 	    h.sendCmd('sleep 20')
@@ -457,11 +457,11 @@ Note this implementation is slightly different since it pulls the time
 management out of the helper function, but this enables pmonitor() to
 catch ping's output after it is interrupted.
 
-Of course, you do not have to use pmonitor() - you can use
-Popen.communicate() (as long as you don't have too many file
-descriptors) or select.poll() or any other mechanism that works.
+Of course, you do not have to use `pmonitor()` - you can use
+`Popen.communicate()` (as long as you don't have too many file
+descriptors) or `select.poll()` or any other mechanism that works.
 
-If you find bugs in the popen() interface, please let us know.
+If you find bugs in the `popen()` interface, please let us know.
 
 <a id=config></a>
 
@@ -482,7 +482,7 @@ For example:
 	print "Host", h1.name, "has IP address", h1.IP(), "and MAC address",
 	h1.MAC()
 
-In each case, if you do not provide a specific interface (e.g. "h1-eth0"
+In each case, if you do not provide a specific interface (e.g. `h1-eth0`
 or an interface object) the method will use the host's default
 interface. The above functions are defined in mininet/node.py.
 
@@ -511,7 +511,7 @@ Mininet includes a command-line interface (CLI) which may be invoked on
 a network, and provides a variety of useful commands, as well as the
 ability to display xterm windows and to run commands on individual nodes
 in your network. You can invoke the CLI on a network by passing the
-network object into the CLI() constructor:
+network object into the `CLI()` constructor:
 
 	from mininet.topo import SingleSwitchTopo
 	from mininet.net import Mininet
@@ -542,8 +542,8 @@ Starting up the CLI can be useful for debugging your network, as it allows you t
 		link/ether d6:13:2d:6f:98:95 brd ff:ff:ff:ff:ff:ff
 
 Starting up the CLI can be useful for debugging your network, as it
-allows you to view the network topology (with the net command), test
-connectivity (with the pingall command), and send commands to individual
+allows you to view the network topology (with the `net` command), test
+connectivity (with the `pingall` command), and send commands to individual
 hosts.
 
 <a id=examples></a>
@@ -570,11 +570,12 @@ example,
 	IP(self, intf=None) unbound mininet.node.Host method
 		Return IP address of a node or specific interface.
 
-You may also wish to generate HTML documentation using doxypy:
+You may also wish to generate HTML documentation using `doxypy`:
 
 	sudo apt-get install doxypy
 	cd ~/mininet
 	make doc
+        cd doc
 	python -m SimpleHTTPServer
 	At this point, you can point a web browser to port 8000 of the host that
 	Mininet is running on and browse the documentation for each of Mininet's
