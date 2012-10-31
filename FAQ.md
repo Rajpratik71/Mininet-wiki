@@ -14,11 +14,6 @@ The best way to get started with Mininet is to install our ready-to-run virtual 
     mn --help
 
 
-### I get an error every time I try to **edit a wiki page** - help!
-
-Unfortunately you can't currently edit the wiki in `https` mode. Change the URL of the page from `https` to `http` and try again.
-
-
 ### How can I do a native install of Mininet?
 
 It's probably easiest to start out with a [VM install](Download) of Mininet - it's pretty much guaranteed to work!
