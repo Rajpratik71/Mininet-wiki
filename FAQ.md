@@ -29,6 +29,7 @@ The best way to get started with Mininet is to install our ready-to-run virtual 
 
     mn --help
 
+***
 <a id=native-install></a>
 ### How can I do a native install of Mininet?
 
@@ -36,6 +37,7 @@ It's probably easiest to start out with a [VM install](Download) of Mininet - it
 
 Instructions for native installation can be found [here](Download) as well.
 
+***
 <a id=python-api></a>
 ### How do I **use Mininet's Python API**?
 
@@ -54,11 +56,13 @@ In each case, pressing =q= should quit the pager.
 
 Also see [Mininet-API-Documentation](MininetAPIDocumentation) for information on how to generate Mininet documentation in.md format.
 
+***
 <a id=openflow-versions></a>
 ### Which **versions of OpenFlow** does Mininet support?
 
 Mininet officially supports OpenFlow 1.0, and the Mininet VM image includes OpenFlow 1.0-compatible versions of the OpenFlow reference implementation as well as Open vSwitch. It is also possible to get Mininet to run with OpenFlow 0.8.9 with a few minor changes.
 
+***
 <a id=openflow-switches></a>
 ### What **OpenFlow switch implementations** does Mininet support?
 
@@ -66,6 +70,7 @@ Mininet currently includes support for the user space reference implementations,
 
 The command line options are `--switch user` and `--switch ovsk` for the user reference and Open vSwitch kernel switches, respectively.
 
+***
 <a id=ethernet-loops></a>
 ### Why does my controller, which implements an Ethernet bridge or learning switch, not work with my network which has loops in it? I can't ping anything!
 
@@ -77,11 +82,13 @@ The OpenFlow reference controller (`controller`) implements a bridge/learning sw
 
 In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `controller` and `pyswitch` do not by default. NOX has a `spanning_tree` module, which you may wish to investigate.
 
+***
 <a id=assign-macs></a>
 ### Why do the switch data ports have random MAC addresses? How do I assign MAC and IP addresses to the switch data ports?
 
 The MAC addresses reported by Linux for the switch data ports are meaningless. The switch is controlled by OpenFlow, so you should use OpenFlow to ensure that any packets destined "for the switch" are properly routed. You "assign" MAC and IP addresses "to the switch" by using OpenFlow rather than the Linux IP stack. If you attempt to use the Linux IP stack instead, it really won't work unless you are using the Linux kernel for routing (which you aren't - you're using an OpenFlow switch!) You should never attempt to use `ifconfig` or `ip link` or other utilities to assign an IP address to a switch data port. Usually you will want your controller to handle packets such as ARP and ICMP which are sent to and from "the switch," and you will want IP packets which are sent to to be handled by appropriate flow table entries. You can pick any "MAC" address you like for the switch.
 
+***
 <a id=x11-forwarding></a>
 ### Why can't I get X11 forwarding to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!
 
