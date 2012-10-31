@@ -8,13 +8,16 @@ Please add helpful, Frequently Asked Questions and high-quality answers below.
 
 * [How can I **get started** with Mininet?](#get-started)
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
-* [How can I do a native install of Mininet?](#native-install)
+* [How can I do a **native install** of Mininet?](#native-install)
 * [How do I **use Mininet's Python API**?](#python-api)
 * [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
 * [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
-* [Why does my controller, which implements an Ethernet bridge or learning switch, not work with my network which has loops in it? I can't ping anything!](#ethernet-loops)
-* [Why do the switch data ports have random MAC addresses? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
-* [Why can't I get X11 forwarding to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
+* [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
+* [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
+* [Why can't I get **X11 forwarding** to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
+
+
+***
 
 <a id=get-started></a>
 ### How can I **get started** with Mininet?
