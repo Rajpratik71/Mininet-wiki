@@ -16,10 +16,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why can't I get **X11 forwarding** to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 
-
-***
-
-<a id=get-started></a>
+<a id=get-started>***</a>
 ### How can I **get started** with Mininet?
 
 The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Download](Download) page, and then go through the [Walkthrough](Walkthrough.md) and the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]].
