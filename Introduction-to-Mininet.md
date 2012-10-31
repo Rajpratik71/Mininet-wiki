@@ -479,8 +479,7 @@ configuration:
 
 For example:
 
-	print "Host", h1.name, "has IP address", h1.IP(), "and MAC address",
-	h1.MAC()
+    print "Host", h1.name, "has IP address", h1.IP(), "and MAC address", h1.MAC()
 
 In each case, if you do not provide a specific interface (e.g. `h1-eth0`
 or an interface object) the method will use the host's default
