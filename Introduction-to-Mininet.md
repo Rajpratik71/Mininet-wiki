@@ -1,5 +1,5 @@
 This document is meant to give you a brief sense of what Mininet is and
-how it works, and specifically including an introduction to Mininet's
+how it works, including a basic introduction to Mininet's
 Python API.
 
 - [What is Mininet?](#what)
