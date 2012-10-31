@@ -716,17 +716,17 @@ A Mininet network consists of the following components:
     of a CPU available to each process group.
     
 2.  *Emulated Links*. The data rate of each link is enforced by Linux
-    Traffic Control (tc), which has a number of packet schedulers to
+    Traffic Control (`tc`), which has a number of packet schedulers to
     shape traffic to a configured rate. Each emulated host has its own
     virtual Ethernet interface(s) (created and installed with ip link
-    add/set). A virtual Ethernet (or veth) pair, acts like a wire
+    add/set). A virtual Ethernet (or `veth`) pair, acts like a wire
     connecting two virtual interfaces, or virtual switch ports; packets
     sent through one interface are delivered to the other, and each
     interface appears as a fully functional Ethernet port to all system
     and application software.
     
 3.  *Emulated Switches*. Mininet typically uses the default Linux bridge
-    or OpenVSwitch running in kernel mode to switch packets across
+    or Open vSwitch running in kernel mode to switch packets across
     interfaces. Switches and routers can run in the kernel (for speed)
     or in user space (so we can modify them easily).
 
