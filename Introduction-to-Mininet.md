@@ -591,9 +591,9 @@ install instructions to the TAs.
 1.  Bandwidth (`bwm-ng`, `ethstats`)
 2.  Latency (use `ping`)
 3.  Queues (use `tc` included in `monitor.py`)
-4.  TCP `CWND` statistics (	`tcp_probe`, maybe we should add
-    ^[[d]](#cmnt4)^it to monitor.py)
-5.  CPU usage (global: top, or per-container cpuacct)
+4.  TCP `CWND` statistics (`tcp_probe`, maybe we should add
+    it to `monitor.py`)
+5.  CPU usage (global: `top`, or per-container `cpuacct`)
 
 <a id=openflow></a>
 
