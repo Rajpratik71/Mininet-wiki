@@ -9,7 +9,7 @@ Python API.
  - [Creating Topologies](#creating)
  - [Setting Performance Parameters](#setting)
  - [Running Programs in Hosts](#running)
- - [New: popen()/pexec() interface](#popen)
+ - [New: `popen()`/`pexec()` interface](#popen)
  - [Host Configuration Methods](#config)
  - [Naming in Mininet](#naming)
  - [CLI](#cli)
