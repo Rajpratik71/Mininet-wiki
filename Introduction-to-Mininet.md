@@ -571,14 +571,15 @@ example,
 
 You may also wish to generate HTML documentation using `doxypy`:
 
-	sudo apt-get install doxypy
-	cd ~/mininet
-	make doc
-        cd doc
-	python -m SimpleHTTPServer
-	At this point, you can point a web browser to port 8000 of the host that
-	Mininet is running on and browse the documentation for each of Mininet's
-	classes.
+    sudo apt-get install doxypy
+    cd ~/mininet
+    make doc
+    cd doc
+    python -m SimpleHTTPServer
+
+At this point, you can point a web browser to port 8000 of the host that
+Mininet is running on and browse the documentation for each of Mininet's
+classes.
 
 <a id=measuring></a>
 
