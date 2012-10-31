@@ -1,4 +1,4 @@
-Please add helpful, Frequently Asked Questions and high-quality answers below.
+Please add helpful, **Frequently Asked Questions** and **high-quality answers** below.
 
 *Since github wikis don't automatically generate a Table of Contents, please follow the existing format and add 1) an anchor for your question and 2) a link to it at the top of the page. Thanks!*
 
