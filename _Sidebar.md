@@ -8,7 +8,7 @@
 ---
 
 * [[Download | http://mininet.github.com/download]]
-* [[Docs | Documentation]]
+* [[Documentation | Documentation]]
 * [[FAQ]]
 * Apps
 * Tutorials
