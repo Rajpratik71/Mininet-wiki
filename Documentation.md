@@ -12,7 +12,7 @@ The following Mininet documentation is available on this wiki:
 
 #### Documentation and FAQ
 * [Introduction to Mininet](Introduction-to-Mininet) An introduction to Mininet and its Python API.
-* [Mininet Python API Reference](http://mininet.github.com/api/annotated.html)
+* [Mininet Python API Reference](http://mininet.github.com/api/annotated.html) On-line documentation for Mininet's Python API
 * [Viewing/Generating API Documentation](Mininet-API-Documentation) How to view and/or generate documentation for Mininet's Python API
 * [Presentations](Presentations) Presentations on Mininet
 * [Publications](Publications) Mininet papers and other publications
