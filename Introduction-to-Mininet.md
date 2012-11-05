@@ -1,4 +1,5 @@
 (updated for Mininet 2.0.0)
+
 by Bob Lantz, Nikhil Handigol, Brandon Heller, and Vimal Jeyakumar
 
 This document is meant to give you a brief sense of what Mininet is and
