@@ -13,7 +13,7 @@ Mininet is under active development, and we hope to add a variety of useful feat
 
 ### Bandwidth Limiting
 
-CPU and Link bandwidth limiting is included in Mininet 2.0.0.
+*CPU and Link bandwidth limiting is included in Mininet 2.0!*
 
 ### Mininet: Cluster Edition
 
@@ -38,5 +38,3 @@ Originally I had intended for topologies to be composable, so you could make a r
 It should be easy to add a patch cable program that just forwards packets between interfaces. This would allow us to make a virtual patch panel and change how nodes are connected (or disconnected) without perturbing their underlying interfaces, and could even support simple link modeling - e.g. simulating packet loss or delay.. It's more efficient to just use veth pairs, but if you need the additional capabilities then the virtual cable would enable them.
 
 The API already supports running arbitrary programs (e.g. wire simulators) in a node, but a high level API supporting link simulators (e.g. automatically instantiating and connecting them) would be more convenient. A simple wire simulator (e.g. supporting delay, drop, and some model of packet loss) could be provided. 
-
--- [Main/BobLantz](../Main/BobLantz) - 09 Mar 2010
