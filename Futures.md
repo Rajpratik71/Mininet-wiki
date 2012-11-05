@@ -10,6 +10,8 @@ Mininet Futures
 
 Mininet is under active development, and we hope to add a variety of useful features and expansions. This page will detail a few of the things we have been thinking about.
 
+If there are specific features which you want or wish to implement, please open up an issue in github and/or a pull request!
+
 
 ### Bandwidth Limiting
 
