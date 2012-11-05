@@ -24,4 +24,8 @@ The following Mininet documentation is available on this wiki:
 
 #### Future Plans (in progress)
 * [Futures](Futures) This page describes future plans and new features that we plan to add to Mininet
+
+<!-- comment this out since it's obsolete
 * [Release-Plan](Release-Plan) Planning and task lists for Mininet releases
+-->
+
