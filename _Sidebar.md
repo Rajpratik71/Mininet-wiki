@@ -10,18 +10,13 @@
 * [[Download | http://mininet.github.com/download]]
 * [[Documentation | Documentation]]
 * [[FAQ]]
-<!--
-* Apps
-* Tutorials
--->
+<!-- * Apps * Tutorials -->
 * [[Wiki | Home]]
 * [[Papers | Publications]]
 
 ---
 
 * [[Support | http://mininet.github.com/support]]
-<!--
-* Contribute
--->
+<!-- * Contribute -->
 * [[News Archives | http://mininet.github.com/blog/archives]]
 * [[About | Credits]]
