@@ -11,3 +11,5 @@ You may also wish to generate HTML documentation using =doxypy=:
 
     sudo apt-get install doxypy
     cd ~/mininet
+
+For your convenience, we've already done this for you and uploaded the doxypy output to <http://mininet.github.com/api>.
