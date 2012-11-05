@@ -7,9 +7,10 @@ Mininet's modules and Python API are documented using Python documentation strin
     IP(self, intf=None) unbound mininet.node.Host method
             Return IP address of a node or specific interface.</verbatim>
 
-You may also wish to generate HTML documentation using =doxypy=:
+You may also wish to generate HTML (and PDF) documentation using =doxypy=:
 
     sudo apt-get install doxypy
     cd ~/mininet
+    make doc
 
-For your convenience, we've already done this for you and uploaded the doxypy output to <http://mininet.github.com/api>.
+For your convenience, we've already done this for you and uploaded the HTML to <http://mininet.github.com/api>.
