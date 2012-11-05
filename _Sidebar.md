@@ -8,6 +8,7 @@
 
 * [[Download | http://mininet.github.com/download]]
 * [[Documentation | Documentation]]
+* [[Source Code | https://github.com/mininet/mininet]]
 * [[FAQ]]
 * [[Wiki | Home]]
 * [[Papers | Publications]]
