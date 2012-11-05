@@ -1,5 +1,6 @@
-* [[Mininet | http://mininet.github.com]]
 <!-- * Intro Video -->
+* [[Mininet | http://mininet.github.com]]
+
 * [[Get Started | http://mininet.github.com/download]]
 * [[Sample Workflow | http://mininet.github.com/sample-workflow]]
 * [[Walkthrough | http://mininet.github.com/walkthrough]]
