@@ -1,4 +1,4 @@
-Bob Lantz, Nikhil Handigol, Brandon Heller, Vimal Jeyakumar
+by Bob Lantz, Nikhil Handigol, Brandon Heller, and Vimal Jeyakumar
 
 This document is meant to give you a brief sense of what Mininet is and
 how it works, including a basic introduction to Mininet's
