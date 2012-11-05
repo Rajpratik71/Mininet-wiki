@@ -13,10 +13,7 @@ Mininet is under active development, and we hope to add a variety of useful feat
 
 ### Bandwidth Limiting
 
-Bandwidth limiting using the Linux tc command should basically work out of the box. However, we need to try this out, test it, and support it in Mininet's infrastructure. We may also run into issues in the Linux kernel itself which need to be fixed. If bandwidth limiting works, then it may be possible to create networks that perform somewhat realistically, for example a network with 256 10Mbps links. We would also like to support and simulate OpenFlow slicing and Enterprise GENI, which make use of bandwidth limiting.
-
-
-
+CPU and Link bandwidth limiting is included in Mininet 2.0.0.
 
 ### Mininet: Cluster Edition
 
