@@ -8,7 +8,6 @@ The following Mininet documentation is available on this wiki:
 * [VM-Setup-Notes](VM-Setup-Notes) How to configure a Mininet VM after you download it
 * [Walkthrough](Walkthrough) A tutorial introduction to using Mininet
 * [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) A tutorial introduction to OpenFlow using Mininet
-* [VM-Creation-Notes](VM-Creation-Notes) How we created the Mininet VM image
 
 #### Documentation and FAQ
 * [Introduction to Mininet](Introduction-to-Mininet) An introduction to Mininet and its Python API.
@@ -16,7 +15,8 @@ The following Mininet documentation is available on this wiki:
 * [Viewing/Generating API Documentation](Mininet-API-Documentation)
 * [Presentations](Presentations) Presentations on Mininet
 * [Publications](Publications) Mininet papers and other publications
-* [FAQ](FAQ) Please read and add to the Frequently Asked Questions (and their Answers)
+* **[FAQ](FAQ)** Please read and add to the **Frequently Asked Questions** (and their Answers)
+* [VM-Creation-Notes](VM-Creation-Notes) How we created the Mininet VM image
 
 #### Bug Reports and Feature Requests
 * [Bugs](Bugs) How to submit bug reports
