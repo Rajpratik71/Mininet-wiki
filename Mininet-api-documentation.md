@@ -13,4 +13,4 @@ You may also wish to generate HTML (and PDF) documentation using =doxypy=:
     cd ~/mininet
     make doc
 
-For your convenience, we've already done this for you and uploaded the HTML to <http://mininet.github.com/api>.
+**For your convenience, we've already done this for you** and uploaded the HTML to <http://mininet.github.com/api>.
