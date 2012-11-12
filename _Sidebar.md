@@ -17,4 +17,4 @@
 
 * [[Support | http://mininet.github.com/support]]
 * [[News Archives | http://mininet.github.com/blog/archives]]
-* [[About | Credits]]
+* [[Credits | http://mininet.github.com/credits]]
