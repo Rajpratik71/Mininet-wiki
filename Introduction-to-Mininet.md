@@ -237,13 +237,13 @@ or create custom node and link constructors and/or subclasses.)
 	    "Single switch connected to n hosts."
 	    def __init__(self, n=2, **opts):
 	        Topo.__init__(self, **opts)
-	        switch = self.add_switch('s1')
+	        switch = self.addSwitch('s1')
 	        for h in range(n):
 	            # Each host gets 50%/n of system CPU
-	            host = self.add_host('h%s' % (h + 1),
+	            host = self.addHost('h%s' % (h + 1),
 		           cpu=.5/n)
 	            # 10 Mbps, 5ms delay, 10% loss
-	            self.add_link(host, switch,
+	            self.addLink(host, switch,
 		           bw=10, delay='5ms', loss=10, use_htb=True)
 	
 	def perfTest():
@@ -257,8 +257,7 @@ or create custom node and link constructors and/or subclasses.)
 	    print "Testing network connectivity"
 	    net.pingAll()
 	    print "Testing bandwidth between h1 and h4"
-	    get = net.getNodeByName
-	    h1, h4 = get('h1'), get('h4')
+	    h1, h4 = net.get('h1', 'h4')
 	    net.iperf((h1, h4))
 	    net.stop()
 	
