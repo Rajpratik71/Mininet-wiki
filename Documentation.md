@@ -6,9 +6,9 @@ Mininet Documentation
 * [VM Setup Notes](VM-Setup-Notes) How to configure a Mininet VM after you download it
 * [Walkthrough](Walkthrough) A tutorial introduction to using Mininet
 * [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) A tutorial introduction to OpenFlow using Mininet
+* [Introduction to Mininet](Introduction-to-Mininet) An introduction to Mininet and its Python API.
 
 #### Documentation and FAQ
-* [Introduction to Mininet](Introduction-to-Mininet) An introduction to Mininet and its Python API.
 * [Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html)
 * [Viewing/Generating API Documentation](Mininet-API-Documentation)
 * [Presentations](Presentations) Presentations on Mininet
