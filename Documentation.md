@@ -9,8 +9,8 @@ Mininet Documentation
 * [Introduction to Mininet](Introduction-to-Mininet) An introduction to Mininet and its Python API.
 
 #### Documentation and FAQ
-* [Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html)
-* [Viewing/Generating API Documentation](Mininet-API-Documentation)
+* [Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html) The output from `make doc`
+* [Viewing/Generating API Documentation](Mininet-API-Documentation) How to type `make doc`
 * [Presentations](Presentations) Presentations on Mininet
 * [Publications](Publications) Mininet papers and other publications
 * **[FAQ](FAQ)** Please read and add to the **Frequently Asked Questions** (and their Answers)
