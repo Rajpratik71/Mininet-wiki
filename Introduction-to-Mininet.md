@@ -572,7 +572,7 @@ example,
 	IP(self, intf=None) unbound mininet.node.Host method
 		Return IP address of a node or specific interface.
 
-You may also wish to generate HTML documentation using `doxypy`:
+You may wish to generate HTML (and PDF) documentation yourself using `doxypy`:
 
     sudo apt-get install doxypy
     cd ~/mininet
@@ -583,6 +583,9 @@ You may also wish to generate HTML documentation using `doxypy`:
 At this point, you can point a web browser to port 8000 of the host that
 Mininet is running on and browse the documentation for each of Mininet's
 classes.
+
+We've already done this for you, and documentation should be available on the Mininet
+web site at <https://mininet.github.com/api>.
 
 <a id=measuring></a>
 
