@@ -585,7 +585,7 @@ Mininet is running on and browse the documentation for each of Mininet's
 classes.
 
 We've already done this for you, and documentation should be available on the Mininet
-web site at <https://mininet.github.com/api>.
+web site at <http://mininet.github.com/api>.`
 
 <a id=measuring></a>
 
