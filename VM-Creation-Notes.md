@@ -8,15 +8,16 @@ _Note: If you need to build on a non-Ubuntu distro, you are currently on your ow
 **First, create a new Ubuntu 12.10 VM** (using VMware, VirtualBox, etc..) We use user: `mininet` and password: `mininet` in our default VM, but any user/password combo should work as long as it has admin/sudo privileges.
 
 **Next, log in to the new VM and do the following**:
-<verbatim>
-wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
-time install-mininet-vm.sh
-</verbatim> After this completes (about 5 minutes), Mininet should work: <verbatim>
-$ sudo mn --test pingall
-</verbatim>
+
+    wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
+    time install-mininet-vm.sh
+
+After this completes (about 5 minutes), Mininet should work:
+    $ sudo mn --test pingall
+
 
 **That's it!**
 
-For historical reference, we have also preserved the [OldVM-Creation-Notes](OldVM-Creation-Notes).
+For historical reference, we have also preserved the [Old VM Creation Notes](Old-VM-Creation-Notes).
 
 -- [Main/BrandonHeller](../Main/BrandonHeller) - 09 Feb 2010
