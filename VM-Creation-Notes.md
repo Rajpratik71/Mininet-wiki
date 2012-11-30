@@ -20,4 +20,11 @@ After this completes (about 5 minutes), Mininet should work:'
 
 For historical reference, we have also preserved the [Old VM Creation Notes](Old-VM-Creation-Notes).
 
+### How we created the Mininet 2.0.0 VM Image
+
+1. Created a new VM `mininet-vm` in VMware using the Ubuntu 12.10 server amd64 image with auto-install, and `mininet` for all user information and passwords.
+2. Customized it by increasing the memory to 1536 MB.
+3. Customized it by adding an additional private (host-only) network interface.
+4. Booted VM and let auto-install complete
+
 
