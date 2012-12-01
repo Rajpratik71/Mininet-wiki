@@ -41,6 +41,8 @@ In the future, these steps will be automated, but for now there are several manu
 
 6. Shut down and ran the following (~3min):
 
+   *Note: This assumes you're running on a Mac with the VMware OVF Tool installed!!*
+
         echo "Converting to OVF"
         time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
         echo "Fixing OVF so it works with VirtualBox" 
