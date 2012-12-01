@@ -54,6 +54,16 @@ In the future, these steps will be automated, but for now there are several manu
         zip -r mininet-ovf mininet-ovf
         mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip
 
+7. Uploaded to github (~10min)
+
+8. Downloaded from github (~10min)
+
+9. Unzipped and imported into VirtualBox (~3min)
+
+10. Booted, logged in, and tested with
+
+        sudo mn --test pingall
+
 ----
 
 I didn't do the following:
