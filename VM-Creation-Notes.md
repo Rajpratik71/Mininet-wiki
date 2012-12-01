@@ -35,29 +35,29 @@ In the future, these steps will be automated, but for now there are several manu
 
 4. Ran the following commands:
 
-    `wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh`
-    `time bash install-mininet-vm.sh`
+        wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
+        time bash install-mininet-vm.sh
 
     (Less than 4 minutes to complete.)
 
 5. Tested mininet
 
-    `sudo mn --test pingall`
+        sudo mn --test pingall
 
-6. Shut down and ran the following:
+6. Shut down and ran the following  
 
-    echo "Converting to OVF"
-    time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
-    echo "Fixing OVF so it works with VirtualBox" 
-    sed -i -e '/vmw:Config/d' mininet-vm.ovf
-    echo "Updating SHA1 checksums"
-    openssl sha1 mininet-vm.ovf mininet-vm-disk1 > mininet-vm.mf
-    echo "Moving OVF to its own directory"
-    mkdir mininet-ovf
-    mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf
-    echo "Zipping OVF"
-    zip -r mininet-ovf mininet-ovf
-    `mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`
+        echo "Converting to OVF"
+        time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
+        echo "Fixing OVF so it works with VirtualBox" 
+        sed -i -e '/vmw:Config/d' mininet-vm.ovf
+        echo "Updating SHA1 checksums"
+        openssl sha1 mininet-vm.ovf mininet-vm-disk1 > mininet-vm.mf
+        echo "Moving OVF to its own directory"
+        mkdir mininet-ovf
+        mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf
+        echo "Zipping OVF"
+        zip -r mininet-ovf mininet-ovf
+        mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip
 
 ----
 
@@ -65,8 +65,8 @@ I didn't do the following:
 
 1. Removed DHCP leases
 
-    `cd /var/lib/dhcp/`  
-    `rm *lease*`
+        cd /var/lib/dhcp/
+        rm *lease*
 
    This may not be the right thing to do, as it causes the VirtualBox VM boot to hang
    for 60+ seconds at "waiting for network configuration."
@@ -74,4 +74,3 @@ I didn't do the following:
 2. Shut down VM and added an additional private (host-only) network interface.
 
    This also didn't seem to work as the OVF was imported into VirtualBox with only one interface.
-
