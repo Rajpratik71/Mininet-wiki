@@ -69,7 +69,7 @@ In the future, these steps will be automated, but for now there are several manu
 
 I didn't do the following:
 
-1. Removed dhcp leases
+1. Removed DHCP leases
 
     `cd /var/lib/dhcp/`  
     `rm *lease*`
