@@ -71,6 +71,8 @@ In the future, these steps will be automated, but for now there are several manu
 
         sudo mn --test pingall
 
+11. Profit!
+
 ----
 
 I didn't do the following:
