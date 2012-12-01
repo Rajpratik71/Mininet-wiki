@@ -46,7 +46,7 @@ In the future, these steps will be automated, but for now there are several manu
         echo "Fixing OVF so it works with VirtualBox" 
         sed -i -e '/vmw:Config/d' mininet-vm.ovf
         echo "Updating SHA1 checksums"
-        openssl sha1 mininet-vm.ovf mininet-vm-disk1 > mininet-vm.mf
+        openssl sha1 mininet-vm.ovf mininet-vm-disk1.vmdk > mininet-vm.mf
         echo "Moving OVF to its own directory"
         mkdir mininet-ovf
         mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf
