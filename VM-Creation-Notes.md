@@ -38,7 +38,7 @@ In the future, these steps will be automated, but for now there are several manu
     `wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh`
     `time bash install-mininet-vm.sh`
 
-(Less than 4 minutes to complete.)
+    (Less than 4 minutes to complete.)
 
 5. Tested mininet
 
@@ -48,7 +48,7 @@ In the future, these steps will be automated, but for now there are several manu
 
     `time /Applications/VMware\ OVF\ Tool/ovftool Mininet-VM.vmx mininet-vm.ovf`
 
-Completed in 1:51
+   Completed in 1:51
 
 7. Fixed OVF so it will load in VirtualBox
 
@@ -64,10 +64,6 @@ Completed in 1:51
     `mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf`
     `zip -r mininet-ovf mininet-ovf`
     `mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`
-
-
-
-
 
 ----
 
