@@ -31,7 +31,7 @@ In the future, these steps will be automated, but for now there are several manu
 
 2. Customized it by increasing the memory to 1536 MB and naming it `mininet-vm`
 
-3. Booted VM and let easy install complete (~5min)
+3. Booted `mininet-vm` and let easy install complete (~5min)
 
 4. Ran the following commands (~4min):
 
