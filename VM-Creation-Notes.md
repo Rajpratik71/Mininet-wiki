@@ -37,11 +37,7 @@ In the future, these steps will be automated, but for now there are several manu
 
         wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
         time bash install-mininet-vm.sh
-
     (Less than 4 minutes to complete.)
-
-5. Tested mininet
-
         sudo mn --test pingall
 
 6. Shut down and ran the following  
