@@ -60,8 +60,8 @@ I didn't do the following:
 
 1. Removed dhcp leases
 
-    cd /var/lib/dhcp/
-    rm *lease*
+    `cd /var/lib/dhcp/`
+    `rm *lease*`
 
 2. Shut down VM and added an additional private (host-only) network interface.
 
