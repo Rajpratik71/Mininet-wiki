@@ -35,7 +35,7 @@ In the future, these steps will be automated, but for now there are several manu
     `wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh`
     `time bash install-mininet-vm.sh`
 
-(Less than 3 minutes to complete)
+(Less than 4 minutes to complete.)
 
 5. Tested mininet
 
@@ -51,7 +51,19 @@ Completed in 1:51
 
     `sed -i -e '/vmw:Config/d' mininet-vm.ovf`
 
+8. Stored SHA1 checksums in mininet-vm.mf
+
+    `openssl sha1 mininet-vm.ovf mininet-vm-disk1 > mininet-vm.mf` (OS X command)
+
 9. Zipped and uploaded to GitHub
+
+    `mkdir mininet-ovf`
+    `mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf`
+    `zip -r mininet-ovf mininet-ovf`
+    `mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`
+
+
+
 
 
 ----
