@@ -10,7 +10,7 @@ _Note: If you need to build on a non-Ubuntu distro, you are currently on your ow
 **Next, log in to the new VM and do the following**:
 
     wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
-    time install-mininet-vm.sh
+    time bash install-mininet-vm.sh
 
 After this completes (about 5 minutes), Mininet should work:
 
@@ -22,9 +22,40 @@ For historical reference, we have also preserved the [Old VM Creation Notes](Old
 
 ### How we created the Mininet 2.0.0 VM Image
 
+In the future, these steps will be automated, but for now there are several manual steps.
+
 1. Created a new VM `mininet-vm` in VMware using the Ubuntu 12.10 server amd64 image with auto-install, and `mininet` for all user information and passwords.
+
 2. Customized it by increasing the memory to 1536 MB.
-3. Customized it by adding an additional private (host-only) network interface.
-4. Booted VM and let auto-install complete
+
+3. Booted VM and let auto-install complete
+
+4. Ran the following commands:
+
+    wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
+    time bash install-mininet-vm.sh
+
+(Less than 3 minutes to complete)
+
+5. Shut down VM and added an additional private (host-only) network interface.
+
+6. Booted and tested mininet
+
+7. Removed dhcp leases
+
+    cd /var/lib/dhcp/
+    rm *lease*
+
+8. Shut down and exported OVF
+
+    time /Applications/VMware\ OVF\ Tool/ovftool Mininet-VM.vmx mininet-vm.ovf
+
+Completed in 1:51
+
+8. Fixed OVF so it will load in VirtualBox
+
+    sed -i -e '/vmw:Config/d' mininet-vm.ovf
+
+9. Zipped and uploaded to GitHub
 
 
