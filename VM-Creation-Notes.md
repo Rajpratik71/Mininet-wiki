@@ -31,15 +31,15 @@ In the future, these steps will be automated, but for now there are several manu
 
 2. Customized it by increasing the memory to 1536 MB.
 
-3. Booted VM and let easy install complete
+3. Booted VM and let easy install complete (~5min)
 
-4. Ran the following commands (less than 4 minutes to complete):
+4. Ran the following commands (~4min):
 
         wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
         time bash install-mininet-vm.sh
         sudo mn --test pingall
 
-6. Shut down and ran the following (less than 2 minutes to complete)
+6. Shut down and ran the following (~2min):
 
         echo "Converting to OVF"
         time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
