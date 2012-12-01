@@ -29,7 +29,7 @@ In the future, these steps will be automated, but for now there are several manu
 
 1. Created a new VM `mininet-vm` in VMware using the Ubuntu 12.10 server amd64 image with easy install, and `mininet` for all user information and passwords.
 
-2. Customized it by increasing the memory to 1536 MB.
+2. Customized it by increasing the memory to 1536 MB and naming it `mininet-vm`
 
 3. Booted VM and let easy install complete (~5min)
 
