@@ -43,16 +43,16 @@ In the future, these steps will be automated, but for now there are several manu
 
    *Note: This assumes you're running on a Mac with the VMware OVF Tool installed!!*
 
-        echo "Converting to OVF"
+        echo "*** Converting to OVF"
         time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
-        echo "Fixing OVF so it works with VirtualBox" 
+        echo "*** Fixing OVF so it works with VirtualBox" 
         sed -i -e '/vmw:Config/d' mininet-vm.ovf
-        echo "Updating SHA1 checksums"
+        echo "*** Updating SHA1 checksums"
         openssl sha1 mininet-vm.ovf mininet-vm-disk1.vmdk > mininet-vm.mf
-        echo "Moving OVF to its own directory"
+        echo "*** Moving OVF to its own directory"
         mkdir mininet-ovf
         mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf
-        echo "Zipping OVF"
+        echo "*** Zipping OVF"
         zip -r mininet-ovf mininet-ovf
         mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip
 
