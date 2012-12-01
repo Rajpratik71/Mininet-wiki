@@ -12,7 +12,7 @@ _Note: If you need to build on a non-Ubuntu distro, you are currently on your ow
     wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
     time install-mininet-vm.sh
 
-After this completes (about 5 minutes), Mininet should work:'
+After this completes (about 5 minutes), Mininet should work:
 
     $ sudo mn --test pingall
 
