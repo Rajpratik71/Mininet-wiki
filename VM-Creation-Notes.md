@@ -60,9 +60,9 @@ In the future, these steps will be automated, but for now there are several manu
 
 9. Zipped and uploaded to GitHub
 
-    `mkdir mininet-ovf`
-    `mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf`
-    `zip -r mininet-ovf mininet-ovf`
+    `mkdir mininet-ovf`  
+    `mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf`  
+    `zip -r mininet-ovf mininet-ovf`  
     `mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`
 
 ----
@@ -71,7 +71,7 @@ I didn't do the following:
 
 1. Removed dhcp leases
 
-    `cd /var/lib/dhcp/`
+    `cd /var/lib/dhcp/`  
     `rm *lease*`
 
 2. Shut down VM and added an additional private (host-only) network interface.
