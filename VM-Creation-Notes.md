@@ -56,6 +56,11 @@ In the future, these steps will be automated, but for now there are several manu
 
 7. Uploaded to github (~10min)
 
+   <https://github.com/mininet/mininet/downloads>
+
+   File to upload: `mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`
+   Short Description: `Mininet 2.0.0rc1 VM - Ubuntu 12.10 server 64-bit - OVF - 11.30.12`
+
 8. Downloaded from github (~10min)
 
 9. Unzipped and imported into VirtualBox (~3min)
