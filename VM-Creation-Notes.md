@@ -46,7 +46,7 @@ In the future, these steps will be automated, but for now there are several manu
 
 6. Shut down and exported OVF
 
-    `time /Applications/VMware\ OVF\ Tool/ovftool Mininet-VM.vmx mininet-vm.ovf`
+    `time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf`
 
    Completed in 1:51
 
