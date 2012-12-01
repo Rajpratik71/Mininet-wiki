@@ -32,24 +32,24 @@ In the future, these steps will be automated, but for now there are several manu
 
 4. Ran the following commands:
 
-    wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
-    time bash install-mininet-vm.sh
+    `wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh`
+    `time bash install-mininet-vm.sh`
 
 (Less than 3 minutes to complete)
 
 5. Tested mininet
 
-    sudo mn --test pingall
+    `sudo mn --test pingall`
 
 6. Shut down and exported OVF
 
-    time /Applications/VMware\ OVF\ Tool/ovftool Mininet-VM.vmx mininet-vm.ovf
+    `time /Applications/VMware\ OVF\ Tool/ovftool Mininet-VM.vmx mininet-vm.ovf`
 
 Completed in 1:51
 
 7. Fixed OVF so it will load in VirtualBox
 
-    sed -i -e '/vmw:Config/d' mininet-vm.ovf
+    `sed -i -e '/vmw:Config/d' mininet-vm.ovf`
 
 9. Zipped and uploaded to GitHub
 
