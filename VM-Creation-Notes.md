@@ -27,11 +27,11 @@ For historical reference, we have also preserved the [Old VM Creation Notes](Old
 
 In the future, these steps will be automated, but for now there are several manual steps.
 
-1. Created a new VM `mininet-vm` in VMware using the Ubuntu 12.10 server amd64 image with auto-install, and `mininet` for all user information and passwords.
+1. Created a new VM `mininet-vm` in VMware using the Ubuntu 12.10 server amd64 image with easy install, and `mininet` for all user information and passwords.
 
 2. Customized it by increasing the memory to 1536 MB.
 
-3. Booted VM and let auto-install complete
+3. Booted VM and let easy install complete
 
 4. Ran the following commands:
 
@@ -74,7 +74,10 @@ I didn't do the following:
     `cd /var/lib/dhcp/`  
     `rm *lease*`
 
+   This may not be the right thing to do, as it causes the VirtualBox VM boot to hang
+   for 60+ seconds at "waiting for network configuration."
+
 2. Shut down VM and added an additional private (host-only) network interface.
 
-
+   This also didn't seem to work as the OVF was imported into VirtualBox with only one interface.
 
