@@ -58,9 +58,9 @@ In the future, these steps will be automated, but for now there are several manu
 
 7. Uploaded to github (~10min)
 
-   Mininet downloads page: <https://github.com/mininet/mininet/downloads>
+   Mininet downloads page: <https://github.com/mininet/mininet/downloads>  
    File to upload: `mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`  
-   Short Description: `Mininet 2.0.0rc1 VM - Ubuntu 12.10 server 64-bit - OVF - 11.30.12`
+   Short Description: `Mininet 2.0.0rc1 VM - Ubuntu 12.10 server 64-bit - OVF - 11.30.12`  
 
    While I was waiting for the download, I extracted the zip archive and verified that I could
    import it and run in VirtualBox.
