@@ -37,25 +37,33 @@ In the future, these steps will be automated, but for now there are several manu
 
 (Less than 3 minutes to complete)
 
-5. Shut down VM and added an additional private (host-only) network interface.
+5. Tested mininet
 
-6. Booted and tested mininet
+    sudo mn --test pingall
 
-7. Removed dhcp leases
-
-    cd /var/lib/dhcp/
-    rm *lease*
-
-8. Shut down and exported OVF
+6. Shut down and exported OVF
 
     time /Applications/VMware\ OVF\ Tool/ovftool Mininet-VM.vmx mininet-vm.ovf
 
 Completed in 1:51
 
-8. Fixed OVF so it will load in VirtualBox
+7. Fixed OVF so it will load in VirtualBox
 
     sed -i -e '/vmw:Config/d' mininet-vm.ovf
 
 9. Zipped and uploaded to GitHub
+
+
+----
+
+I didn't do the following:
+
+1. Removed dhcp leases
+
+    cd /var/lib/dhcp/
+    rm *lease*
+
+2. Shut down VM and added an additional private (host-only) network interface.
+
 
 
