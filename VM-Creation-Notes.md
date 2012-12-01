@@ -20,6 +20,9 @@ After this completes (about 5 minutes), Mininet should work:
 
 For historical reference, we have also preserved the [Old VM Creation Notes](Old-VM-Creation-Notes).
 
+
+***
+
 ### How we created the Mininet 2.0.0 VM Image
 
 In the future, these steps will be automated, but for now there are several manual steps.
