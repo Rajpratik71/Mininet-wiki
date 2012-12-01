@@ -44,25 +44,19 @@ In the future, these steps will be automated, but for now there are several manu
 
     `sudo mn --test pingall`
 
-6. Shut down and exported OVF
+6. Shut down and ran the following:
 
-    `time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf`
-
-   Completed in 1:51
-
-7. Fixed OVF so it will load in VirtualBox
-
-    `sed -i -e '/vmw:Config/d' mininet-vm.ovf`
-
-8. Stored SHA1 checksums in mininet-vm.mf
-
-    `openssl sha1 mininet-vm.ovf mininet-vm-disk1 > mininet-vm.mf` (OS X command)
-
-9. Zipped and uploaded to GitHub
-
-    `mkdir mininet-ovf`  
-    `mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf`  
-    `zip -r mininet-ovf mininet-ovf`  
+    echo "Converting to OVF"
+    time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
+    echo "Fixing OVF so it works with VirtualBox" 
+    sed -i -e '/vmw:Config/d' mininet-vm.ovf
+    echo "Updating SHA1 checksums"
+    openssl sha1 mininet-vm.ovf mininet-vm-disk1 > mininet-vm.mf
+    echo "Moving OVF to its own directory"
+    mkdir mininet-ovf
+    mv mininet-vm-disk1.vmdk mininet-vm.{mf,ovf} mininet-ovf
+    echo "Zipping OVF"
+    zip -r mininet-ovf mininet-ovf
     `mv mininet-ovf.zip mininet-2.0.0-113012-amd64-ovf.zip`
 
 ----
