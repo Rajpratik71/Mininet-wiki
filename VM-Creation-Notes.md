@@ -39,7 +39,7 @@ In the future, these steps will be automated, but for now there are several manu
         time bash install-mininet-vm.sh
         sudo mn --test pingall
 
-6. Shut down and ran the following (~2min):
+6. Shut down and ran the following (~3min):
 
         echo "Converting to OVF"
         time /Applications/VMware\ OVF\ Tool/ovftool mininet-vm.vmx mininet-vm.ovf
