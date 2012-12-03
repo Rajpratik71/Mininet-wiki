@@ -130,7 +130,8 @@ You may wish to invoke debug logging on your ssh client to see why X11 forwardin
 
 to see where the X11 forwarding is failing.
 
-If this seems too complicated, you can simply run X11 in the VM console window
+**If this seems too complicated, you can simply run X11 in the VM console window!**
+
 First, log in to the VM in its console window (i.e. type directly into the VM window without using `ssh`.) Then, install `xinit` (and its dependencies) and a window manager of your choice (I picked `flwm` because it's small - you may prefer `metacity` or some other window manager):
 
     sudo apt-get install xinit flwm
