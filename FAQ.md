@@ -43,7 +43,7 @@ On some older VMs it was `openflow`/`openflow`.
 <a id=native-install></a>
 ### How can I do a native install of Mininet?
 
-See <https://mininet.github.com/download>.
+See <http://mininet.github.com/download>.
 
 ***
 <a id=python-api></a>
