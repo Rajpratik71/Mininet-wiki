@@ -17,6 +17,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why can't I get **X11 forwarding** to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
+* [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!] (#ovs-reconfig)
 
 ***
 <a id=get-started></a>
@@ -145,4 +146,17 @@ As an alternative to X11, you could also use VNC, but that is probably about as 
 ### How can I use **multiple controllers** in my network?
 
 One way is to use the mid-level API, as shown in `examples/controllers.py`
+
+***
+<a id=ovs-reconfig></a>
+
+### Help! I updated my Ubuntu kernel and now Open vSwitch won't start!
+
+If you are using Ubuntu's `openvswitch-datapath-dkms` and `openvswitch-switch` packages, they should update automatically when you reboot.
+
+If they don't, then you can reconfigure the kernel module manually and restart OVS:
+
+   sudo dpkg-reconfigure openvswitch-datapath-dkms
+   sudo service openvswitch-switch restart
+
 
