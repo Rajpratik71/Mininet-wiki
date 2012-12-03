@@ -738,7 +738,5 @@ A Mininet network consists of the following components:
     or in user space (so we can modify them easily).
 
 For more details, see the 
-[Mininet website](http://openflow.org/mininet), or a [6-page paper](http://yuba.stanford.edu/foswiki/pub/OpenFlow/MininetPublications/a19-lantz.pdf) on
-an earlier version (which doesn’t have the performance accuracy of the
-version you’ll use.)
+[Mininet website](http://openflow.org/mininet) and our Mininet [Publications](publications).
 
