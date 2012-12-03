@@ -18,7 +18,9 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Why can't I get **X11 forwarding** to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
-* [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!] (#ovs-reconfig)
+* [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!](#ovs-reconfig)
+* [Help! **I don't understand OpenFlow** or SDN!](#openflow)
+* [Will you do my (home)work assignment for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
 <a id=get-started></a>
@@ -172,5 +174,33 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
     sudo dpkg-reconfigure openvswitch-datapath-dkms
     sudo service openvswitch-switch restart
 
+<a id=openflow></a>
 
+### Help! **I don't understand OpenFlow** or SDN!
 
+There is a wealth of useful information to be found at <http://openflow.org>.
+
+Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
+
+### Help! **I don't understand networking** (or maybe computers) at all!!
+
+There is a wealth of very useful information available for free on the internet - try some Google (or search engine of your choice) searches for things like 'networking tutorial', 'IP networking basics', etc..
+
+You may also find useful content on Wikipedia, About.com and YouTube, as well as free online courses.
+
+My [BL's] personal recommendation is to take an introductory CS course and an introductory networking course at your local college or university.
+
+You may also wish to consult an introductory networking textbook such as *Computer Networks: A Top-Down Approach* by Kurose and Ross, or *Computer Networks: A Systems Approach* by Peterson and Davie. To master Ethernet switches you might want to check out *The All-New Switch Book* by Seifert, and for a vintage but still classic and somewhat relevant view of socket programming you might find a copy of the *Unix Network Programming tomes* by the late Richard Stevens.
+
+<a id=homework></a>
+
+### Will you do my (home)work assignment (or paper/thesis/etc.) for me? It's due next Tuesday at 4pm.
+
+No, because:
+
+* We don't want to and don't have time
+* You don't have enough money to pay our consulting rates anyway
+* It would be a violation of the honor code
+* You will learn much more doing the assignment yourself
+* It's your professor/advisor/TA/boss's job to teach you, so make them do their job!
+* Learning how to teach yourself is even more valuable than learning from someone else.
