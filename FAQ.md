@@ -16,6 +16,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why can't I get **X11 forwarding** to work? I get "cannot open display:" or "$DISPLAY not set" and WireShark doesn't work! `xterm` doesn't work either!](#x11-forwarding)
+* [X11 forwarding is too hard! Can't I just run a GUI in my VM console window?](#vm-console-gui)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!] (#ovs-reconfig)
 
@@ -129,7 +130,16 @@ You may wish to invoke debug logging on your ssh client to see why X11 forwardin
 
 to see where the X11 forwarding is failing.
 
-**If this seems too complicated, you can simply run X11 in the VM console window!**
+
+As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
+
+**If this seems too complicated, you can simply run X11 in the VM console window as described below!**
+
+<a id=vm-console-gui></a>
+
+### X11 forwarding is too hard! Can't I just run a GUI in my VM console window?
+
+Yes, you can!
 
 First, log in to the VM in its console window (i.e. type directly into the VM window without using `ssh`.) Then, install `xinit` (and its dependencies) and a window manager of your choice (I picked `flwm` because it's small - you may prefer `metacity` or some other window manager):
 
@@ -139,7 +149,6 @@ Then, you can start X11 in the VM console window using
 
     startx
 
-As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
 
 ***
 <a id=multiple-controllers></a>
