@@ -19,6 +19,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!](#ovs-reconfig)
+* [Help! **I have never used Linux or UNIX before!**](#linux)
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
 * [Will you do my (home)work assignment for me? It's due next Tuesday at 4pm!](#homework)
@@ -173,6 +174,24 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 
     sudo dpkg-reconfigure openvswitch-datapath-dkms
     sudo service openvswitch-switch restart
+
+
+***
+<a id=linux></a>
+### Help! **I have never used Linux or UNIX before!**
+
+There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
+
+Nearly every Unix system since the beginning of time includes online documentation which can be accessed using the `man` command. For example, to find out about the `ls` command, you can type
+
+    man ls
+
+One neat thing you can do with `man` is read all of the intro pages for each section of the Linux/Unix
+programmer's manual:
+
+    man -a intro
+
+There are also many useful books on Linux available on Amazon and in your local bookstore. Mark Sobell's books are classics, as are Nemeth's books on Unix/Linux system administration.
 
 ***
 <a id=openflow></a>
