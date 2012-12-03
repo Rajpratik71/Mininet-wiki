@@ -592,8 +592,7 @@ classes.
 ### Measuring Performance
 
 These are recommended, though you’re free to use any tool you’re
-familiar with. If you use your own, note them in README and provide
-install instructions to the TAs.
+familiar with.
 
 1.  Bandwidth (`bwm-ng`, `ethstats`)
 2.  Latency (use `ping`)
