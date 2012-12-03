@@ -57,7 +57,9 @@ See <http://mininet.github.com/download>.
 <a id=python-api></a>
 ### How do I **use Mininet's Python API**?
 
-We provide a few examples of using the Python API in the `mininet/examples` directory.
+Check out the [Introduction to Mininet](introduction-to-mininet) for an introduction to Mininet and its Python API.
+
+Several useful examples of using the Python API can also be found in the `mininet/examples` directory.
 
 We also provide Python DocStrings for every Mininet class and method, and you can view them using from within Python
 
@@ -69,6 +71,8 @@ or by calling Python from within the Mininet CLI:
     mininet> py help(h2)
 
 In each case, pressing =q= should quit the pager.
+
+The API documentation is available at <http://mininet.github.com/api>.
 
 Also see [Mininet-API-Documentation](MininetAPIDocumentation) for information on how to generate Mininet documentation in.md format.
 
