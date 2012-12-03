@@ -475,7 +475,7 @@ configuration:
 
 1.  `IP()`: Return IP address of a host or specific interface.
 2.  `MAC()`: Return MAC address of a host or specific interface.
-3.  `setARP()`:^[[c]](#cmnt3)^ Add a static ARP entry to a host's ARP
+3.  `setARP()`: Add a static ARP entry to a host's ARP
     cache.
 4.  `setIP()`: Set the IP address for a host or specific interface.
 5.  `setMAC()`: Set the MAC address for a host or specific interface
