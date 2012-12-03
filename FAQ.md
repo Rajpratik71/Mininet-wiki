@@ -20,7 +20,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!](#ovs-reconfig)
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
-* [Help! I don't understand networking (or maybe computers) at all!!](#networking)
+* [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
 * [Will you do my (home)work assignment for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
