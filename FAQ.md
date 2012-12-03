@@ -7,7 +7,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 -->
 
 * [How can I **get started** with Mininet?](#get-started)
-* [What is the login/password for the Mininet VM?] (#password)
+* [What is the **login/password** for the Mininet VM?] (#password)
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
 * [How can I do a **native install** of Mininet?](#native-install)
 * [How do I **use Mininet's Python API**?](#python-api)
