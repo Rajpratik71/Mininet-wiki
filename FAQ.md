@@ -29,8 +29,8 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 
 The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Download](Download) page, and then go through the [Walkthrough](Walkthrough.md) and the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]].
 
+***
 <a id=password></a>
-
 ### What is the login/password for the Mininet VM?
 
 It is currently:
@@ -39,6 +39,8 @@ It is currently:
     Password: mininet
 
 On some older VMs it was `openflow`/`openflow`.
+
+***
 <a id=command-line-options></a>
 ### How do I figure out the **command-line options** for the `mn` command?
 
@@ -133,13 +135,12 @@ You may wish to invoke debug logging on your ssh client to see why X11 forwardin
 
 to see where the X11 forwarding is failing.
 
-
 As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
 
 **If this seems too complicated, you can simply run X11 in the VM console window as described below!**
 
+***
 <a id=vm-console-gui></a>
-
 ### X11 forwarding is too hard! Can't I just run a GUI in my VM console window?
 
 Yes, you can!
@@ -152,7 +153,6 @@ Then, you can start X11 in the VM console window using
 
     startx
 
-
 ***
 <a id=multiple-controllers></a>
 ### How can I use **multiple controllers** in my network?
@@ -161,7 +161,6 @@ One way is to use the mid-level API, as shown in `examples/controllers.py`
 
 ***
 <a id=ovs-reconfig></a>
-
 ### Help! I updated my Ubuntu kernel and now Open vSwitch won't start!
 
 If you are using Ubuntu's `openvswitch-datapath-dkms` and `openvswitch-switch` packages, they should update automatically when you reboot.
@@ -175,16 +174,16 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
     sudo dpkg-reconfigure openvswitch-datapath-dkms
     sudo service openvswitch-switch restart
 
+***
 <a id=openflow></a>
-
 ### Help! **I don't understand OpenFlow** or SDN!
 
 There is a wealth of useful information to be found at <http://openflow.org>.
 
 Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
 
+***
 <a id=networking></a>
-
 ### Help! **I don't understand networking** (or maybe computers) at all!!
 
 There is a wealth of very useful information available for free on the internet - try some Google (or search engine of your choice) searches for things like 'networking tutorial', 'IP networking basics', etc..
@@ -195,8 +194,8 @@ My [BL's] personal recommendation is to take an introductory CS course and an in
 
 You may also wish to consult an introductory networking textbook such as *Computer Networks: A Top-Down Approach* by Kurose and Ross, or *Computer Networks: A Systems Approach* by Peterson and Davie. To master Ethernet switches you might want to check out *The All-New Switch Book* by Seifert, and for a vintage but still classic and somewhat relevant view of socket programming you might find a copy of the *Unix Network Programming tomes* by the late Richard Stevens.
 
+***
 <a id=homework></a>
-
 ### Will you do my (home)work assignment (or paper/thesis/etc.) for me? It's due next Tuesday at 4pm.
 
 No, because:
@@ -208,4 +207,4 @@ No, because:
 * It's your professor/advisor/TA/boss's job to teach you, so make them do their job!
 * Learning how to teach yourself is even more valuable than learning from someone else.
 
-
+***
