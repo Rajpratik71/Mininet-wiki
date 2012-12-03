@@ -154,7 +154,11 @@ One way is to use the mid-level API, as shown in `examples/controllers.py`
 
 If you are using Ubuntu's `openvswitch-datapath-dkms` and `openvswitch-switch` packages, they should update automatically when you reboot.
 
-If they don't, then you can reconfigure the kernel module manually and restart OVS:
+Until `openvswitch-datapath-dkms` is reconfigured/rebuilt, Open vSwitch will refuse to start saying that its kernel module is missing. For example, you may see a message like:
+
+    FATAL: Module openvswitch not found.
+
+If rebooting doesn't fix the problem, or if you don't want to reboot, you can reconfigure the kernel module manually and restart OVS:
 
    sudo dpkg-reconfigure openvswitch-datapath-dkms
    sudo service openvswitch-switch restart
