@@ -19,7 +19,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!](#ovs-reconfig)
-* [Help! **I have never used Linux or UNIX before!**](#linux)
+* [Help! **I have never used Linux or Unix before!**](#linux)
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
 * [Will you do my (home)work assignment for me? It's due next Tuesday at 4pm!](#homework)
@@ -178,7 +178,7 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 
 ***
 <a id=linux></a>
-### Help! **I have never used Linux or UNIX before!**
+### Help! **I have never used Linux or Unix before!**
 
 There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
 
