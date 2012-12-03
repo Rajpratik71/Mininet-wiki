@@ -160,7 +160,8 @@ Until `openvswitch-datapath-dkms` is reconfigured/rebuilt, Open vSwitch will ref
 
 If rebooting doesn't fix the problem, or if you don't want to reboot, you can reconfigure the kernel module manually and restart OVS:
 
-   sudo dpkg-reconfigure openvswitch-datapath-dkms
-   sudo service openvswitch-switch restart
+    sudo dpkg-reconfigure openvswitch-datapath-dkms
+    sudo service openvswitch-switch restart
+
 
 
