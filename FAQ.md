@@ -182,12 +182,11 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 
 There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
 
-Nearly every Unix system since the beginning of time includes online documentation which can be accessed using the `man` command. For example, to find out about the `ls` command, you can type
+Additionally, nearly every Unix system since the beginning of time includes online documentation which can be accessed using the `man` command. For example, to find out about the `ls` command, you can type
 
     man ls
 
-One neat thing you can do with `man` is read all of the intro pages for each section of the Linux/Unix
-programmer's manual:
+Each section (traditionally 1-8) of the manual has an `intro` page, and you can actually read *all* of the intro sections by typing:
 
     man -a intro
 
