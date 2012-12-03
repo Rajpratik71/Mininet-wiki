@@ -20,6 +20,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!](#ovs-reconfig)
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
+* [Help! I don't understand networking (or maybe computers) at all!!](#networking)
 * [Will you do my (home)work assignment for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
@@ -181,6 +182,8 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 There is a wealth of useful information to be found at <http://openflow.org>.
 
 Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
+
+<a id=networking></a>
 
 ### Help! **I don't understand networking** (or maybe computers) at all!!
 
