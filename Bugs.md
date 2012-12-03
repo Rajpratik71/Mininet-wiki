@@ -5,8 +5,8 @@
 -->
 
 
-Mininet Bug Reports
---------------------
+Submitting Bug Reports and Fixes
+--------------------------------
 
 Since Mininet is an Open Source project, you are encouraged (and empowered) to find and fix bugs!!
 
