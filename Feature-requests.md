@@ -11,7 +11,7 @@ If there is a great feature that you would like to see in Mininet, please check 
 
 If there is no issue for it, feel free to submit a new issue noting that it is a feature request.
 
-## Implementing New Mininet Features
+## Implementing New Features in Mininet
 
 First, check the list of [issues](https://github.com/mininet/mininet/issues) to see if there is an existing issue for your new feature. If so, check to see if anyone else is working on it.
 
