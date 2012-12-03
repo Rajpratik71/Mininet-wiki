@@ -7,6 +7,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 -->
 
 * [How can I **get started** with Mininet?](#get-started)
+* [What is the login/password for the Mininet VM?] (#password)
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
 * [How can I do a **native install** of Mininet?](#native-install)
 * [How do I **use Mininet's Python API**?](#python-api)
@@ -23,6 +24,16 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 
 The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Download](Download) page, and then go through the [Walkthrough](Walkthrough.md) and the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]].
 
+<a id=password></a>
+
+###[What is the login/password for the Mininet VM?]
+
+It is currently:
+
+    mininet-vm login: mininet
+    Password: mininet
+
+On some older VMs it was `openflow`/`openflow`.
 <a id=command-line-options></a>
 ### How do I figure out the **command-line options** for the `mn` command?
 
