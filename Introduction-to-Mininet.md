@@ -379,7 +379,8 @@ to complete at some later time using `waitOutput()`:
 
 If you are sending output to a file, you may wish to monitor that file's
 contents interactively while your test is running. The
-`examples/multipoll.py` example provides a function `monitorFiles()` which
+[`examples/multipoll.py`](https://github.com/mininet/mininet/tree/master/examples/multipoll.py)
+example provides a function `monitorFiles()` which
 implements one possible mechanism for monitoring multiple output files.
 This simplifies the implementation of a test which interactively
 monitors output from multiple hosts:
@@ -414,7 +415,8 @@ monitors output from multiple hosts:
 
 You may wish to run `multipoll.py` and look at its output.
 
-Another example, `examples/multiping.py` demonstrates a different (perhaps
+Another example, [`examples/multiping.py`](https://github.com/mininet/mininet/tree/master/examples/multiping.py)
+demonstrates a different (perhaps
 simpler but less flexible) approach to monitoring standard output from a
 host, using the `Node.monitor()` method, so you may wish to look at it as
 well.
@@ -430,7 +432,7 @@ mechanism is newer and not as well-tested as the `cmd()` mechanism, but
 you may find it convenient for running multiple processes in the
 background and monitoring their output. A `pmonitor()` function is
 provided to make monitoring multiple `Popen()` objects even easier. The
-code in `examples/popenpoll.py` implements the functionality similar to
+code in [`examples/popenpoll.py`](https://github.com/mininet/mininet/tree/master/examples/popenpoll.py) implements the functionality similar to
 what is described above, using the `popen()` interface and `pmonitor()`
 helper function:
 
