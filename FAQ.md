@@ -58,6 +58,56 @@ It is currently:
 On some older VMs it was `openflow`/`openflow`.
 
 ***
+<a id=x11-forwarding></a>
+### Why can't I get X11 forwarding to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!
+
+**This is not a Mininet problem**. It means that **X11 forwarding is not set up correctly**.
+First, consult the X11 setup instructions in the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), including:
+
+* Download X11
+* Install X11
+* Start up X11 server
+* Access VM via `ssh`
+
+Make sure you have carefully followed the necessary steps.
+If things are still not working for you, you will want to make sure that:
+
+Your X11 server on your client machine (e.g. your laptop) is installed correctly and is actually running
+You are connecting using X11 forwarding (e.g. `ssh -X` on OS X/Linux or enabling X11 forwarding in a Windows ssh client like PuTTY or SecureCRT.)
+
+You don't have any options in your client `.ssh/config` which interfere with X11 forwarding
+
+When you log in with `ssh`, your `$DISPLAY` environment variable is set
+X11 terminology is a bit confusing because the X11 server is actually run on the ssh client machine! The ssh client connects to the sshd server, which in turn forwards connections from X11 client applications (such as wireshark) to the local X11 server (usually running on your laptop or whatever machine is sitting in front of you.)
+
+One note: if you have disabled IPv6, you may find that you need to add `AddressFamily inet` to your `/etc/ssh/sshd_config`.
+
+Other unlikely causes of breaking X11 forwarding include it being disabled in `/etc/sshd_config` or disabled by SELinux. Neither of these should be the case in the Mininet VM image we provide.
+You may wish to invoke debug logging on your ssh client to see why X11 forwarding isn't working. On OS X and Linux, you can use
+
+    ssh -X -v <VM's IP address>
+
+to see where the X11 forwarding is failing.
+
+As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
+
+**If this seems too complicated, you can simply run X11 in the VM console window as described below!**
+
+***
+<a id=vm-console-gui></a>
+### X11 forwarding is too hard! Can't I just run a GUI in my VM console window?
+
+Yes, you can!
+
+First, log in to the VM in its console window (i.e. type directly into the VM window without using `ssh`.) Then, install `xinit` (and its dependencies) and a window manager of your choice (I picked `flwm` because it's small - you may prefer `metacity` or some other window manager):
+
+    sudo apt-get install xinit flwm
+
+Then, you can start X11 in the VM console window using
+
+    startx
+
+***
 <a id=command-line-options></a>
 ### How do I figure out the **command-line options** for the `mn` command?
 
@@ -123,56 +173,6 @@ In general, if you want to use a network with loops in it, you need to be absolu
 ### Why do the switch data ports have random MAC addresses? How do I assign MAC and IP addresses to the switch data ports?
 
 The MAC addresses reported by Linux for the switch data ports are meaningless. The switch is controlled by OpenFlow, so you should use OpenFlow to ensure that any packets destined "for the switch" are properly routed. You "assign" MAC and IP addresses "to the switch" by using OpenFlow rather than the Linux IP stack. If you attempt to use the Linux IP stack instead, it really won't work unless you are using the Linux kernel for routing (which you aren't - you're using an OpenFlow switch!) You should never attempt to use `ifconfig` or `ip link` or other utilities to assign an IP address to a switch data port. Usually you will want your controller to handle packets such as ARP and ICMP which are sent to and from "the switch," and you will want IP packets which are sent to to be handled by appropriate flow table entries. You can pick any "MAC" address you like for the switch.
-
-***
-<a id=x11-forwarding></a>
-### Why can't I get X11 forwarding to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!
-
-**This is not a Mininet problem**. It means that **X11 forwarding is not set up correctly**.
-First, consult the X11 setup instructions in the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), including:
-
-* Download X11
-* Install X11
-* Start up X11 server
-* Access VM via `ssh`
-
-Make sure you have carefully followed the necessary steps.
-If things are still not working for you, you will want to make sure that:
-
-Your X11 server on your client machine (e.g. your laptop) is installed correctly and is actually running
-You are connecting using X11 forwarding (e.g. `ssh -X` on OS X/Linux or enabling X11 forwarding in a Windows ssh client like PuTTY or SecureCRT.)
-
-You don't have any options in your client `.ssh/config` which interfere with X11 forwarding
-
-When you log in with `ssh`, your `$DISPLAY` environment variable is set
-X11 terminology is a bit confusing because the X11 server is actually run on the ssh client machine! The ssh client connects to the sshd server, which in turn forwards connections from X11 client applications (such as wireshark) to the local X11 server (usually running on your laptop or whatever machine is sitting in front of you.)
-
-One note: if you have disabled IPv6, you may find that you need to add `AddressFamily inet` to your `/etc/ssh/sshd_config`.
-
-Other unlikely causes of breaking X11 forwarding include it being disabled in `/etc/sshd_config` or disabled by SELinux. Neither of these should be the case in the Mininet VM image we provide.
-You may wish to invoke debug logging on your ssh client to see why X11 forwarding isn't working. On OS X and Linux, you can use
-
-    ssh -X -v <VM's IP address>
-
-to see where the X11 forwarding is failing.
-
-As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
-
-**If this seems too complicated, you can simply run X11 in the VM console window as described below!**
-
-***
-<a id=vm-console-gui></a>
-### X11 forwarding is too hard! Can't I just run a GUI in my VM console window?
-
-Yes, you can!
-
-First, log in to the VM in its console window (i.e. type directly into the VM window without using `ssh`.) Then, install `xinit` (and its dependencies) and a window manager of your choice (I picked `flwm` because it's small - you may prefer `metacity` or some other window manager):
-
-    sudo apt-get install xinit flwm
-
-Then, you can start X11 in the VM console window using
-
-    startx
 
 ***
 <a id=multiple-controllers></a>
