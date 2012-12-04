@@ -1,5 +1,7 @@
 Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answers (HQAs)** below.
 
+Before you send a question to `mininet-discuss`, make sure your question isn't already in the FAQ - and if you see a question asked repeatedly, feel free to add the answer to this FAQ!
+
 *Since github wikis don't automatically generate a Table of Contents, please follow the existing format and add 1) an anchor for your question and 2) a link to it at the top of the page. Thanks!*
 
 <!-- this doesn't work yet, alas :(
@@ -33,7 +35,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Help! I **updated my Ubuntu kernel** and now Open vSwitch won't start!](#ovs-reconfig)
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
 
-### Questions from the Desperate and/or Clueless
+### Advice for the Desperate and/or Clueless
 
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I have never used Linux or Unix before!**](#linux)
