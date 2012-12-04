@@ -208,7 +208,7 @@ other
 `setLogLevel( 'info' | 'debug' | 'output' )`: set Mininet's default output
 level; 'info' is recommended as it provides useful information.
 
-Additional example code may be found in mininet/examples.
+Additional example code may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
 
 <a id=setting></a>
 
@@ -430,7 +430,7 @@ mechanism is newer and not as well-tested as the `cmd()` mechanism, but
 you may find it convenient for running multiple processes in the
 background and monitoring their output. A `pmonitor()` function is
 provided to make monitoring multiple `Popen()` objects even easier. The
-code in examples/popenpoll.py implements the functionality similar to
+code in `examples/popenpoll.py` implements the functionality similar to
 what is described above, using the `popen()` interface and `pmonitor()`
 helper function:
 
@@ -738,4 +738,3 @@ A Mininet network consists of the following components:
 
 For more details, see the 
 [Mininet website](http://openflow.org/mininet) and our Mininet [Publications](publications).
-
