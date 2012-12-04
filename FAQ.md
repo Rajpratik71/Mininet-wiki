@@ -5,20 +5,31 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 <!-- this doesn't work yet, alas :(
 [[_TOC_]]
 -->
-
+### Where to Start
 * [How can I **get started** with Mininet?](#get-started)
+
+### VM and Installation 
 * [What is the **login/password** for the Mininet VM?] (#password)
-* [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
-* [How can I do a **native install** of Mininet?](#native-install)
-* [How do I **use Mininet's Python API**?](#python-api)
-* [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
-* [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
-* [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
-* [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
+* [How can I do a **native install** of Mininet?](#native-install)
+
+### Using Mininet
+* [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
+* [How do I **use Mininet's Python API**?](#python-api)
+* [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
+
+###  OpenFlow Questions
+* [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
+* [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
+
+### Troubleshooting
 * [Help! I **updated my Ubuntu kernel** and now Open vSwitch won't start!](#ovs-reconfig)
+* [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
+
+### N00b Zone
+
 * [Help! **I have never used Linux or Unix before!**](#linux)
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
