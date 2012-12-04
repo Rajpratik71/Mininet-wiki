@@ -18,11 +18,11 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
-* [Help! I updated my Ubuntu kernel and now Open vSwitch won't start!](#ovs-reconfig)
+* [Help! I **updated my Ubuntu kernel** and now Open vSwitch won't start!](#ovs-reconfig)
 * [Help! **I have never used Linux or Unix before!**](#linux)
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
-* [Will you do my (home)work assignment for me? It's due next Tuesday at 4pm!](#homework)
+* [Will you **do my (home)work assignment** for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
 <a id=get-started></a>
