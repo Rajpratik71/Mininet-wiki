@@ -73,7 +73,7 @@ Instructions for native installation can be found at <http://mininet.github.com/
 <a id=python-api></a>
 ### How do I **use Mininet's Python API**?
 
-Check out the [[Introduction to Mininet]]( for an introduction to Mininet and its Python API.
+Check out the [[Introduction to Mininet]] for an introduction to Mininet and its Python API.
 
 Several useful examples of using the Python API can also be found in the [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples) directory.
 
