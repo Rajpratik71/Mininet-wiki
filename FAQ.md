@@ -72,10 +72,9 @@ First, consult the X11 setup instructions in the [OpenFlow Tutorial](http://www.
 Make sure you have carefully followed the necessary steps.
 If things are still not working for you, you will want to make sure that:
 
-Your X11 server on your client machine (e.g. your laptop) is installed correctly and is actually running
-You are connecting using X11 forwarding (e.g. `ssh -X` on OS X/Linux or enabling X11 forwarding in a Windows ssh client like PuTTY or SecureCRT.)
-
-You don't have any options in your client `.ssh/config` which interfere with X11 forwarding
+1. Your **X11 server** on your client machine (e.g. your laptop) is installed correctly and is actually running
+2. You are connecting via `ssh` using **X11 forwarding** (e.g. `ssh -X` on OS X/Linux or enabling X11 forwarding in a Windows `ssh` client like PuTTY or SecureCRT.)
+3. You don't have any options in your client `.ssh/config` which interfere with X11 forwarding
 
 When you log in with `ssh`, your `$DISPLAY` environment variable is set
 X11 terminology is a bit confusing because the X11 server is actually run on the ssh client machine! The ssh client connects to the sshd server, which in turn forwards connections from X11 client applications (such as wireshark) to the local X11 server (usually running on your laptop or whatever machine is sitting in front of you.)
@@ -83,11 +82,13 @@ X11 terminology is a bit confusing because the X11 server is actually run on the
 One note: if you have disabled IPv6, you may find that you need to add `AddressFamily inet` to your `/etc/ssh/sshd_config`.
 
 Other unlikely causes of breaking X11 forwarding include it being disabled in `/etc/sshd_config` or disabled by SELinux. Neither of these should be the case in the Mininet VM image we provide.
-You may wish to invoke debug logging on your ssh client to see why X11 forwarding isn't working. On OS X and Linux, you can use
+You may wish to invoke debug logging on your `ssh` client to see why X11 forwarding isn't working. On OS X and Linux, you can use
 
     ssh -X -v <VM's IP address>
 
 to see where the X11 forwarding is failing.
+
+By default `ssh -X` times out after a while - you may prefer `ssh -Y` for that reason, although it is less secure.
 
 As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
 
