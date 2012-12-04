@@ -197,22 +197,6 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 
 
 ***
-<a id=linux></a>
-### Help! **I have never used Linux or Unix before!**
-
-There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
-
-Additionally, nearly every Unix system since the beginning of time includes online documentation which can be accessed using the `man` command. For example, to find out about the `ls` command, you can type
-
-    man ls
-
-Each section (traditionally 1-8) of the manual has an `intro` page, and you can actually read *all* of the intro sections by typing:
-
-    man -a intro
-
-There are also many useful books on Linux available on Amazon and in your local bookstore. Mark Sobell's books are classics, as are Nemeth's books on Unix/Linux system administration.
-
-***
 <a id=openflow></a>
 ### Help! **I don't understand OpenFlow** or SDN!
 
@@ -231,6 +215,22 @@ You may also find useful content on Wikipedia, About.com and YouTube, as well as
 My [BL's] personal recommendation is to take an introductory CS course and an introductory networking course at your local college or university.
 
 You may also wish to consult an introductory networking textbook such as *Computer Networks: A Top-Down Approach* by Kurose and Ross, or *Computer Networks: A Systems Approach* by Peterson and Davie. To master Ethernet switches you might want to check out *The All-New Switch Book* by Seifert, and for a vintage but still classic and somewhat relevant view of socket programming you might find a copy of the *Unix Network Programming tomes* by the late Richard Stevens.
+
+***
+<a id=linux></a>
+### Help! **I have never used Linux or Unix before!**
+
+There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
+
+Additionally, nearly every Unix system since the beginning of time includes online documentation which can be accessed using the `man` command. For example, to find out about the `ls` command, you can type
+
+    man ls
+
+Each section (traditionally 1-8) of the manual has an `intro` page, and you can actually read *all* of the intro sections by typing:
+
+    man -a intro
+
+There are also many useful books on Linux available on Amazon and in your local bookstore. Mark Sobell's books are classics, as are Nemeth's books on Unix/Linux system administration.
 
 ***
 <a id=homework></a>
