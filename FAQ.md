@@ -33,7 +33,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 * [Help! I **updated my Ubuntu kernel** and now Open vSwitch won't start!](#ovs-reconfig)
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
 
-### N00b Zone
+### Desperation
 
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I have never used Linux or Unix before!**](#linux)
