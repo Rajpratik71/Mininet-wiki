@@ -28,7 +28,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 <a id=get-started></a>
 ### How can I **get started** with Mininet?
 
-The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Download](Download) page, and then go through the [[Walkthrough]], the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]], and the [[Introduction to Mininet]].
+The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [[Download]] page, and then go through the [[Walkthrough]], the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]], and the [[Introduction to Mininet]].
 
 ***
 <a id=password></a>
@@ -57,24 +57,24 @@ See <http://mininet.github.com/download>.
 <a id=python-api></a>
 ### How do I **use Mininet's Python API**?
 
-Check out the [Introduction to Mininet](introduction-to-mininet) for an introduction to Mininet and its Python API.
+Check out the [[Introduction to Mininet]]( for an introduction to Mininet and its Python API.
 
-Several useful examples of using the Python API can also be found in the `mininet/examples` directory.
+Several useful examples of using the Python API can also be found in the [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples) directory.
 
 We also provide Python DocStrings for every Mininet class and method, and you can view them using from within Python
 
     >>> import mininet.node
-    >>> help(mininet.node.Node)</verbatim>
+    >>> help(mininet.node.Node)
 
 or by calling Python from within the Mininet CLI:
 
     mininet> py help(h2)
 
-In each case, pressing =q= should quit the pager.
+In each case, pressing `q` should quit the pager.
 
 The API documentation is available at <http://mininet.github.com/api>.
 
-Also see [Mininet-API-Documentation](MininetAPIDocumentation) for information on how to generate Mininet documentation in.md format.
+Also see [[Mininet-API-Documentation]] for information on how to generate Mininet documentation in.md format.
 
 ***
 <a id=openflow-versions></a>
@@ -162,7 +162,7 @@ Then, you can start X11 in the VM console window using
 <a id=multiple-controllers></a>
 ### How can I use **multiple controllers** in my network?
 
-One way is to use the mid-level API, as shown in `examples/controllers.py`
+One way is to use the mid-level API, as shown in [`examples/controllers.py`](https://github.com/mininet/mininet/tree/master/examples/controllers.py)
 
 ***
 <a id=ovs-reconfig></a>
