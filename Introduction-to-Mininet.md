@@ -554,9 +554,9 @@ hosts.
 
 ### Additional Examples
 
-Additional examples of Mininet scripts may be found in `mininet/examples`.
-You may find some of them to be useful and others (e.g. `consoles.py`,
-`miniedit.py`) to be entertaining demonstrations.
+Additional examples of Mininet scripts may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
+You may find some of them to be useful and others (e.g. [`consoles.py`](https://github.com/mininet/mininet/tree/master/examples/consoles.py),
+[`miniedit.py`](https://github.com/mininet/mininet/tree/master/examples/miniedit.py)) to be entertaining demonstrations.
 
 <a id=api></a>
 
