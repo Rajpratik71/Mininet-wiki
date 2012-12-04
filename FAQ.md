@@ -90,7 +90,7 @@ In each case, pressing `q` should quit the pager.
 
 The API documentation is available at <http://mininet.github.com/api>.
 
-Also see [[Mininet-API-Documentation]] for information on how to generate Mininet documentation in.md format.
+Also see [[Mininet-API-Documentation]] for information on how to generate Mininet documentation yourself in .html and .pdf format.
 
 ***
 <a id=openflow-versions></a>
