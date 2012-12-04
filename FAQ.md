@@ -44,7 +44,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 <a id=get-started></a>
 ### How can I **get started** with Mininet?
 
-The best way to get started with Mininet is to install our ready-to-run virtual machine image from the [Download](http://mininet.github.com/download) page, and then go through the [Walkthrough](http://mininet.github.com/walkthrough), the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]], and the [[Introduction to Mininet]].
+The best way to get started with Mininet is to install our ready-to-run virtual machine image as per our [Download](http://mininet.github.com/download) instructions, and then go through the [Walkthrough](http://mininet.github.com/walkthrough), the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]], and the [[Introduction to Mininet]].
 
 ***
 <a id=password></a>
