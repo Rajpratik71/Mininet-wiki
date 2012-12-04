@@ -113,7 +113,7 @@ The MAC addresses reported by Linux for the switch data ports are meaningless. T
 ### Why can't I get X11 forwarding to work? I get `cannot open display:` or `$DISPLAY not set` and `wireshark` doesn't work! `xterm` doesn't work either!
 
 **This is not a Mininet problem**. It means that **X11 forwarding is not set up correctly**.
-First, consult the X11 setup instructions in the [http://www.openflow.org/wk/index.php/OpenFlow_Tutorial](OpenFlow Tutorial), including:
+First, consult the X11 setup instructions in the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), including:
 
 * Download X11
 * Install X11
