@@ -207,6 +207,8 @@ There is a wealth of useful information to be found at <http://openflow.org>.
 
 Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
 
+You may also wish to search the ACM and IEEE digital libraries for recent papers that reference Software-Defined Networking and OpenFlow.
+
 ***
 <a id=networking></a>
 ### Help! **I don't understand networking** (or maybe computers) at all!!
