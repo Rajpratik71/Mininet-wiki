@@ -247,7 +247,8 @@ No, because:
 * You don't have enough money to pay our consulting rates anyway
 * It would be a violation of the honor code
 * You will learn much more doing the assignment yourself
-* You should also learn how to use [[Google scholar | scholar.google.com]],
+* You really want to learn how to use [[Google scholar | http://scholar.google.com]],
+[[citeseer | http://citeseerx.ist.psu.edu]],
 [[various | http://dl.acm.org]] [[digital | http://ieeexplore.ieee.org]] [[libraries | http://static.usenix.org/publications/library/]], 
 as well as [[how to do a literature search | http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf]]
 * It's your professor/advisor/TA/boss's job to teach you, so make them do their job!
