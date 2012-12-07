@@ -6,7 +6,7 @@ Nikhil Handigol, Brandon Heller, Vimal Jeyakumar, Bob Lantz, and Nick McKeown. *
 
 <!-- was: pdf/a19-lantz.pdf -->
 
-Bob Lantz, Brandon Heller, and Nick McKeown. *[[A Network on a Laptop: Rapid Prototyping for Software-Defined Networks | http://conferences.sigcomm.org/hotnets/2010/papers/a19-lantz.pdf]]*. [[9th ACM Workshop on Hot Topics in Networks | http://conferences.sigcomm.org/hotnets/2010/program.html]], October 20-21, 2010, Monterey, CA.
+Bob Lantz, Brandon Heller, and Nick McKeown. *[[A Network in a Laptop: Rapid Prototyping for Software-Defined Networks | http://conferences.sigcomm.org/hotnets/2010/papers/a19-lantz.pdf]]*. [[9th ACM Workshop on Hot Topics in Networks | http://conferences.sigcomm.org/hotnets/2010/program.html]], October 20-21, 2010, Monterey, CA.
 
 
 ### Technical Reports
