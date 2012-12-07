@@ -35,7 +35,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! I **updated my Ubuntu kernel** and now Open vSwitch won't start!](#ovs-reconfig)
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
 
-### Advice for the Desperate and/or Clueless
+### Advice for the Desperate and/or Clueless!
 
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I have never used Linux or Unix before!**](#linux)
