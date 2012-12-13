@@ -16,6 +16,14 @@ Mininet Documentation
 * **[[FAQ]]** Please read and add to the **Frequently Asked Questions** (and their Answers)
 * [[VM Creation Notes]]How we created the Mininet VM image
 
+#### Teaching Computer Networks with Mininet
+* [[Environment Setup]]
+* ** [[Ubuntu]]**
+* ** [[Amazon EC2]]**
+* [[Sample Assignments]]
+* [[Simple Router]]
+* [[NAT]]
+
 #### Bug Reports and Feature Requests
 * [[Bugs]] How to submit bug reports
 * [[Feature Requests]] How to request and implement features
