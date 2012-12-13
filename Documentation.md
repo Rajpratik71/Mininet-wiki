@@ -17,12 +17,8 @@ Mininet Documentation
 * [[VM Creation Notes]]How we created the Mininet VM image
 
 #### Teaching Computer Networks with Mininet
-##### Environment Setup
-* [[Ubuntu]]
-* [[Amazon EC2]] 
-##### Sample Assignments
-* [[Simple Router]]
-* [[NAT]]
+* [[Environment Setup]]
+* [[Assignments]]
 
 #### Bug Reports and Feature Requests
 * [[Bugs]] How to submit bug reports
