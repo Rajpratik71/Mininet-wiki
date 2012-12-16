@@ -82,7 +82,7 @@ Why is Mininet cool?
 	or doesn't work for some reason, please let us know on `mininet-discuss`
 	and the Mininet user and developer community can try to explain it,
 	fix it, or help you fix it. :-) If you find bugs, you are encouraged to
-	submite patches to fix them, or at least to submit an issue on github
+	submit patches to fix them, or at least to submit an issue on github
 	including a reproducible test case.
 
 <a id=limits></a>
