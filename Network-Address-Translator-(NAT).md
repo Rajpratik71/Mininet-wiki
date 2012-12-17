@@ -57,4 +57,41 @@ If your NAT cannot determine whether the endpoints of a TCP connection are activ
 NOTE: hairpinning for TCP is NOT required. It is up to you whether you support it, or other behavior not required here.
 
 
+## Mappings
+When assigning a port to a mapping, you are free to choose a port any way you choose. The only requirement is that you do not use the well-known ports (0-1023).
 
+As noted above, mappings should be Endpoint Independent. Once a mapping is made between an internal host's (ip, port) pair to an external port in the NAT, any traffic from that host's (ip, port) directed to any external host, and any traffic from any external host to the mapped external port will be rewritten and forwarded accordingly.
+
+
+### Cleaning up defunct mappings
+Your NAT must clean up defunct mappings. Your NAT must periodically timeout both defunct ICMP query sessions and idle TCP connections. Once all connections using a particular mapping are closed or timed out, the mapping should be cleared. Once cleared, a mapping can be reused in new connections.
+
+The periodic function that handles timeouts should fire in its own separate thread (more on threading below). The following three timeout intervals for mappings should be configurable via command-line flags:
+* -I INTEGER -- ICMP query timeout interval in seconds (default to 60)
+* -E INTEGER -- TCP Established Idle Timeout in seconds (default to 7440)
+* -R INTEGER -- TCP Transitory Idle Timeout in seconds (default to 300)
+
+TCP Established Idle Timeout applies to TCP connections in the established (data transfer) state. TCP Transitory Idle Timeout applies to connections in other states (e.g. LISTEN). Refer to the TCP state diagram.
+
+Note: Though the RFCs specify minimum timeout intervals, these are reflected in the defaults. The intervals should be configurable to times below those minimums so that we are able to test your timeout functionality in a reasonable time.
+
+## Implementation Guidance
+### Mapping data structure and Concurrency
+
+Mapping state and delaying incoming SYN connections will require a data structure similar to the ARP cache from "simple router". Unlike "simple router", however, in this assignment it is up to you to implement it!
+
+Be sure to study how the ARP cache works. For handling timeouts, a separate thread is spawned (at the top of sr_router.c) that periodically runs. NAT timeouts should have their own thread as well. Because the main forwarding thread and the ARP cache timeout thread share the data structure, the ARP cache accessors and mutators use locks. *Be sure that your NAT's mapping data structure uses locks as well, otherwise nasty concurrency bugs will be sure to crop up*.
+
+In addition, be careful how your mapping table returns mappings, you do not want to hand out pointers to structures that may be freed by the periodic timeout. Take a look at the sr_arpcache_lookup code in the ARP cache.
+
+To get you started on the right track, we provide skeleton code for a possible NAT mapping data structure. 
+You will use the same environment that we setup in "simple router" for this assignment. For detailed instructions, please refer to [[Environment Setup]] and [[Simple Router]].
+
+### Download Skeleton Code
+Open up a terminal on your machine, download the skeleton code for "NAT" using git.
+```no-highlight
+> cd ~
+> git clone https://huangty@bitbucket.org/huangty/cs144_lab5.git
+> cd cs144_lab5
+> git checkout --track remotes/origin/standalone
+```
