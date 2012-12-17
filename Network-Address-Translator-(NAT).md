@@ -243,6 +243,38 @@ eth1	HWaddr76:45:55:d3:66:e5
 ```
 
 
+To see whether the NAT is doing the translation, let’s do a tcpdump at server1 and observe the packet is going to be received at the server 1. To do so, go to the terminal where you run the Mininet, type the following command in the Mininet command line interface (CLI) to bring up the terminal of server1.
+mininet> xterm server1
+
+Then in the server1 terminal:
+> tcpdump -n -i server1-eth0
+
+Now, back to the Mininet CLI to send some ping packets from client to server1:
+mininet> client ping -c 3 172.64.3.21
+
+On the Mininet CLI, you should be able to see the following output:
+```
+PING 172.64.3.21 (172.64.3.21) 56(84) bytes of data.
+64 bytes from 172.64.3.21: icmp_req=1 ttl=63 time=283 ms
+64 bytes from 172.64.3.21: icmp_req=2 ttl=63 time=52.1 ms
+64 bytes from 172.64.3.21: icmp_req=3 ttl=63 time=78.9 ms
+```
+
+On the server1 terminal, you should be able to see the following output:
+```
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on server1-eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
+18:55:41.959989 ARP, Request who-has 172.64.3.21 (ff:ff:ff:ff:ff:ff) tell 172.64.3.1, length 28
+18:55:41.960014 ARP, Reply 172.64.3.21 is-at ce:e6:0f:ed:52:aa, length 28
+18:55:42.029448 IP *172.64.3.1* > 172.64.3.21: ICMP echo request, id 1050, seq 1, length 64
+18:55:42.029472 IP 172.64.3.21 > *172.64.3.1*: ICMP echo reply, id 1050, seq 1, length 64
+18:55:42.863084 IP 172.64.3.1 > 172.64.3.21: ICMP echo request, id 1050, seq 2, length 64
+18:55:42.863103 IP 172.64.3.21 > 172.64.3.1: ICMP echo reply, id 1050, seq 2, length 64
+18:55:43.881834 IP 172.64.3.1 > 172.64.3.21: ICMP echo request, id 1050, seq 3, length 64
+18:55:43.881850 IP 172.64.3.21 > 172.64.3.1: ICMP echo reply, id 1050, seq 3, length 64
+18:55:47.036590 ARP, Request who-has 172.64.3.1 tell 172.64.3.21, length 28
+18:55:47.071261 ARP, Reply 172.64.3.1 is-at a6:ba:65:48:2b:ab, length 28
+```
 
 
  
