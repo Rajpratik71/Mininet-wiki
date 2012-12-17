@@ -2,7 +2,7 @@ The following instruction will guide you through how to setup the environment fo
 
 ##### Install Needed Tools
 * sudo apt-get update
-* sudo apt-get install -y git vim-nox python-setuptools flex bison
+* sudo apt-get install -y git vim-nox python-setuptools flex bison traceroute
 
 ##### Install Mininet
 * cd ~
