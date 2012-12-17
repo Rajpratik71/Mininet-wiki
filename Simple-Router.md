@@ -34,7 +34,7 @@ git checkout --track remotes/origin/standalone
 ```no-highlight
 cd ~/cs144_lab3
 ./config
-```no-highlight
+```
 
 ### Configuration Files
 There are two configuration files. 
