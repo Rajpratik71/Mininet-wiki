@@ -17,7 +17,7 @@ The topology of NAT is as follows, where the NAT's internal interface (eth1) fac
 A correct implementation should support the following operations from the emulated client host:
 
 * Pinging the NAT's internal interface from the emulated client host
-* Pinging any of the app servers (e.g. 172.64.3.20, 172.64.3.10 above)
+* Pinging any of the app servers (e.g. 172.64.3.21, 172.64.3.22 above)
 * Downloading files using HTTP from the app servers
 All packets to external hosts (app servers) should appear to come from eth2's address (e.g. 172.64.3.1 above).
 
