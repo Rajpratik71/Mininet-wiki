@@ -1,7 +1,12 @@
-The following instruction will guide you through how to setup the environment to use Mininet for the [[programming assignment|Assignments]] on Ubuntu 12.04. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2. 
+The following instruction will guide you through how to setup the environment to use Mininet for the [[programming assignment|Assignments]] on Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2. 
 
 Steps:
-1. Install Ubuntu 12.04 LTS on your machine
+1. (Optional) Install Ubuntu 12.04 LTS on your machine
+2. Install Git
+sudo apt-get update
+sudo apt-get install git vim-nox
+
+
 2. Install Git
 sudo apt-get update
 sudo apt-get install git vim-nox
