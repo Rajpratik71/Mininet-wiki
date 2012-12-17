@@ -1,8 +1,8 @@
 The following instruction will guide you through how to setup the environment to use Mininet for the [[programming assignment|Assignments]] on Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2. 
 
 ##### Install Needed Tools
-sudo apt-get update\\
-sudo apt-get install -y git vim-nox python-setuptools flex bison
+* sudo apt-get update
+* sudo apt-get install -y git vim-nox python-setuptools flex bison
 
 ##### Install Mininet
 
