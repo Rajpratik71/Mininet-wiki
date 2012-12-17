@@ -5,23 +5,20 @@ The following instruction will guide you through how to setup the environment to
 * sudo apt-get install -y git vim-nox python-setuptools flex bison
 
 ##### Install Mininet
+* cd ~
+* git clone git://github.com/mininet/mininet
+* cd mininet
+* git checkout remotes/origin/class/cs244
+* ./util/install.sh -fnv
 
-4. Install Mininet,
-Check mininet/util/install.sh, make sure OVS_RELEASE=1.4.0
-git clone git://github.com/mininet/mininet
-cd mininet
-git checkout remotes/origin/class/cs244
-mininet/util/install.sh -fnv
+##### Install POX
+* cd ~
+* git clone http://github.com/noxrepo/pox
 
-5. install pox
-git clone http://github.com/noxrepo/pox
-cd ~ 
-6. install ltprotocol 
-git clone git://github.com/dound/ltprotocol.git
-sudo apt-get install -y python-setuptools flex bison
-(for rpi: sudo apt-get install python-dev)
-cd ltprotocol 
-sudo python setup.py install
+##### install ltprotocol 
+* git clone git://github.com/dound/ltprotocol.git
+* cd ltprotocol 
+* sudo python setup.py install
 
 
 6. checkout code
