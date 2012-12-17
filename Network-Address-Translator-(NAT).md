@@ -244,13 +244,19 @@ eth1	HWaddr76:45:55:d3:66:e5
 
 
 To see whether the NAT is doing the translation, let’s do a tcpdump at server1 and observe the packet is going to be received at the server 1. To do so, go to the terminal where you run the Mininet, type the following command in the Mininet command line interface (CLI) to bring up the terminal of server1.
+```no-highlight
 mininet> xterm server1
+```
 
 Then in the server1 terminal:
+```no-highlight
 > tcpdump -n -i server1-eth0
+```
 
 Now, back to the Mininet CLI to send some ping packets from client to server1:
+```no-highlight
 mininet> client ping -c 3 172.64.3.21
+```
 
 On the Mininet CLI, you should be able to see the following output:
 ```
@@ -266,8 +272,8 @@ tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on server1-eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
 18:55:41.959989 ARP, Request who-has 172.64.3.21 (ff:ff:ff:ff:ff:ff) tell 172.64.3.1, length 28
 18:55:41.960014 ARP, Reply 172.64.3.21 is-at ce:e6:0f:ed:52:aa, length 28
-18:55:42.029448 IP *172.64.3.1* > 172.64.3.21: ICMP echo request, id 1050, seq 1, length 64
-18:55:42.029472 IP 172.64.3.21 > *172.64.3.1*: ICMP echo reply, id 1050, seq 1, length 64
+18:55:42.029448 IP 172.64.3.1 > 172.64.3.21: ICMP echo request, id 1050, seq 1, length 64
+18:55:42.029472 IP 172.64.3.21 > 172.64.3.1: ICMP echo reply, id 1050, seq 1, length 64
 18:55:42.863084 IP 172.64.3.1 > 172.64.3.21: ICMP echo request, id 1050, seq 2, length 64
 18:55:42.863103 IP 172.64.3.21 > 172.64.3.1: ICMP echo reply, id 1050, seq 2, length 64
 18:55:43.881834 IP 172.64.3.1 > 172.64.3.21: ICMP echo request, id 1050, seq 3, length 64
@@ -275,6 +281,63 @@ listening on server1-eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
 18:55:47.036590 ARP, Request who-has 172.64.3.1 tell 172.64.3.21, length 28
 18:55:47.071261 ARP, Reply 172.64.3.1 is-at a6:ba:65:48:2b:ab, length 28
 ```
+
+Note the packets received at server1 is from *172.64.3.1*, which is the IP of NAT's external interface, instead of 10.0.1.100, the IP of the client host. 
+
+Now, let’s disable NAT and compare. Back to the terminal where you run “./sr_nat -n”, use control-c to stop the current “./sr_nat -n” process, and run the following command
+```no-highlight
+> ./sr_nat 
+```
+Also using tcpdump on server1's terminal to see the packets reaches server1:
+```no-highlight
+> server1 tcpdump -n -i server1-eth0
+```
+You should be able to see the following output:
+```
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on server1-eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
+19:04:35.911619 ARP, Request who-has 172.64.3.21 (ff:ff:ff:ff:ff:ff) tell 172.64.3.1, length 28
+19:04:35.911650 ARP, Reply 172.64.3.21 is-at ce:e6:0f:ed:52:aa, length 28
+19:04:35.984895 IP 10.0.1.100 > 172.64.3.21: ICMP echo request, id 3392, seq 1, length 64
+19:04:35.984921 IP 172.64.3.21 > 10.0.1.100: ICMP echo reply, id 3392, seq 1, length 64
+19:04:36.868670 IP 10.0.1.100 > 172.64.3.21: ICMP echo request, id 3392, seq 2, length 64
+19:04:36.868697 IP 172.64.3.21 > 10.0.1.100: ICMP echo reply, id 3392, seq 2, length 64
+19:04:37.889304 IP 10.0.1.100 > 172.64.3.21: ICMP echo request, id 3392, seq 3, length 64
+19:04:37.889321 IP 172.64.3.21 > 10.0.1.100: ICMP echo reply, id 3392, seq 3, length 64
+19:04:40.988598 ARP, Request who-has 172.64.3.1 tell 172.64.3.21, length 28
+19:04:41.023814 ARP, Reply 172.64.3.1 is-at a6:ba:65:48:2b:ab, length 28
+```
+This time, since the NAT is disabled, the source IP shows the client's IP (10.0.1.100) instead. 
+
+This assignment would require some thread programming. If you do not have thread programming experience, then Lectures 9, 10, and 13 of [Stanford CS110](http://www.stanford.edu/class/cs110/) might be helpful introductions. There are also many resources on the web explaining why and when systems use them. Finally, there are lots of good [pthreads tutorials](https://computing.llnl.gov/tutorials/pthreads/) on the web, for concrete programming guidance. You can also use the ARP cache code as a guide. Since this isn't a high performance system, it's better to be conservative with your locks; a race condition is much harder to debug than a deadlock.
+
+
+### Tracking Connections
+You do not need to keep lots of state per connection. For example, there is no need to track seqnos or window values or ensure TCP packets are in proper order to the end hosts. Keep only the information that is useful to the NAT for establishing or clearing mappings.
+
+When rewriting TCP packets, remember to update the checksum (over the pseudo-header, tcp header, and payload). The TCP checksum is calculated like the IP checksum, so you can reuse the cksum function. Note that if the checksum is incorrect when the packet comes in, you can drop it; you should not "correct the checksum" as that would hide potential attackers or errors.
+
+### Adding command-line flags
+
+You must add the following command-line flags to sr_main.c:
+* -n         -- Enable NAT functionality
+* -I INTEGER -- ICMP query timeout interval in seconds (default to 60)
+* -E INTEGER -- TCP Established Idle Timeout in seconds (default to 7440)
+* -R INTEGER -- TCP Transitory Idle Timeout in seconds (default to 300)
+
+Make sure to adjust the parameter to getopt, and add the proper cases.  getopt() is a useful C library call to parse a list of arguments passed to your program.  Here is a good tutorial on using getopt: [Command line processing using getopt()](http://www.ibm.com/developerworks/aix/library/au-unix-getopt.html).
+
+For example, starting your NAT with:
+```no-highlight
+> ./sr -s localhost -p 8888 -n -I 70 -R 40
+```
+It would enable NAT functionality, timeout ICMP mappings after 70 seconds, TCP mappings with at least one established connection after 7440 seconds, and TCP mappings with only transitory connections after 40 seconds.
+
+## Reference Implementation
+A reference implementation (binary), _sr_nat_ , is available along with the start code.
+
+
+
 
 
  
