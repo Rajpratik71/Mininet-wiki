@@ -37,7 +37,7 @@ There are two configuration files.
 * ~/cs144_lab3/IP_CONFIG: Listed out the IP addresses assigned to the emulated hosts. 
 * ~/cs144_lab3/router/rtable (also linked to ~/cs144_lab3/rtable): The static routing table used for the simple router. 
 
-Feel free to manipulate these two files to change the IP addresses of the hosts or the routing table in the routing table. The default IP_CONFIG and rtable should look like the following:
+Feel free to manipulate these two files to change the IP addresses of the hosts or the routing table in the routing table. The default _IP_CONFIG_ and _rtable_ should look like the following:
 
 ```no-highlight
 > cat ~/cs144_lab3/IP_CONFIG
@@ -55,3 +55,42 @@ sw0-eth3 10.0.1.1
 172.64.3.10  172.64.3.10  255.255.255.255 eth2
 ```
 
+### Test Connectivity of Your Emulated Topology
+* Configure the environment by running the config.sh file
+```no-highlight
+> cd ~/cs144_lab3/
+> ./config.sh
+```
+* Start Mininet emulation by using the following command
+```no-highlight
+> cd ~/cs144_lab3/
+> ./run_mininet.sh
+```
+You should be able to see some output like the following: 
+
+`*** Shutting down stale SimpleHTTPServers
+*** Shutting down stale webservers 
+server1 107.21.41.195
+server2 107.21.17.129
+sw0-eth1 107.23.34.64
+sw0-eth2 107.21.14.129 
+sw0-eth3 10.0.1.11
+*** Successfully loaded ip settings for hosts {'sw0-eth1': '107.23.34.64', 'sw0-eth2': '107.21.14.129', 'sw0-eth3': '10.0.1.11', 'server1': '107.21.41.195', 'server2': '107.21.17.129'}
+*** Creating network
+*** Creating network
+*** Adding controller
+*** Adding hosts: root server1 server2
+*** Adding switches: sw0
+*** Adding links: (root, sw0) (server1, sw0) (server2, sw0) 
+*** Configuring hosts root server1 server2
+*** Starting controller
+*** Starting 1 switches sw0 
+*** setting mac address of sw0-eth3 the same as eth1 (0a:45:07:00:1a:82)
+*** setting default gateway of host server1 server1 107.21.41.195
+*** setting default gateway of host server2 server2 107.21.17.129
+*** Starting SimpleHTTPServer on host server1
+*** Starting SimpleHTTPServer on host server2
+*** Starting CLI:
+mininet>
+`
+* 
