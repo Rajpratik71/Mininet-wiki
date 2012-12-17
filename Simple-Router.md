@@ -37,7 +37,7 @@ There are two configuration files.
 * ~/cs144_lab3/IP_CONFIG: Listed out the IP addresses assigned to the emulated hosts. 
 * ~/cs144_lab3/router/rtable (also linked to ~/cs144_lab3/rtable): The static routing table used for the simple router. 
 
-Feel free to manipulate these two files to change the IP addresses of the hosts or the routing table in the routing table. The default _IP_CONFIG_ and _rtable_ should look like the following:
+The default _IP_CONFIG_ and _rtable_ should look like the following:
 
 ```no-highlight
 > cat ~/cs144_lab3/IP_CONFIG
@@ -56,12 +56,12 @@ sw0-eth3 10.0.1.1
 ```
 
 ### Test Connectivity of Your Emulated Topology
-* Configure the environment by running the config.sh file
+#### Configure the environment by running the config.sh file
 ```no-highlight
 > cd ~/cs144_lab3/
 > ./config.sh
 ```
-* Start Mininet emulation by using the following command
+#### Start Mininet emulation by using the following command
 ```no-highlight
 > cd ~/cs144_lab3/
 > ./run_mininet.sh
@@ -106,7 +106,7 @@ mininet>
 ```
 Keep this terminal open, as you will need the mininet command line for debugging. Now, use another terminal to continue the next step. (Do not do ctrl-z) 
 
-* Mininet requires a controller, which we implemented in POX. To run the controller, use the following command to run the controller:
+#### Mininet requires a controller, which we implemented in POX. To run the controller, use the following command to run the controller:
 ```no-highlight
 > cd ~/cs144_lab3/
 > ln -s ../pox
@@ -137,4 +137,85 @@ POX>
 INFO:openflow.of_01:[Con 1/249473472573510] Connected to e2-e5-11-b6-b0-46
 DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.ofhandler:Connection [Con 1/249473472573510]
 DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.srhandler:SRServerListener catch RouterInfo even, info={'eth3': ('10.0.1.1', '86:05:70:7e:eb:56', '10Gbps', 3), 'eth2': ('172.64.3.1', 'b2:9e:54:d8:9d:cd', '10Gbps', 2), 'eth1': ('192.168.2.1', '36:61:7c:4f:b6:7b', '10Gbps', 1)}, rtable=[]
+```
+Keep the POX running. Now, open yet another terminal to continue the next step.  (Dont’ do ctrl-z)
+
+#### Now you are ready to test out the connectivity of the environment setup. To do so, run the binary file of the solution “sr_solution”
+```no-highlight
+> cd ~/cs144_lab3/
+> ./sr_solution
+```
+You should be able to see some output like the following:
+
+```
+Loading routing table from server, clear local routing table.
+Loading routing table
+---------------------------------------------
+Destination     Gateway         Mask    Iface
+10.0.1.100              10.0.1.100      255.255.255.255 eth3
+192.168.2.2             192.168.2.2     255.255.255.255 eth1
+172.64.3.10             172.64.3.10     255.255.255.255 eth2
+---------------------------------------------
+Client ubuntu connecting to Server localhost:8888
+Requesting topology 0
+successfully authenticated as ubuntu
+Loading routing table from server, clear local routing table.
+Loading routing table
+---------------------------------------------
+Destination     Gateway         Mask    Iface
+10.0.1.100              10.0.1.100      255.255.255.255 eth3
+192.168.2.2             192.168.2.2     255.255.255.255 eth1
+172.64.3.10             172.64.3.10     255.255.255.255 eth2
+---------------------------------------------
+Router interfaces:
+eth3    HWaddr86:05:70:7e:eb:56
+        inet addr 10.0.1.1
+eth2    HWaddrb2:9e:54:d8:9d:cd
+        inet addr 172.64.3.1
+eth1    HWaddr36:61:7c:4f:b6:7b
+        inet addr 192.168.2.1
+ <-- Ready to process packets --> 
+```
+
+In this particular setup, 192.168.2.2 is the IP for server1, and 172.64.3.10 is the IP for server2.  You can find the IP addresses in your IP_CONFIG file.
+
+Now, back to the terminal where Mininet is running. To issue an command on the emulated host, type the host name followed by the command in the Mininet console. For example, the following command issues 3 pings from the client to the server1.
+
+```no-highlight
+mininet> client ping -c 3 192.168.2.2
+```
+You should be able to see the following output. 
+```
+PING 192.168.2.2 (192.168.2.2) 56(84) bytes of data.
+64 bytes from 192.168.2.2: icmp_req=1 ttl=63 time=66.9 ms
+64 bytes from 192.168.2.2: icmp_req=2 ttl=63 time=49.9 ms
+64 bytes from 192.168.2.2: icmp_req=3 ttl=63 time=68.8 ms
+```
+
+You can also use traceroute to see the route between client to server1.
+```no-highlight
+mininet> client traceroute -n 192.168.2.2
+```
+You should be able to see the following output. 
+```
+traceroute to 192.168.2.2 (192.168.2.2), 30 hops max, 60 byte packets
+ 1  10.0.1.1  146.069 ms  143.739 ms  143.523 ms
+ 2  192.168.2.2  226.260 ms  226.070 ms  225.868 ms
+```
+
+Finally, to test the web server is properly working at the server1 and server2, issue an HTTP request by using _wget_ or _curl_.
+```no-highlight
+mininet> client wget http://192.168.2.2
+```
+You should be able to see the following output. 
+```
+--2012-12-17 06:52:23--  http://192.168.2.2/
+Connecting to 192.168.2.2:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 161 [text/html]
+Saving to: `index.html'
+
+     0K                                                       100% 17.2M=0s
+
+2012-12-17 06:52:24 (17.2 MB/s) - `index.html' saved [161/161]
 ```
