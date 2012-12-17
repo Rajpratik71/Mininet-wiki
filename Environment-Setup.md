@@ -39,3 +39,4 @@ The assignments only require t1.micro, which Amazon provides 750 free usage hour
 > ssh -Y -i <Your KeyPair> ubuntu@<your EC2 domain name>
 ```
 
+The Image contains the starter code for all the assignments. 
