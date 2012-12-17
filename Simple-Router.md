@@ -16,16 +16,42 @@ If the router is functioning correctly, all of the following operations should w
 Additional requirements are laid out in the 'Requirements' section.
 
 ## Mininet
-This assignment runs on top of Mininet which was built at Stanford. Mininet allows you to emulate a topology on a single machine. It provides the needed isolation between the emulated nodes so that your router node can process and forward real Ethernet frames between the hosts like a real router. You don't have to know how Mininet works to complete this assignment, but more information about Mininet (if you're curious) is available here. 
+This assignment runs on top of Mininet which was built at Stanford. Mininet allows you to emulate a topology on a single machine. It provides the needed isolation between the emulated nodes so that your router node can process and forward real Ethernet frames between the hosts like a real router. You don't have to know how Mininet works to complete this assignment, but more information about Mininet (if you're curious) is available [here](http://yuba.stanford.edu/foswiki/bin/view/OpenFlow/Mininet). 
 
+## Get Started
+### Environment Setup
+Please refer to [[Environment Setup]] for setting up the environment.
 
-
-##### checkout code
+### Checkout Starter Code
 * cd ~
 * git clone https://huangty@bitbucket.org/huangty/cs144_lab3.git
 * cd cs144_lab3/
 * git checkout --track remotes/origin/standalone
 
-##### install pox module
+### Install Simple Router POX module
 * cd ~/cs144_lab3
 * ./config
+
+### Configuration Files
+There are two configuration files. 
+* ~/cs144_lab3/IP_CONFIG: Listed out the IP addresses assigned to the emulated hosts. 
+* ~/cs144_lab3/router/rtable (also linked to ~/cs144_lab3/rtable): The static routing table used for the simple router. 
+
+Feel free to manipulate these two files to change the IP addresses of the hosts or the routing table in the routing table. The default IP_CONFIG and rtable should look like the following:
+
+```no-highlight
+> cat ~/cs144_lab3/IP_CONFIG
+server1 192.168.2.2
+server2 172.64.3.10
+client    10.0.1.100
+sw0-eth1 192.168.2.1
+sw0-eth2 172.64.3.1
+sw0-eth3 10.0.1.1
+```
+```no-highlight
+> cat ~/cs144_lab3/rtable
+10.0.1.100  10.0.1.100  255.255.255.255 eth3
+192.168.2.2 192.168.2.2 255.255.255.255 eth1
+172.64.3.10  172.64.3.10  255.255.255.255 eth2
+```
+
