@@ -11,5 +11,12 @@ As with "Simple Router", we will create a NAT that sits in Mininet between the a
 
 The topology of NAT is as follows, where the NAT's internal interface (eth1) faces the client and its external interface (eth2) has two application servers connected with a switch:
 
+A correct implementation should support the following operations from the myth machines:
+
+* Pinging the NAT's internal interface from myth machines
+* Pinging any of the app servers (e.g. 184.72.104.217, 107.23.87.29 above)
+* Downloading files using HTTP from the app servers
+All packets to external hosts (app servers) should appear to come from eth2's address (e.g. 184.72.104.221 above).
+
 
 
