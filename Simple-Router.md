@@ -23,14 +23,18 @@ This assignment runs on top of Mininet which was built at Stanford. Mininet allo
 Please refer to [[Environment Setup]] for setting up the environment.
 
 ### Checkout Starter Code
-* cd ~
-* git clone https://huangty@bitbucket.org/huangty/cs144_lab3.git
-* cd cs144_lab3/
-* git checkout --track remotes/origin/standalone
+```no-highlight
+cd ~
+git clone https://huangty@bitbucket.org/huangty/cs144_lab3.git
+cd cs144_lab3/
+git checkout --track remotes/origin/standalone
+```
 
 ### Install Simple Router POX module
-* cd ~/cs144_lab3
-* ./config
+```no-highlight
+cd ~/cs144_lab3
+./config
+```no-highlight
 
 ### Configuration Files
 There are two configuration files. 
@@ -398,4 +402,3 @@ We have talked about how to use it in the "Test Connectivity of Your Emulated To
 * The router must queue all packets waiting for outstanding ARP replies. If a host does not respond to 5 ARP requests, the queued packet is dropped and an ICMP host unreachable message is sent back to the source of the queued packet.
 * The router must not needlessly drop packets (for example when waiting for an ARP reply)
 * The router must enforce guarantees on timeouts--that is, if an ARP request is not responded to within a fixed period of time, the ICMP host unreachable message is generated even if no more packets arrive at the router. (Note: You can guarantee this by implementing the sr_arpcache_sweepreqs function in sr_arpcache.c correctly.)
-
