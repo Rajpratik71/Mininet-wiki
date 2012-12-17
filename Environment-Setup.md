@@ -2,6 +2,7 @@ The following instruction will guide you through how to setup the environment to
 
 Steps:
 1. (Optional) Install Ubuntu 12.04 LTS on your machine
+
 2. Install Git
 sudo apt-get update
 sudo apt-get install git vim-nox
