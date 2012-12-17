@@ -68,7 +68,7 @@ sw0-eth3 10.0.1.1
 ```
 You should be able to see some output like the following: 
 
-`*** Shutting down stale SimpleHTTPServers
+> *** Shutting down stale SimpleHTTPServers
 *** Shutting down stale webservers 
 server1 107.21.41.195
 server2 107.21.17.129
@@ -92,5 +92,5 @@ sw0-eth3 10.0.1.11
 *** Starting SimpleHTTPServer on host server2
 *** Starting CLI:
 mininet>
-`
+
 * 
