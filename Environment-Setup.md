@@ -1,4 +1,4 @@
-The following instruction will guide you through how to setup the environment for the [[programming assignment|Assignments]] on Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2. 
+The following instruction will guide you through how to setup the environment for the [[programming assignment|Assignments]] on Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2 (ami-ac1f979c at Oregon Region). 
 
 ##### Install Needed Tools
 * sudo apt-get update
