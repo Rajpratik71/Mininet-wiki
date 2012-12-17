@@ -69,29 +69,72 @@ sw0-eth3 10.0.1.1
 You should be able to see some output like the following: 
 
 ```
-> *** Shutting down stale SimpleHTTPServers
-*** Shutting down stale webservers 
-server1 107.21.41.195
-server2 107.21.17.129
-sw0-eth1 107.23.34.64
-sw0-eth2 107.21.14.129 
-sw0-eth3 10.0.1.11
-*** Successfully loaded ip settings for hosts {'sw0-eth1': '107.23.34.64', 'sw0-eth2': '107.21.14.129', 'sw0-eth3': '10.0.1.11', 'server1': '107.21.41.195', 'server2': '107.21.17.129'}
+*** Shutting down stale SimpleHTTPServers  
+*** Shutting down stale webservers  
+server1 192.168.2.2
+server2 172.64.3.10
+client 10.0.1.100
+sw0-eth1 192.168.2.1
+sw0-eth2 172.64.3.1
+sw0-eth3 10.0.1.1
+*** Successfully loaded ip settings for hosts
+ {'server1': '192.168.2.2', 'sw0-eth3': '10.0.1.1', 'sw0-eth1': '192.168.2.1', 'sw0-eth2': '172.64.3.1', 'client': '10.0.1.100', 'server2': '172.64.3.10'}
 *** Creating network
 *** Creating network
 *** Adding controller
-*** Adding hosts: root server1 server2
-*** Adding switches: sw0
-*** Adding links: (root, sw0) (server1, sw0) (server2, sw0) 
-*** Configuring hosts root server1 server2
+*** Adding hosts:
+client server1 server2 
+*** Adding switches:
+sw0 
+*** Adding links:
+(client, sw0) (server1, sw0) (server2, sw0) 
+*** Configuring hosts
+client server1 server2 
 *** Starting controller
-*** Starting 1 switches sw0 
-*** setting mac address of sw0-eth3 the same as eth1 (0a:45:07:00:1a:82)
-*** setting default gateway of host server1 server1 107.21.41.195
-*** setting default gateway of host server2 server2 107.21.17.129
-*** Starting SimpleHTTPServer on host server1
-*** Starting SimpleHTTPServer on host server2
+*** Starting 1 switches
+sw0 
+*** setting default gateway of host server1
+server1 192.168.2.1
+*** setting default gateway of host server2
+server2 172.64.3.1
+*** setting default gateway of host client
+client 10.0.1.1
+*** Starting SimpleHTTPServer on host server1 
+*** Starting SimpleHTTPServer on host server2 
 *** Starting CLI:
-mininet>
+mininet> 
 ```
-* 
+Keep this terminal open, as you will need the mininet command line for debugging. Now, use another terminal to continue the next step. (Do not do ctrl-z) 
+
+* Mininet requires a controller, which we implemented in POX. To run the controller, use the following command to run the controller:
+```no-highlight
+> cd ~/cs144_lab3/
+> ln -s ../pox
+> ./run_pox.sh
+```
+You should be able to see some output like the following:
+
+```
+POX 0.0.0 / Copyright 2011 James McCauley
+DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.ofhandler:*** ofhandler: Successfully loaded ip settings for hosts
+ {'server1': '192.168.2.2', 'sw0-eth3': '10.0.1.1', 'sw0-eth1': '192.168.2.1', 'sw0-eth2': '172.64.3.1', 'client': '10.0.1.100', 'server2': '172.64.3.10'}
+
+INFO:.home.ubuntu.cs144_lab3.pox_module.cs144.srhandler:created server
+DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.srhandler:SRServerListener listening on 8888
+DEBUG:core:POX 0.0.0 going up...
+DEBUG:core:Running on CPython (2.7.3/Aug 1 2012 05:14:39)
+INFO:core:POX 0.0.0 is up.
+This program comes with ABSOLUTELY NO WARRANTY.  This program is free software,
+and you are welcome to redistribute it under certain conditions.
+Type 'help(pox.license)' for details.
+DEBUG:openflow.of_01:Listening for connections on 0.0.0.0:6633
+Ready.
+POX> 
+```
+**Please note that you have to wait the Mininet to connect to the POX controller before you continue to the next step**. Once the Mininet connected, you will see the following output:
+
+```
+INFO:openflow.of_01:[Con 1/249473472573510] Connected to e2-e5-11-b6-b0-46
+DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.ofhandler:Connection [Con 1/249473472573510]
+DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.srhandler:SRServerListener catch RouterInfo even, info={'eth3': ('10.0.1.1', '86:05:70:7e:eb:56', '10Gbps', 3), 'eth2': ('172.64.3.1', 'b2:9e:54:d8:9d:cd', '10Gbps', 2), 'eth1': ('192.168.2.1', '36:61:7c:4f:b6:7b', '10Gbps', 1)}, rtable=[]
+```
