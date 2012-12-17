@@ -95,3 +95,154 @@ Open up a terminal on your machine, download the skeleton code for "NAT" using g
 > cd cs144_lab5
 > git checkout --track remotes/origin/standalone
 ```
+
+The skeleton code resides in router/. The router directory is the starter code for both "Simple Router" and "NAT". If you have implemented "Simple Router", you should make a copy of your "Simple Router" into the NAT directory as follows:
+```no-highlight
+> pwd
+/home/ubuntu/cs144_lab5
+> rm router
+> cp -r ~/cs144_lab3/router ./
+```
+
+Now untar the file sr_nat_table.tar.   Then you will find two files, *sr_nat.c* and *sr_nat.h*. You also need to copy the *rtable* into the directory. 
+```no-highlight
+> tar xf sr_nat_table.tar
+> mv sr_nat.c ./router/
+> mv sr_nat.h ./router/
+> cp ./rtable ./router/
+```
+
+### Test Connectivity of Your Emulated Topology
+We also provide a reference implementation (binary) for you to test the environment. 
+#### Configure the Environment
+First, configure the environment by running the following command.
+```no-highlight
+> ./config.sh
+```
+#### Start Mininet
+```no-highlight
+> ./run_mininet.sh
+```
+You should see an output that looks like this (except for the IP addresses).
+```
+*** Removing excess controllers/ofprotocols/ofdatapaths/pings/noxes
+killall -9 controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd udpbwtest 2> /dev/null
+*** Removing junk from /tmp
+rm -f /tmp/vconn* /tmp/vlogs* /tmp/*.out /tmp/*.log
+*** Removing old screen sessions
+*** Removing excess kernel datapaths
+ps ax | egrep -o 'dp[0-9]+' | sed 's/dp/nl:/'
+***  Removing OVS datapathsovs-vsctl list-br
+*** Removing all links of the pattern foo-ethX
+ip link show | egrep -o '(\w+-eth\w+)'
+*** Cleanup complete.
+*** Shutting down stale SimpleHTTPServers  
+*** Shutting down stale webservers  
+server1 172.64.3.21
+server2 172.64.3.22
+client 10.0.1.100
+sw0-eth1 10.0.1.1
+sw0-eth2 172.64.3.1
+*** Successfully loaded ip settings for hosts
+ {'sw0-eth1': '10.0.1.1', 'sw0-eth2': '172.64.3.1', 'client': '10.0.1.100', 'server1': '172.64.3.21', 'server2': '172.64.3.22'}
+*** Creating network
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+client server1 server2 
+*** Adding switches:
+sw0 sw1 
+*** Adding links:
+(client, sw0) (server1, sw1) (server2, sw1) (sw0, sw1) 
+*** Configuring hosts
+client server1 server2 
+*** Starting controller
+*** Starting 2 switches
+sw0 sw1 
+*** setting default gateway of host server1
+server1 172.64.3.1
+*** setting default gateway of host server2
+server2 172.64.3.1
+*** setting default gateway of host client
+client 10.0.1.1
+*** Starting SimpleHTTPServer on host server1 
+*** Starting SimpleHTTPServer on host server2 
+*** Starting CLI:
+mininet> 
+```
+#### Start POX
+Start the Mininet controller (and wait for it to print some messages)
+```no-highlight
+> ./run_pox.sh
+```
+
+It will print messages that look like this:
+```
+POX 0.0.0 / Copyright 2011 James McCauley
+DEBUG:.home.ubuntu.cs144_lab5.pox_module.cs144.ofhandler:*** ofhandler: Successfully loaded ip settings for hosts
+ {'sw0-eth1': '10.0.1.1', 'sw0-eth2': '172.64.3.1', 'client': '10.0.1.100', 'server1': '172.64.3.21', 'server2': '172.64.3.22'}
+
+INFO:.home.ubuntu.cs144_lab5.pox_module.cs144.srhandler:created server
+DEBUG:.home.ubuntu.cs144_lab5.pox_module.cs144.srhandler:SRServerListener listening on 8888
+DEBUG:core:POX 0.0.0 going up...
+DEBUG:core:Running on CPython (2.7.3/Aug 1 2012 05:14:39)
+INFO:core:POX 0.0.0 is up.
+This program comes with ABSOLUTELY NO WARRANTY.  This program is free software,
+and you are welcome to redistribute it under certain conditions.
+Type 'help(pox.license)' for details.
+DEBUG:openflow.of_01:Listening for connections on 0.0.0.0:6633
+Ready.
+POX> 
+```
+
+** Wait until you see an output like this: **
+```
+INFO:openflow.of_01:[Con 2/200700410285122] Connected to b6-89-34-a9-4c-42
+DEBUG:.home.ubuntu.cs144_lab5.pox_module.cs144.ofhandler:Connection [Con 2/200700410285122]
+DEBUG:.home.ubuntu.cs144_lab5.pox_module.cs144.srhandler:SRServerListener catch RouterInfo even, info={'eth2': ('172.64.3.1', 'a6:ba:65:48:2b:ab', '10Gbps', 2), 'eth1': ('10.0.1.1', '76:45:55:d3:66:e5', '10Gbps', 1)}, rtable=[('10.0.1.100', '10.0.1.100', '255.255.255.255', 'eth1'), ('172.64.3.21', '172.64.3.21', '255.255.255.255', 'eth2'), ('172.64.3.22', '172.64.3.22', '255.255.255.255', 'eth2')]
+INFO:openflow.of_01:[Con 1/1] Connected to 00-00-00-00-00-01
+DEBUG:.home.ubuntu.cs144_lab5.pox_module.cs144.ofhandler:Connection [Con 1/1]
+INFO:.home.ubuntu.cs144_lab5.pox_module.cs144.ofhandler:Creating learning switch 00-00-00-00-00-01
+```
+
+#### Start Reference Solution
+```no-highlight
+> ./sr_nat -n
+```
+Note that “-n” means NAT is enabled.  You should see an output like this:
+
+```
+Using VNS sr stub code revised 2009-10-14 (rev 0.20)
+Loading routing table from server, clear local routing table.
+Loading routing table
+---------------------------------------------
+Destination	Gateway		Mask	Iface
+10.0.1.100		10.0.1.100	255.255.255.255	eth1
+172.64.3.21		172.64.3.21	255.255.255.255	eth2
+172.64.3.22		172.64.3.22	255.255.255.255	eth2
+172.64.3.22		172.64.3.22	255.255.255.255	eth2
+---------------------------------------------
+Client ubuntu connecting to Server localhost:8888
+Requesting topology 0
+successfully authenticated as ubuntu
+Loading routing table from server, clear local routing table.
+Loading routing table
+---------------------------------------------
+Destination	Gateway		Mask	Iface
+10.0.1.100		10.0.1.100	255.255.255.255	eth1
+172.64.3.21		172.64.3.21	255.255.255.255	eth2
+172.64.3.22		172.64.3.22	255.255.255.255	eth2
+172.64.3.22		172.64.3.22	255.255.255.255	eth2
+---------------------------------------------
+Router interfaces:
+eth2	HWaddra6:ba:65:48:2b:ab
+	inet addr 172.64.3.1
+eth1	HWaddr76:45:55:d3:66:e5
+	inet addr 10.0.1.1
+ <-- Ready to process packets --> 
+```
+
+
+
+
+ 
