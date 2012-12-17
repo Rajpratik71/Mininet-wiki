@@ -16,6 +16,7 @@ The following instruction will guide you through how to setup the environment fo
 * git clone http://github.com/noxrepo/pox
 
 ##### Install ltprotocol 
+* cd ~
 * git clone git://github.com/dound/ltprotocol.git
 * cd ltprotocol 
 * sudo python setup.py install
