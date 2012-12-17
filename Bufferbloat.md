@@ -7,7 +7,7 @@ In this exercise we will study the dynamics of TCP in home networks. Take a look
 In a real network it’s hard to measure cwnd (because it’s private to the Server) and the buffer occupancy (because it’s private to the router). To make our measurement job easier, we are going to emulate the network in Mininet (See [[Environment Setup]] for setting up the environment).
 
 The goals of the exercise are to:
- - Learn first-hand the dynamics of cwnd and buffer occupancy in a “real” network.
- - Learn why large router buffers can lead to poor performance in home networks. This problem is often called “Buffer Bloat.”
- - Learn how to use Mininet so you can repeat or extend the experiments in your own time.
+ + Learn first-hand the dynamics of cwnd and buffer occupancy in a “real” network.
+ + Learn why large router buffers can lead to poor performance in home networks. This problem is often called “Buffer Bloat.”
+ + Learn how to use Mininet so you can repeat or extend the experiments in your own time.
 
