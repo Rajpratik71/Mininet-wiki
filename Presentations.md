@@ -8,7 +8,7 @@ Here are several presentations on Mininet:
 
   Brandon's presentation from Hotnets-IX (10/20/2010) explains the Mininet architecture and SDN workflow, from prototyping to hardware deployment, and includes a slide on adding performance fidelity to Mininet.
 
-* [[### The Mininet Approach to Network Research and Prototyping | Mininet Approach]]
+* [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]]
 
   Some guiding principles that have motivated Mininet's design.
 
