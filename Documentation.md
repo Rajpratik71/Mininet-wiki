@@ -13,7 +13,7 @@ Mininet Documentation
 * [Viewing/Generating API Documentation](Mininet-API-Documentation) How to type `make doc`
 * [[Publications]] Mininet papers and other publications
 * **[[FAQ]]** Please read and add to the **Frequently Asked Questions** (and their Answers)
-* [[VM Creation Notes]]How we created the Mininet VM image
+* [[VM Creation Notes]] How we created the Mininet VM image
 
 #### Teaching Computer Networks with Mininet
 * [[Environment Setup]]
