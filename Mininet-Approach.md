@@ -1,6 +1,5 @@
 The Mininet Approach to Network Research and Prototyping
 ---------------------------------------------------------
-Bob Lantz
 
 Mininet was conceived as a way to make it easy to do network research using OpenFlow.
 
