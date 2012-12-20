@@ -30,3 +30,9 @@ Mininet Documentation
 <!-- comment this out since it's obsolete
 * [Release Plan](Release-Plan) Planning and task lists for Mininet releases
 -->
+
+#### Other Documents
+
+* [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]]
+
+  Some guiding principles that have motivated Mininet's design.
