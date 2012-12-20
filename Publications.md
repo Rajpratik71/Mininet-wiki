@@ -2,11 +2,17 @@
 
 <!-- was: pdf/mininet-conext12.pdf -->
 
-Nikhil Handigol, Brandon Heller, Vimal Jeyakumar, Bob Lantz, and Nick McKeown. *[[Reproducible Network Experiments using Container-Based Emulation | http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf]]*. [[CoNEXT 2012 | http://conferences.sigcomm.org/co-next/2012/program.html]], December 10-13, 2012, Nice, France.
+* Nikhil Handigol, Brandon Heller, Vimal Jeyakumar, Bob Lantz, and Nick McKeown. *[[Reproducible Network Experiments using Container-Based Emulation | http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf]]*. [[CoNEXT 2012 | http://conferences.sigcomm.org/co-next/2012/program.html]], December 10-13, 2012, Nice, France.
+
+  This paper advocates changing the practice of computer networking research (and CS in general),
+by demonstrating *reproducible* experiments using Mininet-HiFi, aka Mininet 2.0, and includes an overview of
+its design as well as experiences using Mininet to reproduce 16 published network experiments.
 
 <!-- was: pdf/a19-lantz.pdf -->
 
-Bob Lantz, Brandon Heller, and Nick McKeown. *[[A Network in a Laptop: Rapid Prototyping for Software-Defined Networks | http://conferences.sigcomm.org/hotnets/2010/papers/a19-lantz.pdf]]*. [[9th ACM Workshop on Hot Topics in Networks | http://conferences.sigcomm.org/hotnets/2010/program.html]], October 20-21, 2010, Monterey, CA.
+* Bob Lantz, Brandon Heller, and Nick McKeown. *[[A Network in a Laptop: Rapid Prototyping for Software-Defined Networks | http://conferences.sigcomm.org/hotnets/2010/papers/a19-lantz.pdf]]*. [[9th ACM Workshop on Hot Topics in Networks | http://conferences.sigcomm.org/hotnets/2010/program.html]], October 20-21, 2010, Monterey, CA.
+
+  This paper explains the basic Mininet design and workflow.
 
 
 ### Technical Reports
