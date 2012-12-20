@@ -33,7 +33,9 @@ What is Mininet?
 ----------------
 
 Mininet is a *network emulator*. It runs a collection of end-hosts,
-switches, routers, and links on a single Linux kernel. A Mininet host
+switches, routers, and links on a single Linux kernel. It uses
+lightweight virtualization to make a single system look like a complete
+network, running the same kernel, system, and user code. A Mininet host
 behaves just like a real machine; you can `ssh` into it (if you start up
 `sshd` and bridge the network to your host) and run arbitrary programs.
 The programs you run can send packets through what seems like a real
@@ -41,7 +43,7 @@ Ethernet interface, with a given link speed and delay. Packets get
 processed by what looks like a real Ethernet switch, router, or
 middlebox, with a given amount of queueing. When two programs, like an
 `iperf` client and server, communicate through Mininet, the measured
-performance should match that of two native machines.
+performance should match that of two (slower) native machines.
 
 <a id=why></a>
 
