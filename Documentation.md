@@ -33,4 +33,4 @@ Mininet Documentation
 
 #### Other Documents
 
-* [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]] Some guiding principles that have motivated Mininet's design.
+* [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]] Principles that have guided Mininet's design
