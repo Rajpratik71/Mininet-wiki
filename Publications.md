@@ -1,4 +1,4 @@
-### Reproducible Experiments using Mininet
+### Reproducible Network Research using Mininet
 
 * <http://reproducingnetworkresearch.wordpress.com>
 
