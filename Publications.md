@@ -1,7 +1,3 @@
-### Reproducible Network Experiments using Mininet
-
-* <http://reproducingnetworkresearch.wordpress.com>
-
 ### Papers
 
 <!-- was: pdf/mininet-conext12.pdf -->
@@ -17,6 +13,11 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 * Bob Lantz, Brandon Heller, and Nick McKeown. *[[A Network in a Laptop: Rapid Prototyping for Software-Defined Networks | http://conferences.sigcomm.org/hotnets/2010/papers/a19-lantz.pdf]]*. [[9th ACM Workshop on Hot Topics in Networks | http://conferences.sigcomm.org/hotnets/2010/program.html]], October 20-21, 2010, Monterey, CA.
 
   This paper explains the basic Mininet design and workflow.
+
+
+### Reproducible Network Experiments using Mininet
+
+* <http://reproducingnetworkresearch.wordpress.com>
 
 
 ### Technical Reports
