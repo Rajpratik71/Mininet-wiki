@@ -148,6 +148,7 @@ For example, here is a simple network topology (based on
 `mininet/topo.py:SingleSwitchTopo`) which consists of a specified number
 of hosts (`h1` through `hN`) connected to a single switch (`s1`):
 
+```python
 	#!/usr/bin/python
 	
 	from mininet.topo import Topo
@@ -181,6 +182,7 @@ of hosts (`h1` through `hN`) connected to a single switch (`s1`):
 	    # Tell mininet to print useful information
 	    setLogLevel('info')
 	    simpleTest()
+```
 
 Important classes, methods, functions and variables in the above code
 include:
@@ -226,6 +228,7 @@ to `Mininet()`, and then to specify the appropriate parameters in the
 topology. (You could also specify custom classes in the topology itself,
 or create custom node and link constructors and/or subclasses.)
 
+```python
 	#!/usr/bin/python
 	
 	from mininet.topo import Topo
@@ -246,7 +249,7 @@ or create custom node and link constructors and/or subclasses.)
 		           cpu=.5/n)
 	            # 10 Mbps, 5ms delay, 10% loss
 	            self.addLink(host, switch,
-		           bw=10, delay='5ms', loss=10, use_htb=True)
+		           bw=10, delay='5ms', loss=10, max_queue_size=1000, use_htb=True)
 	
 	def perfTest():
 	    "Create network and run simple performance test"
@@ -266,7 +269,8 @@ or create custom node and link constructors and/or subclasses.)
 	if __name__ == '__main__':
 	    setLogLevel('info')
 	    perfTest()
-    
+```
+
 Important methods and parameters:
 
 `self.addHost(name, cpu=f)`:
@@ -274,17 +278,18 @@ Important methods and parameters:
 This allows you to specify a fraction of overall system CPU resources
 which will be allocated to the virtual host.
 
-`self.addLink( node1, node2, bw=10, delay='5ms', loss=10, use_htb=True
-)`: 
-adds a link with bandwidth, delay and loss characteristics, using the
-Hierarchical Token Bucket rate limiter and netem delay/loss emulator.
+`self.addLink( node1, node2, bw=10, delay='5ms', max_queue_size=1000,
+loss=10, use_htb=True)`: 
+adds a link with bandwidth, delay and loss characteristics, with a maximum
+queue size of 1000 packets using the Hierarchical Token Bucket rate limiter
+and netem delay/loss emulator.
 
 You may find it useful to create a Python dictionary to make it easy to
 pass the same parameters into multiple method calls, for example:
 
-	linkopts = dict(bw=10, delay='5ms', loss=10, use_htb=True)
+	linkopts = dict(bw=10, delay='5ms', loss=10, max_queue_size=1000, use_htb=True)
 	# alternately: linkopts = {'bw':10, 'delay':'5ms', 'loss':10,
-	# 'use_htb':True}
+	# max_queue_size=1000, 'use_htb':True}
 	self.addLink(node1, node2, **linkopts)
 
 This same technique `(**dict)` is useful for passing options to
@@ -308,13 +313,16 @@ send input to the shell using the cmd() method.
 
 To run a command in a host and get the output, use the `cmd()` method.
 
+```python
 	h1 = net.getNodeByName('h1')	
 	result = h1.cmd('ifconfig')
 	print result
+```
 
 In many cases, you will wish to run a command in the background for a
 while, stop the command, and save its output to a file:
 
+```python
 	from time import sleep
 	...
 	print "Starting test..."
@@ -329,6 +337,7 @@ while, stop the command, and save its output to a file:
 	    print "%d: %s" % ( lineno, line.strip() )
 	    lineno += 1
 	f.close()
+```
 
 Note that we used the shell's output redirection feature to send output
 to `/tmp/date.out`, the background execution feature `&` of the shell to
@@ -350,12 +359,16 @@ Having a shell process at your disposal makes it easy to perform other
 tasks as well. For example, you can find out the PID of a background
 command using
 
+```python
 	pid = int( h1.cmd('echo $!') )
+```
 
 Then you can wait for a particular process to finish execution by using
 wait, e.g.:
 
+```python
 	h1.cmd('wait', pid)
+```
 
 Note that this will only work for UNIX commands and not for commands
 (e.g. `while`, `cd`) which are built into the bash shell itself (and don't
@@ -372,12 +385,14 @@ In addition to using the shell's wait mechanism, Mininet itself allows
 you to start a foreground command using `sendCmd()` and then wait for it
 to complete at some later time using `waitOutput()`:
 
+```python
 	for h in hosts:
 	    h.sendCmd('sleep 20')
 	…
 	results = {}
 	for h in hosts:
 	    results[h.name] = h.waitOutput()
+```
 
 If you are sending output to a file, you may wish to monitor that file's
 contents interactively while your test is running. The
@@ -387,6 +402,7 @@ implements one possible mechanism for monitoring multiple output files.
 This simplifies the implementation of a test which interactively
 monitors output from multiple hosts:
 
+```python
 	def monitorTest( N=3, seconds=3 ):
 	    "Run pings and monitor multiple hosts"
 	    topo = SingleSwitchTopo( N )
@@ -414,6 +430,7 @@ monitors output from multiple hosts:
 	    for h in hosts:
 	        h.cmd('kill %ping')
 	    net.stop()
+```
 
 You may wish to run `multipoll.py` and look at its output.
 
@@ -438,6 +455,7 @@ code in [`examples/popenpoll.py`](https://github.com/mininet/mininet/tree/master
 what is described above, using the `popen()` interface and `pmonitor()`
 helper function:
 
+```python
 	def pmonitorTest( N=3, seconds=10 ):
 		"Run pings and monitor multiple hosts using pmonitor"
 		topo = SingleSwitchTopo( N )
@@ -458,7 +476,7 @@ helper function:
 	        	   for p in popens.values():
 	            	 p.send_signal( SIGINT )
 		net.stop()
-
+```
 
 Note this implementation is slightly different since it pulls the time
 management out of the helper function, but this enables pmonitor() to
@@ -486,7 +504,9 @@ configuration:
 
 For example:
 
+```python
     print "Host", h1.name, "has IP address", h1.IP(), "and MAC address", h1.MAC()
+```
 
 In each case, if you do not provide a specific interface (e.g. `h1-eth0`
 or an interface object) the method will use the host's default
@@ -519,6 +539,7 @@ ability to display xterm windows and to run commands on individual nodes
 in your network. You can invoke the CLI on a network by passing the
 network object into the `CLI()` constructor:
 
+```python
 	from mininet.topo import SingleSwitchTopo
 	from mininet.net import Mininet
 	from mininet.cli import CLI
@@ -527,7 +548,8 @@ network object into the `CLI()` constructor:
 	net.start()
 	CLI(net)
 	net.stop()
-	
+```
+
 Starting up the CLI can be useful for debugging your network, as it allows you to view the network topology (with the net command), test connectivity (with the pingall command), and send commands to individual hosts.
 
 	*** Starting CLI:
@@ -568,6 +590,7 @@ Mininet includes Python documentation strings for each module and API
 call. These may be accessed from Python's regular `help()` mechanism. For
 example,
 
+```python
 	python
 	>>> from mininet.node import Host
 	>>> help(Host.IP)
@@ -575,6 +598,7 @@ example,
 	
 	IP(self, intf=None) unbound mininet.node.Host method
 		Return IP address of a node or specific interface.
+```
 
 This same documentation is also available on the Mininet web site at
 <http://mininet.github.com/api>.
