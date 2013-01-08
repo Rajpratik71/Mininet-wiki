@@ -193,8 +193,7 @@ include:
 
 `addHost()`: adds a host to a topology and returns the host name
 
-`addLink()`: adds a link to a topology (and returns a link key, but this
-is not important)
+`addLink()`: adds a bidirectional link to a topology (and returns a link key, but this is not important).  Links in Mininet are bidirectional unless noted otherwise.
 
 `Mininet`: main class to create and manage a network
 
@@ -280,7 +279,7 @@ which will be allocated to the virtual host.
 
 `self.addLink( node1, node2, bw=10, delay='5ms', max_queue_size=1000,
 loss=10, use_htb=True)`: 
-adds a link with bandwidth, delay and loss characteristics, with a maximum
+adds a bidirectional link with bandwidth, delay and loss characteristics, with a maximum
 queue size of 1000 packets using the Hierarchical Token Bucket rate limiter
 and netem delay/loss emulator.
 
