@@ -281,7 +281,7 @@ which will be allocated to the virtual host.
 loss=10, use_htb=True)`: 
 adds a bidirectional link with bandwidth, delay and loss characteristics, with a maximum
 queue size of 1000 packets using the Hierarchical Token Bucket rate limiter
-and netem delay/loss emulator.  The parameter `bw` is expressed as a number in Mb/s; `delay` is expressed as a string with units in place (e.g. '5ms', '100us', '1s'); `loss` is expressed as a probability (fraction between 0 and 1); and `max_queue_size` is expressed in packets.
+and netem delay/loss emulator.  The parameter `bw` is expressed as a number in Mb/s; `delay` is expressed as a string with units in place (e.g. '5ms', '100us', '1s'); `loss` is expressed as a percentage (between 0 and 100); and `max_queue_size` is expressed in packets.
 
 You may find it useful to create a Python dictionary to make it easy to
 pass the same parameters into multiple method calls, for example:
