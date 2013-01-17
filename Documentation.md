@@ -16,8 +16,8 @@ Mininet Documentation
 * [[VM Creation Notes]] How we created the Mininet VM image
 
 #### Teaching Computer Networks with Mininet
-* [[Environment Setup]]
-* [[Assignments]]
+* [[Environment Setup]] Work on assignments on your own computer or Amazon EC2
+* [[Assignments]] Course projects using Mininet to teach Networking
 
 #### Bug Reports and Feature Requests
 * [[Bugs]] How to submit bug reports
