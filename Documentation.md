@@ -3,7 +3,7 @@ Mininet Documentation
 
 #### Getting Started With Mininet:
 1. [Download](http://mininet.github.com/download) How to download and run Mininet - in a Virtual Machine (VM) or natively
-2. [VM Setup Notes](http://mininet.github.com/vm-setup-notes) How to configure a Mininet VM after you downloaded it
+2. [VM Setup Notes](http://mininet.github.com/vm-setup-notes) How to configure a Mininet VM after you've downloaded it
 3. [Walkthrough](http://mininet.github.com/walkthrough) How to start up and run Mininet
 4. [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial) Use Mininet to learn about OpenFlow and SDN
 5. **[[Introduction to Mininet]]** Learn to use Mininet's Python API
