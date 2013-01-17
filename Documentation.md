@@ -17,7 +17,7 @@ Mininet Documentation
 
 #### Teaching Computer Networks with Mininet
 * [[Environment Setup]] Work on assignments on your own computer or Amazon EC2
-* [[Assignments]] Course projects using Mininet to teach Networking
+* [[Assignments]] Use Mininet to teach or learn about computer networks
 
 #### Bug Reports and Feature Requests
 * [[Bugs]] How to submit bug reports
