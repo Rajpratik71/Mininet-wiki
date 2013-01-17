@@ -1,7 +1,7 @@
 Mininet Documentation
 ============
 
-#### How To Get Started With Mininet:
+#### Get Started With Mininet:
 1. [Download](http://mininet.github.com/download) How to download and run Mininet - in a Virtual Machine (VM) or natively
 2. [VM Setup Notes](http://mininet.github.com/vm-setup-notes) How to configure a Mininet VM after you downloaded it
 3. [Walkthrough](http://mininet.github.com/walkthrough) A tutorial introduction to using Mininet
