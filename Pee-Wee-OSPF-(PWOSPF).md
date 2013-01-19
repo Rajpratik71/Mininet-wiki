@@ -25,7 +25,7 @@ Your task is to implement PWOSPF within your router so that your router will be 
 ## Implementation Guidance
 To get you started on the right track, we provide skeleton code for a possible data structure. You will use the same environment that we setup in "simple router" for this assignment. For detailed instructions, please refer to [[Environment Setup]] and [[Simple Router]].
 
-_**Note: Make sure your EC2 Machine's Security Group opens ports 8888 and 2300. Otherwise, your routers will not be able to communicate with each other.** _
+_**Note: Make sure your EC2 Machine's Security Group opens ports 8888 and 2300. Otherwise, your routers will not be able to communicate with each other.**_
 
 ### Download Skeleton Code
 Boot up your machine setup with Mininet. Open up a terminal on the machine, download the skeleton code for "PWOSPF" using git.
