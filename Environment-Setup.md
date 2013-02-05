@@ -1,4 +1,4 @@
-The following instruction will guide you through how to set up the environment for the [[programming assignments|Assignments]] on Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2 (ami-96139ba6 at Oregon Region). You can find instructions on how to use an EC2 AMI image below. 
+The following instructions will guide you through how to set up the environment for the [[programming assignments|Assignments]]. The first set of instructions is for working with a local machine or VM running Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2 (ami-96139ba6, Oregon Region). You can find instructions on how to use an EC2 AMI image below. 
 
 ## Use Your Own Ubuntu Machine
 ### Install Needed Tools
