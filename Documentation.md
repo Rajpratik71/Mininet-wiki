@@ -26,9 +26,7 @@ Mininet Documentation
 #### Other Documents
 
 * [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]] Principles that have guided Mininet's design
-
 * [[Futures]] This page describes (some) future plans and new features that we plan to add to Mininet
-
 <!-- comment this out since it's obsolete
 * [Release Plan](Release-Plan) Planning and task lists for Mininet releases
 -->
