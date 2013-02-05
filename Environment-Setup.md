@@ -30,7 +30,7 @@ sudo python setup.py install
 
 ## Use Amazon EC2
 
-The assignments only require t1.micro, which Amazon provides 750 free usage hours per month.  
+The assignments only require a t1.micro instance, for which Amazon provides 750 free usage hours per month.  
 
 ### Launch an Instance with the provided AMI Image
 * Go to [AWS Console](https://console.aws.amazon.com)
