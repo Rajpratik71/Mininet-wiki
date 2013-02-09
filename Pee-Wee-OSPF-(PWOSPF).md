@@ -232,15 +232,15 @@ handling buckets on the wait list
 Nothing to do, will sleep until next event in 1s, 0ns
 ```
 
-** If you don't see any IP settings loaded in, please check if your machine's port 8888 and 2300 is opened for connection. **
+**If you don't see any IP settings loaded in, please check if your machine's port 8888 and 2300 is opened for connection.**
 
-Now, on a differnt machine, connect your reference solution, sr_solution, to vhost2. Replace A.B.C.D with the actual IP of your Mininet/POX machine.
+Now, on a different machine, connect your reference solution, sr_solution, to vhost2. Replace A.B.C.D with the actual IP of your Mininet/POX machine.
 ```no-highlight
 > ./run_sr.sh A.B.C.D vhost2
 ```
 You should see a similar output. 
 
-On yet another differnt machine, connect your reference solution, sr_solution, to vhost3. Replace A.B.C.D with the actual IP of your Mininet/POX machine.
+On yet another different machine, connect your reference solution, sr_solution, to vhost3. Replace A.B.C.D with the actual IP of your Mininet/POX machine.
 ```no-highlight
 > ./run_sr.sh A.B.C.D vhost3
 ```
