@@ -357,13 +357,14 @@ You must fill out the sr_arpcache_sweepreqs function in sr_arpcache.c that gets 
 ###Protocol Headers (sr_protocol.h)
 
 Within the router framework you will be dealing directly with raw Ethernet packets. The stub code itself provides some data structures in sr_protocols.h which you may use to manipulate headers easily.
-There are a number of resources which describe the protocol headers in detail. Network Sorcery's RFC Sourcebook provides a condensed reference to the packet formats you'll be dealing with:
+There are a number of resources which describe the protocol headers in detail. Network Sorcery's [RFC Sourcebook] (http://www.networksorcery.com/enp/) provides a condensed reference to the packet formats you'll be dealing with:
 
-* Ethernet
-* IP
-* ICMP
-* ARP
-For the actual specifications, there are also the RFC's for ARP (RFC826), IP (RFC791), and ICMP (RFC792).
+* [Ethernet] (http://www.networksorcery.com/enp/protocol/IEEE8023.htm)
+* [IP] (http://www.networksorcery.com/enp/protocol/ip.htm)
+* [ICMP] (http://www.networksorcery.com/enp/protocol/icmp.htm)
+* [ARP] (http://www.networksorcery.com/enp/protocol/arp.htm)
+
+For the actual specifications, there are also the RFC's for ARP [(RFC826)] (http://www.ietf.org/rfc/rfc826.txt), IP [(RFC791)] (http://www.ietf.org/rfc/rfc791.txt), and ICMP [(RFC792)] (http://www.ietf.org/rfc/rfc792.txt).
 
 ### Debugging Functions
 
