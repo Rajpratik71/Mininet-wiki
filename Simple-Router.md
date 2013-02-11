@@ -371,8 +371,8 @@ For the actual specifications, there are also the RFC's for ARP [(RFC826)] (http
 We have provided you with some basic debugging functions in sr_utils.h, sr_utils.c. Feel free to use them to print out network header information from your packets.
 Below are some functions you may find useful:
 
-* print_hdrs(uint8_t *buf, uint32_t length) - Prints out all possible headers starting from the Ethernet header in the packet
-* print_addr_ip_int(uint32_t ip) - Prints out a formatted IP address from a uint32_t. Make sure you are passing the IP address in the correct byte ordering.
+* `print_hdrs(uint8_t *buf, uint32_t length)` - Prints out all possible headers starting from the Ethernet header in the packet
+* `print_addr_ip_int(uint32_t ip)` - Prints out a formatted IP address from a uint32_t. Make sure you are passing the IP address in the correct byte ordering.
 
 ### Length of Assignment
 This assignment is considerably harder than the first 2 labs, so get started early.
@@ -402,4 +402,4 @@ We have talked about how to use it in the "Test Connectivity of Your Emulated To
 * The router must maintain an ARP cache whose entries are invalidated after a timeout period (timeouts should be on the order of 15 seconds).
 * The router must queue all packets waiting for outstanding ARP replies. If a host does not respond to 5 ARP requests, the queued packet is dropped and an ICMP host unreachable message is sent back to the source of the queued packet.
 * The router must not needlessly drop packets (for example when waiting for an ARP reply)
-* The router must enforce guarantees on timeouts--that is, if an ARP request is not responded to within a fixed period of time, the ICMP host unreachable message is generated even if no more packets arrive at the router. (Note: You can guarantee this by implementing the sr_arpcache_sweepreqs function in sr_arpcache.c correctly.)
+* The router must enforce guarantees on timeouts--that is, if an ARP request is not responded to within a fixed period of time, the ICMP host unreachable message is generated even if no more packets arrive at the router. (Note: You can guarantee this by implementing the `sr_arpcache_sweepreqs` function in `sr_arpcache.c` correctly.)
