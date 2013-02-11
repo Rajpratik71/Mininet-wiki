@@ -22,7 +22,7 @@ This assignment runs on top of Mininet which was built at Stanford. Mininet allo
 ### Environment Setup
 Please refer to [[Environment Setup]] for setting up the environment.
 
-### Checkout Starter Code
+### Check Out Starter Code
 ```no-highlight
 cd ~
 git clone https://huangty@bitbucket.org/huangty/cs144_lab3.git
