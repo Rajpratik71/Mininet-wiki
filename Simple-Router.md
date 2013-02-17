@@ -33,7 +33,7 @@ git checkout --track remotes/origin/standalone
 ### Install Simple Router POX module
 ```no-highlight
 cd ~/cs144_lab3
-./config
+./config.sh
 ```
 
 ### Configuration Files
