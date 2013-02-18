@@ -250,7 +250,7 @@ There are also many useful books on Linux available on Amazon and in your local 
 
 ***
 <a id=homework></a>
-### Will you do my (home)work assignment (or paper/thesis/etc.) for me? It's due next Tuesday at 4pm.
+### Will you do my (home)work assignment (or paper/thesis/project/etc.) for me? It's due next Tuesday at 4pm.
 
 No, because:
 
