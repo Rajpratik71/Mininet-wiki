@@ -17,6 +17,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I do a **native install** of Mininet?](#native-install)
+* [Help! The VM console screen is blank](#blank-screen)
 
 ### Using Mininet
 
@@ -121,6 +122,16 @@ Then, you can start X11 in the VM console window using
 ### How can I do a native install of Mininet?
 
 Instructions for native installation can be found at <http://mininet.github.com/download> and in [`INSTALL`](https://github.com/mininet/mininet/tree/master/INSTALL).
+
+***
+<a id=blank-screen></a>
+### Help! The VM console screen is blank
+
+First, select the VM console window.
+Second, press a key like `a` or `return` a few times - see if anything appeasr.
+If nothing happens, try switching to a different Linux console using `control``alt``F1`` through `control``alt``F7`.
+
+Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``option``F1`, since the `F1` key controls brightness by default.
 
 ***
 <a id=python-api></a>
