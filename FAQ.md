@@ -128,7 +128,7 @@ Instructions for native installation can be found at <http://mininet.github.com/
 ### Help! The VM console screen is blank
 
 First, select the VM console window.
-Second, press a key like `A` or `return` a few times - see if anything appeasr.
+Second, press a key like `A` or `return` a few times - see if any text appears.
 If nothing happens, try switching to a different Linux console using `control``alt``F1`` through `control``alt``F7`.
 
 Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``option``F1`, since the `F1` key controls brightness by default.
