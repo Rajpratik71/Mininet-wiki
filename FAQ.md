@@ -17,7 +17,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I do a **native install** of Mininet?](#native-install)
-* [Help! The VM console screen is blank](#blank-screen)
+* [Help! The VM console screen is blank!](#blank-screen)
 
 ### Using Mininet
 
@@ -125,7 +125,7 @@ Instructions for native installation can be found at <http://mininet.github.com/
 
 ***
 <a id=blank-screen></a>
-### Help! The VM console screen is blank
+### Help! The VM console screen is blank!
 
 First, select the VM console window.
 Second, press a key like `A` or `return` a few times - see if any text appears.
