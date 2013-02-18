@@ -17,7 +17,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I do a **native install** of Mininet?](#native-install)
-* [Help! The VM console screen is blank!](#blank-screen)
+* [Help! The **VM console screen is blank**!](#blank-screen)
 
 ### Using Mininet
 
