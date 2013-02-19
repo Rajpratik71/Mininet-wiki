@@ -127,6 +127,10 @@ Instructions for native installation can be found at <http://mininet.github.com/
 <a id=blank-screen></a>
 ### Help! The VM console screen is blank!
 
+Make sure that the VM is actually booting. If not, then you may have a problem actually booting the Mininet VM in your VM monitor. The Mininet 2.0 VM is a 64-bit image, which should work on any modern CPU. However, some users have reported conflicts between Microsoft's Hyper-V and VirtualBox on Windows, so if you are running VirtualBox on Windows you may need to turn of Hyper-V.
+
+If the VM is booting but boots to a blank screen, then you probably just need to either wake up the Linux console or switch to another virtual console, as follows:
+
 First, select the VM console window.
 Second, press a key like `A` or `return` a few times - see if any text appears.
 If nothing happens, try switching to a different Linux console using `control``alt``F1`` through `control``alt``F7`.
