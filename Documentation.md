@@ -10,7 +10,7 @@ Mininet Documentation
 
 #### Getting Started With Mininet: Next Steps
 6. Look at some [example Mininet scripts](https://github.com/mininet/mininet/tree/master/examples)
-7. Try some realistic [network experiments](http://reproducingnetworkresearch.wordpress.com) with Mininet.
+7. Try some realistic [network experiments](http://reproducingnetworkresearch.wordpress.com) with Mininet
 
 #### Documentation and FAQ
 * **[Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html)**
