@@ -449,8 +449,12 @@ also supports a pipe-based interface which returns standard Python
 mechanism is newer and not as well-tested as the `cmd()` mechanism, but
 you may find it convenient for running multiple processes in the
 background and monitoring their output. A `pmonitor()` function is
-provided to make monitoring multiple `Popen()` objects even easier. The
-code in [`examples/popenpoll.py`](https://github.com/mininet/mininet/tree/master/examples/popenpoll.py) implements the functionality similar to
+provided to make monitoring multiple `Popen()` objects even easier. 
+
+> Warning: in Mininet 2.0.0, `pmonitor()` may return a number of blank
+> lines after receiving EOFs. This should now be fixed in the master branch.
+
+The code in [`examples/popenpoll.py`](https://github.com/mininet/mininet/tree/master/examples/popenpoll.py) implements the functionality similar to
 what is described above, using the `popen()` interface and `pmonitor()`
 helper function:
 
@@ -477,12 +481,9 @@ helper function:
 		net.stop()
 ```
 
-> Warning: in Mininet 2.0.0, `pmonitor()` may return a number of blank
-> lines after receiving EOFs. This is fixed in the latest source tree.
-
 Note this implementation is slightly different since it pulls the time
-management out of the helper function, but this enables pmonitor() to
-catch ping's output after it is interrupted.
+management out of the helper function, but this enables `pmonitor()` to
+catch `ping`'s output after it is interrupted.
 
 Of course, you do not have to use `pmonitor()` - you can use
 `Popen.communicate()` (as long as you don't have too many file
