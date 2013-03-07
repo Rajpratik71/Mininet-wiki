@@ -15,7 +15,7 @@ Mininet Documentation
 #### Mininet Documentation and FAQ
 * **[Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html)**
 * [Viewing/Generating the Mininet API Reference](Mininet-API-Documentation) (it's very easy!)
-* [[Publications]] Mininet papers, technical reports and presentations
+* **[[Publications]]** Informative Mininet papers, technical reports and presentations
 * **[[FAQ]]** Please read and add to the **[[Frequently Asked Questions | FAQ]]** (and their Answers)
 * [[VM Creation Notes]] How we created the Mininet VM image
 
