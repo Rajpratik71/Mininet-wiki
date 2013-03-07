@@ -477,6 +477,9 @@ helper function:
 		net.stop()
 ```
 
+> Warning: in Mininet 2.0.0, `pmonitor()` may return a number of blank
+> lines after receiving EOFs. This is fixed in the latest source tree.
+
 Note this implementation is slightly different since it pulls the time
 management out of the helper function, but this enables pmonitor() to
 catch ping's output after it is interrupted.
