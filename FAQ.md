@@ -17,6 +17,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [How can I do a **native install** of Mininet?](#native-install)
+* [Help! I am getting an error from VirtualBox and my VM won't start!](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 
 ### Using Mininet
@@ -122,6 +123,20 @@ Then, you can start X11 in the VM console window using
 ### How can I do a native install of Mininet?
 
 Instructions for native installation can be found at <http://mininet.github.com/download> and in [`INSTALL`](https://github.com/mininet/mininet/tree/master/INSTALL).
+
+***
+<a id=virtualbox-error></a>
+### Help! I am getting an error from VirtualBox and my VM won't start!
+
+If you are already running Microsoft's Hyper-V, you may not be able to boot the Mininet VM in VirtualBox at the same time. I tested this and got the following error:
+
+> VirtualBox - Error
+> VT-X/AMD-V Hardware acceleration is not available on your system. Your 64-bit guest will fail
+> to detect a 64-bit CPU and will not be able to boot.
+
+One solution to this problem would be to turn off Hyper-V (in Windows 8, this is done via "Enable/Disable Windows Features" in the Windows Control Panel.)
+
+*If you need to keep running Hyper-V*, you could try creating a 32-bit Mininet VM (very easy - just read our instructions on the Documentation page), or you could even try using Microsoft's OVF import tool to run the Mininet VM directly on Hyper-V itself.
 
 ***
 <a id=blank-screen></a>
