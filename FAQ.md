@@ -134,9 +134,11 @@ If you are already running Microsoft's Hyper-V, you may not be able to boot the 
 > VT-X/AMD-V Hardware acceleration is not available on your system. Your 64-bit guest will fail
 > to detect a 64-bit CPU and will not be able to boot.
 
-One solution to this problem would be to turn off Hyper-V (in Windows 8, this is done via "Enable/Disable Windows Features" in the Windows Control Panel.)
+The problem is not that you don't have a 64-bit CPU (you probably do if you have anything as good as, say an intel Core 2 Duo from 2006.) Rather, the problem is that you are trying to run two virtual machine monitors - Hyper-V and VirtualBox - at the same time, and this does not work with 64-bit guest OSes.
 
-*If you need to keep running Hyper-V*, you could try creating a 32-bit Mininet VM (very easy - just read our instructions on the Documentation page), or you could even try using Microsoft's OVF import tool to run the Mininet VM directly on Hyper-V itself.
+A simple solution to this problem is to turn off Hyper-V (in Windows 8, this is done via "Enable/Disable Windows Features" in the Windows Control Panel.) This has been tested and verified on Windows 8.
+
+If you need to keep running Hyper-V, you could try creating a 32-bit Mininet VM (very easy - just read our instructions on the Documentation page), or you could even try using Microsoft's OVF import tool to run the Mininet VM directly on Hyper-V itself.
 
 ***
 <a id=blank-screen></a>
