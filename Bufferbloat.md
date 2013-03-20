@@ -2,7 +2,7 @@
 
 In this exercise we will study the dynamics of TCP in home networks. Take a look at the figure below which shows a “typical” home network with a Home Router connected to an end host. The Home Router is connected via Cable or DSL to a Headend router at the Internet access provider’s office. We are going to study what happens when we download data from a remote server to the End Host in this home network.
 
-![alt text](http://yuba.stanford.edu/~huangty/mininet/Bufferbloat.png "Bufferbloat")
+![alt text](images/Bufferbloat.png "Bufferbloat")
 
 In a real network it’s hard to measure cwnd (because it’s private to the Server) and the buffer occupancy (because it’s private to the router). To make our measurement job easier, we are going to emulate the network in Mininet (See [[Environment Setup]] for setting up the environment).
 
@@ -12,7 +12,7 @@ The goals of the exercise are to:
  + Learn how to use Mininet so you can repeat or extend the experiments in your own time.
 
 ## Part 1: Get Mininet up and running 
-![alt text](http://yuba.stanford.edu/~huangty/mininet/Bufferbloat_topo.png "Topology for Bufferbloat")
+![alt text](images/Bufferbloat_topo.png "Topology for Bufferbloat")
 
 ### Get the Bufferbloat Topology 
 Bring up a terminal on your machine 
@@ -38,7 +38,7 @@ mininet> h2 wget http://10.0.0.1
 Answer: _________________ seconds
 
 ### Sketch how you think cwnd evolves over time at H1.  Mark multiples of RTT on the x-axis.
-![alt text](http://yuba.stanford.edu/~huangty/mininet/Bufferbloat_axes.png "TCP AXES")
+![alt text](images/Bufferbloat_axes.png "TCP AXES")
 
 ## Part 3: “Streaming video” - Sketch the TCP CWND and Buffer Occupancy.
 
@@ -59,7 +59,7 @@ Sketch how you think cwnd evolves over time at H1. You might find it useful to u
 ```no-highlight
 mininet> h1 ping -c 100 h2
 ```
-![alt text](http://yuba.stanford.edu/~huangty/mininet/Bufferbloat_axes.png "TCP AXES")
+![alt text](images/Bufferbloat_axes.png "TCP AXES")
 
 ### The Impact on the Short Flow
 To see how our long-lived iperf flow affects our web page download, download the webpage again - while iperf is running. Write down how long it takes.
@@ -135,7 +135,7 @@ mininet> h2 wget http://10.0.0.1
 ```
 
 ### What do you think the cwnd and queue occupancy will be like in this case?
-![alt text](http://yuba.stanford.edu/~huangty/mininet/Bufferbloat_axes2.png "AXES")
+![alt text](images/Bufferbloat_axes2.png "AXES")
 
 ### Plot CWND and Queue Occupancy 
 Plot the figure for cwnd and queue occupancy, this time using the script “./plot_figures_minq.sh” 
@@ -153,7 +153,7 @@ Answer:
 The problem seems to be that packets from the short flow are stuck behind a lot of packets from the long flow. What if we maintain a separate queue for each flow and then put _iperf_ and _wget_ traffic into different queues?
 
 For this experiment, we put the iperf and wget/ping packets into separate queues in the Headend router. The scheduler implements fair queueing so that when both queues are busy, each flow will receive half of the bottleneck link rate. 
-![alt text](http://yuba.stanford.edu/~huangty/mininet/Bufferbloat_queue.png "Queue")
+![alt text](images/Bufferbloat_queue.png "Queue")
 
 ### Restart Mininet
 Start Mininet again, but this time we will create two queues, one for each type of traffic.

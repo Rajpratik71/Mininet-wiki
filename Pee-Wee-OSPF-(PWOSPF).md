@@ -13,7 +13,7 @@ The routing protocol you will be implementing is a link state protocol that is l
 
 The topology of PWOSPF is as follows. There are three routers inter-connected with each other. Client connects to the network through vhost1; Server1 connects to the network through vhost2; Server2 connects to the network through vhost3.
 
-![alt text](http://yuba.stanford.edu/~huangty/mininet/pwospf_topo.png "Topology for PWOSPF")
+![alt text](images/pwospf_topo.png "Topology for PWOSPF")
 
 Your task is to implement PWOSPF within your router so that your router will be able to do the following:
 

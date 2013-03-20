@@ -11,7 +11,7 @@ As with "Simple Router", we will create a NAT that sits in Mininet between the a
 
 The topology of NAT is as follows, where the NAT's internal interface (eth1) faces the client and its external interface (eth2) has two application servers connected with a switch:
 
-![alt text](http://yuba.stanford.edu/~huangty/mininet/nat_topo.png "Topology for NAT")
+![alt text](images/nat_topo.png "Topology for NAT")
 
 
 A correct implementation should support the following operations from the emulated client host:
