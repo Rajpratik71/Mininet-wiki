@@ -13,7 +13,7 @@ The routing protocol you will be implementing is a link state protocol that is l
 
 The topology of PWOSPF is as follows. There are three routers inter-connected with each other. Client connects to the network through vhost1; Server1 connects to the network through vhost2; Server2 connects to the network through vhost3.
 
-![alt text](images/pwospf_topo.png "Topology for PWOSPF")
+![Topology for PWOSPF](images/pwospf_topo.png)
 
 Your task is to implement PWOSPF within your router so that your router will be able to do the following:
 
@@ -294,7 +294,6 @@ Testing in this assignment can be difficult. You may want to add code to your ro
 
 ## Expected Functionality
 Your router should be able to build the correct routing tables and route traffic to the application servers on the assignment topology. Specifically, we expect to be able to start three instances of your router with the only static route being the default route on vhost1 and then be able to reach app1 and app2 within a reasonable amount of time. Your router should be able to correct the routing tables if a link goes down (such as the link between vhost1 and vhost2). We will likely test this by modifying the stub code to drop all packets out of a particular interface after a given time period.
-
 
 
 
