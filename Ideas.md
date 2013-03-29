@@ -1,6 +1,6 @@
 ## Mininet Project Ideas
 
-This page summarizes various ideas for features and future functionality for Mininet.
+This page summarizes various ideas for features and future functionality for Mininet. It may be used as source material for potential features for any Mininet developer to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
 
 ## Background
 
@@ -15,6 +15,26 @@ Mentoring: A participant in GSOC would choose one or more projects and be advise
 Projects: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code.
 
 Prerequisites: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well.
+
+## Mininet Development Process
+
+Mininet follows a fairly standard development process on Github:
+
+1. Pick a project to work on or a feature to implement
+
+2. Check the Mininet [issues page](https://github.com/mininet/mininet/issues) to see if someone is already working on it.
+
+3. If so, contact the person who is working on it, and also add a note to the issue when you start working on it.
+
+4. Clone the Mininet repo (master branch) on github, and work on your new feature
+
+5. When you have something that is working or are ready for feedback on your feature, submit a pull request.
+
+6. Answer any questions you may get on the pull request, and revise your code as necessary.
+
+7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the [mininet-dev](https://mailman.stanford.edu/mailman/listinfo/mininet-dev) mailing list. You can also ask for additional feedback on your code/pull request.
+
+8. When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch.)
 
 ## Features that we have a prototype implementation for
 
