@@ -1,5 +1,7 @@
 <!--
 
+This is the script that I used to generate the TOC from the html of this page:
+
 #!/usr/bin/python
 
 from fileinput import input
