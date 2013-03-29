@@ -16,6 +16,8 @@ Mininet is an exciting and high-impact project which is also fun to work on, so 
 
 **Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well.
 
+**Process**: GSOC projects will follow the standard Mininet development process!
+
 ## Mininet Development Process
 
 Mininet follows a fairly standard development process on Github:
