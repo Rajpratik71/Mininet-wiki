@@ -1,6 +1,20 @@
-Mininet Project Ideas
+## Mininet Project Ideas
 
-The following are features which we are considering for Mininet post-2.0.0 and beyond:
+This page summarizes various ideas for features and future functionality for Mininet.
+
+## Background
+
+Mininet is a lightweight emulator for computer networks and distributed systems. It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking. It is included in Ubuntu Linux as the "mininet" package.
+
+## Google Summer of Code Information
+
+We are considering applying for the Google Summer of Code. Mininet is an exciting and high-impact project which is also fun to work on!
+
+Mentoring: A participant in GSOC would choose one or more projects and be advised by a project mentor, either Mininet project founder *Bob Lantz* or another member of the Mininet development team or community.
+
+Projects: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code.
+
+Prerequisites: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well.
 
 ## Features that we have a prototype implementation for
 
