@@ -26,8 +26,14 @@ for line in input():
 <!-- TOC: Please keep this up to date!! -->
 
 
+### [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#mininet-project-ideas)
 
-### [Mininet Project Ideas](#mininet-project-ideas)
+### [Background](https://github.com/mininet/mininet/wiki/Ideas#background)
+
+### [Google Summer of Code Information](https://github.com/mininet/mininet/wiki/Ideas#google-summer-of-code-information)
+
+### [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
+
 
 ## Mininet Project Ideas
 
