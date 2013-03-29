@@ -99,7 +99,7 @@ Mininet is an interesting and high-impact project which is also fun to work on, 
 **Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
 
 **Projects**: 
-There is a wide spectrum of potential projects for Mininet, and the current, detailed list is available at http://github.com/mininet/mininet/wiki/Ideas
+We have identified a wide variety of potential projects for Mininet, and the current, detailed list is available at the Ideas page on the Mininet wiki at http://github.com/mininet/mininet/wiki/Ideas
 
 Projects are grouped by complexity/difficulty as well as whether we have starter code. The project(s) will be selected by agreement between the potential mentor(s) and participant(s), based on participant interest, experience and knowledge, project impact, project difficulty, and mentor availability and interest.
 
