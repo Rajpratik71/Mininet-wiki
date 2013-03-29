@@ -26,17 +26,17 @@ for line in input():
 
 <!-- TOC: Please keep this up to date!! -->
 
-* [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#mininet-project-ideas)
-* [Background](https://github.com/mininet/mininet/wiki/Ideas#background)
-* [Google Summer of Code Information](https://github.com/mininet/mininet/wiki/Ideas#google-summer-of-code-information)
-* [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
-* [Making it Real: extending existing prototype code into an official feature](https://github.com/mininet/mininet/wiki/Ideas#making-it-real-extending-existing-prototype-code-into-an-official-feature)
+1. [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#mininet-project-ideas)
+1. [Background](https://github.com/mininet/mininet/wiki/Ideas#background)
+1. [Google Summer of Code Information](https://github.com/mininet/mininet/wiki/Ideas#google-summer-of-code-information)
+1. [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
+1. [Making it Real: extending existing prototype code into an official feature](https://github.com/mininet/mininet/wiki/Ideas#making-it-real-extending-existing-prototype-code-into-an-official-feature)
   * [Hardware interface support](https://github.com/mininet/mininet/wiki/Ideas#hardware-interface-support)
   * [Access into Mininet from host and/or local network](https://github.com/mininet/mininet/wiki/Ideas#access-into-mininet-from-host-andor-local-network)
   * [sshd support](https://github.com/mininet/mininet/wiki/Ideas#sshd-support)
   * [Mininet GUIs: consoles.py and miniedit.py](https://github.com/mininet/mininet/wiki/Ideas#mininet-guis-consolespy-and-minieditpy)
   * [Automatic NAT implementation](https://github.com/mininet/mininet/wiki/Ideas#automatic-nat-implementation)
-* ["Easier" Projects](https://github.com/mininet/mininet/wiki/Ideas#easier-projects)
+1. ["Easier" Projects](https://github.com/mininet/mininet/wiki/Ideas#easier-projects)
   * [Mininet error checking and diagnostics/status monitoring](https://github.com/mininet/mininet/wiki/Ideas#mininet-error-checking-and-diagnosticsstatus-monitoring)
   * [Better X11 support](https://github.com/mininet/mininet/wiki/Ideas#better-x11-support)
   * [Easier VM image creation (e.g. using something like ubuntu-vm-builder)](https://github.com/mininet/mininet/wiki/Ideas#easier-vm-image-creation-eg-using-something-like-ubuntu-vm-builder)
@@ -47,7 +47,7 @@ for line in input():
   * [“testbed mode” - Hosts optionally on both control and data networks](https://github.com/mininet/mininet/wiki/Ideas#testbed-mode---hosts-optionally-on-both-control-and-data-networks)
   * [Additional parametrized topologies (fat tree, jellyfish, mesh, random, etc.) bundled with easy controller support for multipath](https://github.com/mininet/mininet/wiki/Ideas#additional-parametrized-topologies-fat-tree-jellyfish-mesh-random-etc-bundled-with-easy-controller-support-for-multipath)
   * [Raspberry Pi Mininet image/"network in a box" ;-)](https://github.com/mininet/mininet/wiki/Ideas#raspberry-pi-mininet-imagenetwork-in-a-box--)
-* ["Advanced"/more challenging projects](https://github.com/mininet/mininet/wiki/Ideas#advancedmore-challenging-projects)
+1. ["Advanced"/more challenging projects](https://github.com/mininet/mininet/wiki/Ideas#advancedmore-challenging-projects)
   * [More sample, downloadable SDN systems (including controller and applications)](https://github.com/mininet/mininet/wiki/Ideas#more-sample-downloadable-sdn-systems-including-controller-and-applications)
   * [Enhanced placement and documentation for Mininet examples](https://github.com/mininet/mininet/wiki/Ideas#enhanced-placement-and-documentation-for-mininet-examples)
   * [Cluster mode - supporting execution over multiple machines (RemoteSwitch,L2TP/VDE/VXLAN/Capsulator, etc.)](https://github.com/mininet/mininet/wiki/Ideas#cluster-mode---supporting-execution-over-multiple-machines-remoteswitchl2tpvdevxlancapsulator-etc)
@@ -77,6 +77,8 @@ for line in input():
   * [Different modes of operation to trade of emulation speed vs. performance accuracy](https://github.com/mininet/mininet/wiki/Ideas#different-modes-of-operation-to-trade-of-emulation-speed-vs-performance-accuracy)
   * [Higher-performing switches (e.g. VALE-enabled OVS and/or custom switch)](https://github.com/mininet/mininet/wiki/Ideas#higher-performing-switches-eg-vale-enabled-ovs-andor-custom-switch)
   * [Support for private /etc directory and possbly private filesystem, user space, PID space, etc.](https://github.com/mininet/mininet/wiki/Ideas#support-for-private-etc-directory-and-possbly-private-filesystem-user-space-pid-space-etc)
+
+---
 
 ## Mininet Project Ideas
 
