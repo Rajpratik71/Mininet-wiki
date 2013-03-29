@@ -4,7 +4,7 @@ This page summarizes various ideas for **features and future functionality for M
 
 ## Background
 
-[Mininet](http://mininet.github.com) is a **lightweight emulator for computer networks and distributed systems**. It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking. It is included in Ubuntu Linux as the "mininet" package.
+[Mininet](http://mininet.github.com) is a **lightweight emulator for computer networks and distributed systems**. It starts up a virtual network/distributed system on your laptop in a few seconds, with a singe command, and provides an extensive Python API for emulating pretty much any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking. It is included in Ubuntu Linux as the "mininet" package.
 
 ## Google Summer of Code Information
 
