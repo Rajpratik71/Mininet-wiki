@@ -294,15 +294,16 @@ Right now we're strongly in the Ubuntu camp. We can almost run out of the box on
 
 **Brief explanation**: We really haven't adequately profiled the whole system, and it's tricky to do so. I expect there are some low-hanging fruit in both Linux and OVS which could be tackled to greatly improve Mininet's performance. In particular, I'd like to see (much) faster startup for large networks.
 
-### Better Linux kernel support for emulator event scheduling (SCHED_MN)
+**Expected results**:  Performance analysis of Mininet and a version which is demonstrably faster and/or more accurate.
 
-**Brief explanation**: The Linux scheduler isn't really meant to do what we're using it for. I believe that we may be able to develop a scheduler which is closer to an event-driven simulation schedule in terms of making things happen when they should, for example guaranteeing that network invariants hold and that packets are delivered in the correct temporal order across ports, not just along single paths.
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python. Understanding of Linux kernel and user performance tools and performance debugging. C user and kernel programming. Familiarity with simulation. Significant experience with systems programming, simulation/emulation, and performance analysis.
+
 
 ### Virtual time via time-dilation
 
 **Brief explanation**: What sets Emulation apart from Simulation is that usually Emulation runs in wall-clock time rather than having a strong notion of virtual time. Time Dilation is a strategy to allow the emulator's notion of time to progress more slowly than real time, allowing for faster links and computational elements to be simulated than can be simulated running in actual real time. This could enable larger networks to be simulated, or faster components (e.g. 100 GBps interfaces or 10 GHz processors.)
 
-**Expected results**:  Performance analysis of Mininet and a version which is demonstrably faster and/or more accurate.
+**Expected results**:  A complete Mininet system (installable and as a VM) which has the ability to run in time dilation mode for faster hosts or networks. Tests, documentation, and performance analysis/validation of the system.
 
 **Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python. Understanding of Linux kernel and user performance tools and performance debugging. C user and kernel programming. Familiarity with simulation. Significant experience with systems programming, simulation/emulation, and performance analysis.
 
