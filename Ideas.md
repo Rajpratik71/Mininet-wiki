@@ -1,6 +1,6 @@
 ## Mininet Project Ideas
 
-This page summarizes various ideas for features and future functionality for Mininet. It may be used as source material for potential features for any Mininet developer to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
+This page summarizes various ideas for **features and future functionality for Mininet**. It may be used as source material for potential features for any Mininet developer to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
 
 ## Background
 
