@@ -1,5 +1,6 @@
 <!--
 
+#!/usr/bin/python
 
 from fileinput import input
 import re
@@ -13,14 +14,11 @@ for line in input():
     line = line.strip()
     m = r1.search( line )
     if m:
-        print
-        print '### [%s](%s%s)' % ( m.group( 2 ), prefix, m.group( 1 ) )
+        print '1. [%s](%s%s)' % ( m.group( 2 ), prefix, m.group( 1 ) )
         continue
     m2 = r2.search( line )
     if m2:
-        print '* [%s](%s%s)' % ( m2.group( 2 ), prefix, m2.group( 1 ) )
-
-
+        print '  * [%s](%s%s)' % ( m2.group( 2 ), prefix, m2.group( 1 ) )
 
 -->
 
