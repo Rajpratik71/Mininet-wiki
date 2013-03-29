@@ -1,4 +1,4 @@
-#### Mininet Project Ideas
+Project Ideas for Mininet
 ---
 #### Table of Contents
 
