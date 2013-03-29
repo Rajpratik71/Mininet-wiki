@@ -24,7 +24,7 @@ for line in input():
 
 -->
 
-#### Mininet Project Ideas: Table of Contents
+#### Table of Contents
 
 <!-- TOC: Please keep this up to date!! -->
 
