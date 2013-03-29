@@ -135,25 +135,53 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Brief explanation**: If there were an easy way to update Mininet in the VM image, then we might not have to update the whole VM image simply for a Mininet change. Perhaps the tutorial image should update Mininet the first time it boots up? Or maybe we should add update instructions to the OpenFlow tutorial?
 
+**Difficulty**: Easy/trivial.
+
+**Expected results**: A Mininet VM which either automatically updates itself or updates itself to the latest  tutorial version of Mininet with a single command.
+
+**Knowledge prerequisite**: Familiarity with Mininet, git, shell scripting, and Python, as well as VM creation. A more advanced version of this project might integrate with automatic VM creation.
+
 ### Additional easy (but non-critical)  bug fixes
 
 **Brief explanation**: There are a number of easy(ish) bug fixes which were deferred from 2.0.0. We can probably identify them and fix them.
+
+**Expected results**: Swatting flies - resolving a number of easier bugs in Mininet (based on interest, importance, ability and complexity of bugs. Ideally this would also include creation of regression tests to determine that the bugs no longer occur.
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet code base. Ability to write Mininet scripts. Ability to read and understand Python APIs and to use github.
 
 ### Patch bay object
 
 **Brief explanation**: Mininet 2.0 switches support attachment and reattachment. This allows you to simulate mobility or VM migration. A more generalized mechanism might allow for everything to be connected to a patch bay/patch panel object (probably just a large OpenFlow switch) which could be used to allow arbitrary reconnection of any interfaces. Effectively this means that each veth pair is split into two veth pairs which are then plugged into the patch bay. This would require creation of a new object (PatchBay?) and support for using it if desired. Note that the overall system load would be increased - this is a trade-off between flexibility and performance, so we would not wish to make it mandatory. This could also be thought of as an L1 switch, although really it's L1.5 since everything is still Ethernet - the L2/MAC protocol cannot be changed beyond what OpenFlow already allows you to do.
 
+**Expected results**: A new Patchbay object and API for Mininet, as well as documentation, tests, and examples.
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet API. Ability to write Mininet scripts. Ability to read and understand Python APIs and to write clear and thorough tests and documentation.
+
 ### “testbed mode” - Hosts optionally on both control and data networks
 
 **Brief explanation**: As noted, Emulab and other testbeds provide (at least) two interfaces on each host: one on the private data network, and one on either a control network or the LAN. This would, to some extent, solve the problem of people who want to access the internet from Mininet hosts, and it would allow network-based (as upposed to pipe or API-based) access to hosts even when the data network was not working.
+
+**Expected results**: An API and command-line options for supporting this configuration, as well as examples and/or tests for same.
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet API. Ability to write Mininet scripts. Ability to read and understand Python APIs and to write clear and thorough documentation.
 
 ### Additional parametrized topologies (fat tree, jellyfish, mesh, random, etc.) bundled with easy controller support for multipath
 
 **Brief explanation**: Parametrized topologies are one of Mininet's most useful features. Unfortunately only a few topologies (tree, linear, single switch) are included in the box. It would be great if Mininet came with more topologies and if there were a readily available controller that supported multipath. We can probably leverage the CS244 work to some extent, since Brandon provided a fat tree topology as well as a simple multipath controller (riplpox) - both of which were extremely handy in CS244. Additionally, two of the CS244 projects included Jellyfish and DCell, so perhaps they have topology code we could use or use as inspiration.
 
+**Expected results**: New topologies for Mininet (Topo() subclasses) as well as examples/system-level tests of same
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet API. Ability to write Mininet scripts. Understanding of networks, OpenFlow, SDN and controllers (e.g. POX.) Ability to read and understand Python APIs and to write clear and thorough documentation.
+
 ### Raspberry Pi Mininet image/"network in a box" ;-)
 
 **Brief explanation**: This would be a fun and cool project and would also allow for a very inexpensive "network in a box" which could be used not only as a dirt-cheap Mininet platform (for courses, workshops, tutorials, anyone who wants one) but also as virtual "hardware" which you can plug your PC, server, or switches into to get a larger virtual topology. The basics are extremely easy, but there are some interesting and fun possibilities here.
+
+**Difficulty**: Trivial to Easy
+
+**Expected results**: A downloadable, bootable Raspberry Pi image and/or package for Mininet.
+
+**Knowledge prerequisite**: Familiarity with Mininet as well as the Linux build environment, including makefiles, shell scripts, kernel builds, and debian packaging.
 
 ## "Advanced"/more challenging projects
 
