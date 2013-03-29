@@ -26,43 +26,48 @@ for line in input():
 
 <!-- TOC: Please keep this up to date!! -->
 
-Mininet Project Ideas
+## Mininet Project Ideas
+
 This page summarizes various ideas for features and future functionality for Mininet. It may be used as source material for potential features for any Mininet developer (or motivated user!) to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
 
-Background
+## Background
+
 Mininet is a lightweight emulator for computer networks and distributed systems. It starts up a virtual network/distributed system on your laptop in a few seconds, with a singe command, and provides an extensive Python API for emulating pretty much any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking. It is included in Ubuntu Linux as the "mininet" package.
 
-Google Summer of Code Information
+## Google Summer of Code Information
+
 Mininet is an exciting and high-impact project which is also fun to work on, so we're considering applying to the Google Summer Of Code (GSOC).
 
-Mentoring: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core Mininet developers or another contributor to the project.
+**Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core Mininet developers or another contributor to the project.
 
-Projects: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as agreements between the potential mentor(s) and participant(s), based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge.
+**Projects**: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as agreements between the potential mentor(s) and participant(s), based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge.
 
-General Prerequisites: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
+**General Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
 
 Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
 
-Process: GSOC projects will follow the standard Mininet development process!
+**Process**: GSOC projects will follow the standard Mininet development process!
 
-Mininet Development Process
+
+## Mininet Development Process
+
 Mininet follows a fairly standard development process on Github:
 
-Pick a project to work on or a feature to implement
+1. Pick a project to work on or a feature to implement
 
-Check the Mininet issues page to see if someone is already working on it.
+2. Check the Mininet issues page to see if someone is already working on it.
 
-If so, contact the person who is working on it, and also add a note to the issue when you start working on it. Optionally drop us a line on mininet-discuss. You may also add a note to the appropriate section on this page. The goal is to avoid duplicating effort unnecessarily!
+3. If so, contact the person who is working on it, and also add a note to the issue when you start working on it. Optionally drop us a line on mininet-discuss. You may also add a note to the appropriate section on this page. The goal is to avoid duplicating effort unnecessarily!
 
-Fork/clone the Mininet repo (master branch) on github, and work on your new feature
+4. Fork/clone the Mininet repo (master branch) on github, and work on your new feature
 
-When you have something that is working or are ready for feedback on your feature, submit a pull request.
+5. When you have something that is working or are ready for feedback on your feature, submit a pull request.
 
-Answer any questions you may get on the pull request, and revise your code as necessary.
+6. Answer any questions you may get on the pull request, and revise your code as necessary.
 
-If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the mininet-dev or mininet-discuss mailing lists as appropriate. You can also ask for additional feedback on your code/pull request.
+7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the mininet-dev or mininet-discuss mailing lists as appropriate. You can also ask for additional feedback on your code/pull request.
 
-When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
+8. When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
 
 ## Making it Real: extending existing prototype code into an official feature
 
