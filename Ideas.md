@@ -191,13 +191,25 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Brief explanation**: One of the main goals of Mininet was to enable people to easily share networks and build upon the work of others. To some extent this was realized in CS244 and our blog, reproducingnetworkresearch.wordpress.com. However, we don't currently have a repository (besides EC2) for people to contribute downloadable images and systems that people can easily download and use. It would be nice to have this and to have it linked from the web site. 
 
+**Expected results**: A repository and a means for submitting Mininet-based systems, and a basic set of Mininet-based systems that people can click, download, and run!!
+
+**Knowledge prerequisite**: Familiarity with Mininet and network systems experiments, including OpenFlow/SDN based systems. Familiarity with Linux, shell scripting, Python, web programming/JavaScript/REST, and the ability to use systems like Amazon EC2 and S3.
+
 ### Enhanced placement and documentation for Mininet examples
 
 **Brief explanation**: Additionally, people frequently seem to be unaware of the examples and/or have trouble understanding them. It would be nice to document them and to place them more prominently in the documentation and/or on the web site. Eventually it woud be nice to have a sequence of tutorial examples, not just for Mininet but for SDN and Openflow in general
 
+**Expected results**: Better documentation of the Mininet examples, better and better-documented example code, and additional examples. Potentially this documentation could/should take the form of tutorials explaining how to use the examples, along with questions/suggested exercises for extending them.
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet API. Completion of all Mininet and OpenFlow tutorials. Ability to clearly write code and documentation.
+
 ### Cluster mode - supporting execution over multiple machines (RemoteSwitch,L2TP/VDE/VXLAN/Capsulator, etc.)
 
 **Brief explanation**: This is probably the biggest missing feature of Mininet, and something which was planned since day one but never actually completed. We would like to be able to create very large Mininet networks by using a cluster of machines. This means we need a way to easily start up Mininet instances on multiple machines and to wire them together into a larger simulation. This should be as transparent as possible so that the cluster just appears to be a larger machine running Mininet.  (Of course there is no longer a single clock domain, and other differences may leak through, but in general the same code should run on a single machine or on a cluster.)
+
+**Expected results**: A version of Mininet which seamlessly and reliably runs on clusters of machines, along with tests, examples, documentation, and performance/scalability measurements.
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet internal architecture. Understanding of Linux and Ethernet/IP networking, switching/routing and tunneling. Understanding of Linux, distributed systems, and performance measurement/debugging. Ability to write clear examples and documentation.
 
 ### Hybrid network support (API for hardware, virtual and combo network tests)
 
