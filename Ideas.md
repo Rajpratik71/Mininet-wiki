@@ -101,7 +101,7 @@ Mininet is an interesting and high-impact project which is also fun to work on, 
 **Projects**: 
 We have identified a wide variety of potential GSOC projects for Mininet, and the current, detailed list is available at the Ideas page on the Mininet wiki at http://github.com/mininet/mininet/wiki/Ideas
 
-Projects are grouped by complexity/difficulty as well as whether we have starter code. The project(s) will be selected by agreement between the potential mentor(s) and participant(s), based on participant interest, experience and knowledge, project impact, project difficulty, and mentor availability and interest.
+Projects are grouped by complexity/difficulty as well as whether we have starter code. The project(s) will be selected by agreement between the potential mentor(s) and participant(s), based on participant interest, experience and knowledge, as well as project impact, project difficulty, and mentor availability and interest.
 
 **General Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
 
