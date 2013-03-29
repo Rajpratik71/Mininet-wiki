@@ -275,6 +275,10 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Brief explanation**: Mininet's original goal was "1000 nodes on your laptop" but such networks aren't really practical. There's no reason for this - the problem is that the existing implementation has too much overhead. We should measure scalability, profile the system, and identify possible ways of improving scalability. Notably, 1000-node networks are very slow to start up, in part because veth pair creation is slow and adding interfaces to OVS switches gets slower and slower the more switches you have!!
 
+**Expected results**: Reproducible scalability test and analysis scripts for Mininet, as well as understanding and performance debugging of the whole system, hopefully resulting in a version of the system with improved scalability on a single system.
+
+**Knowledge prerequisite**: Understanding of the Mininet internals, C/Linux/system calls/network namespaces, systems programming, and performance analysis at both user and kernel level. Likely systems programming of Open vSwitch and the Linux kernel.
+
 ### Provisioning advice and/or automatic provisioning support
 
 **Brief explanation**: Students in CS244 ran into problems when they overcommitted the system. Currently we don't provide much in the way of provisioning guidance, warnings, or monitoring to determine when the system is overcommitted. It would be nice to do all three! Ideally the system could be run in a performance-accurate mode where it would try to guarantee that it was provisioned correctly and provide some kind of alarm or warning when things were going bad. Which leads us to the following....
@@ -282,17 +286,31 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 ### Integrated (emulator and emulated) performance monitoring
 
 **Brief explanation**: We developed some performance monitoring code and tools for Mininet 2.0, CS244 and the CoNEXT paper, but these are in a separate source tree and are not currently integrated into the code base. What can we do to add monitoring code to guarantee that important emulation invariants are not being violated, and also to monitor both the performance of the emulator itself and the emulated system?
-Performance accuracy benchmarks and evaluation
+
+**Expected results**: Easy installation for Mininet performance monitoring tools, along with examples, documentation and tutorials.
+
+**Knowledge prerequisite**: Understanding of the Mininet internals, C/Linux/system calls/network namespaces, systems programming, and performance analysis.
+
 
 ### Mininet validation against hardware testbeds
 
 **Brief explanation**: We have some benchmarks, but we don't really have a definitive answer as to how far Mininet results match reality. Ideally we would have a deep understanding of Mininet's performance accuracy, a thorough evaluation and comparison to hardware, and validation both against hardware and against invariants that should hold during emulation.
+
+**Expected results**: Scripts for reproducible automated performance tests and summarization/plotting of test results, from microbenchmarks to macrobenchmarks, on both Mininet and hardware testbeds; analysis and explanations of performance discrepancies, and hopefully fixes to improve Mininet's performance accuracy as needed.
+
+**Knowledge prerequisite**: Understanding of the Mininet internals, C/Linux/system calls/network namespaces, systems programming and performance analysis at user and kernel level.
 
 ### Other OS support: Debian Wheezy, Fedora Core, BSD? OS X? Windows?
 
 **Brief explanation**: .deb and .rpm install images in addition to PPA, and possibly versions for BSD, OS X, Windows???
 
 Right now we're strongly in the Ubuntu camp. We can almost run out of the box on Debian Wheezy. Fedora Core installation would require modification to the install script. BSD is actually possible now that it has L2 virtual Ethernet and Open vSwitch. Perhaps even OS X is a possibility, although the requisite BSD subsystems (see netmap and VALE) would need to be ported somehow since I don't think they're included in the Xnu/Darwin kernel by default. 
+
+**Difficulty**: Trivial to Very Hard.
+
+**Expected results**: Installation packages and/or VM images for various operating systems other than Ubuntu.
+
+**Knowledge prerequisite**: Understanding of the Mininet internals, C/Linux/system calls/network namespaces, Python systems programming, and systems programming/internals for the target OS.
 
 ### Link (e.g. wire or wireless) simulator support
 
