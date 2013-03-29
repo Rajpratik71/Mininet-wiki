@@ -12,7 +12,7 @@ Mininet is an exciting and high-impact project which is also fun to work on, so 
 
 **Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either Mininet project founder **[Bob Lantz](https://github.com/lantz)** or another member of the Mininet development team or community.
 
-**Projects**: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code.
+**Projects**: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as an agreement between the potential mentor and participant, based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge. 
 
 **Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well.
 
