@@ -260,18 +260,39 @@ Right now we're strongly in the Ubuntu camp. We can almost run out of the box on
 
 **Brief explanation**: What sets Emulation apart from Simulation is that usually Emulation runs in wall-clock time rather than having a strong notion of virtual time. Time Dilation is a strategy to allow the emulator's notion of time to progress more slowly than real time, allowing for faster links and computational elements to be simulated than can be simulated running in actual real time. This could enable larger networks to be simulated, or faster components (e.g. 100 GBps interfaces or 10 GHz processors.)
 
+**Expected results**:  Performance analysis of Mininet and a version which is demonstrably faster and/or more accurate.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python. Understanding of Linux kernel and user performance tools and performance debugging. C user and kernel programming. Familiarity with simulation. Significant experience with systems programming, simulation/emulation, and performance analysis.
+
 ### Virtual time via barrier synchronization
 
 **Brief explanation**: Another approach to virtual time is to allow individual hosts to have separate notions of virtual time, and to pause or slow down hosts which are executing too quickly to allow slower hosts to catch up. Why is this potentially better than time dilation? Because it allows us to arbitrarily instrument certain hosts with time-consuming monitoring or other processing which might slow them down relative to the rest of the system. Note however that the synchronization is approximate - we cannot, for example, synchronize after every instructione (at least not without absurdly impractical overhead.)
+
+**Expected results**:  Performance analysis of Mininet and a version which is demonstrably faster and/or more accurate.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python. Understanding of Linux kernel and user performance tools and performance debugging. C user and kernel programming. Familiarity with simulation. Experience with distributed systems programming and performance analysis.
 
 ### Different modes of operation to trade of emulation speed vs. performance accuracy
 
 **Brief explanation**: Speed vs. detail is a classical trade-off in emulators and simulators. One question is: can we make Mininet faster by sacrificing some performance accuracy. Another is: can we sacrifice some emulation speed to gain more performance accuracy. Another is: can we improve both simulator performance and performance accuracy at the same time?
 
+**Expected results**:  Performance analysis of Mininet and a version which is demonstrably faster and/or more accurate.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python. Understanding of Linux kernel and user performance tools and performance debugging. C user and kernel programming. Familiarity with simulation. Significant experience with systems programming, simulation/emulation, and performance analysis.
+
 ### Higher-performing switches (e.g. VALE-enabled OVS and/or custom switch)
 
 **Brief explanation**: OVS is slow. VALE, in comparison, gets 70 GBps (!!!!) of switching bandwidth on a 1 GHz system. We should be able to do much, much better than we are currently doing, possibly by using the VALE-enabled OVS or creating a custom switch (megaswitch) which is optimized for performance and lives in a single address space. We might be able to trade off some emulation accuracy for performance as welll (e.g. simplified switch vs. OVS, shared memory vs. veth pairs, etc..) Note that VALE runs on both BSD and Linux, but requires a custom Linux kernel. Note that the BSD jail enhancements open up the intriguing possibility of Mininet on BSD and/or OS X (with additional work - see above.)
 
+**Expected results**: A version of Mininet which works with VALE, preferably an OpenFlow-enabled version!
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, C programming, Mininet and Python. Familiarity with BSD as well as Linux. Understanding of Linux/BSD kernel building and modules.
+
 ### Support for private /etc directory and possbly private filesystem, user space, PID space, etc.
 
 **Brief explanation**: Although lightweight virtualization is one of Mininet's most compelling features, sometimes it is useful for hosts to have more private data. One example is programs like apache or sshd which expect to have their configuration in /etc. It should be relatively easily to allow hosts to have private /etc directories by using bind mounts, but getting this to work in a convenient and semi-automatic manner may be tricky. Additionally, it may be desirable to allow Mininet  hosts to have private user and PID spaces (although shared user and PID spaces are obviously quite convenient as well.) It should not be terribly difficult to allow these options to be configured both in Mininet() and via the command line.
+
+
+**Expected results**: A command-line option for `mn` and an API for specifying and managing per-host private directories.
+
+**Knowledge prerequisite**: Understanding of Linux and filesystem mounting, familiarity with Mininet API, code base and Python.
