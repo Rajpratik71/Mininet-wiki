@@ -26,6 +26,13 @@ for line in input():
 
 <!-- TOC: Please keep this up to date!! -->
 
+* [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#mininet-project-ideas)
+* [Background](https://github.com/mininet/mininet/wiki/Ideas#background)
+* [Google Summer of Code Information](https://github.com/mininet/mininet/wiki/Ideas#google-summer-of-code-information)
+* [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
+* [Making it Real: extending existing prototype code into an official feature](https://github.com/mininet/mininet/wiki/Ideas#making-it-real-extending-existing-prototype-code-into-an-official-feature)
+  * [Hardware interface support](https://github.com/mininet/mininet/wiki/Ideas#hardware-interface-support)
+
 ## Mininet Project Ideas
 
 This page summarizes various ideas for features and future functionality for Mininet. It may be used as source material for potential features for any Mininet developer (or motivated user!) to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
