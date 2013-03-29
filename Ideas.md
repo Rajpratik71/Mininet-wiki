@@ -51,17 +51,33 @@ Access to “real” Internet from mininet network (e.g. extra interfaces)
 
 A common complaint from Mininet users is that "Google doesn't work" or "apt-get doesn't work." This complaint usually indicates a fundamental misunderstanding of Mininet's default configuration:  by default, Mininet gives you a 10.x data network which is not connected to the outside world. This is often a good thing! However, this is not what many users expect - most real networks connect to the internet, after all. It would be easy to follow Emulab's approach of giving each host two interfaces, one for the (internal, OpenFlow-controlled) data network, and one on the LAN. However, there are issues: how are LAN addresses assigned? Can we assume that there is a DHCP server and that there are enough IP addresses on the LAN segment for Mininet hosts? Or should we implement a local network with NAT to allow Mininet hosts to share the Linux host's LAN IP address? Probably we want both, but I suspect that the NAT approach is more likely to be what most people would want. See "Automatic NAT Iimplementation", below.
 
+**Expected results**: A simple and robust API for integrating real hardware interfaces into a Mininet network.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python.
+
 ### Access into Mininet from host and/or local network
 
 On the other hand, it's also useful to be able to connect into the Mininet network either from the host or the  LAN. sshd.py shows how to create an interface on the local host (in the root namespace) which is connected to a Mininet switch, and also how to start up sshd on each Mininet host so that you can ssh into the Mininet network.
+
+**Expected results**: A command-line option for `mn` which automatically provides access to the Mininet network from the host or LAN.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python.
 
 ### sshd support
 
 It might be nice to have a means of automatically starting up sshd (and shutting it down!) on each Mininet host. As noted above, sshd.py has a prototype implementation for this feature, but getting it right, reliable, etc. is actually tricky. There's another more subtle issue and that is: what is the best way to enable seamless transitions between Mininet and hardware? Hardware systems are often bound together using ssh/sshd, so does it make sense to have a Mininet network work that way (ssh and paramiko in Python?) Unfortunately this would increase overhead and startup time, and one of the huge benefits of Mininet is that it starts up very quickly for a highly efficient edit-run-debug loop.
 
+**Expected results**: A command-line option for `mn`, and either an API or extension to the `Mininet` class which automatically starts up (and shuts down) `sshd` on each Mininet host; possibly this would be integrated with the above function of providing access to Mininet hosts from the local host or LAN.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet and Python.
+
 ### Mininet GUIs: consoles.py and miniedit.py
 
 I (BL) wrote the consoles.py and miniedit.py examples to show what I thought was a really exciting and cool thing you could do in Mininet: make GUI programs that create and use a live virtual network interactively! It seemed so obvious that I had done much of the hard work and that any smart Python/GUI programmer could take what I had done either as code or inspiration and run with it. Unfortunately, that never happened. We could decide to expand these programs into (more) full-blown applications, or we could also try to make the code reusable as a framework. Or we could write documentation about the design of the apps and how to expand them. Or perhaps we could rewrite them in Qt or a more "modern" GUI framework. Regardless, I still feel that GUI apps using Mininet have huge potential, as do graphical interfaces for core Mininet functionality.
+
+**Expected results**: significantly more beautiful, functional, robust and useful consoles.py and miniedit.py applications. In the case of consoles.py, it should provide a useful API for building monitoring applications. In the case for miniedit.py, it should be able to save and load networks as mininet-compatible topologies (expressed in Python.)
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, Mininet, Python, OpenFlow and PyTk and/or another GUI framework. HCI/user-interface design abilities.
 
 ## "Easier" Projects
 
