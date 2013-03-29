@@ -77,11 +77,15 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Expected results**: significantly more beautiful, functional, robust and useful consoles.py and miniedit.py applications. In the case of consoles.py, it should provide a useful API for building monitoring applications. In the case for miniedit.py, it should be able to save and load networks as mininet-compatible topologies (expressed in Python.)
 
-**Knowledge prerequisite**: Understanding of Linux/IP networking, Mininet, Python, OpenFlow and PyTk and/or another GUI framework. HCI/user-interface design abilities.
+**Knowledge prerequisite**: Understanding of Linux/IP networking, Mininet, Python, OpenFlow and TkInt and/or another GUI framework. HCI/user-interface design abilities.
 
 ### Automatic NAT implementation
 
 **Brief explanation**: As noted above, an automatic NAT implementation (e.g. nat=True or --nat) would be nice to have to enable Mininet hosts to talk to the outside world by default.
+
+**Expected results**: A command-line option for `mn`, and probably an option to `Mininet()`, which provides automatic creation of a NAT which allows transparent, seamless access to the LAN and the internet from Mininet hosts.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, IPTables, NAT, Mininet and Python.
 
 ## "Easier" Projects
 
@@ -89,21 +93,43 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Brief explanation**: Currently when Mininet isn't working (e.g. controller can't connect to switches, or packets aren't being forwarded in your network), the only indication that something is wrong is that ping doesn't work. It would be nice to have some means of verifying network health, for example, by monitoring whether all switches are connected to controllers, or by checking that all links in the system work somehow. The former would be easy(ish?), the latter hard.
 
+**Expected results**: A command-line option for `mn` which automatically provides access to the Mininet network from the host or LAN.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, Mininet code base and Python. Usage-level understanding of Open vSwitch and the OpenFlow reference switch.
+
 ### Better X11 support
 
 **Brief explanation**: It should be possible to start up arbitrary X11 apps from the mininet> prompt.
+
+**Difficulty**: Trivial. ;-)
+
+**Expected results**: A CLI command for starting X11 apps
+
+**Knowledge prerequisite**: Understanding of Mininet API and CLI code base and X11.
 
 ### Easier VM image creation (e.g. using something like ubuntu-vm-builder)
 
 **Brief explanation**: Currently we make the VM images by hand - it's a pain, and it's why the Mininet VMs are rarely updated. We could automate this by using a script like the now-deprecated ubuntu-vm-builder, which was part of Ubuntu and used debuild. Or we could script Xen/KVM/VMware/Vbox to take an off-the-shelf Ubuntu image and install Mininet in it. There might be other better ways.
 
-### VM/install support for NOX2, other useful software
+**Expected results**: Modified Mininet makefiles which include a target to build a VM image.
+
+**Knowledge prerequisite**: Understanding of VM creation and things like debuild, chroot; understanding of Linux/Unix tools like Make, shell scripting, possible Python scripting.
+
+### Installing NOX 2 and/or other controllers from `install.sh`
 
 **Brief explanation**: We currently install POX rather than NOX classic by default with install.sh -a (which is intended to create a VM image for the OpenFlow tutorial.) It might be nice to add NOX2 or other useful software.
+
+**Expected results**: Additional options in `install.sh` to install additional controllers or other useful software.
+
+**Knowledge prerequisite**: Understanding of Mininet, OpenFlow controllers, Linux software installation, and shell scripting.
 
 ### Real API documentation explaining how to use the API (will be helped somewhat by integrating CS244 intro document)
 
 **Brief explanation**: CS244's Introduction to Mininet has been revised and moved into the Mininet wiki on github. However, we're still lacking in high-quality documentation describing the overall API (and system) architecture as well as how to use the low-, mid- and high-level APIs. Ultimately I'd like to see high quality documentation (think Python, Smalltalk-80: The Language and its Implementation, or Computer Architecture: A Quantitative Approach) but something of O'Reilly quality might be a nice stopgap.
+
+**Expected results**: A document describing the API and system architecture.
+
+**Knowledge prerequisite**: Familiarity with Python and the Mininet API. Ability to write Mininet scripts. Ability to read and understand Python APIs and to write clear and thorough documentation.
 
 ### Automatic/easy update for Mininet (esp. in VM image)
 
