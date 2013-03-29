@@ -22,21 +22,21 @@ Mininet is an exciting and high-impact project which is also fun to work on, so 
 
 Mininet follows a fairly standard development process on Github:
 
-1. Pick a project to work on or a feature to implement
+1. **Pick a project** to work on or a feature to implement
 
-2. Check the Mininet [issues page](https://github.com/mininet/mininet/issues) to see if someone is already working on it.
+2. **Check the Mininet [issues page](https://github.com/mininet/mininet/issues)** to see if someone is already working on it.
 
-3. If so, contact the person who is working on it, and also add a note to the issue when you start working on it.
+3. If so, **contact the person who is working on it**, and also **add a note to the issue** when you start working on it.
 
-4. Clone the Mininet repo (master branch) on github, and work on your new feature
+4. **Fork/clone** the Mininet repo (master branch) on github, and **work on your new feature**
 
-5. When you have something that is working or are ready for feedback on your feature, submit a pull request.
+5. When you have something that is working or are ready for feedback on your feature, **submit a pull request**.
 
-6. Answer any questions you may get on the pull request, and revise your code as necessary.
+6. **Answer any questions** you may get on the pull request, and **revise your code** as necessary.
 
-7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the [mininet-dev](https://mailman.stanford.edu/mailman/listinfo/mininet-dev) mailing list. You can also ask for additional feedback on your code/pull request.
+7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the **[mininet-dev](https://mailman.stanford.edu/mailman/listinfo/mininet-dev)** mailing list. You can also ask for additional feedback on your code/pull request.
 
-8. When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch.)
+8. When/if the feature is complete and approved by the Mininet developers, they may choose to **merge it** into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
 
 ## Features that we have a prototype implementation for
 
