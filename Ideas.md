@@ -44,7 +44,7 @@ Mininet follows a fairly standard development process on Github:
 
 **Brief explanation**: It's useful to be able to add hardware interfaces to a Mininet network, and also to integrate a Mininet network into a "real" network. Currently examples/hwintf.py contains code demonstrating how to add a "real" hardware interface (or any interface not created/controlled by Mininet) to a Mininet switch. Unfortunately, hardly anyone on the  mailing list seems to be able to understand it or use it, usually because they don't have a good understanding of the principles or practical aspects of IP networking or Linux.
 
-Questions: do we need a better API for this? Do we need better example code? Do we need resources to help users improve their (often meager) skills?
+***Questions and additional information**: do we need a better API for this? Do we need better example code? Do we need resources to help users improve their (often meager) skills?
 
 It would certainly be nice to have an easy mechanism for plugging a Mininet virtual network into a physical network. Is there an easy way to provide some mechanism? A problem is that it usuallly requires configuration of network switches/routers, something which is beyond the scope of Mininet (or is it?) 
 Access to “real” Internet from mininet network (e.g. extra interfaces)
