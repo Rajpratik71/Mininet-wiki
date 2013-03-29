@@ -1,5 +1,5 @@
-#### Mininet Project Ideas 2013
-
+#### Mininet Project/Feature Ideas
+---
 #### Table of Contents
 
 <!--
@@ -27,8 +27,6 @@ for line in input():
         print '  * [%s](%s%s)' % ( m2.group( 2 ), prefix, m2.group( 1 ) )
 
 -->
-
----
 
 <!-- TOC: Please keep this up to date; the script above is provided for assistance!! -->
 
