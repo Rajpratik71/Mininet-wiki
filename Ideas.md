@@ -79,7 +79,7 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Expected results**: significantly more beautiful, functional, robust and useful consoles.py and miniedit.py applications. In the case of consoles.py, it should provide a useful API for building monitoring applications. In the case for miniedit.py, it should be able to save and load networks as mininet-compatible topologies (expressed in Python.)
 
-**Knowledge prerequisite**: Understanding of Linux/IP networking, Mininet, Python, OpenFlow and TkInt and/or another GUI framework. HCI/user-interface design abilities.
+**Knowledge prerequisite**: Understanding of Linux/IP networking, Mininet, Python, OpenFlow and TkInter and/or another GUI framework. HCI/user-interface design abilities.
 
 ### Automatic NAT implementation
 
@@ -219,29 +219,57 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 **Brief explanation**: These three features are probably variants of the same feature. Basically we would like to be able to integrate hardware components into a Mininet network and control both hardware and virtual components via the same standard Mininet API. Seamless migration means that the same setup scripts should be usable whether Mininet or a hardware testbed are being used. Note that Emulab and ns-2 are a bit ahead of us in that regard in that v-Emulab, hardware Emulab, and ns-2 all use the same basic Tcl script format for setting up experiments. (However, those scripts are not generally usable on hardware which isn't Emulab.)
 
+**Expected results**: APIs, examples, documentation and tutorials for an end-to-end example of the above. The more general the functionality, the better.
+
+**Knowledge prerequisite**: Understanding of Ethernet/IP/Software-defined networking in both hardware (e.g. NEC OpenFlow switches) and software (e.g. Open vSwitch) form. Understanding of Mininet philosophy and internal architecture. Python programming.
+
 ### Automated deployment on EC2
 
 **Brief explanation**: This is similar to the above - it would be nice to be able to spawn a simulation across multiple EC2 nodes semi-automatically.
+
+**Expected results**: Scripts and/or command-line options for `mn` to easily run Mininet on EC2, along with examples, documentation and tutorials. Ideally there would also be a Python API to make this easier.
+
+**Knowledge prerequisite**: Understanding of Mininet API and internals, Python programming, possibly shell scripting/programming; ability to use EC2 and its APIs.
 
 ### Automated deployment on other testbeds? (emulab, geni, etc.)
 
 **Brief explanation**: Since there are already a number of provisioning APIs (including Emulab, GENI/FOAM, and OpenStack), perhaps it would be nice to ease migration between Mininet and those hardware testbeds (or a simple cluster of PCs with Ubuntu or another standard Linux distribution and no special software installed.)
 
+**Expected results**: Scripts and/or command-line options for `mn` to easily run Mininet on at least one of the above hardware testbeds along with examples, documentation and tutorials. Ideally there would also be a Python API to make this easier.
+
+**Knowledge prerequisite**: Understanding of Mininet API and internals, Python programming, possibly shell scripting/programming; ability to use the appropriate testbed and provisioning APIs.
+
 ### Automated creation of virtual network based on real network
 
 **Brief explanation**: It would be quite neat to be able to discover the topology of a physical, hardware network and to recreate it automatically in Mininet.
+
+**Expected results**: Example code, documentation, and tutorials for automatically discovering and recreating a hardware topology in Mininet.
+
+**Knowledge prerequisite**: Understanding of Mininet API and internals, Python programming, and probably OpenFlow/SDN as well as at least one controller framework (e.g. POX, Floodlight, etc..)
 
 ### Mininet network debugger (ndb)?
 
 **Brief explanation**: NetSight/ndb were built on top of Mininet. If we want to create an SDN SDK, it would be nice to make it as easy as possible to install and run ndb.
 
+**Expected results**: Installation as well as scripts and/or an API and command-line options for easily deploying and running ndb on a Mininet infrastructure.
+
+**Knowledge prerequisite**: Understanding of Mininet API and internals, Python programming, OpenFlow/SDN networks and debugging as well as Netsight and ndb.
+
 ### Code refactoring including Mininet core which could be used independently
 
 **Brief explanation**: The core of Mininet is very simple, but it has become more complicated as we have added more features to it. As a reaction to this, one Mininet user created Piconet, which is reminiscent of the original Mininet. But, it lacks many of the good features that we know and love about Mininet (one command line to rule them all, parametrized topologies, etc..) It would be nice to make the Mininet design more modular so that you could have a simplified core/microkernel of Mininet which could be used independently, along with modules which you could add as desired.
 
+**Expected results**: A version of Mininet with a refactored core which is simpler and easier to understand and which can be used standalone.
+
+**Knowledge prerequisite**: Understanding of Mininet API and internals, Python programming.
+
 ### Error recovery using Python's with statement (Mininet 3.0?)
 
 **Brief explanation**: Another excellent design decision in Piconet was to use Python's with statement for automatic recovery and cleanup. We should adopt this as well. Although it would require API changes, it could make the code smaller and more reliable. Ideally we would not need mn -c to clean up state after Mininet was interrupted or a script crashed.
+
+**Expected results**: A version of Mininet which uses the with statement and automatically handles exceptions and cleanup.
+
+**Knowledge prerequisite**: Understanding of Mininet API and internals, Python programming, understanding of underlying Mininet infrastructure (Linux, Open vSwitch, etc..)
 
 ### Measured scalability results (and possibly improved scalability)
 
@@ -256,7 +284,7 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 **Brief explanation**: We developed some performance monitoring code and tools for Mininet 2.0, CS244 and the CoNEXT paper, but these are in a separate source tree and are not currently integrated into the code base. What can we do to add monitoring code to guarantee that important emulation invariants are not being violated, and also to monitor both the performance of the emulator itself and the emulated system?
 Performance accuracy benchmarks and evaluation
 
-### Emulators: can we trust them?
+### Mininet validation against hardware testbeds
 
 **Brief explanation**: We have some benchmarks, but we don't really have a definitive answer as to how far Mininet results match reality. Ideally we would have a deep understanding of Mininet's performance accuracy, a thorough evaluation and comparison to hardware, and validation both against hardware and against invariants that should hold during emulation.
 
