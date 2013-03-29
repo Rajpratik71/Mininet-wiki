@@ -96,7 +96,7 @@ This page summarizes various ideas for features and future functionality for Min
 
 Mininet is an exciting and high-impact project which is also fun to work on, so we're applying to the Google Summer Of Code (GSOC) in the hope of attracting energetic and motivated developers.
 
-**Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core Mininet developers or another contributor to the project.
+**Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
 
 **Projects**: The exact projects that participants would work on would depend on the interest and expertise of the participants. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as agreements between the potential mentor(s) and participant(s), based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge. There is a wide spectrum of possible projects, and the current, detailed list is available at http://github.com/mininet/mininet/Ideas
 
