@@ -26,65 +26,43 @@ for line in input():
 
 <!-- TOC: Please keep this up to date!! -->
 
+Mininet Project Ideas
+This page summarizes various ideas for features and future functionality for Mininet. It may be used as source material for potential features for any Mininet developer (or motivated user!) to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
 
-### [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#mininet-project-ideas)
+Background
+Mininet is a lightweight emulator for computer networks and distributed systems. It starts up a virtual network/distributed system on your laptop in a few seconds, with a singe command, and provides an extensive Python API for emulating pretty much any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking. It is included in Ubuntu Linux as the "mininet" package.
 
-### [Background](https://github.com/mininet/mininet/wiki/Ideas#background)
+Google Summer of Code Information
+Mininet is an exciting and high-impact project which is also fun to work on, so we're considering applying to the Google Summer Of Code (GSOC).
 
-### [Google Summer of Code Information](https://github.com/mininet/mininet/wiki/Ideas#google-summer-of-code-information)
+Mentoring: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core Mininet developers or another contributor to the project.
 
-### [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
+Projects: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as agreements between the potential mentor(s) and participant(s), based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge.
 
-### [Making it Real: extending existing prototype code into an official feature](https://github.com/mininet/mininet/wiki/Ideas#making-it-real-extending-existing-prototype-code-into-an-official-feature)
-* [Hardware interface support](https://github.com/mininet/mininet/wiki/Ideas#hardware-interface-support)
-* [Access into Mininet from host and/or local network](https://github.com/mininet/mininet/wiki/Ideas#access-into-mininet-from-host-andor-local-network)
-* [sshd support](https://github.com/mininet/mininet/wiki/Ideas#sshd-support)
-* [Mininet GUIs: consoles.py and miniedit.py](https://github.com/mininet/mininet/wiki/Ideas#mininet-guis-consolespy-and-minieditpy)
-* [Automatic NAT implementation](https://github.com/mininet/mininet/wiki/Ideas#automatic-nat-implementation)
+General Prerequisites: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
 
-### ["Easier" Projects](https://github.com/mininet/mininet/wiki/Ideas#easier-projects)
-* [Mininet error checking and diagnostics/status monitoring](https://github.com/mininet/mininet/wiki/Ideas#mininet-error-checking-and-diagnosticsstatus-monitoring)
-* [Better X11 support](https://github.com/mininet/mininet/wiki/Ideas#better-x11-support)
-* [Easier VM image creation (e.g. using something like ubuntu-vm-builder)](https://github.com/mininet/mininet/wiki/Ideas#easier-vm-image-creation-eg-using-something-like-ubuntu-vm-builder)
-* [Real API documentation explaining how to use the API (will be helped somewhat by integrating CS244 intro document)](https://github.com/mininet/mininet/wiki/Ideas#real-api-documentation-explaining-how-to-use-the-api-will-be-helped-somewhat-by-integrating-cs244-intro-document)
-* [Automatic/easy update for Mininet (esp. in VM image)](https://github.com/mininet/mininet/wiki/Ideas#automaticeasy-update-for-mininet-esp-in-vm-image)
-* [Additional easy (but non-critical)  bug fixes](https://github.com/mininet/mininet/wiki/Ideas#additional-easy-but-non-critical--bug-fixes)
-* [Patch bay object](https://github.com/mininet/mininet/wiki/Ideas#patch-bay-object)
-* [“testbed mode” - Hosts optionally on both control and data networks](https://github.com/mininet/mininet/wiki/Ideas#testbed-mode---hosts-optionally-on-both-control-and-data-networks)
-* [Additional parametrized topologies (fat tree, jellyfish, mesh, random, etc.) bundled with easy controller support for multipath](https://github.com/mininet/mininet/wiki/Ideas#additional-parametrized-topologies-fat-tree-jellyfish-mesh-random-etc-bundled-with-easy-controller-support-for-multipath)
-* [Raspberry Pi Mininet image/"network in a box" ;-)](https://github.com/mininet/mininet/wiki/Ideas#raspberry-pi-mininet-imagenetwork-in-a-box--)
+Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
 
-### ["Advanced"/more challenging projects](https://github.com/mininet/mininet/wiki/Ideas#advancedmore-challenging-projects)
-* [More sample, downloadable SDN systems (including controller and applications)](https://github.com/mininet/mininet/wiki/Ideas#more-sample-downloadable-sdn-systems-including-controller-and-applications)
-* [Enhanced placement and documentation for Mininet examples](https://github.com/mininet/mininet/wiki/Ideas#enhanced-placement-and-documentation-for-mininet-examples)
-* [Cluster mode - supporting execution over multiple machines (RemoteSwitch,L2TP/VDE/VXLAN/Capsulator, etc.)](https://github.com/mininet/mininet/wiki/Ideas#cluster-mode---supporting-execution-over-multiple-machines-remoteswitchl2tpvdevxlancapsulator-etc)
-* [Hybrid network support (API for hardware, virtual and combo network tests)](https://github.com/mininet/mininet/wiki/Ideas#hybrid-network-support-api-for-hardware-virtual-and-combo-network-tests)
-* [Seamless migration between Mininet and hardware](https://github.com/mininet/mininet/wiki/Ideas#seamless-migration-between-mininet-and-hardware)
-* [Mininet control of real hardware](https://github.com/mininet/mininet/wiki/Ideas#mininet-control-of-real-hardware)
-* [Automated deployment on EC2](https://github.com/mininet/mininet/wiki/Ideas#automated-deployment-on-ec2)
-* [Automated deployment on other testbeds? (emulab, geni, etc.)](https://github.com/mininet/mininet/wiki/Ideas#automated-deployment-on-other-testbeds-emulab-geni-etc)
-* [Automated creation of virtual network based on real network](https://github.com/mininet/mininet/wiki/Ideas#automated-creation-of-virtual-network-based-on-real-network)
-* [Mininet network debugger (ndb)?](https://github.com/mininet/mininet/wiki/Ideas#mininet-network-debugger-ndb)
-* [Code refactoring including Mininet core which could be used independently](https://github.com/mininet/mininet/wiki/Ideas#code-refactoring-including-mininet-core-which-could-be-used-independently)
-* [Error recovery using Python's with statement (Mininet 3.0?)](https://github.com/mininet/mininet/wiki/Ideas#error-recovery-using-pythons-with-statement-mininet-30)
-* [Measured scalability results (and possibly improved scalability)](https://github.com/mininet/mininet/wiki/Ideas#measured-scalability-results-and-possibly-improved-scalability)
-* [Provisioning advice and/or automatic provisioning support](https://github.com/mininet/mininet/wiki/Ideas#provisioning-advice-andor-automatic-provisioning-support)
-* [Integrated (emulator and emulated) performance monitoring](https://github.com/mininet/mininet/wiki/Ideas#integrated-emulator-and-emulated-performance-monitoring)
-* [Mininet validation against hardware testbeds](https://github.com/mininet/mininet/wiki/Ideas#mininet-validation-against-hardware-testbeds)
-* [Other OS support: Debian Wheezy, Fedora Core, BSD? OS X? Windows?](https://github.com/mininet/mininet/wiki/Ideas#other-os-support-debian-wheezy-fedora-core-bsd-os-x-windows)
-* [Link (e.g. wire or wireless) simulator support](https://github.com/mininet/mininet/wiki/Ideas#link-eg-wire-or-wireless-simulator-support)
-* [Ability to more compactly package Mininet networks and download into VM](https://github.com/mininet/mininet/wiki/Ideas#ability-to-more-compactly-package-mininet-networks-and-download-into-vm)
-* ["Pure" Python implementation (need to determine the performance hit)](https://github.com/mininet/mininet/wiki/Ideas#pure-python-implementation-need-to-determine-the-performance-hit)
-* [Enhanced unit tests](https://github.com/mininet/mininet/wiki/Ideas#enhanced-unit-tests)
-* [Enhanced system tests](https://github.com/mininet/mininet/wiki/Ideas#enhanced-system-tests)
-* [Automatic testing of examples/](https://github.com/mininet/mininet/wiki/Ideas#automatic-testing-of-examples)
-* [Performance analysis and fixes to the Linux kernel and Open vSwitch](https://github.com/mininet/mininet/wiki/Ideas#performance-analysis-and-fixes-to-the-linux-kernel-and-open-vswitch)
-* [Virtual time via time-dilation](https://github.com/mininet/mininet/wiki/Ideas#virtual-time-via-time-dilation)
-* [Virtual time via barrier synchronization](https://github.com/mininet/mininet/wiki/Ideas#virtual-time-via-barrier-synchronization)
-* [Different modes of operation to trade of emulation speed vs. performance accuracy](https://github.com/mininet/mininet/wiki/Ideas#different-modes-of-operation-to-trade-of-emulation-speed-vs-performance-accuracy)
-* [Higher-performing switches (e.g. VALE-enabled OVS and/or custom switch)](https://github.com/mininet/mininet/wiki/Ideas#higher-performing-switches-eg-vale-enabled-ovs-andor-custom-switch)
-* [Support for private /etc directory and possbly private filesystem, user space, PID space, etc.](https://github.com/mininet/mininet/wiki/Ideas#support-for-private-etc-directory-and-possbly-private-filesystem-user-space-pid-space-etc)
+Process: GSOC projects will follow the standard Mininet development process!
 
+Mininet Development Process
+Mininet follows a fairly standard development process on Github:
+
+Pick a project to work on or a feature to implement
+
+Check the Mininet issues page to see if someone is already working on it.
+
+If so, contact the person who is working on it, and also add a note to the issue when you start working on it. Optionally drop us a line on mininet-discuss. You may also add a note to the appropriate section on this page. The goal is to avoid duplicating effort unnecessarily!
+
+Fork/clone the Mininet repo (master branch) on github, and work on your new feature
+
+When you have something that is working or are ready for feedback on your feature, submit a pull request.
+
+Answer any questions you may get on the pull request, and revise your code as necessary.
+
+If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the mininet-dev or mininet-discuss mailing lists as appropriate. You can also ask for additional feedback on your code/pull request.
+
+When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
 
 ## Making it Real: extending existing prototype code into an official feature
 
