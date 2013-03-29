@@ -90,11 +90,11 @@ This page summarizes various ideas for features and future functionality for Min
 
 ## Background
 
-[Mininet](http://mininet.github.com) is a lightweight emulator for computer networks and distributed systems. It starts up a virtual network/distributed system on your laptop in a few seconds, with a singe command, and provides an extensive Python API for emulating pretty much any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking. It is included in Ubuntu Linux as the "mininet" package.
+[Mininet](http://mininet.github.com) is a lightweight emulator for computer networks and distributed systems. It starts up a virtual network/distributed system on your laptop in a few seconds, with a single command, and provides an extensive Python API for emulating almost any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking, where it is a key component of an emerging SDK for SDN. It is included in Ubuntu Linux as the `mininet` package.
 
 ## Google Summer of Code Information
 
-Mininet is an exciting and high-impact project which is also fun to work on, so we're applying to the Google Summer Of Code (GSOC) in the hope of attracting energetic and motivated developers.
+Mininet is an interesting and high-impact project which is also fun to work on, and we're excited to be applying to the Google Summer Of Code (GSOC) in the hope of attracting energetic and motivated developers.
 
 **Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
 
