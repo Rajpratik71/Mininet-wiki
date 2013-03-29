@@ -94,18 +94,17 @@ This page summarizes various ideas for features and future functionality for Min
 
 ## Google Summer of Code Information
 
-Mininet is an exciting and high-impact project which is also fun to work on, so we're considering applying to the Google Summer Of Code (GSOC).
+Mininet is an exciting and high-impact project which is also fun to work on, so we're applying to the Google Summer Of Code (GSOC) in the hope of attracting energetic and motivated developers.
 
 **Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core Mininet developers or another contributor to the project.
 
-**Projects**: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as agreements between the potential mentor(s) and participant(s), based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge.
+**Projects**: The exact projects that participants would work on would depend on the interest and expertise of the participants. The projects are grouped in approximate order of difficulty as well as whether we have starter code. Projects should be approved as agreements between the potential mentor(s) and participant(s), based on mentor availability and interest, project impact, project difficulty, and participant interest, experience and knowledge. There is a wide spectrum of possible projects, and the current, detailed list is available at http://github.com/mininet/mininet/Ideas
 
 **General Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
 
 Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
 
-**Process**: GSOC projects will follow the standard Mininet development process!
-
+**Process**: GSOC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
 
 ## Mininet Development Process
 
