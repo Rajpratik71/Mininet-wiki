@@ -29,19 +29,6 @@ for line in input():
 
 ### [Mininet Project Ideas](#mininet-project-ideas)
 
-### [Background](#background)
-
-### [Google Summer of Code Information](#google-summer-of-code-information)
-
-### [Mininet Development Process](#mininet-development-process)
-
-### [Making it Real: extending existing prototype code into an official feature](#making-it-real-extending-existing-prototype-code-into-an-official-feature)
-* [Hardware interface support](#hardware-interface-support)
-* [Access into Mininet from host and/or local network](#access-into-mininet-from-host-andor-local-network)
-* [sshd support](#sshd-support)
-* [Mininet GUIs: consoles.py and miniedit.py](#mininet-guis-consolespy-and-minieditpy)
-* [Automatic NAT implementation](#automatic-nat-implementation)
-
 ## Mininet Project Ideas
 
 This page summarizes various ideas for **features and future functionality for Mininet**. It may be used as source material for potential features for any Mininet developer (or motivated user!) to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
