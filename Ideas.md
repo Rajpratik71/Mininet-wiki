@@ -1,3 +1,88 @@
+<!--
+
+Script to generate TOC from this page's html:
+
+#!/usr/bin/python
+
+from fileinput import input
+import re
+
+r1 = re.compile( r'href=\"(#[^\"]+).*</a>([^<]*)</h2>' )
+r2 = re.compile( r'href=\"(#[^\"]+).*</a>([^<]*)</h3>' )
+
+for line in input():
+    line = line.strip()
+    m = r1.search( line )
+    if m:
+        print
+        print '### [%s](%s)' % ( m.group( 2 ), m.group( 1 ) )
+        continue
+    m2 = r2.search( line )
+    if m2:
+        print '* [%s](%s)' % ( m2.group( 2 ), m2.group( 1 ) )
+
+-->
+
+<!-- TOC: Please keep this up to date!! -->
+
+### [Mininet Project Ideas](#mininet-project-ideas)
+
+### [Background](#background)
+
+### [Google Summer of Code Information](#google-summer-of-code-information)
+
+### [Mininet Development Process](#mininet-development-process)
+
+### [Making it Real: extending existing prototype code into an official feature](#making-it-real-extending-existing-prototype-code-into-an-official-feature)
+* [Hardware interface support](#hardware-interface-support)
+* [Access into Mininet from host and/or local network](#access-into-mininet-from-host-andor-local-network)
+* [sshd support](#sshd-support)
+* [Mininet GUIs: consoles.py and miniedit.py](#mininet-guis-consolespy-and-minieditpy)
+* [Automatic NAT implementation](#automatic-nat-implementation)
+
+### ["Easier" Projects](#easier-projects)
+* [Mininet error checking and diagnostics/status monitoring](#mininet-error-checking-and-diagnosticsstatus-monitoring)
+* [Better X11 support](#better-x11-support)
+* [Easier VM image creation (e.g. using something like ubuntu-vm-builder)](#easier-vm-image-creation-eg-using-something-like-ubuntu-vm-builder)
+* [Real API documentation explaining how to use the API (will be helped somewhat by integrating CS244 intro document)](#real-api-documentation-explaining-how-to-use-the-api-will-be-helped-somewhat-by-integrating-cs244-intro-document)
+* [Automatic/easy update for Mininet (esp. in VM image)](#automaticeasy-update-for-mininet-esp-in-vm-image)
+* [Additional easy (but non-critical)  bug fixes](#additional-easy-but-non-critical--bug-fixes)
+* [Patch bay object](#patch-bay-object)
+* [“testbed mode” - Hosts optionally on both control and data networks](#testbed-mode---hosts-optionally-on-both-control-and-data-networks)
+* [Additional parametrized topologies (fat tree, jellyfish, mesh, random, etc.) bundled with easy controller support for multipath](#additional-parametrized-topologies-fat-tree-jellyfish-mesh-random-etc-bundled-with-easy-controller-support-for-multipath)
+* [Raspberry Pi Mininet image/"network in a box" ;-)](#raspberry-pi-mininet-imagenetwork-in-a-box--)
+
+### ["Advanced"/more challenging projects](#advancedmore-challenging-projects)
+* [More sample, downloadable SDN systems (including controller and applications)](#more-sample-downloadable-sdn-systems-including-controller-and-applications)
+* [Enhanced placement and documentation for Mininet examples](#enhanced-placement-and-documentation-for-mininet-examples)
+* [Cluster mode - supporting execution over multiple machines (RemoteSwitch,L2TP/VDE/VXLAN/Capsulator, etc.)](#cluster-mode---supporting-execution-over-multiple-machines-remoteswitchl2tpvdevxlancapsulator-etc)
+* [Hybrid network support (API for hardware, virtual and combo network tests)](#hybrid-network-support-api-for-hardware-virtual-and-combo-network-tests)
+* [Seamless migration between Mininet and hardware](#seamless-migration-between-mininet-and-hardware)
+* [Mininet control of real hardware](#mininet-control-of-real-hardware)
+* [Automated deployment on EC2](#automated-deployment-on-ec2)
+* [Automated deployment on other testbeds? (emulab, geni, etc.)](#automated-deployment-on-other-testbeds-emulab-geni-etc)
+* [Automated creation of virtual network based on real network](#automated-creation-of-virtual-network-based-on-real-network)
+* [Mininet network debugger (ndb)?](#mininet-network-debugger-ndb)
+* [Code refactoring including Mininet core which could be used independently](#code-refactoring-including-mininet-core-which-could-be-used-independently)
+* [Error recovery using Python's with statement (Mininet 3.0?)](#error-recovery-using-pythons-with-statement-mininet-30)
+* [Measured scalability results (and possibly improved scalability)](#measured-scalability-results-and-possibly-improved-scalability)
+* [Provisioning advice and/or automatic provisioning support](#provisioning-advice-andor-automatic-provisioning-support)
+* [Integrated (emulator and emulated) performance monitoring](#integrated-emulator-and-emulated-performance-monitoring)
+* [Mininet validation against hardware testbeds](#mininet-validation-against-hardware-testbeds)
+* [Other OS support: Debian Wheezy, Fedora Core, BSD? OS X? Windows?](#other-os-support-debian-wheezy-fedora-core-bsd-os-x-windows)
+* [Link (e.g. wire or wireless) simulator support](#link-eg-wire-or-wireless-simulator-support)
+* [Ability to more compactly package Mininet networks and download into VM](#ability-to-more-compactly-package-mininet-networks-and-download-into-vm)
+* ["Pure" Python implementation (need to determine the performance hit)](#pure-python-implementation-need-to-determine-the-performance-hit)
+* [Enhanced unit tests](#enhanced-unit-tests)
+* [Enhanced system tests](#enhanced-system-tests)
+* [Automatic testing of examples/](#automatic-testing-of-examples)
+* [Performance analysis and fixes to the Linux kernel and Open vSwitch](#performance-analysis-and-fixes-to-the-linux-kernel-and-open-vswitch)
+* [Virtual time via time-dilation](#virtual-time-via-time-dilation)
+* [Virtual time via barrier synchronization](#virtual-time-via-barrier-synchronization)
+* [Different modes of operation to trade of emulation speed vs. performance accuracy](#different-modes-of-operation-to-trade-of-emulation-speed-vs-performance-accuracy)
+* [Higher-performing switches (e.g. VALE-enabled OVS and/or custom switch)](#higher-performing-switches-eg-vale-enabled-ovs-andor-custom-switch)
+* [Support for private /etc directory and possbly private filesystem, user space, PID space, etc.](#support-for-private-etc-directory-and-possbly-private-filesystem-user-space-pid-space-etc)
+
 ## Mininet Project Ideas
 
 This page summarizes various ideas for **features and future functionality for Mininet**. It may be used as source material for potential features for any Mininet developer (or motivated user!) to implement, as well as potential projects for Google Summer of Code or other mentoring programs or internships.
