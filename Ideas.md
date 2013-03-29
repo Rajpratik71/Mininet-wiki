@@ -104,7 +104,7 @@ Mininet is an interesting and high-impact project which is also fun to work on, 
 
 Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
 
-**Process**: GSOC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process)
+**Process**: GSOC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process) .
 
 ## Mininet Development Process
 
