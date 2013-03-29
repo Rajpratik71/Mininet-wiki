@@ -122,7 +122,7 @@ Mininet follows a fairly standard development process on Github:
 
 6. **Respond** any questions or comments you may get on the pull request, and **revise your code** as necessary.
 
-7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the `mininet-dev` or `mininet-discuss` mailing lists as appropriate. You can also **ask for additional feedback** on your code/pull request.
+7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the [`mininet-dev`](https://mailman.stanford.edu/mailman/listinfo/mininet-dev) or [`mininet-discuss`](https://mailman.stanford.edu/mailman/listinfo/mininet-discuss) mailing lists as appropriate. You can (and probably should!) also **ask for additional feedback** on your code/pull request.
 
 8. When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
 
