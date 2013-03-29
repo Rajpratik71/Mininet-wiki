@@ -38,7 +38,7 @@ Mininet follows a fairly standard development process on Github:
 
 8. When/if the feature is complete and approved by the Mininet developers, they may choose to **merge it** into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
 
-## Features that we have a prototype implementation for
+## Making it Real: extending existing prototype code into an official feature
 
 ### Hardware interface support
 
@@ -63,7 +63,7 @@ It might be nice to have a means of automatically starting up sshd (and shutting
 
 I (BL) wrote the consoles.py and miniedit.py examples to show what I thought was a really exciting and cool thing you could do in Mininet: make GUI programs that create and use a live virtual network interactively! It seemed so obvious that I had done much of the hard work and that any smart Python/GUI programmer could take what I had done either as code or inspiration and run with it. Unfortunately, that never happened. We could decide to expand these programs into (more) full-blown applications, or we could also try to make the code reusable as a framework. Or we could write documentation about the design of the apps and how to expand them. Or perhaps we could rewrite them in Qt or a more "modern" GUI framework. Regardless, I still feel that GUI apps using Mininet have huge potential, as do graphical interfaces for core Mininet functionality.
 
-## "Easy" Projects
+## "Easer" Projects
 
 ### Mininet error checking and diagnostics/status monitoring
 
@@ -73,7 +73,8 @@ Currently when Mininet isn't working (e.g. controller can't connect to switches,
 
 It should be possible to start up arbitrary X11 apps from the mininet> prompt.
 
-Easier VM image creation (e.g. using something like ubuntu-vm-builder)
+### Easier VM image creation (e.g. using something like ubuntu-vm-builder)
+
 Currently we make the VM images by hand - it's a pain, and it's why the Mininet VMs are rarely updated. We could automate this by using a script like the now-deprecated ubuntu-vm-builder, which was part of Ubuntu and used debuild. Or we could script Xen/KVM/VMware/Vbox to take an off-the-shelf Ubuntu image and install Mininet in it. There might be other better ways.
 
 ### VM/install support for NOX2, other useful software
@@ -96,13 +97,18 @@ There are a number of easy(ish) bug fixes which were deferred from 2.0.0. We can
 Mininet 2.0 switches support attachment and reattachment. This allows you to simulate mobility or VM migration. A more generalized mechanism might allow for everything to be connected to a patch bay/patch panel object (probably just a large OpenFlow switch) which could be used to allow arbitrary reconnection of any interfaces. Effectively this means that each veth pair is split into two veth pairs which are then plugged into the patch bay. This would require creation of a new object (PatchBay?) and support for using it if desired. Note that the overall system load would be increased - this is a trade-off between flexibility and performance, so we would not wish to make it mandatory. This could also be thought of as an L1 switch, although really it's L1.5 since everything is still Ethernet - the L2/MAC protocol cannot be changed beyond what OpenFlow already allows you to do.
 
 ### “testbed mode” - Hosts optionally on both control and data networks
-As noted, Emulab and other testbeds provide (at least) two interfaces on each host: one on the private data network, and one on either a control network or the LAN. This would, to some extent, solve the problem of people who want to access the internet from Mininet hosts, and it would allow network-based (as upposed to pipe or API-based) access to hosts even when the data network was not working.
 
-## "Advanced"/more challenging projects
+As noted, Emulab and other testbeds provide (at least) two interfaces on each host: one on the private data network, and one on either a control network or the LAN. This would, to some extent, solve the problem of people who want to access the internet from Mininet hosts, and it would allow network-based (as upposed to pipe or API-based) access to hosts even when the data network was not working.
 
 ### Additional parametrized topologies (fat tree, jellyfish, mesh, random, etc.) bundled with easy controller support for multipath
 
 Parametrized topologies are one of Mininet's most useful features. Unfortunately only a few topologies (tree, linear, single switch) are included in the box. It would be great if Mininet came with more topologies and if there were a readily available controller that supported multipath. We can probably leverage the CS244 work to some extent, since Brandon provided a fat tree topology as well as a simple multipath controller (riplpox) - both of which were extremely handy in CS244. Additionally, two of the CS244 projects included Jellyfish and DCell, so perhaps they have topology code we could use or use as inspiration.
+
+### Raspberry Pi Mininet image/"network in a box" ;-)
+
+This would be a fun and cool project and would also allow for a very inexpensive "network in a box" which could be used not only as a dirt-cheap Mininet platform (for courses, workshops, tutorials, anyone who wants one) but also as virtual "hardware" which you can plug your PC, server, or switches into to get a larger virtual topology. The basics are extremely easy, but there are some interesting and fun possibilities here.
+
+## "Advanced"/more challenging projects
 
 ### More sample, downloadable SDN systems (including controller and applications)
 
@@ -177,10 +183,6 @@ It would be nice to have a link emulator subclass of Link and at least one link 
 ### Ability to more compactly package Mininet networks and download into VM
 
 It would be nice to be able to compactly package Mininet experiments without requiring a whole VM. On the other hand, VMs are guaranteed to work! There is a system (whose name I forget) on Linux which packages up applications with their libraries and support files in such a way as to be independent of the underlying OS. Debian packages are similar. Perhaps we could figure out a compact way to package up a whole Mininet system.
-
-### Raspberry Pi Mininet image ;-)
-
-This would be a fun and cool project and would also allow for a very inexpensive "network in a box" which could be used not only as a dirt-cheap Mininet platform (for courses, workshops, tutorials, anyone who wants one) but also as virtual "hardware" which you can plug your PC, server, or switches into to get a larger virtual topology.
 
 ### Automatic NAT implementation
 
