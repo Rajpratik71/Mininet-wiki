@@ -270,25 +270,49 @@ Right now we're strongly in the Ubuntu camp. We can almost run out of the box on
 
 **Brief explanation**: It would be nice to have a link emulator subclass of Link and at least one link simulator, even a simple C (or Python) program that simply does packet forwarding with delay and loss. Ideally we could support a simple wireless link emulator.
 
+**Expected results**: At least one new Mininet class for a link simulator, and integration of a link (e.g. wireless) simulator.
+
+**Knowledge prerequisite**: Understanding of Mininet node.py API and Python programming. C programming and network link modeling/simulation.
+
 ### Ability to more compactly package Mininet networks and download into VM
 
 **Brief explanation**: It would be nice to be able to compactly package Mininet experiments without requiring a whole VM. On the other hand, VMs are guaranteed to work! There is a system (whose name I forget) on Linux which packages up applications with their libraries and support files in such a way as to be independent of the underlying OS. Debian packages are similar. Perhaps we could figure out a compact way to package up a whole Mininet system.
+
+**Expected results**: A compact (< 80 MB) VM which is ideally sufficient to complete the OpenFlow tutorial. Scripts to reliably create that VM in an automated fashion.
+
+**Knowledge prerequisite**: Understanding of Mininet (completion of OpenFlow tutorial at least), and understanding of Linux distributions and packaging.
 
 ### "Pure" Python implementation (need to determine the performance hit)
 
 **Brief explanation**: Although Mininet cannot truly be implemented in pure Python (it depends on features in the underlying OS), we can rewrite mnexec as Python code (this is what Piconet did as well.) However, we should measure the performance of mnexec vs. Python implementation of same.
 
+**Expected results**: A version of Mininet which replaces the `mnexec` tool with pure Python and runs directly from source on Linux.
+
+**Knowledge prerequisite**: Understanding of the Mininet internals, C/Linux/system calls/network namespaces, and Python systems programming.
+
 ### Enhanced unit tests
 
 **Brief explanation**: Right now we don't have a whole lot in terms of unit tests. Ideally we should test all API calls and get some degree of coverage for all of Mininet.
+
+**Expected results**: Additional unit test scripts, and some measure of API/code coverage (preferably tests of each method.)
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, OpenFlow, Open vSwitch, VM network bridging, the Mininet API, Python, makefiles, shell scripting, and test design including use of coverage tools. Completion of Mininet and OpenFlow tutorials.
 
 ### Enhanced system tests
 
 **Brief explanation**: Mininet is great for system-level testing, but ironically we only have a couple of system-level tests that we use to test Mininet itself!! We should test all of our topologies, our switch classes, and various other subsystems like the CLI, command-line argument parsing, performance isolation, and cluster mode.
 
+**Expected results**: A test script and make target incorporating system-level tests for all of the above.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, OpenFlow, Open vSwitch, VM network bridging, the Mininet API, Python, makefiles, shell scripting and test design. Completion of Mininet and OpenFlow tutorials.
+
 ### Automatic testing of examples/
 
 **Brief explanation**: Not only do we want to be confident that changes to Mininet don't break our examples, but the examples themselves can be thought of as system-level tests which can and should be integrate into automated testing.
+
+**Expected results**: A test script in tests/ and a make target which automatically runs all examples as system-level tests.
+
+**Knowledge prerequisite**: Understanding of Linux/IP networking, OpenFlow, Open vSwitch, VM network bridging, the Mininet API, Python, makefiles, and shell scripting. Completion of Mininet and OpenFlow tutorials.
 
 ### Performance analysis and fixes to the Linux kernel and Open vSwitch
 
