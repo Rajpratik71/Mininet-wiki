@@ -10,7 +10,7 @@ Mininet is a lightweight emulator for computer networks and distributed systems.
 
 Mininet is an exciting and high-impact project which is also fun to work on, so we're considering applying to the Google Summer Of Code (GSOC).
 
-**Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either Mininet project founder **Bob Lantz** or another member of the Mininet development team or community.
+**Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either Mininet project founder **[Bob Lantz](https://github.com/lantz)** or another member of the Mininet development team or community.
 
 **Projects**: The exact projects that participants would work on would depend on their interest and expertise. The projects are grouped in approximate order of difficulty as well as whether we have starter code.
 
