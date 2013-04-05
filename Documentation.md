@@ -32,7 +32,7 @@ Mininet Documentation
 
 * [Introduction to Mininet](http://cng.ateneo.edu/cng/wyu/classes/cs154/cs154-mn-intro.pdf) A brief introduction to Mininet, by Prof. William ES Yu of the [Ateneo University of Manila](http://ateneo.edu)
 * [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]] Principles that have guided Mininet's design
-* Mininet Project [[Ideas]] - Proposed Mininet features for Google Summer of Code or other projects
+* **Mininet Project [[Ideas]]** - Proposed Mininet features for Google Summer of Code or other projects
 * [[Futures]] A few (mostly older) thoughts on future Mininet features/futures
 
 <!-- comment this out since it's obsolete
