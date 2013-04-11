@@ -104,9 +104,19 @@ As an alternative to X11, you could also use VNC, but that is probably about as 
 
 Yes, you can!
 
-First, log in to the VM in its console window (i.e. type directly into the VM window without using `ssh`.) Then, install `xinit` (and its dependencies) and a window manager of your choice (I picked `flwm` because it's small - you may prefer `metacity` or some other window manager):
+First, log in to the VM in its console window (i.e. type directly into the VM window without using `ssh`) and make sure `apt` is up to date:
 
-    sudo apt-get install xinit flwm
+    sudo apt-get update
+
+Then, install the desktop environment of your choice.
+     
+    sudo apt-get install xinit <environment>
+
+where `<environment>` is your GUI environment of choice. Some options:
+
+* `lxde`: a reasonably compact and and fast desktop environment
+* `flwm`: a smaller but more primitive desktop environment
+* `ubuntu-desktop`: the full, heavyweight Ubuntu Unity desktop environment
 
 Then, you can start X11 in the VM console window using
 
