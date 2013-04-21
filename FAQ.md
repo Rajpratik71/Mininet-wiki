@@ -16,6 +16,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [What is the **login/password** for the Mininet VM?] (#password)
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
+* [X11 Can I run GUI application within Mininet host?](#vm-gui-mininethost)
 * [How can I do a **native install** of Mininet?](#native-install)
 * [Help! I am getting an **error from VirtualBox and my VM won't boot**!](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
@@ -121,6 +122,35 @@ where `<environment>` is your GUI environment of choice. Some options:
 Then, you can start X11 in the VM console window using
 
     startx
+
+***
+(#vm-gui-mininethost)
+### Can I run GUI application within Mininet host?
+
+Using a graphical browser requires that you get X11 traffic out of your Mininet host namespace and into the environment where you actually have an X display. This is a bit of a hack at this moment. 
+
+Say the X display the host environment with IP address of 192.168.56.1 and the Mininet VM has 192.168.56.101.
+
+In short, run sshd inside Mininet's h1, then SSH from the host environment to the Mininet VM with X forwarding, and then SSH from the Mininet VM into h1 with X forwarding.
+
+As an example, open three terminals in the host environment (Term1, Term2, Term3)
+
+On Term1:
+
+    1a) ./pox.py forwarding.l2_learning # Run an OpenFlow controller
+
+On Term2:
+
+    2a) ssh -Y mininet@192.168.56.101 # SSH into the Mininet VM with X forwarding
+    2b) sudo mn --topo=linear,2 --mac --controller=remote,ip=192.168.56.1:6633
+    2c) h1 /usr/sbin/sshd # From the mininet> prompt, run sshd inside the h1 namespace
+
+On Term3:
+
+    3a) ssh -Y mininet@192.168.56.101 # SSH into the Mininet VM with X forwarding
+    3b) sudo ifconfig s1 10.12.12.12 # Give the internal adapter for s1 an address #By default, all hosts live on 10.0.0.0/8 space. 
+    3c) ssh -Y mininet@10.0.0.1 # SSH into the Mininet h1 namespace with X forwarding
+    3d) xeyes # Run any X app
 
 ***
 <a id=command-line-options></a>
