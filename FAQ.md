@@ -127,11 +127,13 @@ Then, you can start X11 in the VM console window using
 <a id=vm-gui-mininethost></a>
 ### Can I run GUI application within Mininet host?
 
-Using a graphical browser requires that you get X11 traffic out of your Mininet host namespace and into the environment where you actually have an X display. This is a bit of a hack at this moment. 
+This is a bit of a hack at this moment but it works! 
 
-Say the X display the host environment with IP address of 192.168.56.1 and the Mininet VM has 192.168.56.101.
+Using a graphical browser requires that you get X11 traffic out of your Mininet host namespace and into the environment where you actually have an X display.
 
-In short, run sshd inside Mininet's h1, then SSH from the host environment to the Mininet VM with X forwarding, and then SSH from the Mininet VM into h1 with X forwarding.
+Say the X display is the host environment with IP address of 192.168.56.1 and the Mininet VM has an IP of 192.168.56.101.
+
+In short, run sshd inside Mininet's h1. Then SSH from the host environment (192.168.56.1) to the Mininet VM (192.168.56.101) with X forwarding (ssh -Y mininet@192.168.56.101). Then SSH from the Mininet VM into h1 with X forwarding (again!).
 
 As an example, open three terminals in the host environment (Term1, Term2, Term3)
 
