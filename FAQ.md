@@ -124,7 +124,7 @@ Then, you can start X11 in the VM console window using
     startx
 
 ***
-(#vm-gui-mininethost)
+<a id=vm-gui-mininethost></a>
 ### Can I run GUI application within Mininet host?
 
 Using a graphical browser requires that you get X11 traffic out of your Mininet host namespace and into the environment where you actually have an X display. This is a bit of a hack at this moment. 
@@ -137,20 +137,20 @@ As an example, open three terminals in the host environment (Term1, Term2, Term3
 
 On Term1:
 
-    1a) ./pox.py forwarding.l2_learning # Run an OpenFlow controller
+    ./pox.py forwarding.l2_learning # Run an OpenFlow controller
 
 On Term2:
 
-    2a) ssh -Y mininet@192.168.56.101 # SSH into the Mininet VM with X forwarding
-    2b) sudo mn --topo=linear,2 --mac --controller=remote,ip=192.168.56.1:6633
-    2c) h1 /usr/sbin/sshd # From the mininet> prompt, run sshd inside the h1 namespace
+    ssh -Y mininet@192.168.56.101 # SSH into the Mininet VM with X forwarding
+    sudo mn --topo=linear,2 --mac --controller=remote,ip=192.168.56.1:6633
+    h1 /usr/sbin/sshd # From the mininet> prompt, run sshd inside the h1 namespace
 
 On Term3:
 
-    3a) ssh -Y mininet@192.168.56.101 # SSH into the Mininet VM with X forwarding
-    3b) sudo ifconfig s1 10.12.12.12 # Give the internal adapter for s1 an address #By default, all hosts live on 10.0.0.0/8 space. 
-    3c) ssh -Y mininet@10.0.0.1 # SSH into the Mininet h1 namespace with X forwarding
-    3d) xeyes # Run any X app
+    ssh -Y mininet@192.168.56.101 # SSH into the Mininet VM with X forwarding
+    sudo ifconfig s1 10.12.12.12 # Give the internal adapter for s1 an address #By default, all hosts live on 10.0.0.0/8 space. 
+    ssh -Y mininet@10.0.0.1 # SSH into the Mininet h1 namespace with X forwarding
+    xeyes # Run any X app
 
 ***
 <a id=command-line-options></a>
