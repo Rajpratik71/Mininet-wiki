@@ -652,7 +652,7 @@ found at:
 <a id=controllers></a>
 ### OpenFlow Controllers
 
-If you invoke Mininet from the command line, it uses the `ovsk' controller,
+If you invoke Mininet from the command line, it uses the `ovsk` controller,
 `ovs-controller`, by default. This controller implements a simple Ethernet
 learning switch and supports up to 16 individual switches.
 
