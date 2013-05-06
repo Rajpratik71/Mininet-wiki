@@ -21,6 +21,7 @@ Python API, the core of Mininet's functionality that you will usually want to us
 - [Mininet API Documentation](#api)
 - [Measuring Performance](#measuring)
 - [OpenFlow](#openflow)
+ - [OpenFlow Controllers](#controllers)
 - [Updating Mininet](#updating)
 - [Learning Python](#python)
 - [Useful Background Information](#background)
@@ -665,10 +666,10 @@ your computing resources much earlier.)
 
 If you want to use your own controller, you can easily create a custom
 subclass of `Controller()` and pass it into Mininet. An example can be seen
-in mininet.controller.NOX(), which invokes NOX classic with a
+in `mininet.controller.NOX()`, which invokes NOX classic with a
 set of modules passed in as options.
 
-Here's an example of a custom POX controller class:
+Here's a simple example of using a custom POX `Controller` subclass:
 
 ```python
 #!/usr/bin/python                                                                                      
