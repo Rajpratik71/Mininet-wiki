@@ -648,6 +648,55 @@ found at:
 
 <http://www.openflow.org/wk/index.php/OpenFlow_Tutorial>
 
+<a id=controllers></a>
+### OpenFlow Controllers
+
+If you invoke Mininet from the command line, it uses the `ovsk' controller,
+`ovs-controller`, by default. This controller implements a simple Ethernet
+learning switch and supports up to 16 individual switches.
+
+If you invoke the `Mininet()` constructor by itself, by default it uses the
+`Controller()` class to create an instance of the Stanford/OpenFlow reference
+controller, `controller`. Like `ovs-controller`, it turns your switches into
+simple learning switches, but if you have installed `controller` using Mininet's
+`install.sh -f` script, the patched version of `controller` should support a
+large number of switches (up to 4096 in theory, but you'll probably max out
+your computing resources much earlier.)
+
+If you want to use your own controller, you can easily create a custom
+subclass of `Controller()` and pass it into Mininet. An example can be seen
+in mininet.controller.NOX(), which invokes NOX classic with a
+set of modules passed in as options.
+
+Here's an example of a custom POX controller class:
+
+```python
+#!/usr/bin/python                                                                                      
+                                                                                                       
+from mininet.net import Mininet                                                                        
+from mininet.node import Controller                                                                    
+from mininet.topo import SingleSwitchTopo                                                              
+from mininet.log import setLogLevel                                                                    
+                                                                                                       
+import os                                                                                              
+                                                                                                       
+class POXBridge( Controller ):                                                                         
+    "Custom Controller class to invoke POX forwarding.l2_learning"                                     
+    def start( self ):                                                                                 
+        "Start POX learning switch"                                                                    
+        self.pox = '%s/pox/pox.py' % os.environ[ 'HOME' ]                                              
+        self.cmd( self.pox, 'forwarding.l2_learning &' )                                               
+    def stop( self ):                                                                                  
+        "Stop POX"                                                                                     
+        self.cmd( 'kill %' + self.pox )                                                                
+                                                                                                       
+setLogLevel( 'info' )                                                                                  
+net = Mininet( topo=SingleSwitchTopo( 2 ), controller=POXBridge )                                      
+net.start()                                                                                            
+net.pingAll()                                                                                          
+net.stop()
+```
+
 <a id=updating></a>
 
 ### Updating Mininet
