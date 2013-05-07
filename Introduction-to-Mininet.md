@@ -701,10 +701,10 @@ if __name__ == '__main__':
     net.stop()      
 ```
 
-Note that the above script is written so that it also can be used as a custom argument to `mn`:
+Note that the above script is written so that it also can be used as a custom argument to `mn` for use with different topologies and tests as well as the Mininet CLI:
 
 ```
-$ sudo mn --custom pox.py --controller poxbridge --topo tree,2,2 --test pingall -v output
+$ sudo mn --custom poxbridge.py --controller poxbridge --topo tree,2,2 --test pingall -v output
 *** Ping: testing ping reachability
 h1 -> h2 h3 h4 
 h2 -> h1 h3 h4 
