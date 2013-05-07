@@ -669,7 +669,7 @@ subclass of `Controller()` and pass it into Mininet. An example can be seen
 in `mininet.controller.NOX()`, which invokes NOX classic with a
 set of modules passed in as options.
 
-Here's a simple example of using a custom POX `Controller` subclass:
+Here's a simple example of creating and using a custom POX `Controller` subclass:
 
 ```python
 #!/usr/bin/python                                                                                      
@@ -691,14 +691,30 @@ class POXBridge( Controller ):
         "Stop POX"                                                                                     
         self.cmd( 'kill %' + self.pox )                                                                
                                                                                                        
-setLogLevel( 'info' )                                                                                  
-net = Mininet( topo=SingleSwitchTopo( 2 ), controller=POXBridge )                                      
-net.start()                                                                                            
-net.pingAll()                                                                                          
-net.stop()
+controllers = { 'poxbridge': POXBridge }                                                               
+                                                                                                       
+if __name__ == '__main__':                                                                             
+    setLogLevel( 'info' )                                                                              
+    net = Mininet( topo=SingleSwitchTopo( 2 ), controller=POXBridge )                                  
+    net.start()                                                                                        
+    net.pingAll()                                                                                      
+    net.stop()      
+```
+
+Note that the above script is written so that it also can be used as a custom argument to `mn`:
+
+```
+$ sudo mn --custom pox.py --controller poxbridge --topo tree,2,2 --test pingall -v output
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4 
+h2 -> h1 h3 h4 
+h3 -> h1 h2 h4 
+h4 -> h1 h2 h3 
+*** Results: 0% dropped (0/12 lost)
 ```
 
 <a id=updating></a>
+
 
 ### Updating Mininet
 
