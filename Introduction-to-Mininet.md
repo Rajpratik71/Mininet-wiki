@@ -741,7 +741,7 @@ interface with it. Fortunately Python is one of the easiest computer
 languages to understand, learn, and use, due to its (mostly) readable
 syntax, similarity to other object-oriented languages, and many useful
 libraries. Once you reconcile yourself to its quirks (significant
-indentation, mandatory use of self, runtime error checking, etc.) you
+indentation, mandatory use of `self`, runtime error checking, etc.) you
 may appreciate it as a very quick (if sometimes dirty) way to crank out
 useful scripts and code.
 
