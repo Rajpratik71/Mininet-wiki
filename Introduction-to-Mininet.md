@@ -297,7 +297,7 @@ Matplotlib and other libraries.
 
 `net.get()`: retrieves a node (host or switch) object by name.
 This is important if you want to send a command to a host (e.g. using
-host.cmd()) and get its output.
+`host.cmd()`) and get its output.
 
 Note: In the current master branch of Mininet, you can simply use
 braces (e.g. `net['h1']`) to retrieve a given node by name.
