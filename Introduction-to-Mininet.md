@@ -768,8 +768,9 @@ You can also specify an external controller from the `mn` command line:
 #### Multipath Routing
 
 It's important to remember that Ethernet bridges (also known as learning switches)
-flood broadcast packets. This means that if your network has loops or multiple
-paths in it, it will not work the default `ovs-controller` and `controller`
+will flood packets that miss in their MAC tables. They will also flood broadcasts
+like ARP and DHCP requests. This means that if your network has loops or multiple
+paths in it, it **will not work** with the default `ovs-controller` and `controller`
 controllers, nor NOX's `pyswitch`, nor POX's `l2_learning`, which all act as
 learning switches/Ethernet bridges.
 
