@@ -299,6 +299,9 @@ Matplotlib and other libraries.
 This is important if you want to send a command to a host (e.g. using
 host.cmd()) and get its output.
 
+Note: In the current master branch of Mininet, you can simply use
+braces (e.g. `net['h1']`) to retrieve a given node by name.
+
 <a id=running></a>
 
 ### Running Programs in Hosts
