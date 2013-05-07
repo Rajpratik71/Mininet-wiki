@@ -769,6 +769,9 @@ If you are building a fat-tree like topology, you may wish to take a look at
 controller implemented using POX. You may be able to use it as a starting point
 for your own custom multipath routing.
 
+Exercise for the reader: Implement a custom `Controller()` subclass to invoke
+RipLPOX.
+
 <a id=updating></a>
 ### Updating Mininet
 
