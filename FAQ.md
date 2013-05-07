@@ -127,6 +127,12 @@ Then, you can start X11 in the VM console window using
 <a id=vm-gui-mininethost></a>
 ### Can I run GUI application within Mininet host?
 
+Yes, you can do so from a host `xterm` with the current version of Mininet.
+
+**What about Mininet 2.0.0?**
+
+(Thanks to Murphy McCauley for providing the following workaround, which craftily uses the switch's CPU port!)
+
 This is a bit of a hack at this moment but it works! 
 
 Using a graphical browser requires that you get X11 traffic out of your Mininet host namespace and into the environment where you actually have an X display.
