@@ -20,7 +20,7 @@ Python API, the core of Mininet's functionality that you will usually want to us
  - [Additional Examples](#examples)
 - [Mininet API Documentation](#api)
 - [Measuring Performance](#measuring)
-- [OpenFlow](#openflow)
+- [OpenFlow and Custom Routing](#openflow)
  - [OpenFlow Controllers](#controllers)
 - [Updating Mininet](#updating)
 - [Learning Python](#python)
@@ -637,7 +637,7 @@ familiar with.
 
 <a id=openflow></a>
 
-### OpenFlow
+### OpenFlow and Custom Routing
 
 One of Mininet's most powerful and useful features is that it uses
 **Software Defined Networking**. Using the OpenFlow
