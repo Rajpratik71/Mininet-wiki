@@ -782,7 +782,11 @@ controller implemented using POX. You may be able to use it as a starting point
 for your own custom multipath routing.
 
 You may also wish to implement a custom `Controller()` subclass to invoke
-RipLPOX.
+RipLPOX for convenience.
+
+(Or if you're truly daring/insane, you could even try importing Mininet
+and POX or RipLPOX into a single Python script! But you probably don't want
+to do that.)
 
 <a id=updating></a>
 ### Updating Mininet
