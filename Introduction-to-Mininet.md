@@ -295,7 +295,7 @@ pass the same parameters into multiple method calls, for example:
 This same technique `(**dict)` is useful for passing options to
 Matplotlib and other libraries.
 
-`net.getNodeByName()`: retrieves a node (host or switch) object by name.
+`net.get()`: retrieves a node (host or switch) object by name.
 This is important if you want to send a command to a host (e.g. using
 host.cmd()) and get its output.
 
@@ -314,7 +314,7 @@ send input to the shell using the cmd() method.
 To run a command in a host and get the output, use the `cmd()` method.
 
 ```python
-	h1 = net.getNodeByName('h1')	
+	h1 = net.get('h1')	
 	result = h1.cmd('ifconfig')
 	print result
 ```
