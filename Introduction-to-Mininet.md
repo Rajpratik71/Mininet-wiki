@@ -586,6 +586,8 @@ Additional examples of Mininet scripts may be found in [`mininet/examples`](http
 You may find some of them to be useful and others (e.g. [`consoles.py`](https://github.com/mininet/mininet/tree/master/examples/consoles.py),
 [`miniedit.py`](https://github.com/mininet/mininet/tree/master/examples/miniedit.py)) to be entertaining demonstrations.
 
+Note: The examples are intended as instructional material to be read and understood, not as complete, out-of-the-box solutions to whatever problem you may have. You may be able to use some of the code with modification, but it's important to be able to examine and understand the code.
+
 <a id=api></a>
 
 ### Mininet API Documentation
