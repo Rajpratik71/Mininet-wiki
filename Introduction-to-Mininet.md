@@ -659,17 +659,24 @@ found at:
 <a id=controllers></a>
 #### OpenFlow Controllers
 
-If you invoke Mininet from the command line, it uses the `ovsk` controller,
-`ovs-controller`, by default. This controller implements a simple Ethernet
-learning switch and supports up to 16 individual switches.
+If you run the `mn` command without specifying a controller,
+it will use the the `ovsc` controller,`ovs-controller`, by default.
+This is equivalent to
 
-If you invoke the `Mininet()` constructor by itself, by default it uses the
+    $ sudo mn --controller ovsc
+    
+This controller implements a simple Ethernet learning switch,
+and supports up to 16 individual switches.
+
+If you invoke the `Mininet()` constructor in your script
+without specifying a controller class, by default it will use the
 `Controller()` class to create an instance of the Stanford/OpenFlow reference
 controller, `controller`. Like `ovs-controller`, it turns your switches into
 simple learning switches, but if you have installed `controller` using Mininet's
 `install.sh -f` script, the patched version of `controller` should support a
 large number of switches (up to 4096 in theory, but you'll probably max out
-your computing resources much earlier.)
+your computing resources much earlier.) You can also select the
+reference controller for `mn` by specifying `--controller ref`.
 
 If you want to use your own controller, you can easily create a custom
 subclass of `Controller()` and pass it into Mininet. An example can be seen
@@ -719,6 +726,11 @@ h3 -> h1 h2 h4
 h4 -> h1 h2 h3 
 *** Results: 0% dropped (0/12 lost)
 ```
+
+If you look at the implementation of the `NOX` class in `mininet/node.py`,
+you will notice that it can actually accept options to allow different modules
+to be started depending on what arguments are
+passed into it, from the constructor or the `mn` command line.
 
 <a id=extcontrollers></a>
 #### External OpenFlow Controllers
