@@ -243,7 +243,11 @@ Transparent bridging of L2/Ethernet networks doesn't work if the topology has lo
 
 The OpenFlow reference controller (`controller`) implements a bridge/learning switch, as does NOX's `pyswitch` module, and they don't implement a spanning-tree protocol by default. As a result, they **will not work with a network that has loops in it**.
 
-In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `controller` and `pyswitch` **do not** by default. NOX has a `spanning_tree` module, which you may wish to investigate.
+In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `controller` and `pyswitch` **do not** by default. NOX classic and POX include spanning tree modules, which you may wish to investigate.
+
+"That sounds like too much work - I don't want to do any work!"
+
+You may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox) as well as some of the multipath experiments on http://reproducingnetworkresearch.blogspot.com. But, you will still probably have to do some work and actually understand what you are doing.
 
 ***
 <a id=assign-macs></a>
