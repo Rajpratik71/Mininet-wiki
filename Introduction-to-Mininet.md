@@ -23,6 +23,7 @@ Python API, the core of Mininet's functionality that you will usually want to us
 - [OpenFlow and Custom Routing](#openflow)
  - [OpenFlow Controllers](#controllers)
  - [External Controllers](#extcontrollers)
+ - [Multipath Routing](#multipath)
 - [Updating Mininet](#updating)
 - [Learning Python](#python)
 - [Useful Background Information](#background)
@@ -670,10 +671,6 @@ simple learning switches, but if you have installed `controller` using Mininet's
 large number of switches (up to 4096 in theory, but you'll probably max out
 your computing resources much earlier.)
 
-It's important to remember that Ethernet bridges (also known as learning switches)
-flood broadcast packets. This means that if your network has loops or multiple
-paths in it, it will not work with any of these default controllers.
-
 If you want to use your own controller, you can easily create a custom
 subclass of `Controller()` and pass it into Mininet. An example can be seen
 in `mininet.controller.NOX()`, which invokes NOX classic with a
@@ -723,13 +720,8 @@ h4 -> h1 h2 h3
 *** Results: 0% dropped (0/12 lost)
 ```
 
-If you are building a fat-tree like topology, you may wish to take a look at
-[RipLPOX](http://github.com/brandonheller/riplpox), a basic datacenter
-controller implemented using POX. You may be able to use it as a starting point
-for your own custom multipath routing.
-
-<a id=extcontrollers>
-#### External OpenFlow controllers
+<a id=extcontrollers></a>
+#### External OpenFlow Controllers
 
 Although custom `Controller()` subclasses are most convenient for automatically starting and shutting down your controller, you may find it useful to connect Mininet to an existing controller that is running somewhere else, for example somewhere on your LAN, in another VM, or on your laptop. Using a`Controller()` class allows Mininet to automatically start up and shut down the controller as needed.
 
@@ -760,9 +752,19 @@ You can also specify an external controller from the `mn` command line:
 
     $ sudo mn --controller remote,ip=192.168.51.101
 
+<a id=multipath></a>
+#### Multipath Routing
+
+It's important to remember that Ethernet bridges (also known as learning switches)
+flood broadcast packets. This means that if your network has loops or multiple
+paths in it, it will not work with any of these default controllers.
+
+If you are building a fat-tree like topology, you may wish to take a look at
+[RipLPOX](http://github.com/brandonheller/riplpox), a basic datacenter
+controller implemented using POX. You may be able to use it as a starting point
+for your own custom multipath routing.
+
 <a id=updating></a>
-
-
 ### Updating Mininet
 
 If we need to make changes or additions to Mininet to fix bugs or
