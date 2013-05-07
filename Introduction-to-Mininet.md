@@ -22,6 +22,7 @@ Python API, the core of Mininet's functionality that you will usually want to us
 - [Measuring Performance](#measuring)
 - [OpenFlow and Custom Routing](#openflow)
  - [OpenFlow Controllers](#controllers)
+ - [External Controllers](#extcontrollers)
 - [Updating Mininet](#updating)
 - [Learning Python](#python)
 - [Useful Background Information](#background)
@@ -655,7 +656,7 @@ found at:
 <http://www.openflow.org/wk/index.php/OpenFlow_Tutorial>
 
 <a id=controllers></a>
-### OpenFlow Controllers
+#### OpenFlow Controllers
 
 If you invoke Mininet from the command line, it uses the `ovsk` controller,
 `ovs-controller`, by default. This controller implements a simple Ethernet
@@ -718,13 +719,46 @@ h4 -> h1 h2 h3
 *** Results: 0% dropped (0/12 lost)
 ```
 
+<a id=extcontrollers>
+#### External OpenFlow controllers
+
+Although custom `Controller()` subclasses are most convenient for automatically starting and shutting down your controller, you may find it useful to connect Mininet to an existing controller that is running somewhere else, for example somewhere on your LAN, in another VM, or on your laptop. Using a`Controller()` class allows Mininet to automatically start up and shut down the controller as needed.
+
+The `RemoteController` class acts as a proxy for a controller which may be running anywhere on the control network, but which must be started up and shut down manually or by some other mechanism.
+
+You can use `RemoteController` from `Mininet`:
+
+```python
+Mininet( topo=topo, controller=lambda name: RemoteController( name, ip='127.0.0.1' ) )
+```
+
+You can also create multiple controllers and create a custom `Switch()` subclass which
+connects to different controllers as desired:
+
+```python
+
+c0 = Controller( 'c0' )  # local controller
+c1 = RemoteController( 'c1', ip='127.0.0.2' )  # external controller
+cmap = { 's1': c0, 's2': c1, 's3': c1 }
+
+class MultiSwitch( OVSSwitch ):
+    "Custom Switch() subclass that connects to different controllers"
+    def start( self, controllers ):
+        return OVSSwitch.start( self, [ cmap[ self.name ] ] )
+```
+
+You can also specify an external controller from the `mn` command line:
+
+    $ sudo mn --controller remote,ip=192.168.51.101
+
 <a id=updating></a>
 
 
 ### Updating Mininet
 
-If we need to make changes or additions to Mininet during the course,
-you may need to update your copy of Mininet. This is easily done using:
+If we need to make changes or additions to Mininet to fix bugs or
+other problems, and you have installed Mininet from source,
+you may wish to update your copy of Mininet. This is easily done using:
 
 	cd ~/mininet
 	sudo make develop # this only needs to be done once
