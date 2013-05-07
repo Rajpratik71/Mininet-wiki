@@ -762,7 +762,7 @@ controllers, nor NOX's `pyswitch`, nor POX's `l2_learning`, which all act as
 learning switches/Ethernet bridges.
 
 In spite of the obviousness of this issue, it has become a
-[[Frequently Asked Question || FAQ#wiki-ethernet-loops]].
+[[ Frequently Asked Question | FAQ#wiki-ethernet-loops ]].
 
 If you are building a fat-tree like topology, you may wish to take a look at
 [RipLPOX](http://github.com/brandonheller/riplpox), a basic datacenter
