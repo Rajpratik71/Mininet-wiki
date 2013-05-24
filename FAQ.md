@@ -235,7 +235,7 @@ Also see [[Mininet-API-Documentation]] for information on how to generate Minine
 The illustrious Glen Gibb provided a script to do it back in 2011 on 
 [[ mininet-discuss | https://mailman.stanford.edu/pipermail/mininet-discuss/2011-February/000289.html ]]
 
-An updated version of the script can be found here: [[NAT Script]].
+An updated version of the script can be found here: [[NAT Script | https://gist.github.com/lantz/5640610 ]].
 
 ***
 <a id=openflow-versions></a>
