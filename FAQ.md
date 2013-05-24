@@ -242,7 +242,16 @@ The illustrious Glen Gibb provided a script to do it back in 2011 on
 
 An updated version of the script can be found here: [[Mininet NAT Script | https://gist.github.com/lantz/5640610 ]].
 
-If this script does not work for you, please fix it and update this FAQ entry.
+Note that:
+
+* The script assumes that `eth0` is the host interface connected to the internet/your LAN
+* The script turns off `network-manager`, which might break your wireless network on Ubuntu desktop
+
+As an alternative to turning off `network-manager`, it has been suggested on the mailing list that you can add the following line to `/etc/network/interfaces`:
+
+    iface root-eth0 inet manual
+    
+If this script does not work for you, please make an effort to debug and fix the problem, and then update this FAQ entry.
 
 ***
 <a id=openflow-versions></a>
