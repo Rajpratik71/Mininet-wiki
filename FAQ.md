@@ -16,7 +16,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [What is the **login/password** for the Mininet VM?] (#password)
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
-* [X11 Can I run GUI application within Mininet host?](#vm-gui-mininethost)
+* [X11 Can I run a GUI/X11 application within a Mininet host?](#vm-gui-mininethost)
 * [How can I do a **native install** of Mininet?](#native-install)
 * [Help! I am getting an **error from VirtualBox and my VM won't boot**!](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
@@ -126,7 +126,7 @@ Then, you can start X11 in the VM console window using
 
 ***
 <a id=vm-gui-mininethost></a>
-### Can I run GUI application within Mininet host?
+### Can I run a GUI/X11 application within a Mininet host?
 
 Yes, you can do so from a host `xterm` with the current version of Mininet.
 
