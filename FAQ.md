@@ -25,6 +25,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
 * [How do I **use Mininet's Python API**?](#python-api)
+* [Why can't I ping Google?/How can I set up NAT?] (#NAT)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 
 ###  OpenFlow Questions
@@ -224,6 +225,17 @@ In each case, pressing `q` should quit the pager.
 The API documentation is available at <http://mininet.github.com/api>.
 
 Also see [[Mininet-API-Documentation]] for information on how to generate Mininet documentation yourself in .html and .pdf format.
+
+***
+<a id=NAT></a>
+
+### Why can't I ping Google?
+### How can I set up NAT?
+
+The illustrious Glen Gibb provided a script to do it back in 2011 on 
+[[ mininet-discuss | https://mailman.stanford.edu/pipermail/mininet-discuss/2011-February/000289.html ]]
+
+An updated version of the script can be found here: [[NAT Script]].
 
 ***
 <a id=openflow-versions></a>
