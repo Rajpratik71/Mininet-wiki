@@ -25,7 +25,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
 * [How do I **use Mininet's Python API**?](#python-api)
-* [Why can't I ping Google?/How can I set up NAT?] (#NAT)
+* [Why can't I **ping Google** from my Mininet hosts?/How can I set up NAT?] (#NAT)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 
 ###  OpenFlow Questions
@@ -229,7 +229,7 @@ Also see [[Mininet-API-Documentation]] for information on how to generate Minine
 ***
 <a id=NAT></a>
 
-### Why can't I ping Google?
+### Why can't I **ping Google** from my Mininet hosts?
 
 You can't ping Google because your Mininet network is not connected to the internet. This is usually a good thing!  Usually Mininet networks use a non-routable IP address range like 10.0.0.0/8. 
 
