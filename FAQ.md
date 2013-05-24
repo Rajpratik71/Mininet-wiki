@@ -284,7 +284,7 @@ In general, if you want to use a network with loops in it, you need to be absolu
 
 "That sounds too much like work - I don't want to do any work!"
 
-You may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox) as well as some of the multipath experiments on http://reproducingnetworkresearch.blogspot.com. But, you will still probably have to do some work and actually understand what you are doing.
+You may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.blogspot.com. But, you will still probably have to do some work and actually understand what you are doing.
 
 ***
 <a id=assign-macs></a>
