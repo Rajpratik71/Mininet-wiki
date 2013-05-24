@@ -128,7 +128,7 @@ Then, you can start X11 in the VM console window using
 <a id=vm-gui-mininethost></a>
 ### Can I run a GUI/X11 application within a Mininet host?
 
-Yes, you can do so from a host `xterm` with the current version of Mininet.
+Yes, you can do so from a host `xterm` or `gterm` with the current version of Mininet.
 
 **What about Mininet 2.0.0?**
 
