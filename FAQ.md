@@ -238,7 +238,7 @@ However, you can set up NAT if you like.
 ### How can I set up NAT?
 
 The illustrious Glen Gibb provided a script to do it back in 2011 on 
-[[ mininet-discuss | https://mailman.stanford.edu/pipermail/mininet-discuss/2011-February/000289.html ]]
+[[ mininet-discuss | https://mailman.stanford.edu/pipermail/mininet-discuss/2011-February/000289.html ]].
 
 An updated version of the script can be found here: [[Mininet NAT Script | https://gist.github.com/lantz/5640610 ]].
 
