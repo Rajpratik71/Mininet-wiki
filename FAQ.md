@@ -248,7 +248,7 @@ Note that:
 * The script assumes that `eth0` is the host interface connected to the internet/your LAN
 * The script turns off `network-manager`, which *might disable your wireless* network on Ubuntu desktop
 
-As an alternative to turning off `network-manager`, it has been suggested on the mailing list that you can add the following line to `/etc/network/interfaces`:
+As an alternative to turning off `network-manager`, you can add the following line to `/etc/network/interfaces`:
 
     iface root-eth0 inet manual
 
