@@ -231,7 +231,9 @@ Also see [[Mininet-API-Documentation]] for information on how to generate Minine
 
 ### Why can't I ping Google?
 
-You can't ping Google because your Mininet network is not connected to the internet. This is usually a good thing! But you can set up NAT if you like.
+You can't ping Google because your Mininet network is not connected to the internet. This is usually a good thing!  Usually Mininet networks use a non-routable IP address range like 10.0.0.0/8. 
+
+However, you can set up NAT if you like.
 
 ### How can I set up NAT?
 
@@ -239,6 +241,8 @@ The illustrious Glen Gibb provided a script to do it back in 2011 on
 [[ mininet-discuss | https://mailman.stanford.edu/pipermail/mininet-discuss/2011-February/000289.html ]]
 
 An updated version of the script can be found here: [[Mininet NAT Script | https://gist.github.com/lantz/5640610 ]].
+
+If this script does not work for you, please fix it and update this FAQ entry.
 
 ***
 <a id=openflow-versions></a>
