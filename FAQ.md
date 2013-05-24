@@ -230,6 +230,9 @@ Also see [[Mininet-API-Documentation]] for information on how to generate Minine
 <a id=NAT></a>
 
 ### Why can't I ping Google?
+
+You can't ping Google because your Mininet network is not connected to the internet. This is usually a good thing! But you can set up NAT if you like.
+
 ### How can I set up NAT?
 
 The illustrious Glen Gibb provided a script to do it back in 2011 on 
