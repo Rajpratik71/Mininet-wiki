@@ -130,6 +130,8 @@ Then, you can start X11 in the VM console window using
 
 Yes, you can do so from a host `xterm` or `gterm` with the current version of Mininet.
 
+This allows you to run programs like `wireshark` or `firefox`. You might want to `su` to another user (e.g. `mininet`) to avoid running FireFox with `root` privileges, but it probably doesn't make a fundamental difference in a Mininet VM that is configured for password-less `sudo`.
+
 **What about Mininet 2.0.0?**
 
 (Thanks to Murphy McCauley for providing the following workaround, which craftily uses the switch's CPU port!)
