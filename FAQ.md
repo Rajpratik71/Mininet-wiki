@@ -245,7 +245,7 @@ An updated version of the script can be found here: [[Mininet NAT Script | https
 Note that:
 
 * The script assumes that `eth0` is the host interface connected to the internet/your LAN
-* The script turns off `network-manager`, which might **disable your wireless** network on Ubuntu desktop
+* The script turns off `network-manager`, which *might disable your wireless* network on Ubuntu desktop
 
 As an alternative to turning off `network-manager`, it has been suggested on the mailing list that you can add the following line to `/etc/network/interfaces`:
 
