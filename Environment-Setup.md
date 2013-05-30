@@ -40,6 +40,9 @@ The assignments only require a t1.micro instance, for which Amazon provides 750 
 * Select the image, then keep clicking "Continue" on the next few page, until the page ask you to select your key pairs. 
 * Choose the key pair you would like to login to your EC2 instance, then click on "Continue". 
 * At the final page, you can find an "Launch" button. Click it and you are done!
+* Go to "Security Groups", select "default", then click on "Inbound" tab.
+* Select "SSH" from "Create a new rule" drop down.
+* Click "Add Rule" then "Apply Rule Changes"
 * Then use your key pair to login to your EC2 instance.
 ```no-highlight
 > ssh -Y -i <Your KeyPair> ubuntu@<your EC2 domain name>
