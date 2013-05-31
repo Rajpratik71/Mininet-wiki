@@ -12,6 +12,7 @@
 * [[FAQ]]
 * [[Wiki | Home]]
 * [[Papers | Publications]]
+* [[GSoC 2013]]
 
 ---
 
