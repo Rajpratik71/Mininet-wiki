@@ -1,12 +1,12 @@
 For this project, so far we have identified two main objectives:
-- Something similar to PyPi or CPAN, but for Mininet
+- Something similar to PyPI or CPAN, but for Mininet
 - Complete system/VM/experiment archive
 
 ### PyPi or CPAN for Mininet
 For this objective, we firstly need a way to create a package for Mininet module/system first.
 From what I know so far (hint: not very much), I think plain old python eggs are quite suitable for packaging a Mininet module/system. I need to take a closer look at python eggs to confirm this.
 
-The next challenge is to create the website to host the packages.
+The next challenge is to actually create the website to host the packages.
 Since I am strictly a leecher from PyPI, I will need to take a look at PyPI or CPAN or possibly other package repository websites to see what are the possible problems in building a website like these.
 
 ### Complete system/VM/experiment archive
