@@ -310,7 +310,10 @@ You can also create a custom controller class or use `--controller external:IP` 
 <a id=multiple-controllers></a>
 ### How can I use **multiple controllers** in my network?
 
-One way is to use the mid-level API, as shown in [`examples/controllers.py`](https://github.com/mininet/mininet/tree/master/examples/controllers.py)
+One way is to make a custom switch class, as shown in [`examples/controllers.py`](https://github.com/mininet/mininet/tree/master/examples/controllers.py)
+
+Another way is to use the mid-level API:
+https://github.com/mininet/mininet/tree/master/examples/controllers2.py
 
 ***
 <a id=ovs-reconfig></a>
