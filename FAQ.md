@@ -27,6 +27,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I **use Mininet's Python API**?](#python-api)
 * [Why can't I **ping Google** from my Mininet hosts?/How can I set up NAT?] (#NAT)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
+* [Why does my network fail if I use more than 16 switches?](#ovs-controller)
 
 ###  OpenFlow Questions
 
@@ -291,6 +292,17 @@ You may also wish to take a look at [RipL-POX](https://github.com/brandonheller/
 ### Why do the switch data ports have random MAC addresses? How do I assign MAC and IP addresses to the switch data ports?
 
 The MAC addresses reported by Linux for the switch data ports are meaningless. The switch is controlled by OpenFlow, so you should use OpenFlow to ensure that any packets destined "for the switch" are properly routed. You "assign" MAC and IP addresses "to the switch" by using OpenFlow rather than the Linux IP stack. If you attempt to use the Linux IP stack instead, it really won't work unless you are using the Linux kernel for routing (which you aren't - you're using an OpenFlow switch!) You should never attempt to use `ifconfig` or `ip link` or other utilities to assign an IP address to a switch data port. Usually you will want your controller to handle packets such as ARP and ICMP which are sent to and from "the switch," and you will want IP packets which are sent to to be handled by appropriate flow table entries. You can pick any "MAC" address you like for the switch.
+
+<a id =ovs-controller></a>
+### Why does my network fail if I use more than 16 switches?
+
+For Mininet 2.0.0, the default controller for the `mn` command  is `ovs-controller` (which can be installed automatically in Ubuntu.) Unfortunately `ovs-controller` only supports up to 16 switches. If you want to use more than 16 switches, you should use a controller that supports more than 16 switches, for example:
+
+    sudo mn --controller ref --topo linear,20 --test pingall
+
+Make sure you've installed the Mininet version of the OpenFlow reference controller, which is easily done using:
+
+    mininet/util/install.sh -f
 
 ***
 <a id=multiple-controllers></a>
