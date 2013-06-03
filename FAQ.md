@@ -27,7 +27,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I **use Mininet's Python API**?](#python-api)
 * [Why can't I **ping Google** from my Mininet hosts?/How can I set up NAT?] (#NAT)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
-* [Why does my network **fail if I use more than 16 switches**?](#ovs-controller)
+* [Why does my network fail if I use **more than 16 switches**?](#ovs-controller)
 
 ###  OpenFlow Questions
 
