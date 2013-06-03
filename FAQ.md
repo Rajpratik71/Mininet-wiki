@@ -312,8 +312,8 @@ You can also create a custom controller class or use `--controller external:IP` 
 
 One way is to make a custom switch class, as shown in [`examples/controllers.py`](https://github.com/mininet/mininet/tree/master/examples/controllers.py)
 
-Another way is to use the mid-level API:
-https://github.com/mininet/mininet/tree/master/examples/controllers2.py
+Another way is to use the mid-level API, as shown in [`examples/controllers2.py`]
+(https://github.com/mininet/mininet/tree/master/examples/controllers2.py)
 
 ***
 <a id=ovs-reconfig></a>
