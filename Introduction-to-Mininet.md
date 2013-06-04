@@ -735,9 +735,13 @@ passed into it, from the constructor or the `mn` command line.
 <a id=extcontrollers></a>
 #### External OpenFlow Controllers
 
-Although custom `Controller()` subclasses are most convenient for automatically starting and shutting down your controller, you may find it useful to connect Mininet to an existing controller that is running somewhere else, for example somewhere on your LAN, in another VM, or on your laptop. Using a`Controller()` class allows Mininet to automatically start up and shut down the controller as needed.
+Custom `Controller()` subclasses are the most convenient method for automatically starting and shutting down your controller. It's easy to create `start()` and `stop()` methods so that Mininet will automatically start and stop your controller as needed.
 
-The `RemoteController` class acts as a proxy for a controller which may be running anywhere on the control network, but which must be started up and shut down manually or by some other mechanism.
+(For more information, check out this [blog post](http://mininet.org/blog/2013/06/03/automating-controller-startup/).)
+
+However, you may find it useful to connect Mininet to an existing controller that is *already running* somewhere else, for example somewhere on your LAN, in another VM, or on your laptop. 
+
+The `RemoteController` class acts as a proxy for a controller which may be running anywhere on the control network, but which must be started up and shut down manually or by some other mechanism outside of Mininet's direct control.
 
 You can use `RemoteController` from `Mininet`:
 
