@@ -23,11 +23,14 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 ### Using Mininet
 
+* [How do I run Linux programs on my Mininet hosts?](#run)
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
 * [How do I **use Mininet's Python API**?](#python-api)
 * [Why can't I **ping Google** from my Mininet hosts?/How can I set up NAT?] (#NAT)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why does my network fail if I use **more than 16 switches**?](#ovs-controller)
+* [How can I control Mininet hosts remotely?](#remote-control)
+* [How can I add a REST interface to Mininet?](#rest)
 
 ###  OpenFlow Questions
 
@@ -163,6 +166,14 @@ On Term3:
     sudo ifconfig s1 10.12.12.12 # Give the internal adapter for s1 an address #By default, all hosts live on 10.0.0.0/8 space. 
     ssh -Y mininet@10.0.0.1 # SSH into the Mininet h1 namespace with X forwarding
     xeyes # Run any X app
+
+***
+<a id=run></a>
+* [How do I run Linux programs on my Mininet hosts?](#run)
+
+If you are asking this question, it means you haven't bothered to consult the [[Documentation]].
+
+If you are incredibly lazy, please at least consult the [[Sample Workflow | http://mininet.org/sample-workflow/ ]].
 
 ***
 <a id=command-line-options></a>
