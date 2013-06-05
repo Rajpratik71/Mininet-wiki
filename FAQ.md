@@ -339,6 +339,10 @@ Another way is to actually connect your Mininet network to your LAN and to run `
 
 ### How can I add a REST interface to Mininet?
 
+Basically anything you can do in Python you can do in Mininet, and it's often very easy to do so. For example, there are all sorts of frameworks available for various kinds of messaging and RPC, REST, JSON, SOAP, XML, etc.. You can hook Python code up to node.js, you can have it speak ZeroMQ, you can use Apache Thrift... really the possibilities are endless!!
+
+Note however that if you are running locally it's much easier to control Mininet directly from within a Python script or using the CLI.
+
 It's trivial to add a REST (or ReST if you prefer) API to Mininet using Python. Using the [[ Bottle | http://bottlepy.org ]] framework, you could do something like:
 
 ```python
@@ -385,9 +389,6 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
 ...
 ```
 
-Basically anything you can do in Python you can do in Mininet, and it's often very easy to do so. For example, there are all sorts of frameworks available for various kinds of messaging and RPC, REST, JSON, SOAP, XML, etc.. You can hook Python code up to node.js, you can have it speak ZeroMQ, you can use Apache Thrift... really the possibilities are endless!!
-
-Note however that if you are running locally it's much easier to control Mininet directly from within a Python script or using the CLI.
 
 ***
 <a id=multiple-controllers></a>
