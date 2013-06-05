@@ -48,7 +48,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I have never used Linux or Unix before!**](#linux)
 * [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
-* [How do I use (some Linux command)?](#man)
+* [How do I **use (some Linux command)**?](#man)
 * [Will you **do my (home)work assignment** for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
@@ -443,7 +443,7 @@ You may also wish to consult an introductory networking textbook such as *Comput
 ### Help! **I have never used Linux or Unix before!**
 
 <a id=man></a>
-### How do I use (some Linux command)?]
+### How do I use (some Linux command)?
 
 There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
 
