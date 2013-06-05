@@ -48,6 +48,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! **I don't understand OpenFlow** or SDN!](#openflow)
 * [Help! **I have never used Linux or Unix before!**](#linux)
 * [Help! **I don't understand networking** (or maybe computers) at all!!](#networking)
+* [How do I use (some Linux command)?](#man)
 * [Will you **do my (home)work assignment** for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
@@ -441,6 +442,9 @@ You may also wish to consult an introductory networking textbook such as *Comput
 <a id=linux></a>
 ### Help! **I have never used Linux or Unix before!**
 
+<a id=man></a>
+### How do I use (some Linux command)?]
+
 There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
 
 Additionally, nearly every Unix system since the beginning of time includes online documentation which can be accessed using the `man` command. For example, to find out about the `ls` command, you can type
@@ -450,6 +454,10 @@ Additionally, nearly every Unix system since the beginning of time includes onli
 Each section (traditionally 1-8) of the manual has an `intro` page, and you can actually read *all* of the intro sections by typing:
 
     man -a intro
+
+Some GNU software hides its documentation in the (powerful but less friendly) `info` documentation system. Usually there is a `man` page which will direct you to it.
+
+Additionally, `bash` has a `help` command which can be used to find out how to use shell commands.
 
 There are also many useful books on Linux available on Amazon and in your local bookstore. Mark Sobell's books are classics, as are Nemeth's books on Unix/Linux system administration.
 
