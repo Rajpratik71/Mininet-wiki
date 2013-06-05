@@ -2,6 +2,17 @@ For this project, so far we have identified two main objectives:
 - Something similar to PyPI or CPAN, but for Mininet
 - Complete system/VM/experiment archive
 
+BL Comments:
+
+*My thinking is that we need to come up with something which is useful and also which is doable!!
+I think we should break it down into things which can be done in 1 or 2-week increments if possible,
+with something which can be demonstrated (at least in some basic way) after each period.
+
+I do think the design is also important, however, as is the functionality. So to start with, I think it
+would be a good idea to try to come up with a basic set of things that we would like to be able to
+do with the system, considering what you could actually build without too much difficulty.*
+
+
 ### PyPI or CPAN for Mininet
 For this objective, we firstly need a way to create a package for Mininet module/system first.
 From what I know so far (hint: not very much), I think plain old python eggs are quite suitable for packaging a Mininet module/system. I need to take a closer look at python eggs to confirm this.
