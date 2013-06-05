@@ -23,7 +23,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 ### Using Mininet
 
-* [How do I run Linux programs on my Mininet hosts?](#run)
+* [How do I **run Linux programs** on my Mininet hosts?](#run)
 * [How do I figure out the **command-line options** for the `mn` command?](#command-line-options)
 * [How do I **use Mininet's Python API**?](#python-api)
 * [Why can't I **ping Google** from my Mininet hosts?/How can I set up NAT?] (#NAT)
@@ -316,6 +316,61 @@ Make sure you've installed the Mininet version of the OpenFlow reference control
     mininet/util/install.sh -f
 
 You can also create a custom controller class or use `--controller external:IP` and use any custom or off-the-shelf controller that you like. For example, ou can easily install POX by checking it out or using `util/install.sh -p`, and you can install Floodlight on Ubuntu using `apt-get install floodlight`.
+
+*** 
+<a id=remote-control></a>
+
+* [How can I control Mininet hosts remotely?](#remote-control)
+
+***
+<a id=rest></a>
+
+### How can I add a REST interface to Mininet?
+
+It's trivial to add a REST (or ReST if you prefer) API to Mininet using Python. Using the [[ Bottle | http://bottlepy.org ]] framework, you could do something like:
+
+```python
+#!/usr/bin/python
+
+from mininet.net import Mininet
+from mininet.topo import SingleSwitchTopo
+
+from bottle import route, run, template
+
+net = Mininet( topo=SingleSwitchTopo( 2 ) )
+
+@route('/cmd/<node>/<cmd>')
+def cmd( node='h1', cmd='hostname' ):
+    result = net.get( node ).cmd( cmd )
+    return result
+
+@route('/stop')
+def stop():
+    net.stop()
+
+run(host='localhost', port=8080 )
+```
+
+This allows you to send simple commands to your Mininet hosts.
+
+After running this script in one window:
+
+    $ sudo ./rest.py
+
+You can easily try it out. For example, you could run the `ifconfig` command on host `h1` as follows:
+
+```
+$ curl localhost:8080/cmd/h1/ifconfig
+h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9  
+          inet addr:10.0.0.1  Bcast:10.255.255.255  Mask:255.0.0.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:4 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:328 (328.0 B)  TX bytes:238 (238.0 B)
+...
+```
+
 
 ***
 <a id=multiple-controllers></a>
