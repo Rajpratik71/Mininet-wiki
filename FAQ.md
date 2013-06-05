@@ -102,6 +102,8 @@ to see where the X11 forwarding is failing.
 
 By default `ssh -X` times out after a while - you may prefer `ssh -Y` for that reason, although it is less secure.
 
+There is **a wealth of information on the internet** explaining how to set up X11 forwarding correctly on any platform. This is easily found using Google or the search engine of your choice.
+
 As an alternative to X11, you could also use VNC, but that is probably about as complicated as X11 and is left as an exercise to the reader.
 
 **If this seems too complicated, you can simply run X11 in the VM console window as described below!**
