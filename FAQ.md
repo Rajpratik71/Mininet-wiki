@@ -169,7 +169,7 @@ On Term3:
 
 ***
 <a id=run></a>
-* [How do I run Linux programs on my Mininet hosts?](#run)
+### How do I run Linux programs on my Mininet hosts?
 
 If you are asking this question, it means you haven't bothered to consult the [[Documentation]].
 
