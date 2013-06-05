@@ -324,9 +324,7 @@ You can also create a custom controller class or use `--controller external:IP` 
 
 It's trivial to control Mininet hosts from the CLI or from within a Python script running locally, but what if you want some other process or even another computer on your LAN to be able to control your Mininet network remotely?
 
-Well, there are lots of ways to do this. One idea is that anything you can do in Python, you can do in Mininet, and it's often very easy to do so. For example, there are all sorts of frameworks available for various kinds of messaging and RPC, REST, JSON, SOAP, XML, etc.. You can hook Python code up to node.js, you can have it speak ZeroMQ... really the possibilities are endless!!
-
-See below for a REST example - it's just a few lines of code.
+Well, there are lots of ways to do this. One idea is that anything you can do in Python, you can do in Mininet, and it's often very easy to do so. For example, there are all sorts of frameworks available for any kind of messaging you can imagine. (See below for a REST example - it's just a few lines of code.)
 
 Another easy way to control Mininet hosts in the current `master` branch is to use the `util/m` script.
 
