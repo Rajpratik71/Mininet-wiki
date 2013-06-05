@@ -6,9 +6,9 @@ BL Comments:
 
 <i>My thinking is that we need to come up with something which is useful and also which is doable!!
 I think we should break it down into things which can be done in 1 or 2-week increments if possible,
-with something which can be demonstrated (at least in some basic way) after each period.
+with something which can be demonstrated (at least in some basic way) after each period.</i>
 
-I do think the design is also important, however, as is the functionality. So to start with, I think it
+<i>I do think the design is also important, however, as is the functionality. So to start with, I think it
 would be a good idea to try to come up with a basic set of things that we would like to be able to
 do with the system, considering what you could actually build without too much difficulty.</i>
 
