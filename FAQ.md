@@ -29,8 +29,8 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why can't I **ping Google** from my Mininet hosts?/How can I set up NAT?] (#NAT)
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why does my network fail if I use **more than 16 switches**?](#ovs-controller)
-* [How can I control Mininet hosts remotely?](#remote-control)
-* [How can I add a REST interface to Mininet?](#rest)
+* [How can I **control Mininet hosts remotely**?](#remote-control)
+* [How can I add a **REST API** to Mininet?](#rest)
 
 ###  OpenFlow Questions
 
@@ -320,7 +320,19 @@ You can also create a custom controller class or use `--controller external:IP` 
 *** 
 <a id=remote-control></a>
 
-* [How can I control Mininet hosts remotely?](#remote-control)
+### How can I control my Mininet hosts remotely?
+
+There are lots of ways to do this. One idea is that anything you can do in Python, you can do in Mininet, and it's often very easy to do so. For example, there are all sorts of frameworks available for various kinds of messaging and RPC, REST, JSON, SOAP, XML, etc.. You can hook Python code up to node.js, you can have it speak ZeroMQ... really the possibilities are endless!!
+
+See below for a REST example - it's quite trivial.
+
+Another easy way to control Mininet hosts in the current `master` branch is to use the `util/m` script.
+
+For example if my Mininet server is `ubuntu1`, I can run `ifconfig` on host `h1` using
+
+    $ ssh ubuntu1 mininet/util/m h1 ifconfig
+
+Another way is to actually connect your Mininet network to your LAN and to run `sshd` on your Mininet hosts. This is left as an exercise for the reader, but you may want to look at the `hwintf.py` and `sshd.py` scripts in `examples/` to understand how you might possibly do this.
 
 ***
 <a id=rest></a>
@@ -371,6 +383,7 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
 ...
 ```
 
+Basically anything you can do in Python you can do in Mininet, and it's often very easy to do so. For example, there are all sorts of frameworks available for various kinds of messaging and RPC, REST, JSON, SOAP, XML, etc.. You can hook Python code up to node.js, you can have it speak ZeroMQ... really the possibilities are endless!!
 
 ***
 <a id=multiple-controllers></a>
