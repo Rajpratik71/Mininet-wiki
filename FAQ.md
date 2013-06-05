@@ -31,6 +31,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why does my network fail if I use **more than 16 switches**?](#ovs-controller)
 * [How can I **control Mininet hosts remotely**?](#remote-control)
 * [How can I add a **REST API** to Mininet?](#rest)
+* [How do I run the **Mininet examples**?](#examples)
 
 ###  OpenFlow Questions
 
@@ -390,6 +391,20 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
 ...
 ```
 
+***
+<a id=examples></a>
+### How do I run the **Mininet examples**?
+
+1. Fetch the Mininet source tree if you haven't already
+
+   git clone http://mininet.github.com/mininet/mininet
+
+2. Run an example
+
+   sudo mininet/examples/linearbandwidth.py
+
+Note some examples (`consoles.py`, `miniedit.py`) require you to have set up
+[[ X11 forwarding | #x11-forwarding ]].
 
 ***
 <a id=multiple-controllers></a>
