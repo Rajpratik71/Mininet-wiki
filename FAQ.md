@@ -365,7 +365,9 @@ def stop():
 run(host='localhost', port=8080 )
 ```
 
-This allows you to send simple commands to your Mininet hosts. (Note that `host.cmd()` runs commands as root so this isn't really something you want to expose to the whole internet! But it's quite convenient,  isn't it? In a real example you would probably want a method to shut down both the REST server and the Mininet network in a graceful manner rather than using control-C and `mn -c`. Note also that `cmd()` is talking to a single `bash` process - if you are using the latest Mininet branch you may wish to use the `popen()` interface to allow multiple concurrent commands on a single host.]
+This allows you to send simple commands to your Mininet hosts. 
+
+*Note that `host.cmd()` runs commands as root so this isn't really something you want to expose to the whole internet! But it's quite convenient,  isn't it? In a real example you would probably want a method to shut down both the REST server and the Mininet network in a graceful manner rather than using control-C and `mn -c`. Note also that `cmd()` is talking to a single `bash` process - if you are using the latest Mininet branch you may wish to use the `popen()` interface to allow multiple concurrent commands on a single host.]*
 
 After running this script in one window:
 
