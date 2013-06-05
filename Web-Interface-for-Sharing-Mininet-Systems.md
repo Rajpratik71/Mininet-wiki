@@ -9,6 +9,17 @@ From what I know so far (hint: not very much), I think plain old python eggs are
 The next challenge is to actually create the website to host the packages.
 Since I am strictly a leecher from PyPI, I will need to take a look at PyPI or CPAN or possibly other package repository websites to see what are the possible problems in building a website like these.
 
+
+Update:
+
+Looks like typical python source package format is good enough to store the Mininet modules/systems and their dependencies. If we use this format, then we will be able to use all existing python tools (e.g. pip) to automatically resolve, download and install dependencies and also to create and upload packages.  
+
+We can either reuse existing PyPI or create a clone of PyPI exclusively to store Mininet modules/systems. If we create a clone, then we can simply redirect the package installer (e.g. pip) to download from the clone website instead of PyPI.  
+
+Several available open source clone of PyPI are already available. These clones will be useful as a starting point so I won't have to reimplement to PyPI XML-RPC API (used by pip and easy_install internally). The one which I prefer so far is this one: https://pypi.python.org/pypi/djangopypi2. 
+
+
+
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
 
