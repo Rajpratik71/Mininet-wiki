@@ -399,11 +399,11 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
 
 1. Fetch the Mininet source tree if you haven't already
 
-   git clone http://mininet.github.com/mininet/mininet
+    git clone http://mininet.github.com/mininet/mininet
 
 2. Run an example
 
-   sudo mininet/examples/treeping64.py
+    sudo mininet/examples/treeping64.py
 
 Note some examples (`consoles.py`, `miniedit.py`) require you to have set up
 [X11 forwarding](#x11-forwarding). Others require that you have installed the
