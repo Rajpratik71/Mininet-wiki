@@ -404,7 +404,7 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
    sudo mininet/examples/treeping64.py
 
 Note some examples (`consoles.py`, `miniedit.py`) require you to have set up
-[[ X11 forwarding | #x11-forwarding ]]. Others require that you have installed the
+[X11 forwarding](#x11-forwarding). Others require that you have installed the
 OpenFlow reference implementation using `mininet/util/install.sh -f`. Consult
 the comments in the example's `.py` file for details.
 
