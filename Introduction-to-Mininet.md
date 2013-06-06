@@ -497,6 +497,29 @@ descriptors) or `select.poll()` or any other mechanism that works.
 
 If you find bugs in the `popen()` interface, please let us know.
 
+### Important: Shared Filesystem!
+
+One think to keep in mind is that by default Mininet hosts *share the
+root filesystem* of the underlying server. Usually this is a very good thing,
+since it is a huge pain (and slow) to create a separate filesystem for each 
+Mininet host (which you can do if you like and then chroot into it!)
+
+Sharing the root filesystem also means that you almost never need to copy
+data between Mininet hosts because it's already there.
+
+One side-effect of this however is that hosts share the Mininet server's
+`/etc` directory. This means that if you require specific configuration for
+a program (e.g. `httpd`) then you may need to create different configuration
+files for each Mininet host and specify them as startup options to the program
+that you are running.
+
+Another side-effect is that you can have file collisions if you try to create
+the same file in the same directory on multiple hosts.
+
+In the future we may provide a mechanism to automatically create a file structure
+for each Mininet host that shares most of the underlying filesystem but
+allows for custom directories (e.g. `/etc`) as desired.
+
 <a id=config></a>
 
 ### Host Configuration Methods
