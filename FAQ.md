@@ -373,7 +373,7 @@ run(host='localhost', port=8080 )
 
 This allows you to send simple commands to your Mininet hosts. 
 
-*Note that `host.pexec()` (like `host.cmd()`) runs commands as root, so this isn't really something you want to expose to the whole internet (though it might be OK to firewall port 8080 on your Mininet server and then use `ssh` for a secure connection.) But it's quite convenient, isn't it? In a real example you would probably want a method to shut down both the REST server and the Mininet network in a graceful manner rather than using control-C and `mn -c`.]*
+*Note that `host.pexec()` (like `host.cmd()`) runs commands as root, so this isn't really something you want to expose to the whole internet (though you could firewall port 8080 on your Mininet server and then use `ssh` for a secure connection.) But it's quite convenient, isn't it? In a real example you would probably want a method to shut down both the REST server and the Mininet network in a graceful manner rather than using control-C and `mn -c`.]*
 
 After running this script in one window:
 
