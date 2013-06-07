@@ -379,10 +379,10 @@ After running this script in one window:
 
     $ sudo ./rest.py
 
-You can easily try it out. For example, you could run the `ifconfig` command on host `h1` as follows:
+You can easily try it out. For example, you could run the `ifconfig h1-eth0` command on host `h1` as follows:
 
 ```
-$ curl localhost:8080/cmd/h1/ifconfig
+$ curl localhost:8080/cmd/h1/ifconfig%20h1-eth0
 h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9  
           inet addr:10.0.0.1  Bcast:10.255.255.255  Mask:255.0.0.0
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
@@ -390,8 +390,8 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
           TX packets:3 errors:0 dropped:0 overruns:0 carrier:0
           collisions:0 txqueuelen:1000 
           RX bytes:328 (328.0 B)  TX bytes:238 (238.0 B)
-...
 ```
+Note that you need to escape the space in `ifconfig h1-eth0` as `%20` to make a valid URL path.
 
 ***
 <a id=examples></a>
