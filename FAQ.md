@@ -361,8 +361,8 @@ net = Mininet( topo=SingleSwitchTopo( 2 ) )
 
 @route('/cmd/<node>/<cmd>')
 def cmd( node='h1', cmd='hostname' ):
-    result = net.get( node ).cmd( cmd )
-    return result
+    out, err, code = net.get( node ).pexec( cmd )
+    return out + err
 
 @route('/stop')
 def stop():
