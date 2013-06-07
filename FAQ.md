@@ -391,7 +391,7 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
           collisions:0 txqueuelen:1000 
           RX bytes:328 (328.0 B)  TX bytes:238 (238.0 B)
 ```
-Note that you need to escape the space in `ifconfig h1-eth0` as `%20` to make a valid URL path.
+Note that you need to escape the space in `ifconfig h1-eth0` as `%20` as you would normally in a URL.
 
 ***
 <a id=examples></a>
