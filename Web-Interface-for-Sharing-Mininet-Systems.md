@@ -50,7 +50,7 @@ Other things:
 - Wrapper script to upload/download modules. If we use djangopypi2 as our package server, then the command needed to upload/download modules are quite long e.g.:
     - Upload: python setup.py register -r local sdist upload -r local
     - Download: pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage
-- The user interface is nice enough but with rough edges here and there. It shouldn't take long to fix it though.
+- The user interface is nice enough but it has rough edges here and there. Shouldn't take long to fix though.
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
