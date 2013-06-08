@@ -36,15 +36,15 @@ I have evaluated djangopypi2 and concluded that while the features we most likel
 The features currently supported are:
 - Registering/uploading package (or new version of package) through setup.py
 - "pip install SomePackage" is working
-- Support for package permission (e.g. who can upload new version of a package)
+- Package permission (e.g. who can upload new version of a package)
 
 The features we want but not currently supported are:
 - User interface for user registration (currently can only add user manually through admin panel)
-- User interface for package maintainer to manage package permission (e.g. who can upload new version of a package)
-- Search for packages through the website
+- User interface for package maintainer to manage package permission (same as user registration, currently can only do this through admin panel)
+- Search for packages in the website
 
 Features not working, but not really needed:
-- "pip search" does not work, but searching through the website should be enough
+- "pip search" does not work, but searching in the website should be enough
 
 Other things:
 - Wrapper script to upload/download modules. If we use djangopypi2 as our package server, then the command needed to upload/download modules are quite long e.g.:
