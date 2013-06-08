@@ -21,7 +21,7 @@ The next challenge is to actually create the website to host the packages.
 Since I am strictly a leecher from PyPI, I will need to take a look at PyPI or CPAN or possibly other package repository websites to see what are the possible problems in building a website like these.
 
 
-Update #1:
+####Update #1:
 
 Looks like typical python source package format is good enough to store the Mininet modules/systems and their dependencies. If we use this format, then we will be able to use all existing python tools (e.g. pip) to automatically resolve, download and install dependencies and also to create and upload packages.  
 
@@ -29,7 +29,7 @@ We can either reuse existing PyPI or create a clone of PyPI exclusively to store
 
 Several available open source clone of PyPI are already available. These clones will be useful as a starting point so I won't have to reimplement to PyPI XML-RPC API (used by pip and easy_install internally). The one which I prefer so far is this one: https://pypi.python.org/pypi/djangopypi2. 
 
-Update #2:
+####Update #2:
 
 I have evaluated djangopypi2 and concluded that while the features we most likely want are not all supported, with some effort, they should all be implementable.
 
@@ -47,7 +47,7 @@ Features not working, but not really needed:
 - "pip search" does not work, but searching in the website should be enough
 
 Other things:
-- Wrapper script to upload/download modules. If we use djangopypi2 as our package server, then the command needed to upload/download modules are quite long e.g.:
+- Wrapper script to upload/download modules. If we use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
     - Upload: python setup.py register -r local sdist upload -r local
     - Download: pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage
 - The user interface is nice enough but it has rough edges here and there. Shouldn't take long to fix though.
