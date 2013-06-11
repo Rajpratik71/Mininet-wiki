@@ -44,7 +44,7 @@ The features we want but not currently supported are:
 - Search for packages in the website
 
 Features not working, but not really needed:
-- "pip search" does not work, but searching in the website should be enough
+- "pip search" does not work, but searching in the website should be enough (Update: This will be fixed by the maintainer)
 
 Other things:
 - Wrapper script to upload/download modules. If we use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
