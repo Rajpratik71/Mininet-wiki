@@ -1,4 +1,4 @@
-Basic Workflow
+### Basic Workflow
 
 prepare
 - download cloud image if it's missing
