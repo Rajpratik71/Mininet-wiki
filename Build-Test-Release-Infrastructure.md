@@ -16,4 +16,4 @@ test
 release
 - shut down VM
 - shrink-wrap VM
-- upload to storage
+- upload to [s3] storage
