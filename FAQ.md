@@ -252,7 +252,7 @@ Also see [[Mininet API Documentation]] for information on how to generate Minine
 
 ### Why can't I **ping Google** from my Mininet hosts?
 
-You can't ping Google because your Mininet network is not connected to the internet. This is usually a good thing!  Usually Mininet networks use a non-routable IP address range like 10.0.0.0/8. 
+You can't ping `google.com` because your Mininet network is not connected to the internet. This is usually a good thing!  Usually Mininet networks use a non-routable IP address range like `10.0.0.0/8`. 
 
 However, you can set up NAT if you like.
 
