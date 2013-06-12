@@ -266,12 +266,12 @@ Another updated version of the script can be found here: [[Mininet NAT Script | 
 
 Note that:
 
-* The script assumes that `eth0` is the host interface connected to the internet/your LAN
-  -> you may need to change it if this is not the case!
+* The script assumes that `eth0` is the host interface connected to the internet/your LAN.
+  You may need to change it if this is not the case!
 
 * The script adds the following line to `/etc/network/interfaces`:
 
-    iface root-eth0 inet manual
+        iface root-eth0 inet manual
 
 If this script does not work for you, please make an effort to debug and fix the problem, and then update this FAQ entry.
 
