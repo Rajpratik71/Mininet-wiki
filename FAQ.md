@@ -424,6 +424,16 @@ the comments in the example's `.py` file for details.
 
         mininet> dpctl dump-flows s1
 
+or
+
+        mininet> s1 ovs-ofctl dump-flows s1
+
+or
+
+        mininet> sh ovs-ofctl dump-flows s1
+
+(assuming `s1` is in the root namespace).
+
 3. If you want to open up a listening port on the switch, you need to specify the base listening port, e.g.
 
         net = Mininet( topo=topo, listenPort=6634 )
