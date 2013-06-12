@@ -14,4 +14,4 @@ To have a component in each controller(POX, Floodlight) that generates a mininet
 
 > Link: each end's MAC + port no(if possible)
 
-* Using the above information and mininet API create mininet python file for physical topology.
+* Using the above information and mininet API, create mininet python file for physical topology.
