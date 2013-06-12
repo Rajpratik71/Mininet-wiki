@@ -437,6 +437,8 @@ the comments in the example's `.py` file for details.
 
         net = Mininet( topo=topo, listenPort=6634 )
 
+    Ports will be allocated sequentially starting with the value you specify.
+
 ***
 <a id=multiple-controllers></a>
 ### How can I use **multiple controllers** in my network?
