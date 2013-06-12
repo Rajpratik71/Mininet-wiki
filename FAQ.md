@@ -432,7 +432,7 @@ or
 
         mininet> sh ovs-ofctl dump-flows s1
 
-(assuming `s1` is in the root namespace).
+    (assuming `s1` is in the root namespace).
 
 3. If you want to open up a listening port on the switch, you need to specify the base listening port, e.g.
 
