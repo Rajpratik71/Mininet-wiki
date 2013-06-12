@@ -32,6 +32,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How can I **control Mininet hosts remotely**?](#remote-control)
 * [How can I add a **REST API** to Mininet?](#rest)
 * [How do I run the **Mininet examples**?](#examples)
+* [Why doesn't `dpctl` work? How can I dump a switch's flow table?](#dpctl)
 
 ###  OpenFlow Questions
 
@@ -409,6 +410,22 @@ Note some examples (`consoles.py`, `miniedit.py`) require you to have set up
 [X11 forwarding](#x11-forwarding). Others require that you have installed the
 OpenFlow reference implementation using `mininet/util/install.sh -f`. Consult
 the comments in the example's `.py` file for details.
+
+***
+<a id=dpctl></a>
+
+### Why doesn't `dpctl` work? How can I dump a switch's flow table?
+
+1. The correct command to use from the shell prompt is
+
+    $ sudo ovs-ofctl dump-flows s1
+
+2. The correct command to use from the Mininet prompt is
+
+    mininet> dpctl dump-flows s1
+
+3. If you want to open up a listening port on the switch, you need to specify the base listening port, e.g.
+    net = Mininet( topo=topo, listenPort=6634 )
 
 ***
 <a id=multiple-controllers></a>
