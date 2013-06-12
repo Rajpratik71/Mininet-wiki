@@ -267,9 +267,9 @@ Another updated version of the script can be found here: [[Mininet NAT Script | 
 Note that:
 
 * The script assumes that `eth0` is the host interface connected to the internet/your LAN
-* The script turns off `network-manager`, which *might disable your wireless* network on Ubuntu desktop
+  -> you may need to change it if this is not the case!
 
-As an alternative to turning off `network-manager`, you can add the following line to `/etc/network/interfaces`:
+* The script adds the following line to `/etc/network/interfaces`:
 
     iface root-eth0 inet manual
 
