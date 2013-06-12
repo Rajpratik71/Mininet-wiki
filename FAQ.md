@@ -57,6 +57,8 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 <a id=get-started></a>
 ### How can I **get started** with Mininet?
 
+Quick answer: Follow the steps on our [[Documentation]] page!
+
 The best way to get started with Mininet is to install our ready-to-run virtual machine image as per our [Download](http://mininet.github.com/download) instructions, then go through the [Walkthrough](http://mininet.github.com/walkthrough), and then continue with the other steps on our [[Documentation]] page. You may find the [[Introduction to Mininet]] and the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]] to be particularly useful in helping you to understand and use Mininet and OpenFlow/Software-Defined Networking, respectively.
 
 ***
