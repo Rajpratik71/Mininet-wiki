@@ -420,6 +420,9 @@ the comments in the example's `.py` file for details.
 
         $ sudo ovs-ofctl dump-flows s1
 
+    If you try to use `ovs-dpctl` or `dpctl` with Open vSwitch, you will only see the cached flows
+    in the kernel rather than the switch's full flow table.
+
 2. The correct command to use from the Mininet prompt is
 
         mininet> dpctl dump-flows s1
