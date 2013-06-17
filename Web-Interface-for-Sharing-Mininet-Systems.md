@@ -20,7 +20,8 @@ For this part of project, my plan is to use the existing Python packaging system
 The benefits of doing this are:
 - Module dependencies can already be defined in the packaging system
 - Ability to use existing Python tools (e.g.: `pip`, `setup.py`) to download and upload modules
-- Tools to automatically resolve and download dependencies already exist (e.g.: `pip`, `easy_install`)  
+- Tools to automatically resolve and download dependencies already exist (e.g.: `pip`, `easy_install`)
+
 I intend to use `pip` and `setup.py` to download and upload packages respectively.
 
 Since the tools already exist, then the only thing remaining is to build the PyPI clone itself. The PyPI clone should support:  
