@@ -14,43 +14,32 @@ do with the system, considering what you could actually build without too much d
 
 
 ### PyPI or CPAN for Mininet
-For this objective, we firstly need a way to create a package for Mininet module/system first.
-From what I know so far (hint: not very much), I think plain old python eggs are quite suitable for packaging a Mininet module/system. I need to take a closer look at python eggs to confirm this.
 
-The next challenge is to actually create the website to host the packages.
-Since I am strictly a leecher from PyPI, I will need to take a look at PyPI or CPAN or possibly other package repository websites to see what are the possible problems in building a website like these.
+For this part of project, my plan is to use the existing Python packaging system for Mininet and build a PyPI clone just for Mininet modules.
 
+The benefits of doing this are:
+- Module dependencies can already be defined in the packaging system
+- Ability to use existing Python tools (e.g.: `pip`, `setup.py`) to download and upload modules
+- Tools to automatically resolve and download dependencies already exist (e.g.: `pip`, `easy_install`)
+I intend to use `pip` and `setup.py` to download and upload packages respectively.
 
-####Update #1:
+Since the tools already exist, then the only thing remaining is to build the PyPI clone itself. The PyPI clone should support:  
+1. Package installation using `pip install`  
+2. Package uploading using `python setup.py register sdist upload`  
+3. Define package permission (e.g.: who can upload new version of package, who can delete package)  
+4. UI to search for packages  
+5. UI for user registration  
+6. UI to manage the uploaded packages (e.g.: add/remove maintainer)  
 
-Looks like typical python source package format is good enough to store the Mininet modules/systems and their dependencies. If we use this format, then we will be able to use all existing python tools (e.g. pip) to automatically resolve, download and install dependencies and also to create and upload packages.  
+Out of those 6, 1 & 2 are the most troublesome to implement because the website has to adhere to some convention in order for these to work.
 
-We can either reuse existing PyPI or create a clone of PyPI exclusively to store Mininet modules/systems. If we create a clone, then we can simply redirect the package installer (e.g. pip) to download from the clone website instead of PyPI.  
+I have already evaluated various existing open source PyPI clone and find that `djangopypi2` is quite functional and maintained relatively well. If I am allowed to use djangopypi2 as a base, then 1 & 2 are already done. However, I am still waiting for some reply regarding to the licensing issue.
 
-Several available open source clone of PyPI are already available. These clones will be useful as a starting point so I won't have to reimplement to PyPI XML-RPC API (used by pip and easy_install internally). The one which I prefer so far is this one: https://pypi.python.org/pypi/djangopypi2. 
-
-####Update #2:
-
-I have evaluated djangopypi2 and concluded that while the features we most likely want are not all supported, with some effort, they should all be implementable.
-
-The features currently supported are:
-- Registering/uploading package (or new version of package) through setup.py
-- "pip install SomePackage" is working
-- Package permission (e.g. who can upload new version of a package)
-
-The features we want but not currently supported are:
-- User interface for user registration (currently can only add user manually through admin panel)
-- User interface for package maintainer to manage package permission (same as user registration, currently can only do this through admin panel)
-- Search for packages in the website
-
-Features not working, but not really needed:
-- "pip search" does not work, but searching in the website should be enough (Update: This will be fixed by the maintainer)
-
-Other things:
-- Wrapper script to upload/download modules. If we use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
-    - Upload: python setup.py register -r local sdist upload -r local
-    - Download: pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage
-- The user interface is nice enough but it has rough edges here and there. Shouldn't take long to fix though.
+Other things worth mentioning:
+- Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
+  - Upload: `python setup.py register -r local sdist upload -r`  
+  - Download: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
+- If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
