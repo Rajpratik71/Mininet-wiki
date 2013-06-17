@@ -15,7 +15,7 @@ do with the system, considering what you could actually build without too much d
 
 ### PyPI or CPAN for Mininet
 
-For this part of project, my plan is to use the existing Python packaging system for Mininet and build a PyPI clone just for Mininet modules.
+For this part of project, my plan is to use the existing Python packaging system (based on `distribute`) for Mininet and build a PyPI clone just for Mininet modules.
 
 The benefits of doing this are:
 - Module dependencies can already be defined in the packaging system
