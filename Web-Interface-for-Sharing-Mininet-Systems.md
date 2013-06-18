@@ -47,7 +47,7 @@ Other things worth mentioning:
 
 BL Comments:
 
-<i>I think it would be really useful to explain what the whole use case of this is. Consider, for example, that we might want to make a library of Mininet topologies that can be easily used. Can you explain how someone would find a topology, download it, and then use it from both the Mininet command line and from the script?</i>
+<i>I think it would be really useful to explain what the whole use case of this is. Consider, for example, that we might want to make a library of Mininet topologies that can be easily used. Can you explain how someone would find a topology, download it, and then use it from both the Mininet command line and from the script? Also suppose someone has a new `Switch()` subclass - for example something that uses the Linux bridge or Click or creates a simple IP router - how would the creator of the script upload it to the system, and how would users find the new object, install it, figure out how to use it, and use it from either the command line or a Python script?</i>
 
 <i>Also if possible I would like you to come up with an idea of the next things you'll be working on, preferably something that's small enough to complete and demonstrate in some form in the next week or two, and also write it down on this page so that I can take a look at it and give you some feedback and advice.
 </i>
