@@ -40,7 +40,7 @@ BL: Having a separate project for this, keeping the FreeBSD license, is fine.
 
 Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
-  - Upload: `python setup.py register -r local sdist upload -r`  
+  - Upload: `python setup.py register -r local sdist upload -r local`  
   - Download: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
@@ -51,6 +51,22 @@ BL Comments:
 
 <i>Also if possible I would like you to come up with an idea of the next things you'll be working on, preferably something that's small enough to complete and demonstrate in some form in the next week or two, and also write it down on this page so that I can take a look at it and give you some feedback and advice.
 </i>
+
+##### Use cases:
+- Uploading a package:
+  - User who wants to submit new package must register to the website.
+  - User must create a file called `.pypirc` defining the URL of the PyPI and the login information. This is a one-time setup thing.
+  - Once registered, for every package that the user wants to submit to the website, the user will have to write some package metadata in a `setup.py` file. The syntax of the package metadata will have to follow the syntax of typical Python package. Ideally, the user should write all of the followings: package name, package version, short description (1-2 sentences), long description (installation instruction, documentation etc) and the dependencies.
+  - Once the setup.py file is written, the user will simply run `python setup.py register -r local sdist upload -r local` on the command line to automatically zip everything, register and upload the file to a PyPI called `local` (as defined in the `.pypirc`).
+
+- Searching & downloading a package:
+  - User do NOT need to register to download a package.
+  - User must install pip on his own system. Available on Ubuntu with package name: `python-pip`.
+  - To search for a package, user can go to the website and search according to some search criteria. User can also do a `pip search <term>` from a command line (waiting for a fix from djangopypi2 maintainer for this part).
+  - From the search result, user can view the matching package page which will show the long description (as written by package uploader) and download the zipped package (without the dependencies) just like in real PyPI.
+  - If user wants resolve all package dependencies automatically, user can install the package using pip just like this: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`.
+  - `pip install` will automatically put all the executables in the package into one of the folders in $PATH (i.e. simply typing the executable name will work) and the python library in one of the folders in python paths (i.e. a simple `import something` in a python script will work). If `virtualenv` is used, then executables will go into `bin/` and library will go to `lib/pythonX.Y/site-packages/` under the virtual environment.
+  - For uninstallation, `pip uninstall <package name>` will uninstall a package. For me, the best way is to use a `virtualenv` folder and simply delete the folder once I don't need it. I am not sure if Mininet users will like it though.
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
