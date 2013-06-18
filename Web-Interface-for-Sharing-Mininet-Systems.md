@@ -42,6 +42,14 @@ Other things worth mentioning:
   - Download: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
+
+BL Comments:
+
+<i>I think it would be really useful to explain what the whole use case of this is. Consider, for example, that we might want to make a library of Mininet topologies that can be easily used. Can you explain how someone would find a topology, download it, and then use it from both the Mininet command line and from the script?
+
+Also if possible I would like you to come up with an idea of the next things you'll be working on, preferably something that's small enough to complete and demonstrate in some form in the next week or two, and also write it down on this page so that I can take a look at it and give you some feedback and advice.
+</i>
+
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
 
