@@ -35,6 +35,7 @@ Mininet Documentation
 * **[[Mininet Project Ideas | Ideas]]** - Proposed Mininet features for Google Summer of Code or other projects
 * [[Futures]] A few (mostly older) thoughts on future Mininet features/futures
 * [[Mininet 2.0.0 Testing Plan and Projects]]
+* Mininet [[Documentation Plan]]
 
 <!-- comment this out since it's obsolete
 * [Release Plan](Release-Plan) Planning and task lists for Mininet releases
