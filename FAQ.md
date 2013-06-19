@@ -355,7 +355,7 @@ Basically anything you can do in Python you can do in Mininet, and it's often ve
 
 Note however that if you are running locally it's much easier to control Mininet directly from within a Python script or using the CLI.
 
-It's trivial to add a REST (or ReST if you prefer) API to Mininet using Python. Using the [[ Bottle | http://bottlepy.org ]] framework, you could do something like:
+It's trivial to add a REST (or ReST if you prefer) API to Mininet using Python. For example, using the [[ Bottle | http://bottlepy.org ]] framework, you could do something like:
 
 ```python
 #!/usr/bin/python
