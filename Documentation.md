@@ -34,7 +34,7 @@ Mininet Documentation
 * [[The Mininet Approach to Network Research and Prototyping | Mininet Approach]] Principles that have guided Mininet's design
 * **[[Mininet Project Ideas | Ideas]]** - Proposed Mininet features for Google Summer of Code or other projects
 * [[Futures]] A few (mostly older) thoughts on future Mininet features/futures
-* [[Testing]] Thoughts on Mininet testing (test plan)
+* [[Mininet 2.0.0 Testing Plan and Projects]]
 
 <!-- comment this out since it's obsolete
 * [Release Plan](Release-Plan) Planning and task lists for Mininet releases
