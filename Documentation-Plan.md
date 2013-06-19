@@ -28,7 +28,7 @@ The Introduction to Mininet is an important step towards explaining how the Mini
 
 #### Example-focused documentation
 
-Mininet comes with a good selection of useful example code in the examples/ directory. Unfortunately few people seem to take advantage of this code, and many people ask questions on the mailing list indicating they not only don't understand the code, but they haven't even read it or tried to understand it, and they don't even have any idea of how to run it! Although cluelessness is eternal, we can certainly leverage the existing examples by writing prose to explain their rationale, design, and usage. This would create a series of modular lessons which would help not only to understand the examples and the problems they are trying to solve, but also the rationale usage of the Mininet API and some finer aspects of SDN and OpenFlow which seem to escape many.
+Mininet comes with a good selection of useful example code in the `examples/` directory. Unfortunately few people seem to take advantage of this code, and many people ask questions on the mailing list indicating they not only don't understand the code, but they haven't even read it or tried to understand it, and they don't even have any idea of how to run it! Although cluelessness is eternal, we can certainly leverage the existing examples by writing prose to explain their rationale, design, and usage. This would create a series of modular lessons which would help not only to understand the examples and the problems they are trying to solve, but also the rationale usage of the Mininet API and some finer aspects of SDN and OpenFlow which seem to escape many.
 
 #### `make doc` should build all documentation(?)
 
@@ -48,7 +48,7 @@ One possibility is that we may be able to work with Piazza to extract the CS244 
 
 #### Stackoverflow for questions?
 
-Stackoverflow.com works great for Python - there is a large critical mass of information, a large community of users who contribute that information, and that information is well-indexed by Google. It may be possible, given enough interest and content, to create a Mininet space on stackexchange.com.
+http://stackoverflow.com works great for Python - there is a large critical mass of information, a large community of users who contribute that information, and that information is well-indexed by Google. It may be possible, given enough interest and content, to create a Mininet space on stackexchange.com.
 
 #### Videos
 
