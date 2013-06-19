@@ -34,11 +34,11 @@ We want to have a means of ensuring that the examples don’t break! probably ea
 
 Ideally many examples can serve as instructive and realistic demonstrations of what Mininet can do, as starter code to build upon, and as system-level tests.
 
-### Scalability and performance tests!!
+#### Scalability and performance tests!!
 
 A goal of Mininet was "1000 nodes in a laptop" - we really need to identify the true capabilities and scalability of Mininet; I think we should have some tests which you can run to determine the largest network that you can simulate in various modes on Mininet. Ultimately scalability and performance tests should be part of a feedback loop to improve Mininet's performance and to enable scale-up and scale-out (e.g. to the original goal of simulating all of Stanford on a cluster.)
 
-### General automated builds and testing
+#### General automated builds and testing
 
 We should have an automated system for regularly grabbing current branches of Mininet and making sure that they can be built and run; additionally, we should make it possible to create (and test) VM images easily and in an automated fashion.
 
