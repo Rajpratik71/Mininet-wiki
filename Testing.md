@@ -16,7 +16,7 @@ Mininet's testing infrastructure is currently minimal. For 2.0.0 we tested the s
 
 #### Other tests
 
-- All examples in examples/ should run correctly.
+- All examples in `examples/` should run correctly.
 - VMs and EC2 images should work.
 - Walkthrough should work
 
