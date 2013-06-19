@@ -1,6 +1,4 @@
-Mininet Documentation Plan/Projects
-
-Bob Lantz, January 2013
+Mininet Documentation Plan/Projects<br>Bob Lantz, January 2013
 
 What should be done to improve the documentation and make it easier for people use, develop for, and contribute to Mininet.
 
