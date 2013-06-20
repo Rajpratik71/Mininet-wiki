@@ -36,7 +36,7 @@ Out of those 6, 1 & 2 are the most troublesome to implement because the website 
 
 I have already evaluated various existing open source PyPI clone and find that `djangopypi2` is quite functional and maintained relatively well. If I am allowed to use djangopypi2 as a base, then 1 & 2 are already done. However, I am still waiting for some reply regarding to the licensing issue.
 
-BL: Having a separate project for this, keeping the FreeBSD license, is fine.
+<i>BL: Having a separate project for this, keeping the FreeBSD license, is fine.</i>
 
 Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
@@ -67,6 +67,8 @@ BL Comments:
   - If user wants resolve all package dependencies automatically, user can install the package using pip just like this: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`.
   - `pip install` will automatically put all the executables in the package into one of the folders in $PATH (i.e. simply typing the executable name will work) and the python library in one of the folders in python paths (i.e. a simple `import something` in a python script will work). If `virtualenv` is used, then executables will go into `bin/` and library will go to `lib/pythonX.Y/site-packages/` under the virtual environment.
   - For uninstallation, `pip uninstall <package name>` will uninstall a package. For me, the best way is to use a `virtualenv` folder and simply delete the folder once I don't need it. I am not sure if Mininet users will like it though.
+
+<i>BL: It's difficult for me to get my head around what we're actually creating here. Are we assuming that people are going to package their Mininet extensions as Python modules? Is that the right mechanism? Maybe it is, although it seems as if it might be overkill for something as simple as a topology, and perhaps inadequate for something like a multipath topology which requires a multipath controller.</i>
 
 #### Plan for the this week (17-21 June):
 - I am currently working on the user registration page (item no. 5 above) in djangopypi2. It currently only supports adding new user through the admin panel, which is not supposed to be accessible to anyone but the admin. This shouldn't take more than 2 days. [DONE]
