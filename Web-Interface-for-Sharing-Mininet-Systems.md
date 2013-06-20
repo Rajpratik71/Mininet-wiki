@@ -42,12 +42,12 @@ Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
   - Upload: `python setup.py register -r local sdist upload -r local`  
   - Download: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
+
+<i>BL: Agreed! We want to make it as easy as possible. I think we may want to include this script in the Mininet distribution itself, and also make it easily downloadable from the site. But I have a question: does pip not have anything like apt's sources.list?</i>
+
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
-
-BL Comments:
-
-<i>I think it would be really useful to explain what the whole use case of this is. Consider, for example, that we might want to make a library of Mininet topologies that can be easily used. Can you explain how someone would find a topology, download it, and then use it from both the Mininet command line and from the script? Also suppose someone has a new `Switch()` subclass - for example something that uses the Linux bridge or Click or creates a simple IP router - how would the creator of the script upload it to the system, and how would users find the new object, install it, figure out how to use it, and use it from either the command line or a Python script?</i>
+<i>BL: I think it would be really useful to explain what the whole use case of this is. Consider, for example, that we might want to make a library of Mininet topologies that can be easily used. Can you explain how someone would find a topology, download it, and then use it from both the Mininet command line and from the script? Also suppose someone has a new `Switch()` subclass - for example something that uses the Linux bridge or Click or creates a simple IP router - how would the creator of the script upload it to the system, and how would users find the new object, install it, figure out how to use it, and use it from either the command line or a Python script?</i>
 
 <i>Also if possible I would like you to come up with an idea of the next things you'll be working on, preferably something that's small enough to complete and demonstrate in some form in the next week or two, and also write it down on this page so that I can take a look at it and give you some feedback and advice.
 </i>
