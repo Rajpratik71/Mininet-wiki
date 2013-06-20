@@ -36,7 +36,7 @@ Out of those 6, 1 & 2 are the most troublesome to implement because the website 
 
 I have already evaluated various existing open source PyPI clone and find that `djangopypi2` is quite functional and maintained relatively well. If I am allowed to use djangopypi2 as a base, then 1 & 2 are already done. However, I am still waiting for some reply regarding to the licensing issue.
 
-<i>BL: Having a separate project for this, keeping the FreeBSD license, is fine.</i>
+<i>BL: Having a separate project that uses the FreeBSD license is fine. It's just important for Mininet that everything be open source and that everything that's part of Mininet proper be under a permissive BSD/MIT/Apache style license.</i>
 
 Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
