@@ -69,8 +69,8 @@ BL Comments:
   - For uninstallation, `pip uninstall <package name>` will uninstall a package. For me, the best way is to use a `virtualenv` folder and simply delete the folder once I don't need it. I am not sure if Mininet users will like it though.
 
 #### Plan for the this week (17-21 June):
-- I am currently working on the user registration page (item no. 5 above) in djangopypi2. It currently only supports adding new user through the admin panel, which is not supposed to be accessible to anyone but the admin. This shouldn't take more than 2 days.
-- I will setup a free Amazon EC2 instance as well. I will set VNC and the djangopypi2 running there so you can track my progress by using VNC to the EC2 instance and running the browser. I have no idea how long this will take.
+- I am currently working on the user registration page (item no. 5 above) in djangopypi2. It currently only supports adding new user through the admin panel, which is not supposed to be accessible to anyone but the admin. This shouldn't take more than 2 days. [DONE]
+- I will setup a free Amazon EC2 instance as well. I will set VNC and the djangopypi2 running there so you can track my progress by using VNC to the EC2 instance and running the browser. I have no idea how long this will take. [DONE]
 - Remaining time will be spent to develop either of item no. 3, 4, 6. I will most likely leave item no. 4 for later though.
 
 ### Complete system/VM/experiment archive
