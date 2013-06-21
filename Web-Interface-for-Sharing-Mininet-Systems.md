@@ -81,6 +81,10 @@ Follow-up: it looks like you've done that, great!
 
 <i>BL: It's difficult for me to get my head around what we're actually creating here. Are we assuming that people are going to package their Mininet extensions as Python modules? Is that the right mechanism? Maybe it is, although it seems as if it might be overkill for something as simple as a topology, and perhaps inadequate for something like a multipath topology which requires a multipath controller.</i>
 
+**Heryandi**
+Yeah, I intend to use the existing Python packaging system to package Mininet modules as well. I think the packaging system is general enough to support this. It is kind of an overkill for something simple like 1 additional topology (well, any packaging system is overkill for something as small as this), but I am quite confident that it can support packaging a mininet system with multipath topology and multipath controller implemented with POX.
+**End**
+
 #### Plan for the this week (17-21 June):
 - I am currently working on the user registration page (item no. 5 above) in djangopypi2. It currently only supports adding new user through the admin panel, which is not supposed to be accessible to anyone but the admin. This shouldn't take more than 2 days. [DONE]
 - I will setup a free Amazon EC2 instance as well. I will set VNC and the djangopypi2 running there so you can track my progress by using VNC to the EC2 instance and running the browser. I have no idea how long this will take. [DONE]
