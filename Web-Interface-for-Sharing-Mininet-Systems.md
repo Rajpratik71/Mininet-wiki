@@ -38,12 +38,21 @@ I have already evaluated various existing open source PyPI clone and find that `
 
 <i>BL: Having a separate project that uses the FreeBSD license is fine. It's just important for Mininet that user packages be open source and that everything that's part of Mininet proper be under Mininet's permissive BSD/MIT-style license. One interesting question is: do we have license requirements for submitted code? Probably we want to allow any Open Source license as PyPI does, and allow it to be specified on the package page. I think we may not want to require BSD-style licensing for all packages or Mininet-based systems that aren't part of Mininet proper, because some of them may include GPL code and we don't want to exclude them on licensing grounds. For full system images, we might consider permitting some closed-source components as long as they can be distributed freely, but the goal is to have something which people can examine and build upon.</i>
 
+**Heryandi**  
+Not sure what you mean here... Do you mean restrictions for the license of package submitted to the PyPI clone from GSoC? I don't think there is any restrictions on that, so any license should be fine. Note: Now that you brought up the licensing issue of full-system image, I updated the bottom part of this wiki as well.  
+**End**
+
 Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
   - Upload: `python setup.py register -r local sdist upload -r local`  
   - Download: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
 
 <i>BL: Agreed! We want to make it as easy as possible. I think we may want to include this script in the Mininet distribution itself, and also make it easily downloadable from the site. But I have a question: does pip not have anything like apt's sources.list?</i>
+
+**Heryandi**  
+There is a configuration file, although it works a little differently than /etc/apt/sources/list. The pip.conf file (described [here](http://www.pip-installer.org/en/latest/configuration.html) can be used to set the default value of the command line arguments. So, if we specify the default value of `--extra-index-url` for `pip install <somepackage>` as `http://localhost:8000/simple/`, then `pip install` will first go to PyPI, and if it fails to find the package then it will visit `http://localhost:8000/simple/`. This definitely can work, but with a minor annoyance to have to fail in PyPI first before visiting `http://localhost:8000/simple/`.  
+Well, either that or we can have a script to temporarily override the `PIP_CONFIG_FILE` environment variable to our own pip.conf and override the default value of `--index-url` rather than `--extra-index-url`, so `http://localhost:8000/simple/` will be visited first.  
+**End**
 
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
@@ -90,3 +99,8 @@ The idea is to create a place for users to submit either of these:
 The item uploaded will be submitted together with a post describing the content and the instruction to replicate the experiment (like the blog posts on reproducingnetworkresearch.wordpress.com).
 
 Note that this "place" for submitting the experiment can possibly be the same website for the previous objective above or reproducingnetworkresearch.wordpress.com or a totally new website since it may be used for more than just Mininet experiments.
+
+**Update**  
+Some experiment codes only work under certain flavor/version of Linux, especially kernel code. In this case, complete VM image is the only way to reproduce the experiment easily.  
+Sometimes experiments may also make use of closed source component. If this closed source component is freely distributable, then the only way to reproduce the experiment easily is again using full VM image.  
+Before we rule out the second choice though, is there a network experiment which requires the experiment to be run on real machines (i.e. not VM)?
