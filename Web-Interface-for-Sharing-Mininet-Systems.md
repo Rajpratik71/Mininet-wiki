@@ -81,8 +81,8 @@ Follow-up: it looks like you've done that, great!
 
 <i>BL: It's difficult for me to get my head around what we're actually creating here. Are we assuming that people are going to package their Mininet extensions as Python modules? Is that the right mechanism? Maybe it is, although it seems as if it might be overkill for something as simple as a topology, and perhaps inadequate for something like a multipath topology which requires a multipath controller.</i>
 
-**Heryandi**
-Yeah, I intend to use the existing Python packaging system to package Mininet modules as well. I think the packaging system is general enough to support this. It is kind of an overkill for something simple like 1 additional topology (well, any packaging system is overkill for something as small as this), but I am quite confident that it can support packaging a mininet system with multipath topology and multipath controller implemented with POX.
+**Heryandi**  
+Yeah, I intend to use the existing Python packaging system to package Mininet modules as well. I think the packaging system is general enough to support this. It is kind of an overkill for something simple like 1 additional topology (well, any packaging system is overkill for something as small as this), but I am quite confident that it can support packaging a mininet system with multipath topology and multipath controller implemented with POX.  
 **End**
 
 #### Plan for the this week (17-21 June):
