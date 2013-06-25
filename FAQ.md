@@ -423,7 +423,11 @@ the comments in the example's `.py` file for details.
 
 ### Why doesn't `dpctl` work? How can I dump a switch's flow table?
 
-1. The correct command to use from the shell prompt is
+`dpctl` should work fine with the Stanford OpenFlow reference implementation or the CPqD version of same.
+
+If you are running Open vSwitch, read on.
+
+1. If you are using Open vSwitch, the correct command to use from the shell prompt is
 
         $ sudo ovs-ofctl dump-flows s1
 
@@ -432,16 +436,13 @@ the comments in the example's `.py` file for details.
 
 2. The correct command to use from the Mininet prompt is
 
-        mininet> dpctl dump-flows s1
-
-    or
-
-        mininet> s1 ovs-ofctl dump-flows s1
+        mininet> dpctl dump-flows
 
     or
 
         mininet> sh ovs-ofctl dump-flows s1
 
+(assuming s1 is in the root namespace.)
 
 3. If you want to open up a listening port on the switch, you need to specify the base listening port, e.g.
 
