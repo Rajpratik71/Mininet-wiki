@@ -425,7 +425,7 @@ the comments in the example's `.py` file for details.
 
 `dpctl` should work fine with the Stanford OpenFlow reference implementation or the CPqD version of same.
 
-If you are running Open vSwitch, read on.
+If you're running Open vSwitch, or need to open up a listening port on either OVS or the reference switch so that you can connect to a port, read on...
 
 1. If you are using Open vSwitch, the correct command to use from the shell prompt is
 
