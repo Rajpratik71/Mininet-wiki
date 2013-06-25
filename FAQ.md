@@ -438,17 +438,25 @@ If you're running Open vSwitch, or need to open up a listening port on either OV
 
         mininet> dpctl dump-flows
 
-    or
+    which dumps all the flows on all switches, and works for both OVS and the reference switch.
+
+    If you're running OVS, you can pass the switch name to `ovs-ofctl` and it will connect
+    to it via the file system:
 
         mininet> sh ovs-ofctl dump-flows s1
 
-(assuming s1 is in the root namespace.)
+     or, from the shell prompt:
+
+        $ ovs-ofctl dump-flows s1
 
 3. If you want to open up a listening port on the switch, you need to specify the base listening port, e.g.
 
         net = Mininet( topo=topo, listenPort=6634 )
 
     Ports will be allocated sequentially starting with the value you specify.
+
+    Note if you want to dump the flows from the reference switch, you will need to have a 
+    listening port opened up.
 
 ***
 <a id=multiple-controllers></a>
