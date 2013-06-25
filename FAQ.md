@@ -425,6 +425,7 @@ the comments in the example's `.py` file for details.
 
 `dpctl` should work fine with the Stanford OpenFlow reference implementation or the CPqD version of same.
 
+
 If you're running Open vSwitch, or need to open up a listening port on either OVS or the reference switch so that you can connect to a port, read on...
 
 1. If you are using Open vSwitch, the correct command to use from the shell prompt is
@@ -456,7 +457,16 @@ If you're running Open vSwitch, or need to open up a listening port on either OV
     Ports will be allocated sequentially starting with the value you specify.
 
     Note if you want to dump the flows from the reference switch, you will need to have a 
-    listening port opened up.
+    listening port opened up; then you can use `dpctl`:
+
+
+        $ dpctl dump-flows tcp:localhost:6634
+
+    Note that `ovs-ofctl` doesn't like `localhost`, so you should use 127.0.0.1:
+
+        $ ovs-ofctl dump-flows tcp:127.0.0.1:6634
+
+
 
 ***
 <a id=multiple-controllers></a>
