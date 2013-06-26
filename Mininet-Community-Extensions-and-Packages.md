@@ -2,7 +2,7 @@ This page is intended to be a simple reference to community-developed extensions
 
 #### Mininet Installation Packages for Other OSes
 
-RHEL/Scientific 6: http://puias.princeton.edu/data/puias/computational/6/SRPMS/mininet-2.0.0-2.puias6.src.rpm
+RHEL/Scientific 6: http://puias.princeton.edu/data/puias/computational/6/SRPMS/
 
 CentOS/Scientific Linux: http://downloads.naulinux.ru/pub/NauLinux/6.3/x86_64/Extras/RPMS/Projects/OpenFlow/
 
