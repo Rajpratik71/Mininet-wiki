@@ -85,10 +85,13 @@ Follow-up: it looks like you've done that, great!
 Yeah, I intend to use the existing Python packaging system to package Mininet modules as well. I think the packaging system is general enough to support this. It is kind of an overkill for something simple like 1 additional topology (well, any packaging system is overkill for something as small as this), but I am quite confident that it can support packaging a mininet system with multipath topology and multipath controller implemented with POX.  
 **End**
 
-#### Plan for the this week (17-21 June):
+#### Plan for the week #1(17-21 June):
 - I am currently working on the user registration page (item no. 5 above) in djangopypi2. It currently only supports adding new user through the admin panel, which is not supposed to be accessible to anyone but the admin. This shouldn't take more than 2 days. [DONE]
 - I will setup a free Amazon EC2 instance as well. I will set VNC and the djangopypi2 running there so you can track my progress by using VNC to the EC2 instance and running the browser. I have no idea how long this will take. [DONE]
-- Remaining time will be spent to develop either of item no. 3, 4, 6. I will most likely leave item no. 4 for later though.
+- Remaining time will be spent to develop either of item no. 3, 4, 6. I will most likely leave item no. 4 for later though. [TO BE CONTINUED]
+
+#### Plan for the week #2(24-28 June):
+- Try out the packaging system with more complicated packages to make sure that it works.
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
