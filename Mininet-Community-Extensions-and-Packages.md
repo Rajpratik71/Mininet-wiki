@@ -16,6 +16,8 @@ Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral
 
 #### Topologies (and Custom Controllers)
 
+[RipL-POX](https://github.com/brandonheller/riplpox) is a multipath-capable controller written in POX. The README explains how to create a Fat Tree topology using Mininet and use it with RipL-POX as the controller.
+
 #### Reproducible Research Experiments
 
 http://reproducingnetworkresearch.wordpress.com
