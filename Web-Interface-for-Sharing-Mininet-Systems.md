@@ -91,7 +91,7 @@ Yeah, I intend to use the existing Python packaging system to package Mininet mo
 - Remaining time will be spent to develop either of item no. 3, 4, 6. I will most likely leave item no. 4 for later though. [TO BE CONTINUED]
 
 #### Plan for the week #2(24-28 June):
-- Try out the packaging system with more complicated packages to make sure that it works.
+- Try out the packaging system with more complicated packages to make sure that the packaging system can work.
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
