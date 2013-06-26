@@ -20,6 +20,6 @@ This page is intended to be a simple reference to community-developed extensions
 
 #### Reproducible Research Experiments
 
-* http://reproducingnetworkresearch.wordpress.com
+* http://reproducingnetworkresearch.wordpress.com includes a variety of reproducible networking experiments implemented using Mininet.
 
 #### Complete SDN Systems Implemented in Mininet
