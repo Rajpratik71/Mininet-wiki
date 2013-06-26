@@ -1,4 +1,4 @@
-This page is intended to be a simple reference to community-developed extensions to Mininet and other packages and tools which may be of interest to Mininet users.
+This page is intended to be a simple reference to community-developed extensions to Mininet and other packages and tools which may be of interest to Mininet users. (Also as part of GSoC we are also prototyping a PyPI-like repository for Mininet-compatible Python packages, so that may be available in the future!)
 
 #### Mininet Installation Packages for Other OSes
 
