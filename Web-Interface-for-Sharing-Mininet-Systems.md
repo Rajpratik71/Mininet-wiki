@@ -97,7 +97,10 @@ Result:
   - `pip install riplpox <+ all other arguments>` can download riplpox + dependencies correctly.
   - The example riplpox experiment on github can be run correctly on mininet (i.e. pingall works).
   - These packages I created may not be completely correct yet. Some utility scripts maybe missing etc. However, overall I am quite confident python packaging system is suitable for our purpose.
-  - Small annoyances: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage` will search for `SomePackage` from both index-url and extra-index-url and download from the index with higher version number. This may cause problem if both the index-url and extra-index-url contains different package with same name. For my experiment, there happens to be a package called `pox` on real PyPI with higher version number, so I have to remove the --extra-index-url so pip will download the pox package I created.
+
+Small annoyances:
+  - `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage` will search for `SomePackage` from both `index-url` and `extra-index-url` and download from the index with higher version number. This may cause problem if both the index-url and extra-index-url contains different packages with same name. For my experiment, there happens to be a package called `pox` on real PyPI with higher version number, so I have to remove the --extra-index-url so pip will download the pox package I created.  
+  - `riplpox` requires older version of `pox`, so I used older version of pox to do this experiment.
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
