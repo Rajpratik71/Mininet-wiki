@@ -4,22 +4,22 @@ This page is intended to be a simple reference to community-developed extensions
 
 #### Mininet Installation Packages for Other OSes
 
-RHEL/Scientific 6: http://puias.princeton.edu/data/puias/computational/6/SRPMS/mininet-2.0.0-2.puias6.src.rpm
+* RHEL/Scientific 6: http://puias.princeton.edu/data/puias/computational/6/SRPMS/mininet-2.0.0-2.puias6.src.rpm
 
-CentOS/Scientific Linux: http://downloads.naulinux.ru/pub/NauLinux/6.3/x86_64/Extras/RPMS/Projects/OpenFlow/
+* CentOS/Scientific Linux: http://downloads.naulinux.ru/pub/NauLinux/6.3/x86_64/Extras/RPMS/Projects/OpenFlow/
 
 #### Customized Mininet Versions
 
-Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral/mn-ccnx/wiki
+* Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral/mn-ccnx/wiki
 
 #### Useful Tools for Mininet Users
 
 #### Topologies (and Custom Controllers)
 
-[RipL-POX](https://github.com/brandonheller/riplpox) is a multipath-capable controller written in POX. The README explains how to create a Fat Tree topology using Mininet and use it with RipL-POX as the controller.
+* [RipL-POX](https://github.com/brandonheller/riplpox) is a multipath-capable controller written in POX. The README explains how to create a Fat Tree topology using Mininet and use it with RipL-POX as the controller.
 
 #### Reproducible Research Experiments
 
-http://reproducingnetworkresearch.wordpress.com
+* http://reproducingnetworkresearch.wordpress.com
 
 #### Complete SDN Systems Implemented in Mininet
