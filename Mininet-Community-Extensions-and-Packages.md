@@ -8,6 +8,10 @@ This page is intended to be a simple reference to community-developed extensions
 
 * CentOS/Scientific Linux: http://downloads.naulinux.ru/pub/NauLinux/6.3/x86_64/Extras/RPMS/Projects/OpenFlow/
 
+#### Useful Tools for Mininet Users
+
+(tbd)
+
 #### Customized Mininet Versions and VMs
 
 * Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral/mn-ccnx/wiki
@@ -18,9 +22,6 @@ This page is intended to be a simple reference to community-developed extensions
 
 * http://reproducingnetworkresearch.wordpress.com includes a variety of reproducible networking experiments implemented using Mininet.
 
-#### Useful Tools for Mininet User
-
 #### New Topologies (and Custom Controllers)
 
 * [RipL-POX](https://github.com/brandonheller/riplpox) is a multipath-capable controller written in POX. The README explains how to create a Fat Tree topology using Mininet and use it with RipL-POX as the controller.
-
