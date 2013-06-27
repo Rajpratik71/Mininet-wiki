@@ -2,7 +2,7 @@ This page is intended to be a simple reference to community-developed extensions
 
 (Note that one of the GSoC participants is prototyping a PyPI-like repository for Mininet-compatible Python packages, so that may be available in the future!)
 
-If links are broken, please fix them - thanks!
+If links are broken, please fix them - thanks! Please also feel free to improve the text descriptions.
 
 #### Mininet Installation Packages for Other OSes
 
