@@ -28,7 +28,7 @@ Mininet Documentation
 * [[Bugs]] How to submit bug reports
 * [[Feature Requests]] How to request and implement features
 
-#### Other Mininet Extensions, Tools, Packages and Distributions
+#### Other Mininet Extensions, Tools, and Packages
 * [[Mininet Community Extensions and Packages]]
 
 #### Other Documents
