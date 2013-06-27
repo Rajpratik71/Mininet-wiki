@@ -29,7 +29,7 @@ Mininet Documentation
 * [[Feature Requests]] How to request and implement features
 
 #### Other Mininet Extensions, Tools, and Packages
-* [[Mininet Community Extensions and Packages]] Additional useful packages created by members of the Mininet community
+* [[Mininet Community Extensions and Packages]] Additional useful packages, tools, etc. created by members of the Mininet community
 
 #### Other Documents
 
