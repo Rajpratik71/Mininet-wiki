@@ -28,6 +28,10 @@ Mininet Documentation
 * [[Bugs]] How to submit bug reports
 * [[Feature Requests]] How to request and implement features
 
+#### Other Extensions, Tools, and Packages (including distributions for other OSes)
+
+* [[Mininet-Community-Extensions-and-Packages]]
+
 #### Other Documents
 
 * [Introduction to Mininet](http://cng.ateneo.edu/cng/wyu/classes/cs154/cs154-mn-intro.pdf) A brief introduction to Mininet, by Prof. William ES Yu of the [Ateneo University of Manila](http://ateneo.edu)
