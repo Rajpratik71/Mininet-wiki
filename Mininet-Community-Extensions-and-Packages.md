@@ -12,7 +12,7 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 
 #### Useful Tools for Mininet Users
 
-* Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI that allows automatic creation of Mininet Scripts and Openflow Controllers.
+* Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI that allows automatic creation of Mininet and Openflow Controllers Scripts.
 
 (tbd)
 
