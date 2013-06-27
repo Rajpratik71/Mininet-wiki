@@ -12,6 +12,8 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 
 #### Useful Tools for Mininet Users
 
+* Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI that allows automatic creation of Mininet Scripts and Openflow Controllers.
+
 (tbd)
 
 #### Customized Mininet Versions and VMs
@@ -29,4 +31,3 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 * [RipL-POX](https://github.com/brandonheller/riplpox) is a multipath-capable controller written in POX. The README explains how to create a Fat Tree topology using Mininet and use it with RipL-POX as the controller.
 
 #### New Switch and Host Classes
-
