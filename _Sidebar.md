@@ -13,11 +13,11 @@
 * [[FAQ]]
 * [[Wiki | Home]]
 * [[Papers | Publications]]
-* [[GSoC 2013]]
 
 ---
 
 * [[Support | http://mininet.github.com/support]]
 * [[Contribute | http://mininet.github.com/contribute]]
+* [[GSoC 2013]]
 * [[News Archives | http://mininet.github.com/blog/archives]]
 * [[Credits | http://mininet.github.com/credits]]
