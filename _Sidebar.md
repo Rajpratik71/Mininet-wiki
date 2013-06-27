@@ -17,5 +17,6 @@
 ---
 
 * [[Support | http://mininet.github.com/support]]
+* [[Contribute | http://mininet.github.com/contribute]]
 * [[News Archives | http://mininet.github.com/blog/archives]]
 * [[Credits | http://mininet.github.com/credits]]
