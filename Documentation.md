@@ -30,7 +30,7 @@ Mininet Documentation
 
 #### Other Extensions, Tools, and Packages (including distributions for other OSes)
 
-* [[Mininet-Community-Extensions-and-Packages]]
+* [[Mininet Community Extensions and Packages]]
 
 #### Other Documents
 
