@@ -16,7 +16,7 @@ This page is intended to be a simple reference to community-developed extensions
 
 * Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral/mn-ccnx/wiki
 
-#### Complete Systems Implemented in Mininet
+#### Mininet-based Systems
 
 #### Reproducible Research Experiments
 
@@ -25,3 +25,6 @@ This page is intended to be a simple reference to community-developed extensions
 #### New Topologies (and Custom Controllers)
 
 * [RipL-POX](https://github.com/brandonheller/riplpox) is a multipath-capable controller written in POX. The README explains how to create a Fat Tree topology using Mininet and use it with RipL-POX as the controller.
+
+#### New Switch and Host Classes
+
