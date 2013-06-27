@@ -7,5 +7,5 @@ The Mininet source code includes a variety of useful [examples](https://github.c
 
 #### GUI - Automatic Creation of Mininet Scripts
 
-* Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI tool that allows automatic creation of Mininet and Openflow Controllers Scripts.
+Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI tool that allows automatic creation of Mininet and Openflow Controllers Scripts.
 ---
