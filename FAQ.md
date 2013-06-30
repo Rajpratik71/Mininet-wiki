@@ -33,6 +33,9 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How can I add a **REST API** to Mininet?](#rest)
 * [How do I run the **Mininet examples**?](#examples)
 * [Why doesn't `dpctl` work? How can I **dump a switch's flow table**?](#dpctl)
+* [How do I **generate traffic** on my Mininet network?](#traffic)
+* [How do I **modify packet headers** using Mininet?](#headers)
+* [How do I implement a **custom routing algorithm**?](#routing)
 
 ###  OpenFlow Questions
 
@@ -425,7 +428,6 @@ the comments in the example's `.py` file for details.
 
 `dpctl` should work fine with the Stanford OpenFlow reference implementation or the CPqD version of same.
 
-
 If you're running Open vSwitch, or need to open up a listening port on either OVS or the reference switch so that you can connect to a port, read on...
 
 1. If you are using Open vSwitch, the correct command to use from the shell prompt is
@@ -467,6 +469,32 @@ If you're running Open vSwitch, or need to open up a listening port on either OV
         $ ovs-ofctl dump-flows tcp:127.0.0.1:6634
 
 
+***
+<a id=traffic></a>
+### How do I **generate traffic** on my Mininet network?
+
+Asking this question usually means you haven't read or understood the [[Documentation]] or indeed this [[FAQ]].
+
+Mininet runs pretty much any Linux program. So, you can use pretty much any client or server program you can think of (e.g. `ping`, `iperf`, `wget`, `netperf`, `netcat` etc..) You can easily capture traffic using programs like `tcpdump` and `wireshark`.
+
+You probably should do a Google search on something like [linux generate packets](http://google.com/search?q=linux+generate+packets) or [linux traffic generator](http://google.com/search?q=linux+traffic+generator).
+
+
+***
+<a id=headers></a>
+### How do I **modify packet headers** using Mininet?
+
+Asking this question usually means you haven't read or understood the documentation.
+
+Use OpenFlow. Please go through the OpenFlow tutorial and consult the OpenFlow specification.
+
+***
+<a id=routing></a>
+### How do I implement a **custom routing algorithm**?
+
+Asking this question usually means that you haven't read or understood the documentation.
+
+Use OpenFlow. Please go through the OpenFlow tutorial and consult the OpenFlow specification.
 
 ***
 <a id=multiple-controllers></a>
