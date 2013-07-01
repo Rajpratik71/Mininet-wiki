@@ -6,7 +6,7 @@
 2. CLI testing, starting week of July 1
 3. ...
 
-### BL comments:
+#### BL comments:
 * I think extending the tests in mininet/test is a good idea.
 * CLI testing is also a good idea.
 * I also wonder if we want to have more extensive API testing.
