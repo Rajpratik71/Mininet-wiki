@@ -3,8 +3,9 @@
 
 ### Iterations
 1. First iteration, starting week of June 17, Extend API tests
-2. CLI testing, starting week of July 1
-3. ...
+2. Iteration 2: Extend API tests, starting week of July 1
+3. CLI testing, starting July 15
+4. ...
 
 #### BL comments:
 * I think extending the tests in mininet/test is a good idea.
@@ -25,6 +26,5 @@ A test's workflow would look like this.
 * Validate expected connectivity
 
 For most cases a simple topology will do but enabling the test to be done on any topo might be useful (eg. when using large topologies when testing scale)
-
 
 
