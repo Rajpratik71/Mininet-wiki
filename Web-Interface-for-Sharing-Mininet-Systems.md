@@ -90,7 +90,7 @@ Yeah, I intend to use the existing Python packaging system to package Mininet mo
 - Remaining time will be spent to develop either of item no. 3, 4. I will most likely leave item no. 4 for later though. [TO BE CONTINUED]
 
 #### Plan for the week #2 (24-28 June):
-- Try out the packaging system with more complicated packages to make sure that the packaging system can work.
+- Try out the packaging system with more complicated packages to make sure that the packaging system can work. [DONE]
 Result:
   - Created packages out of mininet, pox, ripl, riplpox. ripl depends on mininet, riplpox depends on ripl and pox.
   - `pip install riplpox <+ all other arguments>` can download riplpox + dependencies correctly.
@@ -102,8 +102,8 @@ Small annoyances:
   - `riplpox` requires older version of `pox`, so I used older version of pox to do this experiment.
 
 #### Plan for the week #3 (1-5 July):
-- Added HTTPS support to djangopypi2. Deployed on EC2 by using nginx as a reverse proxy as well.
-- Added searching and package permission page to djangopypi2.
+- Add HTTPS support to djangopypi2. Deployed on EC2 by using nginx as a reverse proxy as well. [DONE]
+- Add package search and package permission pages to djangopypi2. [DONE]
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
