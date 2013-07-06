@@ -27,12 +27,11 @@ I intend to use `pip` and `setup.py` to download and upload packages respectivel
 Since the tools already exist, then the only thing remaining is to build the PyPI clone itself. The PyPI clone should support:  
 1. Package installation using `pip install`  
 2. Package uploading using `python setup.py register sdist upload`  
-3. Define package permission (e.g.: who can upload new version of package, who can delete package)  
+3. UI to manage the uploaded packages (e.g.: add/remove maintainer)  
 4. UI to search for packages  
 5. UI for user registration  
-6. UI to manage the uploaded packages (e.g.: add/remove maintainer)  
 
-Out of those 6, 1 & 2 are the most troublesome to implement because the website has to adhere to some convention in order for these to work.
+Out of those 5, 1 & 2 are the most troublesome to implement because the website has to adhere to some convention in order for these to work.
 
 I have already evaluated various existing open source PyPI clone and find that `djangopypi2` is quite functional and maintained relatively well. If I am allowed to use djangopypi2 as a base, then 1 & 2 are already done. However, I am still waiting for some reply regarding to the licensing issue.
 
@@ -88,7 +87,7 @@ Yeah, I intend to use the existing Python packaging system to package Mininet mo
 #### Plan for the week #1 (17-21 June):
 - I am currently working on the user registration page (item no. 5 above) in djangopypi2. It currently only supports adding new user through the admin panel, which is not supposed to be accessible to anyone but the admin. This shouldn't take more than 2 days. [DONE]
 - I will setup a free Amazon EC2 instance as well. I will set VNC and the djangopypi2 running there so you can track my progress by using VNC to the EC2 instance and running the browser. I have no idea how long this will take. [DONE]
-- Remaining time will be spent to develop either of item no. 3, 4, 6. I will most likely leave item no. 4 for later though. [TO BE CONTINUED]
+- Remaining time will be spent to develop either of item no. 3, 4. I will most likely leave item no. 4 for later though. [TO BE CONTINUED]
 
 #### Plan for the week #2 (24-28 June):
 - Try out the packaging system with more complicated packages to make sure that the packaging system can work.
@@ -101,6 +100,10 @@ Result:
 Small annoyances:
   - `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage` will search for `SomePackage` from both `index-url` and `extra-index-url` and download from the index with higher version number. This may cause problem if both the index-url and extra-index-url contains different packages with same name. For my experiment, there happens to be a package called `pox` on real PyPI with higher version number, so I have to remove the --extra-index-url so pip will download the pox package I created.  
   - `riplpox` requires older version of `pox`, so I used older version of pox to do this experiment.
+
+#### Plan for the week #3 (1-5 July):
+- Added HTTPS support to djangopypi2. Deployed on EC2 by using nginx as a reverse proxy as well.
+- Added searching and package permission page to djangopypi2.
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
