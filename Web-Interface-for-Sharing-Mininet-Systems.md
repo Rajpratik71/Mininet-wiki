@@ -102,7 +102,7 @@ Small annoyances:
   - `riplpox` requires older version of `pox`, so I used older version of pox to do this experiment.
 
 #### Plan for the week #3 (1-5 July):
-- Add HTTPS support to djangopypi2. Deployed on EC2 by using nginx as a reverse proxy as well. [DONE]
+- Add HTTPS support to djangopypi2. Deployed on EC2 by using nginx as a reverse proxy as well. Currently only using self-signed certificate though. [DONE]
 - Add package search and package permission pages to djangopypi2. [DONE]
 
 ### Complete system/VM/experiment archive
