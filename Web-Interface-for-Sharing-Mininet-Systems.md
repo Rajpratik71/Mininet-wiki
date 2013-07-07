@@ -105,7 +105,8 @@ Small annoyances:
 - Add HTTPS support to djangopypi2. Deployed on EC2 by using nginx as a reverse proxy as well. Currently only using self-signed certificate though. [DONE]
 - Add package search and package permission pages to djangopypi2. [DONE]
 
-### BL: First Iteration Feedback
+----
+#### BL: First Iteration Feedback
 
 Great - it looks like this is a feasible option and the basic system is up and running to some extent.
 
@@ -132,6 +133,8 @@ Are there scripts to make these processes as easy as possible?
 6. Bug fixes and security updates
 
 How are bug fixes and security updates handled? What happens when there are critical security bugs in Linux/Ubuntu/Django/etc.?
+
+----
 
 ### Complete system/VM/experiment archive
 This objective is to be able to quickly replicate experiments.
