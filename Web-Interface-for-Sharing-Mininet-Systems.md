@@ -115,6 +115,8 @@ I'm interested in a bunch of things which might help to make this a real system 
 
 0. Blocking issue: certificate download
 
+    I can't use the system now, because I have no way of getting the certificate. :(
+
     Right now, there's no easy way for someone to bootstrap themselves from the beginning, because you need to download a certificate. What is the right way to handle this? How are people supposed to get our (self-signed) certificate in a reliable form? I think we probably want to upload it to mininet.org, so that people can download it via https.
 
     Question: do we want to allow http access for convenience? (note: login should still require https!!)
