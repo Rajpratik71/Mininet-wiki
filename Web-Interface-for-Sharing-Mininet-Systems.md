@@ -108,23 +108,23 @@ Small annoyances:
 ----
 #### BL: First Iteration Feedback
 
-Great - it looks like this is a feasible option and the basic system is up and running to some extent.
+Great - it looks like this is a feasible proof of concept and the basic system is up and running to some extent!!
 
 I'm interested in a bunch of things which might help to make this a real system that we could use:
 
 1. Replicability/movability to a different cloud
 
-We now have one test server running in Amazon. If I want to replicate this server elsewhere (e.g. suppose we make a private cloud for on.lab using openstack), how do I do it? Is the process automatic? Can I still use Amazon for storage and as a CDN? If so, how?
+    We now have one test server running in Amazon. If I want to replicate this server elsewhere (e.g. suppose we make a private cloud for on.lab using openstack), how do I do it? Is the process automatic? Can I still use Amazon for storage and as a CDN? If so, how?
 
 2. Help/documentation
 
-When people go to the site, where do they find clear instructions about how to find, download and use packages,  as well as how to create new packages and upload them? Is there a walkthrough showing how one might do this?
+    When people go to the site, where do they find clear instructions about how to find, download and use packages,  as well as how to create new packages and upload them? Is there a walkthrough showing how one might do this?
 
-When people go to a project page, how do they find out about the different options for downloading and/or installing a package?
+    When people go to a project page, how do they find out about the different options for downloading and/or installing a package?
 
 3. Scripts
 
-Are there scripts to make these processes as easy as possible?
+    Are there scripts to make these processes as easy as possible?
 
 4. How do you think people should find out about the system?
 
@@ -132,11 +132,12 @@ Are there scripts to make these processes as easy as possible?
 
 6. Bug fixes and security updates
 
-How are bug fixes and security updates handled? What happens when there are critical security bugs in Linux/Ubuntu/Django/etc.?
+    How are bug fixes and security updates handled? What happens when there are critical security bugs in Linux/Ubuntu/Django/etc.?
 
 ----
 
 ### Complete system/VM/experiment archive
+
 This objective is to be able to quickly replicate experiments.
 
 The idea is to create a place for users to submit either of these:
