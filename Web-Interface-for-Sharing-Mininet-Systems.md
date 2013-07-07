@@ -122,6 +122,10 @@ I'm interested in a bunch of things which might help to make this a real system 
 
     When people go to a project page, how do they find out about the different options for downloading and/or installing a package?
 
+    What is the learning curve? How do we make it as quick and easy as possible for people to find, install, and run/use a module?
+
+    Many modules have documentation. How is that integrated into the system? How/where do I go to find documentation on a particular module? If I'm installing from the command line, how do I get the documentation?
+
 3. Scripts
 
     Are there scripts to make these processes as easy as possible?
@@ -156,3 +160,30 @@ Note that this "place" for submitting the experiment can possibly be the same we
 Some experiment codes only work under certain flavor/version of Linux, especially kernel code. In this case, complete VM image is the only way to reproduce the experiment easily.  
 Sometimes experiments may also make use of closed source component. If this closed source component is freely distributable, then the only way to reproduce the experiment easily is again using full VM image.  
 Before we rule out the second choice though, is there a network experiment which requires the experiment to be run on real machines (i.e. not VM)?
+
+#### BL Comments
+
+Some questions I think we need to think about or investigate:
+
+Storage Issues:
+
+* What can we use for scalable storage/CDN?
+* Can/should we use S3? How much does it cost? How are credentials handled? 
+* What are other issues relating to VM image storage, which might require a LOT of storage?
+
+Deployment issues
+
+* What are the target deployment platforms?
+* Can the same image be used on, say, EC2 and VirtualBox?
+
+Web front-end issues:
+
+* Can we have a single sign-on for both packages and VM images?
+
+User Issues:
+
+* What are the specific foolproof steps that users will take?
+* Is there a template for documentation of each system, sort of like what we had on reproducingnetworkresearch.org?
+* Is there a means for users to add additional information or documentation about a system?
+* How will users find out about this system?
+* How will it be documented?
