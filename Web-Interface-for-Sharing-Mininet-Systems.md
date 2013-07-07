@@ -112,6 +112,11 @@ Great - it looks like this is a feasible proof of concept and the basic system i
 
 I'm interested in a bunch of things which might help to make this a real system that we could use:
 
+
+0. Blocking issue: certificate download
+
+    Right now, there's no easy way for someone to bootstrap themselves from the beginning, because you need to download a certificate. What is the right way to handle this? How are people supposed to get our (self-signed) certificate in a reliable form? I think we probably want to upload it to mininet.org, so that people can download it via https.
+
 1. Replicability/movability to a different cloud
 
     We now have one test server running in Amazon. If I want to replicate this server elsewhere (e.g. suppose we make a private cloud for on.lab using openstack), how do I do it? Is the process automatic? Can I still use Amazon for storage and as a CDN? If so, how?
