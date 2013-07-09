@@ -187,8 +187,8 @@ Web front-end issues:
 
 * Can we have a single sign-on for both packages and VM images?  
 **Heryandi**  
-If both sites can access the same user database, there should be no problem.  
-If not, there should be a way though I currently don't know how.  
+If both sites can access the same user database, I am sure that this can be done.  
+If not, there should be a way though I am not sure how.  
 **Heryandi End**  
 
 User Issues:
