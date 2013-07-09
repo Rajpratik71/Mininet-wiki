@@ -87,7 +87,7 @@ All other parts of the website will redirect to HTTPS if accessed with HTTP.
 
 **Heryandi**  
 Hmmm a script to set the server up in one step can definitely be written.  
-As for using Amazon only for storage/CDN, there is an API which should be make this possible, although I am not sure.  
+As for using Amazon only for storage/CDN, there should be an API which make this possible, although I am not sure.  
 **Heryandi End**  
 
 2. Help/documentation
