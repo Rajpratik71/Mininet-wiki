@@ -55,7 +55,7 @@ First 3 questions: No walkthrough yet, so I will need to write all these first. 
 
 Module documentation: There is a package page which can show the documentation as written by uploader. If this is not enough, then a link to external website can also be added.
 
-Command line documentation issues: a small script which queries the site by using the XML-RPC API can be written. If djangopypi2 currently doesn't support it, I don't think it will take long to implement it.  
+Command line documentation issues: Currently we can't see documentation if using command line, however, a small script which queries the site by using the XML-RPC API can be written. If djangopypi2 currently doesn't support the necessary XML-RPC API yet, I don't think it will take long to implement it.  
 **Heryandi End**  
 
 3. Scripts
