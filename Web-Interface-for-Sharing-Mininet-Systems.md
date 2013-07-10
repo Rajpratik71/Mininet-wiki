@@ -32,6 +32,7 @@ There is a configuration file, although it works a little differently than /etc/
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
 ##### Use cases:
+[NOTE: I am thinking of refining this as a walkthrough for downloading/uploading packages, so I will leave it here for the time being]  
 - Uploading a package:
   - User who wants to submit new package must register to the website.
   - User must create a file called `.pypirc` defining the URL of the PyPI and the login information. This is a one-time setup thing.
@@ -62,30 +63,16 @@ Great - it looks like this is a feasible proof of concept and the basic system i
 
 I'm interested in a bunch of things which might help to make this a real system that we could use:
 
-
-0. Blocking issue: certificate download
-
-    I can't use the system now, because I have no way of getting the certificate. :(
-
-    Right now, there's no easy way for someone to bootstrap themselves from the beginning, because you need to download a certificate. What is the right way to handle this? How are people supposed to get our (self-signed) certificate in a reliable form? I think we probably want to upload it to mininet.org, so that people can download it via https.
-
-    Question: do we want to allow http access for convenience? (note: login should still require https!!)
-
-    In any case, we want it to be as easy as possible to start from square 1 - see below for more
-comments on help and documentation!!
-
-**Heryandi**  
-HTTP is now enabled for URLs under /simple/ so pip won't need any certificate.  
-All other parts of the website will redirect to HTTPS if accessed with HTTP.  
-**Heryandi End**  
+0. Blocking issue: certificate download [RESOLVED]
 
 1. Replicability/movability to a different cloud
 
     We now have one test server running in Amazon. If I want to replicate this server elsewhere (e.g. suppose we make a private cloud for on.lab using openstack), how do I do it? Is the process automatic? Can I still use Amazon for storage and as a CDN? If so, how?
 
 **Heryandi**  
-Hmmm a script to set the server up in one step can definitely be written.  
-As for using Amazon only for storage/CDN, there should be an API which make this possible, although I am not sure.  
+A script to set the server up in one step can definitely be written, though it will probably not be fully automatic.  
+As for using Amazon only for storage/CDN, I am quite sure that it is possible with the API.  
+For example, the python API is available [here](http://boto.readthedocs.org/en/latest/s3_tut.html)
 **Heryandi End**  
 
 2. Help/documentation
