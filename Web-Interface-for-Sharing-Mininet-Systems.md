@@ -11,12 +11,6 @@ Other things worth mentioning:
   - Upload: `python setup.py register -r local sdist upload -r local`  
   - Download: `pip install -i http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
 
-<i>BL: Agreed! We want to make it as easy as possible. I think we may want to include this script in the Mininet distribution itself, and also make it easily downloadable from the site. But I have a question: does pip not have anything like apt's sources.list?</i>
-
-**Heryandi**  
-There is a configuration file, although it works a little differently than /etc/apt/sources.list. The pip.conf file (described [here](http://www.pip-installer.org/en/latest/configuration.html)) can be used to set the default value of the command line arguments.  
-**End**
-
 ##### Use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
 #### First iteration (17 June - 5 July):
