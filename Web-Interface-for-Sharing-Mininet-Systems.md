@@ -55,7 +55,7 @@ I'm interested in a bunch of things which might help to make this a real system 
     We now have one test server running in Amazon. If I want to replicate this server elsewhere (e.g. suppose we make a private cloud for on.lab using openstack), how do I do it? Is the process automatic? Can I still use Amazon for storage and as a CDN? If so, how?
 
 **Heryandi**  
-A script to set the server up in one step can definitely be written, though it will probably not be fully automatic.  
+A script to set the server up can definitely be written, though it will probably not be fully automatic (e.g.: may need to manually change nginx `server_name` value).  
 As for using Amazon only for storage/CDN, I am quite sure that it is possible with the API.  
 For example, the python API is available [here](http://boto.readthedocs.org/en/latest/s3_tut.html).  
 **Heryandi End**  
@@ -89,7 +89,7 @@ I intend to write scripts to shorten the upload/download package command though.
 4. How do you think people should find out about the system?  
 **Heryandi**  
 Never thought about this at all, maybe mention it in OpenFlow and Mininet tutorial?  
-The people in Open Networking Lab should be "encouraged" to use it as well so at least someone starts using it...  
+The people in Open Networking Lab should be ["encouraged"](http://en.wikipedia.org/wiki/Eating_your_own_dog_food) to use it as well so at least someone starts using it...  
 **Heryandi End**  
 
 5. How are the data backed up? If everything stored on Amazon goes away, how do we recreate it?  
