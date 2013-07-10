@@ -32,7 +32,7 @@ See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/in
                |       real network         |
                +----------------------------+
 
-[_TapBridge_](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#tap-netdevice) allows a real host to participate in an ns-3 simulation as if it were one of the simulated nodes. It can be viewed as essentially an inverse configuration to the previous one. It allows host systems and virtual machines running native applications and protocol stacks to integrate with a ns-3 simulation. In this case ns-3 simulator connects to a TAP virtual interface created on Linux host. Packets send by host to the TAP device are transmitted through the file descriptor to the ns-3 process. Next they are forwarded down by _TapBridge_ to the ns-3 net device and transmitted over the ns-3 emulated channel. The typical use case for this environment is to analyse the behaviour of native applications and protocol suites in the presence of large simulated ns-3 network. 
+[_TapBridge_](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#tap-netdevice) allows a real host to participate in an ns-3 simulation as if it were one of the simulated nodes. It can be viewed as essentially an inverse configuration to the previous one. It allows host systems and virtual machines running native applications and protocol stacks to integrate with a ns-3 simulation. In this case ns-3 connects to a TAP virtual interface created on Linux host. Packets send by host to the TAP device are transmitted through the file descriptor to the ns-3 process. Next they are forwarded down by _TapBridge_ to the ns-3 net device and transmitted over the ns-3 emulated channel. The typical use case for this environment is to analyse the behaviour of native applications and protocol suites in the presence of large simulated ns-3 network. 
 
     TapBridge case. Nodes: real. Network: simulated.
 
@@ -85,3 +85,21 @@ Two _TapBridge_ net devices can be used to create emulated link between two TAP 
                  |<------------------------------->|
                              ns-3 process
 
+## Work
+
+### How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?
+
+The first question, which needs to be answered, is if it is possible to ns-3 process to communicate with TAP devices in two distinct network namespaces. And, if it is possible, how sequence of interface creation, connecting ns-3 to them, and moving them between namespaces should look like.
+
+It turns out, that it is possible to establish connection between two TAP interfaces through ns-3 and maintain it after moving TAP interfaces to another namespaces. The sequence should look like the following:
+
+1. Create tap0 interface in the root namespace.
+2. Create tap1 interface in the root namespace
+3. Start ns-3, connect with tap bridges to the both interfaces and establish channel between these two nodes in ns-3.
+4. Move tap0 to namespace A.
+5. Move tap1 to namespace B.
+
+So, at the end, there are:
+- tap0 interface in the namespace A
+- tap1 interface in the namespace B
+- ns-3 process in the root namespace
