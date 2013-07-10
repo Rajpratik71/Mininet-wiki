@@ -6,18 +6,6 @@ There are two main objectives:
 
 For this part of project, we are going to use existing Python packaging system (based on `distribute`) to package Mininet modules and build a PyPI clone just to share Mininet modules.
 
-The benefits of doing this are:
-- Module dependencies can already be defined in the packaging system
-- Ability to use existing Python tools (e.g.: `pip`, `setup.py`) to download and upload modules
-- Tools to automatically resolve and download dependencies already exist (e.g.: `pip`, `easy_install`)
-
-Since the tools already exist, then the only thing remaining is to build the PyPI clone itself. The PyPI clone should support:  
-1. Package installation using `pip install`  
-2. Package uploading using `python setup.py register sdist upload`  
-3. UI to manage the uploaded packages (e.g.: add/remove maintainer, delete packages etc)  
-4. UI to search for packages  
-5. UI for user registration  
-
 Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
   - Upload: `python setup.py register -r local sdist upload -r local`  
