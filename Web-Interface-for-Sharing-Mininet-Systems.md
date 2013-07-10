@@ -31,22 +31,7 @@ There is a configuration file, although it works a little differently than /etc/
 
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
 
-##### Use cases:
-[NOTE: I am thinking of refining this as a walkthrough for downloading/uploading packages, so I will leave it here for the time being]  
-- Uploading a package:
-  - User who wants to submit new package must register to the website.
-  - User must create a file called `.pypirc` defining the URL of the PyPI and the login information. This is a one-time setup thing.
-  - Once registered, for every package that the user wants to submit to the website, the user will have to write the package metadata in a `setup.py` file. The syntax of the package metadata will have to follow the syntax of typical Python package. Ideally, the user should write all of the followings: package name, package version, short description (1-2 sentences), long description (installation instruction, documentation etc) and the dependencies.
-  - Once the setup.py file is written, the user will simply run `python setup.py register -r local sdist upload -r local` on the command line to automatically zip everything, register and upload the file to a PyPI called `local` (as defined in the `.pypirc`).
-
-- Searching & downloading a package:
-  - User do NOT need to register to download a package.
-  - User must install pip on his own system. Available on Ubuntu with package name: `python-pip`.
-  - To search for a package, user can go to the website and search according to some search criteria. User can also do a `pip search <term>` from a command line (waiting for a fix from djangopypi2 maintainer for this part).
-  - From the search result, user can view the matching package page which will show the package description as written by the uploader and download the zipped package (without the dependencies) just like in real PyPI.
-  - If user wants resolve all package dependencies automatically, user can install the package using pip just like this: `pip install -i http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`.
-  - `pip install` will automatically put all the executables in the package into one of the folders in $PATH (i.e. simply typing the executable name will work) and the python library in one of the folders in python paths (i.e. a simple `import something` in a python script will work). If `virtualenv` is used, then executables will go into `bin/` and library will go to `lib/pythonX.Y/site-packages/` under the virtual environment.
-  - For uninstallation, `pip uninstall <package name>` will uninstall a package. For me, the best way is to use a `virtualenv` folder and simply delete the folder once I don't need it. I am not sure if Mininet users will like it though.
+##### Use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
 #### First iteration (17 June - 5 July):
 - All missing major features are added to djangopypi2:
