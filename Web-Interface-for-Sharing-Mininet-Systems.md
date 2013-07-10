@@ -21,7 +21,7 @@ Since the tools already exist, then the only thing remaining is to build the PyP
 Other things worth mentioning:
 - Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
   - Upload: `python setup.py register -r local sdist upload -r local`  
-  - Download: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
+  - Download: `pip install -i http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
 
 <i>BL: Agreed! We want to make it as easy as possible. I think we may want to include this script in the Mininet distribution itself, and also make it easily downloadable from the site. But I have a question: does pip not have anything like apt's sources.list?</i>
 
@@ -43,7 +43,7 @@ There is a configuration file, although it works a little differently than /etc/
   - User must install pip on his own system. Available on Ubuntu with package name: `python-pip`.
   - To search for a package, user can go to the website and search according to some search criteria. User can also do a `pip search <term>` from a command line (waiting for a fix from djangopypi2 maintainer for this part).
   - From the search result, user can view the matching package page which will show the package description as written by the uploader and download the zipped package (without the dependencies) just like in real PyPI.
-  - If user wants resolve all package dependencies automatically, user can install the package using pip just like this: `pip install --index-url http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`.
+  - If user wants resolve all package dependencies automatically, user can install the package using pip just like this: `pip install -i http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`.
   - `pip install` will automatically put all the executables in the package into one of the folders in $PATH (i.e. simply typing the executable name will work) and the python library in one of the folders in python paths (i.e. a simple `import something` in a python script will work). If `virtualenv` is used, then executables will go into `bin/` and library will go to `lib/pythonX.Y/site-packages/` under the virtual environment.
   - For uninstallation, `pip uninstall <package name>` will uninstall a package. For me, the best way is to use a `virtualenv` folder and simply delete the folder once I don't need it. I am not sure if Mininet users will like it though.
 
