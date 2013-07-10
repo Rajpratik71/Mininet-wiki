@@ -11,7 +11,7 @@ Other things worth mentioning:
   - Upload: `python setup.py register -r local sdist upload -r local`  
   - Download: `pip install -i http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
 
-##### Use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
+##### Example use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
 #### First iteration (17 June - 5 July):
 - All missing major features are added to djangopypi2:
