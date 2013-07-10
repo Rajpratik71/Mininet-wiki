@@ -72,7 +72,7 @@ I'm interested in a bunch of things which might help to make this a real system 
 **Heryandi**  
 A script to set the server up in one step can definitely be written, though it will probably not be fully automatic.  
 As for using Amazon only for storage/CDN, I am quite sure that it is possible with the API.  
-For example, the python API is available [here](http://boto.readthedocs.org/en/latest/s3_tut.html)
+For example, the python API is available [here](http://boto.readthedocs.org/en/latest/s3_tut.html).  
 **Heryandi End**  
 
 2. Help/documentation
@@ -97,7 +97,8 @@ Command line documentation issues: a small script which queries the site by usin
 
     Are there scripts to make these processes as easy as possible?  
 **Heryandi**  
-Nope, if there is, I will have to write it hahaha...  
+Nope, if there is, I will have to write it hahaha...
+I intend to write scripts to shorten the upload/download package command though.  
 **Heryandi End**  
 
 4. How do you think people should find out about the system?  
@@ -118,7 +119,7 @@ We may want to do our own periodical backup (e.g.: every 1 month) just in case S
     How are bug fixes and security updates handled? What happens when there are critical security bugs in Linux/Ubuntu/Django/etc.?  
 **Heryandi**  
 If the bugs are in Linux/Ubuntu, it shouldn't break the code if Linux/Ubuntu is upgraded.  
-If it affects Python/Django though, there may need to be some changes to the code if we upgrade. The best bet is to write unit tests with decent coverage so at least the breaking changes can be identified (and fixed manually >_<) quickly.  
+If it affects Python/Django though, there may need to be some changes to the code if we upgrade. The best bet is to write unit tests with decent coverage so at least the breaking changes can be identified (and fixed manually >_<) quickly. Note: Currently there is almost no unit tests in djangopypi2!  
 **Heryandi End**  
 
 ----
