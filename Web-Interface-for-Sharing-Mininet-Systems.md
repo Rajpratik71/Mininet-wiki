@@ -26,9 +26,7 @@ Other things worth mentioning:
 <i>BL: Agreed! We want to make it as easy as possible. I think we may want to include this script in the Mininet distribution itself, and also make it easily downloadable from the site. But I have a question: does pip not have anything like apt's sources.list?</i>
 
 **Heryandi**  
-There is a configuration file, although it works a little differently than /etc/apt/sources/list. The pip.conf file (described [here](http://www.pip-installer.org/en/latest/configuration.html)) can be used to set the default value of the command line arguments. So, if we specify the default value of `--extra-index-url` for `pip install <somepackage>` as `http://localhost:8000/simple/`, then `pip install` will first go to PyPI, and if it fails to find the package then it will visit `http://localhost:8000/simple/`. This definitely can work, but with a minor annoyance to have to fail in PyPI first before visiting `http://localhost:8000/simple/`.  
-
-Well, either that or we can have a script to temporarily override the `PIP_CONFIG_FILE` environment variable to our own pip.conf and override the default value of `--index-url` rather than `--extra-index-url`, so `http://localhost:8000/simple/` will be visited first.  
+There is a configuration file, although it works a little differently than /etc/apt/sources/list. The pip.conf file (described [here](http://www.pip-installer.org/en/latest/configuration.html)) can be used to set the default value of the command line arguments.  
 **End**
 
 - If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
