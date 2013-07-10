@@ -17,8 +17,6 @@ Other things worth mentioning:
 There is a configuration file, although it works a little differently than /etc/apt/sources.list. The pip.conf file (described [here](http://www.pip-installer.org/en/latest/configuration.html)) can be used to set the default value of the command line arguments.  
 **End**
 
-- If I use djangopypi2 then I will need to modify website texts accordingly (e.g.: change the website header to "Mininet Repository" or something).
-
 ##### Use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
 #### First iteration (17 June - 5 July):
