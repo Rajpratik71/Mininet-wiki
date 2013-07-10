@@ -103,3 +103,5 @@ So, at the end, there are:
 - tap0 interface in the namespace A
 - tap1 interface in the namespace B
 - ns-3 process in the root namespace
+
+Finally, we get a ns-3 process which provides a communication channel between namespace A and namespace B. Tested on Linux kernels 3.5 and 3.8.
