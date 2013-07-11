@@ -207,7 +207,7 @@ If you are already running Microsoft's Hyper-V, you may not be able to boot the 
 > VT-X/AMD-V Hardware acceleration is not available on your system. Your 64-bit guest will fail
 > to detect a 64-bit CPU and will not be able to boot.
 
-The problem is not that you don't have a 64-bit CPU (you probably do if you have anything as good as, say an intel Core 2 Duo from 2006.) Rather, the problem more likely that:
+Usually the problem is not that you don't have a 64-bit CPU (you probably do if you have anything as good as, say an intel Core 2 Duo from 2006.) Rather, the problem more likely that:
 
 * You need to enable VT-X/AMD hardware virtualization in the BIOS, or:
 
