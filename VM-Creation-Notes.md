@@ -7,7 +7,7 @@ _Note: If you need to build on a non-Ubuntu distro, you are currently on your ow
 
 **First, create a new Ubuntu (12.10 or 13.04) VM** (using VMware, VirtualBox, etc..) 
 
-To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). You can also use 13.04, Ubuntu desktop, or a 32-bit/i386 version.
+To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). (You can also use 13.04, Ubuntu desktop, a 32-bit/i386 version, or Lubuntu, etc..)
 
 The Mininet VM uses username: `mininet` and password: `mininet`, but any user/password combo should work as long as it has admin/sudo privileges.
 
