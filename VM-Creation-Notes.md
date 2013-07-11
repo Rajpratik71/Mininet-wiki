@@ -5,9 +5,9 @@ These instructions cover the process of building a Mininet-capable VM from scrat
 
 _Note: If you need to build on a non-Ubuntu distro, you are currently on your own. The included shell scripts may work on your platform, but significant changes are likely (e.g. `yum` vs. `apt-get` and different package names for Fedora.)_
 
-**First, create a new Ubuntu 12.10 VM** (using VMware, VirtualBox, etc..) 
+**First, create a new Ubuntu (12.10 or 13.04) VM** (using VMware, VirtualBox, etc..) 
 
-To keep the VM smaller, use the server variant.  We use 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/).
+To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). You can also use 13.04, Ubuntu desktop, or a 32-bit/i386 version.
 
 The Mininet VM uses username: `mininet` and password: `mininet`, but any user/password combo should work as long as it has admin/sudo privileges.
 
