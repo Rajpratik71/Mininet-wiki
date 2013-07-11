@@ -213,13 +213,13 @@ Usually the problem is not that you don't have a 64-bit CPU (you probably do if 
 
 * You are trying to run two virtual machine monitors - Hyper-V and VirtualBox - at the same time, and this does not work with 64-bit guest OSes.
 
-    A simple solution to this problem is to turn off Hyper-V (in Windows 8, this is done via "Enable/Disable Windows Features" in the Windows Control Panel.) This has been tested and verified on Windows 8.
+  A simple solution to this problem is to turn off Hyper-V (in Windows 8, this is done via "Enable/Disable Windows Features" in the Windows Control Panel.) This has been tested and verified on Windows 8.
 
-    If you need to keep running Hyper-V, you could try creating a 32-bit Mininet VM (very easy - just read our instructions on the Documentation page), or you could run the Mininet VM image natively in Hyper-V by:
+  If you need to keep running Hyper-V, you could try creating a 32-bit Mininet VM (very easy - just read our instructions on the Documentation page), or you could run the Mininet VM image natively in Hyper-V by:
 
-   1. Converting the `.vmdk` disk image to a `.vhd` using Microsoft's [Virtual Machine Converter(http://technet.microsoft.com/en-us/library/hh967435.aspx).
-   2. Creating a new Hyper-V virtual machine using the new `.vhd` image as its hard drive.
-   3. Creating an "external" virtual switch in Hyper-V manager, sharing the interface with the host OS.
+  1. Converting the `.vmdk` disk image to a `.vhd` using Microsoft's [Virtual Machine Converter(http://technet.microsoft.com/en-us/library/hh967435.aspx).
+  2. Creating a new Hyper-V virtual machine using the new `.vhd` image as its hard drive.
+  3. Creating an "external" virtual switch in Hyper-V manager, sharing the interface with the host OS.
 
 #### I have a netbook from 2005 and I really want a 32-bit VM (or maybe I need one for testing or for nested virtualization on older hardware)
 
