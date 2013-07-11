@@ -221,7 +221,9 @@ Usually the problem is not that you don't have a 64-bit CPU (you probably do if 
     2. Creating a new Hyper-V virtual machine using the new `.vhd` image as its hard drive.
     3. Creating an "external" virtual switch in Hyper-V manager, sharing the interface with the host OS.
 
-If you really have an ancient CPU and/or OS which is not 64-bit capable, you can easily make a 32-bit VM, by [[following our instructions | VM Creation Notes]].
+#### I have a netbook from 2005 and I really want a 32-bit VM
+
+First, read the above. Second, if you really have an ancient CPU and/or OS which is not 64-bit capable, you can easily make a 32-bit VM, by [[following our instructions | VM Creation Notes]].
 
 ***
 <a id=blank-screen></a>
