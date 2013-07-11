@@ -18,7 +18,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [Can I run a **GUI/X11 application** within a Mininet host?](#vm-gui-mininethost)
 * [How can I do a **install Mininet natively** on my Linux machine?](#native-install)
-* [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need 32-bit?](#virtualbox-error)
+* [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 
 ### Using Mininet
@@ -199,7 +199,7 @@ Instructions for native installation can be found at <http://mininet.github.com/
 
 ***
 <a id=virtualbox-error></a>
-### Help! I **can't boot my VM in VirtualBox in Windows**! Do I need 32-bit?
+### Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?
 
 If you are already running Microsoft's Hyper-V, you may not be able to boot the Mininet VM in VirtualBox at the same time. I tested this and got the following error:
 
