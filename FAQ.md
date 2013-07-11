@@ -18,7 +18,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [Can I run a **GUI/X11 application** within a Mininet host?](#vm-gui-mininethost)
 * [How can I do a **install Mininet natively** on my Linux machine?](#native-install)
-* [Help! I **can't boot my VM in VirtualBox in Windows**!](#virtualbox-error)
+* [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need 32-bit?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 
 ### Using Mininet
@@ -199,7 +199,7 @@ Instructions for native installation can be found at <http://mininet.github.com/
 
 ***
 <a id=virtualbox-error></a>
-### Help! Help! I **can't boot my VM in VirtualBox in Windows**!
+### Help! I **can't boot my VM in VirtualBox in Windows**! Do I need 32-bit?
 
 If you are already running Microsoft's Hyper-V, you may not be able to boot the Mininet VM in VirtualBox at the same time. I tested this and got the following error:
 
@@ -209,12 +209,9 @@ If you are already running Microsoft's Hyper-V, you may not be able to boot the 
 
 The problem is not that you don't have a 64-bit CPU (you probably do if you have anything as good as, say an intel Core 2 Duo from 2006.) Rather, the problem more likely that:
 
-* You need to enable VT-X/AMD hardware virtualization in the BIOS
+* You need to enable VT-X/AMD hardware virtualization in the BIOS, or:
 
-  Fix this by enabling it in your BIOS. ;-)
-
-* You are trying to run two virtual machine monitors - Hyper-V and VirtualBox - at the same time, and this does not work with 64-bit guest OSes, or
-
+* You are trying to run two virtual machine monitors - Hyper-V and VirtualBox - at the same time, and this does not work with 64-bit guest OSes.
 
     A simple solution to this problem is to turn off Hyper-V (in Windows 8, this is done via "Enable/Disable Windows Features" in the Windows Control Panel.) This has been tested and verified on Windows 8.
 
@@ -224,6 +221,7 @@ The problem is not that you don't have a 64-bit CPU (you probably do if you have
     2. Creating a new Hyper-V virtual machine using the new `.vhd` image as its hard drive.
     3. Creating an "external" virtual switch in Hyper-V manager, sharing the interface with the host OS.
 
+If you really have an ancient CPU and/or OS which is not 64-bit capable, you can easily make a 32-bit VM, by [[following our instructions | VM Creation Notes]].
 
 ***
 <a id=blank-screen></a>
