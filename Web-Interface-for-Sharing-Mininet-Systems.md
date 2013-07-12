@@ -79,8 +79,7 @@ We may want to do our own periodical backup (e.g.: every 1 month) just in case S
     How are bug fixes and security updates handled? What happens when there are critical security bugs in Linux/Ubuntu/Django/etc.?  
 **Heryandi**  
 If the bugs are in Linux/Ubuntu, it shouldn't break the code if Linux/Ubuntu is upgraded.  
-
-If it affects Python/Django though, there may need to be some changes to the code if we upgrade. The best bet is to write unit tests with decent coverage so at least the breaking changes can be identified (and fixed manually >_<) quickly. Note: Currently there is almost no unit tests in djangopypi2! Once updated, I can simply ssh into the server and do a git pull and then restart the server.  
+If it affects Python/Django though, there may need to be some changes to the code if we upgrade. The best bet is to write unit tests with decent coverage so at least the breaking changes can be identified (and fixed manually >_<) quickly. Note: Currently there is almost no unit tests in djangopypi2! Once updated, simply ssh into the server and do a git pull and then restart the server.  
 **Heryandi End**  
 
 ----
