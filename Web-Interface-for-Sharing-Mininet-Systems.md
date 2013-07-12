@@ -58,8 +58,7 @@ Command line documentation issues: Currently we can't see documentation if using
 
     Are there scripts to make these processes as easy as possible?  
 **Heryandi**  
-Nope, if there is, I will have to write it hahaha...
-I intend to write scripts to shorten the upload/download package command though.  
+Preliminary version, support uploading and downloading only: https://github.com/heryandi/mnp  
 **Heryandi End**  
 
 4. How do you think people should find out about the system?  
