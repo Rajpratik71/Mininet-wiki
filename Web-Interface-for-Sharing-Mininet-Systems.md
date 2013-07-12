@@ -30,8 +30,8 @@ I'm interested in a bunch of things which might help to make this a real system 
     We now have one test server running in Amazon. If I want to replicate this server elsewhere (e.g. suppose we make a private cloud for on.lab using openstack), how do I do it? Is the process automatic? Can I still use Amazon for storage and as a CDN? If so, how?
 
 **Heryandi**  
-The server as a whole uses several things: gunicorn + supervisord + nginx  
-A script to set the server up can definitely be written, though it will probably not be fully automatic (e.g.: may need to manually change nginx `server_name` value).  
+The server as a whole uses several things: gunicorn + supervisord + nginx, so will need to set those up one-by-one  
+A script to set the server up can definitely be written, though it will probably not be fully automatic (some things just cannot be the same across different computers).  
 As for using Amazon only for storage/CDN, I am quite sure that it is possible with the API.  
 The python API is available [here](http://boto.readthedocs.org/en/latest/s3_tut.html) and it seems to me that there should be no problem on using it  
 **Heryandi End**  
