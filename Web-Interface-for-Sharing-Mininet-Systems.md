@@ -6,11 +6,6 @@ There are two main objectives:
 
 For this part of project, we are going to use existing Python packaging system (based on `distribute`) to package Mininet modules and build a PyPI clone just to share Mininet modules.
 
-Other things worth mentioning:
-- Wrapper script to upload/download modules should be developed. If I use djangopypi2 as our package server, then the commands needed to upload/download modules are quite long e.g.:
-  - Upload: `python setup.py register -r local sdist upload -r local`  
-  - Download: `pip install -i http://localhost:8000/simple/ --extra-index-url https://pypi.python.org/simple/ SomePackage`  
-
 ##### Example use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
 #### First iteration (17 June - 5 July):
