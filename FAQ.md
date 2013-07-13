@@ -45,7 +45,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 ### Troubleshooting
 
-* [Help! I **updated my Ubuntu kernel** and now Open vSwitch won't start!](#ovs-reconfig)
+* [Help! I **updated my Ubuntu kernel** and now **Open vSwitch won't start**!](#ovs-reconfig)
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
 
 ### Advice for the Desperate and/or Clueless!
