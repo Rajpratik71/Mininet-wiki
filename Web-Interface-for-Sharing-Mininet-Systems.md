@@ -16,6 +16,12 @@ For this part of project, we are going to use existing Python packaging system (
 - Deployed the djangopypi2 on a free micro Amazon EC2 instance running on nginx + gunicorn. VNC can be used for remote access if needed. HTTPS is used for most parts of website except those under /simple/. The certificate used for HTTPS is currently self-signed though.
 - Tried out the packaging system with more complicated dependencies. The Mininet modules used are: `mininet`, `pox`, `ripl`, `riplpox`.
 
+#### Week ? (8 July - 12 July):
+- Wrote the guide on how to use the system (may not be considered complete yet)  
+- mnp: tools to shorten the command-line commands  
+- mininet-starter: starter package to ease development of new packages  
+- Looked around for storage/CDN service  
+
 ----
 #### BL: First Iteration Feedback
 
