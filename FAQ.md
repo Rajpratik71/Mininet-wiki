@@ -547,9 +547,9 @@ You may also wish to search the ACM and IEEE digital libraries for recent papers
 
 There is a wealth of very useful information available for free on the internet - try some Google (or search engine of your choice) searches for things like 'networking tutorial', 'IP networking basics', etc..
 
-You may also find useful content on Wikipedia, About.com and YouTube, as well as free online courses.
+You may also find useful content on Wikipedia, About.com and YouTube, as well as free online courses. Universities like Stanford, Berkeley, MIT (and many others) all offer free on-line courses, and free online courses are also available through iTunes U, Coursera, etc.. You can learn Python on sites like Codecademy or Khan Academy, Nick Parlante's course on developer.google.com etc. - really there has been no better time for free on-line education.
 
-My [BL's] personal recommendation is to take an introductory CS course and an introductory networking course at your local college or university.
+My [BL's] personal recommendation is to take an introductory CS course and an introductory networking course at your local college or university, but the free on-line options are pretty cool as well.
 
 You may also wish to consult an introductory networking textbook such as *Computer Networks: A Top-Down Approach* by Kurose and Ross, or *Computer Networks: A Systems Approach* by Peterson and Davie. To master Ethernet switches you might want to check out *The All-New Switch Book* by Seifert, and for a vintage but still classic and somewhat relevant view of socket programming you might find a copy of the *Unix Network Programming* tomes by the late Richard Stevens.
 
