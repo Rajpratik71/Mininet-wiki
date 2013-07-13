@@ -553,6 +553,8 @@ My [BL's] personal recommendation is to take an introductory CS course and an in
 
 You may also wish to consult an introductory networking textbook such as *Computer Networks: A Top-Down Approach* by Kurose and Ross, or *Computer Networks: A Systems Approach* by Peterson and Davie. To master Ethernet switches you might want to check out *The All-New Switch Book* by Seifert, and for a vintage but still classic and somewhat relevant view of socket programming you might find a copy of the *Unix Network Programming* tomes by the late Richard Stevens.
 
+I also highly recommend Nick Feamster's SDN course on Coursera, but it assumes a basic understanding of networking.
+
 ***
 <a id=linux></a>
 ### Help! **I have never used Linux or Unix before!**
