@@ -258,7 +258,7 @@ or by calling Python from within the Mininet CLI:
 
 In each case, pressing `q` should quit the pager.
 
-The API documentation is available at <http://mininet.github.com/api>.
+The API documentation is also available at <http://api.mininet.org>.
 
 Also see [[Mininet API Documentation]] for information on how to generate Mininet documentation yourself in .html and .pdf format.
 
