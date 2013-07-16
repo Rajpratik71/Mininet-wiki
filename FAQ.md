@@ -549,7 +549,7 @@ I [BL] also highly recommend Nick Feamster's SDN course on Coursera.
 
 There is a wealth of very useful information available for free on the internet - try some Google (or search engine of your choice) searches for things like 'networking tutorial', 'IP networking basics', etc..
 
-You may also find useful content on Wikipedia, About.com and YouTube, as well as free online courses. Universities like Stanford, Berkeley, MIT (and many others) all offer free on-line courses, and free online courses are also available through iTunes U, Coursera, etc.. You can learn Python on sites like Codecademy or Khan Academy, Nick Parlante's course on developer.google.com etc. - really there has been no better time for free on-line education.
+You may also find useful content on sites like Wikipedia, About.com and YouTube, as well as free online courses. Universities like Stanford, Berkeley, MIT (and many others) all offer free on-line courses, and free online courses are also available through iTunes U, Coursera, etc.. You can learn Python on sites like Codecademy or Khan Academy, Nick Parlante's course on developer.google.com etc. - really there has been no better time for free on-line education.
 
 My [BL's] personal recommendation is to take an introductory CS course and an introductory networking course at your local college or university, but the free on-line options are pretty cool as well.
 
