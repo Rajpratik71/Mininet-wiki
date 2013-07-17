@@ -22,6 +22,10 @@ For this part of project, we are going to use existing Python packaging system (
 - mininet-starter: starter package to ease development of new packages  
 - Looked around for storage/CDN service  
 
+#### Week ? (8 July - 12 July):
+- Explored how to do direct upload from browser (bypassing server) to S3  
+- Currently looking at how to support resumable upload (+ direct upload)  
+
 ----
 #### BL: First Iteration Feedback
 
