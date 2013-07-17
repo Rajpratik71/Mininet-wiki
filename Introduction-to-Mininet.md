@@ -100,7 +100,7 @@ For example,
 
 - Running on a single system is convenient, but it imposes resource
   limits: if your server has 3 GHz of CPU and can switch about 3 Gbps
-  of simulated traffic, those resourcess will need to be balanced and
+  of simulated traffic, those resources will need to be balanced and
   shared among your virtual hosts and switches.
 
 - Mininet uses a single Linux kernel for all virtual hosts; this means
