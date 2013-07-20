@@ -24,7 +24,7 @@ For this part of project, we are going to use existing Python packaging system (
 
 #### Week ?+1 (15 July - 19 July):
 - Explored how to do direct upload from browser (bypassing server) to S3  
-- Currently looking at how to support resumable upload (+ direct upload)  
+- Finished making a small web apps with direct multipart upload to S3 with automatic retry on failure  
 
 ----
 #### BL: First Iteration Feedback
