@@ -123,13 +123,22 @@ Finally, we get a ns-3 process which provides a communication channel between na
 
 ### Mininet
 
-Development branch: <http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration>
+Development branch: http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration
 
 A list of changes to the original mininet:
-* added new module mininet.ns3 `new file: mininet/ns3.py`
-* minor change in Node.addIntf() `modified file: mininet/node.py`
-* added ns-3 related examples `new files in: examples/ns3`
+* added new module `mininet.ns3` **[new file: mininet/ns3.py]**
+* minor change in `Node.addIntf()` **[modified file: mininet/node.py]**
+* added ns-3 related examples **[new files in: examples/ns3]**
 
-You can follow the commits here: <http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration>
+You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration
 
 ### ns-3 optional patches
+
+## Usage
+
+1. ns-3 download and build:  
+1.1. Download ns-3 source code: http://www.nsnam.org/releases/latest  
+1.2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`  
+1.3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`  
+1.4. Configure it: `./waf -d optimized --enable-sudo configure`  
+1.5. Build: `./waf build`  
