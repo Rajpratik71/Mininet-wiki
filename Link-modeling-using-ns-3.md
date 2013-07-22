@@ -8,7 +8,9 @@
 3. [Code](Link-modeling-using-ns-3#code)  
 3.1. [Mininet](Link-modeling-using-ns-3#mininet)  
 3.2. [ns-3 optional patches](Link-modeling-using-ns-3#ns-3-optional-patches)  
-4. [Usage](Link-modeling-using-ns-3#usage)
+4. [Usage](Link-modeling-using-ns-3#usage)  
+4.1 [ns-3 downloading and building](Link-modeling-using-ns-3#ns-3-downloading-and-building  
+4.2 [Running mininet scripts](Link-modeling-using-ns-3#running-mininet-scripts 
 
 ## Introduction
 
