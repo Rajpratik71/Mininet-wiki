@@ -148,6 +148,6 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 6. Build: `./waf build`
 
 ### Running mininet scripts
-1. Run `./waf shell` in order to let the ns-3 set appropriate environment variables
+1. Run `sudo ./waf shell` in order to let the ns-3 set appropriate environment variables
 2. Go to the directory with mininet scripts
 3. Run a mininet script, for example: `python mininet/examples/ns3/emptynet-simple.py`
