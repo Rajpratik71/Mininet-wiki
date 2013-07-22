@@ -18,7 +18,9 @@
 
 [ns-3](http://www.nsnam.org/) network simulator has ability to work in so called [real-time/emulation](http://www.nsnam.org/wiki/index.php/Emulation_and_Realtime_Scheduler) mode. In that mode, the simulator can exchange packets in real-time with the outside world. It means, that packets originating from simulated nodes can be processed by a real network. Another possibility is to drive a simulated network with packets from real nodes. These two options are covered by two different kinds of ns-3 modules: `FdNetDevice` and `TapBridge`.
 
-See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/index.html#realtime) and [Emulation Overview](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#emulation-overview).
+See more:
+- [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/index.html#realtime)
+- [Emulation](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#emulation-overview).
 
 [`FdNetDevice`](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#file-descriptor-netdevice) can read and write from a file descriptor, which can be associated to a network device (via raw socket). This allows ns-3 simulations to read frames from and write frames to a network device on the host. Instead of an ns-3 channel connecting ns-3 nodes, real hardware provided by the testbed can be used. This allows ns-3 applications and protocol stacks attached to a simulation node to communicate over real hardware. The primary use for this configuration is to generate repeatable experimental results in a real-world network environment that includes all of the ns-3 tracing, logging, visualization and statistics gathering tools.
 
