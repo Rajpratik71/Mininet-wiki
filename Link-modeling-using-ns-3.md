@@ -1,13 +1,13 @@
 ## Contents
 
-1. [Introduction](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#introduction)  
-1.1. [ns-3 emulation features](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#ns-3-emulation-features)  
-1.2. [Link simulation with ns-3](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#link-simulation-with-ns-3)  
-2. [Details](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#details)  
-2.1. [How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#how-to-achieve-communication-of-ns-3-process-with-tap-interfaces-in-distinct-namespaces)  
-3. [Code](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#code)  
-3.1. [Mininet](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#mininet)  
-3.2. [ns-3 optional patches](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#ns-3-optional-patches)  
+1. [Introduction](Link-modeling-using-ns-3#introduction)  
+1.1. [ns-3 emulation features](Link-modeling-using-ns-3#ns-3-emulation-features)  
+1.2. [Link simulation with ns-3](Link-modeling-using-ns-3#link-simulation-with-ns-3)  
+2. [Details](Link-modeling-using-ns-3#details)  
+2.1. [How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?](Link-modeling-using-ns-3#how-to-achieve-communication-of-ns-3-process-with-tap-interfaces-in-distinct-namespaces)  
+3. [Code](Link-modeling-using-ns-3#code)  
+3.1. [Mininet](Link-modeling-using-ns-3#mininet)  
+3.2. [ns-3 optional patches](Link-modeling-using-ns-3#ns-3-optional-patches)  
 
 ## Introduction
 
