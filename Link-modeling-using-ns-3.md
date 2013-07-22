@@ -144,7 +144,8 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`
 3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`
 4. Configure it: `./waf -d optimized --enable-sudo configure`
-5. Build: `./waf build`
+5. You may be prompted for sudo password while building
+6. Build: `./waf build`
 
 ### Running mininet scripts
 1. Run `./waf shell` in order to let the ns-3 set appropriate environment variables
