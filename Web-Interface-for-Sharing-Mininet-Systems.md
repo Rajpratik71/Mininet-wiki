@@ -26,8 +26,11 @@ For this part of project, we are going to use existing Python packaging system (
 - Explored how to do direct upload from browser (bypassing server) to S3  
 - Finished making a small web apps with direct multipart upload to S3 with automatic retry on failure  
 
+#### Week ?+2 (22 July - 26 July):
+
+
 ----
-#### BL: First Iteration Feedback
+#### BL: First Iteration Feedback (... until 5 July)
 
 Great - it looks like this is a feasible proof of concept and the basic system is up and running to some extent!!
 
@@ -61,7 +64,9 @@ First 3 questions: No walkthrough yet, so I will need to write all these first. 
 
 Module documentation: There is a package page which can show the documentation as written by uploader. If this is not enough, then a link to external website can also be added.
 
-Command line documentation issues: Currently we can't see documentation if using command line, however, a small script which queries the site by using the XML-RPC API can be written. If djangopypi2 currently doesn't support the necessary XML-RPC API yet, I don't think it will take long to implement it.  
+Command line documentation issues: 
+- If the package is not installed yet, then we cannot do this. However, a small script which queries the site by using the XML-RPC API can definitely be written. If djangopypi2 currently doesn't support the necessary XML-RPC API yet, I don't think it will take long to implement it.  
+- If package is already installed, the documentation will only be available on disk if the packager specifically set it to do so. I will add this part to tutorial.
 **Heryandi End**  
 
 3. Scripts
