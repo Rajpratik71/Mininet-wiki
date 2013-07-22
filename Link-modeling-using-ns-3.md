@@ -8,7 +8,8 @@ See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/in
 
 [_FdNetDevice_](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#file-descriptor-netdevice) can read and write from a file descriptor, which can be associated to a network device (via raw socket). This allows ns-3 simulations to read frames from and write frames to a network device on the host. Instead of an ns-3 channel connecting ns-3 nodes, real hardware provided by the testbed can be used. This allows ns-3 applications and protocol stacks attached to a simulation node to communicate over real hardware. The primary use for this configuration is to generate repeatable experimental results in a real-world network environment that includes all of the ns-3 tracing, logging, visualization and statistics gathering tools.
 
-    FdNetDevice case. Nodes: simulated. Network: real.
+    FdNetDevice case.
+    Nodes are simulated, the network is real.
 
     +----------------------+     +-----------------------+
     |         host 1       |     |         host 2        |
@@ -34,7 +35,8 @@ See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/in
 
 [_TapBridge_](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#tap-netdevice) allows a real host to participate in an ns-3 simulation as if it were one of the simulated nodes. It can be viewed as essentially an inverse configuration to the previous one. It allows host systems and virtual machines running native applications and protocol stacks to integrate with a ns-3 simulation. In this case ns-3 connects to a TAP virtual interface created on Linux host. Packets send by host to the TAP device are transmitted through the file descriptor to the ns-3 process. Next they are forwarded down by _TapBridge_ to the ns-3 net device and transmitted over the ns-3 emulated channel. The typical use case for this environment is to analyse the behaviour of native applications and protocol suites in the presence of large simulated ns-3 network. 
 
-    TapBridge case. Nodes: real. Network: simulated.
+    TapBridge case.
+    Nodes are real, the network is simulated.
 
     +--------+
     |  Linux |
