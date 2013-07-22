@@ -129,9 +129,9 @@ Finally, we get a ns-3 process which provides a communication channel between na
 Development branch: http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration
 
 A list of changes to the original mininet:
-* added new module `mininet.ns3` **[new file: mininet/ns3.py]**
-* minor change in `Node.addIntf()` **[modified file: mininet/node.py]**
-* added ns-3 related examples **[new files in: examples/ns3]**
+* added new module `mininet.ns3` **[mininet/ns3.py]**
+* minor change in `Node.addIntf()` **[mininet/node.py]**
+* added ns-3 related examples **[examples/ns3/*]**
 
 You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration
 
