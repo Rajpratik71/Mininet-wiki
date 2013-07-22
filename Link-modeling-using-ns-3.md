@@ -20,7 +20,7 @@
 
 See more:
 - [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/index.html#realtime)
-- [Emulation](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#emulation-overview).
+- [Emulation](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#emulation-overview)
 
 [`FdNetDevice`](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#file-descriptor-netdevice) can read and write from a file descriptor, which can be associated to a network device (via raw socket). This allows ns-3 simulations to read frames from and write frames to a network device on the host. Instead of an ns-3 channel connecting ns-3 nodes, real hardware provided by the testbed can be used. This allows ns-3 applications and protocol stacks attached to a simulation node to communicate over real hardware. The primary use for this configuration is to generate repeatable experimental results in a real-world network environment that includes all of the ns-3 tracing, logging, visualization and statistics gathering tools.
 
