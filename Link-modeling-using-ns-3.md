@@ -14,11 +14,11 @@
 
 ### ns-3 emulation features
 
-[ns-3](http://www.nsnam.org/) network simulator has ability to work in so called [real-time/emulation](http://www.nsnam.org/wiki/index.php/Emulation_and_Realtime_Scheduler) mode. In that mode, the simulator can exchange packets in real-time with the outside world. It means, that packets originating from simulated nodes can be processed by a real network. Another possibility is to drive a simulated network with packets from real nodes. These two options are covered by two different kinds of ns-3 modules: _FdNetDevice_ and _TapBridge_.
+[ns-3](http://www.nsnam.org/) network simulator has ability to work in so called [real-time/emulation](http://www.nsnam.org/wiki/index.php/Emulation_and_Realtime_Scheduler) mode. In that mode, the simulator can exchange packets in real-time with the outside world. It means, that packets originating from simulated nodes can be processed by a real network. Another possibility is to drive a simulated network with packets from real nodes. These two options are covered by two different kinds of ns-3 modules: `FdNetDevice` and `TapBridge`.
 
 See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/index.html#realtime) and [Emulation Overview](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#emulation-overview).
 
-[_FdNetDevice_](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#file-descriptor-netdevice) can read and write from a file descriptor, which can be associated to a network device (via raw socket). This allows ns-3 simulations to read frames from and write frames to a network device on the host. Instead of an ns-3 channel connecting ns-3 nodes, real hardware provided by the testbed can be used. This allows ns-3 applications and protocol stacks attached to a simulation node to communicate over real hardware. The primary use for this configuration is to generate repeatable experimental results in a real-world network environment that includes all of the ns-3 tracing, logging, visualization and statistics gathering tools.
+[`FdNetDevice`](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#file-descriptor-netdevice) can read and write from a file descriptor, which can be associated to a network device (via raw socket). This allows ns-3 simulations to read frames from and write frames to a network device on the host. Instead of an ns-3 channel connecting ns-3 nodes, real hardware provided by the testbed can be used. This allows ns-3 applications and protocol stacks attached to a simulation node to communicate over real hardware. The primary use for this configuration is to generate repeatable experimental results in a real-world network environment that includes all of the ns-3 tracing, logging, visualization and statistics gathering tools.
 
     FdNetDevice case.
     Nodes are simulated, the network is real.
@@ -45,7 +45,7 @@ See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/in
                |       real network         |
                +----------------------------+
 
-[_TapBridge_](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#tap-netdevice) allows a real host to participate in an ns-3 simulation as if it were one of the simulated nodes. It can be viewed as essentially an inverse configuration to the previous one. It allows host systems and virtual machines running native applications and protocol stacks to integrate with a ns-3 simulation. In this case ns-3 connects to a TAP virtual interface created on Linux host. Packets send by host to the TAP device are transmitted through the file descriptor to the ns-3 process. Next they are forwarded down by _TapBridge_ to the ns-3 net device and transmitted over the ns-3 emulated channel. The typical use case for this environment is to analyse the behaviour of native applications and protocol suites in the presence of large simulated ns-3 network. 
+[`TapBridge`](http://www.nsnam.org/docs/release/3.17/models/singlehtml/index.html#tap-netdevice) allows a real host to participate in an ns-3 simulation as if it were one of the simulated nodes. It can be viewed as essentially an inverse configuration to the previous one. It allows host systems and virtual machines running native applications and protocol stacks to integrate with a ns-3 simulation. In this case ns-3 connects to a TAP virtual interface created on Linux host. Packets send by host to the TAP device are transmitted through the file descriptor to the ns-3 process. Next they are forwarded down by `TapBridge` to the ns-3 net device and transmitted over the ns-3 emulated channel. The typical use case for this environment is to analyse the behaviour of native applications and protocol suites in the presence of large simulated ns-3 network. 
 
     TapBridge case.
     Nodes are real, the network is simulated.
@@ -74,7 +74,7 @@ See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/in
 
 ### Link simulation with ns-3
 
-Two _TapBridge_ net devices can be used to create emulated link between two TAP virtual interfaces. Two ghost nodes inside ns-3 need to be created. Each node should consist of a _TapBridge_ and ns-3 net device. These net devices should be connected together by an emulated ns-3 channel. Each _TapBridge_ should be connected to the proper TAP interface. These TAP interfaces can serve now as the endpoints of the emulated link.
+Two `TapBridge` net devices can be used to create emulated link between two TAP virtual interfaces. Two ghost nodes inside ns-3 need to be created. Each node should consist of a `TapBridge` and ns-3 net device. These net devices should be connected together by an emulated ns-3 channel. Each `TapBridge` should be connected to the proper TAP interface. These TAP interfaces can serve now as the endpoints of the emulated link.
 
     +--------+                                         +--------+
     |  name  |                                         |  name  |
@@ -138,11 +138,11 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 ## Usage
 
 ### ns-3 downloading and building  
-1 Download ns-3 source code: http://www.nsnam.org/releases/latest  
-2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`  
-3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`  
-4. Configure it: `./waf -d optimized --enable-sudo configure`  
-5. Build: `./waf build`  
+1. Download ns-3 source code: http://www.nsnam.org/releases/latest
+2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`
+3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`
+4. Configure it: `./waf -d optimized --enable-sudo configure`
+5. Build: `./waf build`
 
 ### Running mininet scripts
 1. Run `./waf shell` in order to let the ns-3 set appropriate environment variables
