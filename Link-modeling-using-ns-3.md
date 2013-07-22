@@ -8,6 +8,7 @@
 3. [Code](Link-modeling-using-ns-3#code)  
 3.1. [Mininet](Link-modeling-using-ns-3#mininet)  
 3.2. [ns-3 optional patches](Link-modeling-using-ns-3#ns-3-optional-patches)  
+4. [Usage](Link-modeling-using-ns-3#usage)
 
 ## Introduction
 
@@ -136,9 +137,13 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 
 ## Usage
 
-1. ns-3 download and build:  
-1.1. Download ns-3 source code: http://www.nsnam.org/releases/latest  
-1.2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`  
-1.3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`  
-1.4. Configure it: `./waf -d optimized --enable-sudo configure`  
-1.5. Build: `./waf build`  
+### ns-3 downloading and building  
+1 Download ns-3 source code: http://www.nsnam.org/releases/latest
+2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`
+3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`
+4. Configure it: `./waf -d optimized --enable-sudo configure`
+5. Build: `./waf build`
+
+### Running mininet scripts
+1. Run `./waf shell` in order to let the ns-3 set appropriate environment variables
+2. Run a mininet script, for example: `python mininet-dir/examples/ns3/emptynet-simple.py`
