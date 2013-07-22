@@ -112,7 +112,13 @@ Finally, we get a ns-3 process which provides a communication channel between na
 
 ### Mininet
 
-Branch: <http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration>  
-Latest commits: <http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration>
+Branch: <http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration>
+
+A list of changes to the original mininet:
+* added new module mininet.ns3 `new file: mininet/ns3.py`
+* minor change in Node.addIntf() `modified file: mininet/node.py`
+* added ns-3 related examples `new files in: examples/ns3`
+
+You can follow the commits there: <http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration>
 
 ### ns-3 optional patches
