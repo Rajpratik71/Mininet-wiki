@@ -85,7 +85,7 @@ Two _TapBridge_ net devices can be used to create emulated link between two TAP 
                  |<------------------------------->|
                              ns-3 process
 
-## Work
+## Details
 
 ### How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?
 
@@ -105,3 +105,12 @@ So, at the end, there are:
 - ns-3 process in the root namespace
 
 Finally, we get a ns-3 process which provides a communication channel between namespace A and namespace B. Tested on Linux kernels 3.5 and 3.8.
+
+## Code
+
+### Mininet
+
+Branch: <http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration>  
+Latest commits: <http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration>
+
+### ns-3 optional patches
