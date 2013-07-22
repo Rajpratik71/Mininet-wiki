@@ -1,3 +1,14 @@
+## Contents
+
+1. [Introduction](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#introduction)  
+1.1. [ns-3 emulation features](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#ns-3-emulation-features)  
+1.2. [Link simulation with ns-3](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#link-simulation-with-ns-3)  
+2. [Details](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#details)  
+2.1. [How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#how-to-achieve-communication-of-ns-3-process-with-tap-interfaces-in-distinct-namespaces)  
+3. [Code](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#code)  
+3.1. [Mininet](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#mininet)  
+3.2. [ns-3 optional patches](http://github.com/mininet/mininet/wiki/Link-modeling-using-ns-3#ns-3-optional-patches)  
+
 ## Introduction
 
 ### ns-3 emulation features
@@ -60,7 +71,7 @@ See more: [Realtime](http://www.nsnam.org/docs/release/3.17/manual/singlehtml/in
                                   +---------------------------+
 
 
-### Link simulation
+### Link simulation with ns-3
 
 Two _TapBridge_ net devices can be used to create emulated link between two TAP virtual interfaces. Two ghost nodes inside ns-3 need to be created. Each node should consist of a _TapBridge_ and ns-3 net device. These net devices should be connected together by an emulated ns-3 channel. Each _TapBridge_ should be connected to the proper TAP interface. These TAP interfaces can serve now as the endpoints of the emulated link.
 
@@ -112,13 +123,13 @@ Finally, we get a ns-3 process which provides a communication channel between na
 
 ### Mininet
 
-Branch: <http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration>
+Development branch: <http://github.com/piotrjurkiewicz/mininet/tree/ns3-integration>
 
 A list of changes to the original mininet:
 * added new module mininet.ns3 `new file: mininet/ns3.py`
 * minor change in Node.addIntf() `modified file: mininet/node.py`
 * added ns-3 related examples `new files in: examples/ns3`
 
-You can follow the commits there: <http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration>
+You can follow the commits here: <http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration>
 
 ### ns-3 optional patches
