@@ -173,7 +173,7 @@ def main(argv):
 
 What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it is going to exchange packets with the real world).
 
-However, this is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is no `ns.core.Simulator` object on which this function is called. In fact, there is only one simulator singleton object in the whole ns-3 process. It maintains its own scheduler object, which thus can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which they are appended during object construction.
+However, this is not the end of global states. After setting up and installing devices, the simulation is started with the `ns.core.Simulator.Run()`. But there is no `ns.core.Simulator` object on which this function is called. In fact, there is only one simulator singleton object in the whole ns-3 process. It maintains its own scheduler object, which thus can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which they are appended during object construction.
 
 Existence of the singleton simulator object implies that there can be only one running simulator thread per process. This thread has to deal with the processing of packets from all of the simulated channels. Availability of multiple cores cannot be exploited.
 
