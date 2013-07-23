@@ -173,11 +173,11 @@ def main(argv):
 
 What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it is going to exchange packets with the real world).
 
-However, that is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is no `ns.core.Simulator` object on which this function is called. In fact, there is only one simulator singleton object in the whole ns-3 process. It maintains its own scheduler object, which thus can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which they are appended during initialization.
+However, this is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is no `ns.core.Simulator` object on which this function is called. In fact, there is only one simulator singleton object in the whole ns-3 process. It maintains its own scheduler object, which thus can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which they are appended during initialization.
 
-Existence of the singleton simulator object implies that there can be only one running simulator thread per process. This thread has to deal with the packets processing from all of the simulated channels. Availability of multiple cores cannot be exploited.
+Existence of the singleton simulator object implies that there can be only one running simulator thread per process. This thread has to deal with the processing of packets from all of the simulated channels. Availability of multiple cores cannot be exploited.
 
-On the other hand, all of the ns-3 (and mininet in our case) objects stays in a single Python process memory space. 
+On the other hand, all of the ns-3 (and mininet in our case) objects stays in a single Python process memory space. They can call each other methods and access attributes. For example, advanced ns-3 channel settings can be set from the level of Python/mininet. Another case is updating nodes positions inside ns-3 from the mininet level.
 
 ## Code
 
@@ -201,10 +201,10 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 2. Unzip it: `tar xjf ns-allinone-3.*.tar.bz2`
 3. Go to the directory containing ns-3: `cd ns-allinone-3.*/ns-3.*/`
 4. Configure it: `./waf -d optimized --enable-sudo configure`
-5. You may be prompted for sudo password while building
+5. You may be prompted for sudo password while building.
 6. Build: `./waf build`
 
 ### Running mininet scripts
-1. Run `sudo ./waf shell` in order to let the ns-3 set appropriate environment variables
-2. Go to the directory with mininet scripts
+1. Run `sudo ./waf shell` in order to let the ns-3 set appropriate environment variables.
+2. Go to the directory with mininet scripts.
 3. Run a mininet script, for example: `python mininet/examples/ns3/emptynet-simple.py`
