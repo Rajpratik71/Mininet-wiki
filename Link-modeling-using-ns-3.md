@@ -177,7 +177,7 @@ However, this is not the end of global states. After setting up and installing d
 
 Existence of the singleton simulator object implies that there can be only one running simulator thread per process. This thread has to deal with the processing of packets from all of the simulated channels. Availability of multiple cores cannot be exploited.
 
-On the other hand, all of the ns-3 (and mininet in our case) objects stays in a single Python process memory space. They can call each other methods and access attributes. For example, advanced ns-3 channel settings can be set from the level of Python/mininet. Another case is updating nodes positions inside ns-3 from the mininet level, when simulating wireless channels.
+On the other hand, all of the ns-3 (and mininet in our case) objects stays in a single Python/mininet/ns-3 process memory space. They can call each other methods and access attributes. For example, advanced ns-3 channel settings can be set from the level of Python/mininet. Another case is updating nodes positions inside ns-3 from the mininet level, when simulating wireless channels.
 
 Another approach is to spawn child ns-3 process for each simulated channel or link (link is a channel with only two devices connected). Each process has its own memory and maintains its own simulator, scheduler and ns-3 nodes. They can run concurrently and exploit multiple cores for simulating different channels.
 
