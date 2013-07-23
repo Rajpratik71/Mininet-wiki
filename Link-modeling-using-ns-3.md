@@ -124,6 +124,56 @@ So, at the end, there are:
 
 Finally, we get a ns-3 process which provides a communication channel between namespace A and namespace B. Tested on Linux kernels 3.5 and 3.8.
 
+### Architecture: single ns-3 thread or multiple processes?
+
+Let's take a look at the code of an exemplary ns-3 simulation in Python. It establishes a simple channel between between devices in two distinct nodes. Next, `TapBridges` are connected to each device. It provides possibility of communication between two TAP interfaces with the simulated channel, just like with the schema above.
+
+```python
+import sys
+import ns.core
+import ns.network
+import ns.csma
+import ns.tap_bridge
+
+def main(argv):
+
+    ns.core.GlobalValue.Bind("SimulatorImplementationType", ns.core.StringValue("ns3::RealtimeSimulatorImpl"))
+    ns.core.GlobalValue.Bind("ChecksumEnabled", ns.core.BooleanValue ("true"))
+
+    node0 = ns.network.Node()
+    node1 = ns.network.Node()
+
+    simple = ns.network.SimpleChannel()
+
+    device0 = ns.network.SimpleNetDevice()
+    device0.SetChannel(simple)
+    node0.AddDevice(device0)
+
+    device1 = ns.network.SimpleNetDevice()
+    device1.SetChannel(simple)
+    node1.AddDevice(device1)
+
+    tapBridge0 = ns.tap_bridge.TapBridgeHelper()
+    tapBridge0.SetAttribute ("Mode", ns.core.StringValue ("UseBridge"))
+    tapBridge0.SetAttribute ("DeviceName", ns.core.StringValue("tap0"))
+    tapBridge0.Install (node0, device0)
+
+    tapBridge1 = ns.tap_bridge.TapBridgeHelper()
+    tapBridge1.SetAttribute ("Mode", ns.core.StringValue ("UseBridge"))
+    tapBridge1.SetAttribute ("DeviceName", ns.core.StringValue("tap1"))
+    tapBridge1.Install (node1, device1)
+
+    ns.core.Simulator.Stop(ns.core.Seconds(3600))
+    ns.core.Simulator.Run()
+
+    ns.core.Simulator.Destroy()
+    return 0
+```
+
+What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it exchanges packet with the real world).
+
+ 
+
 ## Code
 
 ### Mininet
