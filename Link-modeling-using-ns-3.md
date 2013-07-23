@@ -171,11 +171,13 @@ def main(argv):
     return 0
 ```
 
-What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it exchanges packet with the real world).
+What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it is going to exchange packets with the real world).
 
-However, that is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is not `ns.core.Simulator` object on which this function is called. In fact, there is only one Simulator singleton object in ns-3. It maintains its own scheduler object, which can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which each of them is appended during object construction.
+However, that is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is no `ns.core.Simulator` object on which this function is called. In fact, there is only one simulator singleton object in the whole ns-3 process. It maintains its own scheduler object, which thus can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which they are appended during initialization.
 
-Existence of the singleton simulator object implies that there can be only one running simulator thread per process. 
+Existence of the singleton simulator object implies that there can be only one running simulator thread per process. This thread has to deal with the packets processing from all of the simulated channels. Availability of multiple cores cannot be exploited.
+
+On the other hand, all of the ns-3 (and mininet in our case) objects stays in a single Python process memory space. 
 
 ## Code
 
