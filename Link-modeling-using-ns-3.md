@@ -183,6 +183,8 @@ Another approach is to spawn child ns-3 process for each simulated channel or li
 
 This approach, however, limits flexibility: after the fork of ns-3 process mininet will be not able to access ns-3 objects. It might be considered to implement some kind of interprocess communication between mininet and ns-3 processes for a limited set of messages, particularly for position updating. However, mininet will not access full ns-3 API like in the single process approach.
 
+As for now, **single ns-3 thread inside common Python/mininet/ns-3 process** approach was selected.
+
 ## Code
 
 ### Mininet
