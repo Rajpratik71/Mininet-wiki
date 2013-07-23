@@ -127,7 +127,7 @@ Finally, we get a ns-3 process which provides a communication channel between na
 
 ### Architecture: single ns-3 thread or multiple processes?
 
-Let's take a look at the code of an simple ns-3 simulation in Python. It establishes a simple channel between two devices in two distinct nodes. Next, `TapBridges` are installed to each device. Each `TapBridge` bridges a ns-3 device (`SimpleNetDevice` in that case) and a system TAP device ("tap0" or "tap1" in that case). It provides possibility of communication between two TAP interfaces with the simulated channel, just like with the schema above.
+Let's take a look at the code of an simple ns-3 simulation in Python. It establishes a simple channel between two devices in two distinct nodes. Next, `TapBridges` are installed to each device. Each `TapBridge` bridges a ns-3 device (`SimpleNetDevice` in that case) and a system TAP device ("tap0" or "tap1" in that case). It provides possibility of communication between these two TAP interfaces through the simulated channel, just like with the schema above.
 
 ```python
 import sys
