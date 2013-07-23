@@ -5,6 +5,7 @@
  - [Link simulation with ns-3](Link-modeling-using-ns-3#link-simulation-with-ns-3)  
 - [Details](Link-modeling-using-ns-3#details)  
  - [How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?](Link-modeling-using-ns-3#how-to-achieve-communication-of-ns-3-process-with-tap-interfaces-in-distinct-namespaces)  
+ - [Architecture: single ns-3 thread or multiple processes?](Link-modeling-using-ns-3#ns-3-optional-patches)  
 - [Code](Link-modeling-using-ns-3#code)  
  - [Mininet](Link-modeling-using-ns-3#mininet)  
  - [ns-3 optional patches](Link-modeling-using-ns-3#ns-3-optional-patches)  
@@ -126,7 +127,7 @@ Finally, we get a ns-3 process which provides a communication channel between na
 
 ### Architecture: single ns-3 thread or multiple processes?
 
-Let's take a look at the code of an exemplary ns-3 simulation in Python. It establishes a simple channel between between devices in two distinct nodes. Next, `TapBridges` are connected to each device. It provides possibility of communication between two TAP interfaces with the simulated channel, just like with the schema above.
+Let's take a look at the code of an simple ns-3 simulation in Python. It establishes a simple channel between two devices in two distinct nodes. Next, `TapBridges` are installed to each device. Each `TapBridge` bridges a ns-3 device (`SimpleNetDevice` in that case) and a system TAP device ("tap0" or "tap1" in that case). It provides possibility of communication between two TAP interfaces with the simulated channel, just like with the schema above.
 
 ```python
 import sys
@@ -172,7 +173,7 @@ def main(argv):
 
 What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it exchanges packet with the real world).
 
- 
+However, that is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is not `ns.core.Simulator` object on which this function is called. 
 
 ## Code
 
