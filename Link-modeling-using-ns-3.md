@@ -125,7 +125,7 @@ So, at the end, there are:
 
 Finally, we get a ns-3 process which provides a communication channel between namespace A and namespace B. Tested on Linux kernels 3.5 and 3.8.
 
-### Architecture: single ns-3 thread or multiple processes?
+### Architecture: single ns-3 thread inside mininet or multiple processes?
 
 Let's take a look at the code of an simple ns-3 simulation in Python. It establishes a simple channel between two devices in two distinct nodes. Next, `TapBridges` are installed to each device. Each `TapBridge` bridges a ns-3 device (`SimpleNetDevice` in that case) and a system TAP device ("tap0" or "tap1" in that case). It provides possibility of communication between these two TAP interfaces through the simulated channel, just like with the schema above.
 
@@ -181,7 +181,7 @@ On the other hand, all of the ns-3 (and mininet in our case) objects stays in a 
 
 Another approach is to spawn child ns-3 process for each simulated channel or link (link is a channel with only two devices connected). Each process has its own memory and maintains its own simulator, scheduler and ns-3 nodes. They can run concurrently and exploit multiple cores for simulating different channels.
 
-
+This approach, however, limits flexibility: after the fork of ns-3 process mininet will be not able to access ns-3 objects. It might be considered to implement some kind of interprocess communication between mininet and ns-3 processes for a limited set of messages, particularly for position updating. However, mininet will not access full ns-3 API like in the single process approach.
 
 ## Code
 
