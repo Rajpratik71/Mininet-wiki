@@ -5,7 +5,7 @@
  - [Link simulation with ns-3](Link-modeling-using-ns-3#link-simulation-with-ns-3)  
 - [Details](Link-modeling-using-ns-3#details)  
  - [How to achieve communication of ns-3 process with TAP interfaces in distinct namespaces?](Link-modeling-using-ns-3#how-to-achieve-communication-of-ns-3-process-with-tap-interfaces-in-distinct-namespaces)  
- - [Architecture: single ns-3 thread or multiple processes?](Link-modeling-using-ns-3#ns-3-optional-patches)  
+ - [Architecture: single ns-3 thread or multiple processes?](Link-modeling-using-ns-3#architecture-single-ns-3-thread-or-multiple-processes)  
 - [Code](Link-modeling-using-ns-3#code)  
  - [Mininet](Link-modeling-using-ns-3#mininet)  
  - [ns-3 optional patches](Link-modeling-using-ns-3#ns-3-optional-patches)  
@@ -173,7 +173,9 @@ def main(argv):
 
 What is important to notice, is that there are some global values set. The first value, `SimulatorImplementationType`, is set to the realtime simulator type. The second one, `ChecksumEnabled`, enables checksum computation on packets inside ns-3 (by default ns-3 do not compute checksums, however, it is needed when it exchanges packet with the real world).
 
-However, that is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is not `ns.core.Simulator` object on which this function is called. 
+However, that is not the end of global states. After setting up and installing devices the simulation is started with the `ns.core.Simulator.Run()`. But there is not `ns.core.Simulator` object on which this function is called. In fact, there is only one Simulator singleton object in ns-3. It maintains its own scheduler object, which can be only one in the entire simulation. Apart from that, ns-3 maintains single global lists of nodes and channels, to which each of them is appended during object construction.
+
+Existence of the singleton simulator object implies that there can be only one running simulator thread per process. 
 
 ## Code
 
