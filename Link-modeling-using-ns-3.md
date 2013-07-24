@@ -200,10 +200,10 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 
 ### ns-3 patches
 
-#### TapBridge address learning patch `mandatory`
+#### TapBridge address learning patch `required`
 http://gist.github.com/piotrjurkiewicz/6067858
 
-#### TapBridge link status notification patch `mandatory`
+#### TapBridge link status notification patch `required`
 http://gist.github.com/piotrjurkiewicz/6067864
 
 ## Usage
