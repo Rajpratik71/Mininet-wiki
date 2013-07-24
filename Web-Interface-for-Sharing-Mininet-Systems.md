@@ -66,7 +66,7 @@ Module documentation: There is a package page which can show the documentation a
 
 Command line documentation issues: 
 - If the package is not installed yet, then we cannot do this. However, a small script which queries the site by using the XML-RPC API can definitely be written. If djangopypi2 currently doesn't support the necessary XML-RPC API yet, I don't think it will take long to implement it.  
-- If package is already installed, the documentation will only be available on disk if the packager specifically set it to do so. I will add this part to tutorial.
+- If package is already installed, the documentation will only be available on disk if the packager specifically set it to do so. I have added to the tutorial on how to do this.  
 **Heryandi End**  
 
 3. Scripts
@@ -131,7 +131,7 @@ Storage Issues:
 * What are other issues relating to VM image storage, which might require a LOT of storage?  
 **Heryandi**  
 Storage/CDN/S3: Need to investigate about this first.  
-Others: Uploading the image itself is a pain because of the size... Probably something which supports resuming will be needed.  
+Others: Uploading the image itself is a pain because of the size... I have created a quick prototype to do a direct multipart uploads to S3 with auto-retry on failure.  
 **Heryandi End**  
 
 
