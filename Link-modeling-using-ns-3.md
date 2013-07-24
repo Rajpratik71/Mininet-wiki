@@ -8,7 +8,7 @@
  - [Architecture: single ns-3 thread or multiple processes?](Link-modeling-using-ns-3#architecture-single-ns-3-thread-or-multiple-processes)  
 - [Code](Link-modeling-using-ns-3#code)  
  - [Mininet](Link-modeling-using-ns-3#mininet)  
- - [ns-3 optional patches](Link-modeling-using-ns-3#ns-3-optional-patches)  
+ - [ns-3 patches](Link-modeling-using-ns-3#ns-3-patches)  
 - [Usage](Link-modeling-using-ns-3#usage)  
  - [ns-3 downloading and building](Link-modeling-using-ns-3#ns-3-downloading-and-building)  
  - [Running mininet scripts](Link-modeling-using-ns-3#running-mininet-scripts) 
@@ -198,7 +198,13 @@ A list of changes to the original mininet:
 
 You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commits/ns3-integration
 
-### ns-3 optional patches
+### ns-3 patches
+
+#### TapBridge address learning patch `mandatory`
+http://gist.github.com/piotrjurkiewicz/6067858
+
+#### TapBridge link status notification patch `mandatory`
+http://gist.github.com/piotrjurkiewicz/6067864
 
 ## Usage
 
