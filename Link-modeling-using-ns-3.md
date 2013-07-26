@@ -259,7 +259,7 @@ I have prepared a Mininet virtual machine with built ns-3. Supports wired segmen
    - `python ../../mininet/examples/ns3/test-4.py`  
    Usage of CSMALink.
    - `python ../../mininet/examples/ns3/test-5.py`  
-   Capturing packet trace for CSMALink.
+   Capturing packet trace for CSMALink on ns-3 device.
    - `python ../../mininet/examples/ns3/emptynet-simple.py`  
    Modification of original emptynet.py example with SimpleLink. Changed lines are marked.
    - `python ../../mininet/examples/ns3/emptynet-csma.py`  
