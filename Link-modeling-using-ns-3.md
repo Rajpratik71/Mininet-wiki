@@ -224,7 +224,24 @@ http://gist.github.com/piotrjurkiewicz/6067864
 
 ## Midterm
 
-Mininet virtual machine with built ns-3. Supports wired segments and links: Simple and CSMA. Download [here](https://www.dropbox.com/s/nce813ropsz16wf/midterm.zip).
+For the time being, mininet.ns3 module implements:
+
+- ns-3 simulator handling: `start()`, `stop()`, `clear()`. I use global module functions and one global thread object because ns-3 simulator is a singleton object, so there can be only one simulator thread running.
+
+- `TBIntf` - subclass of mininet's Intf: It is a TAP interface located on mininet node which is bridged with the nsDevice located on nsNode. In fact, TBIntf class is the main workhorse of the module.
+
+- `SimpleSegment` - network segment (channel) with underlying SimpleChannel model from ns-3 (SimpleChannel is to simplest existing channel model in ns-3). Multiple nodes can connect to the segment, each time with `SimpleSegment.add()`. (see test-2.py)
+
+- `SimpleLink` - subclass of mininet's Link and SimpleSegment. It is a SimpleSegment with only two nodes connected. Its constructor is similar to the constructor of mininet's Link, so it can be used alternately. (see test-3.py)
+
+- `CSMASegment` and `CSMALink` - the same but for CSMA channel ns-3 model. (see test-4.py) 
+
+Examples emptynet-simple and emptynet-csma are modifications of the original emptynet example. Added and modified lines to the original are marked. As you may see, you have to only change Link class to another and invoke mininet.ns3.start() to start the ns-3 simulator.
+
+IMPORTANT NOTICE:
+You should not create any ns-3 segments or links or add any nodes to them after calling mininet.ns3.start(). Some part of ns-3 code called during device connecting is not thread-safe and it results in segfaults.
+
+I have prepared a Mininet virtual machine with built ns-3. Supports wired segments and links: Simple and CSMA. Download [here](https://www.dropbox.com/s/nce813ropsz16wf/midterm.zip).
 
 1. Unzip and import machine to the VM hypervisor.
 2. Start VM.
@@ -247,3 +264,4 @@ Mininet virtual machine with built ns-3. Supports wired segments and links: Simp
    Modification of original emptynet.py example with SimpleLink. Changed lines are marked.
    - `python ../../mininet/examples/ns3/emptynet-csma.py`  
    Modification of original emptynet.py example with CSMALink. Changed lines are marked.
+
