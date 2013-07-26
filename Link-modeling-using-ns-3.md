@@ -224,7 +224,7 @@ http://gist.github.com/piotrjurkiewicz/6067864
 
 ## Midterm
 
-For the time being, mininet.ns3 module implements:
+For the time being, `mininet.ns3` module implements:
 
 - ns-3 simulator handling: `start()`, `stop()`, `clear()`. I use global module functions and one global thread object because ns-3 simulator is a singleton object, so there can be only one simulator thread running.
 
