@@ -12,6 +12,7 @@
 - [Usage](Link-modeling-using-ns-3#usage)  
  - [ns-3 downloading and building](Link-modeling-using-ns-3#ns-3-downloading-and-building)  
  - [Running mininet scripts](Link-modeling-using-ns-3#running-mininet-scripts) 
+- [Midterm](Link-modeling-using-ns-3#midterm)  
 
 ## Introduction
 
@@ -220,3 +221,29 @@ http://gist.github.com/piotrjurkiewicz/6067864
 1. Run `sudo ./waf shell` in order to let the ns-3 set appropriate environment variables.
 2. Go to the directory with mininet scripts.
 3. Run a mininet script, for example: `python mininet/examples/ns3/emptynet-simple.py`
+
+## Midterm
+
+Mininet virtual machine with built ns-3. Supports wired segments and links: Simple and CSMA. Download [here](https://www.dropbox.com/s/nce813ropsz16wf/midterm.zip).
+
+1. Unzip and import machine to the VM hypervisor.
+2. Start VM.
+3. Go to the directory containing ns-3: `cd ns-allinone-3.17/ns-3.17/`
+4. Run `sudo ./waf shell` in order to let the ns-3 set appropriate environment variables.
+5. Run tests:
+   - `python ../../mininet/examples/ns3/test-0.py`  
+   Test starting and stopping ns-3 simulator.
+   - `python ../../mininet/examples/ns3/test-1.py`  
+   Usage of TBIntf mixed with ns-3 code.
+   - `python ../../mininet/examples/ns3/test-2.py`  
+   Usage of SimpleSegment. Three nodes connected to the one segment (channel).
+   - `python ../../mininet/examples/ns3/test-3.py`  
+   Usage of SimpleLink (SimpleSegment with only two nodes connected)
+   - `python ../../mininet/examples/ns3/test-4.py`  
+   Usage of CSMALink.
+   - `python ../../mininet/examples/ns3/test-5.py`  
+   Capturing packet trace for CSMALink.
+   - `python ../../mininet/examples/ns3/emptynet-simple.py`  
+   Modification of original emptynet.py example with SimpleLink. Changed lines are marked.
+   - `python ../../mininet/examples/ns3/emptynet-csma.py`  
+   Modification of original emptynet.py example with CSMALink. Changed lines are marked.
