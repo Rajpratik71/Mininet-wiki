@@ -59,12 +59,12 @@ The python API is available [here](http://boto.readthedocs.org/en/latest/s3_tut.
     Many modules have documentation. How is that integrated into the system? How/where do I go to find documentation on a particular module? If I'm installing from the command line, how do I get the documentation?
 
 **Heryandi**  
-First 3 questions: No walkthrough yet, so I will need to write all these first. Once done, I can simply add a tab to the navigation bar for a link to the walkthrough. The link to the walkthrough page should probably be given in welcome email as well.
+First 3 questions: A walkthrough has been written and put into https://ec2-54-218-16-158.us-west-2.compute.amazonaws.com/guide/. 
 
 Module documentation: There is a package page which can show the documentation as written by uploader. If this is not enough, then a link to external website can also be added.
 
 Command line documentation issues: 
-- If the package is not installed yet, then we cannot do this. However, a small script which queries the site by using the XML-RPC API can definitely be written. If djangopypi2 currently doesn't support the necessary XML-RPC API yet, I don't think it will take long to implement it.  
+- If the package is not installed yet, then we cannot do this. However, a small script which queries the site for some information about package can definitely be written.  
 - If package is already installed, the documentation will only be available on disk if the packager specifically set it to do so. I have added to the tutorial on how to do this.  
 **Heryandi End**  
 
