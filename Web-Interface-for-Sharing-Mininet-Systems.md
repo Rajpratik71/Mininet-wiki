@@ -27,7 +27,7 @@ For this part of project, we are going to use existing Python packaging system (
 - Finished making a small web apps with direct multipart upload to S3 with automatic retry on failure  
 
 #### Week ?+2 (22 July - 26 July):
-
+- Wrote setup script to setup the Mininet pypi clone on an Ubuntu machine.
 
 ----
 #### BL: First Iteration Feedback (... until 5 July)
