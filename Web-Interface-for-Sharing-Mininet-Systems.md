@@ -34,6 +34,10 @@ Repository:
 #### Week ?+2 (22 July - 26 July):
 - Wrote setup script to setup the Mininet pypi clone on an Ubuntu machine.
 
+#### Week ?+3 (29 July - 02 July):
+- Added more features to mnp (info, docs, simple search)
+- Still trying to make some sense of GitHub OAuth API
+
 ----
 #### BL: First Iteration Feedback (... until 5 July)
 
