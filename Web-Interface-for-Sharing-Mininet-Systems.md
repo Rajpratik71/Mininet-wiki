@@ -152,6 +152,8 @@ Heryandi, it looks like things are going reasonably well; if you want to comment
 
 One thing that might be nice to try for might be some live demos, perhaps via a Google+ hangout or something. We'd obviously have to coordinate the time zones, but I think other Mininet developers, GSoC participants and mentors, or perhaps folks at onlab might be interested.
 
+Additionally, I think we will want a final project writeup/wiki page, including everything that is useful or relevant, from the basic functionality and design of the system, to some explanation of its components and internals, to instruction for deployment and installation (including links to each of the components as needed), to documentation (or links to it) for package users and developers. The sooner you start this, the easier it will be I think. You might be able to reorganize a lot of the existing material on this page.
+
 ----
 
 ### Complete system/VM/experiment archive
