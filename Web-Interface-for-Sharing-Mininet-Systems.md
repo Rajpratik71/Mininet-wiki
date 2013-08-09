@@ -146,6 +146,11 @@ In addition to documenting and collecting what you have so far, I think that for
 
 Something to think about is whether the package scripts should be integrated into the `mn` command (e.g. `mn --install`) or should be separate scripts. For now, I am thinking we should prototype separate scripts - we can always integrate them with `mn` at a later date if desired. Also it's not entirely obvious to me how much integration we want with Mininet proper, and whether we want the package system to be a dependency for Mininet or a separate system.
 
+##### 4. Overall Project Planning
+
+Heryandi, it looks like things are going reasonably well; if you want to comment on the additional stuff you want to work on on both projects, that would definitely be helpful. Overall of course we're going to want to time-box things and just do whatever can be completed in the time frame, but it's important to me that things are packaged and documented so that we can either deploy them as-is or can easily continue work to add the remaining features that are required to get to a stage where we can put a test system on line and open it up to some users for testing purposes. We could make that part of the GSoC plan, or that could also be done afterward if there is missing functionality, usability features, or documentation that we still need to complete. Ideally at the end of the project we'll have, at the very least, a system that can be demonstrated. 
+
+One thing that might be nice to try for might be some live demos, perhaps via a Google+ hangout or something. We'd obviously have to coordinate the time zones, but I think other Mininet developers, GSoC participants and mentors, or perhaps folks at onlab might be interested.
 
 ----
 
