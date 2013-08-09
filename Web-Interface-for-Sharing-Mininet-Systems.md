@@ -1,7 +1,5 @@
 There are two main objectives: [PyPI or CPAN for Mininet](Web-Interface-for-Sharing-Mininet-Systems#pypi-or-cpan-for-mininet) and [Complete system/VM/experiment archive](Web-Interface-for-Sharing-Mininet-Systems#complete-systemvmexperiment-archive).
 
-[Project Feedback](.#Project Feedback)
-
 ### Contents
 
 * [PyPI or CPAN for Mininet](Web-Interface-for-Sharing-Mininet-Systems#pypi-or-cpan-for-mininet)
