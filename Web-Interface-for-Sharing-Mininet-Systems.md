@@ -4,7 +4,7 @@ There are two main objectives: [PyPI or CPAN for Mininet](Web-Interface-for-Shar
 
 * [PyPI or CPAN for Mininet](Web-Interface-for-Sharing-Mininet-Systems#pypi-or-cpan-for-mininet)
 * [Project Iteration Log](Web-Interface-for-Sharing-Mininet-Systems#project-iteration-log)
-* [Project Feedback](Web-Interface-for-Sharing-Mininet-Systems#project-feedback)
+* [Mentor Feedback](Web-Interface-for-Sharing-Mininet-Systems#mentor-feedback)
 * [Complete system/VM/experiment archive](Web-Interface-for-Sharing-Mininet-Systems#complete-systemvmexperiment-archive)
 
 ### PyPI or CPAN for Mininet
@@ -51,7 +51,7 @@ Repository:
 
 ----
 
-### Project Feedback
+### Mentor Feedback
 
 #### First Phase Feedback (BL) (... through 5 July)
 
