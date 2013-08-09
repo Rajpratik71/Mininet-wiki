@@ -1,6 +1,11 @@
-There are two main objectives:
-- Something similar to PyPI or CPAN, but for Mininet
-- Complete system/VM/experiment archive
+There are two main objectives: [PyPI or CPAN for Mininet](#PyPI-or-CPAN-for-Mininet) and [Complete system/VM/experiment archive](#Complete-system/VM/experiment-archive).
+
+### Contents
+
+* [PyPI or CPAN for Mininet](#PyPI-or-CPAN-for-Mininet)
+* [Project Iteration Log](#Project-Iteration-Log)
+* [Project Feedback](#Project-Feedback)
+* [Complete system/VM/experiment archive](#Complete-system/VM/experiment-archive)
 
 ### PyPI or CPAN for Mininet
 
