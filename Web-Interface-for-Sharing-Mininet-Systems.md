@@ -7,6 +7,8 @@ There are two main objectives: [PyPI or CPAN for Mininet](Web-Interface-for-Shar
 * [Project Mentor Feedback](Web-Interface-for-Sharing-Mininet-Systems#project-mentor-feedback)
 * [Complete system/VM/experiment archive](Web-Interface-for-Sharing-Mininet-Systems#complete-systemvmexperiment-archive)
 
+---
+
 ### PyPI or CPAN for Mininet
 
 For this part of project, we are going to use existing Python packaging system (based on `setuptools`) to package Mininet modules and build a PyPI clone just to share Mininet modules.
@@ -17,6 +19,8 @@ Repository:
 - mnp: `https://github.com/heryandi/mnp`
 
 ##### Example use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
+
+---
 
 ### Project Iteration Log
 
