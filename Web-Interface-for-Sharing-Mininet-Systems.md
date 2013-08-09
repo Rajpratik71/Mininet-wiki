@@ -107,6 +107,46 @@ If the bugs are in Linux/Ubuntu, it shouldn't break the code if Linux/Ubuntu is 
 If it affects Python/Django though, there may need to be some changes to the code if we upgrade. The best bet is to write unit tests with decent coverage so at least the breaking changes can be identified (and fixed manually >_<) quickly. Note: Currently there is almost no unit tests in djangopypi2! Once updated, simply ssh into the server and do a git pull and then restart the server.  
 **Heryandi End**  
 
+#### Midterm Feedback (BL) (August 2-9, 2013)
+
+Three of the key aspects of the system are basic functionality (it needs to do what we need and be robust/reliable/secure/functional/upgradable), reproducibility (we need to be able to create/reproduce it on whatever hosting infrastructure we end up going with, which will probably be some kind of VM service like a local or hosted cloud), and usability. 
+
+##### 1. Basic design and progress review
+
+I'm glad to see the documentation as well as the basic functionality of the system. Demonstrating the basic functionality is obviously essential, and the scripts and documentation are critical for usability. Overall I think that the basic design is sound. So far, you have
+
+- Installed the Django PyPI clone on an EC2 instance to test its suitability for Mininet
+- Written scripts to make it easier to use the system
+- Written documentation to explain how to use the scripts and the system
+
+To reiterate, the latter two parts - scripts and documentation - are critically important to making the system usable in deployment.
+
+One thing that we haven't done a great job so far at is reproducibility, even the basic task of maintaining an overview of the design, or a simple design document, elaborating the project vision and describing the system components. This doesn't have to be complex or lengthy - rather it should be concise and reasonably complete, much like this summary.
+
+##### 2. Next reproducibility steps: project source code and resource storage and access
+
+Although you have prototyped much of the functionality of the project, it is important that the the code, data, documentation, and scripts are stored somewhere (e.g. on github) so that
+
+- They can easily be found
+- They are archived and backed up to prevent loss
+- Anyone can review them, comment upon them, and enhance them
+- The system can be replicated on - or migrated to - different infrastructure as needed (e.g. EC2, private cloud, etc..)
+
+We've talked briefly about this and I believe you said that you would make sure that the code, documentation, configuration scripts, user scripts, and other notes are checked in somewhere and linked from this page.
+
+In addition to documenting and collecting what you have so far, I think that for the system to be successful we will need a mechanism or, at the very least, a fairly detailed list of the steps required for replicating the system, that is, creating a production-ready version of it on whatever infrastructure we choose for the production version.
+
+##### 3. Next usability step suggestions: single sign on, documentation access, and discoverability
+
+**Single (and multiple) sign-on**: Although I think it's a good idea to allow people to register for the system with simply an e-mail address, I believe that *single sign-on* is also very important for success and usability of the system. Ideally, users should have the option of signing on with their github account so that they don't need to create a new account just to create packages. Note that people who want to *use* packages don't need to authenticate themselves or create an account at all - accounts and sign-on are only required for developers who are creating packages and making them available to others. Also, a single login should be usable for both the package system and the complete system/experiment archive system.
+
+**Discoverability**: On one hand, we should add links and vanity URLs on mininet.org to point to the system. I (BL) can take care of that. Additionally, the user scripts (command line commands) should have the ability to enumerate the packages that are available.
+
+**Documentation access**: This is related to discoverability; it should be easy to find complete documentation for a given package, and it should ideally also be possible to examine package documentation (or at the very least get a URL for the documentation) from the user commands.
+
+Something to think about is whether the package scripts should be integrated into the `mn` command (e.g. `mn --install`) or should be separate scripts. For now, I am thinking we should prototype separate scripts - we can always integrate them with `mn` at a later date if desired. Also it's not entirely obvious to me how much integration we want with Mininet proper, and whether we want the package system to be a dependency for Mininet or a separate system.
+
+
 ----
 
 ### Complete system/VM/experiment archive
