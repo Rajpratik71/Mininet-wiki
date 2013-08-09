@@ -13,6 +13,8 @@ Repository:
 
 ##### Example use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
+### Project Iteration Log
+
 #### First iteration (17 June - 5 July):
 - All missing major features are added to djangopypi2:
   - User registration page
