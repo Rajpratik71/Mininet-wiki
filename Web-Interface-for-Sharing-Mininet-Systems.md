@@ -52,6 +52,7 @@ Repository:
 #### Week ?+4 (05 August - 09 August):
 - Added github login to djangopypi2. (Still need proper testing, not deployed to EC2 yet.)
 - Added upload capability to mnp by using github credentials. (This is much harder to do elegantly than I expected).
+- Added preliminary version of [design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
 
 #### Week ?+5 (12 August - 16 August):
 - Finish the github login integration.
