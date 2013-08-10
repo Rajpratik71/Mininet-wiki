@@ -15,7 +15,7 @@
   - Implementation:
      - Download & upload: Calls other existing tools (e.g. `python setup.py` or `pip`).
      - The rest (`list`, `docs`, `search`, `info`) sends queries to djpp using xmlrpc.
-         - `docs`, `info` is not in [standard PyPI XMLRPC API](http://wiki.python.org/moin/PyPIXmlRpc).
+         - Note: `docs`, `info` is not in [standard PyPI XMLRPC API](http://wiki.python.org/moin/PyPIXmlRpc).
 - Login for uploading: Can use djpp account or github account.
   - For djpp account, username and password has to be specified in `.pypirc`.
      - Implementation: Simply calls `python setup.py` to do all the dirty job.
