@@ -9,7 +9,7 @@
 - Usage: Downloading, uploading, searching package, browsing package information page, package permission management.
   - Implementation: Some already supported by djpp, some implemented by me on djpp.
 - User account: Local account and github account.
-  - GitHub login supported by using django-allauth library.
+  - GitHub login supported by using [django-allauth](https://github.com/pennersr/django-allauth) library.
 
 ### mnp:
 - Usage: See [https://github.com/heryandi/mnp](https://github.com/heryandi/mnp).
@@ -23,7 +23,7 @@
   - For github account, username has to be specified in `.pypirc`, password is optional.  
     Password is asked when `upload` command is executed if not specified in `.pypirc`.
      - Implementation: `python setup.py` is patched to read in the github username and password. In order for package uploaders to be able to use this feature, they will either have to manually specify the `cmdclass` included with `mnp` or by monkeypatching their `setup` function (can be done by simply `import mnp.patch`).
-     - Command-line authentication process:
+     - GitHub account authentication process:
          - GitHub username and password is read in.
          - mnp sends request to GitHub to get list of tokens using the username and password.
          - Find the token used by djpp.
