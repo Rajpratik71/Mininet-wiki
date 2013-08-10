@@ -16,8 +16,8 @@ For this part of project, we are going to use existing Python packaging system (
 Repository:
 
 - djangopypi2: [`https://github.com/heryandi/djangopypi2/tree/gsoc`](https://github.com/heryandi/djangopypi2/tree/gsoc)
-  - setup script: `[https://github.com/heryandi/djangopypi2/tree/gsoc/setup](https://github.com/heryandi/djangopypi2/tree/gsoc/setup)`
-- mnp: `[https://github.com/heryandi/mnp](https://github.com/heryandi/mnp)`
+  - setup script: [`https://github.com/heryandi/djangopypi2/tree/gsoc/setup`](https://github.com/heryandi/djangopypi2/tree/gsoc/setup)
+- mnp: [`https://github.com/heryandi/mnp`](https://github.com/heryandi/mnp)
 
 ##### Example use cases [moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
 
