@@ -10,6 +10,8 @@
   - Some of these are already done by djpp before this project. For those that weren't done, I have implemented it to djpp.
 - User account: Local account and github account.
   - GitHub login supported by using [django-allauth](https://github.com/pennersr/django-allauth) library.
+     - Logging in with GitHub account will create a new local account with no password.  
+       User can set email and password if s/he wants later.
 
 ### mnp:
 - Usage: See [https://github.com/heryandi/mnp](https://github.com/heryandi/mnp).
