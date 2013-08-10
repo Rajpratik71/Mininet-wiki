@@ -108,9 +108,10 @@ The people in Open Networking Lab should be ["encouraged"](http://en.wikipedia.o
 
 5. How are the data backed up? If everything stored on Amazon goes away, how do we recreate it?  
 **Heryandi**  
-Currently, there is no backup scheme at all...  
+The setup script can be used to help recreate the server configuration.
+However, for the data (users, packages etc), currently there is no backup scheme at all...  
 If we intend to use S3 though, there should be no issue on reliability (Note: I have never used S3, I may be wrong).  
-We may want to do our own periodical backup (e.g.: every 1 month) just in case S3 screws up.  
+We may want to do our own periodical backup (e.g.: every 1 month) to backup the data.  
 **Heryandi End**  
 
 6. Bug fixes and security updates
