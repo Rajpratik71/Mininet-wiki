@@ -53,6 +53,11 @@ Repository:
 - Added github login to djangopypi2. (Still need proper testing, not deployed to EC2 yet.)
 - Added upload capability to mnp by using github credentials. (This is much harder to do elegantly than I expected).
 
+#### Week ?+5 (12 August - 16 August):
+- Finish the github login integration.
+- Update the setup script to support the github integration as well
+- ???
+
 ----
 
 ### Project Mentor Feedback
