@@ -89,15 +89,15 @@ First 3 questions: A walkthrough has been written and put into https://ec2-54-21
 Module documentation: There is a package page which can show the documentation as written by uploader. If this is not enough, then a link to external website can also be added.
 
 Command line documentation issues: 
-- If the package is not installed yet, then we cannot do this. However, a small script which queries the site for some information about package can definitely be written.  
-- If package is already installed, the documentation will only be available on disk if the packager specifically set it to do so. I have added to the tutorial on how to do this.  
+- If the package is not installed yet, then the `mnp docs` command can be used.  
+- If package is already installed and the packager specifically set the package to download/install the documentation as well, then it will be available on disk. I have added to the tutorial on how to do this.  
 **Heryandi End**  
 
 3. Scripts
 
     Are there scripts to make these processes as easy as possible?  
 **Heryandi**  
-Preliminary version, support uploading and downloading only: https://github.com/heryandi/mnp  
+https://github.com/heryandi/mnp  
 **Heryandi End**  
 
 4. How do you think people should find out about the system?  
