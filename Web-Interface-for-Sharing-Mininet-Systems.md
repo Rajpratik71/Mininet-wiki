@@ -89,7 +89,7 @@ First 3 questions: A walkthrough has been written and put into https://ec2-54-21
 Module documentation: There is a package page which can show the documentation as written by uploader. If this is not enough, then a link to external website can also be added.
 
 Command line documentation issues: 
-- If the package is not installed yet, then the `mnp docs` command can be used.  
+- If the package is not installed yet, then the `mnp docs` command can be used to pull the docs from the website.  
 - If package is already installed and the packager specifically set the package to download/install the documentation as well, then it will be available on disk. I have added to the tutorial on how to do this.  
 **Heryandi End**  
 
