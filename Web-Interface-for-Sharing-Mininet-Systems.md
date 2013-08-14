@@ -56,9 +56,10 @@ Repository:
 - Added preliminary version of [design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
 
 #### Week ?+5 (12 August - 16 August):
-- Finish the github login integration.
-- Update the setup script to support the github integration as well.
+- Finish the github login integration. [DONE]
+- Update the setup script to support the github integration as well. [DONE]
 - Write instruction on how to replicate the system (without using setup script).
+- Add github integration to guide.
 
 ----
 
