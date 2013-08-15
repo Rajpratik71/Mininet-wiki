@@ -58,8 +58,9 @@ Repository:
 #### Week ?+5 (12 August - 16 August):
 - Finish the github login integration. [DONE]
 - Update the setup script to support the github integration as well. [DONE]
-- Write instruction on how to replicate the system (without using setup script).
-- Add github integration to guide.
+- Write instruction on how to replicate the system using setup script with description on what the setup script does. [DONE]
+- Add github integration to guide. [DONE]
+- ???
 
 ----
 
