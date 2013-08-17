@@ -14,9 +14,12 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 
 * Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI tool that allows automatic creation of Mininet and Openflow Controllers Scripts.
 
+* Chef cookbook for installing Mininet: https://github.com/karlll/mininet-cookbook.git
+
 #### Customized Mininet Versions and VMs
 
 * Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral/mn-ccnx/wiki
+
 
 #### Mininet-based Systems
 
