@@ -62,6 +62,8 @@ Repository:
 - Add github integration to guide. [DONE]
 - ???
 
+[BL: Sounds good! Could you update this page with links to the scripts, code and documentation?]
+
 ----
 
 ### Project Mentor Feedback
