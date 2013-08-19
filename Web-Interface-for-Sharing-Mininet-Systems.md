@@ -4,6 +4,7 @@ There are two main objectives: [PyPI or CPAN for Mininet](Web-Interface-for-Shar
 
 * [PyPI or CPAN for Mininet](Web-Interface-for-Sharing-Mininet-Systems#pypi-or-cpan-for-mininet)
   * [Project Code and Data](Web-Interface-for-Sharing-Mininet-Systems#project-code-and-data)
+  * [Documentation](Web-Interface-for-Sharing-Mininet-Systems#documentation)
   * [Example Use Cases](Web-Interface-for-Sharing-Mininet-Systems#example-use-cases)
   * [Project Iteration Log](Web-Interface-for-Sharing-Mininet-Systems#project-iteration-log)
   * [Project Mentor Feedback](Web-Interface-for-Sharing-Mininet-Systems#project-mentor-feedback)
@@ -22,6 +23,9 @@ For this part of project, we are going to use existing Python packaging system (
 - djangopypi2: [`https://github.com/heryandi/djangopypi2/tree/gsoc`](https://github.com/heryandi/djangopypi2/tree/gsoc)
   - setup script: [`https://github.com/heryandi/djangopypi2/tree/gsoc/setup`](https://github.com/heryandi/djangopypi2/tree/gsoc/setup)
 - mnp: [`https://github.com/heryandi/mnp`](https://github.com/heryandi/mnp)
+
+#### Documentation
+[`https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs`](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs)
 
 #### Example Use Cases
 
