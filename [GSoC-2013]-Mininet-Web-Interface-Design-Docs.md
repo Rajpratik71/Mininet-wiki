@@ -11,6 +11,7 @@
 - User account: Local account and github account.
   - GitHub login supported by using [django-allauth](https://github.com/pennersr/django-allauth) library.
      - Logging in with GitHub account will create a new local account with no password.  
+       Note: No password means "cannot login with any password" not "can login without password".  
        User can set email and password if s/he wants later.
 - Preparing for deployment using `setup/config.py`.
   - Register new GitHub application here: https://github.com/settings/applications/new.  
