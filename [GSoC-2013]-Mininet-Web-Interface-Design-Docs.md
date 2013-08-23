@@ -7,7 +7,6 @@
 
 ### djangopypi2 (djpp):
 - Usage: Downloading, uploading, searching package, browsing package information page, package permission management.
-  - Some of these are already done by djpp before this project. For those that weren't done, I have implemented it to djpp.
 - User account: Local account and github account.
   - GitHub login supported by using [django-allauth](https://github.com/pennersr/django-allauth) library.
      - Logging in with GitHub account will create a new local account with no password.  
