@@ -48,17 +48,17 @@
      - The rest (`list`, `docs`, `search`, `info`) sends queries to djpp using xmlrpc.
          - Note: `docs`, `info` is not in [standard PyPI XMLRPC API](http://wiki.python.org/moin/PyPIXmlRpc).
 - Login for uploading: Can use djpp account or github account.
-  - For djpp account, username and password has to be specified in `.pypirc`.
+  - For djpp account, username and password must be specified in `.pypirc`.
      - Implementation: Simply calls `python setup.py` to do all the dirty job.
-  - For github account, username has to be specified in `.pypirc`, password is optional.  
-    Password is asked when `upload` command is executed if not specified in `.pypirc`.
+  - For github account, github_username has to be specified in `.pypirc`, github_password is optional.  
+    Password is asked when needed if not specified in `.pypirc`.
      - Implementation: `python setup.py` is used to read in the github username and password.  
-       To achieve this, package uploaders will need to modify their `setup.py`, either by manually setting the `cmdclass` or by monkeypatching their `setup` function by putting `import mnp.patch` on top of their setup.py (monkeypatching).
+       To achieve this, package uploaders will need to modify their `setup.py`, either by manually setting the `cmdclass` or by monkeypatching their `setup` function by putting `import mnp.patch` on top of their setup.py.
      - GitHub account authentication process:
          - GitHub username and password are read.
          - mnp sends request to GitHub to get list of tokens using the username and password.
          - Find the token used by djpp.
          - Hash (SHA1) the token and send the username and hashed token as password to djpp using xmlrpc.
          - djpp checks for authentication using its own account first, if it fails, then it will check if it is a GitHub account.
-         - djpp hashes the token it remembers for the username and check if it matches the hash received from xmlrpc. If they match, login (and allow upload), otherwise, fail.
+         - djpp hashes the token it remembers for the username and check if it matches the hash received from xmlrpc. If they match, allow upload, otherwise, fail.
 
