@@ -18,10 +18,12 @@
   - Somehow get the `djangopypi2/setup/` folder out of the `gsoc` branch of https://github.com/heryandi/djangopypi2.
   - Set the application id and secret in `setup/conf/github_oauth.py`.
   - Put the HTTPS cert and key in `setup/keys/` folder.
+  - Create a database.
   - Edit `setup/config.py` as needed. Most values are set appropriately but some changes may be needed, these values are the most likely to change:
      - `gunicorn_user` and `gunicorn_group`. Username and group name to execute gunicorn process.
      - `supervisor_user`. Username to execute supervisor.
      - `nginx_server_name`, `nginx_cert`, `nginx_cert_key`. Server name, https certificate and key filename.
+     - `djpp_db_*`. The database settings to refer to previously created database.
 
 - Deployment steps as done by `setup/config.py`
   - Install requirements available through apt-get
