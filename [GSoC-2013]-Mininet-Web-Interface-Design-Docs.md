@@ -53,7 +53,7 @@
   - For github account, github_username has to be specified in `.pypirc`, github_password is optional.  
     Password is asked when needed if not specified in `.pypirc`.
      - Implementation: `python setup.py` is used to read in the github username and password.  
-       To achieve this, package uploaders will need to modify their `setup.py`, either by manually setting the `cmdclass` or by monkeypatching their `setup` function by putting `import mnp.patch` on top of their setup.py.
+       Package uploaders will need to modify their `setup.py`, either by manually setting the `cmdclass` to several classes provided by `mnp` or by monkeypatching their `setup` function by putting `import mnp.patch` on top of their setup.py. This also effectively put mnp as one of the package dependencies.
 - Authentication:
   - Normal account:
      - HTTP authentication using the `Authorization` header.
