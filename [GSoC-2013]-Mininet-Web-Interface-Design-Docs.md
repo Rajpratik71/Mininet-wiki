@@ -25,9 +25,9 @@
      - `nginx_server_name`, `nginx_cert`, `nginx_cert_key`. Server name, https certificate and key filename.
 
 - Deployment steps as done by `setup/config.py`
-  - Install virtualenv and nginx
-     - `apt-get install python-virtualenv nginx`
-  - Setup virtual environment for djpp
+  - Install requirements available through apt-get
+     - `apt-get install python-virtualenv nginx postgresql libpq-dev python-dev`
+  - Create virtual environment for djpp
      - `virtualenv venv`
   - Clone https://github.com/heryandi/djangopypi2, checkout the `gsoc` branch.
      - `git clone https://github.com/heryandi/djangopypi2.git`
@@ -39,6 +39,7 @@
      - See `setup/conf/supervisord.conf` for supervisor configuration template.
      - See `setup/conf/nginx.conf` for nginx configuration template.
   - Initialize djpp stuff (static files, database content).
+     - Also include the database entries to support GitHub authentication.
   - Run gunicorn, supervisor and nginx.
   
 ### mnp:
