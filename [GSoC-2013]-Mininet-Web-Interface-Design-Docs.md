@@ -54,11 +54,13 @@
     Password is asked when needed if not specified in `.pypirc`.
      - Implementation: `python setup.py` is used to read in the github username and password.  
        To achieve this, package uploaders will need to modify their `setup.py`, either by manually setting the `cmdclass` or by monkeypatching their `setup` function by putting `import mnp.patch` on top of their setup.py.
-     - GitHub account authentication process:
-         - GitHub username and password are read.
-         - mnp sends request to GitHub to get list of tokens using the username and password.
-         - Find the token used by djpp.
-         - Hash (SHA1) the token and send the username and hashed token as password to djpp using xmlrpc.
-         - djpp checks for authentication using its own account first, if it fails, then it will check if it is a GitHub account.
-         - djpp hashes the token it remembers for the username and check if it matches the hash received from xmlrpc. If they match, allow upload, otherwise, fail.
-
+- Authentication:
+  - Normal account:
+     - HTTP authentication using the `Authorization` header.
+  - GitHub:
+     - GitHub username and password are read.
+     - mnp sends request to GitHub to get list of tokens using the username and password.
+     - Find the token used by djpp.
+     - Hash (SHA1) the token and send the username and hashed token as password to djpp using xmlrpc.
+     - djpp checks for authentication using its own account first, if it fails, then it will check if it is a GitHub account.
+     - djpp hashes the token it remembers for the username and check if it matches the hash received from xmlrpc. If they match, allow upload, otherwise, fail.
