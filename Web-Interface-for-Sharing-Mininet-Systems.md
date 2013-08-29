@@ -196,7 +196,8 @@ Storage Issues:
 * What are other issues relating to VM image storage, which might require a LOT of storage?  
 **Heryandi**  
 Storage/CDN/S3: I investigated several storage & CDN solution and it seems to me that they are pretty much the same, but only Amazon provides free tier for 1 year.  
-Others: Uploading the image itself is a pain because of the size... I have created a quick prototype to do a direct multipart uploads to S3 with auto-retry on failure.  
+Credentials: We need to manually configure the CORS configuration of S3. In the configuration, we can specify which domains are allowed to directly upload to the folder. We can also configure folders to be publicly readable.  
+Others: Uploading the image itself is a pain because of the size... [Fixed. I have created a quick prototype to do a direct multipart uploads to S3 with auto-retry on failure]  
 **Heryandi End**  
 
 
@@ -206,7 +207,7 @@ Deployment issues
 * Can the same image be used on, say, EC2 and VirtualBox?  
 **Heryandi**  
 Deployment platforms: Not sure what you meant by deployment platforms. VirtualBox, VMware and KVM?  
-EC2 & VBox: Need to investigate first.  
+EC2 & VBox: Should be possible. For the details, [the other GSoC project](https://github.com/mininet/mininet/wiki/Mininet-network-in-a-box-and-automatic-deployment-on-ec2) seems to be directly related to this issue.  
 **Heryandi End**  
 
 Web front-end issues:
@@ -214,7 +215,6 @@ Web front-end issues:
 * Can we have a single sign-on for both packages and VM images?  
 **Heryandi**  
 If both sites can access the same user database, I am sure that this can be done.  
-If not, there should be a way though I am not sure how.  
 **Heryandi End**  
 
 User Issues:
