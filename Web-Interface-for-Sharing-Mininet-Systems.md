@@ -46,7 +46,7 @@ For this part of project, we are going to use existing Python packaging system (
 #### Second iteration (8 July - ...):
 - [mnp](https://github.com/heryandi/mnp).
 - [Direct multipart upload to S3 with automatic retry on failure](https://github.com/heryandi/flask-s3-multipart). Maybe useful for uploading VM image later.
-- User guide and [mininet-starter](https://github.com/heryandi/mininet-starter) package.
+- [User guide](https://ec2-54-218-16-158.us-west-2.compute.amazonaws.com/guide/) and [mininet-starter](https://github.com/heryandi/mininet-starter) package.
 - Setup script to setup the djpp on an Ubuntu 12.04 machine.
 - GitHub login integration with djangopypi2.
 - [Design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
