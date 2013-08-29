@@ -215,7 +215,7 @@ Storage Issues:
 **Heryandi**  
 Storage/CDN/S3: I investigated several storage & CDN solution and it seems to me that they are pretty much the same, but only Amazon provides free tier for 1 year.  
 Credentials: We need to manually configure the CORS configuration of S3. In the configuration, we can specify which domains are allowed to directly upload to the folder. We can also configure folders to be publicly readable.  
-Others: Uploading the image itself is a pain because of the size... [Fixed. I have created a quick prototype to do a direct multipart uploads to S3 with auto-retry on failure]  
+Others: Uploading the image itself is a pain because of the size... [Fixed. I have created a quick prototype to do direct multipart uploads to S3 with auto-retry on failure]  
 **Heryandi End**  
 
 
