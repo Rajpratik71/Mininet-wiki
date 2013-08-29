@@ -51,6 +51,21 @@ For this part of project, we are going to use existing Python packaging system (
 - GitHub login integration with djangopypi2.
 - [Design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
 
+#### What is left:
+- Still not sure whether I should develop the website to share full VM image. I have actually gotten started to develop according to the wireframe I created earlier, but still very far from completion. At most can be considered 5% complete.
+- Documentation.
+- Test cases.
+- Deal with user feedbacks (bugs/suggestions) for the deployed djpp. I hope somebody starts using it.
+
+#### Minor things:
+- I'm thinking of customizing the [classifier list](https://ec2-54-218-16-158.us-west-2.compute.amazonaws.com/packages/search/).
+   - Mininet :: Mininet
+   - Mininet :: Node
+   - Mininet :: Link
+   - Mininet :: Topology
+   - Mininet :: Traffic
+   - Mininet :: Any other suggestions?
+
 ----
 
 #### Project Mentor Feedback
