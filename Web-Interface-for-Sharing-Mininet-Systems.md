@@ -56,6 +56,7 @@ For this part of project, we are going to use existing Python packaging system (
 - Documentation.
 - Test cases.
 - Deal with user feedbacks (bugs/suggestions) for the deployed djpp. I hope somebody starts using it.
+- Convert several experiments in http://reproducingnetworkresearch.wordpress.com/ which only needs to use Mininet (e.g.: no kernel patch) to use the deployed djpp.
 
 #### Minor things:
 - I'm thinking of customizing the [classifier list](https://ec2-54-218-16-158.us-west-2.compute.amazonaws.com/packages/search/).
