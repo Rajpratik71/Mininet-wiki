@@ -43,36 +43,13 @@ For this part of project, we are going to use existing Python packaging system (
 - Deployed the djangopypi2 on a free micro Amazon EC2 instance running on nginx + gunicorn. VNC can be used for remote access if needed. HTTPS is used for most parts of website except those under /simple/. The certificate used for HTTPS is currently self-signed though.
 - Tried out the packaging system with more complicated dependencies. The Mininet modules used are: `mininet`, `pox`, `ripl`, `riplpox`.
 
-#### Week ? (8 July - 12 July):
-- Wrote the guide on how to use the system (may not be considered complete yet)  
-- mnp: tools to shorten the command-line commands  
-- mininet-starter: starter package to ease development of new packages  
-- Looked around for storage/CDN service  
-
-#### Week ?+1 (15 July - 19 July):
-- Explored how to do direct upload from browser (bypassing server) to S3  
-- Finished making a small web apps with direct multipart upload to S3 with automatic retry on failure  
-
-#### Week ?+2 (22 July - 26 July):
-- Wrote setup script to setup the Mininet pypi clone on an Ubuntu machine.
-
-#### Week ?+3 (29 July - 02 August):
-- Added more features to mnp (info, docs, simple search)
-- Still trying to make some sense of GitHub OAuth API
-
-#### Week ?+4 (05 August - 09 August):
-- Added github login to djangopypi2. (in progress)
-- Added upload capability to mnp by using github credentials.
-- Added preliminary version of [design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
-
-#### Week ?+5 (12 August - 16 August):
-- Finish the github login integration. [DONE]
-- Update the setup script to support the github integration as well. [DONE]
-- Write instruction on how to replicate the system using setup script with description on what the setup script does. [DONE]
-- Add github integration to guide. [DONE]
-- ???
-
-[BL: Sounds good! Could you update this page with links to the scripts, code and documentation?]
+#### Second iteration (8 July - ...):
+- [mnp](https://github.com/heryandi/mnp).
+- A small web apps with direct multipart upload to S3 with automatic retry on failure. Available [here](https://github.com/heryandi/flask-s3-multipart). Maybe useful for uploading VM image later.
+- User guide and [mininet-starter](https://github.com/heryandi/mininet-starter) package written.
+- Setup script to setup the djpp on an Ubuntu 12.04 machine.
+- GitHub login integration with djangopypi2.
+- [Design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
 
 ----
 
