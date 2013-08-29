@@ -59,11 +59,14 @@ For this part of project, we are going to use existing Python packaging system (
 
 #### Minor things:
 - I'm thinking of customizing the [classifier list](https://ec2-54-218-16-158.us-west-2.compute.amazonaws.com/packages/search/).
-   - Mininet :: Mininet
-   - Mininet :: Node
-   - Mininet :: Link
-   - Mininet :: Topology
-   - Mininet :: Traffic
+   - Mininet :: Mininet (For mininet itself)
+   - Mininet :: Experiment (For full experiments with Mininet)
+   - Mininet :: Module :: Node (For modules)
+   - Mininet :: Module :: Host
+   - Mininet :: Module :: Link
+   - Mininet :: Module :: Topology
+   - Mininet :: Module :: Traffic
+   - Mininet :: Module :: Others
    - Mininet :: Any other suggestions?
 
 ----
