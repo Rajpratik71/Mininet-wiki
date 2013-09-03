@@ -1,7 +1,7 @@
 Here is a list of remaining tasks for Mininet 2.1.0:
 
-* Create S3 folder/repository for VMs (BL)
-* Automate VM upload from build script (BL)
+* Create S3 folder/repository for VMs (done)
+* Automate VM upload from build script (BL - add function to script)
 * Synchronize debian packaging w/launchpad and test debuild (BL)
 * Try to create a build server VM (or at least an NFS server for local builds) (BL)
 * Automate `examples/` testing as much as possible
@@ -13,6 +13,5 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * Update [[Mininet 2.1.0 Release Notes]]
 * Verify that 2.1.0rc1 works in Ubuntu Beta
 * Run automated tests again on all targets, and tag rc2 if they pass
-* Tag 2.1.1 final beore Ubuntu Final Beta Freeze (Sep. 19th)
+* Tag 2.1.1 final before Ubuntu Final Beta Freeze (Sep. 19th)
 * Announce on mininet.org blog and on `mininet-discuss`
-
