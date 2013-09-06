@@ -51,11 +51,11 @@ For this part of project, we are going to use existing Python packaging system (
 - GitHub login integration with djangopypi2.
 - [Design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
 
-#### What is left:
-- Still not sure whether I should develop the website to share full VM image. I have actually gotten started to develop according to the wireframe I created earlier, but still very far from completion. At most can be considered 5% complete.
+#### Todo list:
+- Still not sure whether I should develop the website to share full VM image. I have actually gotten started to develop according to the wireframe I created earlier, but still very far from completion. At most can be considered 5% complete. (I stopped development on this to wait for further clarification)
 - Documentation.
-- Test cases.
-- Deal with user feedbacks (bugs/suggestions) for the deployed djpp. I hope somebody starts using it.
+- Test cases. (Unit tests done for mnp. In-progress for djpp.)
+- Deal with user feedbacks (bugs/suggestions) for the deployed djpp. I hope somebody starts using it. (Need users!)
 - Convert several experiments in http://reproducingnetworkresearch.wordpress.com/ which only needs to use Mininet (e.g.: no kernel patch) to use the deployed djpp.
 
 #### Minor things:
