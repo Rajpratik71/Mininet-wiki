@@ -207,10 +207,10 @@ http://gist.github.com/piotrjurkiewicz/6067858
 #### TapBridge link status notification patch `required`
 http://gist.github.com/piotrjurkiewicz/6067864
 
-#### WiFi Ap set address patch `optional`
+#### WiFi Ap address setting patch `optional`
 http://gist.github.com/piotrjurkiewicz/6483746
 
-#### WiFi WDS patch `optional`
+#### WiFi WDS mode implementation `optional`
 http://gist.github.com/piotrjurkiewicz/6483675
 
 ## Usage
