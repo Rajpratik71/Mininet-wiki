@@ -29,3 +29,6 @@ To have a component in each controller(POX, Floodlight) that generates a mininet
    - examine that generated mininet topology
    - re-invoke the controller with the new topology hosted in Mininet
 4. I believe that pox, floodlight, etc. have messaging/RPC interfaces which can be used to service requests.
+
+#### update
+Walk through has been update [here](https://github.com/basavesh/gsoc13/wiki)
