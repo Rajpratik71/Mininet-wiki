@@ -1,0 +1,44 @@
+We now have the ability to automatically build and test Mininet VM images.
+
+#### Automatic VM Creation
+
+The `mininet/util/vm/build.py` script can automate creation of `.ovf` VM images as follows:
+
+    build.py raring32server
+
+`build.py` takes a list of build flavors, which may be listed using
+
+    build.py --list
+
+Important notes:
+
+* By default, `build.py` will create a `vmtest` directory in your home directory and store cached ISOs and base VM images there. This option is not configurable at this time.
+
+* The first time a new flavor is used, its ISO installer image will be downloaded and a base image will be created (i.e. a basic Ubuntu installation including the `mininet` user.)
+
+* If the base image is already there, it will be reused as the base image for the copy-on-write `.qcow2` image created during the build process.
+
+* VM images and ISOs are large and can fill up your storage very quickly.
+
+* By default, `build.py` creates a `.qcow2` disk image and converts it into a `.vmdk` image, which can be used by (kvm, VirtualBox, VMware, etc.)
+
+* By default, the `.qcow2` image is deleted after it is converted into a `.vmdk`; if you specify the `--qcow2` option, then that image will not be deleted (but the `.vmdk` will still be created.)
+
+* By default, VM output (from base image creation as well as Mininet VM installation) is logged to log files; specifying the `-v` (`--verbose`) option overrides this behavior and logs VM output to the console; this can make it easier to monitor the progress of the script if it is being run interactively.
+
+#### Automated VM testing
+
+The `build.py` script also has the ability to test existing VM images. For example:
+
+    build.py --test mininet-raring32server.vmdk
+
+will test the vm image whose boot disk is `mininet-raring32server.vmdk`
+
+Notes:
+
+* Currently the script runs a simple sanity test (`--test pingall`) as well as the Mininet core tests (`make test`); the entire boot and test completes in less than 90 seconds on my laptop.
+
+* In the future, we will add the option to specify additional (and lengthier) tests.
+
+
+
