@@ -34,7 +34,7 @@ The `build.py` script also has the ability to test existing VM images. For examp
 
     build.py --test mininet-raring32server.vmdk
 
-will test the vm image whose boot disk is `mininet-raring32server.vmdk`
+will test the VM image whose boot disk is `mininet-raring32server.vmdk`
 
 Notes:
 
