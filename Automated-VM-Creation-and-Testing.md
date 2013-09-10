@@ -26,6 +26,8 @@ Important notes:
 
 * By default, VM output (from base image creation as well as Mininet VM installation) is logged to log files; specifying the `-v` (`--verbose`) option overrides this behavior and logs VM output to the console; this can make it easier to monitor the progress of the script if it is being run interactively.
 
+* By default, the script uses `kvm` with hardware acceleration; I routinely use this within a VMware VM using the nested virtualization feature of VMware Fusion (which you need to enable in the VM's processor settings.) You can test whether `kvm` can be used by using the command `kvm-ok`. If `kvm` cannot be used, you can revert to `qemu`'s TCG emulation by specifying the `-n` (`--nokvm`) option to `build.py`. Note that software emulation may be *much* slower than hardware virtualization, but it should still work (although performance-sensitive tests such as `test_hifi` may fail.)
+
 #### Automated VM testing
 
 The `build.py` script also has the ability to test existing VM images. For example:
