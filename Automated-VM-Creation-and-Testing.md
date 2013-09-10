@@ -30,6 +30,8 @@ Important notes:
 
 #### Automated VM testing
 
+Once a VM image has been created, it can also be booted automatically for additional testing.
+
 The `build.py` script also has the ability to test existing VM images. For example:
 
     build.py --test mininet-raring32server.vmdk
@@ -41,6 +43,13 @@ Notes:
 * Currently the script runs a simple sanity test (`--test pingall`) as well as the Mininet core tests (`make test`); the entire boot and test completes in less than 90 seconds on my laptop.
 
 * In the future, we will add the option to specify additional (and lengthier) tests.
+
+* As part of the boot, the kernel and initial RAM disk (initrd) are extracted from the image; this is necessary so that we can boot the VM with a serial console for `pexpect`
+
+* The base disk image should be unaffected by the test process, since it is only used as backing store for a COW (copy-on-write) image, which is used for all changes to the file system and is deleted after VM shutdown.
+
+* The boot and test procedure creates a temporary directory for temporary files (kernel, initrd, COW image) and deletes if upon completion.
+
 
 
 
