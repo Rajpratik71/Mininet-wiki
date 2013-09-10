@@ -12,7 +12,7 @@ The `mininet/util/vm/build.py` script can automate creation of `.ovf` VM images 
 
 Important notes:
 
-* By default, `build.py` will create a `vmtest` directory in your home directory and store cached ISOs and base VM images there. This option is not configurable at this time.
+* *By default, `build.py` will create a `vmtest` directory in your home directory* and store cached ISOs and base VM images there. This feature is not configurable at this time.
 
 * The first time a new flavor is used, its ISO installer image will be downloaded and a base image will be created (i.e. a basic Ubuntu installation including the `mininet` user.)
 
