@@ -1,6 +1,6 @@
 We now have the ability to automatically build and test Mininet VM images.
 
-#### Automatic VM Creation
+#### Automated VM Creation
 
 The `mininet/util/vm/build.py` script can automate creation of `.ovf` VM images as follows:
 
