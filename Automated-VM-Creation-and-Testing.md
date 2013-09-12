@@ -34,9 +34,16 @@ Once a VM image has been created, it can also be booted automatically for additi
 
 The `build.py` script also has the ability to test existing VM images. For example:
 
-    build.py --test mininet-raring32server.vmdk
+    build.py --image mininet-raring32server.vmdk --test core
 
-will test the VM image whose boot disk is `mininet-raring32server.vmdk`
+will boot the a VM from disk image `mininet-raring32server.vmdk` and run the `core` test. (`build.py -h` will list available tests.)
+
+Additionally, you can specify a branch to check out and test in the VM, for example
+
+    build.py --image mininet-vm.vmdk --branch devel/myfeature --test sanity
+
+Will boot from the specified image, check out the `devel/myfeature` branch from the Mininet github repository, and run the `sanity` test.
+
 
 Notes:
 
