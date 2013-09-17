@@ -5,8 +5,7 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * ~~Try to create a build server VM (or at least an NFS server for local builds) (BL)~~
 * ~~Automate `examples/` testing as much as possible (BOC)~~
 * ~~Pre-announce on `mininet-discuss` for additional testing and feedback~~
-* Any final proofreading, verification, and editing of text files (`README`, `INSTALL`, etc.)
-* Update Download/Installation instructions for 2.1.0
+* Final pass (proofreading, verification, and editing) on text files (`README`, `INSTALL`, etc.)
 * ~~Verify that Walkthrough works with 2.1.0~~
 * Update [[Mininet 2.1.0 Release Notes]]
 * Update api.mininet.org
@@ -14,8 +13,8 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * Run automated tests again on all targets, and tag rc2 if they pass
 * Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th)
 * Determine upload service (e.g. bitbucket, sourceforge) and upload vm images
+* Update Download/Installation instructions for 2.1.0
 * Announce on mininet.org blog and on `mininet-discuss`
-
 
 Defer to post 2.1:
 
