@@ -1,6 +1,4 @@
-### Details
-
-For details on the content and new features of 2.1.0, please consult the [README] (https://github.com/mininet/mininet/blob/2.1.0rc1/README.md) file.
+For details on the content and new features of 2.1.0, please consult the [README] (https://github.com/mininet/mininet/blob/2.1.0rc1/README.md) file. This document contains supplementary information not included in that file.
 
 ### Potential Gotchas
 
