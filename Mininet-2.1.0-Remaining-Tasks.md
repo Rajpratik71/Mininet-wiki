@@ -1,7 +1,7 @@
 Here is a list of remaining tasks for Mininet 2.1.0:
 
 * ~~Create S3 folder/repository for VMs (done)~~
-* Synchronize debian packaging w/launchpad and test debuild (BL)
+* Synchronize debian packaging w/launchpad and test `debuild` (BL)
 * ~~Try to create a build server VM (or at least an NFS server for local builds) (BL)~~
 * ~~Automate `examples/` testing as much as possible (BOC)~~
 * See if there are any high-leverage unit tests we can quickly create and add to `make test`
