@@ -1,5 +1,8 @@
 Here is a list of remaining tasks for Mininet 2.1.0:
 
+* Fix ovf file so that
+  * virtualbox doesn't give some unknown error about missing hardware
+  * the os is specified as ubuntu-$arch
 * ~~Create S3 folder/repository for VMs (done)~~
 * Synchronize debian packaging w/launchpad and test `debuild` (BL)
 * ~~Try to create a build server VM (or at least an NFS server for local builds) (BL)~~
