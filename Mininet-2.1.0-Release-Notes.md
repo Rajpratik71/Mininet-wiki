@@ -16,3 +16,16 @@ For details on the content and new features of 2.1.0, please consult the [README
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers
 
 * Currently `--host rt` may not work correctly on multiprocessors (use `--host cfs` instead)
+
+* There is currently an annoying bug with certain kernels which may result in messages similar to the following:
+
+```
+[  176.965603] unregister_netdevice: waiting for h1-eth0 to become free. Usage count = 1
+[  185.508516] unregister_netdevice: waiting for lo to become free. Usage count = 2
+[  187.245149] unregister_netdevice: waiting for h1-eth0 to become free. Usage count = 1
+[  195.781125] unregister_netdevice: waiting for lo to become free. Usage count = 2
+[  197.521721] unregister_netdevice: waiting for h1-eth0 to become free. Usage count = 1
+[  206.053467] unregister_netdevice: waiting for lo to become free. Usage count = 2
+```
+
+This bug seems to happen more frequently with Ubuntu 12.04.3 64-bit
