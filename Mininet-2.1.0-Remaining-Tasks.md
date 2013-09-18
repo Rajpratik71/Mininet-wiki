@@ -10,10 +10,10 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * ~~Pre-announce on `mininet-discuss` for additional testing and feedback~~
 * ~~Final pass (proofreading, verification, and editing) on text files (`README`, `INSTALL`, etc.)~~
 * ~~Verify that Walkthrough works with 2.1.0~~
-* Update [[Mininet 2.1.0 Release Notes]]
+* ~~Update [[Mininet 2.1.0 Release Notes]]~~
 * Update api.mininet.org
-* Verify that 2.1.0rc1 works in Ubuntu Beta
-* Run automated tests again on all targets, and tag rc2 if they pass
+* ~~Verify that 2.1.0rc1 works in Ubuntu Beta~~
+* ~~Run automated tests again on all targets, and tag rc2 if they pass~~
 * Remaining manual tests
   * Verify that `consoles.py` and `miniedit.py` work in VMs
   * Verify that x11 command line option and `xterm` CLI command works in VMs
