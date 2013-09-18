@@ -28,4 +28,4 @@ For details on the content and new features of 2.1.0, please consult the [README
 
    This bug has been reported on launchpad.net, and there is unfortunately no solution yet other than rebooting the VM and/or trying a different kernel (for example we have had good luck with `3.2.0-31-generic`.)
 
-   This bug seems to happen more frequently with Ubuntu 12.04.3 64-bit, although it has also been seen in 13.10.
+   This bug seems to happen more frequently with Ubuntu 12.04.3 (`3.8.0-29-generic` kernel), although it has also been seen in 13.10.
