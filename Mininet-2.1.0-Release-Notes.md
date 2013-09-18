@@ -28,4 +28,4 @@ For details on the content and new features of 2.1.0, please consult the [README
 [  206.053467] unregister_netdevice: waiting for lo to become free. Usage count = 2
 ```
 
-This bug seems to happen more frequently with Ubuntu 12.04.3 64-bit
+This bug seems to happen more frequently with Ubuntu 12.04.3 64-bit, although it has also been seen in 13.10.
