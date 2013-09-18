@@ -8,7 +8,7 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * ~~Try to create a build server VM (or at least an NFS server for local builds) (BL)~~
 * ~~Automate `examples/` testing as much as possible (BOC)~~
 * ~~Pre-announce on `mininet-discuss` for additional testing and feedback~~
-* Final pass (proofreading, verification, and editing) on text files (`README`, `INSTALL`, etc.)
+* ~~Final pass (proofreading, verification, and editing) on text files (`README`, `INSTALL`, etc.)~~
 * ~~Verify that Walkthrough works with 2.1.0~~
 * Update [[Mininet 2.1.0 Release Notes]]
 * Update api.mininet.org
