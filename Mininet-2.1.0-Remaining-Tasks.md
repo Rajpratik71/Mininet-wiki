@@ -22,8 +22,8 @@ Here is a list of remaining tasks for Mininet 2.1.0:
   * ~~testLinearBandwidth (test_linearbandwidth.testLinearBandwidth)~~
   * ~~testTopo (test_simpleperf.testSimplePerf)~~
 * Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th)
-* Determine upload service (e.g. bitbucket, sourceforge) and upload vm images
-* Update Download/Installation instructions for 2.1.0
+* ~~Determine upload service (e.g. bitbucket, sourceforge) and upload vm images~~
+* ~~Update Download/Installation instructions for 2.1.0~~
 * Announce on mininet.org blog and on `mininet-discuss`
 
 Defer to post 2.1:
