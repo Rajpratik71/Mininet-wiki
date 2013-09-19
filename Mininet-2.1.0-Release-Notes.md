@@ -29,7 +29,7 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
 
-* Currently `--host rt` may not work correctly on multiprocessors (use `--host cfs` instead.)
+* Currently `--host rt` may not work correctly on multiprocessors (use `--host cfs` instead, or run on a single processor.)
 
 * There is currently an annoying bug with certain kernels which may result in messages similar to the following:
 
