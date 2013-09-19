@@ -9,4 +9,4 @@ Before any modules can be shared, a packaging format has to be defined for Minin
 - Command-line tool, [mnp](https://github.com/heryandi/mnp), documentation [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/mnp:-Mininet-Packaging-Tools-Docs).
 
 ## Full System Experiment Archive
-The purpose of this project is to create a website for researchers to share VM image that is ready to run their experiment with others.
+The purpose of this project is to create a website for researchers to share VM image that is ready to run their experiment with others. The source code is available [here](https://github.com/heryandi/experiment_repo), though it is not completed by the end of GSoC.
