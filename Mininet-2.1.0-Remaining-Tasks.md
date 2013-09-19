@@ -17,7 +17,10 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * ~~Remaining manual tests~~
   * ~~Verify that `consoles.py` and `miniedit.py` work in VMs~~
   * ~~Verify that x11 command line option and `xterm` CLI command works in VMs~~
-* Update VM build instructions
+* ~~Update VM build instructions~~
+* Investigate test failures on vbox
+  * testLinearBandwidth (test_linearbandwidth.testLinearBandwidth)
+  * testTopo (test_simpleperf.testSimplePerf)
 * Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th)
 * Determine upload service (e.g. bitbucket, sourceforge) and upload vm images
 * Update Download/Installation instructions for 2.1.0
