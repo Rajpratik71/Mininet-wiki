@@ -21,11 +21,15 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
         `VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1`
     - Restart your VM
 
-### Errata
+### Test Issues
 
 * Currently one of the bandwidth limit tests in `test_hifi.py` fails (or sometimes fails) due to low bandwidth in OVS in user mode on Ubuntu 13.10/Saucy Salamander development builds (mid-September); if you run into this problem, the workaround is either to use kernel-mode OVS or an earlier Ubuntu release.
 
 * Some performance tests (e.g. `test_linearbandwidth.py`) can occasionally fail in virtualized or non-quiescent environments due to performance variance, scheduling, or timing skew. Others may fail if they hit resource limits of the underlying system (e.g. a netbook or a VM with limited resources.)
+
+* `testSimplePerf` will usually succeed, but will occasionally fail if you get lucky (0% loss) or unlucky (100% loss).
+
+### Errata
 
 * Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
 
