@@ -6,7 +6,7 @@ The examples have Python docstring documentation, and can be used as modules, e.
 
     sudo python -m mininet.examples.nat
 
-Their components may also be imported, but they should be considered volatile and not part of the official Mininet API. Their documentation is also not currently included at [api.mininet.org](api.mininet.org) or generated with `make doc`. However, you may wish to look at the code and README.md in the [examples/](https://github.com/mininet/mininet/tree/2.1.0rc2/examples) directory.
+Their components may also be imported, but they should be considered volatile and not part of the official Mininet API. Their documentation is also not currently included at [api.mininet.org](api.mininet.org) or generated with `make doc`. However, you may wish to look at the code and `README.md` file in the [examples/](https://github.com/mininet/mininet/tree/2.1.0rc2/examples) directory.
 
 The tests are not included in the Mininet `.egg`, nor are they documented at [api.mininet.org](api.mininet.org).
 
