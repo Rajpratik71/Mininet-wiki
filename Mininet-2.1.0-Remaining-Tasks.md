@@ -11,7 +11,7 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * ~~Final pass (proofreading, verification, and editing) on text files (`README`, `INSTALL`, etc.)~~
 * ~~Verify that Walkthrough works with 2.1.0~~
 * ~~Update [[Mininet 2.1.0 Release Notes]]~~
-* Update api.mininet.org
+* ~~Update api.mininet.org~~
 * ~~Verify that 2.1.0rc1 works in Ubuntu Beta~~
 * ~~Run automated tests again on all targets, and tag rc2 if they pass~~
 * Remaining manual tests
