@@ -27,7 +27,7 @@ For historical reference, we have also preserved the [Old VM Creation Notes](Old
 
 ### How we created the Mininet 2.1.0 VM Image
 
-For Mininet 2.1.0, we used the new `build.py` script, which creates VM images using `qemu`.
+For Mininet 2.1.0, we used the new [[Automated VM Creation and Testing]] script, which creates VM images using `qemu`.
 
     ~/mininet/util/vm/build.py raring32server
     ~/mininet/util/vm/build.py raring64server
