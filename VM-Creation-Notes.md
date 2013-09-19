@@ -2,9 +2,9 @@
 
 These instructions cover the process of building a Mininet-capable VM from a clean VM installation, using Ubuntu. After completing these setup instructions, see [VM-Setup-Notes](VM-Setup-Notes) to set up your VM.
 
-_Note: If you need to build on a non-Ubuntu distro, you are currently on your own. The included shell scripts may work on your platform, but significant changes are likely (e.g. `yum` vs. `apt-get` and different package names for Fedora.)_
+_Note: If you need to install on distribution other than Ubuntu or Fedora, you are currently on your own, but it should not be hard to get Mininet to work if you install all of its dependencies._
 
-**First, create a new Ubuntu VM** (using VMware, VirtualBox, etc..) 
+**First, create a new VM** (using VMware, VirtualBox, etc..) 
 
 To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). (You can also use later versions of Ubuntu, Ubuntu desktop, a 32-bit/i386 version, or Lubuntu, etc..)
 
