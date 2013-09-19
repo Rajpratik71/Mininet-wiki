@@ -1,5 +1,16 @@
 For details on the content and new features of 2.1.0, please consult the [README] (https://github.com/mininet/mininet/blob/2.1.0rc1/README.md) file. This document contains supplementary information and issues not included in that file.
 
+### Documentation for Examples and Tests
+
+The examples have Python docstring documentation, and can be used as modules, e.g.
+
+    sudo python -m mininet.examples.nat
+
+Their components may also be imported, but they should be considered volatile and not part of the official Mininet API. Their documentation is also not currently included at [api.mininet.org](api.mininet.org) or generated with `make doc`.
+
+The tests are not included in the Mininet `.egg`, nor are they documented at [api.mininet.org](api.mininet.org).
+
+
 ### Potential VirtualBox Issue
 
 * We've added a symlink to the top-level examples directory from the mininet code directory to make examples importable. If you are using VirtualBox and clone the repository to a shared folder, the symlink will be broken. This is because VirtualBox does not allow guests to create symlinks in shared folders by default for security reasons. To enable symlink creation, you should do the following:
