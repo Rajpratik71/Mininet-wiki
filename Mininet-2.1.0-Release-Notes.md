@@ -25,7 +25,7 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 
 * Currently one of the bandwidth limit tests in `test_hifi.py` fails (or sometimes fails) due to low bandwidth in OVS in user mode on Ubuntu 13.10/Saucy Salamander development builds (mid-September); if you run into this problem, the workaround is either to use kernel-mode OVS or an earlier Ubuntu release.
  
-* Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where it does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
+* Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
 
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
 
