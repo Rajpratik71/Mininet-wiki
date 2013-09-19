@@ -1,7 +1,7 @@
-Here is a list of remaining tasks for Mininet 2.1.0:
+Remaining tasks for Mininet 2.1.0:
 
 * ~~Create S3 folder/repository for VMs (done)~~
-* Synchronize debian packaging w/launchpad and test `debuild` (BL)
+* ~~test `debuild`~~
 * ~~Try to create a build server VM (or at least an NFS server for local builds) (BL)~~
 * ~~Automate `examples/` testing as much as possible (BOC)~~
 * ~~Pre-announce on `mininet-discuss` for additional testing and feedback~~
@@ -18,12 +18,13 @@ Here is a list of remaining tasks for Mininet 2.1.0:
 * ~~Investigate test failures on vbox~~
   * ~~testLinearBandwidth (test_linearbandwidth.testLinearBandwidth)~~
   * ~~testTopo (test_simpleperf.testSimplePerf)~~
-* Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th)
 * ~~Determine upload service (e.g. bitbucket, sourceforge) and upload vm images~~
 * ~~Update Download/Installation instructions for 2.1.0~~
-* Announce on mininet.org blog and on `mininet-discuss`
+* Synchronize debian packaging w/launchpad (BL)
+* Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th) (BL)
+* Announce on mininet.org blog and on `mininet-discuss` (BL)
 
-Defer to post 2.1:
+Deferred to post 2.1:
 
 * Fix ovf file so that
   * virtualbox doesn't give some unknown error about missing hardware
