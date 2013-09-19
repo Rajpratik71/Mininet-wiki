@@ -30,4 +30,4 @@ Deferred to post 2.1:
   * virtualbox doesn't give some unknown error about missing hardware
   * the os is specified as ubuntu-$arch
 * Automate VM upload from build script (BL - add function to script)
-* See if there are any high-leverage unit tests we can quickly create and add to `make test`
+* More (quick, high-leverage) unit tests for `make test`
