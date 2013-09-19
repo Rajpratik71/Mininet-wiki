@@ -1,7 +1,6 @@
-Creating a Mininet VM from a Clean OS Installation
-==================================================
+### Creating a Mininet VM from a Clean OS Installation
 
-These instructions cover the process of building a Mininet-capable VM from scratch, using Ubuntu. After completing these setup instructions, see [VM-Setup-Notes](VM-Setup-Notes) to set up your VM.
+These instructions cover the process of building a Mininet-capable VM from a clean VM installation, using Ubuntu. After completing these setup instructions, see [VM-Setup-Notes](VM-Setup-Notes) to set up your VM.
 
 _Note: If you need to build on a non-Ubuntu distro, you are currently on your own. The included shell scripts may work on your platform, but significant changes are likely (e.g. `yum` vs. `apt-get` and different package names for Fedora.)_
 
