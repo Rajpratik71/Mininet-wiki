@@ -20,7 +20,7 @@ Remaining tasks for Mininet 2.1.0:
   * ~~testTopo (test_simpleperf.testSimplePerf)~~
 * ~~Determine upload service (e.g. bitbucket, sourceforge) and upload vm images~~
 * ~~Update Download/Installation instructions for 2.1.0~~
-* Synchronize debian packaging w/launchpad (BL)
+* ~~Synchronize debian packaging w/launchpad (BL)~~
 * Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th) (BL)
 * Announce on mininet.org blog and on `mininet-discuss` (BL)
 
