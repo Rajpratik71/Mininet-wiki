@@ -10,7 +10,9 @@ Their components may also be imported, but they should be considered volatile an
 
 The tests are not included in the Mininet `.egg`, nor are they documented at [api.mininet.org](api.mininet.org), but they are included in the Mininet source tree.
 
-### Potential VirtualBox Issue
+### Potential VirtualBox Issues
+
+* VirtualBox may complain about missing hardware on initial import - you may safely ignore this message.
 
 * We've added a symlink to the top-level examples directory from the mininet code directory to make examples importable. If you are using VirtualBox and clone the repository to a shared folder, the symlink will be broken. This is because VirtualBox does not allow guests to create symlinks in shared folders by default for security reasons. To enable symlink creation, you should do the following:
     - Shut down your VM and quit the VirtualBox Manager
