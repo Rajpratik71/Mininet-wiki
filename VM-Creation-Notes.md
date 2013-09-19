@@ -1,13 +1,13 @@
-Creating a Mininet VM from Scratch
-===================================
+Creating a Mininet VM from a Clean OS Installation
+==================================================
 
-These instructions cover the process of building a Mininet-capable VM from scratch, using Ubuntu 12.10. After completing these setup instructions, see [VM-Setup-Notes](VM-Setup-Notes) to set up your VM.
+These instructions cover the process of building a Mininet-capable VM from scratch, using Ubuntu. After completing these setup instructions, see [VM-Setup-Notes](VM-Setup-Notes) to set up your VM.
 
 _Note: If you need to build on a non-Ubuntu distro, you are currently on your own. The included shell scripts may work on your platform, but significant changes are likely (e.g. `yum` vs. `apt-get` and different package names for Fedora.)_
 
-**First, create a new Ubuntu (12.10 or 13.04) VM** (using VMware, VirtualBox, etc..) 
+**First, create a new Ubuntu VM** (using VMware, VirtualBox, etc..) 
 
-To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). (You can also use 13.04, Ubuntu desktop, a 32-bit/i386 version, or Lubuntu, etc..)
+To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). (You can also use later versions of Ubuntu, Ubuntu desktop, a 32-bit/i386 version, or Lubuntu, etc..)
 
 The Mininet VM uses username: `mininet` and password: `mininet`, but any user/password combo should work as long as it has admin/sudo privileges.
 
@@ -24,6 +24,14 @@ After this completes (about 5 minutes), Mininet should work:
 
 For historical reference, we have also preserved the [Old VM Creation Notes](Old-VM-Creation-Notes).
 
+***
+
+### How we created the Mininet 2.1.0 VM Image
+
+For Mininet 2.1.0, we used the new `build.py` script, which creates VM images using `qemu`.
+
+    ~/mininet/util/vm/build.py raring32server
+    ~/mininet/util/vm/build.py raring64server
 
 ***
 
