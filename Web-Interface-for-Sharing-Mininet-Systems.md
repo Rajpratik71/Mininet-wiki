@@ -25,11 +25,7 @@ For this part of project, we are going to use existing Python packaging system (
 - mnp: [`https://github.com/heryandi/mnp`](https://github.com/heryandi/mnp)
 
 #### Documentation
-[`https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs`](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs)
-
-#### Example Use Cases
-
-[moved [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Use-Cases)]
+[`https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface`](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface)
 
 ---
 
