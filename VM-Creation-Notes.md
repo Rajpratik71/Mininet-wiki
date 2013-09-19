@@ -8,7 +8,7 @@ _Note: If you need to install on distribution other than Ubuntu or Fedora, you a
 
 To keep the VM smaller, use the server variant.  For 2.0.0, we used 64-bit images, and specifically `ubuntu-12.10-server-amd64.iso`, which can be downloaded from the [Ubuntu Quantal page](http://releases.ubuntu.com/quantal/). (You can also use later versions of Ubuntu, Ubuntu desktop, a 32-bit/i386 version, or Lubuntu, etc..)
 
-The Mininet VM uses username: `mininet` and password: `mininet`, but any user/password combo should work as long as it has admin/sudo privileges.
+The Mininet VM uses username: `mininet` and password: `mininet`, but any user/password combo should work as long as it has admin/`sudo` privileges.
 
 **Next, log in to the new VM and do the following**:
 
