@@ -1,5 +1,3 @@
-Remaining tasks for Mininet 2.1.0:
-
 * ~~Create S3 folder/repository for VMs (done)~~
 * ~~test `debuild`~~
 * ~~Try to create a build server VM (or at least an NFS server for local builds) (BL)~~
@@ -24,7 +22,7 @@ Remaining tasks for Mininet 2.1.0:
 * Tag 2.1.0 final before Ubuntu Final Beta Freeze (Sep. 19th) (BL)
 * Announce on mininet.org blog and on `mininet-discuss` (BL)
 
-Deferred to post 2.1:
+### Deferred to post 2.1.0:
 
 * Fix ovf file so that
   * virtualbox doesn't give some unknown error about missing hardware
