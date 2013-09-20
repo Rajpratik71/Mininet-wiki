@@ -25,7 +25,7 @@ For historical reference, we have also preserved the [Old VM Creation Notes](Old
 
 ***
 
-### How we created the Mininet 2.1.0 VM Image
+### How we created the Mininet 2.1.0 VM Images
 
 For Mininet 2.1.0, we used the new [[Automated VM Creation and Testing]] script, `build.py`, which creates VM images using `kvm` or `qemu`.
 
