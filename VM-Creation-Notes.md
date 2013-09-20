@@ -15,7 +15,7 @@ The Mininet VM uses username: `mininet` and password: `mininet`, but any user/pa
     wget https://raw.github.com/mininet/mininet/master/util/vm/install-mininet-vm.sh
     time bash install-mininet-vm.sh
 
-After this completes (about 5 minutes), Mininet should work:
+After this completes (about 10 minutes), Mininet should work:
 
     $ sudo mn --test pingall
 
@@ -31,6 +31,8 @@ For Mininet 2.1.0, we used the new [[Automated VM Creation and Testing]] script,
 
     ~/mininet/util/vm/build.py raring32server
     ~/mininet/util/vm/build.py raring64server
+
+The time it takes for this may vary, depending on how many things need to be downloaded. On our slow VM server, this takes 45 minutes or more. If there is already an existing base image, it takes about 12 minutes on my laptop using nested virtualization.
 
 ***
 
