@@ -32,7 +32,7 @@ For Mininet 2.1.0, we used the new [[Automated VM Creation and Testing]] script,
     ~/mininet/util/vm/build.py raring32server
     ~/mininet/util/vm/build.py raring64server
 
-The time it takes for this may vary, depending on how many things need to be downloaded. On our slow VM server, this takes 45 minutes or more. If there is already an existing base image, it takes about 12 minutes on my laptop using nested virtualization.
+The time it takes for each VM to be created will vary depending on how many things need to be downloaded and other factors. On our slow VM server, this takes 45 minutes or more. If there is already an existing base image, it takes about 12 minutes on my laptop using nested virtualization. The nice thing about this approach is it is a single command to create a zipped `.ovf` file which can be imported into the virtual machine monitor of your choice.
 
 ***
 
