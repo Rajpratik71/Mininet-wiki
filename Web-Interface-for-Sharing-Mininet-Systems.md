@@ -48,23 +48,8 @@ For this part of project, we are going to use existing Python packaging system (
 - [Design docs](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Mininet-Web-Interface-Design-Docs).
 
 #### Todo list:
-- Still not sure whether I should develop the website to share full VM image. I have actually gotten started to develop according to the wireframe I created earlier, but still very far from completion. At most can be considered 5% complete. (I stopped development on this to wait for further clarification)
 - Documentation.
 - Test cases. (Unit tests done for mnp. In-progress for djpp.)
-- Deal with user feedbacks (bugs/suggestions) for the deployed djpp. I hope somebody starts using it. (Need users!)
-- Convert several experiments in http://reproducingnetworkresearch.wordpress.com/ which only needs to use Mininet (e.g.: no kernel patch) to use the deployed djpp.
-
-#### Minor things:
-- I'm thinking of customizing the [classifier list](https://ec2-54-218-16-158.us-west-2.compute.amazonaws.com/packages/search/).
-   - Mininet :: Mininet (For mininet itself)
-   - Mininet :: Experiment (For full experiments with Mininet)
-   - Mininet :: Module :: Node (For modules)
-   - Mininet :: Module :: Host
-   - Mininet :: Module :: Link
-   - Mininet :: Module :: Topology
-   - Mininet :: Module :: Traffic
-   - Mininet :: Module :: Others
-   - Mininet :: Any other suggestions?
 
 ----
 
