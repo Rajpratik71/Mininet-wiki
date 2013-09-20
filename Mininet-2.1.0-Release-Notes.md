@@ -31,6 +31,8 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 
 ### Errata
 
+* `Switch.__str__()` doesn't seem to provide useful information; this makes the CLI `dump` command less useful than it could be.
+
 * Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
 
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
