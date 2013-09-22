@@ -202,7 +202,7 @@ You can follow the commits here: http://github.com/piotrjurkiewicz/mininet/commi
 ### ns-3 patches
 
 #### TapBridge address learning patch `required` [`submitted to ns-dev`](http://mailman.isi.edu/pipermail/ns-developers/2013-September/011417.html)
-Code: http://gist.github.com/piotrjurkiewicz/6067858    
+Code: http://gist.github.com/piotrjurkiewicz/6067858  
 Details: http://mailman.isi.edu/pipermail/ns-developers/2013-September/011417.html
 
 #### TapBridge link status notification patch `required` [`submitted to ns-dev`](http://mailman.isi.edu/pipermail/ns-developers/2013-September/011417.html)
@@ -210,7 +210,7 @@ Code: http://gist.github.com/piotrjurkiewicz/6067864
 Details: http://mailman.isi.edu/pipermail/ns-developers/2013-September/011417.html
 
 #### Ethernet checksum performance patch `optional` [`submitted to ns-dev`](http://mailman.isi.edu/pipermail/ns-developers/2013-September/011418.html)
-Code: http://gist.github.com/piotrjurkiewicz/6655299
+Code: http://gist.github.com/piotrjurkiewicz/6655299  
 Details: http://mailman.isi.edu/pipermail/ns-developers/2013-September/011418.html
 
 #### WiFi Ap address setting patch `optional`
