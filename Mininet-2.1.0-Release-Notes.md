@@ -1,4 +1,8 @@
-For details on the content and new features of 2.1.0, please consult the [README] (https://github.com/mininet/mininet/blob/2.1.0rc2/README.md) file. This document contains supplementary information and issues not included in that file.
+For details on the content and new features of 2.1.0, please consult the
+[release announcement](http://mininet.org/blog/2013/09/20/announcing-mininet-2-1-0/)
+and the[README] (https://github.com/mininet/mininet/blob/2.1.0rc2/README.md) file. 
+
+This document contains supplementary information and issues not included in that file.
 
 ### Documentation for Examples and Tests
 
