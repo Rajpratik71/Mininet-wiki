@@ -223,7 +223,7 @@ Usually the problem is not that you don't have a 64-bit CPU (you probably do if 
 
 #### I have a netbook from 2005 and I really want a 32-bit VM (or maybe I need one for testing or for nested virtualization on older hardware)
 
-First, read the above. Second, if you really have an ancient CPU and/or OS which is not 64-bit capable, you can easily make a 32-bit VM, by [[following our instructions | VM Creation Notes]].
+OK, use the 32-bit VM image. ;-)
 
 ***
 <a id=blank-screen></a>
