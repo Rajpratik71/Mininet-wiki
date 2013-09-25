@@ -201,7 +201,7 @@ Instructions for native installation can be found at <http://mininet.github.com/
 <a id=virtualbox-error></a>
 ### Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?
 
-If you are already running Microsoft's Hyper-V, you may not be able to boot the Mininet VM in VirtualBox at the same time. I tested this and got the following error:
+If you are already running Microsoft's Hyper-V, you may not be able to boot the 64-bit Mininet VM in VirtualBox at the same time. I tested this and got the following error:
 
 > VirtualBox - Error
 > VT-X/AMD-V Hardware acceleration is not available on your system. Your 64-bit guest will fail
