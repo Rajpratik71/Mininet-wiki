@@ -68,7 +68,7 @@ The best way to get started with Mininet is to install our ready-to-run virtual 
 <a id=password></a>
 ### What is the login/password for the Mininet VM?
 
-As of Mininet 2.0.0, it is currently:
+As of Mininet 2.0.0 and newer, it is currently:
 
     mininet-vm login: mininet
     Password: mininet
