@@ -273,6 +273,10 @@ However, you can set up NAT if you like.
 
 ### How can I set up NAT?
 
+Mininet 2.1.0: Look at `examples/nat.py`.
+
+Mininet 2.0 and earlier:
+
 The illustrious Glen Gibb provided a script to do it back in 2011 on 
 [[ mininet-discuss | https://mailman.stanford.edu/pipermail/mininet-discuss/2011-February/000289.html ]].
 There was also a [[ follow-up message | https://mailman.stanford.edu/pipermail/mininet-discuss/2013-March/001821.html ]] from Leo Alterman.
