@@ -42,6 +42,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
 * [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
+* [Can I **upgrade Open vSwitch** to a newer version?] (#ovs-upgrade)
 
 ### Troubleshooting
 
@@ -518,6 +519,13 @@ One way is to make a custom switch class, as shown in [`examples/controllers.py`
 
 Another way is to use the mid-level API, as shown in [`examples/controllers2.py`]
 (https://github.com/mininet/mininet/tree/master/examples/controllers2.py)
+
+***
+<a id=ovs-upgrade></a>
+### Can I upgrade Open vSwitch to a newer version?
+
+Mininet usually gets installed by whatever the latest version of Open vSwitch is available in that distribution's release.  You easily upgrade to another version by following the instructions for
+[here] (Installing-new-version-of-Open-vSwitch).
 
 ***
 <a id=ovs-reconfig></a>
