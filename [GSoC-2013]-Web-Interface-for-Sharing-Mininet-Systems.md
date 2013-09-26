@@ -17,6 +17,7 @@ For a quick peek at how to convert existing modules to this packaging system, ta
 ---
 
 ## Full System Experiment Archive
-The purpose of this project is to create a website for researchers to share with others VM image that is ready to run their experiment. 
+The purpose of this project is to create a website for researchers to share with others VM image that is ready to run their experiment. This project is incomplete.
 
+Code available [here](https://github.com/heryandi/experiment_repo).
 Documentation available [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Experiment-Repo-Docs).
