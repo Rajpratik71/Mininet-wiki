@@ -11,8 +11,11 @@ For a quick peek at how to convert existing modules to this packaging system, ta
 
 
 ### Components
-- A website, [Mininet Repo](https://github.com/heryandi/djangopypi2), documentation available [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Mininet-Repo-Docs).
-- Command-line tool, [mnp](https://github.com/heryandi/mnp), documentation available [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/mnp:-Mininet-Packaging-Tools-Docs).
+- A website, [Mininet Repo](https://github.com/heryandi/djangopypi2), documentation available [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Mininet-Repo-Docs). Test cases:
+  - https://github.com/heryandi/djangopypi2/blob/gsoc/djangopypi2/apps/pypi_frontend/tests.py
+  - https://github.com/heryandi/djangopypi2/blob/gsoc/djangopypi2/apps/pypi_packages/tests.py
+  - https://github.com/heryandi/djangopypi2/blob/gsoc/djangopypi2/apps/pypi_users/tests.py
+- Command-line tool, [mnp](https://github.com/heryandi/mnp), documentation available [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/mnp:-Mininet-Packaging-Tools-Docs). Test cases [here](https://github.com/heryandi/mnp/tree/master/mnp/test).
 
 ---
 
