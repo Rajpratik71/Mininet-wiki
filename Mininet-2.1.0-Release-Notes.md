@@ -41,6 +41,8 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 
 * Currently `--host rt` may not work correctly on multiprocessors (use `--host cfs` instead, or run on a single processor.)
 
+* Currently the `xterm` CLI command does not work in the `examples/bind.py` example.
+
 * There is currently an annoying bug with certain kernels which may result in messages similar to the following:
 
         [  176.965603] unregister_netdevice: waiting for h1-eth0 to become free. Usage count = 1
