@@ -77,7 +77,7 @@ Why is Mininet cool?
     anything else.
 
 2.  You can **run real programs**: anything that runs on Linux is available
-    for you to run, from web servers, to TCP window monitoring tools, to
+    for you to run, from web servers to TCP window monitoring tools to
     Wireshark.
     
 3.  You can **customize packet forwarding**: Mininet's switches are
