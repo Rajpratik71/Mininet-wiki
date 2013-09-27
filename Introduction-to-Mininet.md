@@ -54,18 +54,6 @@ that resembles a hardware network, or a hardware network that resembles
 a Mininet network, and to run the same binary code and applications on
 either platform. 
 
-*An aside on performance: The main thing you have to keep in mind for network-
-limited experiments is that you will probably need to use slower links,
-for example 10 or 100 Mb/sec rather than 10 Gb/sec, due to the fact that
-packets are forwarded by a collection of software switches (e.g. Open
-vSwitch) that share CPU and memory resources and usually have lower
-performance than dedicated switching hardware. For CPU-limited experiments,
-you will also need to make sure that you carefully limit the CPU bandwidth
-of your Mininet hosts. If you mainly care about functional correctness, you can
-run Mininet without specific bandwidth limits - this is the quick and
-easy way to run Mininet, and it also provides the highest performance
-at the expense of timing accuracy under load.*
-
 <a id=why></a>
 
 Why is Mininet cool?
@@ -144,8 +132,20 @@ For example,
   time; this means that timing measurements will be based on real time,
   and that faster-than-real-time results (e.g. 100 Gbps networks) cannot
   easily be emulated.
-  
-With the exception of multiple kernels, most of these limitations are not
+
+*An aside on performance: The main thing you have to keep in mind for network-
+limited experiments is that you will probably need to use slower links,
+for example 10 or 100 Mb/sec rather than 10 Gb/sec, due to the fact that
+packets are forwarded by a collection of software switches (e.g. Open
+vSwitch) that share CPU and memory resources and usually have lower
+performance than dedicated switching hardware. For CPU-limited experiments,
+you will also need to make sure that you carefully limit the CPU bandwidth
+of your Mininet hosts. If you mainly care about functional correctness, you can
+run Mininet without specific bandwidth limits - this is the quick and
+easy way to run Mininet, and it also provides the highest performance
+at the expense of timing accuracy under load.*
+
+With a few possible exceptions, most of these limitations are not
 intrinsic to Mininet; eliminating them is simply a matter of code, and you
 are encouraged to contribute any enhancements you may develop!
 
