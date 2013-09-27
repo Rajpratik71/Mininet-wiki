@@ -1,4 +1,3 @@
-
 by Bob Lantz, Nikhil Handigol, Brandon Heller, and Vimal Jeyakumar
 
 This document is meant to give you a brief sense of what Mininet is and
@@ -48,8 +47,8 @@ middlebox, with a given amount of queueing. When two programs, like an
 performance should match that of two (slower) native machines.
 
 In short, Mininet's virtual hosts, switches, links, and controllers
-are the real thing - they are just created using software rather than
-hardware - and for the most part their behavior is similar to discrete
+are the real thing – they are just created using software rather than
+hardware – and for the most part their behavior is similar to discrete
 hardware elements. It is usually possible to create a Mininet network
 that resembles a hardware network, or a hardware network that resembles
 a Mininet network, and to run the same binary code and applications on
