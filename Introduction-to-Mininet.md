@@ -54,7 +54,7 @@ that resembles a hardware network, or a hardware network that resembles
 a Mininet network, and to run the same binary code and applications on
 either platform. 
 
-*Regarding performance: The main thing you have to keep in mind for network-
+*An aside on performance: The main thing you have to keep in mind for network-
 limited experiments is that you will probably need to use slower links,
 for example 10 or 100 Mb/sec rather than 10 Gb/sec, due to the fact that
 packets are forwarded by a collection of software switches (e.g. Open
