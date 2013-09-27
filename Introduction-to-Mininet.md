@@ -52,7 +52,9 @@ hardware – and for the most part their behavior is similar to discrete
 hardware elements. It is usually possible to create a Mininet network
 that resembles a hardware network, or a hardware network that resembles
 a Mininet network, and to run the same binary code and applications on
-either platform. The main thing you have to keep in mind for network-
+either platform. 
+
+*Regarding performance: The main thing you have to keep in mind for network-
 limited experiments is that you will probably need to use slower links,
 for example 10 or 100 Mb/sec rather than 10 Gb/sec, due to the fact that
 packets are forwarded by a collection of software switches (e.g. Open
@@ -62,7 +64,7 @@ you will also need to make sure that you carefully limit the CPU bandwidth
 of your Mininet hosts. If you mainly care about functional correctness, you can
 run Mininet without specific bandwidth limits - this is the quick and
 easy way to run Mininet, and it also provides the highest performance
-at the expense of timing accuracy under load.
+at the expense of timing accuracy under load.*
 
 <a id=why></a>
 
