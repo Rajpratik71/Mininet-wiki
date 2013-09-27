@@ -24,3 +24,7 @@ The purpose of this project is to create a website for researchers to share with
 
 Code available [here](https://github.com/heryandi/experiment_repo).
 Documentation available [here](https://github.com/heryandi/gsoc2013-onl-mininet/wiki/Experiment-Repo-Docs).
+
+---
+
+### Old wiki page for this project kept [here](https://github.com/mininet/mininet/wiki/%5BGSoC-2013%5D-Web-Interface-for-Sharing-Mininet-Systems-%5BOld%5D)
