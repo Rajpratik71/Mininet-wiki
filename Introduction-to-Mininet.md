@@ -1,4 +1,3 @@
-(updated for Mininet 2.0.0)
 
 by Bob Lantz, Nikhil Handigol, Brandon Heller, and Vimal Jeyakumar
 
