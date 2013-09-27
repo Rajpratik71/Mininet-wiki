@@ -69,37 +69,37 @@ at the expense of timing accuracy under load.
 Why is Mininet cool?
 --------------------
 
-0.  It's fast - starting up a simple network takes just a few seconds.
+0.  It's **fast** - starting up a simple network takes just a few seconds.
 	This means that your run-edit-debug loop can be very quick.
 
-1.  You can create custom topologies: a single switch, larger
+1.  You can **create custom topologies**: a single switch, larger
     Internet-like topologies, the Stanford backbone, a data center, or
     anything else.
 
-2.  You can run real programs: anything that runs on Linux is available
+2.  You can **run real programs**: anything that runs on Linux is available
     for you to run, from web servers, to TCP window monitoring tools, to
     Wireshark.
     
-3.  You can customize packet forwarding: Mininet's switches are
+3.  You can **customize packet forwarding**: Mininet's switches are
     programmable using the OpenFlow protocol. Custom Software-Defined
     Network designs that run in Mininet can easily be transferred to
     hardware OpenFlow switches for line-rate packet forwarding.
 
-4.  You can run Mininet on your laptop, on a server, in a VM, on a native
+4.  You can **run Mininet on your laptop**, on a server, in a VM, on a native
     Linux box (Mininet is included with Ubuntu 12.10+!), or in the cloud
     (e.g. Amazon EC2.)
     
-5.  You can share and replicate results: anyone with a computer can run
+5.  You can **share and replicate results**: anyone with a computer can run
     your code once you've packaged it up.
     
-6.  You can use it easily: you can create and run Mininet experiments by
+6.  You can **use it easily**: you can create and run Mininet experiments by
     writing simple (or complex if necessary) Python scripts.
     
-7.	Mininet is an *open source project*, so you are encouraged to examine
+7.	Mininet is an **open source project**, so you are encouraged to examine
     its source code on <https://github.com/mininet>, modify it, fix bugs,
     file issues/feature requests, and submit patches/pull requests.
     
-8.  Mininet is under active development. So, if it sucks, doesn't make sense,
+8.  Mininet is **under active development**. So, if it sucks, doesn't make sense,
 	or doesn't work for some reason, please let us know on `mininet-discuss`
 	and the Mininet user and developer community can try to explain it,
 	fix it, or help you fix it. :-) If you find bugs, you are encouraged to
