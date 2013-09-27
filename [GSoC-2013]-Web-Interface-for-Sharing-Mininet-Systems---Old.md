@@ -161,8 +161,8 @@ The idea is to create a place for users to submit either of these:
 - Complete VM image that is ready to run the experiment.
  Pros: Pretty much guaranteed that the experiment will be able to work.
  Cons: Users will need to upload/download huge files. Storage space consumed will also be large.
-- Executable script to setup all the configurations needed (e.g.: download and install some packages from apt-get or PyPI) to run the experiment.
- Pros: Users will not need to upload/download huge files. Storage space consumed will also be smaller.
+- Executable script to setup all the configurations needed (e.g.: download and install some packages from apt-get or PyPI) to run the experiment.  
+ Pros: Users will not need to upload/download huge files. Storage space consumed will also be smaller.  
  Cons: May not always be successful in replicating experiments because of various problems (e.g.: some packages or some version of the packages may not be available anymore, different mininet version, different version of Linux).
 
 The item uploaded will be submitted together with a post describing the content and the instruction to replicate the experiment (like the blog posts on reproducingnetworkresearch.wordpress.com).
@@ -177,8 +177,8 @@ Storage Issues:
 * Can/should we use S3? How much does it cost? How are credentials handled?
 * What are other issues relating to VM image storage, which might require a LOT of storage?  
 **Heryandi**
-Storage/CDN/S3: I investigated several storage & CDN solution and it seems to me that they are pretty much the same, but only Amazon provides free tier for 1 year.
-Credentials: We need to manually configure the CORS configuration of S3. In the configuration, we can specify which domains are allowed to directly upload to the folder. We can also configure folders to be publicly readable.
+Storage/CDN/S3: I investigated several storage & CDN solution and it seems to me that they are pretty much the same, but only Amazon provides free tier for 1 year.  
+Credentials: We need to manually configure the CORS configuration of S3. In the configuration, we can specify which domains are allowed to directly upload to the folder. We can also configure folders to be publicly readable.  
 Others: Uploading the image itself is a pain because of the size... [Fixed. I have created a quick prototype to do direct multipart uploads to S3 with auto-retry on failure]
 **Heryandi End**
 
@@ -188,7 +188,7 @@ Deployment issues
 * What are the target deployment platforms?
 * Can the same image be used on, say, EC2 and VirtualBox?  
 **Heryandi**
-Deployment platforms: Not sure what you meant by deployment platforms. VirtualBox, VMware and KVM?
+Deployment platforms: Not sure what you meant by deployment platforms. VirtualBox, VMware and KVM?  
 EC2 & VBox: Should be possible. For the details, [the other GSoC project](https://github.com/mininet/mininet/wiki/Mininet-network-in-a-box-and-automatic-deployment-on-ec2) seems to be directly related to this issue.
 **Heryandi End**
 
