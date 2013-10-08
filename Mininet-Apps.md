@@ -9,4 +9,11 @@ The Mininet source code includes a variety of useful [examples](https://github.c
 
 * Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI tool that allows automatic creation of Mininet and Openflow Controllers Scripts.
 
+#### GUI - MiniEdit
+
+* An evolution of the miniedit.py example script included with Mininet.  Add all kinds of capabilities to new controller, host, switch and link options.
+* Give you the option to save you topology and also export as a Mininet python script.
+
+Available at http://gregorygee.wordpress.com/category/miniedit/ .
+
 ---
