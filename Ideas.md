@@ -117,7 +117,10 @@ Mininet follows a fairly standard development process on Github:
 
 2. **Check** the [Mininet issues page](https://github.com/mininet/mininet/issues) to see if someone is already working on it.
 
-3. If so, **contact the person who is working on it**, and also **add a note to the issue** when you start working on it. Optionally drop us a line on `mininet-discuss`. You may also add a note to the appropriate section on this page. The goal is to **avoid duplicating effort** unnecessarily!
+3. If so, **contact the person who is working on it**, and also **add a note to the issue** when you start working on it. Optionally drop us a line on
+[`mininet-dev`](https://mailman.stanford.edu/mailman/listinfo/mininet-dev) or
+[`mininet-discuss`](https://mailman.stanford.edu/mailman/listinfo/mininet-discuss). 
+You may also add a note to the appropriate section on this page. The goal is to **avoid duplicating effort** unnecessarily!
 
 4. **Fork/clone** the Mininet repo (master branch) on github, and work on your new feature
 
