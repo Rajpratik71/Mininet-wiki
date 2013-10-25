@@ -26,6 +26,7 @@ Build and install option 1 (Binary build and install):
 
 Build and install option 2 (Build Debian packages and install):
 
+    root@mininet-vm# cd openvswitch-1.10.0/
     root@mininet-vm# apt-get install build-essential fakeroot
     root@mininet-vm# apt-get install debhelper autoconf automake libssl-dev pkg-config bzip2 openssl python-all procps python-qt4 python-zopeinterface python-twisted-conch
     root@mininet-vm# fakeroot debian/rules binary
