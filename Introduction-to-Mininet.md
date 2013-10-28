@@ -120,7 +120,10 @@ For example,
 - Currently Mininet doesn't do NAT out of the box. This means that
   your virtual hosts will be isolated from your LAN by default; this is
   usually a good thing, but means your hosts can't talk directly to
-  the Internet unless you provide a means for them to do so.
+  the Internet unless you provide a means for them to do so. (Note the 
+  `nat.py` example demonstrates how to configure Mininet hosts for external
+  connectivity, and the `hwintf.py` examples demonstrates how to add
+  a physical interface to Mininet.)
 
 - Currently all Mininet hosts share the host file system and PID space;
   this means that you may have to be careful if you are running daemons
