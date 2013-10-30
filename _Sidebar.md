@@ -12,6 +12,7 @@
 * [[Apps | Mininet Apps]]
 * [[FAQ]]
 * [[Wiki | Home]]
+* [[Teaching]]
 * [[Papers | Publications]]
 * [[GSoC 2013]]
 
