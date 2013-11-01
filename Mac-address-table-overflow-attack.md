@@ -73,7 +73,7 @@ eve@10.0.0.3:~/cs144_security$ python attack.py
 ```
 You should be able to see Eve starts sending a lot of packets into the network. 
 
-Back to Eve's first terminal (switch back by "ctrl+a 0"). After the attack traffic overflowed swtiches' address table, switches will start to broadcast Alice and Bob's traffic and they should start showing up in Eve's tcpdump trace:
+Back to Eve's first terminal (switch back by "ctrl+a 0). After the attack traffic overflowed swtiches' address table, switches will start to broadcast Alice and Bob's traffic and they should start showing up in Eve's tcpdump trace:
 ```no-highlight
 eve@10.0.0.3:~/cs144_security$ sudo tcpdump -n host 10.0.0.1
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
