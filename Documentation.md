@@ -21,7 +21,7 @@ Mininet Documentation
 
 #### Teaching Computer Networking with Mininet
 * [[Environment Setup]] Work on assignments on your own computer or Amazon EC2
-* [[Assignments]] Use Mininet to teach or learn about computer networks
+* [[Assignments | Teaching]] Use Mininet to teach or learn about computer networks
 * [Reproducible Network Research](http://reproducingnetworkresearch.wordpress.com) with Mininet
 
 #### Bug Reports and Feature Requests
