@@ -16,7 +16,7 @@ The following programming assignments are based on the ones we use in Stanford C
 
 ### Reproducible Network Research Experiments
 
-For a project in Stanford's CS244, students recreated published networking research experiments in the Mininet environment.
+As a project in Stanford's CS244 - 'Advanced Topics in Networking' students recreated published networking research experiments in the Mininet environment.
 
 * [Reproducible Networking Experiments](http://reproducingnetworkresearch.wordpress.com) using Mininet
 * [[Reproducible Network Experiments using Container-Based Emulation | http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf]] Our paper describing the above.
