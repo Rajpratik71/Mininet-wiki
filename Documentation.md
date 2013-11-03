@@ -19,8 +19,7 @@ Mininet Documentation
 * **[[FAQ]]** Please read and add to the **[[Frequently Asked Questions | FAQ]]** (and their Answers)
 * [[VM Creation Notes]] How we created the Mininet VM image
 
-#### Teaching Computer Networking with Mininet
-* [[Environment Setup]] Work on assignments on your own computer or Amazon EC2
+#### [[Teaching Computer Networking with Mininet | Teaching]]
 * [[Assignments | Teaching]] Use Mininet to teach or learn about computer networks
 * [Reproducible Network Research](http://reproducingnetworkresearch.wordpress.com) with Mininet
 
