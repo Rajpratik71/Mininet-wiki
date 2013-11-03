@@ -1,3 +1,5 @@
+The Mininet documentation contains a wealth of helpful information including how to use Mininet, how to use Mininet's Python API, Frequently Asked Questions, and much more. Most of the questions we receive on the mailing list have already been answered in the documentation and FAQ, so please consult it, and please feel free to improve the FAQ and wiki!
+
 #### Getting Started With Mininet: The Basics
 1. [Download](http://mininet.github.com/download) Download and run Mininet - in a Virtual Machine (VM) or natively
 2. [VM Setup Notes](http://mininet.github.com/vm-setup-notes) Configure your Mininet VM after you've downloaded it
