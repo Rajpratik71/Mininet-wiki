@@ -30,7 +30,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Why do the **switch data ports** have **random MAC addresses**? How do I assign MAC and IP addresses to the switch data ports?](#assign-macs)
 * [Why does my network fail if I use **more than 16 switches**?](#ovs-controller)
 * [How can I **control Mininet hosts remotely**?](#remote-control)
-* [How can I add a **REST API** to Mininet?](#rest)
+* [How can I add a **REST interface** to Mininet?](#rest)
 * [How do I run the **Mininet examples**?](#examples)
 * [Why doesn't `dpctl` work? How can I **dump a switch's flow table**?](#dpctl)
 * [How do I **generate traffic** on my Mininet network?](#traffic)
