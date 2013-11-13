@@ -391,6 +391,7 @@ def cmd( node='h1', cmd='hostname' ):
 def stop():
     net.stop()
 
+net.start()
 run(host='localhost', port=8080 )
 ```
 
