@@ -4,7 +4,7 @@
 
 * Brandon Heller *[[ Reproducible network research with high-fidelity emulation | https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf ]]* Ph.D. Thesis, Stanford University, 2013.
 
-  This thesis examines how to improve the predictive performance accuracy of emulators by defining and monitoring network *invariants*, universal properties of network systems that we know must be true. This facilitates the use of emulators like Mininet to be used for realistic and reproducible network experiments.
+  This thesis examines how to improve the predictive performance accuracy of emulators by defining and monitoring network *invariants*, universal properties of network systems that we know must be true. This facilitates the use of emulators like Mininet for realistic and reproducible network experiments.
 
 * Nikhil Handigol, Brandon Heller, Vimal Jeyakumar, Bob Lantz, and Nick McKeown. *[[Reproducible Network Experiments using Container-Based Emulation | http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf]]*. [[CoNEXT 2012 | http://conferences.sigcomm.org/co-next/2012/program.html]], December 10-13, 2012, Nice, France.
 
