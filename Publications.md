@@ -14,7 +14,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
   This paper explains the basic Mininet design and workflow.
 
-* Brandon Heller *[[ Reproducible network research with high-fidelity emulation | http://purl.stanford.edu/zk853sv3422 ]]* Ph.D. Thesis, Stanford University, 2013.
+* Brandon Heller *[[ Reproducible network research with high-fidelity emulation | https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf ]]* Ph.D. Thesis, Stanford University, 2013.
 
 ### Reproducible Network Experiments using Mininet
 
