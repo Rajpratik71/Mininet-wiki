@@ -2,6 +2,8 @@
 
 <!-- was: pdf/mininet-conext12.pdf -->
 
+* Brandon Heller *[[ Reproducible network research with high-fidelity emulation | https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf ]]* Ph.D. Thesis, Stanford University, 2013.
+
 * Nikhil Handigol, Brandon Heller, Vimal Jeyakumar, Bob Lantz, and Nick McKeown. *[[Reproducible Network Experiments using Container-Based Emulation | http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf]]*. [[CoNEXT 2012 | http://conferences.sigcomm.org/co-next/2012/program.html]], December 10-13, 2012, Nice, France.
 
   This paper advocates changing the practice of computer networking research (and CS in general),
@@ -14,7 +16,6 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
   This paper explains the basic Mininet design and workflow.
 
-* Brandon Heller *[[ Reproducible network research with high-fidelity emulation | https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf ]]* Ph.D. Thesis, Stanford University, 2013.
 
 ### Reproducible Network Experiments using Mininet
 
