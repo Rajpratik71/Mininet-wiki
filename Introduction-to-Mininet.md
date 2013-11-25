@@ -794,6 +794,14 @@ You can use `RemoteController` from `Mininet`:
 Mininet( topo=topo, controller=lambda name: RemoteController( name, ip='127.0.0.1' ) )
 ```
 
+[You can create a controller constructor any way you like - e.g. by making a function, by subclassing, by using `lambda`, or using currying/`functools.partial`:
+
+```python
+from functools import partial
+Mininet( topo=topo, controller=partial( RemoteController, ip='127.0.0.1', port='6633' ) )
+```
+]
+
 You can also create multiple controllers and create a custom `Switch()` subclass which
 connects to different controllers as desired:
 
