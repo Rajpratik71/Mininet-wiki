@@ -792,7 +792,7 @@ You can use `RemoteController` from `Mininet`:
 
 ```python
 from functools import partial
-Mininet( topo=topo, controller=partial( RemoteController, ip='127.0.0.1', port='6633' ) )
+Mininet( topo=topo, controller=partial( RemoteController, ip='127.0.0.1', port=6633 ) )
 ```
 
 or if you prefer:
