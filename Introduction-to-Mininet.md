@@ -791,15 +791,18 @@ The `RemoteController` class acts as a proxy for a controller which may be runni
 You can use `RemoteController` from `Mininet`:
 
 ```python
-Mininet( topo=topo, controller=lambda name: RemoteController( name, ip='127.0.0.1' ) )
-```
-
-NOTE: As noted in the API documentation, `controller` is a controller *constructor*, not a controller *object*! You can create a controller constructor any way you like - e.g. by making a function, by subclassing, by using `lambda`, or using currying/`functools.partial`:
-
-```python
 from functools import partial
 Mininet( topo=topo, controller=partial( RemoteController, ip='127.0.0.1', port='6633' ) )
 ```
+
+or if you prefer:
+
+```python
+Mininet( topo=topo, controller=lambda name: RemoteController( name, ip='127.0.0.1' ) )
+```
+
+Note that controller is a *constructor*, not an *object*; you can create a custom constructor in-line using `partial` or `lambda`, or you can pass in your own function (which must take the `name` parameter and return a controller object) or class (e.g. a subclass of `RemoteController`.)
+
 
 You can also create multiple controllers and create a custom `Switch()` subclass which
 connects to different controllers as desired:
