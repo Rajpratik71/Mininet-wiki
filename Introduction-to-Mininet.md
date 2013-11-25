@@ -801,7 +801,7 @@ or if you prefer:
 Mininet( topo=topo, controller=lambda name: RemoteController( name, ip='127.0.0.1' ) )
 ```
 
-Note that controller is a *constructor*, not an *object*; you can create a custom constructor in-line using `partial` or `lambda`, or you can pass in your own function (which must take the `name` parameter and return a controller object) or class (e.g. a subclass of `RemoteController`.)
+Note that `controller` is a *constructor*, not an *object*; you can create a custom constructor in-line using `partial` or `lambda`, or you can pass in your own function (which must take the `name` parameter and return a controller object) or class (e.g. a subclass of `RemoteController`.)
 
 
 You can also create multiple controllers and create a custom `Switch()` subclass which
