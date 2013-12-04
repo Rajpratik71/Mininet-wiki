@@ -56,11 +56,10 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 
    This bug seems to happen more frequently with Ubuntu 12.04.3 (`3.8.0-29-generic` kernel), although it has also been seen with newer kernels in 13.10.
 
-| Kernel              | Ubuntu Version | Bug Frequency      |
-|---------------------|----------------|--------------------|
-| `3.2.0-31-generic`  | 12.04 (not .3) | Never              |
-| `3.8.0-29-generic`  | 12.04.3        | Frequent           |
-| `3.11.0-12-generic` | 13.04          | Rare               |
-
+    | Kernel              | Ubuntu Version | Bug Frequency      |
+    |---------------------|----------------|--------------------|
+    | `3.2.0-31-generic`  | 12.04 (not .3) | Never              |
+    | `3.8.0-29-generic`  | 12.04.3        | Frequent           |
+    | `3.11.0-12-generic` | 13.04          | Rare               |
 
 
