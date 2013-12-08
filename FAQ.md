@@ -20,6 +20,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How can I do a **install Mininet natively** on my Linux machine?](#native-install)
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
+* [Help! I can't import the `.ovf` into VirtualBox/VMware/etc.!](#virtualbox-import)
 
 ### Using Mininet
 
@@ -239,6 +240,13 @@ Second, press a key like `A` or `return` a few times - see if any text appears.
 If nothing happens, try switching to a different Linux console using `control``alt``F1`` through `control``alt``F7`.
 
 Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``option``F1`, since the `F1` key controls brightness by default.
+
+***
+<a id=virtualbox-import></a>
+
+### [Help! I can't import the `.ovf` into VirtualBox/VMware/etc.!
+
+If you extract the `.zip` file, you should see a `.vmdk` disk image file. You should be able to create a new virtual machine in VirtualBox/VMware/etc. - and you should be able to specify that this new VM should use an existing disk image file, and you should select the Mininet `.vmdk` file. Configure, boot, and enjoy!
 
 ***
 <a id=python-api></a>
