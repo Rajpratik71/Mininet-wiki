@@ -311,6 +311,7 @@ The command line options are `--switch user` and `--switch ovsk` for the user re
 
 ***
 <a id=ethernet-loops></a>
+
 ### Why does my controller, which implements an Ethernet bridge or learning switch, not work with my network which has loops in it? I can't ping anything!
 
 It doesn't work because your network has loops in it.
