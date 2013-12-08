@@ -20,7 +20,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How can I do a **install Mininet natively** on my Linux machine?](#native-install)
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
-* [Help! I can't import the `.ovf` into VirtualBox/VMware/etc.!](#virtualbox-import)
+* [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
 
 ### Using Mininet
 
