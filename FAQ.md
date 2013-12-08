@@ -551,7 +551,7 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 <a id=openflow></a>
 ### Help! **I don't understand OpenFlow** or SDN!
 
-There is a wealth of useful information to be found at <http://openflow.org>.
+There is a wealth of useful information to be found at <http://opennetworking.org>.
 
 Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
 
