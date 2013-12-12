@@ -63,3 +63,6 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
     | `3.11.0-12-generic` | 13.04          | Rare               |
 
 
+### 2.1.0p1
+
+After 2.1.0 was released, the URL for the `oflops` repository changed, breaking the default `install.sh -a` installation. 2.1.0 fixes this problem and also includes a few additional minor changes.
