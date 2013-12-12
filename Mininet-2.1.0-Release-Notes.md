@@ -16,6 +16,8 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 
 ### Potential VirtualBox Issues
 
+* If VirtualBox (or any other virtual machine monitor)  cannot import the `.ovf` directly, try creating a new VM using the `.vmdk` file as its disk.
+
 * VirtualBox may complain about missing hardware on initial import - you may safely ignore this message.
 
 * We've added a symlink to the top-level examples directory from the mininet code directory to make examples importable. If you are using VirtualBox and clone the repository to a shared folder, the symlink will be broken. This is because VirtualBox does not allow guests to create symlinks in shared folders by default for security reasons. To enable symlink creation, you should do the following:
