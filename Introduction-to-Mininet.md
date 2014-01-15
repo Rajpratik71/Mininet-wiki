@@ -864,6 +864,7 @@ other problems, and you have installed Mininet from source,
 you may wish to update your copy of Mininet. This is easily done using:
 
 	cd ~/mininet
+        git checkout master # assuming you want to update to the current master branch
 	sudo make develop # this only needs to be done once
 	git fetch
 	git pull --rebase
