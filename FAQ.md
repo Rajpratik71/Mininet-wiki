@@ -247,7 +247,7 @@ Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``op
 
 ### Help! I can't import the `.ovf` into VirtualBox/VMware/etc.!
 
-Unfortunately, when VirtualBox was updated to 4.3.4, it stopped being able to import the 2.1.0 `.ovf`. Some other VMMs may also not be able to import it directly, but there is an easy workaround:
+Unfortunately, when VirtualBox was updated to 4.3.4, it stopped being able to import some versions of the Mininet `.ovf` file. Some other VMMs may also not be able to import it directly, but there is an easy workaround:
 
 If you extract the `.zip` file, you should see a `.vmdk` disk image file. You should be able to create a new virtual machine in VirtualBox/VMware/etc. - and you should be able to specify that this new VM should use an existing disk image file, and you should select the Mininet `.vmdk` file. Configure, boot, and enjoy!
 
