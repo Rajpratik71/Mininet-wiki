@@ -861,14 +861,23 @@ to do that.)
 
 If we need to make changes or additions to Mininet to fix bugs or
 other problems, and you have installed Mininet from source,
-you may wish to update your copy of Mininet. This is easily done using:
+you may wish to update your copy of Mininet. This is easily done using one of two methods:
+
+Update using symbolic links to Mininet source tree (makes it easy to update Mininet's python code):
 
 	cd ~/mininet
         git checkout master # assuming you want to update to the current master branch
-	sudo make develop # this only needs to be done once
+	sudo make develop # this only needs to be done initially and when mnexec.c changes
 	git fetch
 	git pull --rebase
 
+Update copying Mininet source into /usr/lib/python... (allows you to delete or move Mininet source tree):
+
+	cd ~/mininet
+        git checkout master # assuming you want to update to the current master branch
+	git fetch
+	git pull --rebase
+        sudo make install
 
 <a id=python></a>
 
