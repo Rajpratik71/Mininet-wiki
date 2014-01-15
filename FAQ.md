@@ -37,6 +37,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I **generate traffic** on my Mininet network?](#traffic)
 * [How do I **modify packet headers** using Mininet?](#headers)
 * [How do I implement a **custom routing algorithm**?](#routing)
+* [How do I **update to a new version of Mininet**?](#updating)
 
 ###  OpenFlow Questions
 
@@ -524,6 +525,26 @@ Use OpenFlow. Please go through the OpenFlow tutorial and consult the OpenFlow s
 Asking this question usually means that you haven't read or understood the documentation and that you don't understand what OpenFlow is.
 
 Use OpenFlow. Please go through the OpenFlow tutorial and consult the OpenFlow specification.
+
+***
+<a id=updating></a>
+### How do I **update to a new version of Mininet**?
+
+What you need to do depends on how you installed Mininet:
+
+1. If you are upgrading from Mininet 1.0.0 and/or an old version of OVS compiled in `/usr/local`, make sure you remove all traces of the old Mininet and OVS
+
+```
+sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec \
+    /usr/local/lib/python*/*/*mininet* \
+    /usr/local/bin/ovs-* /usr/local/sbin/ovs-*
+```
+
+2. If you are upgrading from a package install of Mininet, you should remove the old Mininet and OVS packages:
+
+    sudo apt-get remove mininet openvswitch-switch
+
+3. You should now be able to install from source as per the instructions on http://mininet.org/download/
 
 ***
 <a id=multiple-controllers></a>
