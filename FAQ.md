@@ -13,7 +13,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 ### VM and Installation Questions
 
-* [What is the **login/password** for the Mininet VM?] (#password)
+* [What is the **login/password** for the Mininet VM?](#password)
 * [Why can't I get **X11 forwarding** to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!](#x11-forwarding)
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [Can I run a **GUI/X11 application** within a Mininet host?](#vm-gui-mininethost)
@@ -545,6 +545,8 @@ sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec \
     sudo apt-get remove mininet openvswitch-switch
 
 3. You should now be able to install from source as per the instructions on http://mininet.org/download/
+
+If you wish to install a newer version of OVS than the vendor-supplied version, you may wish to follow the instructions [ here ](#ovs-upgrade).
 
 ***
 <a id=multiple-controllers></a>
