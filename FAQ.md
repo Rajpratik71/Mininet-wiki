@@ -21,6 +21,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
+* [How can I **set up port forwarding** to make it easy to `ssh` into a VirtualBox VM?](#virtualbox-forward)
 
 ### Using Mininet
 
@@ -250,6 +251,20 @@ Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``op
 Unfortunately, when VirtualBox was updated to 4.3.4, it stopped being able to import some versions of the Mininet `.ovf` file. Some other VMMs may also not be able to import it directly, but there is an easy workaround:
 
 If you extract the `.zip` file, you should see a `.vmdk` disk image file. You should be able to create a new virtual machine in VirtualBox/VMware/etc. - and you should be able to specify that this new VM should use an existing disk image file, and you should select the Mininet `.vmdk` file. Configure, boot, and enjoy!
+
+***
+<a id=virtualbox-=forward)
+### How can I **set up port forwarding** to make it easy to `ssh` into a VirtualBox VM?
+
+One way is to add a forwarding rule using the `VBoxManage` command line tool:
+
+    VBoxManage modifyvm "VM name" --natpf1 "guestssh,tcp,,2222,,22"
+
+This will set up port forwarding so that if you use `ssh` to connect to port 2222 on your local machine, it will connect to port 22 (the `ssh` port) on the NAT interface of the VM called "VM name":
+
+    ssh -p 2222 mininet@localhost
+
+More info at: http://www.virtualbox.org/manual/ch06.html#natforward
 
 ***
 <a id=python-api></a>
