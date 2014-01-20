@@ -21,7 +21,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
-* [How can I **set up port forwarding** to make it easy to `ssh` into a VirtualBox VM?](#virtualbox-forward)
+* [How can I **set up port forwarding** to make it easy to `ssh` into a VirtualBox VM?](#virtualbox-forwarding)
 
 ### Using Mininet
 
@@ -253,7 +253,7 @@ Unfortunately, when VirtualBox was updated to 4.3.4, it stopped being able to im
 If you extract the `.zip` file, you should see a `.vmdk` disk image file. You should be able to create a new virtual machine in VirtualBox/VMware/etc. - and you should be able to specify that this new VM should use an existing disk image file, and you should select the Mininet `.vmdk` file. Configure, boot, and enjoy!
 
 ***
-<a id=virtualbox-=forward)
+<a id=virtualbox-forwarding)
 ### How can I **set up port forwarding** to make it easy to `ssh` into a VirtualBox VM?
 
 One way is to add a forwarding rule using the `VBoxManage` command line tool:
