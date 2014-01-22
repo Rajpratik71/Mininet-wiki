@@ -38,7 +38,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I **modify packet headers** using Mininet?](#headers)
 * [How do I implement a **custom routing algorithm**?](#routing)
 * [How do I **update to a new version of Mininet**?](#updating)
-* [Besides the `mininet-discuss` mailing list, is there a #mininet IRC channel?](#irc)
+* [Besides the `mininet-discuss` mailing list, is there a `#mininet` IRC channel?](#irc)
 
 ###  OpenFlow Questions
 
