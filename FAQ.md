@@ -38,6 +38,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I **modify packet headers** using Mininet?](#headers)
 * [How do I implement a **custom routing algorithm**?](#routing)
 * [How do I **update to a new version of Mininet**?](#updating)
+* [Besides the `mininet-discuss` mailing list, is there a #mininet IRC channel?](#irc)
 
 ###  OpenFlow Questions
 
@@ -547,6 +548,12 @@ sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec \
 3. You should now be able to install from source as per the instructions on http://mininet.org/download/
 
 If you wish to install a newer version of OVS than the vendor-supplied version, you may wish to follow the instructions [ here ](#ovs-upgrade).
+
+***
+<a id=irc></a>
+### In addition to the `mininet-discuss` mailing list, is there a #mininet IRC channel?
+
+By request, we have created a `#mininet` IRC channel on [FreeNode](http://freenode.net), so please feel free to discuss Mininet there as well. (Note: this is an experiment, and of course we cannot guarantee that anyone is logged on! But if you want to chat about Mininet on IRC, then `#mininet` is the place!)
 
 ***
 <a id=multiple-controllers></a>
