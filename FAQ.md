@@ -551,7 +551,7 @@ If you wish to install a newer version of OVS than the vendor-supplied version, 
 
 ***
 <a id=irc></a>
-### In addition to the `mininet-discuss` mailing list, is there a #mininet IRC channel?
+### In addition to the `mininet-discuss` mailing list, is there a `#mininet` IRC channel?
 
 By request, we have created a `#mininet` IRC channel on [FreeNode](http://freenode.net), so please feel free to discuss Mininet there as well. (Note: this is an experiment, and of course we cannot guarantee that anyone is logged on! But if you want to chat about Mininet on IRC, then `#mininet` is the place!)
 
