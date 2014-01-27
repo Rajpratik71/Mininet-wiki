@@ -135,7 +135,7 @@ DEBUG:openflow.of_01:Listening for connections on 0.0.0.0:6633
 Ready.
 POX> 
 ```
-**Please note that you have to wait the Mininet to connect to the POX controller before you continue to the next step**. Once the Mininet connected, you will see the following output:
+**Please note that you have to wait for Mininet to connect to the POX controller before you continue to the next step**. Once Mininet has connected, you will see the following output:
 
 ```
 INFO:openflow.of_01:[Con 1/249473472573510] Connected to e2-e5-11-b6-b0-46
@@ -144,7 +144,8 @@ DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.srhandler:SRServerListener catch 
 ```
 Keep the POX running. Now, open yet another terminal to continue the next step.  (Dont’ do ctrl-z)
 
-#### Now you are ready to test out the connectivity of the environment setup. To do so, run the binary file of the solution “sr_solution”
+Now you are ready to test out the connectivity of the environment setup. To do so, run the binary file of the solution, `sr_solution`:
+
 ```no-highlight
 > cd ~/cs144_lab3/
 > ./sr_solution
