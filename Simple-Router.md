@@ -267,9 +267,8 @@ then inside the newly popped xterm,
 ```
 
 ## General Forwarding Logic
-To get you started, an outline of the forwarding logic for a router follows, although it does not contain all the details. There are two main parts to this assignment: [Handling ARP](#ARP) and [IP forwarding](#IP)
+To get you started, an outline of the forwarding logic for a router follows, although it does not contain all the details. There are two main parts to this assignment: [Handling ARP](#wiki-address-resolution-protocol) and [IP forwarding](#wiki-ip-forwarding)
 
-<a id=IP></a>
 ### IP Forwarding
 
 Given a raw Ethernet frame, if the frame contains an IP packet that is not destined for one of our interfaces:
