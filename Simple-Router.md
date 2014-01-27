@@ -16,7 +16,7 @@ If the router is functioning correctly, all of the following operations should w
 Additional requirements are laid out in the 'Requirements' section.
 
 ## Mininet
-This assignment runs on top of Mininet. Mininet allows you to emulate a topology on a single machine. It provides the needed isolation between the emulated nodes so that your router node can process and forward real Ethernet frames between the hosts like a real router. You don't have to know how Mininet works to complete this assignment, but more information about Mininet (if you're curious) is available [here](http://mininet.github.com). 
+This assignment runs on top of Mininet. Mininet allows you to emulate a topology on a single machine. It provides the needed isolation between the emulated nodes so that your router node can process and forward real Ethernet frames between the hosts like a real router. You don't have to know how Mininet works to complete this assignment, but more information about Mininet (if you're curious) is available [here](http://mininet.org). 
 
 ## Get Started
 ### Environment Setup
