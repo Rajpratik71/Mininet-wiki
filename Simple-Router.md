@@ -272,7 +272,7 @@ To get you started, an outline of the forwarding logic for a router follows, alt
 <a id=IP></a>
 ### IP Forwarding
 
-Given a raw Ethernet frame, if the frame contains an IP packet that is not destined towards one of our interfaces:
+Given a raw Ethernet frame, if the frame contains an IP packet that is not destined for one of our interfaces:
 
 * Sanity-check the packet (meets minimum length and has correct checksum).
 * Decrement the TTL by 1, and recompute the packet checksum over the modified header.
