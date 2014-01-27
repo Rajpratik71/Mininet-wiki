@@ -108,7 +108,7 @@ client 10.0.1.1
 *** Starting CLI:
 mininet> 
 ```
-Keep this terminal open, as you will need the mininet command line for debugging. Now, use another terminal to continue the next step. (Do not do ctrl-z) 
+Keep this terminal open, as you will need the mininet command line for debugging. Now, use another terminal to continue the next step. (Do not press ctrl-z.) 
 
 Mininet requires a controller, which we implemented in POX. To run the controller, use the following command:
 
@@ -143,7 +143,7 @@ INFO:openflow.of_01:[Con 1/249473472573510] Connected to e2-e5-11-b6-b0-46
 DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.ofhandler:Connection [Con 1/249473472573510]
 DEBUG:.home.ubuntu.cs144_lab3.pox_module.cs144.srhandler:SRServerListener catch RouterInfo even, info={'eth3': ('10.0.1.1', '86:05:70:7e:eb:56', '10Gbps', 3), 'eth2': ('172.64.3.1', 'b2:9e:54:d8:9d:cd', '10Gbps', 2), 'eth1': ('192.168.2.1', '36:61:7c:4f:b6:7b', '10Gbps', 1)}, rtable=[]
 ```
-Keep POX running. Now, open yet another terminal to continue the next step.  (Don't do ctrl-z)
+Keep POX running. Now, open yet another terminal to continue the next step.  (Don't press ctrl-z.)
 
 Now you are ready to test out the connectivity of the environment setup. To do so, run the binary file of the solution, `sr_solution`:
 
