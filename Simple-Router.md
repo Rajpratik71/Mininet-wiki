@@ -38,8 +38,8 @@ cd ~/cs144_lab3
 
 ### Configuration Files
 There are two configuration files. 
-* ~/cs144_lab3/IP_CONFIG: Listed out the IP addresses assigned to the emulated hosts. 
-* ~/cs144_lab3/router/rtable (also linked to ~/cs144_lab3/rtable): The static routing table used for the simple router. 
+* `~/cs144_lab3/IP_CONFIG`: Listed out the IP addresses assigned to the emulated hosts. 
+* `~/cs144_lab3/router/rtable` (also linked to `~/cs144_lab3/rtable`): The static routing table used for the simple router. 
 
 The default _IP_CONFIG_ and _rtable_ should look like the following:
 
@@ -271,10 +271,12 @@ To get you started, an outline of the forwarding logic for a router follows, alt
 ### IP Forwarding
 
 Given a raw Ethernet frame, if the frame contains an IP packet that is not destined towards one of our interfaces:
+
 * Sanity-check the packet (meets minimum length and has correct checksum).
 * Decrement the TTL by 1, and recompute the packet checksum over the modified header.
 * Find out which entry in the routing table has the longest prefix match with the destination IP address.
 * Check the ARP cache for the next-hop MAC address corresponding to the next-hop IP. If it's there, send it. Otherwise, send an ARP request for the next-hop IP (if one hasn't been sent within the last second), and add the packet to the queue of packets waiting on this ARP request.
+
 Obviously, this is a very simplified version of the forwarding process, and the low-level details follow. For example, if an error occurs in any of the above steps, you will have to send an ICMP message back to the sender notifying them of an error. You may also get an ARP request or reply, which has to interact with the ARP cache correctly.
 
 ## Protocols to Understand
@@ -312,7 +314,7 @@ When forwarding a packet to a next-hop IP address, the router should first check
 
 In the case of an ARP request, you should only send an ARP reply if the target IP address is one of your router's IP addresses. In the case of an ARP reply, you should only cache the entry if the target IP address is one of your router's IP addresses.
 
-Note that ARP requests are sent to the broadcast MAC address (ff-ff-ff-ff-ff-ff). ARP replies are sent directly to the requester's MAC address.
+Note that ARP requests are sent to the broadcast MAC address (`ff-ff-ff-ff-ff-ff`). ARP replies are sent directly to the requester's MAC address.
 
 ## IP Packet Destinations
 
@@ -331,41 +333,41 @@ Your router receives a raw Ethernet frame and sends raw Ethernet frames when sen
 ```no-highlight
 void sr_handlepacket(struct sr_instance* sr, uint8_t * packet, unsigned int len, char* interface)
 ```
-This method, located in *sr_router.c*, is called by the router each time a packet is received. The "packet" argument points to the packet buffer which contains the full packet including the ethernet header. The name of the receiving interface is passed into the method as well.
+This method, located in `sr_router.c`, is called by the router each time a packet is received. The "packet" argument points to the packet buffer which contains the full packet including the ethernet header. The name of the receiving interface is passed into the method as well.
 ```no-highlight
 int sr_send_packet(struct sr_instance* sr, uint8_t* buf, unsigned int len, const char* iface)
 ```
-This method, located in *sr_vns_comm.c*, will send an arbitrary packet of length, len, to the network out of the interface specified by iface.
+This method, located in `sr_vns_comm.c`, will send an arbitrary packet of length, len, to the network out of the interface specified by iface.
 
 You *should not* free the buffer given to you in sr_handlepacket (this is why the buffer is labeled as being "lent" to you in the comments). You are responsible for doing correct memory management on the buffers that sr_send_packet borrows from you (that is, sr_send_packet will not call free on the buffers that you pass it).
 ```no-highlight
 void sr_arpcache_sweepreqs(struct sr_instance *sr)
 ```
-The assignment requires you to send an ARP request about once a second until a reply comes back or we have sent five requests. This function is defined in *sr_arpcache.c* and called every second, and you should add code that iterates through the ARP request queue and re-sends any outstanding ARP requests that haven't been sent in the past second. If an ARP request has been sent 5 times with no response, a destination host unreachable should go back to all the sender of packets that were waiting on a reply to this ARP request.
+The assignment requires you to send an ARP request about once a second until a reply comes back or we have sent five requests. This function is defined in `sr_arpcache.c` and called every second, and you should add code that iterates through the ARP request queue and re-sends any outstanding ARP requests that haven't been sent in the past second. If an ARP request has been sent 5 times with no response, a destination host unreachable should go back to all the sender of packets that were waiting on a reply to this ARP request.
 
 ## Data Structures
 
-###The Router (sr_router.h):
+### The Router (`sr_router.h`):
 
 The full context of the router is housed in the struct sr_instance (sr_router.h). sr_instance contains information about topology the router is routing for as well as the routing table and the list of interfaces.
 
-###Interfaces (sr_if.c/h):
+### Interfaces (`sr_if.c/h`):
 
 After connecting, the server will send the client the hardware information for that host. The stub code uses this to create a linked list of interfaces in the router instance at member if_list. Utility methods for handling the interface list can be found at sr_if.c/h.
 
-###The Routing Table (sr_rt.c/h):
+### The Routing Table (`sr_rt.c/h`):
 
 The routing table in the stub code is read on from a file (default filename "rtable", can be set with command line option -r ) and stored in a linked list of routing entries in the current routing instance (member routing_table).
 
-###The ARP Cache and ARP Request Queue (sr_arpcache.c/h):
+### The ARP Cache and ARP Request Queue (`sr_arpcache.c/h`):
 
 You will need to add ARP requests and packets waiting on responses to those ARP requests to the ARP request queue. When an ARP response arrives, you will have to remove the ARP request from the queue and place it onto the ARP cache, forwarding any packets that were waiting on that ARP request. Pseudocode for these operations is provided in sr_arpcache.h.
 The base code already creates a thread that times out ARP cache entries 15 seconds after they are added for you.
 You must fill out the sr_arpcache_sweepreqs function in sr_arpcache.c that gets called every second to iterate through the ARP request queue and re-send ARP requests if necessary. Psuedocode for this is provided in sr_arpcache.h.
 
-###Protocol Headers (sr_protocol.h)
+### Protocol Headers (`sr_protocol.h`)
 
-Within the router framework you will be dealing directly with raw Ethernet packets. The stub code itself provides some data structures in sr_protocols.h which you may use to manipulate headers easily.
+Within the router framework you will be dealing directly with raw Ethernet packets. The stub code itself provides some data structures in `sr_protocols.h` which you may use to manipulate headers easily.
 There are a number of resources which describe the protocol headers in detail. Network Sorcery's [RFC Sourcebook] (http://www.networksorcery.com/enp/) provides a condensed reference to the packet formats you'll be dealing with:
 
 * [Ethernet] (http://www.networksorcery.com/enp/protocol/IEEE8023.htm)
