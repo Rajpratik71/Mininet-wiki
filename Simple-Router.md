@@ -265,8 +265,9 @@ then inside the newly popped xterm,
 ```
 
 ## General Forwarding Logic
-To get you started, an outline of the forwarding logic for a router follows, although it does not contain all the details. There are two main parts to this assignment: [Handling ARP](http://www.scs.stanford.edu/11au-cs144/lab/router/#ARP) and [IP forwarding](http://www.scs.stanford.edu/11au-cs144/lab/router/#IP)
+To get you started, an outline of the forwarding logic for a router follows, although it does not contain all the details. There are two main parts to this assignment: [Handling ARP](#ARP) and [IP forwarding](#IP)
 
+<a id=IP></a>
 ### IP Forwarding
 
 Given a raw Ethernet frame, if the frame contains an IP packet that is not destined towards one of our interfaces:
@@ -277,10 +278,13 @@ Given a raw Ethernet frame, if the frame contains an IP packet that is not desti
 Obviously, this is a very simplified version of the forwarding process, and the low-level details follow. For example, if an error occurs in any of the above steps, you will have to send an ICMP message back to the sender notifying them of an error. You may also get an ARP request or reply, which has to interact with the ARP cache correctly.
 
 ## Protocols to Understand
+
 ### Ethernet 
 You are given a raw Ethernet frame and have to send raw Ethernet frames. You should understand source and destination MAC addresses and the idea that we forward a packet one hop by changing the destination MAC address of the forwarded packet to the MAC address of the next hop's incoming interface.
+
 ### Internet Protocol
 Before operating on an IP packet, you should verify its checksum and make sure it meets the minimum length of an IP packet. You should understand how to find the longest prefix match of a destination IP address in the routing table described in the "Getting Started" section. If you determine that a datagram should be forwarded, you should correctly decrement the TTL field of the header and recompute the checksum over the changed header before forwarding it to the next hop.
+
 ### Internet Control Message Protocol
 ICMP is a simple protocol that can send control information to a host. In this assignment, your router will use ICMP to send messages back to a sending host. You will need to properly generate the following ICMP messages (including the ICMP header checksum) in response to the sending host under the following conditions:
 
@@ -298,6 +302,7 @@ The source address of an ICMP message can be the source address of any of the in
 As mentioned above, the only incoming ICMP message destined towards the router's IPs that you have to explicitly process are ICMP echo requests.
 You may want to create additional structs for ICMP messages for convenience, but make sure to use the packed attribute so that the compiler doesn't try to align the fields in the struct to word boundaries:
 
+<a id=ARP></id>
 ### Address Resolution Protocol
 
 ARP is needed to determine the next-hop MAC address that corresponds to the next-hop IP address stored in the routing table. Without the ability to generate an ARP request and process ARP replies, your router would not be able to fill out the destination MAC address field of the raw Ethernet frame you are sending over the outgoing interface. Analogously, without the ability to process ARP requests and generate ARP replies, no other router could send your router Ethernet frames. Therefore, your router must generate and process ARP requests and replies.
