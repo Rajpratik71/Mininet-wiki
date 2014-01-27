@@ -41,7 +41,7 @@ There are two configuration files.
 * `~/cs144_lab3/IP_CONFIG`: Listed out the IP addresses assigned to the emulated hosts. 
 * `~/cs144_lab3/router/rtable` (also linked to `~/cs144_lab3/rtable`): The static routing table used for the simple router. 
 
-The default _IP_CONFIG_ and _rtable_ should look like the following:
+The default `IP_CONFIG` and `rtable` should look like the following:
 
 ```no-highlight
 > cat ~/cs144_lab3/IP_CONFIG
