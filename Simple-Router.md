@@ -110,7 +110,7 @@ mininet>
 ```
 Keep this terminal open, as you will need the mininet command line for debugging. Now, use another terminal to continue the next step. (Do not press ctrl-z.) 
 
-Mininet requires a controller, which we implemented in POX. To run the controller, use the following command:
+Mininet requires a controller, which we implemented in POX (revision f95dd1a81584d716823bbf565fa68254416af603). To run the controller, use the following command:
 
 ```no-highlight
 > cd ~/cs144_lab3/
