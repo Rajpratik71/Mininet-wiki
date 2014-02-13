@@ -167,6 +167,8 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 ### Mininet GUIs: consoles.py and miniedit.py
 
+**Status**: Gregory Gee has been working on an enhanced version of MiniEdit.
+
 **Brief explanation**: I (BL) wrote the consoles.py and miniedit.py examples to show what I thought was a really exciting and cool thing you could do in Mininet: make GUI programs that create and use a live virtual network interactively! It seemed so obvious that I had done much of the hard work and that any smart Python/GUI programmer could take what I had done either as code or inspiration and run with it. Unfortunately, that never happened. We could decide to expand these programs into (more) full-blown applications, or we could also try to make the code reusable as a framework. Or we could write documentation about the design of the apps and how to expand them. Or perhaps we could rewrite them in Qt or a more "modern" GUI framework. Regardless, I still feel that GUI apps using Mininet have huge potential, as do graphical interfaces for core Mininet functionality.
 
 **Expected results**: significantly more beautiful, functional, robust and useful consoles.py and miniedit.py applications. In the case of consoles.py, it should provide a useful API for building monitoring applications. In the case for miniedit.py, it should be able to save and load networks as mininet-compatible topologies (expressed in Python.)
@@ -296,6 +298,8 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 **Knowledge prerequisite**: Familiarity with Python and the Mininet API. Completion of all Mininet and OpenFlow tutorials. Ability to clearly write code and documentation.
 
 ### Cluster mode - supporting execution over multiple machines (RemoteSwitch,L2TP/VDE/VXLAN/Capsulator, etc.)
+
+**Status**: Vitaly Antonenko, Philip Wette, and Bob Lantz have been attacking this project from slightly different angles.
 
 **Brief explanation**: This is probably the biggest missing feature of Mininet, and something which was planned since day one but never actually completed. We would like to be able to create very large Mininet networks by using a cluster of machines. This means we need a way to easily start up Mininet instances on multiple machines and to wire them together into a larger simulation. This should be as transparent as possible so that the cluster just appears to be a larger machine running Mininet.  (Of course there is no longer a single clock domain, and other differences may leak through, but in general the same code should run on a single machine or on a cluster.)
 
@@ -446,6 +450,8 @@ Right now we're strongly in the Ubuntu camp. We can almost run out of the box on
 
 ### Automatic testing of examples/
 
+**Status**: Implemented in 2.1.0.
+
 **Brief explanation**: Not only do we want to be confident that changes to Mininet don't break our examples, but the examples themselves can be thought of as system-level tests which can and should be integrate into automated testing.
 
 **Expected results**: A test script in tests/ and a make target which automatically runs all examples as system-level tests.
@@ -494,6 +500,8 @@ Right now we're strongly in the Ubuntu camp. We can almost run out of the box on
 **Knowledge prerequisite**: Understanding of Linux/IP networking, VM network bridging, C programming, Mininet and Python. Familiarity with BSD as well as Linux. Understanding of Linux/BSD kernel building and modules.
 
 ### Support for private /etc directory and possbly private filesystem, user space, PID space, etc.
+
+**Status**: Private dirs implemented in `bind.py` example. PID spaces and other features are not yet available.
 
 **Brief explanation**: Although lightweight virtualization is one of Mininet's most compelling features, sometimes it is useful for hosts to have more private data. One example is programs like apache or sshd which expect to have their configuration in /etc. It should be relatively easily to allow hosts to have private /etc directories by using bind mounts, but getting this to work in a convenient and semi-automatic manner may be tricky. Additionally, it may be desirable to allow Mininet  hosts to have private user and PID spaces (although shared user and PID spaces are obviously quite convenient as well.) It should not be terribly difficult to allow these options to be configured both in Mininet() and via the command line.
 
