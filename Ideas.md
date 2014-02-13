@@ -205,6 +205,8 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 
 ### Easier VM image creation (e.g. using something like ubuntu-vm-builder)
 
+**Status**: `build.py` script implemented in 2.1.0.
+
 **Brief explanation**: Currently we make the VM images by hand - it's a pain, and it's why the Mininet VMs are rarely updated. We could automate this by using a script like the now-deprecated ubuntu-vm-builder, which was part of Ubuntu and used debuild. Or we could script Xen/KVM/VMware/Vbox to take an off-the-shelf Ubuntu image and install Mininet in it. There might be other better ways.
 
 **Expected results**: Modified Mininet makefiles which include a target to build a VM image.
@@ -270,6 +272,8 @@ On the other hand, it's also useful to be able to connect into the Mininet netwo
 **Knowledge prerequisite**: Familiarity with Python and the Mininet API. Ability to write Mininet scripts. Understanding of networks, OpenFlow, SDN and controllers (e.g. POX.) Ability to read and understand Python APIs and to write clear and thorough documentation.
 
 ### Raspberry Pi Mininet image/"network in a box" ;-)
+
+**Status**: It should be possible to leverage the existing `build.py` script to automatically boot a Raspbian (or other OS) image (using `qemu` in ARM emulation mode) and install Mininet.
 
 **Brief explanation**: This would be a fun and cool project and would also allow for a very inexpensive "network in a box" which could be used not only as a dirt-cheap Mininet platform (for courses, workshops, tutorials, anyone who wants one) but also as virtual "hardware" which you can plug your PC, server, or switches into to get a larger virtual topology. The basics are extremely easy, but there are some interesting and fun possibilities here.
 
