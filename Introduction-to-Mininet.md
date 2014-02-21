@@ -732,7 +732,7 @@ example,
 ```
 
 This same documentation is also available on the Mininet web site at
-<http://mininet.github.com/api>.
+<http://api.mininet.org>.
 
 You may wish to generate the HTML (and PDF) documentation yourself using `doxypy`:
 
