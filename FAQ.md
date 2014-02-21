@@ -572,7 +572,7 @@ Another way is to use the mid-level API, as shown in [`examples/controllers2.py`
 <a id=ovs-upgrade></a>
 ### Can I upgrade Open vSwitch to a newer version?
 
-Mininet usually gets installed by whatever the latest version of Open vSwitch is available in that distribution's release.  You easily upgrade to another version by following the instructions for
+Mininet usually uses the latest version of Open vSwitch that is included in that distribution's release.  You can easily upgrade to another version by following the instructions
 [here] (Installing-new-version-of-Open-vSwitch).
 
 ***
