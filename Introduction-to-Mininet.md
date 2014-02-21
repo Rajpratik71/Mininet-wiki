@@ -639,8 +639,79 @@ You may find some of them to be useful and others (e.g. [`consoles.py`](https://
 
 Note: The examples are intended as instructional material to be read and understood, not as complete, out-of-the-box solutions to whatever problem you may have. You may be able to use some of the code with modification, but it's important to be able to examine and understand the code.
 
-<a id=api></a>
+### Understanding the Mininet API
 
+Over the course of this introduction, you have been exposed to a number of Python classes which comprise Mininet's API, including classes such as `Topo`, `Mininet`, `Host`, `Switch`, `Link` and their subclasses. It is convenient to divide these classes into levels (or layers), since in general the high-level APIs are built using the lower-level APIs.
+
+Mininet's API is built at three primary levels:
+
+ * Low-level API: The low-level API consists of the base node and link classes (such as `Host`, `Switch`, and `Link` and their subclasses) which can actually be instantiated individually and used to create a network, but it is a bit unwieldy.
+
+ * Mid-level API: The mid-level API adds the `Mininet` object which serves as a container for nodes and links. It provides a number of methods (such as `addHost()`, `addSwitch()`, and `addLink()`) for adding nodes and links to a network, as well as network configuration, startup and shutdown (notably `start()` and `stop()`.)
+
+ * High-level API: The high-level API adds a topology template abstraction, the `Topo` class, which provides the ability to create reusable, parametrized topology templates. These templates can be passed to the `mn` command (via the `--custom` option) and used from the command line.
+
+It is valuable to understand each of the API levels. In general when you want to control nodes and switches directly, you use the low-level API. When you want to start or stop a network, you usually use the mid-level API (notably the `Mininet` class.) 
+
+Things become interesting when you start thinking about creating full networks. Full networks can be created using any of the API levels (as seen in the examples), but usually you will want to pick either the mid-level API (e.g. `Mininet.add*()`) or the high-level API (`Topo.add*()`) to create your networks. 
+
+Here are examples of creating networks using each API level:
+
+Low-level API: nodes and links
+```python
+h1 = Host( 'h1' )                                                                                                     
+h2 = Host( 'h2' )                                                                                                     
+s1 = OVSSwitch( 's1', inNamespace=False )                                                                             
+c0 = Controller( 'c0', inNamespace=False )                                                                            
+Link( h1, s1 )                                                                                                        
+Link( h2, s1 )                                                                                                        
+h1.setIP( '10.1/8' )                                                                                                  
+h2.setIP( '10.2/8' )                                                                                                  
+c0.start()                                                                                                            
+s1.start( [ c0 ] )                                                                                                    
+print h1.cmd( 'ping -c1', h2.IP() )                                                                                   
+s1.stop()                                                                                                             
+c0.stop() 
+```
+
+Mid-level API: Network object
+```python
+net = Mininet()                                                                                                       
+h1 = net.addHost( 'h1' )                                                                                              
+h2 = net.addHost( 'h2' )                                                                                              
+s1 = net.addSwitch( 's1' )
+c0 = net.addController( 'c0' )                                                                                          
+net.addLink( h1, s1 )                                                                                                 
+net.addLink( h2, s1 )                                                                                                 
+net.start()
+print h1.cmd( 'ping -c1', h2.IP() )                                                                                   
+CLI( net )                                                                                                            
+net.stop()  
+```
+
+High-level API: Topology templates
+```python
+class SingleSwitchTopo( Topo ):                                                                                               
+    "Single Switch Topology"                                                                                                  
+    def __init__( self, count=1, **params ):                                                                                      
+        Topo.__init__( self, **params )                                                                                       
+        hosts = [ self.addHost( 'h%d' % i )                                                                                   
+                  for i in range( 1, count + 1 ) ]                                                                                
+        s1 = self.addSwitch( 's1' )                                                                                           
+        for h in hosts:                                                                                                       
+            self.addLink( h, s1 )                                                                                             
+
+net = Mininet( topo=SingleSwitchTopo( 3 ) )                                                                               
+net.start()                                                                                                               
+CLI( net )                                                                                                                
+net.stop()   
+```
+
+As you can see, the mid-level API is a bit simpler because it doesn't require creation of a topology class. The low-level and mid-level APIs are flexible and powerful, but may be less convenient to reuse compared to the high-level `Topo` API.
+
+Note also that the high-level `Topo` currently doesn't support multiple links between nodes, but the lower level APIs do. Currently `Topo` also doesn't concern itself with which switches are controlled by which controllers (you can use a custom `Switch` subclass to do this, as described above.) With the mid-level and low-level APIs, you can manually start the switches if desired, passing the appropriate list of controllers to each switch.
+
+<a id=api></a>
 ### Mininet API Documentation
 
 Mininet includes Python documentation strings for each module and API
