@@ -96,12 +96,14 @@ This page summarizes various ideas for features and future functionality for Min
 
 ## Google Summer of Code Information
 
-Mininet is an interesting and high-impact project which is also fun to work on, and we're excited to be applying to the Google Summer Of Code (GSOC) in the hope of attracting energetic and motivated developers.
+**NOTE: Unfortunately we will not be participating in Google Summer of Code 2014. However, we may rejoin GSoC in 2015, so stay tuned!**
 
-**Mentoring**: A participant in GSOC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
+Mininet is an interesting and high-impact project which is also fun to work on, and we're excited to be applying to the Google Summer Of Code (GSoC) in the hope of attracting energetic and motivated developers.
+
+**Mentoring**: A participant in GSoC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
 
 **Projects**: 
-We have identified a wide variety of potential GSOC projects for Mininet, and the current, detailed list is available at the Ideas page on the Mininet wiki at http://github.com/mininet/mininet/wiki/Ideas
+We have identified a wide variety of potential GSoC projects for Mininet, and the current, detailed list is available at the Ideas page on the Mininet wiki at http://github.com/mininet/mininet/wiki/Ideas
 
 Projects are grouped by complexity/difficulty as well as whether we have starter code. The project(s) will be selected by agreement between the potential mentor(s) and participant(s), based on participant interest, experience and knowledge, as well as project impact, project difficulty, and mentor availability and interest.
 
@@ -109,7 +111,7 @@ Projects are grouped by complexity/difficulty as well as whether we have starter
 
 Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
 
-**Process**: GSOC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process) .
+**Process**: GSoC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process) .
 
 ## Mininet Development Process
 
