@@ -81,7 +81,9 @@ for line in input():
   * [Virtual time via barrier synchronization](https://github.com/mininet/mininet/wiki/Ideas#wiki-virtual-time-via-barrier-synchronization)
   * [Different modes of operation to trade of emulation speed vs. performance accuracy](https://github.com/mininet/mininet/wiki/Ideas#wiki-different-modes-of-operation-to-trade-of-emulation-speed-vs-performance-accuracy)
   * [Higher-performing switches (e.g. VALE-enabled OVS and/or custom switch)](https://github.com/mininet/mininet/wiki/Ideas#wiki-higher-performing-switches-eg-vale-enabled-ovs-andor-custom-switch)
-  * [Support for private /etc directory and possbly private filesystem, user space, PID space, etc.](https://github.com/mininet/mininet/wiki/Ideas#wiki-support-for-private-etc-directory-and-possbly-private-filesystem-user-space-pid-space-etc)
+  * [Support for private /etc directory and possibly private filesystem, user space, PID space, etc.](https://github.com/mininet/mininet/wiki/Ideas#wiki-support-for-private-etc-directory-and-possbly-private-filesystem-user-space-pid-space-etc)
+
+
 ---
 
 ## Mininet Project Ideas
