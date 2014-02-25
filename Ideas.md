@@ -33,7 +33,7 @@ for line in input():
 1. [Project Ideas for Mininet](https://github.com/mininet/mininet/wiki/Ideas#wiki-project-ideas-for-mininet)
 1. [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#wiki-mininet-project-ideas)
 1. [Background](https://github.com/mininet/mininet/wiki/Ideas#wiki-background)
-1. [Google Summer of Code Information](https://github.com/mininet/mininet/wiki/Ideas#wiki-google-summer-of-code-information)
+1. [GSoC 2015 Possibility](https://github.com/mininet/mininet/wiki/Ideas#wiki-google-summer-of-code-information)
 1. [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#wiki-mininet-development-process)
 1. [Making it Real: extending existing prototype code into an official feature](https://github.com/mininet/mininet/wiki/Ideas#wiki-making-it-real-extending-existing-prototype-code-into-an-official-feature)
   * [Hardware interface support](https://github.com/mininet/mininet/wiki/Ideas#wiki-hardware-interface-support)
@@ -94,7 +94,7 @@ This page summarizes various ideas for features and future functionality for Min
 
 [Mininet](http://mininet.github.com) is a lightweight emulator for computer networks and distributed systems, giving you a stack of "virtual hardware" inside your laptop that you can use for prototyping and developing your own experiments, applications, and systems. Mininet starts up a virtual network/distributed system of servers, switches, and OpenFlow controllers in a few seconds, with a single command, and provides an extensive Python API for emulating almost any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking, where it is a key component of an emerging SDK for SDN. It is available under a liberal BSD-style license and is included in Ubuntu as the [`mininet`](https://launchpad.net/ubuntu/+source/mininet) package.
 
-## Google Summer of Code Information
+## GSoC 2015 Possibility
 
 **NOTE: Unfortunately we will not be participating in Google Summer of Code 2014. However, we may rejoin GSoC in 2015, so stay tuned!**
 
