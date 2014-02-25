@@ -33,7 +33,7 @@ for line in input():
 1. [Project Ideas for Mininet](https://github.com/mininet/mininet/wiki/Ideas#wiki-project-ideas-for-mininet)
 1. [Mininet Project Ideas](https://github.com/mininet/mininet/wiki/Ideas#wiki-mininet-project-ideas)
 1. [Background](https://github.com/mininet/mininet/wiki/Ideas#wiki-background)
-1. [GSoC 2015 Possibility](https://github.com/mininet/mininet/wiki/Ideas#wiki-google-summer-of-code-information)
+1. [GSoC 2015 Possibility](https://github.com/mininet/mininet/wiki/Ideas#wiki-gsoc-2015-possibility)
 1. [Mininet Development Process](https://github.com/mininet/mininet/wiki/Ideas#wiki-mininet-development-process)
 1. [Making it Real: extending existing prototype code into an official feature](https://github.com/mininet/mininet/wiki/Ideas#wiki-making-it-real-extending-existing-prototype-code-into-an-official-feature)
   * [Hardware interface support](https://github.com/mininet/mininet/wiki/Ideas#wiki-hardware-interface-support)
