@@ -13,21 +13,20 @@ Most of these videos are available on YouTube, and we link to several of them on
 
 ### Nick Feamster (Georgia Tech)
 
-Installing and Running Mininet: http://www.youtube.com/watch?v=68Dr0gguVT8
+ - Installing and Running Mininet: http://www.youtube.com/watch?v=68Dr0gguVT8
 
 ### David Mahler (HP)
 
-Introduction to Mininet: http://www.youtube.com/watch?v=jmlgXaocwiE
-Mininet Custom Topologies: http://www.youtube.com/watch?v=yHUNeyaQKWY
+ - Introduction to Mininet: http://www.youtube.com/watch?v=jmlgXaocwiE
+ - Mininet Custom Topologies: http://www.youtube.com/watch?v=yHUNeyaQKWY
 
-Other videos: http://www.youtube.com/user/mahler711
+ - Other videos: http://www.youtube.com/user/mahler711
 
 ### Brent Salisbury (OpenDaylight)
 
-Installing OpenFlow Flows Using Mininet and OpenDaylight: http://www.youtube.com/watch?v=uJoKEiN_Bgg
-
-Other videos: http://www.youtube.com/user/NetworkStatic/videos
+- Installing OpenFlow Flows Using Mininet and OpenDaylight: http://www.youtube.com/watch?v=uJoKEiN_Bgg
+- Other videos: http://www.youtube.com/user/NetworkStatic/videos
 
 ### Bob Lantz and Brian O'Connor (ON.Lab)
 
-Stanford Netseminar on Mininet: http://www.youtube.com/watch?v=90fBCO1MMTA
+- Stanford Netseminar on Mininet: http://www.youtube.com/watch?v=90fBCO1MMTA
