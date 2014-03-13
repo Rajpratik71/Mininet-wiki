@@ -1,5 +1,4 @@
-The Mininet Approach to Network Research and Prototyping
----------------------------------------------------------
+### The Mininet Approach to Network Research and Prototyping
 
 Mininet was conceived as a way to make it easy to do network research using OpenFlow.
 
