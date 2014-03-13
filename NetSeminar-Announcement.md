@@ -1,7 +1,7 @@
-From: Yiannis Yiakoumis <yiannisy@stanford.edu><br>
-Subject: [netseminar] Stanford Networking Seminar, Thursday, November 14th @ 11:45am, Bob Lantz, Brian O'Connor (Open Networking Lab)<br>
-Date: November 10, 2013 at 7:34:51 AM PST<br>
-To: netseminar <netseminar@lists.stanford.edu><br>
+**From**: Yiannis Yiakoumis <yiannisy@stanford.edu><br>
+**Subject**: [netseminar] Stanford Networking Seminar, Thursday, November 14th @ 11:45am, Bob Lantz, Brian O'Connor (Open Networking Lab)<br>
+**Date**: November 10, 2013 at 7:34:51 AM PST<br>
+**To**: netseminar <netseminar@lists.stanford.edu><br>
 
 Stanford Networking Seminar Announcement<br>
 http://netseminar.stanford.edu/
@@ -24,10 +24,10 @@ It is our hope that anyone with interest and a laptop will be able to understand
 Joint work with Brandon Heller, Nikhil Handigol and Vimal Jeyakumar.
 
 
-[1] http://mininet.org
-[2] Reproducible Network Experiments using Container-Based Emulation. CoNEXT 2012
-     http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf
-[3] http://reproducingnetworkresearch.wordpress.com
+[1] http://mininet.org<br>
+[2] Reproducible Network Experiments using Container-Based Emulation. CoNEXT 2012<br>
+     http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf<br>
+[3] http://reproducingnetworkresearch.wordpress.com<br>
 
 
 About the speakers:
