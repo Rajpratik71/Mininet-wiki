@@ -1,4 +1,4 @@
-A number of people have created helpful videos about using Mininet on a variety of topics.
+A number of people have created helpful videos on a variety of Mininet topics.
 
 You may find these videos to be a useful supplement to the [Mininet documentation](Documentation), which is of course the definitive information on how to use the system.
 
