@@ -10,8 +10,10 @@ The Mininet documentation contains a wealth of helpful information including how
 #### Next Steps: Check out Mininet examples
 6. Look at some [example Mininet scripts](https://github.com/mininet/mininet/tree/master/examples)
 7. Try some realistic [network experiments](http://reproducingnetworkresearch.wordpress.com) with Mininet
+8. If you like, watch some [Mininet Videos](Videos)
 
-#### Additional key Mininet References
+#### Essential Mininet References
+* **[[Introduction to Mininet]]**
 * **[Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html)**
 * [Viewing/Generating the Mininet API Reference](Mininet-API-Documentation) (it's very easy!)
 * **[[Publications]]** Informative Mininet papers, technical reports and presentations
