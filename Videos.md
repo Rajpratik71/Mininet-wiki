@@ -2,7 +2,7 @@ A number of people have created helpful videos on a variety of Mininet topics.
 
 You may find these videos to be a useful supplement to the [Mininet documentation](Documentation), which is of course the definitive information on how to use the system.
 
-Most of these videos are available on YouTube, and we link to several of them on this page, organized by their creator.
+Most of these videos are available on YouTube, and we link to several of them on this page, organized by their creator/presenter.
 
 ### [Nick Feamster](http://www.cc.gatech.edu/~feamster/) (Georgia Tech)
 
