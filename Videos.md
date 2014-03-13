@@ -19,7 +19,6 @@ Most of these videos are available on YouTube, and we link to several of them on
 
  - Introduction to Mininet: http://www.youtube.com/watch?v=jmlgXaocwiE
  - Mininet Custom Topologies: http://www.youtube.com/watch?v=yHUNeyaQKWY
-
  - Other videos: http://www.youtube.com/user/mahler711
 
 ### Brent Salisbury (OpenDaylight)
@@ -29,4 +28,4 @@ Most of these videos are available on YouTube, and we link to several of them on
 
 ### Bob Lantz and Brian O'Connor (ON.Lab)
 
-- Stanford Netseminar on Mininet: http://www.youtube.com/watch?v=90fBCO1MMTA
+- Stanford NetSeminar on Mininet: http://www.youtube.com/watch?v=90fBCO1MMTA
