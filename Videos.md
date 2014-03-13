@@ -1,11 +1,4 @@
-A number of people have created helpful videos about using Mininet on a variety of topics including:
-
- - What Mininet is and how it is used
- - How to start up Mininet and use it from the command line
- - How to create your own custom topologies
- - How to use the Python API to set up your own experiments
- - How to use local and remote OpenFlow controllers
- - How Mininet works internally
+A number of people have created helpful videos about using Mininet on a variety of topics.
 
 You may find these videos to be a useful supplement to the [Mininet documentation](Documentation), which is of course the definitive information on how to use the system.
 
