@@ -30,6 +30,10 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Presentations and Slides
 
+* [[Mininet: an instant Virtual Network on your Laptop | https://github.com/mininet/mininet/wiki/pdf/mininet-hifi-bdh2.pdf]]
+
+  Stanford NetSeminar, 11/14/14. Bob and Brian explain why network emulation is valuable and how Mininet addresses issues of scalability, usability, and performance modeling. Includes a somewhat detailed description of how Mininet uses underlying Linux functionality to implement a convenient Python API for network emulation.
+
 * [[Mininet-HiFi: Rapid, High Fidelity SDN Prototyping | pdf/mininet-hifi-bdh2.pdf]]
 
   Presentation from SDN CTO Summit describing Mininet-HiFi features, which have since been integrated into   Mininet 2.0.
