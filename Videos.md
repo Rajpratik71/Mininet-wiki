@@ -14,7 +14,7 @@ Most of these videos are available on YouTube, and we link to several of them on
  - Mininet Custom Topologies: http://www.youtube.com/watch?v=yHUNeyaQKWY
  - Other videos: http://www.youtube.com/user/mahler711
 
-### [Brent Salisbury](http://networkstatic.net) (OpenDaylight)
+### [Brent Salisbury](http://networkstatic.net) (Red Hat)
 
 - Installing OpenFlow Flows Using Mininet and OpenDaylight: http://www.youtube.com/watch?v=uJoKEiN_Bgg
 - Other videos: http://www.youtube.com/user/NetworkStatic/videos
