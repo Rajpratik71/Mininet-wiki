@@ -4,7 +4,7 @@ You may find these videos to be a useful supplement to the [Mininet documentatio
 
 Most of these videos are available on YouTube, and we link to several of them on this page, organized by their creator.
 
-### [Nick Feamster (Georgia Tech)](http://www.cc.gatech.edu/~feamster/)
+### [Nick Feamster](http://www.cc.gatech.edu/~feamster/) (Georgia Tech)
 
  - Installing and Running Mininet: http://www.youtube.com/watch?v=68Dr0gguVT8
 
