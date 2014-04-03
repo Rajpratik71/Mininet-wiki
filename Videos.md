@@ -24,7 +24,7 @@ Most of these videos are available on YouTube, and we link to several of them on
  - Generating Mininet topologies with VND: http://www.youtube.com/watch?v=oONmjHgXxpc
  - Other videos: http://www.youtube.com/playlist?list=PLccoFREVAt_4nEtrkl59mjjf5ZzRX8DZA
 
-### [Antonin Bas](Stanford)
+### Antonin Bas (Stanford)
 
  - CS144 MOOC 2014 - downloading and running Mininet: https://www.youtube.com/watch?v=JDTahECn-O0
 
