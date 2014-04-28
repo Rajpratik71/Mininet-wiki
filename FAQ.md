@@ -39,6 +39,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I implement a **custom routing algorithm**?](#routing)
 * [How do I **update to a new version of Mininet**?](#updating)
 * [In addition to the `mininet-discuss` mailing list, is there a **`#mininet` IRC channel**?](#irc)
+* [Can I turn on SSL for Open vSwitch?] (#ovs-ssl)
 
 ###  OpenFlow Questions
 
@@ -558,6 +559,12 @@ According to Nick Bastin, there is a fair amount of expertise on the `#openflow`
 Also, by request, we have created a `#mininet` IRC channel for additional Mininet-specific discussion.
 
 (Note: this is an experiment, and of course we cannot guarantee that anyone is logged on! But if you want to chat about Mininet on IRC, you may wish to look at `#mininet` and/or `#openflow`.)
+
+***
+<a id=ovs-ssl></a>
+### Can I turn on SSL for Open vSwitch?
+
+Yes, Open vSwitch and ovs-controller both support SSL.  It isn't turned on by default in Mininet.  For an example, look [here] (SSL-on-Open-vSwitch-and-ovs-controller).
 
 ***
 <a id=multiple-controllers></a>
