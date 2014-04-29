@@ -1,7 +1,9 @@
-Create all the keys for both OVS and the ovs-controller we will use and set the SSL parameters for OVS.
+There are two places that SSL will need to be configured if SSL is to be used between the controller and the Open vSwtich.  The instructions below assume an installation of Open vSwitch using Ubuntu packages.  If you installed by alternate means, the location of the openvswitch/pki might be different.
+
+### Open vSwtich Setup
+Create all the keys and register them with Open vSwitch.
 
     cd /etc/openvswitch
-    sudo ovs-pki req+sign ctl controller
     sudo ovs-pki req+sign sc switch
     sudo ovs-vsctl set-ssl \
         /etc/openvswitch/sc-privkey.pem \
@@ -10,6 +12,13 @@ Create all the keys for both OVS and the ovs-controller we will use and set the 
 
 The above might not be the most secure way to manage the keys, but again, this is for research and experimentation.
 
+### Open vSwtich test controller ovs-controller Setup
+Create all the keys.
+
+    cd /etc/openvswitch
+    sudo ovs-pki req+sign ctl controller
+
+### Running a Sample Test
 In one window, let’s start the ovs-controller with SSL support.
 
     sudo ovs-controller -v pssl:6633 \
