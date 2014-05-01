@@ -523,7 +523,7 @@ If you find bugs in the `popen()` interface, please let us know.
 
 ### Important: Shared Filesystem!
 
-One think to keep in mind is that by default Mininet hosts *share the
+One thing to keep in mind is that by default Mininet hosts *share the
 root filesystem* of the underlying server. Usually this is a very good thing,
 since it is a huge pain (and slow) to create a separate filesystem for each 
 Mininet host (which you can do if you like and then chroot into it!)
