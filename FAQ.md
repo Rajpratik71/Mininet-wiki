@@ -67,7 +67,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 Quick answer: Follow the steps on our [[Documentation]] page!
 
-The best way to get started with Mininet is to install our ready-to-run virtual machine image as per our [Download](http://mininet.github.com/download) instructions, then go through the [Walkthrough](http://mininet.github.com/walkthrough), and then continue with the other steps on our [[Documentation]] page. You may find the [[Introduction to Mininet]] and the [[OpenFlow tutorial | http://www.openflow.org/wk/index.php/OpenFlow_Tutorial]] to be particularly useful in helping you to understand and use Mininet and OpenFlow/Software-Defined Networking, respectively.
+The best way to get started with Mininet is to install our ready-to-run virtual machine image as per our [Download](http://mininet.github.com/download) instructions, then go through the [Walkthrough](http://mininet.github.com/walkthrough), and then continue with the other steps on our [[Documentation]] page. You may find the [[Introduction to Mininet]] and the [[OpenFlow tutorial | https://github.com/mininet/openflow-tutorial/wiki]] to be particularly useful in helping you to understand and use Mininet and OpenFlow/Software-Defined Networking, respectively.
 
 ***
 <a id=password></a>
@@ -85,7 +85,7 @@ On some older VMs it was `openflow`/`openflow`.
 ### Why can't I get X11 forwarding to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!
 
 **This is not a Mininet problem**. It means that **X11 forwarding is not set up correctly**.
-First, consult the X11 setup instructions in the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial), including:
+First, consult the X11 setup instructions in the [OpenFlow Tutorial](https://github.com/mininet/openflow-tutorial/wiki), including:
 
 * Download X11
 * Install X11
@@ -604,7 +604,7 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 
 There is a wealth of useful information to be found at <http://opennetworking.org>.
 
-Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](http://www.openflow.org/wk/index.php/OpenFlow_Tutorial).
+Definitely read the [OpenFlow White Paper](http://www.openflow.org/documents/openflow-wp-latest.pdf) and go through the [OpenFlow Tutorial](https://github.com/mininet/openflow-tutorial/wiki).
 
 You may also wish to search the ACM and IEEE digital libraries for recent papers that reference Software-Defined Networking and OpenFlow.
 
