@@ -9,7 +9,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 -->
 ### Start Here
 
-* [How can I **get started** with Mininet?](#get-started)
+* [How can I **get started** with Mininet?](#How can I get started with Mininet)
 
 ### VM and Installation Questions
 
