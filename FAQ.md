@@ -62,7 +62,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Will you **do my (home)work assignment** for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
-<a id="get-started"/>
+<a name="get-started"/>
 ### How can I **get started** with Mininet?
 
 Quick answer: Follow the steps on our [[Documentation]] page!
@@ -70,7 +70,7 @@ Quick answer: Follow the steps on our [[Documentation]] page!
 The best way to get started with Mininet is to install our ready-to-run virtual machine image as per our [Download](http://mininet.github.com/download) instructions, then go through the [Walkthrough](http://mininet.github.com/walkthrough), and then continue with the other steps on our [[Documentation]] page. You may find the [[Introduction to Mininet]] and the [[OpenFlow tutorial | https://github.com/mininet/openflow-tutorial/wiki]] to be particularly useful in helping you to understand and use Mininet and OpenFlow/Software-Defined Networking, respectively.
 
 ***
-<a id="password"/>
+<a name="password"/>
 ### What is the login/password for the Mininet VM?
 
 As of Mininet 2.0.0 and newer, it is currently:
@@ -81,7 +81,7 @@ As of Mininet 2.0.0 and newer, it is currently:
 On some older VMs it was `openflow`/`openflow`.
 
 ***
-<a id="x11-forwarding"/>
+<a name="x11-forwarding"/>
 ### Why can't I get X11 forwarding to work? I get `cannot open display:` or `$DISPLAY not set`, and `wireshark` doesn't work! `xterm` doesn't work either!
 
 **This is not a Mininet problem**. It means that **X11 forwarding is not set up correctly**.
@@ -120,7 +120,7 @@ As an alternative to X11, you could also use VNC, but that is probably about as 
 **If this seems too complicated, you can simply run X11 in the VM console window as described below!**
 
 ***
-<a id="vm-console-gui"/>
+<a name="vm-console-gui"/>
 ### X11 forwarding is too hard! Can't I just run a GUI in my VM console window?
 
 Yes, you can!
@@ -144,7 +144,7 @@ Then, you can start X11 in the VM console window using
     startx
 
 ***
-<a id="vm-gui-mininethost"/>
+<a name="vm-gui-mininethost"/>
 ### Can I run a GUI/X11 application within a Mininet host?
 
 Yes, you can do so from a host `xterm` or `gterm` with the current version of Mininet.
@@ -183,7 +183,7 @@ On Term3:
     xeyes # Run any X app
 
 ***
-<a id="run"/>
+<a name="run"/>
 ### How do I run Linux programs on my Mininet hosts?
 
 If you are asking this question, it means you haven't yet consulted the [[Documentation]]. :(
@@ -191,19 +191,19 @@ If you are asking this question, it means you haven't yet consulted the [[Docume
 If you are incredibly lazy, please at least look at the [[Sample Workflow | http://mininet.org/sample-workflow/ ]].
 
 ***
-<a id="command-line-options"/>
+<a name="command-line-options"/>
 ### How do I figure out the **command-line options** for the `mn` command?
 
     mn --help
 
 ***
-<a id="native-install"/>
+<a name="native-install"/>
 ### How can I **install Mininet natively** on my Linux machine?
 
 Instructions for native installation can be found at <http://mininet.github.com/download> and in [`INSTALL`](https://github.com/mininet/mininet/tree/master/INSTALL).
 
 ***
-<a id="virtualbox-error"/>
+<a name="virtualbox-error"/>
 ### Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?
 
 If you are already running Microsoft's Hyper-V, you may not be able to boot the 64-bit Mininet VM in VirtualBox at the same time. I tested this and got the following error:
@@ -231,7 +231,7 @@ Usually the problem is not that you don't have a 64-bit CPU (you probably do if 
 OK, use the 32-bit VM image. ;-)
 
 ***
-<a id="blank-screen"/>
+<a name="blank-screen"/>
 ### Help! The VM console screen is blank!
 
 Make sure that the VM is actually booting without any errors of any kind. If not, then you may have a problem actually booting the Mininet VM in your VM monitor. The 64-bit Mininet VM image should work on any modern CPU. However, some users have reported conflicts between Microsoft's Hyper-V and VirtualBox on Windows, so if you are running VirtualBox on Windows you may need to turn off Hyper-V. Alternately, you can use Hyper-V to run the VM as noted above! Or you can try the 32-bit image, which seems to work fine on most configurations.
@@ -245,7 +245,7 @@ If nothing happens, try switching to a different Linux console using `control``a
 Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``option``F1`, since the `F1` key controls brightness by default.
 
 ***
-<a id="virtualbox-import"/>
+<a name="virtualbox-import"/>
 
 ### Help! I can't import the `.ovf` into VirtualBox/VMware/etc.!
 
@@ -254,7 +254,7 @@ Unfortunately, when VirtualBox was updated to 4.3.4, it stopped being able to im
 If you extract the `.zip` file, you should see a `.vmdk` disk image file. You should be able to create a new virtual machine in VirtualBox/VMware/etc. - and you should be able to specify that this new VM should use an existing disk image file, and you should select the Mininet `.vmdk` file. Configure, boot, and enjoy!
 
 ***
-<a id="python-api"/>
+<a name="python-api"/>
 ### How do I **use Mininet's Python API**?
 
 Check out the [[Introduction to Mininet]] for an introduction to Mininet and its Python API.
@@ -277,7 +277,7 @@ The API documentation is also available at <http://api.mininet.org>.
 Also see [[Mininet API Documentation]] for information on how to generate Mininet documentation yourself in .html and .pdf format.
 
 ***
-<a id="NAT"/>
+<a name="NAT"/>
 
 ### Why can't I **ping Google** from my Mininet hosts?
 
@@ -309,13 +309,13 @@ Note that:
 If this script does not work for you, please make an effort to debug and fix the problem, and then update this FAQ entry.
 
 ***
-<a id="openflow-versions"/>
+<a name="openflow-versions"/>
 ### Which **versions of OpenFlow** does Mininet support?
 
 Mininet officially supports OpenFlow 1.0, and the Mininet VM image includes OpenFlow 1.0-compatible versions of the OpenFlow reference implementation as well as Open vSwitch. It is also possible to get Mininet to run with OpenFlow 0.8.9 with a few minor changes. Recently, install.sh was updated to optionally install the CPqD version of the OpenFlow reference implementation and NOX classic, both of which support OpenFlow 1.3. Also, it is rumored that recent versions of Open vSwitch have partial support for OpenFlow 1.3, so you may be able to get these versions to run with Mininet as well.
 
 ***
-<a id="openflow-switches"/>
+<a name="openflow-switches"/>
 ### What **OpenFlow switch implementations** does Mininet support?
 
 Mininet currently includes support for the user space reference implementations, Open vSwitch in kernel and user space modes, and the Indigo Virtual Switch. The reference switch and OVS are included in the VM image, and IVS can easily be installed using `install.sh -i`. Mininet used to support the OpenFlow 0.8.9 kernel reference implementation (`--switch kernel`) but that is now obsolete and has largely been replaced with Open vSwitch.
@@ -323,7 +323,7 @@ Mininet currently includes support for the user space reference implementations,
 The command line options are `--switch user` and `--switch ovsk` for the user reference and Open vSwitch kernel switches, respectively.
 
 ***
-<a id="ethernet-loops"/>
+<a name="ethernet-loops"/>
 
 ### Why does my controller, which implements an Ethernet bridge or learning switch, not work with my network which has loops in it? I can't ping anything!
 
@@ -340,7 +340,7 @@ In general, if you want to use a network with loops in it, you need to be absolu
 You may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
 
 ***
-<a id="assign-macs"/>
+<a name="assign-macs"/>
 ### Why do the switch data ports have random MAC addresses? How do I assign MAC and IP addresses to the switch data ports?
 
 The MAC addresses reported by Linux for the switch data ports are meaningless. The switch is controlled by OpenFlow, so you should use OpenFlow to ensure that any packets destined "for the switch" are properly routed. You "assign" MAC and IP addresses "to the switch" by using OpenFlow rather than the Linux IP stack. If you attempt to use the Linux IP stack instead, it really won't work unless you are using the Linux kernel for routing (which you aren't - you're using an OpenFlow switch!) You should never attempt to use `ifconfig` or `ip link` or other utilities to assign an IP address to a switch data port. Usually you will want your controller to handle packets such as ARP and ICMP which are sent to and from "the switch," and you will want IP packets which are sent to to be handled by appropriate flow table entries. You can pick any "MAC" address you like for the switch.
@@ -359,7 +359,7 @@ Make sure you've installed the Mininet version of the OpenFlow reference control
 You can also create a custom controller class or use `--controller external:IP` and use any custom or off-the-shelf controller that you like. For example, ou can easily install POX by checking it out or using `util/install.sh -p`, and you can install Floodlight on Ubuntu using `apt-get install floodlight`.
 
 *** 
-<a id="remote-control"/>
+<a name="remote-control"/>
 
 ### How can I control my Mininet hosts remotely?
 
@@ -376,7 +376,7 @@ For example if my Mininet server is `ubuntu1`, I can run `ifconfig` on host `h1`
 Another way is to actually connect your Mininet network to your LAN and to run `sshd` on your Mininet hosts. This is left as an exercise for the reader, but you may want to look at the `hwintf.py` and `sshd.py` scripts in `examples/` to understand how you might possibly do this.
 
 ***
-<a id="rest"/>
+<a name="rest"/>
 
 ### How can I add a REST interface to Mininet?
 
@@ -432,7 +432,7 @@ h1-eth0   Link encap:Ethernet  HWaddr 36:6f:c0:28:a3:f9
 Note that you need to escape the space in `ifconfig h1-eth0` as `%20` as you would normally in a URL.
 
 ***
-<a id="examples"/>
+<a name="examples"/>
 ### How do I run the **Mininet examples**?
 
 1. Fetch the Mininet source tree if you haven't already
@@ -449,7 +449,7 @@ OpenFlow reference implementation using `mininet/util/install.sh -f`. Consult
 the comments in the example's `.py` file for details.
 
 ***
-<a id="dpctl"/>
+<a name="dpctl"/>
 
 ### Why doesn't `dpctl` work? How can I dump a switch's flow table?
 
@@ -499,7 +499,7 @@ If you're running Open vSwitch, or need to open up a listening port on either OV
 
 
 ***
-<a id="traffic"/>
+<a name="traffic"/>
 ### How do I **generate traffic** on my Mininet network?
 
 Asking this question usually means you haven't read or understood the [[Documentation]] or indeed this [[FAQ]].
@@ -513,7 +513,7 @@ It's also easy to generate packets in Python using `scapy`.
 if you want to generate or decode OpenFlow messages, you should look at various controller frameworks like POX or OpenFlow messaging libraries like OpenFlowJ or LOXI.
 
 ***
-<a id="headers"/>
+<a name="headers"/>
 ### How do I **modify packet headers** using Mininet?
 
 Asking this question usually means you haven't read or understood the documentation and that you don't understand what OpenFlow is.
@@ -521,7 +521,7 @@ Asking this question usually means you haven't read or understood the documentat
 Use OpenFlow. Please go through the OpenFlow tutorial and consult the OpenFlow specification.
 
 ***
-<a id="routing"/>
+<a name="routing"/>
 ### How do I implement a **custom routing algorithm**?
 
 Asking this question usually means that you haven't read or understood the documentation and that you don't understand what OpenFlow is.
@@ -529,7 +529,7 @@ Asking this question usually means that you haven't read or understood the docum
 Use OpenFlow. Please go through the OpenFlow tutorial and consult the OpenFlow specification.
 
 ***
-<a id="updating"/>
+<a name="updating"/>
 ### How do I **update to a new version of Mininet**?
 
 What you need to do depends on how you installed Mininet:
@@ -551,7 +551,7 @@ sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec \
 If you wish to install a newer version of OVS than the vendor-supplied version, you may wish to follow the instructions [ here ](#ovs-upgrade).
 
 ***
-<a id="irc"/>
+<a name="irc"/>
 ### In addition to the `mininet-discuss` mailing list, is there a `#mininet` IRC channel?
 
 According to Nick Bastin, there is a fair amount of expertise on the `#openflow` channel on [FreeNode](http://freenode.net), so you may want to consider joining it.
@@ -561,13 +561,13 @@ Also, by request, we have created a `#mininet` IRC channel for additional Minine
 (Note: this is an experiment, and of course we cannot guarantee that anyone is logged on! But if you want to chat about Mininet on IRC, you may wish to look at `#mininet` and/or `#openflow`.)
 
 ***
-<a id="ovs-ssl"/>
+<a name="ovs-ssl"/>
 ### Can I turn on SSL for Open vSwitch?
 
 Yes, Open vSwitch and ovs-controller both support SSL.  It isn't turned on by default in Mininet.  For an example, look [here] (SSL-on-Open-vSwitch-and-ovs-controller).
 
 ***
-<a id="multiple-controllers"/>
+<a name="multiple-controllers"/>
 ### How can I use **multiple controllers** in my network?
 
 One way is to make a custom switch class, as shown in [`examples/controllers.py`](https://github.com/mininet/mininet/tree/master/examples/controllers.py)
@@ -576,14 +576,14 @@ Another way is to use the mid-level API, as shown in [`examples/controllers2.py`
 (https://github.com/mininet/mininet/tree/master/examples/controllers2.py)
 
 ***
-<a id="ovs-upgrade"/>
+<a name="ovs-upgrade"/>
 ### Can I upgrade Open vSwitch to a newer version?
 
 Mininet usually uses the latest version of Open vSwitch that is included in that distribution's release.  You can easily upgrade to another version by following the instructions
 [here] (Installing-new-version-of-Open-vSwitch).
 
 ***
-<a id="ovs-reconfig"/>
+<a name="ovs-reconfig"/>
 ### Help! I updated my Ubuntu kernel and now Open vSwitch won't start!
 
 If you are using Ubuntu's `openvswitch-datapath-dkms` and `openvswitch-switch` packages, they should update automatically when you reboot.
@@ -599,7 +599,7 @@ If rebooting doesn't fix the problem, or if you don't want to reboot, you can re
 
 
 ***
-<a id="openflow"/>
+<a name="openflow"/>
 ### Help! **I don't understand OpenFlow** or SDN!
 
 There is a wealth of useful information to be found at <http://opennetworking.org>.
@@ -611,7 +611,7 @@ You may also wish to search the ACM and IEEE digital libraries for recent papers
 I [BL] also highly recommend Nick Feamster's SDN course on Coursera.
 
 ***
-<a id="networking"/>
+<a name="networking"/>
 ### Help! **I don't understand networking** (or maybe computers) at all!!
 
 There is a wealth of very useful information available for free on the internet - try some Google (or search engine of your choice) searches for things like 'networking tutorial', 'IP networking basics', etc..
@@ -623,10 +623,10 @@ My [BL's] personal recommendation is to take an introductory CS course and an in
 You may also wish to consult an introductory networking textbook such as *Computer Networks: A Top-Down Approach* by Kurose and Ross, or *Computer Networks: A Systems Approach* by Peterson and Davie. To master Ethernet switches you might want to check out *The All-New Switch Book* by Seifert, and for a vintage but still classic and somewhat relevant view of socket programming you might find a copy of the *Unix Network Programming* tomes by the late Richard Stevens.
 
 ***
-<a id="linux"/>
+<a name="linux"/>
 ### Help! **I have never used Linux or Unix before!**
 
-<a id="man"/>
+<a name="man"/>
 ### How do I use (some Linux command)?
 
 There is a wide variety of very useful information available for free on the internet. Try searching for "Linux tutorial" or "Ubuntu tutorial" in Google or your search engine of choice.
@@ -646,7 +646,7 @@ Additionally, `bash` has a `help` command which can be used to find out how to u
 There are also many useful books on Linux available on Amazon and in your local bookstore. Mark Sobell's books are classics, as are Nemeth's books on Unix/Linux system administration.
 
 ***
-<a id="homework"/>
+<a name="homework"/>
 ### Will you do my (home)work assignment (or paper/thesis/project/etc.) for me? It's due next Tuesday at 4pm.
 
 No, because:
@@ -660,7 +660,4 @@ No, because:
 [[ACM | http://dl.acm.org]], [[IEEE | http://ieeexplore.ieee.org]], and [[USENIX | http://static.usenix.org/publications/library/]], 
 and also learn [[how to do a literature search | http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf]]
 * It's the job of your advisor/TAs/school/company/self to teach/train you, so make them do their job!
-* Learning how to teach yourself is even more valuable than learning from someone else.
-
-
-***
+* Learning how to teach 
