@@ -2,7 +2,7 @@ Please add helpful **Frequently Asked Questions (FAQs)** and **high-quality answ
 
 Before you send a question to `mininet-discuss`, make sure your question isn't already in the FAQ -- and if you see a question asked repeatedly, feel free to add the answer to this FAQ!
 
-*Since github wikis don't automatically generate a Table of Contents, please follow the existing format and add 1) an anchor for your question and 2) a link to it at the top of the page. Thanks!*
+*Since github wiki markdown doesn't automatically generate a Table of Contents, please follow the existing format and add 1) an anchor for your question and 2) a link to it at the top of the page. Thanks!*
 
 <!-- this doesn't work yet, alas :(
 [[_TOC_]]
