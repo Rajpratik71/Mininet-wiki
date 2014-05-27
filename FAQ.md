@@ -4,6 +4,8 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 *Since github wikis don't automatically generate a Table of Contents, please follow the existing format and add 1) an anchor for your question and 2) a link to it at the top of the page. Thanks!*
 
+__TOC__
+
 <!-- this doesn't work yet, alas :(
 [[_TOC_]]
 -->
