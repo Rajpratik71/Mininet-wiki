@@ -62,7 +62,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Will you **do my (home)work assignment** for me? It's due next Tuesday at 4pm!](#homework)
 
 ***
-<a name="get-started"/>
+<a id="get-started"/>
 ### How can I **get started** with Mininet?
 
 Quick answer: Follow the steps on our [[Documentation]] page!
