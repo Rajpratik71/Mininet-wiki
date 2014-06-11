@@ -98,7 +98,7 @@ This page summarizes various ideas for features and future functionality for Min
 
 Mininet follows a fairly standard development process on Github:
 
-0. Review the [Mininet Python Style] guidelines.
+0. Review the [[Mininet Python Style]] guidelines.
 
 1. Pick a **project to work on** or a **feature to implement**
 
