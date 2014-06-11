@@ -4,4 +4,4 @@ You can create or edit any [wiki page](wiki/_pages) if you have a [GitHub](https
 
 To get started with Mininet, click on any page in the sidebar to the right ======>
 
-or visit http://mininet.org .
+or visit the main Mininet web site at http://mininet.org .
