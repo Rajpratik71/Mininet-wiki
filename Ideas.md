@@ -94,28 +94,11 @@ This page summarizes various ideas for features and future functionality for Min
 
 [Mininet](http://mininet.github.com) is a lightweight emulator for computer networks and distributed systems, giving you a stack of "virtual hardware" inside your laptop that you can use for prototyping and developing your own experiments, applications, and systems. Mininet starts up a virtual network/distributed system of servers, switches, and OpenFlow controllers in a few seconds, with a single command, and provides an extensive Python API for emulating almost any Linux-based network system you can imagine (though perhaps at lower speed or smaller scale.) It is widely used for network research, teaching, and development, particularly in the area of OpenFlow and Software-Defined Networking, where it is a key component of an emerging SDK for SDN. It is available under a liberal BSD-style license and is included in Ubuntu as the [`mininet`](https://launchpad.net/ubuntu/+source/mininet) package.
 
-## GSoC 2015 Possibility
-
-**NOTE: Unfortunately we will not be participating in Google Summer of Code 2014. However, we may rejoin GSoC in 2015, so stay tuned!**
-
-Mininet is an interesting and high-impact project which is also fun to work on, and we're excited to be applying to the Google Summer Of Code (GSoC) in the hope of attracting energetic and motivated developers.
-
-**Mentoring**: A participant in GSoC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
-
-**Projects**: 
-We have identified a wide variety of potential GSoC projects for Mininet, and the current, detailed list is available at the Ideas page on the Mininet wiki at http://github.com/mininet/mininet/wiki/Ideas
-
-Projects are grouped by complexity/difficulty as well as whether we have starter code. The project(s) will be selected by agreement between the potential mentor(s) and participant(s), based on participant interest, experience and knowledge, as well as project impact, project difficulty, and mentor availability and interest.
-
-**General Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
-
-Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
-
-**Process**: GSoC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process) .
-
 ## Mininet Development Process
 
 Mininet follows a fairly standard development process on Github:
+
+0. Review the [Mininet Python Style] guidelines.
 
 1. Pick a **project to work on** or a **feature to implement**
 
@@ -135,6 +118,26 @@ You may also add a note to the appropriate section on this page. The goal is to 
 7. If you have specific (and intelligent/well-resarched) development questions that you cannot answer on your own, send them to the [`mininet-dev`](https://mailman.stanford.edu/mailman/listinfo/mininet-dev) or [`mininet-discuss`](https://mailman.stanford.edu/mailman/listinfo/mininet-discuss) mailing lists as appropriate. You can (and probably should!) also **ask for additional feedback** on your code/pull request.
 
 8. When/if the feature is complete and approved by the Mininet developers, they may choose to merge it into the main Mininet source tree (either master or a development branch)!! Congratulations, you are now an official Mininet contributor!!
+
+## GSoC 2015 Possibility
+
+**NOTE: Unfortunately we will not be participating in Google Summer of Code 2014. However, we may rejoin GSoC in 2015, so stay tuned!**
+
+Mininet is an interesting and high-impact project which is also fun to work on, and we're excited to be applying to the Google Summer Of Code (GSoC) in the hope of attracting energetic and motivated developers.
+
+**Mentoring**: A participant in GSoC would choose one or more projects and be advised by a project mentor, either one of the core [Mininet developers](https://github.com/mininet?tab=members) or another contributor to the project.
+
+**Projects**: 
+We have identified a wide variety of potential GSoC projects for Mininet, and the current, detailed list is available at the Ideas page on the Mininet wiki at http://github.com/mininet/mininet/wiki/Ideas
+
+Projects are grouped by complexity/difficulty as well as whether we have starter code. The project(s) will be selected by agreement between the potential mentor(s) and participant(s), based on participant interest, experience and knowledge, as well as project impact, project difficulty, and mentor availability and interest.
+
+**General Prerequisites**: In general, working on Mininet requires knowledge of Python and a sound understanding of computer networks, operating systems, and distributed systems (preferably at the undergraduate, masters or professional level.) Other specific projects may require knowledge of C and Unix/Linux systems programming and possibly kernel programming as well. And of course the main prerequisites are energy, enthusiasm, and the ability and desire to use your brain, to learn, and to teach yourself by doing background research (including reading documentation, reading code, trying out ideas, and finding and consulting on-line and off-line references). And writing code and using git/github of course.
+
+Specific prerequisites for each project are listed as well - these are the requisite skills and knowledge that you will need (or need to acquire) to actually complete the tasks for the project.
+
+**Process**: GSoC projects will follow the standard [Mininet development process](https://https://github.com/mininet/mininet/wiki/Ideas#mininet-development-process) .
+
 
 ## Making it Real: extending existing prototype code into an official feature
 
