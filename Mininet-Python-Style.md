@@ -2,9 +2,9 @@ Mininet is currently written in the **Mininet Python Style**, which is based on 
 
 * Spaces are inserted inside parentheses, for example function definitions and calls, for readability. They may be omitted in mathematical formulas if readability would otherwise be compromised.
 
-* camelCase is used for method and variable names in preference to under_scores. This is intended to make names look more consistent and to reduce cognitive load.
+* `camelCase` is used for method and variable names in preference to `under_scores`. This is intended to make names look more consistent and to reduce cognitive load.
 
-* Single-line docstrings are surrounded by single double-quotes.
+* Single-line docstrings are surrounded by single double-quotes. This makes them more compact.
 
 * Multi-line docstrings are surrounded by triple double-quotes.
 
