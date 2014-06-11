@@ -20,7 +20,7 @@ The Mininet documentation contains a wealth of helpful information including how
 * **[[FAQ]]** Please read and add to the **[[Frequently Asked Questions | FAQ]]** (and their Answers)
 * [[VM Creation Notes]] How we created the Mininet VM image
 * [Mininet Videos](Videos)
-* [[Mininet Python Style Guide]]
+* [[Mininet Python Style]] Guide
 
 #### [[Teaching Computer Networking with Mininet | Teaching and Learning with Mininet]]
 * [[Assignments | Teaching and Learning with Mininet]] Use Mininet to teach or learn about computer networks
