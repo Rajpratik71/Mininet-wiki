@@ -4,7 +4,7 @@ This document is meant to give you a brief sense of what Mininet is and
 how it works, including a basic introduction to Mininet's
 Python API, the core of Mininet's functionality that you will usually want to use to create networks and run experiments.
 
-- [What is Mininet?](#what)
+* [What is Mininet?](#what)
 - [Why is Mininet cool?](#why)
 - [What are Mininet's limitations?](#limits)
 - [Working with Mininet](#working)
