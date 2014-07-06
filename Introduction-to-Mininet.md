@@ -29,7 +29,7 @@ Python API, the core of Mininet's functionality that you will usually want to us
 - [Useful Python Resources](#resources)
 - [How Does It Really Work? (optional: for the curious)](#how)
 
-<a id=what></a>
+<a name=what></a>
 
 What is Mininet?
 ----------------
