@@ -5,29 +5,29 @@ how it works, including a basic introduction to Mininet's
 Python API, the core of Mininet's functionality that you will usually want to use to create networks and run experiments.
 
 * [What is Mininet?](#what)
-- [Why is Mininet cool?](#why)
-- [What are Mininet's limitations?](#limits)
-- [Working with Mininet](#working)
- - [Creating Topologies](#creating)
- - [Setting Performance Parameters](#setting)
- - [Running Programs in Hosts](#running)
- - [New: `popen()`/`pexec()` interface](#popen)
- - [Host Configuration Methods](#config)
- - [Naming in Mininet](#naming)
- - [CLI](#cli)
- - [Additional Examples](#examples)
-- [Understanding the Mininet API](#apilevels)
-- [Mininet API Documentation](#api)
-- [Measuring Performance](#measuring)
-- [OpenFlow and Custom Routing](#openflow)
- - [OpenFlow Controllers](#controllers)
- - [External Controllers](#extcontrollers)
- - [Multipath Routing](#multipath)
-- [Updating Mininet](#updating)
-- [Learning Python](#python)
-- [Useful Background Information](#background)
-- [Useful Python Resources](#resources)
-- [How Does It Really Work? (optional: for the curious)](#how)
+* [Why is Mininet cool?](#why)
+* [What are Mininet's limitations?](#limits)
+* [Working with Mininet](#working)
+ * [Creating Topologies](#creating)
+ * [Setting Performance Parameters](#setting)
+ * [Running Programs in Hosts](#running)
+ * [New: `popen()`/`pexec()` interface](#popen)
+ * [Host Configuration Methods](#config)
+ * [Naming in Mininet](#naming)
+ * [CLI](#cli)
+ * [Additional Examples](#examples)
+* [Understanding the Mininet API](#apilevels)
+* [Mininet API Documentation](#api)
+* [Measuring Performance](#measuring)
+* [OpenFlow and Custom Routing](#openflow)
+ * [OpenFlow Controllers](#controllers)
+ * [External Controllers](#extcontrollers)
+ * [Multipath Routing](#multipath)
+* [Updating Mininet](#updating)
+* [Learning Python](#python)
+* [Useful Background Information](#background)
+* [Useful Python Resources](#resources)
+* [How Does It Really Work? (optional: for the curious)](#how)
 
 <a name=what></a>
 
@@ -56,7 +56,7 @@ that resembles a hardware network, or a hardware network that resembles
 a Mininet network, and to run the same binary code and applications on
 either platform. 
 
-<a id=why></a>
+<a name=why></a>
 
 Why is Mininet cool?
 --------------------
@@ -98,7 +98,7 @@ Why is Mininet cool?
 	submit patches to fix them, or at least to submit an issue on github
 	including a reproducible test case.
 
-<a id=limits></a>
+<a name=limits></a>
 
 What are Mininet's limitations?
 -------------------------------
@@ -154,7 +154,7 @@ With a few possible exceptions, most of these limitations are not
 intrinsic to Mininet; eliminating them is simply a matter of code, and you
 are encouraged to contribute any enhancements you may develop!
 
-<a id=working></a>
+<a name=working></a>
 
 Working with Mininet
 --------------------
@@ -162,7 +162,7 @@ Working with Mininet
 The following sections describe several features of Mininet (and its
 Python API) which you may find useful while completing the assignments.
 
-<a id=creating></a>
+<a name=creating></a>
 
 ### Creating Topologies
 
@@ -240,7 +240,7 @@ level; 'info' is recommended as it provides useful information.
 
 Additional example code may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
 
-<a id=setting></a>
+<a name=setting></a>
 
 ### Setting Performance Parameters
 
@@ -328,7 +328,7 @@ This is important if you want to send a command to a host (e.g. using
 Note: In the current master branch of Mininet, you can simply use
 braces (e.g. `net['h1']`) to retrieve a given node by name.
 
-<a id=running></a>
+<a name=running></a>
 
 ### Running Programs in Hosts
 
@@ -469,7 +469,7 @@ simpler but less flexible) approach to monitoring standard output from a
 host, using the `Node.monitor()` method, so you may wish to look at it as
 well.
 
-<a id=popen></a>
+<a name=popen></a>
 
 ### New: `popen()`/`pexec()` interface
 
@@ -544,7 +544,7 @@ In the future we may provide a mechanism to automatically create a file structur
 for each Mininet host that shares most of the underlying filesystem but
 allows for custom directories (e.g. `/etc`) as desired.
 
-<a id=config></a>
+<a name=config></a>
 
 ### Host Configuration Methods
 
@@ -568,7 +568,7 @@ In each case, if you do not provide a specific interface (e.g. `h1-eth0`
 or an interface object) the method will use the host's default
 interface. The above functions are defined in mininet/node.py.
 
-<a id=naming></a>
+<a name=naming></a>
 
 ### Naming in Mininet
 
@@ -585,7 +585,7 @@ while Mininet is running.) As a result, it's easy to examine switch
 interfaces but slightly trickier to examine host interfaces, since you
 must tell the host to do so (typically using `host.cmd()`.)
 
-<a id=cli></a>
+<a name=cli></a>
 
 ### CLI
 
@@ -630,7 +630,7 @@ allows you to view the network topology (with the `net` command), test
 connectivity (with the `pingall` command), and send commands to individual
 hosts.
 
-<a id=examples></a>
+<a name=examples></a>
 
 ### Additional Examples
 
@@ -640,7 +640,7 @@ You may find some of them to be useful and others (e.g. [`consoles.py`](https://
 
 Note: The examples are intended as instructional material to be read and understood, not as complete, out-of-the-box solutions to whatever problem you may have. You may be able to use some of the code with modification, but it's important to be able to examine and understand the code.
 
-<a id=apilevels></a>
+<a name=apilevels></a>
 
 ### Understanding the Mininet API
 
@@ -714,7 +714,7 @@ As you can see, the mid-level API is a bit simpler because it doesn't require cr
 
 Note also that the high-level `Topo` currently doesn't support multiple links between nodes, but the lower level APIs do. Currently `Topo` also doesn't concern itself with which switches are controlled by which controllers (you can use a custom `Switch` subclass to do this, as described above.) With the mid-level and low-level APIs, you can manually start the switches if desired, passing the appropriate list of controllers to each switch.
 
-<a id=api></a>
+<a name=api></a>
 ### Mininet API Documentation
 
 Mininet includes Python documentation strings for each module and API
@@ -746,7 +746,7 @@ At this point, you can point a web browser to port 8000 of the host that
 Mininet is running on and browse the documentation for each of Mininet's
 classes.
 
-<a id=measuring></a>
+<a name=measuring></a>
 
 ### Measuring Performance
 
@@ -760,7 +760,7 @@ familiar with.
     it to `monitor.py`)
 5.  CPU usage (global: `top`, or per-container `cpuacct`)
 
-<a id=openflow></a>
+<a name=openflow></a>
 
 ### OpenFlow and Custom Routing
 
@@ -776,7 +776,7 @@ found at:
 
 <http://www.openflow.org/wk/index.php/OpenFlow_Tutorial>
 
-<a id=controllers></a>
+<a name=controllers></a>
 #### OpenFlow Controllers
 
 If you run the `mn` command without specifying a controller,
@@ -852,7 +852,7 @@ you will notice that it can actually accept options to allow different modules
 to be started depending on what arguments are
 passed into it, from the constructor or the `mn` command line.
 
-<a id=extcontrollers></a>
+<a name=extcontrollers></a>
 #### External OpenFlow Controllers
 
 Custom `Controller()` subclasses are the most convenient method for automatically starting and shutting down your controller. It's easy to create `start()` and `stop()` methods so that Mininet will automatically start and stop your controller as needed.
@@ -905,7 +905,7 @@ You can also specify an external controller from the `mn` command line:
 
     $ sudo mn --controller remote,ip=192.168.51.101
 
-<a id=multipath></a>
+<a name=multipath></a>
 #### Multipath Routing
 
 It's important to remember that Ethernet bridges (also known as learning switches)
@@ -930,7 +930,7 @@ RipLPOX for convenience.
 and POX or RipLPOX into a single Python script! But you probably don't want
 to do that.)
 
-<a id=updating></a>
+<a name=updating></a>
 ### Updating Mininet
 
 If we need to make changes or additions to Mininet to fix bugs or
@@ -953,7 +953,7 @@ Update copying Mininet source into /usr/lib/python... (allows you to delete or m
 	git pull --rebase
         sudo make install
 
-<a id=python></a>
+<a name=python></a>
 
 ### Learning Python
 
@@ -974,7 +974,7 @@ In addition to helping to locate Python tutorials, Google seems to work
 astoundingly well for finding answers to Python questions, many of which
 are answered on <http://stackoverflow.com>.
 
-<a id=background></a>
+<a name=background></a>
 
 ### Useful Background for Using Mininet
 
@@ -1005,7 +1005,7 @@ are answered on <http://stackoverflow.com>.
 
 	<http://matplotlib.sourceforge.net>
 
-<a id=resources></a>
+<a name=resources></a>
 
 ### Useful Python Resources
 
@@ -1017,7 +1017,7 @@ are answered on <http://stackoverflow.com>.
 
 	<http://www.python.org/about/gettingstarted>
 
-<a id=how></a>
+<a name=how></a>
 
 ### How Does It Really Work? (optional: for the curious)
 
