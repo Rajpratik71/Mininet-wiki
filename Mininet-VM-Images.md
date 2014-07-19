@@ -6,3 +6,5 @@
 * Mininet 2.1.0 on [Ubuntu 13.04](https://bitbucket.org/mininet/mininet-vm-images/downloads) (deprecated)
 
 * [Mininet 2.0.0](https://github.com/mininet/mininet/downloads/) (deprecated)
+
+The download will take some time; it’s 800MB - 1GB compressed.
