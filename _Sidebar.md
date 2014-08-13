@@ -11,7 +11,7 @@
 * [[Videos]]
 * [[Source Code | https://github.com/mininet/mininet]]
 * [[Apps | Mininet Apps]]
-* [[FAQ | FAQ]]
+* [[FAQ]]
 * [[Wiki | Home]]
 * [[Teaching | Teaching and Learning with Mininet]]
 * [[Papers | Publications]]
