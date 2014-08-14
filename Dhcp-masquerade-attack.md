@@ -6,7 +6,7 @@ The test network consists of three hosts connected to a single switch:
 
 ![Topology for DHCP Attack Demo](images/dhcp-attack.png)
 
-* `h1` (10.0.0.50) is the "victim" host - a computer which has just connected to the network and is going to make DHCP requests.
+* `h1` (10.0.0.50) is the "victim" host - a computer which has just connected to the network (for example joining a Wi-Fi network) and is going to make DHCP requests.
 * `dhcp` (10.0.0.53) is the "good" DHCP server which provides correct information, but which is connected to the switch by a slower link (500 ms of delay in this example.)
 * `evil` (10.0.0.66) is a malicious host which is connected directly to the switch by a fast link; it provides malicious DHCP responses and also hosts a malicious DNS server and malicious DHCP server.
 
