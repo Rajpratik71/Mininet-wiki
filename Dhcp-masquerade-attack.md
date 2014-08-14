@@ -12,7 +12,7 @@ When the victim host `h1` makes the DHCP request, it is forwarded to both `dhcp`
 
 ### Instructions
 
-Make sure Mininet and the Stanford reference OpenFlow controller are installed, and that Mininet's X11 support (e.g. sudo -E mn -x) is working correctly.
+Make sure Mininet and the Stanford reference OpenFlow controller are installed, and that Mininet's X11 support (e.g. `sudo -E mn -x`) is working correctly.
 
 Download the DHCP demo code if necessary, and start it.
 
