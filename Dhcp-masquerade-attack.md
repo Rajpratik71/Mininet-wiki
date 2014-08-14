@@ -47,12 +47,12 @@ The document has moved
 *** You may want to do some DNS lookups using dig
 *** Please go to amazon.com in Firefox
 *** You may also wish to start up wireshark and look at bootp and/or dns
-*** Press return to start up evil DHCP server:```
+*** Press return to start up evil DHCP server:
+```
 
 The first time you run the demo, it may try to install required support software, such as `dnsmasq` and `firefox`.
 
 If everything has worked correctly, you will see an `xterm` window for `h1` as well as a Firefox window, which should have loaded `www.stanford.edu`. You can load other sites like `amazon.com` if you like.
-```
 
 Next, in the `h1` window, start up `wireshark`, set it up to observe the `bootp` traffic on interface `h1-eth0`, and start capturing traffic.
 
