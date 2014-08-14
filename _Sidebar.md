@@ -15,7 +15,6 @@
 * [[Wiki | Home]]
 * [[Teaching | Teaching and Learning with Mininet]]
 * [[Papers | Publications]]
-* [[GSoC 2013]]
 
 ---
 
