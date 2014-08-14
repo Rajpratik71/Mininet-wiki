@@ -12,3 +12,9 @@ The test network consists of several hosts connected to a single switch:
 The code is available via `git`:
 
     git clone https://bitbucket.org/lantz/cs144-dhcp
+
+### Video
+
+A video of the DHCP attack demo is available at:
+
+https://bitbucket.org/lantz/cs144-dhcp/downloads/firefox-dhcp-4-720p.mov
