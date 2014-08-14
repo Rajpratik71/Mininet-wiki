@@ -9,5 +9,6 @@ The test network consists of several hosts connected to a single switch:
 * `evil` is a malicious host which is connected directly to the switch by a fast link; it provides malicious DHCP responses and also hosts a malicious DNS server and malicious DHCP server.
 
 ### Code
-The code can be downloaded from the following `git` repository:
+The code is hosted on bitbucket at:
+
     git clone https://bitbucket.org/lantz/cs144-dhcp
