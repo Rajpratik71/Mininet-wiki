@@ -1,6 +1,6 @@
 ### Introduction
 
-In this demonstration, we construct a simple network to demonstrate a DHCP attack.
+In this demonstration, we construct a simple network to demonstrate a DHCP attack. This is an example of using Mininet to run an experiment that you (usually) wouldn't want to try on a regular network that people are trying to use!
 
 The test network consists of three hosts connected to a single switch:
 
