@@ -2,7 +2,7 @@
 
 In this demonstration, we construct a simple network to demonstrate a DHCP attack.
 
-The test network consists of several hosts connected to a single switch:
+The test network consists of three hosts connected to a single switch:
 
 * `h1` (10.0.0.50) is the "victim" host - a computer which has just connected to the network and is going to make DHCP requests.
 * `dhcp` (10.0.0.53) is the "good" DHCP server which provides correct information, but which is connected to the switch by a slower link (500 ms of delay in this example.)
