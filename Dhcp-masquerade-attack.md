@@ -57,7 +57,8 @@ Next, in the `h1` window, start up `wireshark`, set it up to observe the `bootp`
 
 Press return to start up the evil DHCP server.
 
-```Starting DHCP server on evil at 10.0.0.66 
+```
+Starting DHCP server on evil at 10.0.0.66 
 * Starting fake DNS server evil at 10.0.0.66 
 * Starting web server evil at 10.0.0.66 
 * h1 waiting for IP address........
