@@ -14,7 +14,7 @@ When the victim host `h1` makes the DHCP request, it is forwarded to both `dhcp`
 
 Make sure Mininet and the Stanford reference OpenFlow controller are installed, and that Mininet's X11 support (e.g. `sudo -E mn -x`) is working correctly.
 
-Download the DHCP demo code if necessary, and start it.
+Download the DHCP demo code if necessary, and start it:
 
 ```
 git clone https://bitbucket.org/lantz/cs144-dhcp
@@ -56,7 +56,7 @@ If everything has worked correctly, you will see an `xterm` window for `h1` as w
 
 Next, in the `h1` window, start up `wireshark`, set it up to observe the `bootp` traffic on interface `h1-eth0`, and start capturing traffic.
 
-Press return to start up the evil DHCP server.
+Press return to start up the evil DHCP server:
 
 ```
 Starting DHCP server on evil at 10.0.0.66 
@@ -77,7 +77,7 @@ Observe that the `evil` DHCP server, 10.0.0.66, responds to the DHCP discover be
 
 Next, you can try some DNS lookups (e.g. using `dig`) or try to go to web sites in Firefox. You may have to press shift-refresh to cause Firefox to make a new DNS request. Observe that the malicious DNS server replies with the address of the malicious web server, causing Firefox to load the malicious web page instead of the desired page.
 
-Finally, press return to shut down the evil DHCP/DNS/web servers.
+Finally, press return to shut down the evil DHCP/DNS/web servers:
 
 ```
 * Stopping fake DNS server evil at 10.0.0.66 
