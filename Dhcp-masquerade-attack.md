@@ -47,7 +47,8 @@ The document has moved
 *** You may want to do some DNS lookups using dig
 *** Please go to amazon.com in Firefox
 *** You may also wish to start up wireshark and look at bootp and/or dns
-*** Press return to start up evil DHCP server:```
+*** Press return to start up evil DHCP server:
+```
 
 The first time you run the demo, it may try to install required support software, such as `dnsmasq` and `firefox`.
 
