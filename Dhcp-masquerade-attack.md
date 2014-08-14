@@ -58,7 +58,7 @@ If everything has worked correctly, you will see an `xterm` window for `h1` as w
 
 Next, in the `h1` window, start up `wireshark`, set it up to observe the `bootp` traffic on interface `h1-eth0`, and start capturing traffic.
 
-Press return to start up the evil DHCP server:
+Press return to start up the malicious DHCP server:
 
 ```
 Starting DHCP server on evil at 10.0.0.66 
@@ -75,7 +75,7 @@ google.com has address 10.0.0.66
 *** Press return to shut down evil DHCP/DNS/Web servers: 
 ```
 
-Observe that the `evil` DHCP server, 10.0.0.66, responds to the DHCP discover before the good DHCP server, 10.0.0.50, and the client responds to `evil`'s offer, making a DHCP request which is ACKed with the malicious DNS IP address, 10.0.0.66.
+Observe that the malicious DHCP server, 10.0.0.66, responds to the DHCP discover before the good DHCP server, 10.0.0.50, and the client responds to `evil`'s offer, making a DHCP request which is ACKed with the malicious DNS IP address, 10.0.0.66.
 
 Next, you can try some DNS lookups (e.g. using `dig`) or try to go to web sites in Firefox. You may have to press shift-refresh to cause Firefox to make a new DNS request. Observe that the malicious DNS server replies with the address of the malicious web server, causing Firefox to load the malicious web page instead of the desired page.
 
@@ -107,6 +107,7 @@ dhcp evil h1
 ```
 
 ### Code
+
 The code is available via `git`:
 
     git clone https://bitbucket.org/lantz/cs144-dhcp
