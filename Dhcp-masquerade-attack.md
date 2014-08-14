@@ -12,7 +12,7 @@ The test network consists of three hosts connected to a single switch:
 
 When the victim host `h1` makes the DHCP request, it is forwarded to both `dhcp` and `evil`, but `evil` responds first and its DHCP offer is accepted by the victim. The `evil` DHCP server provides its address as the DNS server address, so the victim sends its DNS requests to the `evil` DNS server, which provides its own IP address rather than the correct IP address for the DNS lookup. The victim then connects to the address of the `evil` web server, which serves its own malicious content, asking the victim for an e-mail address and password.
 
-### Instructions
+### Demo Instructions
 
 Make sure Mininet and the Stanford reference OpenFlow controller are installed, and that Mininet's X11 support (e.g. `sudo -E mn -x`) is working correctly.
 
