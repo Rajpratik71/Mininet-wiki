@@ -13,6 +13,7 @@ The following programming assignments are based on the ones we use in Stanford C
 ### Security Demo
 * [[MAC Address Table Overflow Attack]] - A demonstration on MAC address table overflow attack
 * [[DHCP Masquerade Attack]] - A demonstration of DHCP masquerade attack
+* [[BGP Path Hijacking Attack Demo]] - A demonstration of BGP path hijacking attack
 
 ### Reproducible Network Research Experiments
 
