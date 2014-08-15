@@ -30,8 +30,8 @@ We will create the following network topology shown in the figure below.  There 
 ## Step 1
 1. Ensure you have a Mininet installation.
 2. `git clone git@bitbucket.org:jvimal/bgp.git`
-3. `cd ~/bgp`
-4. Start the bgp experiment and wait for the Mininet prompt as shown below:
+3. `cd bgp`
+4. Start the bgp experiment and wait for the Mininet prompt by running the python command as shown below:
 
 ```
 mininet@mininet-vm:~/bgp$ sudo python bgp.py
@@ -114,23 +114,27 @@ Sun Aug 10 09:56:41 PDT 2014 -- <h1>Default web server</h1>
 
 ## Step 5
 
-```
 Now, in another window, let us start the rogue AS using the command "./start_rogue.sh".  The rogue AS will connect to AS1 and advertise a route to 13.0.0.0/8 using a shorter path (i.e., a direct path from AS1 to AS4).  Thus, AS1 will choose this shorter path by default.
 
+```
 mininet@mininet-vm:~/bgp$ ./start_rogue.sh
 Killing any existing rogue AS
 Starting rogue AS
+```
 
 After some time (for BGP convergence), you should see the output of website.sh script change:
+```
 Sun Aug 10 10:00:36 PDT 2014 -- <h1>Default web server</h1>
 Sun Aug 10 10:00:37 PDT 2014 -- <h1>Default web server</h1>
 Sun Aug 10 10:00:38 PDT 2014 -- <h1>Default web server</h1>
 Sun Aug 10 10:00:39 PDT 2014 -- <h1>*** Attacker web server ***</h1>
 Sun Aug 10 10:00:40 PDT 2014 -- <h1>*** Attacker web server ***</h1>
 Sun Aug 10 10:00:41 PDT 2014 -- <h1>*** Attacker web server ***</h1>
+```
 
 You can also inspect the routing table using the shell you started in step 2.  If the shell closed (due to inactivity), you can start it again (see step 2).
 
+```
 bgpd-R1# sh ip bgp
 BGP table version is 0, local router ID is 9.0.0.1
 Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
