@@ -1,4 +1,4 @@
-**Welcome to the Mininet tutorial at SIGCOMM 2014!**
+**Welcome to the Mininet tutorial at SIGCOMM 2014, Teaching Computer Networking with Mininet!**
 
 [Tutorial Program](http://conferences.sigcomm.org/sigcomm/2014/tutorial-mininet.php)
 
@@ -8,5 +8,6 @@
 
 #### Useful Links
 
+- [Mininet Teaching Site](http://teaching.mininet.org)
 - [Main Mininet Site](http://mininet.org)
 - [Mininet Documentation](http://docs.mininet.org)
