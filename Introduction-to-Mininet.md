@@ -160,7 +160,7 @@ Working with Mininet
 --------------------
 
 The following sections describe several features of Mininet (and its
-Python API) which you may find useful while completing the assignments.
+Python API) which you may find useful.
 
 <a name=creating></a>
 
