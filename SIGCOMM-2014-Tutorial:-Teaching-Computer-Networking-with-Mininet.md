@@ -8,6 +8,6 @@
 
 #### Useful Links
 
-- [Mininet Teaching Site](http://teaching.mininet.org)
-- [Main Mininet Site](http://mininet.org)
-- [Mininet Documentation](http://docs.mininet.org)
+- [Mininet Teaching Site (teaching.mininet.org)](http://teaching.mininet.org)
+- [Main Mininet Site (mininet.org)](http://mininet.org)
+- [Mininet Documentation (docs.mininet.org)](http://docs.mininet.org)
