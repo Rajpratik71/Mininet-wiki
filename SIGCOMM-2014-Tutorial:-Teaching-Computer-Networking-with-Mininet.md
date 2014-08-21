@@ -11,7 +11,7 @@
 
 - Session 3: Experiences teaching Mininet
 
-1. At Georgia Tech (slides coming soon!)
+1. At Georgia Tech [pdf](https://www.dropbox.com/s/xjh62m09likh50z/feamster-sigcomm2014.pdf), [ppt](https://www.dropbox.com/s/r1td7llpq7pa86o/feamster-sigcomm2014.pptx)
 2. At MIT (slides coming soon!)
 3. At Stanford [pdf](https://www.dropbox.com/s/p7hme4a0dh9l3pu/mininet-stanford-experiences.pdf), [ppt](https://www.dropbox.com/s/ag9v7gp7t1g2ozy/mininet-stanford-experiences.pptx)
 
