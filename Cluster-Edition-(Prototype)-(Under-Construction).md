@@ -1,3 +1,13 @@
+* [Cluster Edition Vision](#vision)
+* [When Should I use Cluster Edition?](#when)
+* [Setting up a Cluster](#setup)
+* [How to Run a cluster](#run)
+* [Placement Algorithms](#placement)
+* [How does it Work?](#how)
+* [Troubleshooting](#issues)
+
+<a name=vision></a>
+
 Cluster Edition Vision
 --------------------------
 
@@ -7,10 +17,14 @@ Running Mininet on a single machine is fully capable of emulating most networks.
 
 Cluster Edition is currently a prototype, which is why we are shipping it as an example. Please try it out and let us know what you think at the Mininet mailing list!
 
+<a name=when></a>
+
 When to use Cluster Edition
 ---------------------------
 
 Any experiment that may be run on standard Mininet may be run with cluster edition. The only difference is that you may emulate larger networks in a cluster. It is useful for a variety of situations or environments, whether it is a temporary single use scenario on a few laptops, or on a dedicated testbed that will run many experiments. We support either case, and would love to hear about any uses you have come up with!
+
+<a name=setup></a>
 
 Setting up your Cluster
 -----------------------
@@ -84,6 +98,8 @@ Cluster Edition has a few requirements to make it work properly. Here we cover t
 
 `./clustersetup.sh -p clusterhost1 clusterhost2`
 
+<a name=run></a>
+
 Running Mininet Cluster Edition
 -------------------------------
 
@@ -124,6 +140,8 @@ Once an environment has been set up, it is easy to start up mininet over a clust
 
 The API for cluster edition does not change at all, except that you pass in a list of hostnames as a parameter for MininetCluster. To see this, check out mininet/examples/clusterdemo.py
 
+<a name=placement></a>
+
 Pluggable Node Placement Algorithms
 -----------------------------------
 
@@ -135,6 +153,7 @@ You may either use one of the built in placement algorithms, or you may create y
 
 <!--- to-do: elaborate on different placement algorithms, and show example of creating placement algorithm -->
 
+<a name=how></a>
 
 How does Cluster Edition Work?
 ------------------------------
@@ -143,6 +162,8 @@ The difference between Cluster Edition and standard Mininet comes down to the co
 
 * *Communication:* In standard Mininet, there are no remote nodes, so each link is created with a virtual ethernet pair. However, in Cluster Edition, we must communicate with remote nodes on each machine. In this case, ssh tunnels replace virtual ethernet pairs when communicating between nodes on different machines.
 * *Creating Remote Nodes:* During startup, only one instance of mininet is created on an arbitrary machine in the cluster. This machine creates its own local nodes, and also sends commands via ssh to each machine to create remote nodes. The commands that are run on each machine resemble the same commands that are always run during startup, but through an ssh connection. This means there is no daemon, and only one mininet instance running across the cluster.
+
+<a name=issues></a>
 
 Common Issues and Solutions
 ---------------------------
