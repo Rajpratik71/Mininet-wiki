@@ -143,3 +143,13 @@ The difference between Cluster Edition and standard Mininet comes down to the co
 
 * *Communication:* In standard Mininet, there are no remote nodes, so each link is created with a virtual ethernet pair. However, in Cluster Edition, we must communicate with remote nodes on each machine. In this case, ssh tunnels replace virtual ethernet pairs when communicating between nodes on different machines.
 * *Creating Remote Nodes:* During startup, only one instance of mininet is created on an arbitrary machine in the cluster. This machine creates its own local nodes, and also sends commands via ssh to each machine to create remote nodes. The commands that are run on each machine resemble the same commands that are always run during startup, but through an ssh connection. This means there is no daemon, and only one mininet instance running across the cluster.
+
+Common Issues and Solutions
+---------------------------
+
+* channel 22: open failed: administratively prohibited: open failed <br>
+mux_client_request_session: session request failed: Session open refused by peer: <br>
+If this is seen in switch and link creation, your sshd configuration does not allow enough simultaneous sessions. This can be fixed by adding 'MaxSessions 1024' to /etc/ssh/sshd_config.
+
+* channel 0: open failed: administratively prohibited: open failed: <br>
+If you see this in link creation, you need to append ‘PermitTunnel yes’ to /etc/ssh/sshd_config
