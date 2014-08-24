@@ -23,4 +23,4 @@
 - [Mininet Teaching Site (teaching.mininet.org)](http://teaching.mininet.org)
 - [Main Mininet Site (mininet.org)](http://mininet.org)
 - [Mininet Documentation (docs.mininet.org)](http://docs.mininet.org)
-- [Mahimahi](http://mahimahi.mit.edu/)
+- [Mahimahi](http://mahimahi.mit.edu/): A set of lightweight tools for browser developers, website authors, and Web server developers to produce a usable benchmark for Web transport protocols and browser behaviors.
