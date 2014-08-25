@@ -29,4 +29,5 @@ Please use VirtualBox to set up the Mininet VM.  The username and password are b
 - [Mininet Teaching Site (teaching.mininet.org)](http://teaching.mininet.org)
 - [Main Mininet Site (mininet.org)](http://mininet.org)
 - [Mininet Documentation (docs.mininet.org)](http://docs.mininet.org)
+- [Reproducing Network Research](http://reproducingnetworkresearch.wordpress.com): A blog where students in the advanced networking course ([CS244](http://cs244.stanford.edu/)) at Stanford University post about their experiences reproducing network research published in top conferences (NSDI, SIGCOMM, etc.).
 - [Mahimahi](http://mahimahi.mit.edu/): A set of lightweight tools for browser developers, website authors, and Web server developers to produce a usable benchmark for Web transport protocols and browser behaviors.
