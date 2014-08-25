@@ -2,6 +2,12 @@
 
 [Tutorial Program](http://conferences.sigcomm.org/sigcomm/2014/tutorial-mininet.php)
 
+#### Virtual Machine Images
+- 32 bit: http://www.scs.stanford.edu/~jvimal/mininet-sigcomm14/mininet-tutorial-vm-32bit.zip
+- 64 bit: http://www.scs.stanford.edu/~jvimal/mininet-sigcomm14/mininet-tutorial-vm-64bit.zip
+
+Please use VirtualBox to set up the Mininet VM.  The username and password are both "mininet" (without quotes).
+
 #### Presentation Slides
 
 - [Session 1: Introduction to Mininet (gdoc)](https://docs.google.com/a/onlab.us/presentation/d/1Xtp05lLQTEFGICTxzV9sQl28wW_cAZz6B1q9_qZBR_8/edit), [(pdf)](https://www.dropbox.com/s/k9mgeg9bsvg1hvy/mininet-intro.pdf)
