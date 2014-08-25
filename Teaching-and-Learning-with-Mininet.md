@@ -1,10 +1,10 @@
-The following programming assignments are based on the ones we use in Stanford CS144 'An Introduction to Computer Networks'. Mininet is used to emulate the network topology in these assignments.
-
 ### Tutorial at SIGCOMM 2014
 
 [[SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]]
 
 ### Course Projects
+
+The following programming assignments are based on the ones we use in Stanford CS144 'An Introduction to Computer Networks'. Mininet is used to emulate the network topology in these assignments.
 
 * [[Simple Router]] - Implementing a simple IP router
 * [[Network Address Translator (NAT)]] - Implementing a simple Network Address Translator
