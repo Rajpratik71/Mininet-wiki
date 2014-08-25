@@ -1,7 +1,7 @@
 * [Cluster Edition Vision](#vision)
 * [When Should I use Cluster Edition?](#when)
 * [Setting up a Cluster](#setup)
-* [How to Run a cluster](#run)
+* [How to Run Cluster Edition](#run)
 * [Placement Algorithms](#placement)
 * [How does it Work?](#how)
 * [Troubleshooting](#issues)
