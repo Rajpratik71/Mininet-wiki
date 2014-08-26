@@ -14,7 +14,7 @@ Please use VirtualBox to set up the Mininet VM.  The username and password are b
 
     - [Session 1: BGP hijacking attack](https://github.com/mininet/mininet/wiki/BGP-Path-Hijacking-Attack-Demo), [(pdf)](https://www.dropbox.com/s/ghtzpxpmgf8zi2g/mininet-bgp-demo.pdf)
 
-- [Session 2: Hands-on Laboratory example: Bufferbloat]
+- [Session 2: Hands-on Laboratory Example: Bufferbloat]
 (https://github.com/mininet/mininet/wiki/Bufferbloat).  Slides: [pdf](https://www.dropbox.com/s/myfupw8uljmn8x1/bufferbloat_mininet.pdf), [ppt](https://www.dropbox.com/s/49xmxrrf2ntrpwr/BufferBloat_mininet.pptx)
 
 - Session 3: Experiences using Mininet for Teaching
