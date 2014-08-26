@@ -17,7 +17,7 @@ Please use VirtualBox to set up the Mininet VM.  The username and password are b
 - [Session 2: Hands-on Laboratory example: Bufferbloat]
 (https://github.com/mininet/mininet/wiki/Bufferbloat).  Slides: [pdf](https://www.dropbox.com/s/myfupw8uljmn8x1/bufferbloat_mininet.pdf), [ppt](https://www.dropbox.com/s/49xmxrrf2ntrpwr/BufferBloat_mininet.pptx)
 
-- Session 3: Teaching Experiences using Mininet
+- Session 3: Experiences using Mininet for Teaching Computer Networking
 
     1. At Georgia Tech [pdf](https://www.dropbox.com/s/xjh62m09likh50z/feamster-sigcomm2014.pdf), [ppt](https://www.dropbox.com/s/r1td7llpq7pa86o/feamster-sigcomm2014.pptx)
     2. At MIT [pdf](https://www.dropbox.com/s/7nl53jbmhawzk9i/mininet-MIT-experiences.pdf)
