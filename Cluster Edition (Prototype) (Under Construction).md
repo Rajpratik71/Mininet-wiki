@@ -153,7 +153,7 @@ One question you may have is "How do I know where each host will be located?" `m
 
 By default, Mininet uses the built-in `SwitchBinPlacer` algorithm. This algorithm places switches and controllers into evenly-sized bins/blocks based on the size of your cluster, and tries to place hosts on the same server as their corresponding switches. This can be explicitly selected using `--placement block`.
 
-Another built-in algorithm is `RandomPlacer`, which randomly places switches and hosts across the cluster. This results in many more cross-server tunnels, and can  be useful for testing.
+Another built-in algorithm is `RandomPlacer` (invoked using `--placement random`) which randomly places switches and hosts across the cluster. This results in many more cross-server tunnels, and can  be useful for testing.
 
 You may either use one of the built in placement algorithms, or you may create your own by creating your own `Placer` subclass!
 
