@@ -34,7 +34,7 @@ Cluster Edition has a few requirements to make it work properly. Here we cover t
 * **Network Connection:** This should be obvious, but each machine should be able to communicate with the other machines in the cluster. This could be on a local network, or even over the internet.
 * **Mininet on each Machine:** Each machine in the cluster must have mininet installed
 * **Common Username:** Each machine in the cluster must have a common username. We recommend setting up a Mininet user on each machine.
-* **Password-less sudo:** Each machine in the cluster must be set up with password-less sudo for the common username. This should be easy to set up. Simply append `username ALL=NOPASSWD: ALL` to `/etc/sudoers` using the command `visudo`.
+* **Password-less `sudo`:** Each machine in the cluster must be set up with password-less sudo for the common username. This should be easy to set up. Simply append `username ALL=NOPASSWD: ALL` to `/etc/sudoers` using the command `visudo`.
 * **Password-less `ssh` access:** Each machine must be able to communicate with every other machine in the cluster via `ssh` without being asked for a password. This means we need to populate our  `~/.ssh/authorized_keys` file with the public keys of each machine, and our `~/.ssh/known_hosts` file with the hosts keys of each machine. There are a few ways to do this, but it can be very tedious. This is why we have created a script to set up ssh access for you. It is located in `mininet/util` and is called `clustersetup.sh`. The script operates in two modes; persistent and temporary. 
     * **Temporary Setup with `clustersetup.sh`:** This is the default mode. You will be prompted to enter the password of each machine once, then the setup will be complete. This script works by creating a temporary `.ssh` directory on each machine, populating it with common `known_hosts` and `authorized_keys` files, and mounting the directory over the original `.ssh` directory. There is also a cleanup option for temporary setup, which will unmount and delete the temporary `.ssh` directory on each remote machine.
         * Simply invoke `./clustersetup.sh` with the hostnames or ip addresses of each machine in the cluster as arguments:
@@ -103,7 +103,7 @@ Cluster Edition has a few requirements to make it work properly. Here we cover t
 Running Mininet Cluster Edition
 -------------------------------
 
-Once an environment has been set up, it is easy to start up mininet over a cluster by invoking mininet with the --cluster option, passing in hostnames or ip addresses as arguments. **NOTE:** You also must specify the -E option with sudo for cluster edition to work properly. Starting up a tree topology on your machine and two other hosts should look like this:
+Once an environment has been set up, it is easy to start up mininet over a cluster by invoking mininet with the --cluster option, passing in hostnames or ip addresses as arguments. **NOTE:** You also must specify the `-E` option with `sudo` (or specify `env_keep` in `/etc/sudoers`) for cluster edition to work properly. Starting up a tree topology on your machine and two other hosts should look like this:
 
 `$ sudo -E mn --topo tree,3,3 --cluster localhost,cluster1,cluster2`
 ```
@@ -145,11 +145,13 @@ The API for cluster edition does not change at all, except that you pass in a li
 Pluggable Node Placement Algorithms
 -----------------------------------
 
-One question you may have is "How do I know where each host will be located?" Mininet --cluster takes a placement argument, which allows you to choose an algorithm for your cluster to use when placing nodes.
+One question you may have is "How do I know where each host will be located?" `mn --cluster...` also accepts a `--placement` argument, which allows you to choose an algorithm for your cluster to use when placing nodes.
 
-By default, Mininet uses the built in SwitchBinPlacer algorithm. This algorithm places switches and controllers into evenly-sized bins based on the size of your cluster, and tries to place hosts on the same server as their corresponding switches.
+By default, Mininet uses the built-in `SwitchBinPlacer` algorithm. This algorithm places switches and controllers into evenly-sized bins/blocks based on the size of your cluster, and tries to place hosts on the same server as their corresponding switches. This can be explicitly selected using `--placement block`.
 
-You may either use one of the built in placement algorithms, or you may create your own by creating your own Placer class!
+Another built-in algorithm is `RandomPlacer`, which randomly places switches and hosts across the cluster. This results in many more cross-server tunnels, and can  be useful for testing.
+
+You may either use one of the built in placement algorithms, or you may create your own by creating your own `Placer` subclass!
 
 <!--- to-do: elaborate on different placement algorithms, and show example of creating placement algorithm -->
 
@@ -160,8 +162,9 @@ How does Cluster Edition Work?
 
 The difference between Cluster Edition and standard Mininet comes down to the communication between nodes, and the creation of nodes.
 
-* *Communication:* In standard Mininet, there are no remote nodes, so each link is created with a virtual ethernet pair. However, in Cluster Edition, we must communicate with remote nodes on each machine. In this case, ssh tunnels replace virtual ethernet pairs when communicating between nodes on different machines.
-* *Creating Remote Nodes:* During startup, only one instance of mininet is created on an arbitrary machine in the cluster. This machine creates its own local nodes, and also sends commands via ssh to each machine to create remote nodes. The commands that are run on each machine resemble the same commands that are always run during startup, but through an ssh connection. This means there is no daemon, and only one mininet instance running across the cluster.
+* *Communication between nodes:* In standard Mininet, there are no remote nodes, so each link is created with a virtual ethernet pair. However, in Cluster Edition, we must communicate with remote nodes on each machine. In this case, `ssh` tunnels replace virtual ethernet pairs when communicating between nodes on different machines. In the future, we plan to add additional tunnel types such as GRE tunnels.
+
+* *Creation of Nodes:* During startup, only one instance of mininet is created on an arbitrary machine in the cluster. This machine creates its own local nodes, and also creates remote nodes via (shared) `ssh` connections to remote Mininet servers. The commands that are run on each machine resemble the same commands that are run during local node startup, but are run through an `ssh` connection to the remote server. This means there are no remote node daemons, and only one mininet instance running across the cluster.
 
 <a name=issues></a>
 
