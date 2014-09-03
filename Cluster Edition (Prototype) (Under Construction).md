@@ -37,7 +37,7 @@ Cluster Edition has a few requirements to make it work properly. Here we cover t
 * **Password-less sudo:** Each machine in the cluster must be set up with password-less sudo for the common username. This should be easy to set up. Simply append `username ALL=NOPASSWD: ALL` to `/etc/sudoers` using the command `visudo`.
 * **Password-less `ssh` access:** Each machine must be able to communicate with every other machine in the cluster via `ssh` without being asked for a password. This means we need to populate our  `~/.ssh/authorized_keys` file with the public keys of each machine, and our `~/.ssh/known_hosts` file with the hosts keys of each machine. There are a few ways to do this, but it can be very tedious. This is why we have created a script to set up ssh access for you. It is located in `mininet/util` and is called `clustersetup.sh`. The script operates in two modes; persistent and temporary. 
     * **Temporary Setup with `clustersetup.sh`:** This is the default mode. You will be prompted to enter the password of each machine once, then the setup will be complete. This script works by creating a temporary `.ssh` directory on each machine, populating it with common `known_hosts` and `authorized_keys` files, and mounting the directory over the original `.ssh` directory. There is also a cleanup option for temporary setup, which will unmount and delete the temporary `.ssh` directory on each remote machine.
-        * Simply invoke ./clustersetup.sh with the hostnames or ip addresses of each machine in the cluster as arguments:
+        * Simply invoke `./clustersetup.sh` with the hostnames or ip addresses of each machine in the cluster as arguments:
 `$ ./clustersetup.sh clusterhost1 clusterhost2`
 ```
     ***authenticating to:
