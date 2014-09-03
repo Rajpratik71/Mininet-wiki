@@ -24,7 +24,7 @@ Cluster Edition is currently a prototype, which is why we are shipping it as an 
 When to use Cluster Edition
 ---------------------------
 
-Any experiment that may be run on standard Mininet may be run with cluster edition. The only difference is that you may emulate larger networks in a cluster. It is useful for a variety of situations or environments, whether it is a temporary single use scenario on a few laptops, or on a dedicated testbed that will run many experiments. We support either case, and would love to hear about any uses you have come up with!
+Any experiment that may be run on standard Mininet may be run with cluster edition. The only difference is that you may emulate larger (or faster) networks in a cluster. It is useful for a variety of situations or environments, whether it is a temporary single use scenario on a few laptops, or on a dedicated testbed that will run many experiments. We support either case, and would love to hear about any uses you have come up with!
 
 <a name=setup></a>
 
