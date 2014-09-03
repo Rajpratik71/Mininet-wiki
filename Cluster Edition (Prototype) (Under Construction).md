@@ -1,4 +1,4 @@
-Cody Burkard
+by Cody Burkard
 
 * [Cluster Edition Vision](#vision)
 * [When Should I use Cluster Edition?](#when)
