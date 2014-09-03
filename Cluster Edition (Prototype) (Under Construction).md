@@ -142,7 +142,7 @@ Once an environment has been set up, it is easy to start up mininet over a clust
 ```
 
 
-The API for cluster edition does not change at all, except that you pass in a list of hostnames as a parameter for MininetCluster. To see this, check out mininet/examples/clusterdemo.py
+The API for cluster edition does not change at all, except that you pass in a list of hostnames as a parameter for `MininetCluster`. To see this, check out `mininet/examples/clusterdemo.py`.
 
 <a name=placement></a>
 
