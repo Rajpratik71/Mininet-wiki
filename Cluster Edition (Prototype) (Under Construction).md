@@ -175,9 +175,9 @@ The difference between Cluster Edition and standard Mininet comes down to the co
 Common Issues and Solutions
 ---------------------------
 
-* channel 22: open failed: administratively prohibited: open failed <br>
-mux_client_request_session: session request failed: Session open refused by peer: <br>
-If this is seen in switch and link creation, your sshd configuration does not allow enough simultaneous sessions. This can be fixed by adding 'MaxSessions 1024' to /etc/ssh/sshd_config.
+* `channel 22: open failed: administratively prohibited: open failed` <br>
+`mux_client_request_session: session request failed: Session open refused by peer`: <br>
+If this is seen in switch and link creation, your sshd configuration does not allow enough simultaneous sessions. This can be fixed by adding `MaxSessions 1024` to `/etc/ssh/sshd_config`.
 
-* channel 0: open failed: administratively prohibited: open failed: <br>
-If you see this in link creation, you need to append ‘PermitTunnel yes’ to /etc/ssh/sshd_config
+* `channel 0: open failed: administratively prohibited: open failed`: <br>
+If you see this in link creation, you need to append `PermitTunnel yes` to `/etc/ssh/sshd_config`
