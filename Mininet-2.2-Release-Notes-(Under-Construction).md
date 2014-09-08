@@ -40,3 +40,5 @@ The tests are not included in the Mininet `.egg`, nor are they documented at [ap
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
 
 * Currently `--host rt` may not work correctly when installed with apt-get install on Ubuntu. The mininet package in Ubuntu is missing the cgroup-bin dependency. To fix this, install cgroup-bin.
+
+* Currently, '--host rt' will not work correctly with any default ubuntu kernel. The rt scheduler has been disabled by default in all ubuntu kernels. To fix this, enable RT_GROUP_SCHED in your kernel
