@@ -35,7 +35,7 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
 
-* Currently `--switch user` has VERY poor performance, and should not be user for anything beyond simple connectivity tests. Tests have shown a max bandwidth of 1.2 Gb/sec.
+* Currently `--switch user` has VERY poor performance with Linux 3.13 kernels - about 1000x worse than earlier kernels - and should not be user for anything beyond simple connectivity tests. We hope this can be remedied in the future.
 
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
 
