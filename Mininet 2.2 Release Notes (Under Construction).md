@@ -14,9 +14,9 @@ Their components may also be imported, but they should be considered volatile an
 
 The tests are not included in the Mininet `.egg`, nor are they documented at [api.mininet.org](api.mininet.org), but they are included in the Mininet source tree.
 
-### Potential VirtualBox Issues
+### Potential VirtualBox/VM Issues and Solutions
 
-* If VirtualBox (or any other virtual machine monitor)  cannot import the `.ovf` directly, try creating a new VM using the `.vmdk` file as its disk.
+* If VirtualBox (or any other virtual machine monitor) cannot import the `.ovf` directly, try creating a new VM using the `.vmdk` file as its disk.
 
 * VirtualBox may complain about missing hardware on initial import - you may safely ignore this message.
 
