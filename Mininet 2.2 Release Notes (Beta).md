@@ -1,6 +1,6 @@
 For details on the content and new features of 2.2.0, please consult the
-[release announcement](TBD)
-and the [README](TBD) file. 
+release announcement (TBD)
+and the README (TBD) file. 
 
 This document contains supplementary information and issues not included in that file.
 
