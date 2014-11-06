@@ -14,12 +14,12 @@ Cluster Edition Vision
 --------------------------
 
 Running Mininet on a single machine is fully capable of emulating networks of hundreds of nodes. However, what if we want to emulate a massive network of thousands of nodes? A single machine may not have the resources required to support all of the nodes - and the link bandwidth between those nodes - in a massive network. 
-<!-- This is why we bring to you Mininet Cluster Edition! -->
+
 By distributing Mininet nodes and links over a cluster of servers, we can utilize the resources of each machine, and easily scale our system to support larger networks as well as networks with more computation and communication bandwidth than can be achieved with a single Mininet server.
 
 **Warning! Prototype!**
 
-We believe that mainline Mininet will benefit greatly from cluster support, but this implementation of Cluster Edition is currently a prototype, which is why we are shipping it as an example. Please try it out and let us know what you think at the Mininet mailing list!
+We believe that mainline Mininet will benefit greatly from cluster support, but this implementation of Cluster Edition is currently an experimental prototype, which is why we are shipping it as an example. Please try it out and let us know what you think at the Mininet mailing list!
 
 If you need a possibly more mature alternative for running Mininet on a cluster, you may wish to look at Philip Wette's excellent [MaxiNet](http://www.cs.uni-paderborn.de/?id=maxinet).
 
