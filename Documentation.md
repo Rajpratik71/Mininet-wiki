@@ -21,6 +21,7 @@ The Mininet documentation contains a wealth of helpful information including how
 * [[VM Creation Notes]] How we created the Mininet VM image
 * [Mininet Videos](Videos)
 * [[Mininet Python Style]] Guide
+* [[Cluster Edition Prototype]] - information on experimental cluster features
 
 #### [[Teaching Computer Networking with Mininet | Teaching and Learning with Mininet]]
 * [[Assignments | Teaching and Learning with Mininet]] Use Mininet to teach or learn about computer networks
