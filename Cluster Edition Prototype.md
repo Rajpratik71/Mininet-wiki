@@ -21,6 +21,8 @@ By distributing Mininet nodes and links over a cluster of servers, we can utiliz
 
 Cluster Edition is currently a prototype, which is why we are shipping it as an example. Please try it out and let us know what you think at the Mininet mailing list!
 
+Also, as a possibly more mature alternative for running Mininet on a cluster, you may wish to look at Philip Wette's excellent [MaxiNet](http://www.cs.uni-paderborn.de/?id=maxinet).
+
 <a name=when></a>
 
 When to use Cluster Edition
