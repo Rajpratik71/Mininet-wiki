@@ -42,4 +42,4 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `--host rt` will not work correctly with any default ubuntu kernel. The rt scheduler has been disabled by default in all ubuntu kernels. To fix this, enable RT_GROUP_SCHED in your kernel.
 
-* Currently NetworkManager may attempt to assign leases to the interfaces from a Mininet instance. This will cause your cpu usage to max out when mininet is idle. To prevent this, stop NetworkManager with `$ sudo stop network-manager`.
+* Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause your cpu usage to max out when mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
