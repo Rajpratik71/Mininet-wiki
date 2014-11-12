@@ -32,6 +32,12 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * For the most accurate performance results, you may wish to run Mininet on a quiescent, non-virtualized environment.
 
+### Cluster Edition Prototype
+
+* Because of issues with `ssh` multiplexing, we do not recommend using it at this time.
+
+* Additional information may be found on the [[Cluster Edition Prototype]] wiki page.
+
 ### Errata
 
 * Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
