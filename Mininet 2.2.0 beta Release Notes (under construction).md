@@ -26,9 +26,11 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
         `VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1`
     - Restart your VM
 
-### Test Issues
+### Test / Hi-Fi Issues
 
 * Some performance tests (e.g. `test_linearbandwidth.py`) can occasionally fail in virtualized or non-quiescent environments due to performance variance, scheduling, or timing skew. Others may fail if they hit resource limits of the underlying system (e.g. a netbook or a VM with limited resources.)
+
+* For the most accurate performance results, you may wish to run Mininet on a quiescent, non-virtualized environment.
 
 ### Errata
 
@@ -42,4 +44,4 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `--host rt` will not work correctly with any default ubuntu kernel. The rt scheduler has been disabled by default in all ubuntu kernels. To fix this, enable RT_GROUP_SCHED in your kernel.
 
-* Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause your cpu usage to max out when mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
+* Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
