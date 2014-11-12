@@ -32,9 +32,9 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * For the most accurate performance results, you may wish to run Mininet on a quiescent, non-virtualized environment.
 
-### Cluster Edition Prototype
+### Cluster Edition Prototype issues
 
-* We do not currently recommend enabling `ssh` multiplexing, as we have observed problems with it.
+* We do not currently recommend enabling `ssh` multiplexing (`ControlPath` feature) as we have observed problems with it.
 
 * Additional information may be found on the [[Cluster Edition Prototype]] wiki page.
 
