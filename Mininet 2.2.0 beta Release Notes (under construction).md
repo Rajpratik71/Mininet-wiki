@@ -34,7 +34,7 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 ### Cluster Edition Prototype
 
-* Because of issues with `ssh` multiplexing, we do not recommend using it at this time.
+* We do not currently recommend enabling `ssh` multiplexing, as we have observed problems with it.
 
 * Additional information may be found on the [[Cluster Edition Prototype]] wiki page.
 
