@@ -23,14 +23,14 @@ The Mininet documentation contains a wealth of helpful information including how
 * [[Mininet Python Style]] Guide
 * [[Cluster Edition Prototype]] - information on experimental cluster features
 
+#### [[Teaching Computer Networking with Mininet | Teaching and Learning with Mininet]]
+* [[Assignments | Teaching and Learning with Mininet]] Use Mininet to teach or learn about computer networks
+* [Reproducible Network Research](http://reproducingnetworkresearch.wordpress.com) with Mininet
+
 ### Release Notes
 
 * [[Mininet 2.1.0 Release Notes]]
 * [[Mininet 2.2.0 beta Release Notes]]
-
-#### [[Teaching Computer Networking with Mininet | Teaching and Learning with Mininet]]
-* [[Assignments | Teaching and Learning with Mininet]] Use Mininet to teach or learn about computer networks
-* [Reproducible Network Research](http://reproducingnetworkresearch.wordpress.com) with Mininet
 
 #### Bug Reports and Feature Requests
 * [[Bugs]] How to submit bug reports
