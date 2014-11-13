@@ -27,7 +27,7 @@ The Mininet documentation contains a wealth of helpful information including how
 * [[Assignments | Teaching and Learning with Mininet]] Use Mininet to teach or learn about computer networks
 * [Reproducible Network Research](http://reproducingnetworkresearch.wordpress.com) with Mininet
 
-### Release Notes
+#### Mininet Release Notes
 
 * [[Mininet 2.1.0 Release Notes]]
 * [[Mininet 2.2.0 beta Release Notes]]
