@@ -540,9 +540,14 @@ that you are running.
 Another side-effect is that you can have file collisions if you try to create
 the same file in the same directory on multiple hosts.
 
-In the future we may provide a mechanism to automatically create a file structure
-for each Mininet host that shares most of the underlying filesystem but
-allows for custom directories (e.g. `/etc`) as desired.
+If you need per-host private directories, you can specify them as options to `Host`,
+for example:
+
+    h = Host( 'h1', privateDirs=[ '/some/directory' ] )
+
+See `examples/bind.py` for more information.
+
+
 
 <a name=config></a>
 
