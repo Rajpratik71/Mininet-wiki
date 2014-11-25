@@ -1,3 +1,4 @@
+* Any cosmetic code changes (e.g. to satisfy pylint)
 * Update text files, blog post and release notes to 2.2.0rc1
 * Tag 2.2.0rc1
 * Create new release build target (2.2.0rc1)
