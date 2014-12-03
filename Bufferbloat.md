@@ -109,7 +109,7 @@ bash# ./plot_figures.sh <EXP_NAME>
 ```
 Adjust command line parameters to generate the figure you want. 
 
-The script will also host a webserver on the machine and you can use the url the script provided to access to your figures if it is a remote machine w/ public IP. [Sample figures](http://www.stanford.edu/~huangty/cs144/). If you are unable to see the cwnd, ensure you run wget *after* you started the monitor.sh script.
+The script will also host a webserver on the machine and you can use the url the script provided to access to your figures if it is a remote machine w/ public IP. [Sample figures](http://yuba.stanford.edu/~huangty/cs144/). If you are unable to see the cwnd, ensure you run wget *after* you started the monitor.sh script.
 
 By now you will have realized that the buffer in the Headend router is so large that when it fills up with iperf packets, it delays the short wget flow. Next we’ll look at two ways to reduce the problem.
 
@@ -143,7 +143,7 @@ Plot the figure for cwnd and queue occupancy, this time using the script “./pl
 prompt> ./plot_figures_minq.sh
 ```
 
-Then again, use the url to see your figures.[Sample figures](http://www.stanford.edu/~huangty/cs144/minq.html)
+Then again, use the url to see your figures.[Sample figures](http://yuba.stanford.edu/~huangty/cs144/minq.html)
 
 ### Why does reducing the queue size reduce the download time for wget?
 Please put your explanation below.
