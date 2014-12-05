@@ -3,7 +3,7 @@
 * Update ~~text files~~, blog post and release notes to 2.2.0rc1
 * ~~Tag 2.2.0rc1~~
 * ~~Create new release build target (mininet-trusty{32,64}-stable)~~
-* Make sure it builds and passes all tests (added job to jenkins, need to bump version in jobs.yaml)
+* Make sure it builds and passes all tests
 * Tag 2.2.0 final and update build target
 * Make sure it builds and passes all tests
 * Upload (trusty32,trusty64) to CDN and update download page on mininet.org
