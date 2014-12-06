@@ -45,13 +45,11 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
 
-* Currently `--switch user` has VERY poor performance with Linux 3.13 kernels - about 1000x worse than earlier kernels - and should not be user for anything beyond simple connectivity tests. We hope this can be remedied in the future.
-
 * Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
 
-* Currently `--host rt` may not work correctly when installed with apt-get install on Ubuntu. The mininet package in Ubuntu is missing the cgroup-bin dependency. To fix this, install cgroup-bin.
+* Currently `--host rt` may not work correctly when installed with apt-get install on Ubuntu 12.04.5. The `mininet` package is missing the `cgroup-bin` dependency. To fix this, `apt-get install cgroup-bin`.
 
-* Currently `--host rt` will not work correctly with any default ubuntu kernel. The rt scheduler has been disabled by default in all ubuntu kernels. To fix this, enable RT_GROUP_SCHED in your kernel.
+* Currently `--host rt` will not work correctly with any default ubuntu kernel. The POSIX real-time scheduler has been disabled by default in all Ubuntu kernels. To fix this, enable `RT_GROUP_SCHED` in your kernel.
 
 * Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
 
