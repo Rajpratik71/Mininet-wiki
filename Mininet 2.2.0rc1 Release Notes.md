@@ -46,8 +46,6 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `--switch user` cannot be used with `--mac`; there appears to be a bug where the reference switch (and presumably its derivates like the CPqD switch) does not correctly match and forward packets when the MAC address is `00:00:00:00:00:01`.
 
-* Currently `--switch ivs` cannot be used with more than a few switches; a bug has been submitted to the IVS developers.
-
 * Currently `--host rt` may not work correctly when installed with apt-get install on Ubuntu 12.04.5. The `mininet` package is missing the `cgroup-bin` dependency. To fix this, `apt-get install cgroup-bin`.
 
 * Currently `--host rt` will not work correctly with any default ubuntu kernel. The POSIX real-time scheduler has been disabled by default in all Ubuntu kernels. To fix this, enable `RT_GROUP_SCHED` in your kernel.
