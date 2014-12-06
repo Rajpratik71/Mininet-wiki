@@ -1,4 +1,4 @@
-* **Mininet 2.2.0 on Ubuntu 14.04**
+* **Mininet 2.2.0rc1 on Ubuntu 14.04**
 
  * **[Ubuntu 14.04 - 64 bit](http://onlab.vicci.org/mininet-vm/tbd)** (recommended for most modern hardware)
  * [Ubuntu 14.04 - 32 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.0rc1-141205-ubuntu-14.04-server-i386.zip) (recommended for Windows users using VirtualBox or Hyper-V)
