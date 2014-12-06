@@ -1,5 +1,6 @@
 [ Additional details on the 2.2.0 release will be available in the
-release announcement (TBD) and the README (TBD) file. ]
+[release announcement](http://mininet.org/blog/2014/11/12/mininet-2-2-0-beta/) and the 
+[README](https://github.com/mininet/mininet/tree/2.2.0rc1/README.md) file.
 
 This document contains supplementary information and issues not included in that file.
 
@@ -9,7 +10,7 @@ The examples have Python docstring documentation, and can be used as modules, e.
 
     sudo python -m mininet.examples.nat
 
-Their components may also be imported, but they should be considered volatile and not part of the official Mininet API. Since they're not part of the official API, their documentation is also not currently included at [api.mininet.org](api.mininet.org) or generated with `make doc`. However, you may wish to look at the code and `README.md` file in the [examples/](https://github.com/mininet/mininet/tree/2.2.0b1/examples) directory.
+Their components may also be imported, but they should be considered volatile and not part of the official Mininet API. Since they're not part of the official API, their documentation is also not currently included at [api.mininet.org](api.mininet.org) or generated with `make doc`. However, you may wish to look at the code and `README.md` file in the [examples/](https://github.com/mininet/mininet/tree/2.2.0rc1/examples) directory.
 
 The tests are not included in the Mininet `.egg`, but they are provided in the Mininet source tree.
 
