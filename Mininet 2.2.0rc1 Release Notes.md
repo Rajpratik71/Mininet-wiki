@@ -52,4 +52,4 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
 
-* Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly forward to MAC address '00:00:00:00:00:01'. This means that they will not work with `--mac` or `autoSetMacs=True`.
+* Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly forward to MAC address `00:00:00:00:00:01`. This means that they will not work with `--mac` or `autoSetMacs=True`.
