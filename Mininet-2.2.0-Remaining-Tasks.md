@@ -4,7 +4,7 @@
 * ~~Tag 2.2.0rc1~~
 * ~~Create new release build target (mininet-trusty{32,64}-stable)~~
 * Make sure it builds and passes all tests
-* Tag 2.2.0 final and update build target
+* Tag 2.2.0 final and update build target in `jobs.yaml` for (mininet-trusty{32,64}-stable)
 * Make sure it builds and passes all tests
 * Upload (trusty32,trusty64) to CDN and update download page on mininet.org
 * Update/post mininet.org blog post
