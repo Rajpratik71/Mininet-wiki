@@ -8,6 +8,6 @@
 * Make sure it builds and passes all tests
 * Upload (trusty32,trusty64) to CDN and update download page on mininet.org
 * Update/post mininet.org blog post
-* Update openflow tutorial vm ( [wiki page](https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software) )
+* Update openflow tutorial vm link ( [wiki page](https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software) )
 * Write and post announcement to `mininet-discuss` and `openflow-discuss`
 * Celebrate!
