@@ -4,9 +4,9 @@
 * ~~Tag 2.2.0rc1~~
 * ~~Create new release build target (mininet-trusty{32,64}-stable)~~
 * ~~Make sure it builds and passes all tests~~
-* Tag 2.2.0 final and update build target in `jobs.yaml` for (mininet-trusty{32,64}-stable)
-* Make sure it builds and passes all tests
-* Upload (trusty32,trusty64) to CDN and update download page on mininet.org
+* ~~Tag 2.2.0 final and update build target in `jobs.yaml` for (mininet-trusty{32,64}-stable)~~
+* ~~Make sure it builds and passes all tests~~
+* ~~Upload (trusty32,trusty64) to CDN and update download page on mininet.org~~
 * Update/post mininet.org blog post
 * Update openflow tutorial vm link ( [wiki page](https://github.com/mininet/openflow-tutorial/wiki/Installing-Required-Software) )
 * Write and post announcement to `mininet-discuss` and `openflow-discuss`
