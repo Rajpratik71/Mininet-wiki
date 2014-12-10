@@ -46,20 +46,17 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 ### Errata
 
-* Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly match MAC address `00:00:00:00:00:01`. This means that they will not work with `--mac` or `autoSetMacs=True`.
+* [Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly match MAC address `00:00:00:00:00:01`.](https://github.com/mininet/mininet/issues/156) This means that they will not work with `--mac` or `autoSetMacs=True`.
 
 * The Stanford Reference Switch (`--switch user`) also currently has awful performance (kilobits per second rather than megabits) on certain recent Linux kernels, including the one that we ship in the Mininet VM. We hope this can be fixed in the future. In the mean time we recommend OVS or IVS unless you are modeling a dial-up modem or ISDN.
 
-* Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
+* [Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance.](https://github.com/mininet/mininet/issues/228) This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
 
-* IPv6 keeps coming back, even though we try to disable it! Although it's good that IPv6 is now correctly virtualized, this means that the Mininet VM does not now disable IPv6 globally as intended. This means that unless you disable IPv6 in each Mininet host, you may see IPv6's irritating neighbor discovery packets. On the up side, it is now easier to use IPv6 in Mininet.
+* [IPv6 keeps coming back, even though we try to disable it!](https://github.com/mininet/mininet/issues/454) Although it's good that IPv6 is now correctly virtualized, this means that the Mininet VM does not now disable IPv6 globally as intended. This means that unless you disable IPv6 in each Mininet host, you may see IPv6's irritating neighbor discovery packets. On the up side, it is now easier to use IPv6 in Mininet.
 
 * Currently `--host rt` may not work correctly when installed with apt-get install on Ubuntu 12.04.5. The `mininet` package is missing the `cgroup-bin` dependency. To fix this, `apt-get install cgroup-bin`.
 
-* Currently `--host rt` will not work correctly with any default ubuntu kernel. The POSIX real-time scheduler has been disabled by default in all Ubuntu kernels. To fix this, enable `RT_GROUP_SCHED` in your kernel.
-
-
-
+* Currently `--host rt` will not work with any default Ubuntu kernel. The POSIX real-time scheduler has been disabled by default in all Ubuntu kernels. To fix this, enable `RT_GROUP_SCHED` in your kernel.
 
 
 ### Bug Reports and Support
