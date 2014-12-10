@@ -5,7 +5,8 @@ To download Mininet, visit http://mininet.org/download for pre-built
 VM images and [github](https://github.com/mininet/mininet)
 (or [code.mininet.org](http://code.mininet.org)) for the source code.
 
-**This document contains supplementary information and issues not included in the [README](https://github.com/mininet/mininet/tree/2.2.0/README.md).**
+**This document contains supplementary information and issues not included in the
+above documents.**
 
 ### Documentation for Examples and Tests
 
