@@ -56,7 +56,7 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly forward to MAC address `00:00:00:00:00:01`. This means that they will not work with `--mac` or `autoSetMacs=True`.
 
-* The Stanford Reference Switch (`--switch user`) has awful performance (kilobits per second rather than megabits) on certain recent Linux kernels, including the one that we ship in the Mininet VM. We hope this can be fixed in the future. In the mean time, if you require decent performance, we recommend OVS or IVS.
+* The Stanford Reference Switch (`--switch user`) has awful performance (kilobits per second rather than megabits) on certain recent Linux kernels, including the one that we ship in the Mininet VM. We hope this can be fixed in the future. In the mean time we recommend OVS or IVS unless you are modeling a dial-up modem or ISDN.
 
 * IPv6 keeps coming back, even though we try to disable it! Although it's good that IPv6 is now correctly virtualized, this means that the Mininet VM does not now disable IPv6 globally as intended. This means that unless you disable IPv6 in each Mininet host, you may see IPv6's irritating neighbor discovery packets. On the up side, it is now easier to use IPv6 in Mininet.
 
