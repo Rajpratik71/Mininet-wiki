@@ -1,6 +1,6 @@
 * ~~Any cosmetic code changes (e.g. to satisfy pylint)~~
 * ~~Update `examples/README.md` ( CB )~~
-* Update ~~text files~~, blog post and release notes to 2.2.0rc1
+* ~~Update text files, blog post and release notes to 2.2.0rc1~~
 * ~~Tag 2.2.0rc1~~
 * ~~Create new release build target (mininet-trusty{32,64}-stable)~~
 * ~~Make sure it builds and passes all tests~~
