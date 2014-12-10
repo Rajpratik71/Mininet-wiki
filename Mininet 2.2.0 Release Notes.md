@@ -8,6 +8,9 @@ VM images and [github](https://github.com/mininet/mininet)
 (or [code.mininet.org](http://code.mininet.org)) for the source code.
 
 **This document contains supplementary information and issues.**
+Please feel free to submit bug reports via
+[github](https://github.com/mininet/mininet/issues) and
+questions to the `mininet-discuss` mailing list.
 
 ### Documentation for Examples and Tests
 
