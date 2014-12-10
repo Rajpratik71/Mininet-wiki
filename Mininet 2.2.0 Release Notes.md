@@ -59,5 +59,6 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 ### Bug Reports and Support
 
 You are encouraged to submit reports for any additional **bugs** you may
-find via [github](https://github.com/mininet/mininet/issues),
-and additional questions to the `mininet-discuss` mailing list.
+encounter via [github](https://github.com/mininet/mininet/issues),
+and additional questions to the `mininet-discuss` mailing list. You may
+also edit these notes to fix errors or provide clarification.
