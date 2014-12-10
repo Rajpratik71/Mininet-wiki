@@ -1,6 +1,8 @@
 Additional details on the 2.2.0 release are available in the
-[release announcement](http://mininet.org/blog) and the 
-[README](https://github.com/mininet/mininet/tree/2.2.0/README.md) file.
+[release announcement](http://mininet.org/blog), the 
+[README](https://github.com/mininet/mininet/tree/2.2.0/README.md) file,
+and the [Mininet documentation](http://docs.mininet.org).
+
 To download Mininet, visit http://mininet.org/download for pre-built
 VM images and [github](https://github.com/mininet/mininet)
 (or [code.mininet.org](http://code.mininet.org)) for the source code.
