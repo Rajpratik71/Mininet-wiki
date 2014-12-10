@@ -9,10 +9,6 @@ VM images and [github](https://github.com/mininet/mininet)
 
 **This document contains supplementary information and issues.**
 
-You are encouraged to submit reports for any additional bugs you may
-find via [github](https://github.com/mininet/mininet/issues),
-and additional questions to the `mininet-discuss` mailing list.
-
 ### Documentation for Examples and Tests
 
 The examples have Python docstring documentation, and can be used as modules, e.g.
@@ -59,3 +55,9 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 * Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance. This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
 
 * Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly forward to MAC address `00:00:00:00:00:01`. This means that they will not work with `--mac` or `autoSetMacs=True`.
+
+### Bug Reports and Support
+
+You are encouraged to submit reports for any additional **bugs** you may
+find via [github](https://github.com/mininet/mininet/issues),
+and additional questions to the `mininet-discuss` mailing list.
