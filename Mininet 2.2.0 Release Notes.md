@@ -48,8 +48,9 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 The `--nat` option to `mn` can provide a convenient way to connect your Mininet network to your LAN or to the Internet.
 
-However, `mn --nat` will reroute traffic originating at your Mininet server or VM and destined for
-Mininet's IP subnet (`10.0.0.0/8` by default) to the Mininet network, which can break connectivity
+Note however that `mn --nat` by design will reroute traffic originating at your Mininet server or VM
+and destined for
+Mininet's IP subnet (`10.0.0.0/8` by default) to the Mininet network, **which can break connectivity**
 if you are using addresses in the same range in your LAN. You can change this range using the `--ipbase` option. 
 
 ### Errata
