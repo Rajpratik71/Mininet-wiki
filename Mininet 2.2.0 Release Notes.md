@@ -58,6 +58,7 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Currently `--host rt` will not work with any default Ubuntu kernel. The POSIX real-time scheduler has been disabled by default in all Ubuntu kernels. To fix this, enable `RT_GROUP_SCHED` in your kernel.
 
+* Currently, the Mininet `install.sh` script seems to hang installing Mininet on Ubuntu 12.04.5 LTS (precise64, 64-bit); in particular, it [hangs while installing/configuring `cgroup-bin`](https://github.com/mininet/mininet/issues/459). This is obviously not a Mininet issue, but it's annoying. One workaround worth trying might be to install `cgroup-bin` before running `install.sh`.
 
 ### Bug Reports and Support
 
