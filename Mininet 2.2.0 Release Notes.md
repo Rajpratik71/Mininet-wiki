@@ -9,6 +9,8 @@ VM images and [github](https://github.com/mininet/mininet)
 
 **This document contains supplementary information and issues.**
 
+[[_TOC_]]
+
 ### Documentation for Examples and Tests
 
 The examples have Python docstring documentation, and can be used as modules, e.g.
