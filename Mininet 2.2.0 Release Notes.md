@@ -44,6 +44,14 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * Additional information may be found on the [[Cluster Edition Prototype]] wiki page.
 
+### NAT warning!
+
+The `--nat` option to `mn` can provide a convenient way to connect your Mininet network to your LAN or to the Internet.
+
+However, `mn --nat` will reroute traffic originating at your Mininet server or VM and destined for
+Mininet's IP subnet (`10.0.0.0/8` by default) to the Mininet network, which can break connectivity
+if you are using addresses in the same range in your LAN. You can change this range using the `--ipbase` option. 
+
 ### Errata
 
 * [Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly match MAC address `00:00:00:00:00:01`.](https://github.com/mininet/mininet/issues/156) This means that they will not work with `--mac` or `autoSetMacs=True`.
