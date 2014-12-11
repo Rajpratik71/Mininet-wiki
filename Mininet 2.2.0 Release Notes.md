@@ -54,7 +54,7 @@ The tests are not included in the Mininet `.egg`, but they are provided in the M
 
 * [IPv6 keeps coming back, even though we try to disable it!](https://github.com/mininet/mininet/issues/454) Although it's good that IPv6 is now correctly virtualized, this means that the Mininet VM does not now disable IPv6 globally as intended. This means that unless you disable IPv6 in each Mininet host, you may see IPv6's irritating neighbor discovery packets. On the up side, it is now easier to use IPv6 in Mininet.
 
-* Currently `--host rt` may not work correctly when installed with apt-get install on Ubuntu 12.04.5. The `mininet` package is missing the `cgroup-bin` dependency. To fix this, `apt-get install cgroup-bin`.
+* Currently `--host rt` may not work correctly when installed with `apt-get install mininet` on Ubuntu 12.04.5. The `mininet` package is missing the `cgroup-bin` dependency. To fix this, `apt-get install cgroup-bin`. Also see below.
 
 * Currently `--host rt` will not work with any default Ubuntu kernel. The POSIX real-time scheduler has been disabled by default in all Ubuntu kernels. To fix this, enable `RT_GROUP_SCHED` in your kernel.
 
