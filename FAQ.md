@@ -287,6 +287,16 @@ However, you can set up NAT if you like.
 
 ### How can I set up NAT?
 
+Mininet 2.2.0: You can use `mn --nat`, or `Mininet.addNAT()`
+from the Python API.
+
+**Warning**: By default this will reroute local                                       
+traffic originating at your Mininet server or VM and destined for                      
+Mininet's IP subnet (`10.0.0.0/8` by default) to the                                  
+Mininet network, which can break connectivity if you are using                        
+addresses in the same range in your LAN. You can change this range                    
+using the `--ipbase` option. 
+
 Mininet 2.1.0: Look at `examples/nat.py`.
 
 Mininet 2.0 and earlier:
