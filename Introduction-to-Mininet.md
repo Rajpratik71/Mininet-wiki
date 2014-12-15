@@ -107,7 +107,7 @@ Although we think Mininet is great, it does have some limitations.
 For example,
 
 - Running on a single system is convenient, but it imposes resource
-  limits: if your server has 3 GHz of CPU and can switch about 3 Gbps
+  limits: if your server has 3 GHz of CPU and can switch about 10 Gbps
   of simulated traffic, those resources will need to be balanced and
   shared among your virtual hosts and switches.
 
@@ -119,15 +119,14 @@ For example,
   custom routing or switching behavior, you will need to find or develop
   a controller with the features you require.
 
-- Currently Mininet doesn't do NAT out of the box. This means that
-  your virtual hosts will be isolated from your LAN by default; this is
-  usually a good thing, but means your hosts can't talk directly to
-  the Internet unless you provide a means for them to do so. (Note the 
-  `nat.py` example demonstrates how to configure Mininet hosts for external
-  connectivity, and the `hwintf.py` examples demonstrates how to add
-  a physical interface to Mininet.)
+- By default your Mininet network is isolated from your LAN and from
+  the internet - this is usually a good thing! However, you may use the
+  `NAT` object and/or the `--nat` option to connect your Mininet network
+  to your LAN via Network Address Translation. You can also attach a real
+  (or virtual) hardware interface to your Mininet network (see 
+  `examples/hwintf.py` for details.)
 
-- Currently all Mininet hosts share the host file system and PID space;
+- By default all Mininet hosts share the host file system and PID space;
   this means that you may have to be careful if you are running daemons
   that require configuration in /etc, and you need to be careful that
   you don't kill the wrong processes by mistake. (Note the `bind.py`
