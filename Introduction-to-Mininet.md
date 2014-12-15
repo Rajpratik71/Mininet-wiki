@@ -188,7 +188,7 @@ in Mininet 2.2:
 	
 	class SingleSwitchTopo(Topo):
 	    "Single switch connected to n hosts."
-	    def build(self, n=2, **opts):
+	    def build(self, n=2):
 	        switch = self.addSwitch('s1')
 	        # Python's range(N) generates 0..N-1
 	        for h in range(n):
@@ -285,8 +285,7 @@ or create custom node and link constructors and/or subclasses.)
 	
 	class SingleSwitchTopo(Topo):
 	    "Single switch connected to n hosts."
-	    def __init__(self, n=2, **opts):
-	        Topo.__init__(self, **opts)
+	    def build(self, n=2):
 	        switch = self.addSwitch('s1')
 	        for h in range(n):
 	            # Each host gets 50%/n of system CPU
