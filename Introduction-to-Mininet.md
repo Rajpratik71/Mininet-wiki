@@ -89,7 +89,9 @@ Why is Mininet cool?
     
 7.	Mininet is an **open source project**, so you are encouraged to examine
     its source code on <https://github.com/mininet>, modify it, fix bugs,
-    file issues/feature requests, and submit patches/pull requests.
+    file issues/feature requests, and submit patches/pull requests. You may also
+    edit this documentation to fix any errors or add clarifications or additional
+    information.
     
 8.  Mininet is **under active development**. So, if it sucks, doesn't make sense,
 	or doesn't work for some reason, please let us know on `mininet-discuss`
