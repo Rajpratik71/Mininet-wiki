@@ -888,8 +888,7 @@ net = Mininet( topo=topo, controller=None)
 net.addController( 'c0', controller=RemoteController, ip='127.0.0.1', port=6633 )
 ```
 
-Note that `controller` is a *constructor*, not an *object*; you can create a custom constructor in-line using `partial` or `lambda`, or you can pass in your own function (which must take the `name` parameter and return a controller object) or class (e.g. a subclass of `RemoteController`.)
-
+Note that `controller` (like `host` and `switch`) in this case is a *constructor*, not an *object* (but see below for additional info!) You can create a custom constructor in-line using `partial` or `lambda`, or you can pass in your own function (which must take the `name` parameter and return a controller object) or class (e.g. a subclass of `RemoteController`.)
 
 You can also create multiple controllers and create a custom `Switch()` subclass which
 connects to different controllers as desired:
@@ -909,6 +908,16 @@ class MultiSwitch( OVSSwitch ):
 You can also specify an external controller from the `mn` command line:
 
     $ sudo mn --controller remote,ip=192.168.51.101
+
+**Abusing the API**
+
+In Mininet 2.2.0 and above, you may choose to pass in a `Controller` *object* instead of a *constructor* (and indeed even a list of objects.) This was added because people kept doing it in spite of the API clearly specifying that a constructor was needed.
+
+This allows you to do something like:
+
+    net = Mininet( topo, controller=RemoteController( 'c0', ip='127.0.0.1' ) )
+
+And get the behavior that you intended. Constructors are still permitted as well.
 
 <a name=multipath></a>
 #### Multipath Routing
