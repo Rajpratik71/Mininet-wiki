@@ -216,7 +216,7 @@ include:
 
 `Topo`: the base class for Mininet topologies
 
-`build`: The method to override in your topology class. Constructor parameters (`n`) will be passed through to it automatically by `Topo.__init__()`.
+`build()`: The method to override in your topology class. Constructor parameters (`n`) will be passed through to it automatically by `Topo.__init__()`.
 
 `addSwitch()`: adds a switch to a topology and returns the switch name
 
