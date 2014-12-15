@@ -909,7 +909,7 @@ You can also specify an external controller from the `mn` command line:
 
     $ sudo mn --controller remote,ip=192.168.51.101
 
-**Abusing the API**
+**Abusing the API by passing in a controller object**
 
 In Mininet 2.2.0 and above, you may choose to pass in a `Controller` *object* instead of a *constructor* (and indeed even a list of objects.) This was added because people kept doing it in spite of the API clearly specifying that a constructor was needed.
 
