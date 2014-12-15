@@ -1103,4 +1103,4 @@ A Mininet network consists of the following components:
     or in user space (so we can modify them easily).
 
 For more details, see the 
-[Mininet website](http://openflow.org/mininet) and our Mininet [Publications](publications).
+[Mininet website](http://mininet.org) and our Mininet [Publications](publications).
