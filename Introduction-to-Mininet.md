@@ -657,8 +657,17 @@ hosts.
 ### Additional Examples
 
 Additional examples of Mininet scripts may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
-You may find some of them to be useful and others (e.g. [`consoles.py`](https://github.com/mininet/mininet/tree/master/examples/consoles.py),
-[`miniedit.py`](https://github.com/mininet/mininet/tree/master/examples/miniedit.py)) to be entertaining demonstrations.
+
+The examples are intended to be educational as they demonstrate different ways
+that the Mininet API may be used.
+
+You may find some of them (e.g. [`consoles.py`](https://github.com/mininet/mininet/tree/master/examples/consoles.py))
+to be interesting demonstrations that you can build upon.
+
+In particular, you may find 
+([`miniedit.py`](https://github.com/mininet/mininet/tree/master/examples/miniedit.py))
+to be a particularly useful GUI for simple experiments with Mininet.
+
 
 Note: The examples are intended as instructional material to be read and understood, not as complete, out-of-the-box solutions to whatever problem you may have. You may be able to use some of the code with modification, but it's important to be able to examine and understand the code.
 
