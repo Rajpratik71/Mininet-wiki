@@ -175,6 +175,9 @@ For example, here is a simple network topology (based on
 `mininet/topo.py:SingleSwitchTopo`) which consists of a specified number
 of hosts (`h1` through `hN`) connected to a single switch (`s1`):
 
+Note that this is the recommended (simplified) topology syntax introduced
+in Mininet 2.2:
+
 ```python
 	#!/usr/bin/python
 	
@@ -185,9 +188,7 @@ of hosts (`h1` through `hN`) connected to a single switch (`s1`):
 	
 	class SingleSwitchTopo(Topo):
 	    "Single switch connected to n hosts."
-	    def __init__(self, n=2, **opts):
-	        # Initialize topology and default options
-	        Topo.__init__(self, **opts)
+	    def build(self, n=2, **opts):
 	        switch = self.addSwitch('s1')
 	        # Python's range(N) generates 0..N-1
 	        for h in range(n):
@@ -216,6 +217,8 @@ include:
 
 `Topo`: the base class for Mininet topologies
 
+`build`: The method to override in your topology class. Constructor parameters (`n`) will be passed through to it automatically by `Topo.__init__()`.
+
 `addSwitch()`: adds a switch to a topology and returns the switch name
 
 `addHost()`: adds a host to a topology and returns the host name
@@ -239,6 +242,22 @@ other
 level; 'info' is recommended as it provides useful information.
 
 Additional example code may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
+
+**Note for earlier Mininet Versions**
+The topology API has changed slightly across different versions of Mininet. In 1.0, methods such as `addSwitch` and `addHost` were called `add_switch` and `add_host`. Additonally, in both 1.0 and 2.0, the preferred method to override was `__init__` rather than `build`:
+
+```python
+	class SingleSwitchTopo(Topo):
+	    "Single switch connected to n hosts."
+	    def __init__(self, n=2, **opts):
+	        # Initialize topology and default options
+	        Topo.__init__(self, **opts)
+	        switch = self.addSwitch('s1')
+	        # Python's range(N) generates 0..N-1
+	        for h in range(n):
+	            host = self.addHost('h%s' % (h + 1))
+	            self.addLink(host, switch)
+```
 
 <a name=setting></a>
 
