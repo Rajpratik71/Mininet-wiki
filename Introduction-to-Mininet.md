@@ -659,7 +659,9 @@ hosts.
 Additional examples of Mininet scripts may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
 
 The examples are intended to be educational as they demonstrate different ways
-that the Mininet API may be used.
+that the Mininet API may be used. We encourage you to try both *reading* the
+Python code and *running* the examples themselves. If they don't work for some
+reason, see if you can figure out why!
 
 You may find some of them (e.g. [`consoles.py`](https://github.com/mininet/mininet/tree/master/examples/consoles.py))
 to be interesting demonstrations that you can build upon.
