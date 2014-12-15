@@ -719,8 +719,7 @@ High-level API: Topology templates
 ```python
 class SingleSwitchTopo( Topo ):                                                                                               
     "Single Switch Topology"                                                                                                  
-    def __init__( self, count=1, **params ):                                                                                      
-        Topo.__init__( self, **params )                                                                                       
+    def build( self, count=1 ):                                                                                      
         hosts = [ self.addHost( 'h%d' % i )                                                                                   
                   for i in range( 1, count + 1 ) ]                                                                                
         s1 = self.addSwitch( 's1' )                                                                                           
@@ -735,7 +734,7 @@ net.stop()
 
 As you can see, the mid-level API is a bit simpler because it doesn't require creation of a topology class. The low-level and mid-level APIs are flexible and powerful, but may be less convenient to reuse compared to the high-level `Topo` API.
 
-Note also that the high-level `Topo` currently doesn't support multiple links between nodes, but the lower level APIs do. Currently `Topo` also doesn't concern itself with which switches are controlled by which controllers (you can use a custom `Switch` subclass to do this, as described above.) With the mid-level and low-level APIs, you can manually start the switches if desired, passing the appropriate list of controllers to each switch.
+Note also that in Mininet versions before 2.2.0 the high-level `Topo` doesn't support multiple links between nodes, but the lower level APIs do. Currently `Topo` also doesn't concern itself with which switches are controlled by which controllers (you can use a custom `Switch` subclass to do this, as described above.) With the mid-level and low-level APIs, you can manually start the switches if desired, passing the appropriate list of controllers to each switch.
 
 <a name=api></a>
 ### Mininet API Documentation
