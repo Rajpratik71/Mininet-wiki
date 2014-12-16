@@ -30,7 +30,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Presentations and Slides
 
-* [[slides and materials | SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]]
+* SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet [[(slides and materials) | SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]]
 
   This is our [[tutorial from SIGCOMM 2014 | http://conferences.sigcomm.org/sigcomm/2014/tutorial-mininet.php ]] where we provided an introduction to Mininet and shared experiences using Mininet to tech computer networking at Stanford, Georgia Tech and MIT as well as in MOOCs (massive open online courses.)
 
