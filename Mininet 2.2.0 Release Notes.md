@@ -61,7 +61,17 @@ if you are using addresses in the same range in your LAN. You can change this ra
 
 * [Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance.](https://github.com/mininet/mininet/issues/228) This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
 
-* [IPv6 keeps coming back, even though we try to disable it!](https://github.com/mininet/mininet/issues/454) Although it's good that IPv6 is now correctly virtualized, this means that the Mininet VM does not now disable IPv6 globally as intended. This means that unless you disable IPv6 in each Mininet host, you may see IPv6's irritating neighbor discovery packets. On the up side, it is now easier to use IPv6 in Mininet.
+* [IPv6 keeps coming back, even though we try to disable it!](https://github.com/mininet/mininet/issues/454) Although it's good that IPv6 is now correctly virtualized, this means that the Mininet VM does not now disable IPv6 globally as intended. This means that unless you disable IPv6 in each Mininet host, you may see IPv6's irritating neighbor discovery packets. On the up side, it is now easier to use IPv6 in Mininet. If you wish to disable IPv6
+permanently in your VM, edit the following line in `/etc/default/grub`:
+
+    GRUB_CMDLINE_LINUX_DEFAULT="ipv6.disable=1 text"
+
+then run
+
+    sudo update-grub
+
+and reboot. IPv6 should be dead (finally?!)
+
 
 * Currently `--host rt` may not work correctly when installed with `apt-get install mininet` on Ubuntu 12.04.5. The `mininet` package is missing the `cgroup-bin` dependency. To fix this, `apt-get install cgroup-bin`. Also see below.
 
