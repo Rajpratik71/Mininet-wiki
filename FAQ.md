@@ -21,6 +21,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
+* [Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)](#internet-in-vm)
 
 ### Using Mininet
 
@@ -252,6 +253,21 @@ Note: On a Mac laptop using VMware Fusion, you may need to type `fn``control``op
 Unfortunately, when VirtualBox was updated to 4.3.4, it stopped being able to import some versions of the Mininet `.ovf` file. Some other VMMs may also not be able to import it directly, but there is an easy workaround:
 
 If you extract the `.zip` file, you should see a `.vmdk` disk image file. You should be able to create a new virtual machine in VirtualBox/VMware/etc. - and you should be able to specify that this new VM should use an existing disk image file, and you should select the Mininet `.vmdk` file. Configure, boot, and enjoy!
+
+***
+<a name="internet-in-vm" />
+
+### Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)
+
+In VirtualBox, you need two different network interfaces set up if you want to both access the internet from your VM and access your VM from the host. One of them should be a **NAT** interface (to get to the internet), and the other should be a **host-only** interface (to get to, well, the host). Set up the interfaces in VirtualBox that way, then add eth0 and eth1 lines in the VM's `/etc/network/interfaces` as below: 
+
+    # The host-only interface
+    auto eth0
+    iface eth0 inet dhcp
+    
+    # The internet interface
+    auto eth1
+    iface eth1 inet dhcp
 
 ***
 <a name="python-api"/>
