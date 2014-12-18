@@ -259,7 +259,7 @@ If you extract the `.zip` file, you should see a `.vmdk` disk image file. You sh
 
 ### Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)
 
-In VirtualBox, you need two different network interfaces set up if you want to both access the internet from your VM and access your VM from the host. One of them should be a **NAT** interface (to get to the internet), and the other should be a **host-only** interface (to get to, well, the host). Set up the interfaces in VirtualBox that way, then add eth0 and eth1 lines in the VM's `/etc/network/interfaces` as below: 
+In VirtualBox, you need two different network interfaces set up if you want to both access the internet from your VM and access your VM from the host. One of them should be a **NAT** interface (to get to the internet), and the other should be a **host-only** interface (to get to, well, the host). Set up the interfaces in VirtualBox that way, then add `eth0` and `eth1` lines in the VM's `/etc/network/interfaces` as below: 
 
     # The host-only interface
     auto eth0
