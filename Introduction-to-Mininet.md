@@ -799,8 +799,7 @@ familiar with.
 ### OpenFlow and Custom Routing
 
 One of Mininet's most powerful and useful features is that it uses
-**Software Defined Networking**. Using the OpenFlow
-(<https://www.opennetworking.org/sdn-resources/openflow>) protocol and related tools, you can
+**Software Defined Networking**. Using the [OpenFlow](https://www.opennetworking.org/sdn-resources/openflow) protocol and related tools, you can
 program switches to do almost anything you want with the packets that
 enter them. OpenFlow makes emulators like Mininet much more useful, since
 network system designs, including custom packet forwarding with OpenFlow,
