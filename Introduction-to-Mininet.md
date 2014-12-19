@@ -808,7 +808,7 @@ can easily be transferred to hardware OpenFlow switches for line-rate operation.
 A tutorial for creating a simple learning switch using Mininet and OpenFlow may be
 found at:
 
-<http://www.openflow.org/wk/index.php/OpenFlow_Tutorial>
+<https://github.com/mininet/openflow-tutorial/wiki>
 
 <a name=controllers></a>
 #### OpenFlow Controllers
