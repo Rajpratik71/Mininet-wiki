@@ -1,4 +1,4 @@
-For your convenience, we provide pre-built VM images including Mininet and other useful software. The VM images are in zipped `.ovf` format (including `.vmdk` disk images), and should and should be usable with any modern x86 virtualization system. For information on using these VM images and/or installing Mininet from source, please see http://mininet.org/download
+For your convenience, we provide pre-built VM images including Mininet and other useful software. The VM images are in zipped `.ovf` format (including `.vmdk` disk images), and should and should be usable with any modern x86 virtualization system. Please read http://mininet.org/download for instructions for using these VM images and/or installing Mininet from source. 
 
 _Note: The download will take some time; it’s 800MB - 1GB compressed._
 
