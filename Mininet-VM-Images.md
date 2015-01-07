@@ -1,5 +1,7 @@
 For your convenience, we provide pre-built VM images including Mininet and other useful software. The VM images are in zipped `.ovf` format (including `.vmdk` disk images), and should and should be usable with any modern x86 virtualization system. For information on using these VM images and/or installing Mininet from source, please see http://mininet.org/download
 
+_Note: The download will take some time; it’s 800MB - 1GB compressed._
+
 ### Recent Releases
 
 * **Mininet 2.2.0 on Ubuntu 14.04**
@@ -15,5 +17,3 @@ For your convenience, we provide pre-built VM images including Mininet and other
 ### Older Releases
 
 * [Mininet 2.0.0](https://github.com/mininet/mininet/downloads/) (deprecated)
-
-_Note: The download will take some time; it’s 800MB - 1GB compressed._
