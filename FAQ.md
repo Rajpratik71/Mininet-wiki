@@ -686,4 +686,3 @@ No, because:
 [[ACM | http://dl.acm.org]], [[IEEE | http://ieeexplore.ieee.org]], and [[USENIX | http://static.usenix.org/publications/library/]], 
 and also learn [[how to do a literature search | http://blizzard.cs.uwaterloo.ca/keshav/home/Papers/data/07/paper-reading.pdf]]
 * It's the job of your advisor/TAs/school/company/self to teach/train you, so make them do their job!
-* Learning how to teach 
