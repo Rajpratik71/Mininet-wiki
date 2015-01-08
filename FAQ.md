@@ -481,7 +481,7 @@ the comments in the example's `.py` file for details.
 
 `dpctl` should work fine with the Stanford OpenFlow reference implementation or the CPqD version of same.
 
-But you probably don't want to use `dpctl` - use `ovs-ofctl` instead! Especially if you're running Open vSwitch - `ovs-ofctl` it's particularly easy to use with OVS and, importantly, will actually dump the complete flow table (unlike `ovs-dpctl`!)
+But **you probably don't want to use `dpctl` at all - use `ovs-ofctl` instead!** Especially if you're running Open vSwitch - `ovs-ofctl` it's particularly easy to use with OVS and, importantly, will actually dump the complete flow table (unlike `ovs-dpctl`!)
 
 If you're running Open vSwitch, or need to open up a listening port on either OVS or the reference switch so that you can connect to a port, read on...
 
