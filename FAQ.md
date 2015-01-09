@@ -227,6 +227,8 @@ In the mean time, you might try something like:
 
 lather/rinse/repeat if you have multiple Mininet packages installed.
 
+Note that this procedure will simply uninstall Mininet itself - it will not remove Open vSwitch, the Stanford reference switch or controller, or any other related software which may be installed on your system.
+
 ***
 <a name="virtualbox-error"/>
 ### Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?
