@@ -209,13 +209,13 @@ Instructions for native installation can be found at <http://mininet.github.com/
 <a name="uninstall"/>
 ### How can I **uninstall Mininet**?
 
-If you installed with `apt-get`, you can
+If you installed Mininet using `apt-get install mininet`, you can uninstall it using:
 
-    apt-get remove mininet.
+    apt-get remove mininet
 
 If you installed from source, there isn’t currently an automatic way to uninstall it.
 
-(If someone would like to add reliable, verified uninstall target and/or install.sh option, we’d welcome a pull request!)
+(If someone would like to add reliable, verified uninstall target and/or `install.sh` option, we’d welcome a pull request!)
 
 In the mean time, you might try something like:
 
