@@ -18,6 +18,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [X11 forwarding is too hard! Can't I just **run a GUI in my VM** console window?](#vm-console-gui)
 * [Can I run a **GUI/X11 application** within a Mininet host?](#vm-gui-mininethost)
 * [How can I do a **install Mininet natively** on my Linux machine?](#native-install)
+* [How can I **uninstall Mininet**?](#uninstall)
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
@@ -202,6 +203,29 @@ If you are incredibly lazy, please at least look at the [[Sample Workflow | http
 ### How can I **install Mininet natively** on my Linux machine?
 
 Instructions for native installation can be found at <http://mininet.github.com/download> and in [`INSTALL`](https://github.com/mininet/mininet/tree/master/INSTALL).
+
+
+***
+<a name="uninstall"/>
+### How can I **uninstall Mininet**?
+
+If you installed with `apt-get`, you can
+
+    apt-get remove mininet.
+
+If you installed from source, there isn’t currently an automatic way to uninstall it.
+
+(If someone would like to add reliable, verified uninstall target and/or install.sh option, we’d welcome a pull request!)
+
+In the mean time, you might try something like:
+
+    sudo pip uninstall mininet
+    sudo rm `which mn`
+    sudo rm `which mnexec`
+    sudo rm /usr/share/man/man1/mn.1*
+    sudo rm /usr/share/man/man1/mnexec.1*
+
+lather/rinse/repeat if you have multiple Mininet packages installed.
 
 ***
 <a name="virtualbox-error"/>
