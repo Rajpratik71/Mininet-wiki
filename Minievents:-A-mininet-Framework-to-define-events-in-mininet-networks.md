@@ -65,6 +65,7 @@ The *iperf* client and server process outputs to the files:
 
 ## Authoring
 
-* Carlos Giraldo
+* Carlos Giraldo carlos.giraldo@gti.uvigo.es
+
 AtlantTIC Research Center, University of Vigo, Spain
 http://atlanttic.uvigo.es/en/
