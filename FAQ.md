@@ -385,9 +385,16 @@ Transparent bridging of L2/Ethernet networks doesn't work if the topology has lo
 
 The OpenFlow reference controller (`controller`) implements a bridge/learning switch, as does `ovs-controller` and/or `test-controller` (currently the default controllers for Mininet), as does NOX's `pyswitch` module, and they don't implement a spanning-tree protocol by default. As a result, they **will not work with a network that has loops in it**.
 
-In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `ovs-controller`, `controller` and `pyswitch` **do not** by default. NOX classic and POX include spanning tree modules, which you may wish to investigate. Additionally, certain controller platforms such as [ONOS](http://onosproject.org), [Floodlight](http://projectfloodlight.org) or [ODL] (http://opendaylight.org) **may** support certain networks with loops in them automatically - you will want to consult the documentation for your controller, make sure it is configured correctly to support multipath and/or looped  networks, and test it to make sure that it actually works. A simple test is to use RemoteController pointed at your controller and use the `torus` topology, e.g.:
+In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `ovs-controller`, `controller` and `pyswitch` **do not** by default. POX includes a spanning tree module, and other controllers (Floodlight, ONOS, ODL, etc.) **may** support multipath and/or spanning tree - you will want to consult the documentation for your controller, make sure it is configured correctly to support multipath or spanning tree, and test it to make sure that it actually works. A simple test is to use RemoteController pointed at your controller and use the `torus` topology, e.g.:
 
     sudo mn --topo torus,3,3  --controller remote,ip=<controller ip address>,port=<controller port>
+
+Please feel free to fill in this chart with results from various controllers:
+
+<table>
+<tr><td Controller /><td Version /><td Test /><td result /></tr>
+<tr><td>[ONOS](http://onosproject.org)</td><td 1.0 /><td>`mn --topo torus,8,8 --test pingall`</td><td pass /></tr>
+</table>
 
 "That sounds too much like work - I don't want to do any work!"
 
