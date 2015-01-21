@@ -379,7 +379,7 @@ The command line options are `--switch user` and `--switch ovsk` for the user re
 
 ### Why does my controller, which implements an Ethernet bridge or learning switch, not work with my network which has loops in it? I can't ping anything!
 
-tl;dr: use `--switch lxbr,stp=1` or `--switch ovsbr,stp=1`
+tl;dr: use `--switch lxbr,stp=1` or `--switch ovsbr,stp=1` and wait for STP to converge.
 
 **It doesn't work because your network has loops in it.**
 
@@ -417,6 +417,10 @@ In the current master branch, you can also use OVS in bridging mode:
 or the more compact:
 
     sudo mn --topo torus,3,3 --switch ovsbr,stp=1
+
+You will need to **wait for STP to converge**. You can observe its progress with `sh brctl show s1` (LinuxBridge) or `sh ovs-ofctl show s1`) (OVS Bridge.) You can also call `net.waitConnected()` to wait for STP to converge:
+
+    mininet> py net.waitConnected()
 
 As noted above, running spanning tree removes any performance improvement from multipath networks, although it can still provide redundancy for reliability (if you deactivate a link, STP can compute a new spanning tree that uses a different link and restores connectivity.)
 
