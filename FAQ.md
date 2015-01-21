@@ -447,6 +447,8 @@ Make sure you've installed the Mininet version of the OpenFlow reference control
 
 You can also create a custom controller class or use `--controller external:IP` and use any custom or off-the-shelf controller that you like. For example, ou can easily install POX by checking it out or using `util/install.sh -p`, and you can install Floodlight on Ubuntu using `apt-get install floodlight`.
 
+If you are using the default controller or any controller which implements an Ethernet bridge (aka learning switch), be sure that your network does not have loops in it or that you have activated spanning tree.
+
 *** 
 <a name="remote-control"/>
 
