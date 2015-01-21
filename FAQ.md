@@ -420,6 +420,8 @@ You will need to **wait for STP to converge**. You can observe its progress with
 
     mininet> py net.waitConnected()
 
+Note that if you are running a *remote* controller (rather than a local OVS or Linux bridge as suggested here), `waitConnected()` will only wait for the switches to *connect* to your controller. If you are using a remote controller, you should check the controller console or logs for any updates.
+
 As noted above, running spanning tree removes any performance improvement from multipath networks, although it can still provide redundancy for reliability (if you deactivate a link, STP can compute a new spanning tree that uses a different link and restores connectivity.)
 
 If you wish to code your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
