@@ -394,7 +394,7 @@ Please feel free to fill in this chart with results from various controllers:
 <table>
 <tr><th>controller</th><th>version</th><th>test</th><th>result</th></tr>
 <tr>
-<td><a href="onos">http://onosproject.org</a></td>
+<td><a href="http://onosproject.org">ONOS</a></td>
 <td>1.0</td>
 <td><tt>mn --topo torus,8,8 --test pingall</tt></td>
 <td>pass</td>
