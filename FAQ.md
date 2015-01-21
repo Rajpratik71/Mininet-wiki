@@ -379,6 +379,8 @@ The command line options are `--switch user` and `--switch ovsk` for the user re
 
 ### Why does my controller, which implements an Ethernet bridge or learning switch, not work with my network which has loops in it? I can't ping anything!
 
+tl;dr: use `--switch lxbr,stp=1` or `--switch ovsbr,stp=1`
+
 It doesn't work because your network has loops in it.
 
 Transparent bridging of L2/Ethernet networks doesn't work if the topology has loops in it, for a variety of reasons: ARP does broadcasts, packets are flooded by default, learning switches don't deal well with seeing the same MAC address on multiple ports and could potentially learn a route to themselves, and Ethernet frames don't have a time to live field (TTL) the way IP packets do (otherwise flooding might work, if inefficiently.) As a result, many Ethernet bridges implement variants of a Spanning Tree Protocol (STP), which simply deactivates links in the network to remove loops. Of course, this also throws away network bandwidth that you could otherwise be using, and creates a bottleneck at the root of the tree!
