@@ -392,9 +392,9 @@ In general, if you want to use a network with loops in it, you need to be absolu
 Please feel free to fill in this chart with results from various controllers:
 
 <table>
-<tr><td>Controller</td><td>Version</td><td>Test</td><td>result</td></tr>
+<tr><th>controller</th><th>version</th><th>test</th><th>result</th></tr>
 <tr>
-<td><a href="onos">http://onosproject.org)</a></td>
+<td><a href="onos">http://onosproject.org</a></td>
 <td>1.0</td>
 <td><tt>mn --topo torus,8,8 --test pingall</tt></td>
 <td>pass</td>
