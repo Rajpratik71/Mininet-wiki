@@ -394,12 +394,13 @@ In general, if you want to use a network with loops in it, you need to be absolu
 Please feel free to fill in this chart with results from various controllers:
 
 <table>
-<tr><th>controller</th><th>version</th><th>topo</th><th>result</th></tr>
+<tr><th>controller</th><th>version</th><th>topo</th><th>result</th><th>other info</th></tr>
 <tr>
 <td><a href="http://onosproject.org">ONOS</a></td>
 <td>1.0</td>
 <td><tt>--torus 8,8</tt></td>
 <td>success</td>
+<td>need to create proactive routes or start reactive forwarding</td>
 </tr>
 </table>
 
