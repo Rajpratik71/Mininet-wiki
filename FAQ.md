@@ -385,11 +385,25 @@ Transparent bridging of L2/Ethernet networks doesn't work if the topology has lo
 
 The OpenFlow reference controller (`controller`) implements a bridge/learning switch, as does `ovs-controller` (currently the default controller for Mininet), as does NOX's `pyswitch` module, and they don't implement a spanning-tree protocol by default. As a result, they **will not work with a network that has loops in it**.
 
-In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `ovs-controller`, `controller` and `pyswitch` **do not** by default. NOX classic and POX include spanning tree modules, which you may wish to investigate.
+In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `ovs-controller`, `controller` and `pyswitch` **do not** by default. NOX classic and POX include spanning tree modules, which you may wish to investigate. Additionally, certain controllers such as ONOS and Floodlight may support certain networks with loops in them automatically - you will want to consult the documentation for your controller and test it to make sure that it actually works. A simple test is to use RemoteController pointed at your controller and use the `torus` topology, e.g.:
+
+    sudo mn --topo torus,3,3  --controller remote,ip=<controller ip address>,port=<controller port>
 
 "That sounds too much like work - I don't want to do any work!"
 
-You may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
+If you just want to get your network "working", you can run STP. In Mininet 2.2 you can use the Linux bridge:
+
+    sudo mn --topo torus,3,3 --switch lxbr,stp=1
+
+In the current master branch, you can also use OVS in bridging mode:
+
+    sudo mn --topo torus,3,3 --switch ovs,failMode=standalone,stp=1
+
+or the more compact:
+
+    sudo mn --topo torus,3,3 --switch ovsbr,stp=1
+
+If you wish to implement your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
 
 ***
 <a name="assign-macs"/>
