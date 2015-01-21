@@ -416,7 +416,7 @@ or the more compact:
 
     sudo mn --topo torus,3,3 --switch ovsbr,stp=1
 
-You will need to **wait for STP to converge**. You can observe its progress with `sh brctl show s1` (LinuxBridge) or `sh ovs-ofctl show s1`) (OVS Bridge.) You can also call `net.waitConnected()` to wait for STP to converge:
+You will need to **wait for STP to converge**. You can observe its progress with `sh brctl show s1` (`LinuxBridge`) or `sh ovs-ofctl show s1`) (`OVSBridge`.) You can also call `net.waitConnected()` to wait for STP to converge:
 
     mininet> py net.waitConnected()
 
