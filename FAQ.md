@@ -381,9 +381,9 @@ The command line options are `--switch user` and `--switch ovsk` for the user re
 
 It doesn't work because your network has loops in it.
 
-Transparent bridging of L2/Ethernet networks doesn't work if the topology has loops in it, for a variety of reasons: ARP does broadcasts, packets are flooded by default, learning switches don't deal well with seeing the same MAC address on multiple ports and could potentially learn a route to themselves, and Ethernet frames don't have a time to live field (TTL) like IP packets (otherwise flooding might work, if inefficiently.) As a result, many Ethernet bridges implement variants of a Spanning Tree Protocol (STP), which simply deactivates links in the network to remove loops. Of course, this also throws away network bandwidth that you could otherwise be using, and creates a bottleneck at the root of the tree.
+Transparent bridging of L2/Ethernet networks doesn't work if the topology has loops in it, for a variety of reasons: ARP does broadcasts, packets are flooded by default, learning switches don't deal well with seeing the same MAC address on multiple ports and could potentially learn a route to themselves, and Ethernet frames don't have a time to live field (TTL) the way IP packets do (otherwise flooding might work, if inefficiently.) As a result, many Ethernet bridges implement variants of a Spanning Tree Protocol (STP), which simply deactivates links in the network to remove loops. Of course, this also throws away network bandwidth that you could otherwise be using, and creates a bottleneck at the root of the tree!
 
-The OpenFlow reference controller (`controller`) implements a bridge/learning switch, as does `ovs-controller` (currently the default controller for Mininet), as does NOX's `pyswitch` module, and they don't implement a spanning-tree protocol by default. As a result, they **will not work with a network that has loops in it**.
+The OpenFlow reference controller (`controller`) implements a bridge/learning switch, as does `ovs-controller` and/or `test-controller` (currently the default controllers for Mininet), as does NOX's `pyswitch` module, and they don't implement a spanning-tree protocol by default. As a result, they **will not work with a network that has loops in it**.
 
 In general, if you want to use a network with loops in it, you need to be absolutely sure that your controller supports such a network. As mentioned above, `ovs-controller`, `controller` and `pyswitch` **do not** by default. NOX classic and POX include spanning tree modules, which you may wish to investigate. Additionally, certain controllers such as ONOS and Floodlight may support certain networks with loops in them automatically - you will want to consult the documentation for your controller and test it to make sure that it actually works. A simple test is to use RemoteController pointed at your controller and use the `torus` topology, e.g.:
 
@@ -402,6 +402,8 @@ In the current master branch, you can also use OVS in bridging mode:
 or the more compact:
 
     sudo mn --topo torus,3,3 --switch ovsbr,stp=1
+
+As noted above, running spanning tree removes any performance improvement from multipath networks, although it can still provide redundancy for reliability (if you deactivate a link, STP can compute a new spanning tree that uses a different link and restores connectivity.)
 
 If you wish to implement your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
 
