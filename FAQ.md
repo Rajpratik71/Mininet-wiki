@@ -391,7 +391,7 @@ In general, if you want to use a network with loops in it, you need to be absolu
 
     sudo mn --topo torus,3,3  --controller remote,ip=<controller ip address>,port=<controller port>
 
-Please feel free to fill in this chart with results from various controllers:
+Please feel free to fill in this chart with test results from various controllers:
 
 <table>
 <tr><th>controller</th><th>version</th><th>topo</th><th>result</th><th>notes</th></tr>
@@ -403,8 +403,6 @@ Please feel free to fill in this chart with results from various controllers:
 <td>need to create proactive routes or start reactive forwarding</td>
 </tr>
 </table>
-
-"That sounds too much like work - I don't want to do any work!"
 
 If you just want to get your network "working", you can run STP. In Mininet 2.2 you can use the Linux bridge:
 
@@ -424,7 +422,7 @@ You will need to **wait for STP to converge**. You can observe its progress with
 
 As noted above, running spanning tree removes any performance improvement from multipath networks, although it can still provide redundancy for reliability (if you deactivate a link, STP can compute a new spanning tree that uses a different link and restores connectivity.)
 
-If you wish to implement your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
+If you wish to code your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
 
 ***
 <a name="assign-macs"/>
