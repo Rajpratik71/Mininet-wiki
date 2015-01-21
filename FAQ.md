@@ -299,6 +299,8 @@ In VirtualBox, you need two different network interfaces set up if you want to b
 <a name="python-api"/>
 ### How do I **use Mininet's Python API**?
 
+Congratulations! You are asking the right question!! The Python API open's up Mininet's full potential.
+
 Check out the [[Introduction to Mininet]] for an introduction to Mininet and its Python API.
 
 Several useful examples of using the Python API can also be found in the [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples) directory.
