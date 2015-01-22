@@ -14,7 +14,7 @@ cd mininet
 ./util/install.sh -fnv
 ```
 
-Note: older versions of the assignments required you to check out an older version of Mininet before installing, but this should no longer be necessary:
+Note: older versions of the assignments required you to check out an older version of Mininet before running ```install.sh```, but this should no longer be necessary:
 ```git checkout remotes/origin/class/cs244```
 
 ### Install POX
