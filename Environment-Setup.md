@@ -11,9 +11,10 @@ sudo apt-get install -y git vim-nox python-setuptools libpython-all-dev flex bis
 cd ~
 git clone git://github.com/mininet/mininet
 cd mininet
-git checkout remotes/origin/class/cs244
 ./util/install.sh -fnv
 ```
+<! was: git checkout remotes/origin/class/cs244 ->
+
 ### Install POX
 ```no-highlight
 cd ~
