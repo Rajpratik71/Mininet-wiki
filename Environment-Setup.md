@@ -1,6 +1,6 @@
 The following instructions will guide you through how to set up the environment for the [[programming assignments|Assignments]]. The first set of instructions is for working with a local machine or VM running Ubuntu. We also provide an Amazon EC2 AMI image with everything set up for people would like to run the lab on EC2 (ami-96139ba6, Oregon Region). You can find instructions on how to use an EC2 AMI image below. **(Note: We strongly encourage you to use EC2 AMI image, since you can avoid version problems ad POX/Mininet are open source projects and will continue to evolve.)**
 
-## Use Your Own Ubuntu Machine
+## Use Your Own Ubuntu Machine or VM
 ### Install Needed Tools
 ```no-highlight
 sudo apt-get update
