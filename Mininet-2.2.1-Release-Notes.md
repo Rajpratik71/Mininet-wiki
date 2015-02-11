@@ -4,7 +4,7 @@ Mininet 2.2.1 will be primarily a performance enhancement and bug fix release to
 
 ### API Changes
 
-2.2.1 is generally compatible with the 2.0 API, but some minor changes have been made for performance reasons, and you should be aware of them since they could cause unexpected behavior.
+2.2.1 is compatible with the 2.0 API, but some minor changes have been made for performance reasons, and you should be aware of them since they could cause unexpected behavior.
 
 - links not added using `addLink()` will not be cleaned up automatically in `Mininet.stop()`. Note that `sshd.py` has changed slightly to reflect this. `controlnet.py` has also changed. The symptom you may observe is that links may be left in the root namespace. They may be deleted using `mn -c` or `mininet.clean.cleanup()`
 
