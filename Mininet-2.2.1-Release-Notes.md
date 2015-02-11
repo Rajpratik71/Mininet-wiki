@@ -2,7 +2,7 @@
 
 Mininet 2.2.1 will be primarily a performance enhancement release to Mininet 2.2.0.
 
-Some important changes:
+### Important Changes (which might break your code, but hopefully not)
 
 - By default, `OVSSwitch`es are now started up *and* shut down in batch operations, using `batchStartup()` and `batchShutdown()`
 
