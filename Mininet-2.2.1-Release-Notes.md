@@ -2,11 +2,17 @@
 
 Mininet 2.2.1 will be primarily a performance enhancement release to Mininet 2.2.0.
 
-### Important API Changes
+### API Changes
 
-- links not added using `addLink()` will not be cleaned up automatically in `Mininet.stop()`. Note that `sshd.py` has changed slightly to reflect this. `controlnet.py` has also changed.
+2.2.1 is generally compatible with the 2.0 API, but some minor changes have been made for performance reasons, and you should be aware of them since they could cause unexpected behavior.
+
+- links not added using `addLink()` will not be cleaned up automatically in `Mininet.stop()`. Note that `sshd.py` has changed slightly to reflect this. `controlnet.py` has also changed. The symptom you may observe is that links may be left in the root namespace. They may be deleted using `mn -c` or `mininet.clean.cleanup()`
 
 - `printPid` is now `False` by default in `Node.cmd()` and `Node.sendCmd()`
+
+- `mininet.clean.cleanup()` has been reorganized and now uses a class.
+
+- Some silent command failures may now cause exceptions. If you encounter unexpected exceptions, you may wish to run with `setLogLevel('debug')` (or `--v debug`) to see what is going on.
 
 #### OVS Patch Links
 
