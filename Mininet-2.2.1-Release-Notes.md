@@ -28,4 +28,4 @@ However, **OVSLinks have several serious limitations**, including the following:
 
 4. Based on our experience so far, no more than ~64 `OVSLinks` should be used in a row. This means that a command like `mn --topo linear,64 --test iperf` will work, but `mn --topo linear,80 --test iperf` will fail.
 
-That being said, if you want the fastest possible data rates on small-diameter networks, you may wish to try `OVSLink`s. If they don't work, just go back to regular links.
+That being said, if you want the fastest possible data rates on small-diameter networks, you may wish to try `OVSLink`. If it doesn't work, just go back to regular links.
