@@ -2,9 +2,7 @@
 
 Mininet 2.2.1 will be primarily a performance enhancement release to Mininet 2.2.0.
 
-### Important Changes (which might break your code, but hopefully not)
-
-- By default, `OVSSwitch`es are now started up *and* shut down in batch operations, using `batchStartup()` and `batchShutdown()`
+### Important API Changes
 
 - links not added using `addLink()` will not be cleaned up automatically in `Mininet.stop()`. Note that `sshd.py` has changed slightly to reflect this. `controlnet.py` has also changed.
 
