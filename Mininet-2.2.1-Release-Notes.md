@@ -12,7 +12,7 @@ Mininet 2.2.1 will be primarily a performance enhancement and bug fix release to
 
 - `mininet.clean.cleanup()` has been reorganized and now uses a class.
 
-- Some silent command failures may now cause exceptions. If you encounter unexpected exceptions, you may wish to run with `setLogLevel('debug')` (or `--v debug`) to see what is going on.
+- Some previously silent command failures may now cause exceptions. If you encounter unexpected exceptions, you may wish to run with `setLogLevel('debug')` (or `--v debug`) to see what is going on.
 
 - As the Linux kernel matures, it becomes less necessary to have secondary checks as to whether an operation succeeded and try again (as seen with the infamous "gave up after 3 tries" messages) so these checks (and retries) are being removed. This may expose issues which were previously hidden on older Linux kernels.
 
