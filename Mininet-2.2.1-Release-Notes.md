@@ -14,6 +14,8 @@ Mininet 2.2.1 will be primarily a performance enhancement release to Mininet 2.2
 
 - Some silent command failures may now cause exceptions. If you encounter unexpected exceptions, you may wish to run with `setLogLevel('debug')` (or `--v debug`) to see what is going on.
 
+- As the Linux kernel matures, it becomes less necessary to have secondary checks as to whether an operation succeeded and try again (as seen with the infamous "gave up after 3 tries" messages) so these checks (and retries) are being removed. This may expose issues which were previously hidden on older Linux kernels.
+
 #### OVS Patch Links
 
 An `OVSLink` (`--link ovs`) class has been added which implements OVS patch links. Unlike `veth` pairs, OVS Patch Links are virtual entities within OVS itself, and can potentially support much higher data rates (particularly over multiple links, probably due to OVS's flow rule optimization) as well as slightly faster startup time.
