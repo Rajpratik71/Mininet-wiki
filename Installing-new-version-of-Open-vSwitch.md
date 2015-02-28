@@ -33,6 +33,8 @@ Build and install option 2 (Build Debian packages and install):
     root@mininet-vm# cd ..
     root@mininet-vm# dpkg -i openvswitch-common*.deb openvswitch-datapath-dkms*.deb openvswitch-controller*.deb openvswitch-pki*.deb openvswitch-switch*.deb
 
+[TODO: As openvswitch-controller is no longer (after OVS v2.1) packaged and installed by default, some other means of installing openvswitch-controller (for testing purposes) should be documented here.]
+
 The one advantage to using the packages instead of direct binary install is that you can just use the same steps to upgrade to the next version of Open vSwitch.
 
 Then do some post install steps to keep the Open vSwitch Controller from starting automatically on boot:
