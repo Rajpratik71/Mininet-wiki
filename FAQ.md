@@ -366,7 +366,16 @@ If this script does not work for you, please make an effort to debug and fix the
 <a name="openflow-versions"/>
 ### Which **versions of OpenFlow** does Mininet support?
 
-Mininet officially supports OpenFlow 1.0, and the Mininet VM image includes OpenFlow 1.0-compatible versions of the OpenFlow reference implementation as well as Open vSwitch. It is also possible to get Mininet to run with OpenFlow 0.8.9 with a few minor changes. Recently, install.sh was updated to optionally install the CPqD version of the OpenFlow reference implementation and NOX classic, both of which support OpenFlow 1.3. Also, it is rumored that recent versions of Open vSwitch have partial support for OpenFlow 1.3, so you may be able to get these versions to run with Mininet as well.
+The Ubuntu 14.04 VM uses that release's package for Open vSwitch 2.0.2, which supports 1.0 by default; experimental 1.3 support can be enabled using `--switch ovs,protocols=OpenFlow13` from the command line, or passing `protocols=`OpenFlow13`` to the OVSSwitch constructor. For example:
+
+```python
+switch = partial( OVSSwitch, protocols='OpenFlow13' )
+net = Mininet( topo, switch=switch ... )
+```
+
+Open vSwitch 2.3 and newer support 1.3 by default. It is easy to install it using:
+
+    install.sh -V 2.3.1
 
 ***
 <a name="openflow-switches"/>
