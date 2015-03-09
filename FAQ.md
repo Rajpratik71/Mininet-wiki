@@ -687,8 +687,6 @@ Mininet usually uses the latest version of Open vSwitch that is included in that
 
     install.sh -V 2.3.1
 
-Will install version 2.3.1 of OVS, which supports OpenFlow 1.3 by default.
-
 ***
 <a name="ovs-reconfig"/>
 ### Help! I updated my Ubuntu kernel and now Open vSwitch won't start!
