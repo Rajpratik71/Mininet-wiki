@@ -356,12 +356,12 @@ class NatTopo( Topo ):
        self.addLink( nat1, s1 )
 ```
 
- * **Warning**: By default, all of these methods will reroute local
-   traffic originating at your Mininet server or VM and destined for
-   Mininet's IP subnet (`10.0.0.0/8` by default) to the        
-   Mininet network, which can break connectivity if you are using
-   addresses in the same range in your LAN. You can change this range
-   using the `--ipbase` option.
+**Warning**: By default, all of these methods will reroute local
+traffic originating at your Mininet server or VM and destined for
+Mininet's IP subnet (`10.0.0.0/8` by default) to the        
+Mininet network, which can break connectivity if you are using
+addresses in the same range in your LAN. You can change this range
+using the `--ipbase` option.
 
 Mininet 2.1.0: Look at `examples/nat.py`.
 
