@@ -331,10 +331,9 @@ However, you can set up NAT if you like.
 
 ### How can I set up NAT?
 
-Mininet 2.2.0: You can use `mn --nat`, or `Mininet.addNAT()`
-from the Python API.
+Mininet 2.2.0: You can use the **`mn --nat`** option.
 
-Example:
+You can also use `Mininet.addNAT()` from the Python API:
 
     net = Mininet( topo=... )
     net.addNAT().configDefault()
@@ -355,7 +354,7 @@ class NatTopo( Topo ):
        self.addLink( nat1, s1 )
 ```
 
- * **Warning**: By default, this will reroute local
+ * **Warning**: By default, all of these methods will reroute local
    traffic originating at your Mininet server or VM and destined for
    Mininet's IP subnet (`10.0.0.0/8` by default) to the        
    Mininet network, which can break connectivity if you are using
