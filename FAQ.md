@@ -555,7 +555,7 @@ the comments in the example's `.py` file for details.
 
 `dpctl` should work fine with the Stanford OpenFlow reference implementation or the CPqD version of same.
 
-But **you probably don't want to use `dpctl` at all - use `ovs-ofctl` instead!** Especially if you're running Open vSwitch - `ovs-ofctl` it's particularly easy to use with OVS and, importantly, will actually dump the complete flow table (unlike `ovs-dpctl`!)
+But **you probably don't want to use `dpctl` at all - use `ovs-ofctl` instead!** Especially if you're running install - `ovs-ofctl` it's particularly easy to use with OVS and, importantly, will actually dump the complete flow table (unlike `ovs-dpctl`!)
 
 If you're running Open vSwitch, or need to open up a listening port on either OVS or the reference switch so that you can connect to a port, read on...
 
@@ -679,8 +679,15 @@ Another way is to use the mid-level API, as shown in [`examples/controllers2.py`
 <a name="ovs-upgrade"/>
 ### Can I upgrade Open vSwitch to a newer version?
 
-Mininet usually uses the latest version of Open vSwitch that is included in that distribution's release.  You can easily upgrade to another version by following the instructions
-[here] (Installing-new-version-of-Open-vSwitch).
+Mininet usually uses the latest version of Open vSwitch that is included in that distribution's release. To find out what version you're running, you can use
+
+    ovs-vsctl --version
+
+`install.sh` includes an option to easily upgrade OVS to a new or different version:
+
+    install.sh -V 2.3.1
+
+Will install version 2.3.1 of OVS, which supports OpenFlow 1.3 by default.
 
 ***
 <a name="ovs-reconfig"/>
