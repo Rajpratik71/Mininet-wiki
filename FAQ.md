@@ -331,7 +331,9 @@ However, you can set up NAT if you like.
 
 ### How can I set up NAT?
 
-Mininet 2.2.0: You can use the **`mn --nat`** option.
+In Mininet 2.2 and newer, you can use the `--nat` option:
+
+    mn --nat ...
 
 You can also use `Mininet.addNAT()` from the Python API:
 
