@@ -336,10 +336,10 @@ from the Python API.
 
 Example:
 
-   net = Mininet( topo=... )
-   net.addNAT().configDefault()
-   net.start()
-   ...
+    net = Mininet( topo=... )
+    net.addNAT().configDefault()
+    net.start()
+    ...
 
 You can also add it into your topology; one possibility is something like:
 
