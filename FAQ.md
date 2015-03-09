@@ -335,6 +335,7 @@ Mininet 2.2.0: You can use `mn --nat`, or `Mininet.addNAT()`
 from the Python API.
 
 Example:
+
    net = Mininet( topo=... )
    net.addNAT().configDefault()
    net.start()
