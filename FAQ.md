@@ -340,7 +340,7 @@ Example:
    net.start()
    ...
 
-You can also add it into your topology:
+You can also add it into your topology; one possibility is something like:
 
 ```python
 class NatTopo( Topo ):
