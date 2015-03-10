@@ -363,6 +363,36 @@ class NatTopo( Topo ):
        self.addLink( nat1, s1 )
 ```
 
+Or perhaps:
+
+```python
+def Natted( topoClass ):                                                                                         
+    "Return a customized Topo class based on topoClass"                                                          
+    class NattedTopo( topoClass ):                                                                               
+        "Customized topology with attached NAT"                                                                  
+        def build( self, *args, **kwargs ):                                                                      
+            """Build topo with NAT attachment                                                                    
+               natIP: local IP address of NAT node for routing (10.0.0.254)                                      
+               connect: switch to connect (s1)"""                                                                
+            self.natIP = kwargs.pop( 'natIP', '10.0.0.254')                                                      
+            self.connect = kwargs.pop( 'connect', 's1' )                                                         
+            self.hopts.update( defaultRoute='via ' + self.natIP )                                                
+            super( NattedTopo, self ).build( *args, **kwargs )                                                   
+            nat1 = self.addNode( 'nat1', cls=NAT, ip=self.natIP,                                                 
+                                 inNamespace=False )                                                             
+            self.addLink( self.connect, nat1 )                                                                   
+    return NattedTopo                                                                                            
+                                                                                                                 
+def natted( topoClass, *args, **kwargs ):                                                                        
+    "Create and invoke natted version of topoClass"                                                              
+    topoClass = Natted( topoClass )                                                                              
+    return topoClass( *args, **kwargs )                                                                          
+                                                                                                                 
+setLogLevel( 'info' )                                                                                            
+topo = natted( TreeTopo, depth=2, fanout=2 )                                                                     
+net = Mininet( topo=topo ) 
+```
+
 Mininet 2.1.0: Look at `examples/nat.py`.
 
 Mininet 2.0 and earlier:
