@@ -344,10 +344,12 @@ using the `--ipbase` option.
 
 You can also use `Mininet.addNAT()` from the Python API:
 
-    net = Mininet( topo=... )
-    net.addNAT().configDefault()
-    net.start()
-    ...
+```python
+net = Mininet( topo=... )
+net.addNAT().configDefault()
+net.start()
+...
+```
 
 You can also add it into your topology; one possibility is something like:
 
