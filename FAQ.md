@@ -388,9 +388,9 @@ def natted( topoClass, *args, **kwargs ):
     topoClass = Natted( topoClass )                                                                              
     return topoClass( *args, **kwargs )                                                                          
                                                                                                                  
-setLogLevel( 'info' )                                                                                            
 topo = natted( TreeTopo, depth=2, fanout=2 )                                                                     
-net = Mininet( topo=topo ) 
+net = Mininet( topo=topo )
+...
 ```
 
 Mininet 2.1.0: Look at `examples/nat.py`.
