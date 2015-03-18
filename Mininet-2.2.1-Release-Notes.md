@@ -17,7 +17,7 @@ Mininet 2.2.1 will be primarily a performance enhancement and bug fix release to
 - As the Linux kernel matures, it becomes less necessary to have secondary checks as to whether an operation succeeded and try again (as seen with the infamous "gave up after 3 tries" messages) so these checks (and retries) are being removed. This may expose issues which were previously hidden on older Linux kernels.
 
 - The Ryu controller class is now named `Ryu` instead of `RYU` - the new name reflects the correct
-  name, which is not an acronym.
+  project name, which is not an acronym.
 
 #### OVS Patch Links
 
