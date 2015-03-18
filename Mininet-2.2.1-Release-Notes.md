@@ -4,7 +4,7 @@ Mininet 2.2.1 will be primarily a performance enhancement and bug fix release to
 
 ### API Changes
 
-2.2.1 is compatible with the 2.0 API, but some minor changes have been made for performance reasons, and you should be aware of them since they could cause unexpected behavior.
+2.2.1 is compatible with the 2.0 API, but some minor changes have been made for performance or other reasons, and you should be aware of them since they could cause unexpected behavior.
 
 - links not added using `addLink()` will not be cleaned up automatically in `Mininet.stop()`. Note that `sshd.py` has changed slightly to reflect this. `controlnet.py` has also changed. The symptom you may observe is that links may be left in the root namespace. They may be deleted using `mn -c` or `mininet.clean.cleanup()`
 
@@ -15,6 +15,9 @@ Mininet 2.2.1 will be primarily a performance enhancement and bug fix release to
 - Some previously silent command failures may now cause exceptions due to using `errRun` rather than `quietRun`. If you encounter unexpected exceptions, you may wish to run with `setLogLevel('debug')` (or `--v debug`) to see what is going on.
 
 - As the Linux kernel matures, it becomes less necessary to have secondary checks as to whether an operation succeeded and try again (as seen with the infamous "gave up after 3 tries" messages) so these checks (and retries) are being removed. This may expose issues which were previously hidden on older Linux kernels.
+
+- The Ryu controller class is now named `Ryu` instead of `RYU` - the new name reflects the correct
+  name, which is not an acronym.
 
 #### OVS Patch Links
 
