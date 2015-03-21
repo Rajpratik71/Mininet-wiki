@@ -440,6 +440,8 @@ Mininet currently includes support for the user space reference implementations,
 
 The command line options are `--switch user` and `--switch ovsk` for the user reference and Open vSwitch kernel switches, respectively.
 
+You can also use the CPqD [ofsoftswitch13](https://github.com/CPqD/ofsoftswitch13), which will replace `--switch user`.
+ 
 ***
 <a name="ethernet-loops"/>
 
