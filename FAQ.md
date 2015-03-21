@@ -421,7 +421,7 @@ If this script does not work for you, please make an effort to debug and fix the
 <a name="openflow-versions"/>
 ### Which **versions of OpenFlow** does Mininet support?
 
-The Ubuntu 14.04 VM uses that release's package for Open vSwitch 2.0.2, which supports 1.0 by default; experimental 1.3 support can be enabled using `--switch ovs,protocols=OpenFlow13` from the command line, or passing `protocols=`OpenFlow13`` to the OVSSwitch constructor. For example:
+The Ubuntu 14.04 VM uses that release's package for Open vSwitch 2.0.2, which supports 1.0 by default; experimental 1.3 support can be enabled using `--switch ovs,protocols=OpenFlow13` from the command line, or passing `protocols='OpenFlow13'` to the OVSSwitch constructor. For example:
 
 ```python
 switch = partial( OVSSwitch, protocols='OpenFlow13' )
