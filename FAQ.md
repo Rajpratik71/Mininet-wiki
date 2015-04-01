@@ -166,8 +166,9 @@ The CLI `xterm` command actually sets up an X11 tunnel which you can continue to
 
 You can also use the `x` command to set up the X11 tunnel (and optionally run an X program):
 
-    mininet> x h1
-    mininet> h1 wireshark &
+    mininet> x h1 xclock &
+    mininet> x h2
+    mininet> h2 wireshark &
 
 **What about Mininet 2.0.0?**
 
