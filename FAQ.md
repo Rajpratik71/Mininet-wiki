@@ -155,9 +155,19 @@ Reboot the VM, log in and run `startx`, and you should be able to resize the VM 
 <a name="vm-gui-mininethost"/>
 ### Can I run a GUI/X11 application within a Mininet host?
 
-Yes, you can do so from a host `xterm` or `gterm` with the current version of Mininet.
+Yes, you can do so from a host `xterm` with the current version of Mininet.
 
 This allows you to run programs like `wireshark` or `firefox`. You might want to `su` to another user (e.g. `mininet`) to avoid running FireFox with `root` privileges, but it probably doesn't make a fundamental difference in a Mininet VM that is configured for password-less `sudo`.
+
+The CLI `xterm` command actually sets up an X11 tunnel which you can continue to use, e.g.
+
+    mininet> xterm h1
+    mininet> h1 wireshark &
+
+You can also use the `x` command to set up the X11 tunnel (and optionally run an X program):
+
+    mininet> x h1
+    mininet> h1 wireshark &
 
 **What about Mininet 2.0.0?**
 
