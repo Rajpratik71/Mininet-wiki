@@ -718,7 +718,7 @@ sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec \
 
 2. If you are upgrading from a package install of Mininet, you should remove the old Mininet and OVS packages:
 
-    sudo apt-get remove mininet openvswitch-switch
+        sudo apt-get remove mininet openvswitch-switch
 
 3. You should now be able to install from source as per the instructions on http://mininet.org/download/
 
