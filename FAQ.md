@@ -145,6 +145,12 @@ Then, you can start X11 in the VM console window using
 
     startx
 
+If you are running VirtualBox, you will want to install the VirtualBox Guest Additions using
+
+    sudo apt-get install virtualbox-guest-dkms
+
+Reboot the VM, log in and run `startx`, and you should be able to resize the VM console window and desktop.
+
 ***
 <a name="vm-gui-mininethost"/>
 ### Can I run a GUI/X11 application within a Mininet host?
