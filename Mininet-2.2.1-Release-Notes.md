@@ -44,6 +44,7 @@ That being said, if you want the fastest possible data rates on small-diameter n
 
 - The CPqD switch should now build and install on Ubuntu 14.04
 - The CLI `switch` command has been fixed (though its precise semantics are still a bit obscure, as it currently causes a switch to stop or start forwarding packets while leaving its interfaces up)
+- Repeatedly invoking the CLI will not cause `.mininet_history` to double in size (thanks to Rich Lane.)
 
 ### Other minor changes
 
