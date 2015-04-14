@@ -39,3 +39,12 @@ However, **OVSLinks have several serious limitations**, including the following:
 4. Based on our experience so far, no more than ~64 `OVSLinks` should be used in a row. This means that a command like `mn --topo linear,64 --test iperf` will work, but `mn --topo linear,80 --test iperf` will fail.
 
 That being said, if you want the fastest possible data rates on small-diameter networks, you may wish to try `OVSLink`. If it doesn't work, just go back to regular links.
+
+### Notable bug fixes
+
+- The CPqD switch should now build and install on Ubuntu 14.04
+- The CLI `switch` command has been fixed (though its precise semantics are still a bit obscure, as it currently causes a switch to stop or start forwarding packets while leaving its interfaces up)
+
+### Other minor changes
+
+- `RemoteController` and `--controller remote` now accept strings of the form `IP:port` where `IP` is the remote controller IP address and `port` is the port.
