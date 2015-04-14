@@ -1,6 +1,4 @@
-[in development]
-
-Mininet 2.2.1 will be primarily a performance enhancement and bug fix release to Mininet 2.2.0.
+Mininet 2.2.1 is primarily a performance enhancement and bug fix release to Mininet 2.2.0.
 
 ### Debian and Raspberry Pi support
 
