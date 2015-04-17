@@ -2,7 +2,7 @@ Mininet 2.2.1 is primarily a performance enhancement and bug fix release to Mini
 
 ### Debian and Raspberry Pi support
 
-`install.sh -a` now works out of the box on Raspbian/Debian 7.8 Wheezy, so you can run Mininet on a [Raspberry Pi](http://raspberrypi.org)! You can also install OVS 2.3.1 using "`install.sh -V 2.3.1`".
+`install.sh -fnv` and `install.sh -a` now work out of the box on Raspbian/Debian 7.8 Wheezy, so you can easily install and run Mininet on a [Raspberry Pi](http://raspberrypi.org)! You can also install OVS 2.3.1 using "`install.sh -V 2.3.1`".
 
 
 ### API Changes
