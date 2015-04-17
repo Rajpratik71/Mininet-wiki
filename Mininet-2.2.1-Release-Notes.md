@@ -46,4 +46,6 @@ That being said, if you want the fastest possible data rates on small-diameter n
 
 ### Other minor changes
 
+- You may now specify multiple `--controller` arguments to `mn`
+
 - `RemoteController` and `--controller remote` now accept strings of the form `IP:port` where `IP` is the remote controller IP address and `port` is the port.
