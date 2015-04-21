@@ -14,6 +14,6 @@ The Mininet source code includes a variety of useful [examples](https://github.c
 * An evolution of the miniedit.py example script included with Mininet.  Add all kinds of capabilities to new controller, host, switch and link options.
 * Give you the option to save you topology and also export as a Mininet python script.
 
-Available at http://gregorygee.wordpress.com/category/miniedit/ .
+Included in Mininet in the [`examples/`](https://github.com/mininet/mininet/tree/master/examples) directory.
 
 ---
