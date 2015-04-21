@@ -50,7 +50,7 @@ That being said, if you want the fastest possible data rates on small-diameter n
 
 - `RemoteController` and `--controller remote` now accept strings of the form `IP:port` where `IP` is the remote controller IP address and `port` is the port.
 
-- `mn --help` and the man page for `mn` now list the class names for `--host`, `--switch`, and `--controller` options. The classes themselves are documented on <http://api.mininet.org> .
+- `mn --help` and the man page for `mn` now list the class names for `--host`, `--switch`, and `--controller` options. The classes themselves, along with their options, are documented on <http://api.mininet.org> . We hope to improve the documentation over time.
 
 ### Errata
 
