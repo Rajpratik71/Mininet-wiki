@@ -53,4 +53,4 @@ That being said, if you want the fastest possible data rates on small-diameter n
 
 ### Errata
 
-Please consult the errata in the [[Mininet 2.2.0 Release Notes]].
+Please consult the [[Mininet 2.2.0 Release Notes#errata]].
