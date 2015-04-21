@@ -26,7 +26,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Technical Reports
 
-* [[CSTR 2012-2 Mininet performance fidelity benchmarks | http://hci.stanford.edu/cstr/reports/2012-02.pdf]]*
+* [[CSTR 2012-2 Mininet performance fidelity benchmarks | http://hci.stanford.edu/cstr/reports/2012-02.pdf]]
 
 ### Presentations and Slides
 
