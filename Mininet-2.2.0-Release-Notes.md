@@ -57,7 +57,7 @@ if you are using addresses in the same range in your LAN. You can change this ra
 
  * [Currently the Stanford Reference Switch (`--switch user`) and the CPqD switch (also `--switch user` if it is installed) do not correctly match MAC address `00:00:00:00:00:01`.](https://github.com/mininet/mininet/issues/156) This means that they will not work with `--mac` or `autoSetMacs=True`.
 
- * The Stanford Reference Switch (`--switch user`) also currently has awful performance (kilobits per second rather than megabits) on certain recent Linux kernels, including the one that we ship in the Mininet VM. We hope this can be fixed in the future. In the mean time we recommend OVS or IVS unless you are modeling a dial-up modem or ISDN.
+ * The Stanford Reference Switch (`--switch user`) also currently has awful performance (kilobits per second rather than megabits) on certain recent Linux kernels, including the one that we shipped in the Mininet 2.2.0 VM. We hope this can be fixed in the future. If you are experiencing this problem, we recommend using OVS or IVS if possible unless you are modeling a dial-up modem or ISDN.
 
  * [Currently `NetworkManager` may attempt to assign leases to the interfaces from a Mininet instance.](https://github.com/mininet/mininet/issues/228) This will cause an unwanted flood of DHCP requests, and your cpu usage to max out when Mininet is idle. To prevent this, stop `NetworkManager` with `$ sudo stop network-manager`.
 
