@@ -49,3 +49,8 @@ That being said, if you want the fastest possible data rates on small-diameter n
 - You may now specify multiple `--controller` arguments to `mn`
 
 - `RemoteController` and `--controller remote` now accept strings of the form `IP:port` where `IP` is the remote controller IP address and `port` is the port.
+
+
+### Errata
+
+Please consult the errata in the [[Mininet 2.2.0 Release Notes]].
