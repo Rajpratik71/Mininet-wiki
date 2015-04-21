@@ -36,7 +36,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 * Mininet: an instant Virtual Network on your Laptop [[(Announcement) | NetSeminar Announcement]] [(Slides)](pdf/mininet-netseminar.pdf) [(Video)](http://www.youtube.com/watch?v=90fBCO1MMTA)
 
-  Stanford NetSeminar, 11/14/14. Bob and Brian explain why network emulation is valuable and how Mininet addresses issues of scalability, usability, and performance modeling. Includes a somewhat detailed description of how Mininet uses underlying Linux functionality to implement a convenient Python API for network emulation. The slides include interesting supplemental material as well.
+  Stanford NetSeminar. Bob and Brian explain why network emulation is valuable and how Mininet addresses issues of scalability, usability, and performance modeling. Includes a somewhat detailed description of how Mininet uses underlying Linux functionality to implement a convenient Python API for network emulation. The slides include interesting supplemental material as well.
 
 * [[Mininet-HiFi: Rapid, High Fidelity SDN Prototyping | pdf/mininet-hifi-bdh2.pdf]]
 
