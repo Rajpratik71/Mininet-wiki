@@ -630,7 +630,11 @@ network object into the `CLI()` constructor:
 	net.stop()
 ```
 
-Starting up the CLI can be useful for debugging your network, as it allows you to view the network topology (with the net command), test connectivity (with the pingall command), and send commands to individual hosts.
+
+Starting up the CLI can be useful for debugging your network, as it
+allows you to view the network topology (with the `net` command), test
+connectivity (with the `pingall` command), and send commands to individual
+hosts.
 
 	*** Starting CLI:
 	mininet> net
@@ -649,10 +653,6 @@ Starting up the CLI can be useful for debugging your network, as it allows you t
 	749: h1-eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
 		link/ether d6:13:2d:6f:98:95 brd ff:ff:ff:ff:ff:ff
 
-Starting up the CLI can be useful for debugging your network, as it
-allows you to view the network topology (with the `net` command), test
-connectivity (with the `pingall` command), and send commands to individual
-hosts.
 
 <a name=examples></a>
 
