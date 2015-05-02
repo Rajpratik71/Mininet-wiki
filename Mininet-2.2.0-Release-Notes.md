@@ -79,6 +79,9 @@ permanently in your VM, edit the following line in `/etc/default/grub`:
 
  * Currently, the Mininet `install.sh` script seems to hang installing Mininet on Ubuntu 12.04.5 LTS (precise64, 64-bit); in particular, it [hangs while installing/configuring `cgroup-bin`](https://github.com/mininet/mininet/issues/459). This is obviously not a Mininet issue, but it's annoying. One workaround worth trying might be to install `cgroup-bin` before running `install.sh`.
 
+ * [The `intf` class option to Mininet() is ignored](https://github.com/mininet/mininet/issues/515). You can
+   use the `link` option instead.
+
 ### Bug Reports and Support
 
 You are encouraged to submit reports for any additional **bugs** you may
