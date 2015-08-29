@@ -19,7 +19,7 @@ Most of these videos are available on YouTube, and we link to several of them on
 - Installing OpenFlow Flows Using Mininet and OpenDaylight: http://www.youtube.com/watch?v=uJoKEiN_Bgg
 - Other videos: http://www.youtube.com/user/NetworkStatic/videos
 
-### [Ramón Fontes](http://ramonfontest.com) (IFBA)
+### [Ramon Fontes](http://ramonfontest.com) (IFBA)
 
  - Generating Mininet topologies with VND: http://www.youtube.com/watch?v=oONmjHgXxpc
  - Other videos: http://www.youtube.com/playlist?list=PLccoFREVAt_4nEtrkl59mjjf5ZzRX8DZA
