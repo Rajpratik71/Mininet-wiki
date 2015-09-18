@@ -9,7 +9,7 @@ Mininet's modules and Python API are documented using Python documentation strin
 
 You may also wish to generate HTML (and PDF) documentation using `doxypy`:
 
-    sudo apt-get install doxypy
+    sudo apt-get install doxypy help2man texlive texlive-latex-extra
     cd ~/mininet
     make doc
 
