@@ -10,7 +10,7 @@ Mininet is currently written in the **Mininet Python Style**, which is based on 
 
 The Mininet code style can be checked (more or less) by running `make codecheck`. A utility to help with conversion from PEP8 to Mininet style is provided as `util/unpep8`.
 
-Mininet also uses `doxypy` for automatic API documentation. We run a pre-processor which eliminates most uses of the `@` character. For example:
+Mininet also uses `doxypy` for automatic API documentation. We run a pre-processor which eliminates most uses of the `@` character in docstrings. For example:
 
 ```python
 def someFunction( someArg, anotherArg=False ):
