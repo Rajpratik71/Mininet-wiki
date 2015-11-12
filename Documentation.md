@@ -33,9 +33,11 @@ The Mininet documentation contains a wealth of helpful information including how
 * [[Mininet 2.2.0 Release Notes]]
 * [[Mininet 2.1.0 Release Notes]]
 
-#### Bug Reports and Feature Requests
+#### [Contribute to Mininet!](http://mininet.org/contribute)
+
 * [[Bugs]] How to submit bug reports
 * [[Feature Requests]] How to request and implement features
+* Feel free to edit this [documentation wiki](http://docs.mininet.org) and the [[FAQ]]
 
 #### Other Mininet Extensions, Tools, and Packages
 * [[Mininet Community Extensions and Packages]] Additional useful packages, tools, etc. created by members of the Mininet community
