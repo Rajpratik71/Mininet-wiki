@@ -151,8 +151,8 @@ run Mininet without specific bandwidth limits - this is the quick and
 easy way to run Mininet, and it also provides the highest performance
 at the expense of timing accuracy under load.*
 
-With a few possible exceptions, most of these limitations are not
-intrinsic to Mininet; eliminating them is simply a matter of code, and you
+With a few exceptions, many limitations you may run into will not be
+intrinsic to Mininet; eliminating them may simply be a matter of code, and you
 are encouraged to contribute any enhancements you may develop!
 
 <a name=working></a>
