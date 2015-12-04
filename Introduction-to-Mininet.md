@@ -34,7 +34,8 @@ Python API, the core of Mininet's functionality that you will usually want to us
 What is Mininet?
 ----------------
 
-Mininet is a *network emulator*. It runs a collection of end-hosts,
+Mininet is a *network emulator*, or perhaps more precisely a
+*network emulation orchestration system*. It runs a collection of end-hosts,
 switches, routers, and links on a single Linux kernel. It uses
 lightweight virtualization to make a single system look like a complete
 network, running the same kernel, system, and user code. A Mininet host
