@@ -245,7 +245,7 @@ level; 'info' is recommended as it provides useful information.
 Additional example code may be found in [`mininet/examples`](https://github.com/mininet/mininet/tree/master/examples).
 
 **Note for earlier Mininet Versions**
-The topology API has changed slightly across different versions of Mininet. In 1.0, methods such as `addSwitch` and `addHost` were called `add_switch` and `add_host`. Additonally, in both 1.0 and 2.0, the preferred method to override was `__init__` rather than `build`:
+The topology API has changed slightly across different versions of Mininet. In 1.0, methods such as `addSwitch` and `addHost` were called `add_switch` and `add_host`. Additionally, in both 1.0 and 2.0, the preferred method to override was `__init__` rather than `build`:
 
 ```python
 	class SingleSwitchTopo(Topo):
