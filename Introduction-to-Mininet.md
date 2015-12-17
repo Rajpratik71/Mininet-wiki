@@ -333,9 +333,11 @@ and netem delay/loss emulator.  The parameter `bw` is expressed as a number in M
 You may find it useful to create a Python dictionary to make it easy to
 pass the same parameters into multiple method calls, for example:
 
-	linkopts = dict(bw=10, delay='5ms', loss=10, max_queue_size=1000, use_htb=True)
-        # or you can use brace syntax: linkopts = {'bw':10, 'delay':'5ms', ... }
-	self.addLink(node1, node2, **linkopts)
+```python
+     linkopts = dict(bw=10, delay='5ms', loss=10, max_queue_size=1000, use_htb=True)
+     # (or can use brace syntax: linkopts = {'bw':10, 'delay':'5ms', ... } )
+     self.addLink(node1, node2, **linkopts)
+```
 
 This same technique `(**dict)` is useful for passing options to
 Matplotlib and other libraries.
