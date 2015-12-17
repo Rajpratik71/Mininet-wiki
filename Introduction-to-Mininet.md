@@ -334,7 +334,7 @@ You may find it useful to create a Python dictionary to make it easy to
 pass the same parameters into multiple method calls, for example:
 
 	linkopts = dict(bw=10, delay='5ms', loss=10, max_queue_size=1000, use_htb=True)
-        # alternately: linkopts = {'bw':10, 'delay':'5ms', 'loss':10, max_queue_size=1000, 'use_htb':True}
+        # or you can use brace syntax: linkopts = {'bw':10, 'delay':'5ms', ... }
 	self.addLink(node1, node2, **linkopts)
 
 This same technique `(**dict)` is useful for passing options to
