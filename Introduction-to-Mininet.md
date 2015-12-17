@@ -335,7 +335,7 @@ pass the same parameters into multiple method calls, for example:
 
 ```python
      linkopts = dict(bw=10, delay='5ms', loss=10, max_queue_size=1000, use_htb=True)
-     # (or can use brace syntax: linkopts = {'bw':10, 'delay':'5ms', ... } )
+     # (or you can use brace syntax: linkopts = {'bw':10, 'delay':'5ms', ... } )
      self.addLink(node1, node2, **linkopts)
 ```
 
