@@ -713,7 +713,7 @@ If you're running Open vSwitch, or need to open up a listening port on either OV
 
 Asking this question usually means you haven't read or understood the [[Documentation]] or indeed this [[FAQ]].
 
-Mininet runs pretty much any Linux program. So, you can use pretty much any client or server program you can think of (e.g. `ping`, `iperf`, `wget`, `netperf`, `netcat` etc..) You can easily capture traffic using programs like `tcpdump` and `wireshark`.
+Mininet runs pretty much any Linux program. So, you can use pretty much any client or server program you can think of (e.g. `ping`, `iperf`, `wget`, `curl`, `netperf`, `netcat` etc..) You can easily capture traffic using programs like `tcpdump` and `wireshark`.
 
 You probably should do a Google search on something like [linux generate packets](http://google.com/search?q=linux+generate+packets) or [linux traffic generator](http://google.com/search?q=linux+traffic+generator).
 
