@@ -47,7 +47,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 * [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
 * [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
-* [How can I use OpenFlow 1.3 (only)?] (#openflow13)
+* [How can I use **OpenFlow 1.3 only**?] (#openflow13)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Can I **upgrade Open vSwitch** to a newer version?] (#ovs-upgrade)
 
@@ -464,7 +464,7 @@ You can also install the CPqD [ofsoftswitch13](https://github.com/CPqD/ofsoftswi
 
 ***
 <a name="openflow13">
-### How can I use OpenFlow 1.3 (only)?
+### How can I use **OpenFlow 1.3 only**?
 
 Usually the switch and controller will negotiate the highest version of OpenFlow that they both support.
 
