@@ -47,8 +47,10 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 * [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
 * [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
+* [How can I use OpenFlow 1.3 (only)?] (#openflow13)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
 * [Can I **upgrade Open vSwitch** to a newer version?] (#ovs-upgrade)
+
 
 ### Troubleshooting
 
@@ -449,6 +451,7 @@ Open vSwitch 2.3 and newer support 1.3 by default. It is easy to install it usin
 
     install.sh -V 2.3.1
 
+
 ***
 <a name="openflow-switches"/>
 ### What **OpenFlow switch implementations** does Mininet support?
@@ -457,8 +460,40 @@ Mininet currently includes support for the user space reference implementations,
 
 The command line options are `--switch user` and `--switch ovsk` for the user reference and Open vSwitch kernel switches, respectively.
 
-You can also use the CPqD [ofsoftswitch13](https://github.com/CPqD/ofsoftswitch13), which will replace `--switch user`.
- 
+You can also install the CPqD [ofsoftswitch13](https://github.com/CPqD/ofsoftswitch13) switch using `install.sh -3f`; it will replace the Stanford reference switch, i.e.  `--switch user` and `UserSwitch`. See below for an example of using it.
+
+***
+<a name="openflow13">
+### How can I use OpenFlow 1.3 (only)?
+
+Usually the switch and controller will negotiate the highest version of OpenFlow that they both support.
+
+If you wish to use OpenFlow 1.3, you should use a switch that supports it and a controller that supports it.
+
+It's possible to use OVS in OpenFlow 1.3-only mode by specifying `protocols=OpenFlow13` and using a 1.3 compatible controller. For example:
+
+```
+sudo mn -v output --switch ovs,protocols=OpenFlow13 --controller ryu,simple_switch_13
+mininet> pingall
+*** Ping: testing ping reachability
+h1 -> h2 
+h2 -> h1 
+*** Results: 0% dropped (2/2 received)
+```
+
+Additionally, the CpQD switch may be installed using `install.sh -3f` - it replaces the Stanford Reference switch.
+
+```
+mininet/util/install.sh -3f
+...
+sudo mn -v output --switch user  --controller ryu,simple_switch_13
+mininet> pingall
+*** Ping: testing ping reachability
+h1 -> h2 
+h2 -> h1 
+*** Results: 0% dropped (2/2 received)
+```
+
 ***
 <a name="ethernet-loops"/>
 
