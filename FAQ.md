@@ -321,7 +321,7 @@ In VirtualBox, you need two different network interfaces set up if you want to b
 
 ### Help! Mininet isn't working in an `lxc` container because of AppArmor!
 
-[Note that Mininet is itself a container orchestration system, so usually you don't want to run it inside another container system unless you are doing something unusual such as setting up a shared development server.]
+*[Note that Mininet is itself a container orchestration system, so usually you don't want to run it inside another container system unless you are doing something unusual such as setting up a shared development or lab server!]*
 
 AppArmor's configuration for `lxc` seems to forbid recursive private mounts, which Mininet wants.
 
