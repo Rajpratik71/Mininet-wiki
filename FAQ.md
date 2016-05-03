@@ -57,6 +57,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 
 * [Help! I **updated my Ubuntu kernel** and now **Open vSwitch won't start**!](#ovs-reconfig)
 * [Why does my controller, which implements an **Ethernet bridge or learning switch**, not work with my network which has **loops** in it? I can't ping anything!](#ethernet-loops)
+* [Help! Mininet is hanging on startup!](#mininet-hang)
 
 ### Advice for the Desperate and/or Clueless!
 
@@ -566,6 +567,34 @@ Note that if you are running a *remote* controller (rather than a local OVS or L
 As noted above, running spanning tree removes any performance improvement from multipath networks, although it can still provide redundancy for reliability (if you deactivate a link, STP can compute a new spanning tree that uses a different link and restores connectivity.) If this sounds terrible, it's because it is - one of the advantages of using a multipath-capable OpenFlow controller is that you can potentially escape the tyranny of Spanning Tree!
 
 If you wish to code your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
+
+***
+<a name="mininet-hang">
+
+### Help! Mininet is hanging on startup!]
+
+Over time, we should implement more error checking.
+
+For now, here are some things to check to make sure that Mininet is working correctly:
+
+1. Make sure `mnexec` is working
+
+    The results of `sudo mnexec -n ifconfig -a` should be something like
+    ```lo        Link encap:Local Loopback  
+              LOOPBACK  MTU:65536  Metric:1
+              RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+              TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+              collisions:0 txqueuelen:1 
+              RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)```
+
+2.  Make sure Open vSwitch is running:
+
+    ```
+    sudo ovs-vsctl show
+    5099b76d-004b-4bf5-a6b3-60510b6fc88a
+        ovs_version: "2.5.0"```
+
+You can further troubleshoot Mininet startup by running `mn -v debug` and carefully looking at the output for error messages.
 
 ***
 <a name="assign-macs"/>
