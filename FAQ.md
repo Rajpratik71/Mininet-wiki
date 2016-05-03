@@ -587,14 +587,16 @@ For now, here are some things to check to make sure that Mininet is working corr
               RX packets:0 errors:0 dropped:0 overruns:0 frame:0
               TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
               collisions:0 txqueuelen:1 
-              RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)```
+              RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+    ```
 
 2.  Make sure Open vSwitch is running:
 
     ```
     sudo ovs-vsctl show
     5099b76d-004b-4bf5-a6b3-60510b6fc88a
-        ovs_version: "2.5.0"```
+        ovs_version: "2.5.0"
+    ```
 
 You can further troubleshoot Mininet startup by running `mn -v debug` and carefully looking at the output for error messages.
 
