@@ -22,7 +22,8 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
-* [Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)](#internet-in-vm)
+* [Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)](#internet-in-vm)]
+* [Help! Mininet is not working in an lxc container because of AppArmor!](#lxc-apparmor)
 
 ### Using Mininet
 
@@ -313,6 +314,16 @@ In VirtualBox, you need two different network interfaces set up if you want to b
     # The internet interface
     auto eth1
     iface eth1 inet dhcp
+
+***
+<a name="lxc-apparmor>
+
+### Help! Mininet isn't working in an lxc container because of AppArmor!
+
+AppArmor's configuration for lxc seems to forbid recursive private mounts, which Mininet wants. This can be allowed by adding the following lines to an appropriate AppArmor configuration file (e.g. `/etc/apparmor.d/abstractions/lxc/container-default`):
+
+    # allow recursive private mounts (mininet wants this)
+    mount options=(rw, make-rprivate) -> **,
 
 ***
 <a name="python-api"/>
