@@ -582,6 +582,7 @@ For now, here are some things to check to make sure that Mininet is working corr
 1. Make sure `mnexec` is working
 
     The results of `sudo mnexec -n ifconfig -a` should be something like
+
         lo        Link encap:Local Loopback  
                   LOOPBACK  MTU:65536  Metric:1
                   RX packets:0 errors:0 dropped:0 overruns:0 frame:0
