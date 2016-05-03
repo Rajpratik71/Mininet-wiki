@@ -325,6 +325,8 @@ AppArmor's configuration for lxc seems to forbid recursive private mounts, which
     # allow recursive private mounts (mininet wants this)
     mount options=(rw, make-rprivate) -> **,
 
+This seems to work on Ubuntu 16.04.
+
 ***
 <a name="python-api"/>
 ### How do I **use Mininet's Python API**?
