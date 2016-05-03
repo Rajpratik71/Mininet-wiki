@@ -316,7 +316,7 @@ In VirtualBox, you need two different network interfaces set up if you want to b
     iface eth1 inet dhcp
 
 ***
-<a name="lxc-apparmor>
+<a name="lxc-apparmor">
 
 ### Help! Mininet isn't working in an lxc container because of AppArmor!
 
