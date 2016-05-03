@@ -22,7 +22,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! I **can't boot my VM in VirtualBox in Windows**! Do I need a 32-bit VM?](#virtualbox-error)
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
-* [Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)](#internet-in-vm)]
+* [Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)](#internet-in-vm)
 * [Help! Mininet is not working in an lxc container because of AppArmor!](#lxc-apparmor)
 
 ### Using Mininet
