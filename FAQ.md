@@ -23,7 +23,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [Help! The **VM console screen is blank**!](#blank-screen)
 * [Help! I **can't import the `.ovf`** into VirtualBox/VMware/etc.!](#virtualbox-import)
 * [Help! I **can't connect to the internet** on the Mininet VM to install packages! (or, I can't SSH into the mininet VM from the host box)](#internet-in-vm)
-* [Help! Mininet is not working in an lxc container because of AppArmor!](#lxc-apparmor)
+* [Help! Mininet is not working in an `lxc` container because of AppArmor!](#lxc-apparmor)
 
 ### Using Mininet
 
@@ -319,9 +319,9 @@ In VirtualBox, you need two different network interfaces set up if you want to b
 ***
 <a name="lxc-apparmor">
 
-### Help! Mininet isn't working in an lxc container because of AppArmor!
+### Help! Mininet isn't working in an `lxc` container because of AppArmor!
 
-AppArmor's configuration for lxc seems to forbid recursive private mounts, which Mininet wants.
+AppArmor's configuration for `lxc` seems to forbid recursive private mounts, which Mininet wants.
 
 This may cause Mininet to hang on startup. Additionally `mnexec -n bash` will fail.
 
