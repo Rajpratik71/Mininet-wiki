@@ -573,7 +573,7 @@ If you wish to code your own multipath-capable controller in POX, you may also w
 ***
 <a name="mininet-hang">
 
-### Help! Mininet is hanging on startup!]
+### Help! Mininet is hanging on startup!
 
 Over time, we should implement more error checking.
 
