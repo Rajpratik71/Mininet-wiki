@@ -325,6 +325,10 @@ AppArmor's configuration for lxc seems to forbid recursive private mounts, which
     # allow recursive private mounts (mininet wants this)
     mount options=(rw, make-rprivate) -> **,
 
+Then reload the appropriate profile, e.g.
+
+    apparmor_parser -r /etc/apparmor.d/lxc-containers
+
 This seems to work on Ubuntu 16.04.
 
 ***
