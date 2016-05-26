@@ -546,6 +546,13 @@ Please feel free to fill in this chart with test results from various controller
 <td>success</td>
 <td>need to create proactive routes or start reactive forwarding</td>
 </tr>
+<tr>
+<td><a href="http://onosproject.org">OpenDaylight</a></td>
+<td>Beryllium</td>
+<td><tt>--torus 3,3</tt></td>
+<td>success</td>
+<td>support for looping topologies</td>
+</tr>
 </table>
 
 If you just want to get your network "working", you can run STP. In Mininet 2.2 you can use the Linux bridge:
