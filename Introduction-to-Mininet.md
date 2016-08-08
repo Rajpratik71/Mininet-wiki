@@ -665,12 +665,12 @@ To add new features which can be invoked using the `mn` command, you need to def
 
 <table>
 <tr><th>option</th><th>dict name</th><th>key: value</th></tr>
-<tr><td>`--topo`</td><td>topos</td><td>short name: `Topo` constructor</td></tr>
-<tr><td>`--switch`</td><td>switches</td><td>short name: `Switch` constructor</td></tr>
-<tr><td>`--host`</td><td>hosts</td><td>short name: `Host` constructor</td></tr>
-<tr><td>`--controller`</td><td>links</td><td>short name: `Controller` constructor</td></tr>
-<tr><td>`--link`</td><td>links</td><td>short name: `Link` constructor</td></tr>
-<tr><td>`--test`</td><td>links</td><td>short name: test function to invoke</td></tr>
+<tr><td>--topo</td><td>topos</td><td>short name: Topo constructor</td></tr>
+<tr><td>--switch</td><td>switches</td><td>short name: Switch constructor</td></tr>
+<tr><td>--host</td><td>hosts</td><td>short name: Host constructor</td></tr>
+<tr><td>--controller`</td><td>links</td><td>short name: Controller constructor</td></tr>
+<tr><td>--link</td><td>links</td><td>short name: Link constructor</td></tr>
+<tr><td>--test</td><td>links</td><td>short name: test function to invoke</td></tr>
 </table>
 
 For example:
