@@ -655,6 +655,11 @@ hosts.
 	749: h1-eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
 		link/ether d6:13:2d:6f:98:95 brd ff:ff:ff:ff:ff:ff
 
+<a name=custom></a>
+
+### Customizing `mn` using `--custom` files
+
+In addition to writing complete Mininet scripts in Python, you can also extend the `mn` command line tool using the `--custom` option. This allows you to use `mn` to invoke your own custom topology, switch, host, controller, or link classes.  You can also define and invoke your own system tests, and add new Mininet CLI commands.
 
 <a name=examples></a>
 
@@ -674,13 +679,7 @@ In particular, you may find
 ([`miniedit.py`](https://github.com/mininet/mininet/tree/master/examples/miniedit.py))
 to be a particularly useful GUI for simple experiments with Mininet.
 
-
 Note: The examples are intended as instructional material to be read and understood, not as complete, out-of-the-box solutions to whatever problem you may have. You may be able to use some of the code with modification, but it's important to be able to examine and understand the code.
-
-<a name=custom></a>
-### Customizing `mn` using `--custom` files
-
-In addition to writing complete Mininet scripts in Python, you can also extend the `mn` command line tool using the `--custom` option. This allows you to use `mn` to invoke your own custom topology, switch, host, controller, or link classes.  You can also define and invoke your own system tests, and add new Mininet CLI commands.
 
 <a name=apilevels></a>
 
