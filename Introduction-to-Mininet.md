@@ -699,21 +699,22 @@ This will use `mytopo` as the default topology and invoke test `mytest`.
 It's easy to add new CLI commands in a `--custom` file:
 
 ```python
-from mininet.cli import CLI
-from mininet.log import output
 def mycmd( self, line ):
     "mycmd is an example command to extend the Mininet CLI"
-    output( 'mycmd invoked with line:', line, '\n' )
+    net = self.mn
+    output( 'mycmd invoked for', net, 'with line', line, '\n'  )
 CLI.do_mycmd = mycmd
 ```
 
 This adds a `mycmd` command to the Mininet CLI:
 
-    sudo mn --custom mycmd.py -v output
-    mininet> help mycmd
-    mycmd is an example command to extend the Mininet CLI
-    mininet> mycmd foo
-    mycmd invoked with line: foo 
+```
+sudo mn --custom mycmd.py -v output
+mininet> help mycmd
+mycmd is an example command to extend the Mininet CLI
+mininet> mycmd foo
+mycmd invoked for <mininet.net.Mininet object at 0x7fd7235fb9d0> with line foo
+```
 
 Note that the command function name that you add to CLI should have the `do_` prefix.
 
