@@ -661,6 +661,53 @@ hosts.
 
 In addition to writing complete Mininet scripts in Python, you can also extend the `mn` command line tool using the `--custom` option. This allows you to use `mn` to invoke your own custom topology, switch, host, controller, or link classes.  You can also define and invoke your own system tests, and add new Mininet CLI commands.
 
+To add new features which can be invoked using the `mn` command, you need to define a dictionary in your `--custom` file based on the feature type:
+
+<table>
+<tr><th>option</th><th>dict name</th><th>key: value</th></tr>
+<tr><td>`--topo`</td><td>topos</td><td>short name: `Topo` constructor</td></tr>
+<tr><td>`--switch`</td><td>switches</td><td>short name: `Switch` constructor</td></tr>
+<tr><td>`--host`</td><td>hosts</td><td>short name: `Host` constructor</td></tr>
+<tr><td>`--controller`</td><td>links</td><td>short name: `Controller` constructor</td></tr>
+<tr><td>`--link`</td><td>links</td><td>short name: `Link` constructor</td></tr>
+<tr><td>`--test`</td><td>links</td><td>short name: test function to invoke</td></tr>
+</table>
+
+For example:
+
+```python
+...
+topos = { `mytopo`: MyTopo }
+```
+
+This adds the MyTopo class (or constructor) to the topos dictionary, allowing it to be used with the `--topo` option:
+
+    sudo mn --custom mytopo.py --topo mytopo,3
+
+Note that constructor options may also be passed.
+
+You can also specify multiple custom files:
+
+    sudo mn --custom mytopo.py,mytest.py --topo mytopo,3 --test mytest
+
+This will use `mytopo` as the default topology and invoke test `mytest`.
+
+#### Adding new CLI commands in a `--custom` file
+
+It's easy to add new CLI commands in a `--custom` file:
+
+```python
+from mininet.CLI import CLI
+def mycmd( self, line ):
+    "mycmd is an example command to extend the Mininet CLI"
+    print "mycmd invoked with line:", line
+CLI.do_mycmd = mycmd
+```
+
+This adds a 'mycmd' command to the Mininet CLI.
+
+Note that the command function name that you add to CLI should have the `do_` prefix.
+
 <a name=examples></a>
 
 ### Additional Examples
