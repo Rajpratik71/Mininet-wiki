@@ -707,7 +707,7 @@ def mycmd( self, line ):
 CLI.do_mycmd = mycmd
 ```
 
-This adds a 'mycmd' command to the Mininet CLI:
+This adds a `mycmd` command to the Mininet CLI:
 
     sudo mn --custom mycmd.py -v output
     mininet> help mycmd
