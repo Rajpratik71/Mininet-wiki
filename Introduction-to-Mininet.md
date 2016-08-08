@@ -676,6 +676,8 @@ To add new features which can be invoked using the `mn` command, you need to def
 For example:
 
 ```python
+class MyTopo( Topo ):
+   def build( self, ...):
 ...
 topos = { `mytopo`: MyTopo }
 ```
