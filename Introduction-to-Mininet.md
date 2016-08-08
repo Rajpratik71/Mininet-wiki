@@ -661,7 +661,7 @@ hosts.
 
 In addition to writing complete Mininet scripts in Python, you can also extend the `mn` command line tool using the `--custom` option. This allows you to use `mn` to invoke your own custom topology, switch, host, controller, or link classes.  You can also define and invoke your own system tests, and add new Mininet CLI commands.
 
-To add new features which can be invoked using the `mn` command, you need to define a dictionary in your `--custom` file based on the feature type:
+To add new features which can be invoked using the `mn` command, you need to define a dict in your `--custom` file based on the option type. The dict's keys are short names passed to the appropriate option, and the values are the corresponding subclasses, constructors, or functions:
 
 <table>
 <tr><th>option</th><th>dict name</th><th>key: value</th></tr>
