@@ -962,6 +962,10 @@ learning switches/Ethernet bridges.
 In spite of the obviousness of this issue, it has become a
 [[ Frequently Asked Question | FAQ#wiki-ethernet-loops ]].
 
+More recent (and more complex) OpenFlow controllers do support multipath routing -
+consult your controller's documentation to determine if any special configuration
+is required.
+
 If you are building a fat-tree like topology, you may wish to take a look at
 [RipLPOX](http://github.com/brandonheller/riplpox), a basic datacenter
 controller implemented using POX. You may be able to use it as a starting point
