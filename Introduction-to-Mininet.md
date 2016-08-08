@@ -670,7 +670,7 @@ To add new features which can be invoked using the `mn` command, you need to def
 <tr><td>--host</td><td>hosts</td><td>short name: Host constructor</td></tr>
 <tr><td>--controller</td><td>links</td><td>short name: Controller constructor</td></tr>
 <tr><td>--link</td><td>links</td><td>short name: Link constructor</td></tr>
-<tr><td>--test</td><td>links</td><td>short name: test function to invoke</td></tr>
+<tr><td>--test</td><td>links</td><td>short name: test function to call with Mininet object</td></tr>
 </table>
 
 For example:
@@ -678,21 +678,21 @@ For example:
 ```python
 class MyTopo( Topo ):
    def build( self, ...):
+def myTest( net ):
 ...
 topos = { `mytopo`: MyTopo }
+tests = { 'mytest': myTest }
 ```
 
-This adds the MyTopo class (or constructor) to the topos dictionary, allowing it to be used with the `--topo` option:
+This adds the MyTopo class (or constructor) to the topos dictionary, allowing it to be used with the `--topo` option, as well as a new test, `mytest`. Note that the test function is called with the top-level `Mininet` object, and you can pass string or numeric parameters to `MyTopo`:
 
     sudo mn --custom mytopo.py --topo mytopo,3
-
-Note that constructor options may also be passed.
 
 You can also specify multiple custom files:
 
     sudo mn --custom mytopo.py,mytest.py --topo mytopo,3 --test mytest
 
-This will use `mytopo` as the default topology and invoke test `mytest`.
+This will use `mytopo` as the default topology and invoke the `mytest` test.
 
 #### Adding new CLI commands in a `--custom` file
 
