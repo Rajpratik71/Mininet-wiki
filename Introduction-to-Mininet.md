@@ -694,6 +694,8 @@ You can also specify multiple custom files:
 
 This will use `mytopo` as the default topology and invoke the `mytest` test.
 
+This can be a very convenient one-line command to start up Mininet, run an end-to-end system test (or multiple tests), and shut down Mininet. If an exception occurs, the standard Mininet cleanup code will be invoked as `mn` usually does in that case.
+
 #### Adding new CLI commands in a `--custom` file
 
 It's easy to add new CLI commands in a `--custom` file:
