@@ -20,7 +20,7 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 
 * We've been seeing a variety of performance test failures running under kvm, so the constraints on some performance tests have been relaxed slightly.
 
-* A race condition that could cause iperf to fail has been addressed. (#589)
+* A race condition that could cause `Mininet.iperf()` to fail has been addressed. (#589)
 
 * We have forked the Stanford OpenFlow 1.0 reference controller and `oflops` and use our own versions in the Mininet VM image. Note these are somewhat obsolete.
 
