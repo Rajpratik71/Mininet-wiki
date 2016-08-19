@@ -1,4 +1,8 @@
-Mininet 2.2.2 is primarily a compatibility bug fix release for Mininet 2.2.1.
+Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1.
+
+### Security Fix/Advisory
+
+* The Mininet VM image no longer includes the same, identical SSH key for everyone, and should instead generate new ones the first time it is booted(!!) [In my opinion, the .ovf spec should include an option to regenerate SSH keys and MAC addresses, since the problem is likely to occur in any VM image with SSH installed.]
 
 ### Ubuntu 16.04 (Xenial) Compatibility
 
@@ -32,12 +36,7 @@ Mininet 2.2.2 is primarily a compatibility bug fix release for Mininet 2.2.1.
 
 * The NAT element now correctly attaches to the switch that is specified in its parameters.
 
-### Security Fix/Advisory
-
-* The Mininet VM image no longer includes the same, identical SSH key for everyone, and should instead generate new ones the first time it is booted.
-
 ### Acknowledgments
 
 Thanks to all of the contributors of fixes and enhancements for this release, including Olivier Tilmans, Jono Hart, Tomasz Buchert, Rahman Pujianto, Roan Huang, M S Vishwanath Bhat, Brian O'Connor, and others.
-
 
