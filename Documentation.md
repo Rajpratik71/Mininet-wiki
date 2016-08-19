@@ -29,6 +29,7 @@ The Mininet documentation contains a wealth of helpful information including how
 
 #### Mininet Release Notes
 
+* [[Mininet 2.2.2 Release Notes]]
 * [[Mininet 2.2.1 Release Notes]]
 * [[Mininet 2.2.0 Release Notes]]
 * [[Mininet 2.1.0 Release Notes]]
