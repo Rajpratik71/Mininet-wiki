@@ -12,7 +12,7 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 
 * We no longer attempt to delete a nonexistent root `qdisc` if one is not present (thanks to Olivier Tilmans)
 
-### Ubuntu 15 Compatibility
+### Ubuntu 15 (Utopic) Compatibility
 
 * We support `openvswitch-testcontroller` in Ubuntu 15. Note this controller is deprecated and not present in Ubuntu 16.
 
