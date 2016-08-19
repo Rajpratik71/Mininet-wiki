@@ -1,4 +1,4 @@
-# Currently: Mininet 2.2.2b2
+## Mininet 2.2.2b2
 
 Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1.
 
