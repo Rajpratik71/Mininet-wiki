@@ -1,4 +1,4 @@
-## Mininet 2.2.2b2
+## Mininet 2.2.2b3
 
 Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1.
 
@@ -39,6 +39,16 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 * An option has been added to the `NAT` element, and `iptables` are not flushed by default.
 
 * The NAT element now correctly attaches to the switch that is specified in its parameters.
+
+* A number of tests have been revised to make them more reliable.
+
+### Bugs and gotchas
+
+* Ryu installation with install.sh -y is still broken
+
+* The `--tests` option is slightly different from mainline, accepting multiple test names rather than
+  parameters for the test. Please do not depend on this functionality in 2.2.2, or update to mainline if
+  you require the new functionality.
 
 ### Acknowledgments
 
