@@ -44,7 +44,7 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 
 ### Bugs and gotchas
 
-* Ryu installation with install.sh -y is still broken
+* Ryu installation with `install.sh -y` is still broken
 
 * The `--tests` option is slightly different from mainline, accepting multiple test names rather than
   parameters for the test. Please do not depend on this functionality in 2.2.2, or update to mainline if
