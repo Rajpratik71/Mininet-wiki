@@ -50,6 +50,10 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
   parameters for the test. Please do not depend on this functionality in 2.2.2, or update to mainline if
   you require the new functionality.
 
+* As noted, Ubuntu 16.04+/Linux 4.4 includes a kernel regression which breaks container systems with the
+  `waiting for lo to become free` error. Until this is fixed, we don't recommend those OS/kernel versions.
+  If you run into the problem, Mininet will stop working until you reboot.
+
 ### Acknowledgments
 
 Thanks to all of the contributors of fixes and enhancements for this release, including Olivier Tilmans, Jono Hart, Tomasz Buchert, Rahman Pujianto, Roan Huang, M S Vishwanath Bhat, Brian O'Connor, and others.
