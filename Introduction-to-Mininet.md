@@ -606,7 +606,7 @@ interfaces belonging to a node are named beginning with the node's name,
 for example `h1-eth0` is host `h1`'s default interface, and `s1-eth1` is
 switch `s1`'s first data port. Host interfaces are only visible from
 within the host itself, but switch data ports are visible in the "root"
-namespace (you can see them by typing ip link show in another window
+namespace (you can see them by typing `ip link show` in another window
 while Mininet is running.) As a result, it's easy to examine switch
 interfaces but slightly trickier to examine host interfaces, since you
 must tell the host to do so (typically using `host.cmd()`.)
