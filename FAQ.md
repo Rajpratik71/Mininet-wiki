@@ -327,6 +327,8 @@ AppArmor's configuration for `lxc` seems to forbid recursive private mounts, whi
 
 This may cause Mininet to hang on startup. Additionally `mnexec -n bash` will fail.
 
+[Note: we should [[ fix this | https://github.com/mininet/mininet/issues/679]].]
+
 In Ubuntu 16.04 and later, this can be allowed by adding the following lines to an appropriate AppArmor configuration file (e.g. `/etc/apparmor.d/abstractions/lxc/container-default`):
 
     # allow recursive private mounts (mininet wants this)
