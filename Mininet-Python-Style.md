@@ -6,7 +6,7 @@ Mininet is currently written in the **Mininet Python Style**, which is based on 
 
 * Single-line docstrings are surrounded by single double-quotes. This makes them more compact.
 
-* Multi-line docstrings are surrounded by triple double-quotes. This makes them consistent with single-line docstrings. The ending triple-quote is at the end of the last line of text.
+* Multi-line docstrings are surrounded by triple double-quotes. This makes them inconsistent (!) with single-line docstrings, which use single quotes. The ending triple-quote is at the end of the last line of text, and text is lined up to the right of the opening triple quotes.
 
 The Mininet code style can be checked (more or less) by running `make codecheck`. A utility to help with conversion from PEP8 to Mininet style is provided as `util/unpep8`.
 
