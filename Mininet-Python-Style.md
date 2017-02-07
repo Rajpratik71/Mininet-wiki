@@ -2,7 +2,7 @@ Mininet is currently written in the **Mininet Python Style**, which is based on 
 
 * Spaces are inserted inside parentheses, such as those in function definitions and calls, for readability. They may be omitted in mathematical formulas and/or if readability would otherwise be compromised.
 
-* `camelCase` is used for method and variable names in preference to `under_scores`. This is intended to give named identifiers (including classes, methods, instance variables, local variables, and parameters) a more consistent look and to reduce cognitive load.
+* `camelCase` is used for method and variable names in preference to `under_scores`. This is intended to give named identifiers (including those for classes, methods, instance variables, local variables, and parameters) a more consistent look and to reduce cognitive load. However, for easier filename typing, core Mininet package names (`nodelib`, `topolib`, etc.) are usually lowercase.
 
 * Single-line docstrings are surrounded by single double-quotes. This makes them more compact.
 
