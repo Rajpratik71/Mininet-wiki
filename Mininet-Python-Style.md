@@ -1,6 +1,6 @@
 Mininet is currently written in the **Mininet Python Style**, which is based on the Arista Networks Python style. It mainly follows [PEP8](http://legacy.python.org/dev/peps/pep-0008), but differs in several important ways, including the following:
 
-* Spaces are inserted inside parentheses, such as those in function definitions and calls, for readability. They may be omitted in mathematical formulas if readability would otherwise be compromised.
+* Spaces are inserted inside parentheses, such as those in function definitions and calls, for readability. They may be omitted in mathematical formulas and/or if readability would otherwise be compromised.
 
 * `camelCase` is used for method and variable names in preference to `under_scores`. This is intended to make names look more consistent and to reduce cognitive load.
 
