@@ -803,7 +803,8 @@ Things become interesting when you start thinking about creating full networks. 
 
 Here are examples of creating networks using each API level:
 
-Low-level API: nodes and links
+#### Low-level API: nodes and links
+
 ```python
 h1 = Host( 'h1' )                                                                                                     
 h2 = Host( 'h2' )                                                                                                     
@@ -820,7 +821,8 @@ s1.stop()
 c0.stop() 
 ```
 
-Mid-level API: Network object
+#### Mid-level API: Network object
+
 ```python
 net = Mininet()                                                                                                       
 h1 = net.addHost( 'h1' )                                                                                              
@@ -835,7 +837,8 @@ CLI( net )
 net.stop()  
 ```
 
-High-level API: Topology templates
+#### High-level API: Topology templates
+
 ```python
 class SingleSwitchTopo( Topo ):                                                                                               
     "Single Switch Topology"                                                                                                  
