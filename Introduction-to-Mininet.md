@@ -8,21 +8,21 @@ Python API, the core of Mininet's functionality that you will usually want to us
 * [Why is Mininet cool?](#why)
 * [What are Mininet's limitations?](#limits)
 * [Working with Mininet](#working)
- * [Creating Topologies](#creating)
- * [Setting Performance Parameters](#setting)
- * [Running Programs in Hosts](#running)
- * [New: `popen()`/`pexec()` interface](#popen)
- * [Host Configuration Methods](#config)
- * [Naming in Mininet](#naming)
- * [Customizing `mn` using `--custom` files](#custom)
- * [Additional Examples](#examples)
+* [Creating Topologies](#creating)
+* [Setting Performance Parameters](#setting)
+* [Running Programs in Hosts](#running)
+* [New: `popen()`/`pexec()` interface](#popen)
+* [Host Configuration Methods](#config)
+* [Naming in Mininet](#naming)
+* [Customizing `mn` using `--custom` files](#custom)
+* [Additional Examples](#examples)
 * [Understanding the Mininet API](#apilevels)
 * [Mininet API Documentation](#api)
 * [Measuring Performance](#measuring)
 * [OpenFlow and Custom Routing](#openflow)
- * [OpenFlow Controllers](#controllers)
- * [External Controllers](#extcontrollers)
- * [Multipath Routing](#multipath)
+* [OpenFlow Controllers](#controllers)
+* [External Controllers](#extcontrollers)
+* [Multipath Routing](#multipath)
 * [Updating Mininet](#updating)
 * [Learning Python](#python)
 * [Useful Background Information](#background)
@@ -622,14 +622,14 @@ in your network. You can invoke the CLI on a network by passing the
 network object into the `CLI()` constructor:
 
 ```python
-	from mininet.topo import SingleSwitchTopo
-	from mininet.net import Mininet
-	from mininet.cli import CLI
-	
-	net = Mininet(SingleSwitchTopo(2))
-	net.start()
-	CLI(net)
-	net.stop()
+from mininet.topo import SingleSwitchTopo
+from mininet.net import Mininet
+from mininet.cli import CLI
+
+net = Mininet(SingleSwitchTopo(2))
+net.start()
+CLI(net)
+net.stop()
 ```
 
 
