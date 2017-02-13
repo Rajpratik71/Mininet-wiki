@@ -924,10 +924,11 @@ found at:
 #### OpenFlow Controllers
 
 If you run the `mn` command without specifying a controller,
-it will use the the `ovsc` controller,`ovs-controller`, by default.
-This is equivalent to
+it will pick a default controller such as `Controller` or `OVSController`, depending on what is available.
 
-    $ sudo mn --controller ovsc
+This is equivalent to:
+
+    $ sudo mn --controller default
     
 This controller implements a simple Ethernet learning switch,
 and supports up to 16 individual switches.
