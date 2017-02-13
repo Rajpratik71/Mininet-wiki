@@ -680,7 +680,7 @@ class MyTopo( Topo ):
    def build( self, ...):
 def myTest( net ):
 ...
-topos = { `mytopo`: MyTopo }
+topos = { 'mytopo': MyTopo }
 tests = { 'mytest': myTest }
 ```
 
