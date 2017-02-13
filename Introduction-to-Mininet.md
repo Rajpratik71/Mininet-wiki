@@ -1132,6 +1132,9 @@ In addition to helping to locate Python tutorials, Google seems to work
 astoundingly well for finding answers to Python questions, many of which
 are answered on <http://stackoverflow.com>.
 
+Perhaps even more astoundingly, Microsoft's Bing can actually find and **run Python code** in its search results!
+For example, you could search for [python bubble sort](http://bing.com/search?q=python+bubble+sort) and it will actually bring up executable code.
+
 <a name=background></a>
 
 ### Useful Background for Using Mininet
