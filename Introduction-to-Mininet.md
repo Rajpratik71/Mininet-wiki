@@ -197,16 +197,16 @@ class SingleSwitchTopo(Topo):
             host = self.addHost('h%s' % (h + 1))                                             
             self.addLink(host, switch)                                                       
                                                                                              
-    def simpleTest():                                                                        
-        "Create and test a simple network"                                                   
-        topo = SingleSwitchTopo(n=4)                                                         
-        net = Mininet(topo)                                                                  
-        net.start()                                                                          
-        print "Dumping host connections"                                                     
-        dumpNodeConnections(net.hosts)                                                       
-        print "Testing network connectivity"                                                 
-        net.pingAll()                                                                        
-        net.stop()                                                                           
+def simpleTest():                                                                            
+    "Create and test a simple network"                                                       
+    topo = SingleSwitchTopo(n=4)                                                             
+    net = Mininet(topo)                                                                      
+    net.start()                                                                              
+    print "Dumping host connections"                                                         
+    dumpNodeConnections(net.hosts)                                                           
+    print "Testing network connectivity"                                                     
+    net.pingAll()                                                                            
+    net.stop()                                                                               
                                                                                              
 if __name__ == '__main__':                                                                   
     # Tell mininet to print useful information                                               
