@@ -249,16 +249,16 @@ Additional example code may be found in [`mininet/examples`](https://github.com/
 The topology API has changed slightly across different versions of Mininet. In 1.0, methods such as `addSwitch` and `addHost` were called `add_switch` and `add_host`. Additionally, in both 1.0 and 2.0, the preferred method to override was `__init__` rather than `build`:
 
 ```python
-	class SingleSwitchTopo(Topo):
-	    "Single switch connected to n hosts."
-	    def __init__(self, n=2, **opts):
-	        # Initialize topology and default options
-	        Topo.__init__(self, **opts)
-	        switch = self.addSwitch('s1')
-	        # Python's range(N) generates 0..N-1
-	        for h in range(n):
-	            host = self.addHost('h%s' % (h + 1))
-	            self.addLink(host, switch)
+class SingleSwitchTopo(Topo):
+    "Single switch connected to n hosts."
+    def __init__(self, n=2, **opts):
+        # Initialize topology and default options
+        Topo.__init__(self, **opts)
+        switch = self.addSwitch('s1')
+        # Python's range(N) generates 0..N-1
+        for h in range(n):
+            host = self.addHost('h%s' % (h + 1))
+            self.addLink(host, switch)
 ```
 
 <a name=setting></a>
@@ -364,29 +364,29 @@ send input to the shell using the cmd() method.
 To run a command in a host and get the output, use the `cmd()` method.
 
 ```python
-	h1 = net.get('h1')	
-	result = h1.cmd('ifconfig')
-	print result
+    h1 = net.get('h1')	
+    result = h1.cmd('ifconfig')
+    print result
 ```
 
 In many cases, you will wish to run a command in the background for a
 while, stop the command, and save its output to a file:
 
 ```python
-	from time import sleep
-	...
-	print "Starting test..."
-	h1.cmd('while true; do date; sleep 1; done > /tmp/date.out &')
-	sleep(10)
-	print "Stopping test"
-	h1.cmd('kill %while')
-	print "Reading output"
-	f = open('/tmp/date.out')
-	lineno = 1
-	for line in f.readlines():
-	    print "%d: %s" % ( lineno, line.strip() )
-	    lineno += 1
-	f.close()
+from time import sleep
+...
+print "Starting test..."
+h1.cmd('while true; do date; sleep 1; done > /tmp/date.out &')
+sleep(10)
+print "Stopping test"
+h1.cmd('kill %while')
+print "Reading output"
+f = open('/tmp/date.out')
+lineno = 1
+for line in f.readlines():
+    print "%d: %s" % ( lineno, line.strip() )
+    lineno += 1
+f.close()
 ```
 
 Note that we used the shell's output redirection feature to send output
@@ -410,14 +410,14 @@ tasks as well. For example, you can find out the PID of a background
 command using
 
 ```python
-	pid = int( h1.cmd('echo $!') )
+pid = int( h1.cmd('echo $!') )
 ```
 
 Then you can wait for a particular process to finish execution by using
 wait, e.g.:
 
 ```python
-	h1.cmd('wait', pid)
+h1.cmd('wait', pid)
 ```
 
 Note that this will only work for UNIX commands and not for commands
@@ -436,12 +436,12 @@ you to start a foreground command using `sendCmd()` and then wait for it
 to complete at some later time using `waitOutput()`:
 
 ```python
-	for h in hosts:
-	    h.sendCmd('sleep 20')
-	…
-	results = {}
-	for h in hosts:
-	    results[h.name] = h.waitOutput()
+for h in hosts:
+    h.sendCmd('sleep 20')
+…
+results = {}
+for h in hosts:
+    results[h.name] = h.waitOutput()
 ```
 
 If you are sending output to a file, you may wish to monitor that file's
@@ -453,33 +453,33 @@ This simplifies the implementation of a test which interactively
 monitors output from multiple hosts:
 
 ```python
-	def monitorTest( N=3, seconds=3 ):
-	    "Run pings and monitor multiple hosts"
-	    topo = SingleSwitchTopo( N )
-	    net = Mininet( topo )
-	    net.start()
-	    hosts = net.hosts
-	    print "Starting test..."
-	    server = hosts[ 0 ]
-	    outfiles, errfiles = {}, {}
-	    for h in hosts:
-	        # Create and/or erase output files
-	        outfiles[ h ] = '/tmp/%s.out' % h.name
-	        errfiles[ h ] = '/tmp/%s.err' % h.name
-	        h.cmd( 'echo >', outfiles[ h ] )
-	        h.cmd( 'echo >', errfiles[ h ] )
-	        # Start pings
-	        h.cmdPrint('ping', server.IP(),
-	                   '>', outfiles[ h ],
-	                   '2>', errfiles[ h ],
-	                   '&' )
-	    print "Monitoring output for", seconds, "seconds"
-	    for h, line in monitorFiles( outfiles, seconds, timeoutms=500 ):
-	        if h:
-	            print '%s: %s' % ( h.name, line )
-	    for h in hosts:
-	        h.cmd('kill %ping')
-	    net.stop()
+def monitorTest( N=3, seconds=3 ):
+    "Run pings and monitor multiple hosts"
+    topo = SingleSwitchTopo( N )
+    net = Mininet( topo )
+    net.start()
+    hosts = net.hosts
+    print "Starting test..."
+    server = hosts[ 0 ]
+    outfiles, errfiles = {}, {}
+    for h in hosts:
+        # Create and/or erase output files
+        outfiles[ h ] = '/tmp/%s.out' % h.name
+        errfiles[ h ] = '/tmp/%s.err' % h.name
+        h.cmd( 'echo >', outfiles[ h ] )
+        h.cmd( 'echo >', errfiles[ h ] )
+        # Start pings
+        h.cmdPrint('ping', server.IP(),
+                   '>', outfiles[ h ],
+                   '2>', errfiles[ h ],
+                   '&' )
+    print "Monitoring output for", seconds, "seconds"
+    for h, line in monitorFiles( outfiles, seconds, timeoutms=500 ):
+        if h:
+            print '%s: %s' % ( h.name, line )
+    for h in hosts:
+        h.cmd('kill %ping')
+    net.stop()
 ```
 
 You may wish to run `multipoll.py` and look at its output.
@@ -510,26 +510,26 @@ what is described above, using the `popen()` interface and `pmonitor()`
 helper function:
 
 ```python
-	def pmonitorTest( N=3, seconds=10 ):
-		"Run pings and monitor multiple hosts using pmonitor"
-		topo = SingleSwitchTopo( N )
-		net = Mininet( topo )
-		net.start()
-		hosts = net.hosts
-		print "Starting test..."
-		server = hosts[ 0 ]
-		popens = {}
-		for h in hosts:
-	    	    popens[ h ] = h.popen('ping', server.IP() )
-		print "Monitoring output for", seconds, "seconds"
-		endTime = time() + seconds
-		for h, line in pmonitor( popens, timeoutms=500 ):
-	    	    if h:
-	        	   print '%s: %s' % ( h.name, line ),
-	    	    if time() >= endTime:
-	        	   for p in popens.values():
-	            	 p.send_signal( SIGINT )
-		net.stop()
+def pmonitorTest( N=3, seconds=10 ):
+    "Run pings and monitor multiple hosts using pmonitor"
+    topo = SingleSwitchTopo( N )
+    net = Mininet( topo )
+    net.start()
+    hosts = net.hosts
+    print "Starting test..."
+    server = hosts[ 0 ]
+    popens = {}
+    for h in hosts:
+        popens[ h ] = h.popen('ping', server.IP() )
+        print "Monitoring output for", seconds, "seconds"
+        endTime = time() + seconds
+        for h, line in pmonitor( popens, timeoutms=500 ):
+            if h:
+                print '%s: %s' % ( h.name, line ),
+                if time() >= endTime:
+                    for p in popens.values():
+                        p.send_signal( SIGINT )
+        net.stop()
 ```
 
 Note this implementation is slightly different since it pulls the time
