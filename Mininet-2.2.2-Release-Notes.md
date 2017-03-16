@@ -18,6 +18,11 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 
 * We support `openvswitch-testcontroller` in Ubuntu 15. Note this controller is deprecated and not present in Ubuntu 16.
 
+### Code Check and Continuous Integration
+
+* We now run public CI builds via Travis
+* The builds include a code check using `pylint` on Ubuntu 14.04 LTS
+
 ### Notable Bug Fixes or Workarounds
 
 * We've been seeing a variety of performance test failures running under kvm, so the constraints on some performance tests have been relaxed slightly.
