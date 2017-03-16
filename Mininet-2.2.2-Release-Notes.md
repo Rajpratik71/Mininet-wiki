@@ -1,4 +1,4 @@
-## Mininet 2.2.2b3
+## Mininet 2.2.2rc1
 
 Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1.
 
