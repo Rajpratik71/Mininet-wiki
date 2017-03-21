@@ -3,8 +3,8 @@ For your convenience, we provide pre-built VM images including Mininet and other
 _Note: The download may take some time; it’s 600MB - 1GB compressed._
 
 ### Recent Releases
- * **[Mininet 2.2.2 on Ubuntu 14.04 LTS - 64 bit](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-amd64.zip)** (recommended for most modern hardware and operating systems)([sha256](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-amd64.sha256))
- * **[Mininet 2.2.2 on Ubuntu 14.04 LTS - 32 bit](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-i386.zip)** (recommended for **Windows users** using VirtualBox or Hyper-V)([sha256](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-i386.sha256))
+ * **[Mininet 2.2.2 on Ubuntu 14.04 LTS - 64 bit](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-amd64.zip)** (recommended for most modern hardware and operating systems) ([sha256](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-amd64.sha256))
+ * **[Mininet 2.2.2 on Ubuntu 14.04 LTS - 32 bit](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-i386.zip)** (recommended for **Windows users** using VirtualBox or Hyper-V) ([sha256](https://github.com/mininet/mininet/releases/download/2.2.2/mininet-2.2.2-170321-ubuntu-14.04.4-server-i386.sha256))
 
 ### Older Releases
 
