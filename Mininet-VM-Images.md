@@ -8,8 +8,8 @@ _Note: The download may take some time; it’s 600MB - 1GB compressed._
 
 ### Older Releases
 
- * **[Mininet 2.2.1 on Ubuntu 14.04 LTS - 64 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.1-150420-ubuntu-14.04-server-amd64.zip)** (deprecated)
- * **[Mininet 2.2.1 on Ubuntu 14.04 LTS - 32 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.1-150420-ubuntu-14.04-server-i386.zip)** (deprecated)
+ * [Mininet 2.2.1 on Ubuntu 14.04 LTS - 64 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.1-150420-ubuntu-14.04-server-amd64.zip) (deprecated)
+ * **[Mininet 2.2.1 on Ubuntu 14.04 LTS - 32 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.1-150420-ubuntu-14.04-server-i386.zip) (deprecated)
 
  * [Mininet 2.2.0 on Ubuntu 14.04 LTS - 64 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.0-150106-ubuntu-14.04-server-amd64.zip) (deprecated)
  * [Mininet 2.2.0 on Ubuntu 14.04 LTS - 32 bit](http://onlab.vicci.org/mininet-vm/mininet-2.2.0-150106-ubuntu-14.04-server-i386.zip) (deprecated)
