@@ -8,7 +8,7 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 
       sudo rm -f /etc/ssh/*key*
       sudo /usr/sbin/dpkg-reconfigure openssh-server
-      sudo service sshd restart                              
+      sudo service ssh restart                              
 
 * We recommend that you use the Mininet 2.2.2 or newer VM images.
 
