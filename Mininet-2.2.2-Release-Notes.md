@@ -4,7 +4,7 @@ Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1
 
 * The Mininet VM image no longer includes the same, identical `ssh` key for everyone, and should instead generate new ones the first time it is booted(!!) *[In my opinion, the `.ovf` spec should include an option (and the OS should include a mechanism) to regenerate `ssh` keys and MAC addresses, since the issue is likely to occur in any VM image with `ssh` installed!]*
 
-* We recommend that you regenerate any default keys in use in Mininet VMs:
+* We recommend that you regenerate any default keys in use in Mininet (or derived) VMs:
 
       sudo rm -f /etc/ssh/*key*
       sudo /usr/sbin/dpkg-reconfigure openssh-server
