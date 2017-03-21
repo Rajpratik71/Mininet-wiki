@@ -1,4 +1,4 @@
-Mininet 2.2.2 is primarily a compatibility and bug fix release for Mininet 2.2.1.
+Mininet 2.2.2 is primarily a bug fix and compatibility release for Mininet 2.2.1.
 
 ### Security Fix/Advisory!
 
