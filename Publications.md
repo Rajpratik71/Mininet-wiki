@@ -30,6 +30,10 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Presentations and Slides
 
+* Mininet SOSR Software Systems Award Talk [[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]] [[(Mininet: The Importance of Software Research Projects) |  pdf/mininet-award-sosr17.pdf ]]
+
+  This is our invited talk delivered after Mininet won the SOSR Software Systems Award! I (BL) described how Mininet was created, leading into a discussion of why Software Research Projects are a particularly beneficial and worthwhile form of scholarship, and ending with some suggestions for how we can improve research in networking and systems, as well as some important unanswered research questions.
+
 * Teaching Computer Networking with Mininet  [[(Program) | http://conferences.sigcomm.org/sigcomm/2014/tutorial-mininet.php ]] [[(Slides and Materials) | SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]] [[(teaching.mininet.org) | http://teaching.mininet.org]]
 
   This is our tutorial from [[ SIGCOMM 2014 | http://conferences.sigcomm.org/sigcomm/2014/ ]], where we provided an introduction to Mininet and shared experiences using Mininet to tech computer networking at Stanford, Georgia Tech and MIT as well as in MOOCs (massive open online courses.)
