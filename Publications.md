@@ -30,7 +30,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Presentations and Slides
 
-* Mininet SOSR Software Systems Award Talk [[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]] [[(Mininet: The Importance of Software Research Projects) |  pdf/mininet-award-sosr17.pdf ]]
+* [[Mininet SOSR Software Systems Award Talk | pdf/mininet-award-sosr17.pdf ]][[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]]
 
   This is our invited talk delivered after Mininet won the SOSR Software Systems Award! I (BL) described how Mininet was created, leading into a discussion of why Software Research Projects are a particularly beneficial and worthwhile form of scholarship, and ending with some suggestions for how we can improve research in networking and systems, as well as some important unanswered research questions.
 
