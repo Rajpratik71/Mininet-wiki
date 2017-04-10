@@ -1,7 +1,3 @@
-### Tutorial at SIGCOMM 2014
-
-[[SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]]
-
 ### Course Projects
 
 The following programming assignments are based on the ones we use in Stanford CS144 'An Introduction to Computer Networks'. Mininet is used to emulate the network topology in these assignments.
@@ -27,3 +23,7 @@ As a project in Stanford's CS244 - 'Advanced Topics in Networking' students recr
 * [[Reproducible Network Experiments using Container-Based Emulation | http://conferences.sigcomm.org/co-next/2012/eproceedings/conext/p253.pdf]] Our paper describing the above.
 
 If you have developed assignments using Mininet, please feel free to add to this page.
+
+### Tutorial at SIGCOMM 2014
+
+[[SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]]
