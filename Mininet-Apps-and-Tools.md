@@ -17,3 +17,13 @@ The Mininet source code includes a variety of useful [examples](https://github.c
 Included in Mininet in the [`examples/`](https://github.com/mininet/mininet/tree/master/examples) directory.
 
 ---
+
+#### Network Namespace-aware Bandwidth Monitor
+
+* A patched version of Volker Gropps Bandwidth Monitor NG aka `bwm-ng`
+* Enables users to monitor the throughput of network interfaces in multiple network namespaces (e.g. Mininet hosts) at the same time
+* Especially useful when using Mininet with routers
+
+Repository: https://github.com/jgjl/bwm-ng/tree/lxns
+
+---
