@@ -10,7 +10,7 @@
 * [[Documentation]]
 * [[Videos]]
 * [[Source Code | https://github.com/mininet/mininet]]
-* [[Apps | Mininet Apps]]
+* [[Apps and Tools | Mininet Apps]]
 * [[FAQ  | FAQ]]
 * [[Wiki | Home]]
 * [[Teaching | Teaching and Learning with Mininet]]
