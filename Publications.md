@@ -36,7 +36,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 * [[Mininet SOSR Software Systems Award Talk | pdf/mininet-award-sosr17.pdf ]] [[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]] [[ (Award) | http://conferences.sigcomm.org/sosr/2017/award.html ]]
 
-  This is our invited talk at [[ SOSR 2017 | http://conferences.sigcomm.org/sosr/2017 ]] , delivered after **Mininet won the [[ ACM SIGCOMM SOSR Software Systems Award | http://conferences.sigcomm.org/sosr/2017/award.html ]]!** 
+  This is our invited talk at [[ SOSR 2017 | http://conferences.sigcomm.org/sosr/2017 ]], delivered after **Mininet won the [[ ACM SIGCOMM SOSR Software Systems Award | http://conferences.sigcomm.org/sosr/2017/award.html ]]!** 
 
   I (BL) describe how Mininet was created, leading into a discussion of why Software Research Projects are a particularly beneficial and worthwhile form of scholarship, and ending with some suggestions for how we can improve research in networking and systems, as well as some important unanswered research questions.
 
