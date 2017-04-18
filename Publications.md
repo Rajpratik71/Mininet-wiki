@@ -2,7 +2,11 @@
 
 <!-- was: pdf/mininet-conext12.pdf -->
 
-* Brandon Heller *[[ Reproducible network research with high-fidelity emulation | https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf ]]* Ph.D. Thesis, Stanford University, 2013.
+* Bob Lantz, Brian O'Connor. *[[ A Mininet-based Virtual Testbed for Distributed SDN Development | http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p365.pdf ]]* [[SIGCOMM 2016 | http://conferences.sigcomm.org/sigcomm/2015/demosessions.php ]], August 18-20, 2015, London, UK.
+
+  This demonstration showed distributed Mininet emulation (cluster edition) as well as enhancements such as the Mininet Server node, which simplifies running unmodified Linux services on Mininet as well as self-hosting (i.e. running multiple and nested Mininet sessions.)
+
+* Brandon Heller. *[[ Reproducible network research with high-fidelity emulation | https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf ]]* Ph.D. Thesis, Stanford University, 2013.
 
   This thesis examines how to improve the predictive performance accuracy of emulators by defining and monitoring network *invariants*, universal properties of network systems that we know must be true. This facilitates the use of emulators like Mininet for realistic and reproducible network experiments.
 
