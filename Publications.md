@@ -34,7 +34,7 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Presentations and Slides
 
-* [[Mininet SOSR Software Systems Award Talk | pdf/mininet-award-sosr17.pdf ]] [[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]]
+* [[Mininet SOSR Software Systems Award Talk | pdf/mininet-award-sosr17.pdf ]] [[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]] [[ Award | http://conferences.sigcomm.org/sosr/2017/award.html ]]
 
   This is our invited talk delivered after **Mininet won the [[ ACM SIGCOMM SOSR Software Systems Award | http://conferences.sigcomm.org/sosr/2017/award.html ]]!** 
 
