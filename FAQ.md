@@ -43,15 +43,15 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I implement a **custom routing algorithm**?](#routing)
 * [How do I **update to a new version of Mininet**?](#updating)
 * [In addition to the `mininet-discuss` mailing list, is there a **`#mininet` IRC channel**?](#irc)
-* [Can I turn on SSL for Open vSwitch?] (#ovs-ssl)
+* [Can I turn on SSL for Open vSwitch?](#ovs-ssl)
 
 ###  OpenFlow Questions
 
 * [Which **versions of OpenFlow** does Mininet support?](#openflow-versions)
 * [What **OpenFlow switch implementations** does Mininet support?](#openflow-switches)
-* [How can I use **OpenFlow 1.3 only**?] (#openflow13)
+* [How can I use **OpenFlow 1.3 only**?](#openflow13)
 * [How can I use **multiple controllers** in my network?](#multiple-controllers)
-* [Can I **upgrade Open vSwitch** to a newer version?] (#ovs-upgrade)
+* [Can I **upgrade Open vSwitch** to a newer version?](#ovs-upgrade)
 
 
 ### Troubleshooting
