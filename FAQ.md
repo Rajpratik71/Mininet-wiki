@@ -593,7 +593,7 @@ Note that if you are running a *remote* controller (rather than a local OVS or L
 
 As noted above, running spanning tree removes any performance improvement from multipath networks, although it can still provide redundancy for reliability (if you deactivate a link, STP can compute a new spanning tree that uses a different link and restores connectivity.) If this sounds terrible, it's because it is - one of the advantages of using a multipath-capable OpenFlow controller is that you can potentially escape the tyranny of Spanning Tree!
 
-If you wish to code your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to do some work and actually understand what you are doing.
+If you wish to code your own multipath-capable controller in POX, you may also wish to take a look at [RipL-POX](https://github.com/brandonheller/riplpox), which provides starter code for a multipath-capable controller, as well as some of the multipath experiments on http://reproducingnetworkresearch.wordpress.com . But, you will still probably have to **do some work** and **actually understand what you are doing**.
 
 ***
 <a name="mininet-hang">
