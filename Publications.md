@@ -5,7 +5,6 @@ SIGCOMM CCR, April 2017.
 
   This paper describes the experiences since 2012 in Stanford's CS244 graduate computer networking course, where students have primarily used Mininet (as well as other systems such as Mahimahi, Emulab, and ns-2/3) to reproduce published research experiments. By reproducing experiments in the course, students increase their own understanding, knowledge and abilities while making a valuable contribution to the field by examining and verifying results.
 
- SIGCOMM Comput. Commun. Rev. 47, 2 (May 2017), 19-26. DOI: https://doi.org/10.1145/3089262.3089266
 
 * Bob Lantz, Brian O'Connor. *[[ A Mininet-based Virtual Testbed for Distributed SDN Development | http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p365.pdf ]]*. [[SIGCOMM 2016 | http://conferences.sigcomm.org/sigcomm/2015/demosessions.php ]], August 18-20, 2015, London, UK.
 
