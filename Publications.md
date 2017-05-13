@@ -3,7 +3,7 @@
 * Lisa Yan, Nick McKeown. *[[Learning Networking by Reproducing Research Results | https://ccronline.sigcomm.org/2017/learning-networking-by-reproducing-research-results/ ]]*.
 SIGCOMM CCR, April 2017.
 
-  Since 2012, students in Stanford's CS244 have used Mininet (primarily, as well as other systems such as Mahimahi, Emulab, and ns-2/3) to replicate published research results as part of a course project; this has helped to increase their own understanding, knowledge and abilities while making a valuable contribution to the field by examining and verifying results.
+  Since 2012, students in Stanford's CS244 have used Mininet (primarily, as well as other systems such as Mahimahi, Emulab, and ns-2/3) to replicate published research results; this has helped to increase their own understanding, knowledge and abilities while making a valuable contribution to the field by examining and verifying results.
 
 * Bob Lantz, Brian O'Connor. *[[ A Mininet-based Virtual Testbed for Distributed SDN Development | http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p365.pdf ]]*. [[SIGCOMM 2016 | http://conferences.sigcomm.org/sigcomm/2015/demosessions.php ]], August 18-20, 2015, London, UK.
 
