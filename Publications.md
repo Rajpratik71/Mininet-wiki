@@ -1,7 +1,7 @@
 ### Papers
 
 * Lisa Yan, Nick McKeown. *[[Learning Networking by Reproducing Research Results | https://ccronline.sigcomm.org/2017/learning-networking-by-reproducing-research-results/ ]]*.
-SIGCOMM CCR, April 2017.
+[[ SIGCOMM CCR, April 2017 | https://ccronline.sigcomm.org/2017/the-april-2017-issue/ ]].
 
   Since 2012, students in Stanford's CS244 have used Mininet (primarily, as well as other systems such as Mahimahi, Emulab, and ns-2/3) to replicate published research results; this has helped to increase their own understanding, knowledge and abilities while making a valuable contribution to the field by examining and verifying results.
 
