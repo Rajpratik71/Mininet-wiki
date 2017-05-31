@@ -39,17 +39,17 @@ its design as well as experiences using Mininet to reproduce 16 published networ
 
 ### Presentations and Slides
 
-* [[Mininet SOSR Software Systems Award Talk | pdf/mininet-award-sosr17.pdf ]] [[(Program) | http://conferences.sigcomm.org/sosr/2017/program.html]] [[ (Award) | http://conferences.sigcomm.org/sosr/2017/award.html ]] [[(Slides) | pdf/mininet-award-sosr17.pdf ]]
+* [[Mininet SOSR Software Systems Award Talk | pdf/mininet-award-sosr17.pdf ]] [(Program)](http://conferences.sigcomm.org/sosr/2017/program.html) [(Award)](http://conferences.sigcomm.org/sosr/2017/award.html) [(Slides)](pdf/mininet-award-sosr17.pdf)
 
   This is our invited talk at [[ SOSR 2017 | http://conferences.sigcomm.org/sosr/2017 ]], delivered after **Mininet won the [[ ACM SIGCOMM SOSR Software Systems Award | http://conferences.sigcomm.org/sosr/2017/award.html ]]!** 
 
   I (BL) describe how Mininet was created, leading into a discussion of why Software Research Projects are a particularly beneficial and worthwhile form of scholarship, and ending with some suggestions for how we can improve research in networking and systems, as well as some important unanswered research questions.
 
-* Teaching Computer Networking with Mininet  [[(Program) | http://conferences.sigcomm.org/sigcomm/2014/tutorial-mininet.php ]] [[(Slides and Materials) | SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]] [[(teaching.mininet.org) | http://teaching.mininet.org]]
+* [Teaching Computer Networking with Mininet](http://teaching.mininet.org) [[(Program) | http://conferences.sigcomm.org/sigcomm/2014/tutorial-mininet.php ]] [[(Slides and Materials) | SIGCOMM 2014 Tutorial: Teaching Computer Networking with Mininet]] [(teaching.mininet.org)](http://teaching.mininet.org)
 
   This is our tutorial from [[ SIGCOMM 2014 | http://conferences.sigcomm.org/sigcomm/2014/ ]], where we provided an introduction to Mininet and shared experiences using Mininet to tech computer networking at Stanford, Georgia Tech and MIT as well as in MOOCs (massive open online courses.)
 
-* Mininet: an instant Virtual Network on your Laptop [[(Announcement) | NetSeminar Announcement]] [(Slides)](pdf/mininet-netseminar.pdf) [(Video)](http://www.youtube.com/watch?v=90fBCO1MMTA)
+* [Mininet: an instant Virtual Network on your Laptop](pdf/mininet-netseminar.pdf) [[(Announcement) | NetSeminar Announcement]] [(Slides)](pdf/mininet-netseminar.pdf) [(Video)](http://www.youtube.com/watch?v=90fBCO1MMTA)
 
   Stanford [NetSeminar](http://netseminar.stanford.edu). Bob and Brian explain why network emulation is valuable and how Mininet addresses issues of scalability, usability, and performance modeling. Includes a somewhat detailed description of how Mininet uses underlying Linux functionality to implement a convenient Python API for network emulation. The slides include interesting supplemental material as well.
 
