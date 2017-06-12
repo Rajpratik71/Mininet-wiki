@@ -400,7 +400,7 @@ and making sure this line is commented out:
 
     #dns=dnsmasq
 
-Then restart NetworkManager using:
+Then restart `NetworkManager` using:
 
     sudo service NetworkManager restart  # or network-manager on releases prior to 16.04
 
