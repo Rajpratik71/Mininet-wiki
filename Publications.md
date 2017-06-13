@@ -7,7 +7,7 @@
 
 <!-- was: pdf/mininet-conext12.pdf -->
 
-* Bob Lantz, Brian O'Connor. *[[ A Mininet-based Virtual Testbed for Distributed SDN Development | http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p365.pdf ]]*. [[SIGCOMM 2016 | http://conferences.sigcomm.org/sigcomm/2015/demosessions.php ]], August 18-20, 2015, London, UK.
+* Bob Lantz, Brian O'Connor. *[[ A Mininet-based Virtual Testbed for Distributed SDN Development | http://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p365.pdf ]]*. [[SIGCOMM 2015 | http://conferences.sigcomm.org/sigcomm/2015/demosessions.php ]], August 18-20, 2015, London, UK.
 
   This demonstration showed distributed Mininet emulation (cluster edition) as well as enhancements such as the Mininet Server node, which simplifies running unmodified Linux services on Mininet as well as self-hosting (i.e. running multiple and nested Mininet sessions.)
 
