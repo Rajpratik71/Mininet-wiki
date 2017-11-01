@@ -44,6 +44,7 @@ Before you send a question to `mininet-discuss`, make sure your question isn't a
 * [How do I **update to a new version of Mininet**?](#updating)
 * [In addition to the `mininet-discuss` mailing list, is there a **`#mininet` IRC channel**?](#irc)
 * [Can I turn on SSL for Open vSwitch?](#ovs-ssl)
+* [Why doesn't pmonitor display any output for some Python commands?](#unbuffered-python)
 
 ###  OpenFlow Questions
 
@@ -872,6 +873,51 @@ Also, by request, we have created a `#mininet` IRC channel for additional Minine
 ### Can I turn on SSL for Open vSwitch?
 
 Yes, Open vSwitch and ovs-controller both support SSL.  It isn't turned on by default in Mininet.  For an example, look [here] (SSL-on-Open-vSwitch-and-ovs-controller).
+
+***
+<a name="unbuffered-python"/>
+
+### Why doesn't pmonitor display any output for some Python commands?
+
+If you try to recreate the simple web server and client example from the walkthrough with Mininet's Python API you may find that `util.pmonitor` blocks and returns no output (not even the expected `Serving HTTP on 0.0.0.0 port 80`). This is because, for performance reasons, Python buffers its output to `stdout` (as discussed [here](https://stackoverflow.com/questions/27432727/python-script-cannot-read-popen-output-until-process-is-finished-on-windows)). You simply need to pass the `-u` flag, as shown in the example below.
+
+```python
+from mininet.net import Mininet
+from mininet.topo import SingleSwitchTopo
+import mininet.util as util
+from time import sleep
+
+
+def main():
+    topo = SingleSwitchTopo(hosts=2)
+    net = Mininet(topo=topo)
+    net.start()
+
+    http_client = net.hosts[0]
+    http_server = net.hosts[1]
+
+    popens = {}
+    popens[http_server] = http_server.popen("python -u -m SimpleHTTPServer 80")
+    sleep(1)  # Wait for the server to start up.
+    popens[http_client] = http_client.popen("wget -O - {}".format(http_server.IP()))
+
+    try:
+        for host, line in util.pmonitor(popens):
+            if host:
+                print(host.name, line)
+    finally:
+        # Don't leave things running if this script crashes.
+        for process in popens.values():
+            if not process.poll():
+                process.kill()
+        net.stop()
+
+if __name__ == '__main__':
+    main()
+```
+
+
+
 
 ***
 <a name="multiple-controllers"/>
