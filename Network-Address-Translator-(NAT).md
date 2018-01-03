@@ -22,7 +22,7 @@ A correct implementation should support the following operations from the emulat
 All packets to external hosts (app servers) should appear to come from eth2's address (e.g. 172.64.3.1 above).
 
 
-##General NAT Logic
+## General NAT Logic
 There are three major parts to the assignment:
 
 * translating ICMP echo messages (and their corresponding replies),
@@ -30,7 +30,7 @@ There are three major parts to the assignment:
 * cleaning up defunct mappings between internal addresses and the external address.
 Note that your NAT is not required to handle UDP. It is entirely up to you whether you drop or forward UDP traffic.
 
-##Simple Router
+## Simple Router
 Your NAT builds on the "simple router". You must add a new command-line flag, -n, which controls whether the NAT is enabled. If the -n flag is not passed, then the router should act following the requirements of "simple router". For example, it should be possible to traceroute across the router when the -n flag is not passed. All of the ICMP errors in "simple router" still apply. For example, trying to open a TCP port on the router should cause an ICMP port unreachable reply (with the caveat of TCP requirement 4 below). More precisely:
 
 * Your NAT MUST generate and process ICMP messages as per the "simple router".
