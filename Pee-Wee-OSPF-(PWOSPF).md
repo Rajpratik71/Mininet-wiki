@@ -1,15 +1,15 @@
-##Important Links
+## Important Links
 * [PWOSPF specification](http://yuba.stanford.edu/cs344/admin/pwospf/)
 * [Assignment FAQ](http://yuba.stanford.edu/vns/?page_id=75)
 * [Using your sr router with the PWOSPF assignment](http://yuba.stanford.edu/vns/assignments/pwospf/adding-ospf-functionality-to-your-sr-router/)
 
-##Introduction
+## Introduction
 This assignment involves building advanced functionality on top of a basic VNS router. The goal is to develop a simple dynamic routing protocol, PWOSPF, so that your router can generate its forwarding table automatically based on routes advertised by other routers on the network. By the end of this project, your router is expected to be able to build its forwarding table from link-state advertisements sent from other routers, and route traffic through complex topologies containing multiple nodes.
 
-##PWOSPF
+## PWOSPF
 The routing protocol you will be implementing is a link state protocol that is loosely based on OSPFv2. You may find a full specification of PWOSPF [here](http://yuba.stanford.edu/cs344/pwospf/). Note that while PWOSPF is based on OSPFv2 it is sufficiently different that referring to the OSPFv2 as a reference will not be of much help and contrarily may confuse or mislead you.
 
-##Topology and Requirements Overview
+## Topology and Requirements Overview
 
 The topology of PWOSPF is as follows. There are three routers inter-connected with each other. Client connects to the network through vhost1; Server1 connects to the network through vhost2; Server2 connects to the network through vhost3.
 
