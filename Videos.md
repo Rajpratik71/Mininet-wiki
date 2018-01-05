@@ -31,3 +31,5 @@ Most of these videos are available on YouTube, and we link to several of them on
 ### Bob Lantz and Brian O'Connor (ON.Lab)
 
 - Stanford NetSeminar on Mininet: http://www.youtube.com/watch?v=90fBCO1MMTA [[(Announcement) | NetSeminar Announcement]] [(Slides)](pdf/mininet-netseminar.pdf)
+
+- OVSCon Presentation on Mininet: https://www.youtube.com/watch?v=90fBCO1MMTA [(Slides)](http://www.openvswitch.org/support/ovscon2015/16/1305-lantz.pdf)
