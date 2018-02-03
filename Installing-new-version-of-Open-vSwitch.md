@@ -28,7 +28,7 @@ Build and install option 2 (Build Debian packages and install):
 
     root@mininet-vm# cd openvswitch-1.10.0/
     root@mininet-vm# apt-get install build-essential fakeroot
-    root@mininet-vm# apt-get install debhelper autoconf automake libssl-dev pkg-config bzip2 openssl python-all procps python-qt4 python-zopeinterface python-twisted-conch
+    root@mininet-vm# apt-get install debhelper autoconf automake libssl-dev pkg-config bzip2 openssl python-all procps python-qt4 python-zopeinterface python-twisted-conch dh-autoreconf
     root@mininet-vm# fakeroot debian/rules binary
     root@mininet-vm# cd ..
     root@mininet-vm# dpkg -i openvswitch-common*.deb openvswitch-datapath-dkms*.deb openvswitch-controller*.deb openvswitch-pki*.deb openvswitch-switch*.deb
