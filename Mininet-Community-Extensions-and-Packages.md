@@ -10,6 +10,10 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 
 * CentOS/Scientific Linux: http://downloads.naulinux.ru/pub/NauLinux/6.3/x86_64/Extras/RPMS/Projects/OpenFlow/
 
+#### Mininet Porting for TinyCore Linux
+
+* TinyCore Linux: https://github.com/jediMunees/mininetTinycore/wiki
+
 #### Useful Tools for Mininet Users
 
 * Visual Network Description - VND (http://www.ramonfontes.com/vnd) - A GUI tool that allows automatic creation of Mininet and Openflow Controllers Scripts.
