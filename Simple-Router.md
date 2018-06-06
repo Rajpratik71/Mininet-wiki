@@ -183,6 +183,14 @@ eth1    HWaddr36:61:7c:4f:b6:7b
  <-- Ready to process packets --> 
 ```
 
+NOTE: If you don't see the `Router interfaces:` part and on the POX controller terminal you get:
+
+```
+DEBUG:.home.mininet.cs144_lab3.pox_module.cs144.srhandler:interfaces not populated yet
+```
+
+Then you need to exit mininet (with `Ctrl + D`), exit the `sr_solution` (with `Ctrl + C`) and then start them again (without exiting the POX controller). 
+
 In this particular setup, 192.168.2.2 is the IP for `server1`, and 172.64.3.10 is the IP for `server2`.  You can find the IP addresses in your `IP_CONFIG` file.
 
 Now, back to the terminal where Mininet is running. To issue an command on the emulated host, type the host name followed by the command in the Mininet console. For example, the following command issues 3 pings from the `client` to `server1`.
