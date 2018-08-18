@@ -332,7 +332,7 @@ In VirtualBox, you need two different network interfaces set up if you want to b
 ***
 <a name="lxc-apparmor">
 
-### Help! Mininet isn't working in an `lxc` container because of AppArmor!
+### Help! Mininet isn't working in an `lxc` (or docker) container because of AppArmor!
 
 *[Note that Mininet is itself a container orchestration system, so usually you don't want to run it inside another container system unless you are doing something unusual such as setting up a shared development or lab server!]*
 
@@ -352,6 +352,15 @@ Then reload the appropriate profile, e.g.
     apparmor_parser -r /etc/apparmor.d/lxc-containers
 
 Bugs: This doesn't seem to work in 14.04 unfortunately.
+
+Mininet should work out of the box in a privileged docker container, but AppArmor breaks
+`tcpdump` in docker containers. The workaround is either:
+
+    sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.tcpdump
+
+or 
+
+    sudo mv /usr/sbin/tcpdump /usr/bin
 
 ***
 <a name="python-api"/>
