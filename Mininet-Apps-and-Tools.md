@@ -23,6 +23,9 @@ Included in Mininet in the [`examples/`](https://github.com/mininet/mininet/tree
 
 http://mininet.spear.narmox.com/
 
+### Other Community Extensions and Packages
+[[Mininet-Community-Extensions-and-Packages]]
+
 ---
 
 #### Network Namespace-aware Bandwidth Monitor
