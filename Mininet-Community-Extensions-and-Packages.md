@@ -4,6 +4,8 @@ This page is intended to be a simple reference to community-developed extensions
 
 If links are broken, please fix them - thanks! Please also feel free to improve the text descriptions.
 
+**Also see [[Mininet Apps and Tools]]**
+
 #### Mininet Installation Packages for Other OSes
 
 * RHEL/Scientific 6: http://puias.princeton.edu/data/puias/computational/6/SRPMS/mininet-2.0.0-2.puias6.src.rpm
