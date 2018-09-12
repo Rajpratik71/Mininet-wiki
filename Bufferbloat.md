@@ -81,13 +81,13 @@ It turns out that Mininet lets you measure cwnd and buffer occupancy values.  A 
 Stop and restart Mininet and the monitor script, then re-run the above experiment as follows.
 ```no-highlight
 mininet> exit
-bash# sudo ./run.sh
+bash$ sudo ./run.sh
 ```
 
 ### Monitor TCP CWND and Buffer Occupancy in Mininet
 In another bash terminal, go to cs144_bufferbloat directory and type the following giving a name for your experiment.
 ```no-highlight
-bash# ./monitor.sh <EXP_NAME>
+bash$ ./monitor.sh <EXP_NAME>
 ```
 Don’t worry if you see “ERROR: Module tcp_probe does not exist in /proc/modules”, it just means this module is not previously loaded.
 ```no-highlight
@@ -105,7 +105,7 @@ Wait for the wget to complete, then stop the python monitor script followed by t
 ### Plot CWND and Queue Occupancy 
 Plot the TCP cwnd and queue occupancy from the output file 
 ```no-highlight
-bash# ./plot_figures.sh <EXP_NAME>
+bash$ ./plot_figures.sh <EXP_NAME>
 ```
 Adjust command line parameters to generate the figure you want. 
 
@@ -118,11 +118,11 @@ By now you will have realized that the buffer in the Headend router is so large 
 ### Restart Mininet with small buffer
 Stop any running Mininet and start Mininet again, but this time we will make the buffers 20 packets long instead:
 ```no-highlight
-prompt> sudo ./run-minq.sh 
+bash$ sudo ./run-minq.sh 
 ```
 Let’s also run the monitor script on the side:
 ```no-highlight 
-prompt> sudo ./monitor.sh <EXP_NAME>
+bash$ sudo ./monitor.sh <EXP_NAME>
 ```
 
 ### Repeat the steps in Parts 2 and 3:
@@ -140,7 +140,7 @@ mininet> h2 wget http://10.0.0.1
 ### Plot CWND and Queue Occupancy 
 Plot the figure for cwnd and queue occupancy, this time using the script “./plot_figures_minq.sh” 
 ```no-highlight
-prompt> ./plot_figures_minq.sh
+bash$ ./plot_figures_minq.sh
 ```
 
 Then again, use the url to see your figures.[Sample figures](http://yuba.stanford.edu/~huangty/cs144/minq.html)
@@ -158,7 +158,7 @@ For this experiment, we put the iperf and wget/ping packets into separate queues
 ### Restart Mininet
 Start Mininet again, but this time we will create two queues, one for each type of traffic.
 ```no-highlight
-prompt> sudo ./run-diff.sh
+bash$ sudo ./run-diff.sh
 ```
 
 ### Repeat the steps in Parts 2 and 3
