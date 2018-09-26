@@ -713,7 +713,7 @@ To add new features which can be invoked using the `mn` command, you need to def
 <tr><td><tt>--host</tt></td><td><tt>hosts</tt></td><td>'short name': <tt>Host</tt> constructor</td></tr>
 <tr><td><tt>--controller</tt></td><td><tt>controllers</tt></td><td>'short name': <tt>Controller</tt> constructor</td></tr>
 <tr><td><tt>--link</tt></td><td><tt>links</tt></td><td>'short name': <tt>Link</tt> constructor</td></tr>
-<tr><td><tt>--test</tt></td><td><tt>test</tt></td><td>'short name': test function to call with Mininet object</td></tr>
+<tr><td><tt>--test</tt></td><td><tt>tests</tt></td><td>'short name': test function to call with Mininet object</td></tr>
 </table>
 
 For example:
