@@ -33,3 +33,7 @@ Most of these videos are available on YouTube, and we link to several of them on
 - Stanford NetSeminar on Mininet: http://www.youtube.com/watch?v=90fBCO1MMTA [[(Announcement) | NetSeminar Announcement]] [(Slides)](pdf/mininet-netseminar.pdf)
 
 - OvSCon Presentation on Mininet and Open vSwitch: http://www.youtube.com/watch?v=UWImN9IDpZQ [(Slides)](http://www.openvswitch.org/support/ovscon2015/16/1305-lantz.pdf)
+
+### Anselmo Battisti (UFF - Brasil)
+
+- Como utilizar utilizar o wireshark para capturar pacotes mininet em uma máquina remota na Digital Ocean: https://www.youtube.com/watch?v=bIN5I9mLzqM&feature=youtu.be (I recorded this video in portuguese because there is almost nothing material in pt-br on the web!)
