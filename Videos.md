@@ -36,4 +36,4 @@ Most of these videos are available on YouTube, and we link to several of them on
 
 ### Anselmo Battisti (UFF - Brasil)
 
-- Como utilizar utilizar o wireshark para capturar pacotes mininet em uma máquina remota na Digital Ocean: https://www.youtube.com/watch?v=bIN5I9mLzqM&feature=youtu.be (I recorded this video in portuguese because there is almost nothing material in pt-br on the web!)
+- Como utilizar o wireshark para capturar pacotes mininet em uma máquina remota na Digital Ocean: https://www.youtube.com/watch?v=bIN5I9mLzqM&feature=youtu.be (I recorded this video in portuguese because there is almost nothing material in pt-br on the web!)
