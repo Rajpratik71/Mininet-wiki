@@ -12,7 +12,7 @@ Since Mininet is an Open Source project, you are encouraged (and empowered) to f
 
 If you find a bug in Mininet, please submit an issue via the
 
-### [Mininet Issues page on [GitHub](GitHub)](https://github.com/mininet/mininet/issues).
+### [Mininet Issues page on GitHub](https://github.com/mininet/mininet/issues).
 
 Please feel free to attach a patch to the issue if you have a fix for it.
 
