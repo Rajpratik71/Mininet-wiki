@@ -21,7 +21,7 @@ By distributing Mininet nodes and links over a cluster of servers, we can utiliz
 
 We believe that mainline Mininet will benefit greatly from cluster support, but this implementation of Cluster Edition is currently an experimental prototype, which is why we are shipping it as an example. Please try it out and let us know what you think at the Mininet mailing list!
 
-If you need a more mature alternative for running Mininet on a cluster, you may wish to look at Philip Wette's excellent [MaxiNet](http://www.cs.uni-paderborn.de/?id=maxinet).
+If you need a more mature alternative for running Mininet on a cluster, you may wish to look at Philip Wette's excellent [MaxiNet](http://maxinet.github.io/).
 
 <a name=when></a>
 
