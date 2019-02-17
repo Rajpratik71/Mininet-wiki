@@ -2,7 +2,7 @@
 
 A variety of useful applications and systems have been implemented using Mininet. Please feel free to add your own to this page.
 
-(also see <b>[[Mininet-Community-Extensions-and-Packages]]</b>)
+(also see <b>[[Mininet-Community-Extensions-and-Packages]]</b> and [[Documentation]])
 
 ---
 #### [Mininet Examples](https://github.com/mininet/mininet/tree/master/examples)
