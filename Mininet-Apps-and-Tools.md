@@ -1,8 +1,8 @@
-<i>For convenience, this page is also reachable via [apps.mininet.org](http://apps.mininet.org)</i>
+*For convenience, this page is also reachable via [apps.mininet.org](http://apps.mininet.org)*
 
 A variety of useful applications and systems have been implemented using Mininet. Please feel free to add your own to this page.
 
-(also see <b>[[Mininet-Community-Extensions-and-Packages]]</b> and [[Documentation]])
+(also see **[[Mininet-Community-Extensions-and-Packages]]** and **[[Documentation**]]**)
 
 ---
 #### [Mininet Examples](https://github.com/mininet/mininet/tree/master/examples)
