@@ -1,4 +1,4 @@
-<i>For convenience, this page is also reachable via [apps.mininet.org](apps.mininet.org)</i>
+<i>For convenience, this page is also reachable via [apps.mininet.org](http://apps.mininet.org)</i>
 
 A variety of useful applications and systems have been implemented using Mininet. Please feel free to add your own to this page.
 
