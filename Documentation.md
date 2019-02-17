@@ -1,3 +1,5 @@
+*(this page is also reachable via [docs.mininet.org](http://docs.mininet.org))*
+
 The Mininet documentation contains a wealth of helpful information including how to use Mininet, how to use Mininet's Python API, Frequently Asked Questions, and much more. Most of the questions we receive on the mailing list have already been answered in the documentation and FAQ, so please consult it, and please feel free to improve the FAQ and wiki!
 
 #### Getting Started With Mininet: The Basics
