@@ -11,6 +11,7 @@ The Mininet documentation contains a wealth of helpful information including how
 6. Look at some [example Mininet scripts](https://github.com/mininet/mininet/tree/master/examples)
 7. Try some realistic [network experiments](http://reproducingnetworkresearch.wordpress.com) with Mininet
 8. If you like, watch some [Mininet videos](Videos)
+9. You may wish to check out additional [[Mininet Apps and Tools]]
 
 #### Essential Mininet References
 * **[[Introduction to Mininet]]**
