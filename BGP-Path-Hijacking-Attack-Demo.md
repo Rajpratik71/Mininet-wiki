@@ -13,7 +13,7 @@ We will create the following network topology shown in the figure below.  There 
 
 1. R1 peers with R2 and R4.
 2. R2 peers with R1 and R3.
-3. R3 peers with R4.
+3. R3 peers with R2.
 
 ![Topology for BGP Attack Demo](images/bgp-attack.png)
 
