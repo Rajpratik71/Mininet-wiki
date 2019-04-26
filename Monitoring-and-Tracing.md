@@ -6,7 +6,7 @@ it directly against hardware?
 Even if it matches hardware, how do we know that it is actually
 doing the right thing?
 
-[Heller13][1] suggests the very useful idea of *network invariants.*
+[Heller13][1] suggests the very useful idea of **network invariants**.
 Just as *loop invariants* must hold during every iteration of
 a loop, or *function invariants* during every invocation of a
 function, network invariants shoud hold for the duration of a
@@ -24,7 +24,7 @@ experimental results are correct, but we will at least have
 higher confidence in them since the invariants tell us that
 there are know obvious problems.
 
-### Some possible invariants to measure:
+### Some possible invariants to measure
 
 #### Link data rate
 
