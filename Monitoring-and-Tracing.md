@@ -117,13 +117,16 @@ event.
 
 #### Full Packet Tracing
 
-We can use tcpdump to log the actual packets on an interface.
+We can use `tcpdump`/`tshark`/`wireshark` to monitor the actual packets
+transmitted over an interface and either decode them immediately or
+save them for later analysis.
+
 We may wish to analyze them to make sure that other constraints
 are being maintained, such as packet spacing or data rate. We
 can also verify that they are being marked properly with ECN.
 
 We can also analyze the packets in a TCP session using
-tcptrace.
+`tcptrace`.
 
 
 ### WARNING: Tracing is resource-intensive!!
