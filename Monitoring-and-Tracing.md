@@ -24,7 +24,7 @@ experimental results are correct, but we will at least have
 higher confidence in them since the invariants tell us that
 there are know obvious problems.
 
-### Some possible invariants to measure
+### Some Possible Invariants to Monitor
 
 #### Link data rate
 
@@ -136,7 +136,7 @@ look at for something like `cubic` or `bbr`.
 
 We can also monitor other internal TCP state.
 
-We can monitor TCP state with ftrace using the net:tcp_probe
+We can monitor TCP state with `ftrace` using the `net:tcp_probe`
 event.
 
 #### Full Packet Tracing
