@@ -39,9 +39,18 @@ usually means that we are hitting resource limits.
 
 We can measure this relatively easily using `bwm-ng`.
 
+Monitoring the link data rate is a good idea, but [Heller13][1]
+shows that it may not be sufficient to detect when an experiment
+has gone awry.
+
+One deficiency of link data rate is that it can be amortized over
+time, so the average may be correct even if the traffic is extremely
+bursty and unrealistic. To overcome this deficiency, we can consider
+the next option.
+
 #### Packet Spacing
 
-[Heller13][1] uses **Packet Spacing** as an example network invariant,
+[Heller13][1] picks **Packet Spacing** as an examplary network invariant,
 showing how it can be used in evaluating a `dctcp` experiment.
 
 On a link that we expect to be saturated with full-sized packets,
@@ -92,6 +101,14 @@ scheduling (which we can do by instrumenting sched_switch
 with `bcc`/EBPF) and correlating it with packet received
 events (which could be something like `net:netif_rx`, but I
 should look into this more to be absolutely sure.)
+
+### Other Monitoring
+
+There are a wealth of additional monitoring options; depending
+on the experiment these may be important output signals that
+could potentially be used to evaluate when a particular
+condition (which could be a network invariant) holds during
+an experiment.
 
 #### Queue depth
 
