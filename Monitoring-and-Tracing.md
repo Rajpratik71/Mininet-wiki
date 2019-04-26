@@ -6,9 +6,10 @@ it directly against hardware?
 Even if it matches hardware, how do we know that it is actually
 doing the right thing?
 
-[Heller13] suggests the very useful idea of "network invariants."
-Just as loop invariants must hold during every iteration of
-a loop, network invariants shoud hold for the duration of a
+[Heller13][1] suggests the very useful idea of *network invariants.*
+Just as *loop invariants* must hold during every iteration of
+a loop, or *function invariants* during every invocation of a
+function, network invariants shoud hold for the duration of a
 network experiment.
 
 Network invariants give us a signal to detect when things
@@ -36,7 +37,7 @@ that the link is not being accurately modeled: a faster rate
 usually means rate limiting isn't working, and a slower rate
 usually means that we are hitting resource limits.
 
-We can measure this relatively easily using bwm-ng.
+We can measure this relatively easily using `bwm-ng`.
 
 #### Packet spacing
 
@@ -44,15 +45,15 @@ On a link that we expect to be saturated with full-sized packets,
 the packet spacing should be within an acceptable tolerance of
 the expected spacing.
 
-As per [Heller13] we suggest a maximum deviation of one packet -
+As per [Heller13][1] we suggest a maximum deviation of one packet -
 basically allowing us to be one packet ahead or behind of where
 we should be at any given time. This may be a generous constraint,
 but it is clear that hardware could not overlap packet timing
 intervals, and also that a delay of one packet time would cut
 the link rate by 50%.
 
-We can measure packet spacing easily using the Linux ftrace
-(function tracing) subsystem and tracing net:net_dev_xmit
+We can measure packet spacing easily using the Linux `ftrace`
+(function tracing) subsystem and tracing `net:net_dev_xmit`
 events for the interface we are interested in.
 
 #### CPU Utilization
@@ -64,8 +65,8 @@ For hosts that we expect to be compute bound, we want to make
 sure that they are in fact getting their desired CPU
 utilization.
 
-We can monitor cpu utilization of cgroups using the cpuacct
-(CPU accounting controller) for cgroups.
+We can monitor cpu utilization of `cgroups` using the `cpuacct`
+(CPU accounting controller) for `cgroups`.
 
 #### RX-to-Schedule latency
 
@@ -81,8 +82,8 @@ incoming data.
 This is trickier to monitor than other statistics and may be
 more costly. We may be able to monitor it by tracing container
 scheduling (which we can do by instrumenting sched_switch
-with bcc/EBPF) and correllating it with packet received
-events (which could be something like net:netif_rx, but I
+with `bcc`/EBPF) and correlating it with packet received
+events (which could be something like `net:netif_rx`, but I
 should look into this more to be absolutely sure.)
 
 #### Queue depth
@@ -91,23 +92,23 @@ If the hosts and application can saturate a bottleneck link,
 this is likely to cause some queueing somewhere in the system.
 
 We need to create a queue that we can monitor, and we do this
-by using tc, which can also mark packets using ECN.
+by using `tc`, which can also mark packets using ECN.
 this gives us a pseudo-output-queued switch, though technically
 it is the links that have queues, and there can be queuing
 at the host end of the link as well.
 
 If a switch egress port is oversubscribed, then we will expect
 a queue to build there. (Presumably this is the queue which
-we use for ECN.) We can sample the queue size using
+we use for ECN.) We can sample the queue size using `tc -s`.
 
 We should also be able to monitor dropped packets on the
 interface.
 
 #### TCP Tracing
 
-For TCP Reno over long periods of time we should see the
+For TCP `reno` over long periods of time we should see the
 expected CWND sawtooth. There may be other values we should
-look at for something like Cubic or BBR.
+look at for something like `cubic` or `bbr`.
 
 We can also monitor other internal TCP state.
 
@@ -149,3 +150,7 @@ several times and verify that
 1. The base measurements do not change, and
 
 2. The invariant holds during the experiment
+
+
+
+[1]:https://stacks.stanford.edu/file/druid:zk853sv3422/heller_thesis-augmented.pdf
