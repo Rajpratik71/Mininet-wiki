@@ -39,13 +39,16 @@ usually means that we are hitting resource limits.
 
 We can measure this relatively easily using `bwm-ng`.
 
-#### Packet spacing
+#### Packet Spacing
+
+[Heller13][1] uses **Packet Spacing** as an example network invariant,
+showing how it can be used in evaluating a `dctcp` experiment.
 
 On a link that we expect to be saturated with full-sized packets,
 the packet spacing should be within an acceptable tolerance of
 the expected spacing.
 
-As per [Heller13][1] we suggest a maximum deviation of one packet -
+Following his example, we suggest a maximum deviation of one packet -
 basically allowing us to be one packet ahead or behind of where
 we should be at any given time. This may be a generous constraint,
 but it is clear that hardware could not overlap packet timing
@@ -67,6 +70,10 @@ utilization.
 
 We can monitor cpu utilization of `cgroups` using the `cpuacct`
 (CPU accounting controller) for `cgroups`.
+
+[Heller13][1] points out that CPU utilization is good to monitor
+but is not sufficient as a predictor for accuracy in network
+experiments.
 
 #### RX-to-Schedule latency
 
