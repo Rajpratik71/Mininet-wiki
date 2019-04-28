@@ -37,7 +37,9 @@ that the link is not being accurately modeled: a faster rate
 usually means rate limiting isn't working, and a slower rate
 usually means that we are hitting resource limits.
 
-We can measure this relatively easily using `bwm-ng`.
+We can measure this relatively easily using `bwm-ng`, or by looking
+at counters for an interface (e.g. using `ifconfig` or other methods)
+or by looking at counters on a switch (e.g. using OpenFlow.)
 
 Monitoring the link data rate is a good idea, but [Heller13][1]
 shows that it may not be sufficient to detect when an experiment
