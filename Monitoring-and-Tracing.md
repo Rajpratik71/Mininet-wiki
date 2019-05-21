@@ -22,7 +22,7 @@ results.
 If the invariants do hold, then we don't know that our
 experimental results are correct, but we will at least have
 higher confidence in them since the invariants tell us that
-there are know obvious problems.
+there are no obvious problems.
 
 ### Some Possible Invariants to Monitor
 
