@@ -14,7 +14,9 @@ The Mininet documentation contains a wealth of helpful information including how
 7. Try some realistic [network experiments](http://reproducingnetworkresearch.wordpress.com) with Mininet
 8. If you like, watch some [Mininet videos](Videos)
 9. You may wish to check out additional [[Mininet Apps and Tools]] as well as [[Mininet Community Extensions and Packages]]
-
+10. [mininet Beginners tutorials](http://knetsolutions.in/sdn-tutorials/mininet-tutorial) from KNet Solutions SDN Tutorials blog
+11. [IPv6 Testing in Mininet](http://knetsolutions.in/sdn-tutorials/testing-ipv6-in-mininet) from KNet Solutions SDN Tutorials blog
+12. [Mininet Clustering Tutorial](http://knetsolutions.in/sdn-tutorials/mininet-cluster) from KNet Solutions SDN Tutorials blog
 #### Essential Mininet References
 * **[[Introduction to Mininet]]**
 * **[Mininet Python API Reference](http://mininet.github.com/api/hierarchy.html)**
@@ -54,6 +56,10 @@ The Mininet documentation contains a wealth of helpful information including how
 * [[Futures]] A few (mostly older) thoughts on future Mininet features/futures
 * [[Mininet 2.0.0 Testing Plan and Projects]]
 * Mininet [[Documentation Plan]]
+
+#### UDEMY Training
+
+* [Beginners SDN Course](https://www.udemy.com/beginners-sdn-course-with-ryu-controller-practical-handson/?couponCode=TEN_DOLLAR) This course covers Basics of Mininet, writing custom topologies, openflow concepts, RYU SDN controller programming.
 
 <!-- comment this out since it's obsolete
 * [Release Plan](Release-Plan) Planning and task lists for Mininet releases
