@@ -22,6 +22,8 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 
 * Chef cookbook for installing Mininet: https://github.com/karlll/mininet-cookbook.git
 
+* Mininet Editor (https://thomaash.github.io/me/) - Web based topology editor for Mininet. Similar to MiniEdit, but with nicer GUI, real-time input validation, addressing plan export, script import and many more features.
+
 #### Customized Mininet Versions and VMs
 
 * Mininet for CCNx (content-centric networking): https://github.com/carlosmscabral/mn-ccnx/wiki
