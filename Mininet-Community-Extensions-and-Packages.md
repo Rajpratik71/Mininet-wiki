@@ -31,6 +31,8 @@ If links are broken, please fix them - thanks! Please also feel free to improve 
 
 #### Mininet-based Systems
 
+* [IPMininet](https://github.com/cnp3/ipmininet) is a python library, extending Mininet, in order to support emulation of (complex) IPv4 and IPv6 networks. As such, it provides new classes, such as Routers, auto-configures all properties not set by the user, such as IP addresses or router configuration files,... The latest user documentation is available on https://ipmininet.readthedocs.io/.
+
 #### Reproducible Research Experiments
 
 * http://reproducingnetworkresearch.wordpress.com includes a variety of reproducible networking experiments implemented using Mininet.
