@@ -91,7 +91,7 @@ You will use the same environment that we setup in "simple router" for this assi
 Open up a terminal on your machine, download the skeleton code for "NAT" using git.
 ```no-highlight
 > cd ~
-> git clone https://huangty@bitbucket.org/huangty/cs144_lab5.git
+> git clone --depth 1 https://huangty@bitbucket.org/huangty/cs144_lab5.git
 > cd cs144_lab5
 > git checkout --track remotes/origin/standalone
 ```

@@ -34,7 +34,7 @@ These instructions are for 11.10 only (for 12.04, see below!)
 
 If you want to install natively on Ubuntu 11.10 the basic technique is:
 
-    git clone git://github.com/mininet/mininet
+    git clone --depth 1 git://github.com/mininet/mininet
     mininet/util/install.sh -a
 
 This takes about 15-20 minutes and will install everything that is included in the Mininet VM, including NOX classic/destiny + tutorial code, the OpenFlow wireshark dissector, etc..
@@ -62,7 +62,7 @@ If you are doing a full install, you will also wish to rename your `openflow` an
 
 The basic technique to install the `install-precise` branch of Mininet 1.0 natively on Ubuntu 12.04 is:
 
-    git clone git://github.com/mininet/mininet
+    git clone --depth 1 git://github.com/mininet/mininet
     cd mininet
     git fetch
     git checkout -b install-precise origin/devel/install-precise

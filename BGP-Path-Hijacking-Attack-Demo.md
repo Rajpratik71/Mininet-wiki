@@ -29,7 +29,7 @@ We will create the following network topology shown in the figure below.  There 
 # Demo Instructions
 ## Step 1
 1. Ensure you have downloaded the Mininet VM installation from http://www.scs.stanford.edu/~jvimal/mininet-sigcomm14/mininet-tutorial-vm-64bit.zip.  Note: The tutorial is known to not work with recent versions of Mininet.  Until we fix the issue and update this Wiki entry, please use the VM from the above URL.  The username/password is mininet/mininet.
-2. `git clone git@bitbucket.org:jvimal/bgp.git`.
+2. `git clone --depth 1 git@bitbucket.org:jvimal/bgp.git`.
 3. `cd bgp`
 4. Start the bgp experiment and wait for the Mininet prompt by running the python command as shown below:
 

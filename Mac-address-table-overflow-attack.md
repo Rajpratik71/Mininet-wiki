@@ -12,7 +12,7 @@ Please refer to [[Environment Setup]] for setting up the Mininet environment.
 ### Check Out Starter Code
 ```no-highlight
 ~$ cd ~
-~$ git clone https://huangty@bitbucket.org/huangty/cs144_security.git
+~$ git clone --depth 1 https://huangty@bitbucket.org/huangty/cs144_security.git
 ~/cs144_security$ cd cs144_security/
 ```
 

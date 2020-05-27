@@ -18,7 +18,7 @@ Make sure Mininet and the Stanford reference OpenFlow controller are installed, 
 Download the DHCP demo code if necessary, and start it:
 
 ```
-git clone https://bitbucket.org/lantz/cs144-dhcp
+git clone --depth 1 https://bitbucket.org/lantz/cs144-dhcp
 cd cs144-dhcp
 sudo -E ./dhcp.py
 *** Creating network
@@ -109,7 +109,7 @@ dhcp evil h1
 
 The code is available via `git`:
 
-    git clone https://bitbucket.org/lantz/cs144-dhcp
+    git clone --depth 1 https://bitbucket.org/lantz/cs144-dhcp
 
 ### Video
 
