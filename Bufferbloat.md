@@ -17,7 +17,7 @@ The goals of the exercise are to:
 ### Get the Bufferbloat Topology 
 Bring up a terminal on your machine 
 ```no-highlight
-> git clone https://bitbucket.org/huangty/cs144_bufferbloat.git
+> git clone --depth 1 https://bitbucket.org/huangty/cs144_bufferbloat.git
 ```
 ### Run the Mininet Emulator
 ```no-highlight

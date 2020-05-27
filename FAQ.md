@@ -748,7 +748,7 @@ Note that you need to escape the space in `ifconfig h1-eth0` as `%20` as you wou
 
 1. Fetch the Mininet source tree if you haven't already
 
-        git clone http://mininet.github.com/mininet/mininet
+        git clone --depth 1 http://mininet.github.com/mininet/mininet
 
 2. Run an example
 

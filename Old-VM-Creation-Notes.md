@@ -134,7 +134,7 @@ Download Mininet
 You don't need to install the Mininet Python code just yet; we'll run the included machine setup shell scripts directly.
 <verbatim>
 sudo apt-get install -y git-core
-git clone git://github.com/mininet/mininet.git
+git clone --depth 1 git://github.com/mininet/mininet.git
 </verbatim>
 
 

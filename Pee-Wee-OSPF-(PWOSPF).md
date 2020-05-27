@@ -30,7 +30,7 @@ _**Note: Make sure your EC2 Machine's Security Group opens ports 8888 and 2300. 
 Boot up your machine setup with Mininet. Open up a terminal on the machine, download the skeleton code for "PWOSPF" using git.
 ```no-highlight
 > cd ~
-> git clone https://huangty@bitbucket.org/huangty/pwospf.git
+> git clone --depth 1 https://huangty@bitbucket.org/huangty/pwospf.git
 > cd pwospf
 ```
 

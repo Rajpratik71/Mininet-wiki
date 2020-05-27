@@ -9,7 +9,7 @@ sudo apt-get install -y git vim-nox python-setuptools python-all-dev flex bison 
 ### Install Mininet
 ```no-highlight
 cd ~
-git clone git://github.com/mininet/mininet
+git clone --depth 1 git://github.com/mininet/mininet
 cd mininet
 ./util/install.sh -fnv
 ```
@@ -24,13 +24,13 @@ git checkout remotes/origin/class/cs244
 ### Install POX
 ```no-highlight
 cd ~
-git clone http://github.com/noxrepo/pox
+git clone --depth 1 http://github.com/noxrepo/pox
 ```
 
 ### Install ltprotocol 
 ```no-highlight
 cd ~
-git clone git://github.com/dound/ltprotocol.git
+git clone --depth 1 git://github.com/dound/ltprotocol.git
 cd ltprotocol 
 sudo python setup.py install
 ```
